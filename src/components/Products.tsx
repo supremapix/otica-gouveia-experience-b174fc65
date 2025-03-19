@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -13,7 +12,7 @@ const Products = () => {
       id: 1,
       name: "Ray-Ban Aviator",
       category: "masculino",
-      image: "/lovable-uploads/554a4b67-59a7-4121-a800-dba8b06cb020.png",
+      image: "/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.png",
       description: "Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância.",
       price: "A partir de R$ 599,00"
     },
@@ -21,7 +20,7 @@ const Products = () => {
       id: 2,
       name: "Ana Hickmann Collection",
       category: "feminino",
-      image: "/lovable-uploads/ed3af164-3a30-4ce0-98de-cf5f17b3de08.png",
+      image: "/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.png",
       description: "Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
       price: "A partir de R$ 499,00"
     },
@@ -37,7 +36,7 @@ const Products = () => {
       id: 4,
       name: "Victor Hugo Collection",
       category: "feminino",
-      image: "/lovable-uploads/48cc47c3-a484-4afb-9f9e-fc1b26e5d095.png",
+      image: "/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.png",
       description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
       price: "A partir de R$ 699,00"
     },
@@ -45,7 +44,7 @@ const Products = () => {
       id: 5,
       name: "Sabrina Sato Eyewear",
       category: "feminino",
-      image: "/lovable-uploads/9f9ebc43-0457-4fdb-8dca-d73cf2b9e790.png", 
+      image: "/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.png",
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
       price: "A partir de R$ 459,00"
     },
@@ -53,7 +52,7 @@ const Products = () => {
       id: 6,
       name: "Lentes Varilux Liberty",
       category: "lentes",
-      image: "/lovable-uploads/274d786d-f6dc-4326-86d9-2d60e4280f0d.png",
+      image: "/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.png",
       description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
       price: "A partir de R$ 899,00"
     }
