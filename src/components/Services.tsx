@@ -37,7 +37,7 @@ const Services = () => {
     frames: {
       title: "Armações Exclusivas",
       description: "Oferecemos uma ampla variedade de armações para todos os estilos e necessidades. De marcas renomadas como Ray-Ban e Ana Hickmann a modelos exclusivos para o público infantil.",
-      image: "https://images.unsplash.com/photo-1577744168855-0391d2ed2b3a?q=80&w=600&h=400&auto=format&fit=crop",
+      image: "/lovable-uploads/74d8f6cb-dfbb-4388-82b9-f012acfbadcc.png",
       features: [
         "Marcas premium nacionais e importadas",
         "Modelos para todos os rostos",
