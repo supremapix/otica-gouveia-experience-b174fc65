@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -10,8 +10,42 @@ import Contact from '../components/Contact';
 import Instagram from '../components/Instagram';
 import Footer from '../components/Footer';
 
+// Simple error boundary component
+const ErrorBoundary = ({ children, fallback, componentName }) => {
+  const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    const errorHandler = (error) => {
+      console.error(`Error in component ${componentName}:`, error);
+      setHasError(true);
+      return true; // Prevents the error from bubbling up
+    };
+
+    window.addEventListener('error', errorHandler);
+    return () => window.removeEventListener('error', errorHandler);
+  }, [componentName]);
+
+  if (hasError) {
+    return fallback || <div className="p-4 text-red-500">Error loading {componentName}</div>;
+  }
+
+  return children;
+};
+
+// Component loader with error handling
+const ComponentLoader = ({ component: Component, name }) => {
+  return (
+    <ErrorBoundary componentName={name}>
+      <Suspense fallback={<div className="p-4">Loading {name}...</div>}>
+        <Component />
+      </Suspense>
+    </ErrorBoundary>
+  );
+};
+
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [pageError, setPageError] = useState(null);
 
   useEffect(() => {
     // Simulate loading time for animation purposes
@@ -20,6 +54,17 @@ const Index = () => {
     }, 1000);
 
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const handleGlobalError = (event) => {
+      console.error("Global error:", event.error);
+      setPageError(event.error?.message || "Unknown error occurred");
+      event.preventDefault(); // Prevent default error handling
+    };
+
+    window.addEventListener('error', handleGlobalError);
+    return () => window.removeEventListener('error', handleGlobalError);
   }, []);
 
   if (isLoading) {
@@ -34,17 +79,60 @@ const Index = () => {
     );
   }
 
+  if (pageError) {
+    return (
+      <div className="min-h-screen bg-white flex items-center justify-center">
+        <div className="text-center p-8 max-w-md">
+          <h2 className="text-2xl font-bold text-brand-red mb-4">Oops! Algo deu errado.</h2>
+          <p className="text-brand-gray-700 mb-6">{pageError}</p>
+          <button 
+            onClick={() => window.location.reload()} 
+            className="bg-brand-red text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-all"
+          >
+            Tentar Novamente
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Products />
-      <Testimonials />
-      <Contact />
-      <Instagram />
-      <Footer />
+      <ErrorBoundary componentName="Navbar">
+        <Navbar />
+      </ErrorBoundary>
+      
+      <ErrorBoundary componentName="Hero">
+        <Hero />
+      </ErrorBoundary>
+      
+      <ErrorBoundary componentName="About">
+        <About />
+      </ErrorBoundary>
+      
+      <ErrorBoundary componentName="Services">
+        <Services />
+      </ErrorBoundary>
+      
+      <ErrorBoundary componentName="Products">
+        <Products />
+      </ErrorBoundary>
+      
+      <ErrorBoundary componentName="Testimonials">
+        <Testimonials />
+      </ErrorBoundary>
+      
+      <ErrorBoundary componentName="Contact">
+        <Contact />
+      </ErrorBoundary>
+      
+      <ErrorBoundary componentName="Instagram">
+        <Instagram />
+      </ErrorBoundary>
+      
+      <ErrorBoundary componentName="Footer">
+        <Footer />
+      </ErrorBoundary>
       
       {/* WhatsApp Fixed Button */}
       <a
