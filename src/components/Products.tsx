@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -231,6 +232,20 @@ const Products = () => {
               <img 
                 src="/lovable-uploads/179e193c-db7a-4d72-9e5d-83ea7dfa63ac.png" 
                 alt="Bausch & Lomb Logo" 
+                className="h-auto max-h-full max-w-full object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <img 
+                src="/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.png" 
+                alt="Mormaii Logo" 
+                className="h-auto max-h-full max-w-full object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <img 
+                src="/lovable-uploads/6005de4b-e632-4ca4-8d3f-40f769c0b650.png" 
+                alt="Jean Pierre Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
