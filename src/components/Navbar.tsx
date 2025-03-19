@@ -62,7 +62,11 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="flex items-center">
-                <span className="text-2xl font-bold text-brand-red">Ótica Gouveia</span>
+                <img 
+                  src="/lovable-uploads/48cc47c3-a484-4afb-9f9e-fc1b26e5d095.png" 
+                  alt="Ótica Gouveia Logo" 
+                  className="h-10 md:h-12"
+                />
               </Link>
             </div>
             
