@@ -5,16 +5,6 @@ import { Instagram as InstagramIcon } from 'lucide-react';
 const Instagram = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
 
-  // Valid Unsplash image IDs for consistent loading
-  const imageIds = [
-    "photo-1577401239170-897942555fb3",
-    "photo-1574258495973-f010dfbb5371",
-    "photo-1556306535-0f09a537f0a3",
-    "photo-1486312338219-ce68d2c6f44d",
-    "photo-1577744168855-0391d2ed2b3a",
-    "photo-1511499767150-a48a237f0083"
-  ];
-
   return (
     <section className="section-padding bg-brand-gray-100" ref={ref as React.RefObject<HTMLDivElement>}>
       <div className="section-container">
@@ -33,17 +23,18 @@ const Instagram = () => {
         <div className={`transition-all duration-1000 ease-out delay-200 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
-          {/* Instagram Feed with valid placeholder images */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {imageIds.map((imageId, index) => (
-              <div key={index} className="aspect-square overflow-hidden rounded-lg shadow-sm border border-brand-gray-200 bg-white">
-                <img 
-                  src={`https://images.unsplash.com/${imageId}?q=80&w=300&h=300&auto=format&fit=crop`} 
-                  alt={`Instagram post ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-            ))}
+          {/* Instagram Embed */}
+          <div className="flex justify-center w-full">
+            <iframe 
+              src="https://www.instagram.com/gouveiaoticacuritiba/embed" 
+              width="100%" 
+              height="750" 
+              frameBorder="0" 
+              scrolling="no" 
+              allowTransparency={true}
+              title="Instagram Feed de @gouveiaoticacuritiba"
+              className="max-w-4xl mx-auto border-none"
+            ></iframe>
           </div>
           
           <div className="text-center mt-8">
