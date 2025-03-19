@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
-import { Eye, Glasses, Tool, CreditCard, CalendarCheck, Users } from 'lucide-react';
+import { Eye, Glasses, Wrench, CreditCard, CalendarCheck, Users } from 'lucide-react';
 
 const Services = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
@@ -122,7 +122,7 @@ const Services = () => {
                 : 'bg-white text-brand-gray-700 hover:bg-brand-gray-200'
             }`}
           >
-            <Tool className="w-4 h-4 mr-2" />
+            <Wrench className="w-4 h-4 mr-2" />
             <span>Manutenção</span>
           </button>
         </div>
