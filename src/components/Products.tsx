@@ -13,7 +13,7 @@ const Products = () => {
       id: 1,
       name: "Ray-Ban Aviator",
       category: "masculino",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/p/DArNE--SKK2/media/?size=l",
+      image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=400&h=300&auto=format&fit=crop",
       description: "Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância.",
       price: "A partir de R$ 599,00"
     },
@@ -21,7 +21,7 @@ const Products = () => {
       id: 2,
       name: "Ana Hickmann Collection",
       category: "feminino",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/p/C7ZJInSsOgd/media/?size=l",
+      image: "https://images.unsplash.com/photo-1577744286508-efeac1e6dd1f?q=80&w=400&h=300&auto=format&fit=crop",
       description: "Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
       price: "A partir de R$ 499,00"
     },
@@ -29,7 +29,7 @@ const Products = () => {
       id: 3,
       name: "Disney Pixar Kids",
       category: "infantil",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/p/DARPjPDxtG_/media/?size=l",
+      image: "https://images.unsplash.com/photo-1626352539247-5447997553e1?q=80&w=400&h=300&auto=format&fit=crop",
       description: "Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.",
       price: "A partir de R$ 359,00"
     },
@@ -37,7 +37,7 @@ const Products = () => {
       id: 4,
       name: "Victor Hugo Collection",
       category: "feminino",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/p/DAoeJYpxGc3/media/?size=l",
+      image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=400&h=300&auto=format&fit=crop",
       description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
       price: "A partir de R$ 699,00"
     },
@@ -45,7 +45,7 @@ const Products = () => {
       id: 5,
       name: "Sabrina Sato Eyewear",
       category: "feminino",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/p/DAjZim8yI2Y/media/?size=l",
+      image: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=400&h=300&auto=format&fit=crop",
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
       price: "A partir de R$ 459,00"
     },
@@ -53,7 +53,7 @@ const Products = () => {
       id: 6,
       name: "Lentes Varilux Liberty",
       category: "lentes",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/p/C9fgRElOvI3/media/?size=l",
+      image: "https://images.unsplash.com/photo-1516714819001-9a7b409d8cf8?q=80&w=400&h=300&auto=format&fit=crop",
       description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
       price: "A partir de R$ 899,00"
     }

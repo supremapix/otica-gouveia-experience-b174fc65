@@ -11,7 +11,7 @@ const Services = () => {
     exams: {
       title: "Exames de Vista Completos",
       description: "Na Ótica Gouveia, utilizamos tecnologia avançada para realizar exames de vista precisos e completos. Nosso equipamento Visioffice 3 proporciona medidas personalizadas para garantir a melhor experiência visual.",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/reel/C-YSc3GRp5C/media/?size=l",
+      image: "https://images.unsplash.com/photo-1577401239170-897942555fb3?q=80&w=600&h=400&auto=format&fit=crop",
       features: [
         "Avaliação visual computadorizada",
         "Análise de acuidade visual",
@@ -24,7 +24,7 @@ const Services = () => {
     lenses: {
       title: "Lentes de Qualidade",
       description: "Trabalhamos com as melhores marcas de lentes do mercado para proporcionar conforto visual e proteção para seus olhos. Das lentes básicas às mais tecnológicas, temos a solução ideal para você.",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/p/DAoeJYpxGc3/media/?size=l",
+      image: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=600&h=400&auto=format&fit=crop",
       features: [
         "Lentes multifocais Varilux",
         "Tratamento anti-reflexo Crizal",
@@ -37,7 +37,7 @@ const Services = () => {
     frames: {
       title: "Armações Exclusivas",
       description: "Oferecemos uma ampla variedade de armações para todos os estilos e necessidades. De marcas renomadas como Ray-Ban e Ana Hickmann a modelos exclusivos para o público infantil.",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/p/C7UtDosvU-X/media/?size=l",
+      image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=600&h=400&auto=format&fit=crop",
       features: [
         "Marcas premium nacionais e importadas",
         "Modelos para todos os rostos",
@@ -50,7 +50,7 @@ const Services = () => {
     maintenance: {
       title: "Manutenção e Ajustes",
       description: "Sua experiência com óculos não termina na compra. Oferecemos serviços completos de manutenção, ajustes e reparos para garantir o conforto e a durabilidade dos seus óculos.",
-      image: "https://www.instagram.com/gouveiaoticacuritiba/p/C9fgRElOvI3/media/?size=l",
+      image: "https://images.unsplash.com/photo-1564883024398-405895a7ece9?q=80&w=600&h=400&auto=format&fit=crop",
       features: [
         "Ajustes de armação",
         "Troca de plaquetas e parafusos",

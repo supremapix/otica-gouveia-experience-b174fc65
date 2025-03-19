@@ -23,17 +23,17 @@ const Instagram = () => {
         <div className={`transition-all duration-1000 ease-out delay-200 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
-          {/* Instagram Feed Embed */}
-          <div className="rounded-xl overflow-hidden shadow-sm border border-brand-gray-200 bg-white p-4">
-            <iframe
-              src="https://www.instagram.com/gouveiaoticacuritiba/embed"
-              title="Instagram Feed Ótica Gouveia"
-              width="100%"
-              height="580"
-              frameBorder="0"
-              scrolling="no"
-              style={{ borderRadius: '8px', overflow: 'hidden' }}
-            ></iframe>
+          {/* Instagram Feed with placeholder images instead of embed */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[1, 2, 3, 4, 5, 6].map((item) => (
+              <div key={item} className="aspect-square overflow-hidden rounded-lg shadow-sm border border-brand-gray-200 bg-white">
+                <img 
+                  src={`https://images.unsplash.com/photo-${1570000000000 + item * 1000}?q=80&w=300&h=300&auto=format&fit=crop`} 
+                  alt={`Instagram post ${item}`}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+            ))}
           </div>
           
           <div className="text-center mt-8">

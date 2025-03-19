@@ -26,9 +26,8 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Dynamically determine which image to use
-  const heroImage = "https://www.instagram.com/p/C9fgRElOvI3/media/?size=l";
-  const placeholderImage = "https://www.instagram.com/gouveiaoticacuritiba/p/C9fgRElOvI3/";
+  // Use a static image that will work
+  const heroImage = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1250&h=750&auto=format&fit=crop";
 
   return (
     <div 
@@ -40,7 +39,7 @@ const Hero = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: `url(${placeholderImage})`,
+            backgroundImage: `url(${heroImage})`,
             transform: `translate(${parallax.x * -1}px, ${parallax.y * -1}px)`,
             filter: 'brightness(0.7)',
           }}

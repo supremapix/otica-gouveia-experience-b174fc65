@@ -48,14 +48,14 @@ const About = () => {
             <div className="space-y-4">
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="https://www.instagram.com/gouveiaoticacuritiba/p/C7ZImN1Msbo/media/?size=l" 
+                  src="https://images.unsplash.com/photo-1587652246377-2c865763edb8?q=80&w=400&h=300&auto=format&fit=crop" 
                   alt="Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="https://www.instagram.com/gouveiaoticacuritiba/p/C7UtDosvU-X/media/?size=l" 
+                  src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=400&h=300&auto=format&fit=crop" 
                   alt="Nossos produtos" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
@@ -64,14 +64,14 @@ const About = () => {
             <div className="space-y-4 mt-8">
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="https://www.instagram.com/gouveiaoticacuritiba/p/C8cQZTVM_bO/media/?size=l" 
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=300&auto=format&fit=crop" 
                   alt="Nossa equipe" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="https://www.instagram.com/gouveiaoticacuritiba/p/DDhS7_CR4WQ/media/?size=l" 
+                  src="https://images.unsplash.com/photo-1582142407894-ec8cecd263a8?q=80&w=400&h=300&auto=format&fit=crop" 
                   alt="Nossa loja" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
