@@ -13,7 +13,7 @@ const Products = () => {
       id: 1,
       name: "Ray-Ban Aviator",
       category: "masculino",
-      image: "/lovable-uploads/a1b78843-775f-44c7-861f-44eb7a861d83.png", // Updated to Mormaii image
+      image: "/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.png", // Updated to Ray-Ban Aviator image
       description: "Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância.",
       price: "A partir de R$ 599,00"
     },
@@ -21,7 +21,7 @@ const Products = () => {
       id: 2,
       name: "Ana Hickmann Collection",
       category: "feminino",
-      image: "/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.png", // Updated to Ana Hickmann image
+      image: "/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.png", // Swapped: now using Disney image for Ana Hickmann
       description: "Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
       price: "A partir de R$ 499,00"
     },
@@ -29,7 +29,7 @@ const Products = () => {
       id: 3,
       name: "Disney Pixar Kids",
       category: "infantil",
-      image: "/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.png", // Updated to Kid's glasses image
+      image: "/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.png", // Swapped: now using Ana Hickmann image for Disney
       description: "Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.",
       price: "A partir de R$ 359,00"
     },
@@ -37,7 +37,7 @@ const Products = () => {
       id: 4,
       name: "Victor Hugo Collection",
       category: "feminino",
-      image: "/lovable-uploads/e2d4b47a-9617-4e72-9f26-50170c88e9a0.png", // Updated to Visão Natural image
+      image: "/lovable-uploads/e2d4b47a-9617-4e72-9f26-50170c88e9a0.png", // Keeping Visão Natural image
       description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
       price: "A partir de R$ 699,00"
     },
@@ -45,7 +45,7 @@ const Products = () => {
       id: 5,
       name: "Sabrina Sato Eyewear",
       category: "feminino",
-      image: "/lovable-uploads/60aacd8d-b40d-4235-a564-379310b71e6a.png", // Updated to Jean Pierre image
+      image: "/lovable-uploads/60aacd8d-b40d-4235-a564-379310b71e6a.png", // Keeping Jean Pierre image
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
       price: "A partir de R$ 459,00"
     },
