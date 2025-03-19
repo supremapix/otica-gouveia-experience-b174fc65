@@ -192,24 +192,48 @@ const Products = () => {
             </h3>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-8 items-center">
-            <div className="flex items-center justify-center h-16 w-32 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-              <span className="text-xl font-bold text-brand-gray-800">Ray-Ban</span>
+          <div className="flex flex-wrap justify-center gap-8 items-center py-8">
+            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <img 
+                src="/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.png" 
+                alt="Ray-Ban Logo" 
+                className="h-auto max-h-full max-w-full object-contain"
+              />
             </div>
-            <div className="flex items-center justify-center h-16 w-32 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-              <span className="text-xl font-bold text-brand-gray-800">Ana Hickmann</span>
+            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <img 
+                src="/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.png" 
+                alt="Ana Hickmann Logo" 
+                className="h-auto max-h-full max-w-full object-contain"
+              />
             </div>
-            <div className="flex items-center justify-center h-16 w-32 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-              <span className="text-xl font-bold text-brand-gray-800">Victor Hugo</span>
+            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <img 
+                src="/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.png" 
+                alt="Victor Hugo Logo" 
+                className="h-auto max-h-full max-w-full object-contain"
+              />
             </div>
-            <div className="flex items-center justify-center h-16 w-32 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-              <span className="text-xl font-bold text-brand-gray-800">Sabrina Sato</span>
+            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <img 
+                src="/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.png" 
+                alt="Sabrina Sato Logo" 
+                className="h-auto max-h-full max-w-full object-contain"
+              />
             </div>
-            <div className="flex items-center justify-center h-16 w-32 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-              <span className="text-xl font-bold text-brand-gray-800">Varilux</span>
+            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <img 
+                src="/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.png" 
+                alt="Varilux Logo" 
+                className="h-auto max-h-full max-w-full object-contain"
+              />
             </div>
-            <div className="flex items-center justify-center h-16 w-32 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-              <span className="text-xl font-bold text-brand-gray-800">Bausch & Lomb</span>
+            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <img 
+                src="/lovable-uploads/9f9ebc43-0457-4fdb-8dca-d73cf2b9e790.png" 
+                alt="Bausch & Lomb Logo" 
+                className="h-auto max-h-full max-w-full object-contain"
+              />
             </div>
           </div>
         </div>
