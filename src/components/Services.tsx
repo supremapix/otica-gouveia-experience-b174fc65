@@ -10,7 +10,7 @@ const Services = () => {
   const tabContent = {
     exams: {
       title: "Exames de Vista Completos",
-      description: "Na Ótica Gouveia, utilizamos tecnologia avançada para realizar exames de vista precisos e completos. Nosso equipamento Visioffice 3 proporciona medidas personalizadas para garantir a melhor experiência visual.",
+      description: "A Óptica Boa Visão conta com a modernidade do Visioffice 3, um equipamento Essilor que proporciona alta precisão em diversas medidas. Em apenas alguns segundos, conseguimos determinar as medidas como distância pupilar, altura de montagem, distância de leitura, ângulo pantoscópico, entre outros.",
       image: "https://images.unsplash.com/photo-1577401239170-897942555fb3?q=80&w=600&h=400&auto=format&fit=crop",
       features: [
         "Avaliação visual computadorizada",
