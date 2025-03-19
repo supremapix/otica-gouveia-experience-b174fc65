@@ -3,8 +3,6 @@ import { Phone, Mail, MapPin, Clock, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
   return (
     <footer className="bg-brand-gray-900 text-white">
       <div className="section-container py-12 md:py-16">
@@ -111,7 +109,18 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-brand-gray-800 text-center text-brand-gray-400 text-sm">
-          <p>© {currentYear} Ótica Gouveia. Todos os direitos reservados.</p>
+          <p>© 2025 Ótica Gouveia. Todos os direitos reservados.</p>
+          <p className="mt-2">
+            Criação de sites{" "}
+            <a 
+              href="https://www.supremamidia.com.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-brand-red hover:underline"
+            >
+              Suprema Mídia
+            </a>
+          </p>
         </div>
       </div>
     </footer>

@@ -33,7 +33,18 @@ const NotFound = () => {
       <footer className="bg-brand-gray-900 text-white py-6">
         <div className="container mx-auto text-center">
           <p className="text-brand-gray-400 text-sm">
-            © {new Date().getFullYear()} Ótica Gouveia. Todos os direitos reservados.
+            © 2025 Ótica Gouveia. Todos os direitos reservados.
+          </p>
+          <p className="mt-2 text-brand-gray-400 text-sm">
+            Criação de sites{" "}
+            <a 
+              href="https://www.supremamidia.com.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-brand-red hover:underline"
+            >
+              Suprema Mídia
+            </a>
           </p>
         </div>
       </footer>
