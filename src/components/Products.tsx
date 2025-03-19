@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -12,7 +13,7 @@ const Products = () => {
       id: 1,
       name: "Ray-Ban Aviator",
       category: "masculino",
-      image: "/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.png",
+      image: "/lovable-uploads/a1b78843-775f-44c7-861f-44eb7a861d83.png", // Updated to Mormaii image
       description: "Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância.",
       price: "A partir de R$ 599,00"
     },
@@ -20,7 +21,7 @@ const Products = () => {
       id: 2,
       name: "Ana Hickmann Collection",
       category: "feminino",
-      image: "/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.png",
+      image: "/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.png", // Updated to Ana Hickmann image
       description: "Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
       price: "A partir de R$ 499,00"
     },
@@ -28,7 +29,7 @@ const Products = () => {
       id: 3,
       name: "Disney Pixar Kids",
       category: "infantil",
-      image: "/lovable-uploads/2a369857-bf52-4a02-8d10-0c2801ad850d.png",
+      image: "/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.png", // Updated to Kid's glasses image
       description: "Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.",
       price: "A partir de R$ 359,00"
     },
@@ -36,7 +37,7 @@ const Products = () => {
       id: 4,
       name: "Victor Hugo Collection",
       category: "feminino",
-      image: "/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.png",
+      image: "/lovable-uploads/e2d4b47a-9617-4e72-9f26-50170c88e9a0.png", // Updated to Visão Natural image
       description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
       price: "A partir de R$ 699,00"
     },
@@ -44,7 +45,7 @@ const Products = () => {
       id: 5,
       name: "Sabrina Sato Eyewear",
       category: "feminino",
-      image: "/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.png",
+      image: "/lovable-uploads/60aacd8d-b40d-4235-a564-379310b71e6a.png", // Updated to Jean Pierre image
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
       price: "A partir de R$ 459,00"
     },
@@ -52,7 +53,7 @@ const Products = () => {
       id: 6,
       name: "Lentes Varilux Liberty",
       category: "lentes",
-      image: "/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.png",
+      image: "/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.png", // Keeping the same as before
       description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
       price: "A partir de R$ 899,00"
     }
