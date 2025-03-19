@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { Eye, Glasses, Wrench, CreditCard, CalendarCheck, Users } from 'lucide-react';
@@ -10,7 +11,7 @@ const Services = () => {
     exams: {
       title: "Medidas de Alta Precisão",
       description: "A Óptica Boa Visão conta com a modernidade do Visioffice 3, um equipamento Essilor que proporciona alta precisão em diversas medidas. Em apenas alguns segundos, conseguimos determinar as medidas como distância pupilar, altura de montagem, distância de leitura, ângulo pantoscópico, entre outros.",
-      image: "https://images.unsplash.com/photo-1577401239170-897942555fb3?q=80&w=600&h=400&auto=format&fit=crop",
+      image: "/lovable-uploads/1e537bc1-d784-42e1-924f-2b78a52c928e.png",
       features: [
         "Distância pupilar",
         "Altura de montagem",
