@@ -37,7 +37,7 @@ const Products = () => {
       id: 4,
       name: "Victor Hugo Collection",
       category: "feminino",
-      image: "/lovable-uploads/e2d4b47a-9617-4e72-9f26-50170c88e9a0.png", // Visão Natural image
+      image: "/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.png", // Updated Victor Hugo image
       description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
       price: "A partir de R$ 699,00"
     },
