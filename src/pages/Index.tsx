@@ -35,7 +35,10 @@ const ErrorBoundary = ({ children, fallback, componentName }) => {
 // Component loader with error handling
 const ComponentLoader = ({ component: Component, name }) => {
   return (
-    <ErrorBoundary componentName={name}>
+    <ErrorBoundary 
+      componentName={name} 
+      fallback={<div className="p-4 text-red-500">Error loading {name}</div>}
+    >
       <Suspense fallback={<div className="p-4">Loading {name}...</div>}>
         <Component />
       </Suspense>
@@ -98,39 +101,66 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
-      <ErrorBoundary componentName="Navbar">
+      <ErrorBoundary 
+        componentName="Navbar"
+        fallback={<div className="p-4 text-red-500">Error loading Navbar</div>}
+      >
         <Navbar />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="Hero">
+      <ErrorBoundary 
+        componentName="Hero"
+        fallback={<div className="p-4 text-red-500">Error loading Hero</div>}
+      >
         <Hero />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="About">
+      <ErrorBoundary 
+        componentName="About"
+        fallback={<div className="p-4 text-red-500">Error loading About</div>}
+      >
         <About />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="Services">
+      <ErrorBoundary 
+        componentName="Services"
+        fallback={<div className="p-4 text-red-500">Error loading Services</div>}
+      >
         <Services />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="Products">
+      <ErrorBoundary 
+        componentName="Products"
+        fallback={<div className="p-4 text-red-500">Error loading Products</div>}
+      >
         <Products />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="Testimonials">
+      <ErrorBoundary 
+        componentName="Testimonials"
+        fallback={<div className="p-4 text-red-500">Error loading Testimonials</div>}
+      >
         <Testimonials />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="Contact">
+      <ErrorBoundary 
+        componentName="Contact"
+        fallback={<div className="p-4 text-red-500">Error loading Contact</div>}
+      >
         <Contact />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="Instagram">
+      <ErrorBoundary 
+        componentName="Instagram"
+        fallback={<div className="p-4 text-red-500">Error loading Instagram</div>}
+      >
         <Instagram />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="Footer">
+      <ErrorBoundary 
+        componentName="Footer"
+        fallback={<div className="p-4 text-red-500">Error loading Footer</div>}
+      >
         <Footer />
       </ErrorBoundary>
       
