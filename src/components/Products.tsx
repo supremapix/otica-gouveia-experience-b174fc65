@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -230,7 +229,7 @@ const Products = () => {
             </div>
             <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/9f9ebc43-0457-4fdb-8dca-d73cf2b9e790.png" 
+                src="/lovable-uploads/179e193c-db7a-4d72-9e5d-83ea7dfa63ac.png" 
                 alt="Bausch & Lomb Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
