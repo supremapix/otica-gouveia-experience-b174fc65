@@ -37,7 +37,7 @@ const Products = () => {
       id: 4,
       name: "Victor Hugo Collection",
       category: "feminino",
-      image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=400&h=300&auto=format&fit=crop",
+      image: "/lovable-uploads/48cc47c3-a484-4afb-9f9e-fc1b26e5d095.png",
       description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
       price: "A partir de R$ 699,00"
     },
@@ -45,7 +45,7 @@ const Products = () => {
       id: 5,
       name: "Sabrina Sato Eyewear",
       category: "feminino",
-      image: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=400&h=300&auto=format&fit=crop",
+      image: "/lovable-uploads/9f9ebc43-0457-4fdb-8dca-d73cf2b9e790.png", 
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
       price: "A partir de R$ 459,00"
     },
@@ -53,7 +53,7 @@ const Products = () => {
       id: 6,
       name: "Lentes Varilux Liberty",
       category: "lentes",
-      image: "https://images.unsplash.com/photo-1516714819001-9a7b409d8cf8?q=80&w=400&h=300&auto=format&fit=crop",
+      image: "/lovable-uploads/274d786d-f6dc-4326-86d9-2d60e4280f0d.png",
       description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
       price: "A partir de R$ 899,00"
     }
