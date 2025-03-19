@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { Eye, Glasses, Wrench, CreditCard, CalendarCheck, Users } from 'lucide-react';
@@ -9,7 +8,7 @@ const Services = () => {
 
   const tabContent = {
     exams: {
-      title: "Exames de Vista Completos",
+      title: "Medidas de Alta Precisão",
       description: "A Óptica Boa Visão conta com a modernidade do Visioffice 3, um equipamento Essilor que proporciona alta precisão em diversas medidas. Em apenas alguns segundos, conseguimos determinar as medidas como distância pupilar, altura de montagem, distância de leitura, ângulo pantoscópico, entre outros.",
       image: "https://images.unsplash.com/photo-1577401239170-897942555fb3?q=80&w=600&h=400&auto=format&fit=crop",
       features: [
@@ -18,8 +17,8 @@ const Services = () => {
         "Distância de leitura",
         "Ângulo pantoscópico",
       ],
-      cta: "Agendar Exame",
-      ctaLink: "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20exames%20de%20vista.%20Pode%20me%20ajudar?"
+      cta: "Agendar Medição",
+      ctaLink: "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20medi%C3%A7%C3%B5es%20com%20o%20Visioffice%203.%20Pode%20me%20ajudar?"
     },
     lenses: {
       title: "Lentes de Qualidade",
@@ -90,7 +89,7 @@ const Services = () => {
             }`}
           >
             <Eye className="w-4 h-4 mr-2" />
-            <span>Exames</span>
+            <span>Medidas</span>
           </button>
           <button
             onClick={() => setActiveTab('lenses')}
