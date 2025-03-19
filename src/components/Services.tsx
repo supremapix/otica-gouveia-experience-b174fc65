@@ -50,7 +50,7 @@ const Services = () => {
     maintenance: {
       title: "Manutenção e Ajustes",
       description: "Sua experiência com óculos não termina na compra. Oferecemos serviços completos de manutenção, ajustes e reparos para garantir o conforto e a durabilidade dos seus óculos.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=600&h=400&auto=format&fit=crop",
+      image: "/lovable-uploads/484f4810-331a-4018-af69-0853c07fa440.png",
       features: [
         "Ajustes de armação",
         "Troca de plaquetas e parafusos",
