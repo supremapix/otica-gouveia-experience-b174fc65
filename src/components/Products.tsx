@@ -12,7 +12,7 @@ const Products = () => {
       id: 1,
       name: "Ray-Ban Aviator",
       category: "masculino",
-      image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=400&h=300&auto=format&fit=crop",
+      image: "/lovable-uploads/554a4b67-59a7-4121-a800-dba8b06cb020.png",
       description: "Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância.",
       price: "A partir de R$ 599,00"
     },
@@ -20,7 +20,7 @@ const Products = () => {
       id: 2,
       name: "Ana Hickmann Collection",
       category: "feminino",
-      image: "https://images.unsplash.com/photo-1577744286508-efeac1e6dd1f?q=80&w=400&h=300&auto=format&fit=crop",
+      image: "/lovable-uploads/ed3af164-3a30-4ce0-98de-cf5f17b3de08.png",
       description: "Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
       price: "A partir de R$ 499,00"
     },
@@ -28,7 +28,7 @@ const Products = () => {
       id: 3,
       name: "Disney Pixar Kids",
       category: "infantil",
-      image: "https://images.unsplash.com/photo-1626352539247-5447997553e1?q=80&w=400&h=300&auto=format&fit=crop",
+      image: "/lovable-uploads/2a369857-bf52-4a02-8d10-0c2801ad850d.png",
       description: "Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.",
       price: "A partir de R$ 359,00"
     },
