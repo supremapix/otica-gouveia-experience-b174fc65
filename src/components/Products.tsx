@@ -53,7 +53,7 @@ const Products = () => {
       id: 6,
       name: "Lentes Varilux Liberty",
       category: "lentes",
-      image: "/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.png", // Keeping the same as before
+      image: "/lovable-uploads/6abf8de6-5648-482e-9986-212582077c6d.png", // Updated to new Varilux Liberty image
       description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
       price: "A partir de R$ 899,00"
     }
