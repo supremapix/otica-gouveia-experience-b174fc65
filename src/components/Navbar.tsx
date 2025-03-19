@@ -62,19 +62,11 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="flex items-center">
-                {scrolled ? (
-                  <img 
-                    src="/lovable-uploads/274d786d-f6dc-4326-86d9-2d60e4280f0d.png" 
-                    alt="Ótica Gouveia Logo" 
-                    className="h-10 md:h-12"
-                  />
-                ) : (
-                  <img 
-                    src="/lovable-uploads/48cc47c3-a484-4afb-9f9e-fc1b26e5d095.png" 
-                    alt="Ótica Gouveia Logo" 
-                    className="h-10 md:h-12"
-                  />
-                )}
+                <img 
+                  src="/lovable-uploads/8043e16e-0422-42ba-8620-d05410393375.png" 
+                  alt="Ótica Gouveia Logo" 
+                  className="h-10 md:h-12"
+                />
               </Link>
             </div>
             
