@@ -51,6 +51,17 @@ const Index = () => {
   const [pageError, setPageError] = useState(null);
 
   useEffect(() => {
+    // Add viewport meta tag to prevent user scaling/zooming on mobile
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    if (metaViewport) {
+      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    } else {
+      const newMetaViewport = document.createElement('meta');
+      newMetaViewport.name = 'viewport';
+      newMetaViewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+      document.head.appendChild(newMetaViewport);
+    }
+
     // Simulate loading time for animation purposes
     const timer = setTimeout(() => {
       setIsLoading(false);

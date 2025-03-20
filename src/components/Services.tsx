@@ -194,7 +194,7 @@ const Services = () => {
             </div>
             <h3 className="text-xl font-bold text-brand-gray-900 mb-2">Agendamento Prático</h3>
             <p className="text-brand-gray-700">
-              Agende suas medições e atendimentos pelo WhatsApp, de forma rápida e prática, sem sair de casa.
+              Venha conhecer a nossa loja cheia de novidades, promoções e descontos!
             </p>
           </div>
           
