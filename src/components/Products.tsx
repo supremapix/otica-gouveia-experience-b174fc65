@@ -193,56 +193,56 @@ const Products = () => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-8 items-center py-8">
-            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.png" 
                 alt="Ray-Ban Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.png" 
                 alt="Ana Hickmann Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.png" 
                 alt="Victor Hugo Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.png" 
                 alt="Sabrina Sato Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.png" 
                 alt="Varilux Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/179e193c-db7a-4d72-9e5d-83ea7dfa63ac.png" 
                 alt="Bausch & Lomb Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.png" 
                 alt="Mormaii Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-16 w-40 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/6005de4b-e632-4ca4-8d3f-40f769c0b650.png" 
                 alt="Jean Pierre Logo" 

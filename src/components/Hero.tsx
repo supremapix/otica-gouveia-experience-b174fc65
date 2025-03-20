@@ -66,12 +66,12 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '600ms' }}>
               <a 
-                href="https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es.%20Pode%20me%20ajudar?"
+                href="https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20conhecer%20o%20Visioffice%203.%20Pode%20me%20ajudar?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full sm:w-auto"
               >
-                Agendar Exame de Vista
+                Agendar Medição com Visioffice 3
               </a>
               <a href="#services" className="btn-secondary w-full sm:w-auto">
                 Descobrir Serviços

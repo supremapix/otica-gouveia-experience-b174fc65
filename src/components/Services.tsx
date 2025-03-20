@@ -10,21 +10,22 @@ const Services = () => {
   const tabContent = {
     exams: {
       title: "Medidas de Alta Precisão",
-      description: "A Óptica Boa Visão conta com a modernidade do Visioffice 3, um equipamento Essilor que proporciona alta precisão em diversas medidas. Em apenas alguns segundos, conseguimos determinar as medidas como distância pupilar, altura de montagem, distância de leitura, ângulo pantoscópico, entre outros.",
-      image: "/lovable-uploads/1e537bc1-d784-42e1-924f-2b78a52c928e.png",
+      description: "A Ótica Gouveia Úmbara traz o que há de mais moderno no mundo óptico com o Visioffice 3, um equipamento de alta tecnologia da Essilor que garante extrema precisão em diversas medições. Em apenas alguns segundos, conseguimos determinar com exatidão diversas medidas para o ajuste perfeito das suas lentes.",
+      image: "/lovable-uploads/4a29b99c-56aa-418b-be88-b850f3f0cc76.png",
       features: [
         "Distância pupilar",
         "Altura de montagem",
         "Distância de leitura",
         "Ângulo pantoscópico",
+        "E muito mais!",
       ],
       cta: "Agendar Medição",
-      ctaLink: "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20medi%C3%A7%C3%B5es%20com%20o%20Visioffice%203.%20Pode%20me%20ajudar?"
+      ctaLink: "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20conhecer%20o%20Visioffice%203.%20Pode%20me%20ajudar?"
     },
     lenses: {
       title: "Lentes de Qualidade",
       description: "Trabalhamos com as melhores marcas de lentes do mercado para proporcionar conforto visual e proteção para seus olhos. Das lentes básicas às mais tecnológicas, temos a solução ideal para você.",
-      image: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=600&h=400&auto=format&fit=crop",
+      image: "/lovable-uploads/6abf8de6-5648-482e-9986-212582077c6d.png",
       features: [
         "Lentes multifocais Varilux",
         "Tratamento anti-reflexo Crizal",
@@ -193,7 +194,7 @@ const Services = () => {
             </div>
             <h3 className="text-xl font-bold text-brand-gray-900 mb-2">Agendamento Prático</h3>
             <p className="text-brand-gray-700">
-              Agende seus exames e atendimentos pelo WhatsApp, de forma rápida e prática, sem sair de casa.
+              Agende suas medições e atendimentos pelo WhatsApp, de forma rápida e prática, sem sair de casa.
             </p>
           </div>
           
