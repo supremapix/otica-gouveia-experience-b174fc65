@@ -32,7 +32,7 @@ const Instagram = () => {
                 height="100%" 
                 frameBorder="0" 
                 scrolling="no" 
-                allowTransparency="true"
+                allowTransparency={true}
                 title="Instagram Feed de @gouveiaoticacuritiba"
                 className="border-none"
               ></iframe>
