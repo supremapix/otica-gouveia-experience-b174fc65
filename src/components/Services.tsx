@@ -25,7 +25,7 @@ const Services = () => {
     lenses: {
       title: "Lentes de Qualidade",
       description: "Trabalhamos com as melhores marcas de lentes do mercado para proporcionar conforto visual e proteção para seus olhos. Das lentes básicas às mais tecnológicas, temos a solução ideal para você.",
-      image: "/lovable-uploads/e1ecf008-b212-460b-ac86-aaa84894d67e.png",
+      image: "/lovable-uploads/d03236fb-b7da-44a0-9e41-d1bcf77ee2fe.png", // Updated Varilux image
       features: [
         "Lentes multifocais Varilux",
         "Tratamento anti-reflexo Crizal",

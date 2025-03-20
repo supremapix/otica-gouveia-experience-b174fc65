@@ -46,7 +46,7 @@ const Products = () => {
       id: 5,
       name: "Sabrina Sato Eyewear",
       category: "feminino",
-      image: "/lovable-uploads/3c385cfb-2914-478d-a338-c60a9c9518df.png",
+      image: "/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.png", // Updated Sabrina Sato image
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
       price: "A partir de R$ 459,00"
     },

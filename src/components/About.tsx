@@ -64,7 +64,7 @@ const About = () => {
             <div className="space-y-4 mt-8">
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="/lovable-uploads/21e3a99f-bcc9-4b8f-a495-93a9cd12cd6c.png" 
+                  src="/lovable-uploads/40a418ff-3ca5-4179-978b-9c5888b8d04b.png" 
                   alt="Varilux Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
