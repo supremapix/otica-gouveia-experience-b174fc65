@@ -26,8 +26,8 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Use a static image that will work
-  const heroImage = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1250&h=750&auto=format&fit=crop";
+  // Usar a nova imagem de fundo
+  const heroImage = "/lovable-uploads/0c520e0e-67b8-406f-9c15-446e4e1f2f79.png";
 
   return (
     <div 

@@ -62,11 +62,21 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="flex items-center">
-                <img 
-                  src="/lovable-uploads/8043e16e-0422-42ba-8620-d05410393375.png" 
-                  alt="Ótica Gouveia Logo" 
-                  className="h-10 md:h-12"
-                />
+                {scrolled ? (
+                  // Logo vermelha para quando a página é rolada
+                  <img 
+                    src="/lovable-uploads/9cb88b28-e372-46cb-9604-f84bf0bed383.png" 
+                    alt="Ótica Gouveia Logo" 
+                    className="h-10 md:h-12"
+                  />
+                ) : (
+                  // Logo branca para quando o usuário está no topo da página
+                  <img 
+                    src="/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.png" 
+                    alt="Ótica Gouveia Logo" 
+                    className="h-10 md:h-12"
+                  />
+                )}
               </Link>
             </div>
             
@@ -77,7 +87,9 @@ const Navbar = () => {
                   <a
                     key={link.name}
                     href={link.href}
-                    className="text-brand-gray-700 hover:text-brand-red transition-colors text-base font-medium"
+                    className={`transition-colors text-base font-medium ${
+                      scrolled ? 'text-brand-gray-700 hover:text-brand-red' : 'text-white hover:text-brand-red'
+                    }`}
                   >
                     {link.name}
                   </a>
@@ -97,7 +109,9 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-brand-gray-700 hover:text-brand-red focus:outline-none"
+                className={`inline-flex items-center justify-center p-2 rounded-md focus:outline-none ${
+                  scrolled ? 'text-brand-gray-700 hover:text-brand-red' : 'text-white hover:text-brand-red'
+                }`}
               >
                 <span className="sr-only">Abrir menu</span>
                 {isOpen ? (
