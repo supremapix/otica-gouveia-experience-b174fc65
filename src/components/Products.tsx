@@ -1,11 +1,12 @@
 
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useIsMobile } from '../hooks/use-mobile';
 
 const Products = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
   const [activeCategory, setActiveCategory] = useState('all');
+  const isMobile = useIsMobile();
 
   // Product data
   const products = [
@@ -13,7 +14,7 @@ const Products = () => {
       id: 1,
       name: "Ray-Ban Aviator",
       category: "masculino",
-      image: "/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.png", // Ray-Ban Aviator image
+      image: "/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.png",
       description: "Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância.",
       price: "A partir de R$ 599,00"
     },
@@ -21,7 +22,7 @@ const Products = () => {
       id: 2,
       name: "Ana Hickmann Collection",
       category: "feminino",
-      image: "/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.png", // Disney image for Ana Hickmann
+      image: "/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.png",
       description: "Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
       price: "A partir de R$ 499,00"
     },
@@ -29,7 +30,7 @@ const Products = () => {
       id: 3,
       name: "Disney Pixar Kids",
       category: "infantil",
-      image: "/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.png", // Ana Hickmann image for Disney
+      image: "/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.png",
       description: "Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.",
       price: "A partir de R$ 359,00"
     },
@@ -37,7 +38,7 @@ const Products = () => {
       id: 4,
       name: "Victor Hugo Collection",
       category: "feminino",
-      image: "/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.png", // Updated Victor Hugo image
+      image: "/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.png",
       description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
       price: "A partir de R$ 699,00"
     },
@@ -45,7 +46,7 @@ const Products = () => {
       id: 5,
       name: "Sabrina Sato Eyewear",
       category: "feminino",
-      image: "/lovable-uploads/e5648b15-71af-463e-9d97-c7b893f4d150.png", // Updated to new Sabrina Sato image
+      image: "/lovable-uploads/3c385cfb-2914-478d-a338-c60a9c9518df.png",
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
       price: "A partir de R$ 459,00"
     },
@@ -53,7 +54,7 @@ const Products = () => {
       id: 6,
       name: "Lentes Varilux Liberty",
       category: "lentes",
-      image: "/lovable-uploads/6abf8de6-5648-482e-9986-212582077c6d.png", // Updated to new Varilux Liberty image
+      image: "/lovable-uploads/4b85711f-9660-415d-a4fa-cd7f50e747ec.png",
       description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
       price: "A partir de R$ 899,00"
     }
@@ -192,59 +193,59 @@ const Products = () => {
             </h3>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-8 items-center py-8">
-            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8">
+            <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.png" 
                 alt="Ray-Ban Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.png" 
                 alt="Ana Hickmann Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.png" 
                 alt="Victor Hugo Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.png" 
                 alt="Sabrina Sato Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.png" 
                 alt="Varilux Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/179e193c-db7a-4d72-9e5d-83ea7dfa63ac.png" 
                 alt="Bausch & Lomb Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
                 src="/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.png" 
                 alt="Mormaii Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
-            <div className="flex items-center justify-center h-20 w-48 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/6005de4b-e632-4ca4-8d3f-40f769c0b650.png" 
+                src="/lovable-uploads/3f4cbad8-a90b-4563-b2de-0a2744d1be37.png" 
                 alt="Jean Pierre Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
@@ -294,15 +295,18 @@ const Products = () => {
         </div>
       </div>
 
-      {/* Product Detail Modal */}
+      {/* Product Detail Modal - Improved for mobile */}
       {selectedProduct && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm overflow-y-auto"
+          onClick={() => setSelectedProduct(null)}
+        >
           <div 
-            className="bg-white rounded-xl shadow-2xl max-w-3xl w-full overflow-hidden animate-scale-in"
+            className={`bg-white rounded-xl shadow-2xl w-full overflow-hidden animate-scale-in ${isMobile ? 'max-w-xl' : 'max-w-3xl'}`}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex flex-col md:flex-row">
-              <div className="flex-1 md:max-w-md">
+            <div className={`flex flex-col ${isMobile ? '' : 'md:flex-row'}`}>
+              <div className={`${isMobile ? 'h-64' : 'flex-1 md:max-w-md'}`}>
                 <img 
                   src={selectedProduct.image}
                   alt={selectedProduct.name}

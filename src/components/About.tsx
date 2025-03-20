@@ -55,8 +55,8 @@ const About = () => {
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=400&h=300&auto=format&fit=crop" 
-                  alt="Nossos produtos" 
+                  src="/lovable-uploads/9897115a-b317-4c81-a85a-ea9454853a2a.png" 
+                  alt="Lentes Varilux" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
@@ -64,8 +64,8 @@ const About = () => {
             <div className="space-y-4 mt-8">
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=300&auto=format&fit=crop" 
-                  alt="Nossa equipe" 
+                  src="/lovable-uploads/21e3a99f-bcc9-4b8f-a495-93a9cd12cd6c.png" 
+                  alt="Varilux Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
