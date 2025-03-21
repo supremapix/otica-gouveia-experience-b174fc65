@@ -7,6 +7,7 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Log the 404 error to help with future redirects
     console.error(
       "404 Error: User attempted to access non-existent route:",
       location.pathname
@@ -21,7 +22,27 @@ const NotFound = () => {
           <p className="text-2xl text-brand-gray-900 mb-6">Oops! Página não encontrada</p>
           <p className="text-brand-gray-700 mb-8">
             A página que você está procurando não existe ou foi movida.
+            Estamos sempre atualizando nosso site para melhorar sua experiência.
           </p>
+          <div className="mb-8">
+            <p className="text-brand-gray-700 mb-4">
+              Você pode estar procurando:
+            </p>
+            <div className="flex flex-wrap justify-center gap-2">
+              <Link to="/#services" className="inline-block px-3 py-1 bg-brand-gray-100 text-brand-gray-700 rounded-full hover:bg-brand-gray-200">
+                Nossos serviços
+              </Link>
+              <Link to="/#products" className="inline-block px-3 py-1 bg-brand-gray-100 text-brand-gray-700 rounded-full hover:bg-brand-gray-200">
+                Nossos produtos
+              </Link>
+              <Link to="/#about" className="inline-block px-3 py-1 bg-brand-gray-100 text-brand-gray-700 rounded-full hover:bg-brand-gray-200">
+                Sobre nós
+              </Link>
+              <Link to="/#contact" className="inline-block px-3 py-1 bg-brand-gray-100 text-brand-gray-700 rounded-full hover:bg-brand-gray-200">
+                Contato
+              </Link>
+            </div>
+          </div>
           <Link to="/" className="btn-primary inline-flex items-center">
             <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
