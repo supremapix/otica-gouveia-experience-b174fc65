@@ -26,7 +26,7 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Usar a nova imagem de fundo
+  // Usar a imagem de fundo
   const heroImage = "/lovable-uploads/0c520e0e-67b8-406f-9c15-446e4e1f2f79.png";
 
   return (
@@ -55,14 +55,14 @@ const Hero = () => {
             }`}
           >
             <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium mb-6 animate-fade-in">
-              Sua visão em foco, nosso compromisso!
+              Sua ótica de confiança no Umbará e Pinheirinho!
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-up" style={{ animationDelay: '200ms' }}>
               Ótica Gouveia <br/>
               <span className="text-brand-red">Excelência</span> em cuidados visuais
             </h1>
             <p className="text-lg text-white/90 mb-8 max-w-md animate-fade-up" style={{ animationDelay: '400ms' }}>
-              Atendimento personalizado, produtos de qualidade e preços competitivos para cuidar da sua saúde ocular.
+              Atendimento personalizado na melhor ótica do Umbará e Pinheirinho em Curitiba, com produtos de qualidade e preços competitivos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '600ms' }}>
               <a 
