@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { Eye, Glasses, Wrench, CreditCard, CalendarCheck, Users } from 'lucide-react';
@@ -25,7 +24,7 @@ const Services = () => {
     lenses: {
       title: "Lentes de Qualidade",
       description: "Trabalhamos com as melhores marcas de lentes do mercado para proporcionar conforto visual e proteção para seus olhos. Das lentes básicas às mais tecnológicas, temos a solução ideal para você.",
-      image: "/lovable-uploads/d03236fb-b7da-44a0-9e41-d1bcf77ee2fe.png", // Updated Varilux image
+      image: "/lovable-uploads/d03236fb-b7da-44a0-9e41-d1bcf77ee2fe.png",
       features: [
         "Lentes multifocais Varilux",
         "Tratamento anti-reflexo Crizal",
@@ -78,7 +77,6 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Tab Navigation */}
         <div className={`flex flex-wrap justify-center gap-2 sm:gap-4 mb-10 transition-all duration-1000 ease-out delay-200 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
@@ -128,7 +126,6 @@ const Services = () => {
           </button>
         </div>
 
-        {/* Tab Content */}
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center transition-all duration-700 ease-out ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
@@ -174,7 +171,6 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Highlights */}
         <div className={`mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-1000 ease-out delay-300 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
@@ -194,7 +190,7 @@ const Services = () => {
             </div>
             <h3 className="text-xl font-bold text-brand-gray-900 mb-2">Agendamento Prático</h3>
             <p className="text-brand-gray-700">
-              Venha conhecer a nossa loja cheia de novidades, promoções e descontos!
+              Quer lentes perfeitamente ajustadas para você?
             </p>
           </div>
           

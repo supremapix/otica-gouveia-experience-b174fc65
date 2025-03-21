@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -8,7 +7,6 @@ const Products = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const isMobile = useIsMobile();
 
-  // Product data
   const products = [
     {
       id: 1,
@@ -46,7 +44,7 @@ const Products = () => {
       id: 5,
       name: "Sabrina Sato Eyewear",
       category: "feminino",
-      image: "/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.png", // Updated Sabrina Sato image
+      image: "/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.png",
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
       price: "A partir de R$ 459,00"
     },
@@ -60,12 +58,10 @@ const Products = () => {
     }
   ];
 
-  // Filter products by category
   const filteredProducts = activeCategory === 'all' 
     ? products 
     : products.filter(product => product.category === activeCategory);
 
-  // Modal state
   const [selectedProduct, setSelectedProduct] = useState<null | typeof products[0]>(null);
 
   return (
@@ -83,7 +79,6 @@ const Products = () => {
           </p>
         </div>
 
-        {/* Category Filter */}
         <div className={`flex flex-wrap justify-center gap-2 sm:gap-4 mb-10 transition-all duration-1000 ease-out delay-200 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
@@ -139,7 +134,6 @@ const Products = () => {
           </button>
         </div>
 
-        {/* Product Grid */}
         <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-700 ease-out ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
@@ -182,7 +176,6 @@ const Products = () => {
           ))}
         </div>
 
-        {/* Brands Section */}
         <div className={`mt-20 transition-all duration-1000 ease-out delay-300 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
@@ -245,7 +238,7 @@ const Products = () => {
             </div>
             <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/3f4cbad8-a90b-4563-b2de-0a2744d1be37.png" 
+                src="/lovable-uploads/2c2072f1-48db-439a-994f-f1841d0fb03e.png" 
                 alt="Jean Pierre Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
@@ -253,7 +246,6 @@ const Products = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
         <div className={`mt-16 bg-brand-gray-100 rounded-2xl p-8 md:p-12 relative overflow-hidden transition-all duration-1000 ease-out delay-400 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
@@ -295,7 +287,6 @@ const Products = () => {
         </div>
       </div>
 
-      {/* Product Detail Modal - Improved for mobile */}
       {selectedProduct && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm overflow-y-auto"
