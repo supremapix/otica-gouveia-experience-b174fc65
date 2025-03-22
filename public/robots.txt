@@ -1,4 +1,4 @@
 
 User-agent: *
 Allow: /
-Sitemap: https://oticagouveia.com.br/sitemap.xml
+Sitemap: https://www.gouveiacuritiba.com.br/sitemap.xml
