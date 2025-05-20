@@ -64,7 +64,7 @@ const About = () => {
             <div className="space-y-4 mt-8">
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="/lovable-uploads/40a418ff-3ca5-4179-978b-9c5888b8d04b.png" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4np_Tc6rpJ3P7Ts4L2s4tOHjlwJ1V9SX7KA7GdMmSrlLihoE4H-ps4rioGL2UOBQfKxO1oCZVNKhsmeFV0Taza0lh4C-_Rp-iSVIzG9_NvtB4OelEIWP-59xJvUJWkdIqUxZw0o=s680-w680-h510-rw" 
                   alt="Varilux Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
