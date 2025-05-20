@@ -48,7 +48,7 @@ const About = () => {
             <div className="space-y-4">
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="https://lh3.googleusercontent.com/p/AF1QipMgQapOXxoInbKRoxjOgs7sRUam3O46ykbQyW0m=s680-w680-h510" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqoRMGTZJFtSv0URx_wZDRPfuOoQMVAD0jCcKrqFiNsejV9qnkbYH8JI-4BfzprrT8sBYcPf4gFJ7PqhG35etyeb2QqOUYDeqgVFZzWITHyQEPyMAgN9HnTVVMVVLoUfGeoG1Oefg=s680-w680-h510-rw" 
                   alt="Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
