@@ -55,7 +55,7 @@ const About = () => {
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="/lovable-uploads/9897115a-b317-4c81-a85a-ea9454853a2a.png" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqOZNcHZuOuWtoFnundd2F7A-150Y1LfZZc84AIcrXV7VGMIGWU8EB8X-iFHbgP7XgFJKgsWOu4aLvhPjZHHRRl0afpCxJCTEqK0rZ3wbgKN-PBQE71ptnMRctANfDht48kRUk1=s680-w680-h510-rw" 
                   alt="Lentes Varilux" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
