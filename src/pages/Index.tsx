@@ -1,4 +1,3 @@
-
 import { useState, useEffect, Suspense } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -9,6 +8,7 @@ import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Instagram from '../components/Instagram';
 import Footer from '../components/Footer';
+import OnlineCounter from '../components/OnlineCounter';
 
 // Simple error boundary component
 const ErrorBoundary = ({ children, fallback, componentName }) => {
@@ -174,6 +174,9 @@ const Index = () => {
       >
         <Footer />
       </ErrorBoundary>
+      
+      {/* Online Counter */}
+      <OnlineCounter />
       
       {/* WhatsApp Fixed Button */}
       <a
