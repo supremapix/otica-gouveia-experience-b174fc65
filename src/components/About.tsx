@@ -48,14 +48,14 @@ const About = () => {
             <div className="space-y-4">
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqoRMGTZJFtSv0URx_wZDRPfuOoQMVAD0jCcKrqFiNsejV9qnkbYH8JI-4BfzprrT8sBYcPf4gFJ7PqhG35etyeb2QqOUYDeqgVFZzWITHyQEPyMAgN9HnTVVMVVLoUfGeoG1Oefg=s680-w680-h510-rw" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqW0JF-tGUdaKe7poVsGLQAhEYQy3729ZkhwbRVOiVg7AAcxn_ZnyQAWIPg-_5G334u-w2XYKG1pQHSGcePn5vTQvv40iofcJqUTZI_jWHN-htrjsLK6LSd0eF3oxmOt2VGRGpY=s680-w680-h510-rw" 
                   alt="Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqOZNcHZuOuWtoFnundd2F7A-150Y1LfZZc84AIcrXV7VGMIGWU8EB8X-iFHbgP7XgFJKgsWOu4aLvhPjZHHRRl0afpCxJCTEqK0rZ3wbgKN-PBQE71ptnMRctANfDht48kRUk1=s680-w680-h510-rw" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npkT_MUmKUT574oXWD4dpGEqxcjjb5X4GwIXaHcBVltBD1iHqRHIipuWLW4r108dMmY_mh2bc_-A27N67LiFZ3DNmwexlUe2LyGDPDoWw-PDJL279i5-AhLvL8rqw0PbT0KY0kdjQ=w141-h236-n-k-no-nu" 
                   alt="Lentes Varilux" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
@@ -64,14 +64,14 @@ const About = () => {
             <div className="space-y-4 mt-8">
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4np_Tc6rpJ3P7Ts4L2s4tOHjlwJ1V9SX7KA7GdMmSrlLihoE4H-ps4rioGL2UOBQfKxO1oCZVNKhsmeFV0Taza0lh4C-_Rp-iSVIzG9_NvtB4OelEIWP-59xJvUJWkdIqUxZw0o=s680-w680-h510-rw" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrkzSipiFnp0n-z-nXgtYWvSEkqi35vcbrrnKtmcIanniztMZnPP8OSnJAYc6a4XIHq8BR-v-DIGy753OlWeSUREDisEfKpf28aNShqjvYK6yxd1ZOuriKkN9l6RBnfZFffvCKS-w=w141-h177-n-k-no-nu" 
                   alt="Varilux Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noY_NH-0OfpPguT1ifB4Jrfp4cB6F6GcQL33ImhfTC611Xa_N7Abe2P4SY-RAWxbo1cwDC6kL_V5VNsJIQlbtO48Z_Y1BlPwLfCqa5O7QW1drwtY2QQg1znsvjK09nHvi1VhztAUw=s680-w680-h510-rw" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqvyKYE0eYC6qwKH8ZQMcH1MjNI6rmrn-iuBciIzoilsJi8chIVqafMkTADki0xxAWlufO5SjOugVR_PbzcYvv2KtqCFaaOy0t2vy3kAFPyVBCbpqUaWqP_T-DiT5TrCmAvv96n=w141-h101-n-k-no-nu" 
                   alt="Nossa loja" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
