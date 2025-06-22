@@ -71,7 +71,7 @@ const About = () => {
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqvyKYE0eYC6qwKH8ZQMcH1MjNI6rmrn-iuBciIzoilsJi8chIVqafMkTADki0xxAWlufO5SjOugVR_PbzcYvv2KtqCFaaOy0t2vy3kAFPyVBCbpqUaWqP_T-DiT5TrCmAvv96n=w141-h101-n-k-no-nu" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noWWc_aTV3NDRmsnGVsoF08Lgp-59xwK5MYroL7Ycp0b5sTeQ8WWVFSrsS5lXK8PWxc8rRVtHS77Mu5MmcyHyLd9RuEKAWDfSiVV2w-i1UsEGUuRq0OxN924yY4RsGKfSVVw9F_=s680-w680-h510-rw" 
                   alt="Nossa loja" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
