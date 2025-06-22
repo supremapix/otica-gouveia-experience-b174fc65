@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -67,7 +68,7 @@ const Products = () => {
     {
       id: 8,
       name: "Ray-Ban Round Double Bridge",
-      category: "masculino",
+      category: "feminino",
       image: "/lovable-uploads/1be253aa-66d3-4954-a782-d2e82afe7b50.png",
       description: "Modelo redondo clássico com dupla ponte e lentes degradê marrom. Uma releitura moderna do estilo vintage que nunca sai de moda.",
       price: "R$ 699,00"
