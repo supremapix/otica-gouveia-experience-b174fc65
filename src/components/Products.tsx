@@ -93,7 +93,7 @@ const Products = () => {
       name: "Victor Hugo VH1914 + VH2029",
       category: "feminino", 
       image: "/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.png",
-      description: "Conjunto Victor Hugo: Grau VH1914 com armação dourada super leve e lente quadrada oversize + Sol VH2029 com lente marrom degradê. Extremamente elegante, acompanha case original.",
+      description: "Conjunto Victor Hugo: Grau com armação dourada super leve e lente quadrada oversize + Sol com lente marrom degradê. Extremamente elegante, acompanha case original.",
       price: "A partir de R$ 129,00"
     },
     {
