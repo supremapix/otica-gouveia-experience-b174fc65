@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -104,6 +103,30 @@ const Products = () => {
       image: "/lovable-uploads/35e542ae-f892-4c53-8e2f-db75ce35721e.png", 
       description: "Óculos esportivo máscara estilo Oakley Sutro, lente única espelhada azul com reflexos roxos. Ideal para ciclismo, corrida, motociclismo e uso outdoor. Proteção UV400.",
       price: "A partir de R$ 42,00"
+    },
+    {
+      id: 13,
+      name: "Evoke Retrô Square",
+      category: "masculino",
+      image: "/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.png",
+      description: "Armação robusta em acetato preto com interior levemente tartaruga, lente marrom degradê. Estilo urbano, moderno e sofisticado. Ideal para dia a dia ou praia.",
+      price: "A partir de R$ 119,00"
+    },
+    {
+      id: 14,
+      name: "Evoke Round Feminino",
+      category: "feminino",
+      image: "/lovable-uploads/9c6d314e-f050-4664-965f-bbe9ebc6bf8f.png",
+      description: "Armação em acetato translúcido âmbar (caramelo claro) com lente marrom degradê. Formato arredondado, leve, moderno, super estiloso, perfeito para looks casuais.",
+      price: "A partir de R$ 99,00"
+    },
+    {
+      id: 15,
+      name: "HB Switch Clip-On",
+      category: "feminino",
+      image: "/lovable-uploads/593e7657-b084-4527-afc6-3be7b4cf974c.png",
+      description: "Armação de grau com clip solar magnético. Vem com dois clips solares polarizados: um preto tradicional e outro no padrão tartaruga. Sistema magnético prático, ideal para quem quer um 2 em 1.",
+      price: "A partir de R$ 139,00"
     }
   ];
 
