@@ -7,6 +7,8 @@ const Products = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const isMobile = useIsMobile();
 
+  console.log('Products component render:', { isMobile, activeCategory, isInView });
+
   const products = [
     {
       id: 1,
@@ -134,6 +136,12 @@ const Products = () => {
     ? products 
     : products.filter(product => product.category === activeCategory);
 
+  console.log('Filtered products:', { 
+    totalProducts: products.length,
+    filteredCount: filteredProducts.length,
+    activeCategory 
+  });
+
   const [selectedProduct, setSelectedProduct] = useState<null | typeof products[0]>(null);
 
   return (
@@ -206,46 +214,56 @@ const Products = () => {
           </button>
         </div>
 
-        <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-700 ease-out ${
+        <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px] transition-all duration-700 ease-out ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
-          {filteredProducts.map((product, index) => (
-            <div 
-              key={product.id}
-              className="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-gray-200 transition-all duration-300 hover:shadow-md hover:-translate-y-1 cursor-pointer"
-              onClick={() => setSelectedProduct(product)}
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="h-64 overflow-hidden">
-                <img 
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-lg font-bold text-brand-gray-900">{product.name}</h3>
-                  <span className="bg-brand-red/10 text-brand-red text-xs px-2 py-1 rounded-full font-medium">
-                    {product.category.charAt(0).toUpperCase() + product.category.slice(1)}
-                  </span>
-                </div>
-                <p className="text-brand-gray-700 text-sm mb-4">{product.description}</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-brand-gray-900 font-medium">{product.price}</span>
-                  <button 
-                    className="text-brand-red text-sm font-medium hover:underline"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      window.open("https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20tenho%20interesse%20no%20produto%20" + product.name + ".%20Pode%20me%20ajudar?", "_blank");
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product, index) => (
+              <div 
+                key={product.id}
+                className="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-gray-200 transition-all duration-300 hover:shadow-md hover:-translate-y-1 cursor-pointer"
+                onClick={() => setSelectedProduct(product)}
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="h-64 overflow-hidden">
+                  <img 
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    onError={(e) => {
+                      console.error('Image failed to load:', product.image);
+                      e.currentTarget.style.display = 'none';
                     }}
-                  >
-                    Saber mais
-                  </button>
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-bold text-brand-gray-900">{product.name}</h3>
+                    <span className="bg-brand-red/10 text-brand-red text-xs px-2 py-1 rounded-full font-medium">
+                      {product.category.charAt(0).toUpperCase() + product.category.slice(1)}
+                    </span>
+                  </div>
+                  <p className="text-brand-gray-700 text-sm mb-4">{product.description}</p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-brand-gray-900 font-medium">{product.price}</span>
+                    <button 
+                      className="text-brand-red text-sm font-medium hover:underline"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open("https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20tenho%20interesse%20no%20produto%20" + product.name + ".%20Pode%20me%20ajudar?", "_blank");
+                      }}
+                    >
+                      Saber mais
+                    </button>
+                  </div>
                 </div>
               </div>
+            ))
+          ) : (
+            <div className="col-span-full text-center py-8">
+              <p className="text-brand-gray-500">Nenhum produto encontrado para esta categoria.</p>
             </div>
-          ))}
+          )}
         </div>
 
         <div className={`mt-20 transition-all duration-1000 ease-out delay-300 ${
