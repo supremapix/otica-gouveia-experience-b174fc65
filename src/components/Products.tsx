@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -80,6 +79,30 @@ const Products = () => {
       image: "/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.png",
       description: "O icônico modelo redondo com armação dourada e lentes G-15 Classic em verde escuro. Um clássico atemporal para todos os momentos.",
       price: "R$ 499,00"
+    },
+    {
+      id: 10,
+      name: "Disney Infantil",
+      category: "infantil",
+      image: "/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.png",
+      description: "Armação infantil em acetato lilás com hastes internas na cor rosa. Super leve, confortável e resistente para o dia a dia das crianças. Ideal para volta às aulas e uso escolar.",
+      price: "A partir de R$ 59,00"
+    },
+    {
+      id: 11,
+      name: "Victor Hugo VH1914 + VH2029",
+      category: "feminino", 
+      image: "/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.png",
+      description: "Conjunto Victor Hugo: Grau VH1914 com armação dourada super leve e lente quadrada oversize + Sol VH2029 com lente marrom degradê. Extremamente elegante, acompanha case original.",
+      price: "A partir de R$ 129,00"
+    },
+    {
+      id: 12,
+      name: "Óculos Esportivo Máscara",
+      category: "masculino",
+      image: "/lovable-uploads/35e542ae-f892-4c53-8e2f-db75ce35721e.png", 
+      description: "Óculos esportivo máscara estilo Oakley Sutro, lente única espelhada azul com reflexos roxos. Ideal para ciclismo, corrida, motociclismo e uso outdoor. Proteção UV400.",
+      price: "A partir de R$ 42,00"
     }
   ];
 
