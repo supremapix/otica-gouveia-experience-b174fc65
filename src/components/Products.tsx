@@ -1,13 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useInView } from '../utils/animations';
 import { useIsMobile } from '../hooks/use-mobile';
 
 const Products = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
   const [activeCategory, setActiveCategory] = useState('all');
+  const [isLoaded, setIsLoaded] = useState(false);
   const isMobile = useIsMobile();
 
-  console.log('Products component render:', { isMobile, activeCategory, isInView });
+  // Force render after component mounts to ensure products show
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  console.log('Products component render:', { isMobile, activeCategory, isInView, isLoaded });
 
   const products = [
     {
@@ -144,11 +153,14 @@ const Products = () => {
 
   const [selectedProduct, setSelectedProduct] = useState<null | typeof products[0]>(null);
 
+  // Show products immediately or with animation based on load state
+  const shouldShowProducts = isLoaded || isInView;
+
   return (
     <section id="products" className="section-padding bg-white" ref={ref as React.RefObject<HTMLDivElement>}>
       <div className="section-container">
         <div className={`text-center mb-12 transition-all duration-1000 ease-out ${
-          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <span className="text-brand-red text-sm font-semibold uppercase tracking-wider">CATÁLOGO</span>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-900 mt-2">
@@ -160,7 +172,7 @@ const Products = () => {
         </div>
 
         <div className={`flex flex-wrap justify-center gap-2 sm:gap-4 mb-10 transition-all duration-1000 ease-out delay-200 ${
-          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <button
             onClick={() => setActiveCategory('all')}
@@ -215,7 +227,7 @@ const Products = () => {
         </div>
 
         <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px] transition-all duration-700 ease-out ${
-          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product, index) => (
@@ -234,6 +246,7 @@ const Products = () => {
                       console.error('Image failed to load:', product.image);
                       e.currentTarget.style.display = 'none';
                     }}
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-6">
@@ -267,7 +280,7 @@ const Products = () => {
         </div>
 
         <div className={`mt-20 transition-all duration-1000 ease-out delay-300 ${
-          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <div className="text-center mb-8">
             <span className="text-brand-red text-sm font-semibold uppercase tracking-wider">PARCEIROS</span>
@@ -337,7 +350,7 @@ const Products = () => {
         </div>
 
         <div className={`mt-16 bg-brand-gray-100 rounded-2xl p-8 md:p-12 relative overflow-hidden transition-all duration-1000 ease-out delay-400 ${
-          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
