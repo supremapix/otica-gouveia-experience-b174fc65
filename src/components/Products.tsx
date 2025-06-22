@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -90,7 +91,7 @@ const Products = () => {
     },
     {
       id: 11,
-      name: "Victor Hugo VH1914 + VH2029",
+      name: "Victor Hugo Collection",
       category: "feminino", 
       image: "/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.png",
       description: "Conjunto Victor Hugo: Grau com armação dourada super leve e lente quadrada oversize + Sol com lente marrom degradê. Extremamente elegante, acompanha case original.",
