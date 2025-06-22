@@ -55,6 +55,30 @@ const Products = () => {
       image: "/lovable-uploads/4b85711f-9660-415d-a4fa-cd7f50e747ec.png",
       description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
       price: "A partir de R$ 899,00"
+    },
+    {
+      id: 7,
+      name: "Ray-Ban Hexagonal RB3548N",
+      category: "masculino",
+      image: "/lovable-uploads/1989c2bf-cbd0-4081-8776-f6c0e985a404.png",
+      description: "Design hexagonal único com armação metálica dourada e lentes escuras. Perfeito para quem busca um estilo diferenciado e moderno.",
+      price: "R$ 599,00"
+    },
+    {
+      id: 8,
+      name: "Ray-Ban Round Double Bridge RB3647N",
+      category: "masculino",
+      image: "/lovable-uploads/1be253aa-66d3-4954-a782-d2e82afe7b50.png",
+      description: "Modelo redondo clássico com dupla ponte e lentes degradê marrom. Uma releitura moderna do estilo vintage que nunca sai de moda.",
+      price: "R$ 699,00"
+    },
+    {
+      id: 9,
+      name: "Ray-Ban Round Metal RB3447 G-15 Classic",
+      category: "masculino",
+      image: "/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.png",
+      description: "O icônico modelo redondo com armação dourada e lentes G-15 Classic em verde escuro. Um clássico atemporal para todos os momentos.",
+      price: "R$ 499,00"
     }
   ];
 
