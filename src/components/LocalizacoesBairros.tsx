@@ -23,8 +23,8 @@ const LocalizacoesBairros = () => {
       cor: "from-green-500 to-green-600"
     },
     {
-      bairro: "Umbarã",
-      titulo: "Centro de Excelência Umbarã",
+      bairro: "Umbará",
+      titulo: "Centro de Excelência Umbará",
       descricao: "Nossa unidade principal com tecnologia de ponta e atendimento VIP diferenciado.",
       destacos: ["Tecnologia Alemã", "Atendimento VIP", "Laboratório Próprio"],
       link: "/otica-umbara",
