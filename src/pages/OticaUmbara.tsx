@@ -1,9 +1,13 @@
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Eye, Star, Shield, Clock, Heart, Award, Users } from 'lucide-react';
 import { useInView } from '../utils/animations';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import WhatsAppFloat from '../components/WhatsAppFloat';
 
 const OticaUmbara = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
+  const whatsappUrl = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20premium%20do%20Umbar%C3%A1.";
 
   const popularProducts = [
     { name: "Óculos de Grau Premium", price: "R$ 199,00", category: "Premium" },
@@ -30,6 +34,8 @@ const OticaUmbara = () => {
         <meta name="keywords" content="ótica umbará, centro excelência visual, óculos premium umbará, optometrista umbará" />
       </Helmet>
 
+      <Navbar />
+      
       <div className="min-h-screen bg-gradient-to-br from-brand-gray-50 to-white">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
@@ -118,9 +124,14 @@ const OticaUmbara = () => {
                     <div className="text-sm text-brand-gray-600">✓ Ajustes ilimitados</div>
                     <div className="text-sm text-brand-gray-600">✓ Acompanhamento VIP</div>
                   </div>
-                  <button className="w-full bg-brand-red text-white py-2 px-4 rounded-lg hover:bg-brand-red/90 transition-colors">
-                    Conhecer Produto
-                  </button>
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-brand-red text-white py-2 px-4 rounded-lg hover:bg-brand-red/90 transition-colors block text-center"
+                  >
+                    Conhecer Produto WhatsApp
+                  </a>
                 </div>
               ))}
             </div>
@@ -165,9 +176,14 @@ const OticaUmbara = () => {
                   <li>• Análise de lágrima</li>
                   <li>• Consultoria personalizada</li>
                 </ul>
-                <button className="bg-white text-brand-red px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-brand-red px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+                >
                   Agendar Exame Premium
-                </button>
+                </a>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
                 <h3 className="text-2xl font-bold mb-4">Lentes Sob Medida</h3>
@@ -179,9 +195,14 @@ const OticaUmbara = () => {
                   <li>• Garantia de adaptação 100%</li>
                   <li>• Suporte técnico contínuo</li>
                 </ul>
-                <button className="bg-white text-brand-red px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-brand-red px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+                >
                   Consultar Lentes
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -226,16 +247,27 @@ const OticaUmbara = () => {
               Venha conhecer nosso Centro de Excelência no Umbará e descubra o que é ter um cuidado verdadeiramente diferenciado com sua visão
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-brand-red hover:bg-brand-red/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-brand-red hover:bg-brand-red/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
+              >
                 Agendar Consulta VIP
-              </button>
-              <button className="border border-white hover:bg-white hover:text-brand-gray-900 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
-                Tour Virtual da Loja
-              </button>
+              </a>
+              <a
+                href="tel:+554131140663"
+                className="border border-white hover:bg-white hover:text-brand-gray-900 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
+              >
+                Telefone: (41) 3114-0663
+              </a>
             </div>
           </div>
         </section>
       </div>
+
+      <Footer />
+      <WhatsAppFloat />
     </>
   );
 };

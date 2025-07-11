@@ -8,6 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LojaOculosPinheirinho from "./pages/LojaOculosPinheirinho";
+import LojaOculosPinheirinho15565 from "./pages/LojaOculosPinheirinho15565";
 import OticaSitioCercado from "./pages/OticaSitioCercado";
 import OticaUmbara from "./pages/OticaUmbara";
 import { getRedirectPath } from "./utils/redirects";
@@ -38,6 +39,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/loja-de-oculos-no-pinheirinho" element={<LojaOculosPinheirinho />} />
+            <Route path="/loja-de-oculos-no-pinheirinho/15565" element={<LojaOculosPinheirinho15565 />} />
             <Route path="/otica-pinheirinho" element={<LojaOculosPinheirinho />} />
             <Route path="/otica-sitio-cercado" element={<OticaSitioCercado />} />
             <Route path="/otica-umbara" element={<OticaUmbara />} />

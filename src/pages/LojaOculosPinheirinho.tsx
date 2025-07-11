@@ -1,9 +1,13 @@
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Eye, Star, Shield, Clock, Heart } from 'lucide-react';
 import { useInView } from '../utils/animations';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import WhatsAppFloat from '../components/WhatsAppFloat';
 
 const LojaOculosPinheirinho = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
+  const whatsappUrl = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20%C3%B3culos%20no%20Pinheirinho.";
 
   const popularProducts = [
     { name: "Óculos de Grau Ray-Ban", price: "R$ 299,00", category: "Premium" },
@@ -29,6 +33,8 @@ const LojaOculosPinheirinho = () => {
         <meta name="keywords" content="ótica pinheirinho, óculos pinheirinho, exame vista pinheirinho, ótica gouveia" />
       </Helmet>
 
+      <Navbar />
+      
       <div className="min-h-screen bg-gradient-to-br from-brand-gray-50 to-white">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
@@ -109,9 +115,14 @@ const LojaOculosPinheirinho = () => {
                   <div className="text-sm text-brand-red font-semibold mb-2">{product.category}</div>
                   <h3 className="text-xl font-semibold text-brand-gray-900 mb-3">{product.name}</h3>
                   <div className="text-2xl font-bold text-brand-red mb-4">{product.price}</div>
-                  <button className="w-full bg-brand-red text-white py-2 px-4 rounded-lg hover:bg-brand-red/90 transition-colors">
-                    Saiba Mais
-                  </button>
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-brand-red text-white py-2 px-4 rounded-lg hover:bg-brand-red/90 transition-colors block text-center"
+                  >
+                    Saiba Mais WhatsApp
+                  </a>
                 </div>
               ))}
             </div>
@@ -154,9 +165,14 @@ const LojaOculosPinheirinho = () => {
                   <li>• Lentes antirreflexo incluídas</li>
                   <li>• Garantia estendida de 12 meses</li>
                 </ul>
-                <button className="bg-white text-brand-red px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-brand-red px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+                >
                   Aproveitar Oferta
-                </button>
+                </a>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
                 <h3 className="text-2xl font-bold mb-4">Lentes de Contato</h3>
@@ -166,9 +182,14 @@ const LojaOculosPinheirinho = () => {
                   <li>• Teste de adaptação gratuito</li>
                   <li>• Acompanhamento profissional</li>
                 </ul>
-                <button className="bg-white text-brand-red px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-brand-red px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+                >
                   Agendar Consulta
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -182,16 +203,27 @@ const LojaOculosPinheirinho = () => {
               Venha conhecer nossa estrutura completa e descubra por que somos a ótica preferida do Pinheirinho
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-brand-red hover:bg-brand-red/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-brand-red hover:bg-brand-red/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
+              >
                 Agendar Exame Gratuito
-              </button>
-              <button className="border border-white hover:bg-white hover:text-brand-gray-900 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
-                Ver Localização
-              </button>
+              </a>
+              <a
+                href="tel:+554131140663"
+                className="border border-white hover:bg-white hover:text-brand-gray-900 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
+              >
+                Telefone: (41) 3114-0663
+              </a>
             </div>
           </div>
         </section>
       </div>
+
+      <Footer />
+      <WhatsAppFloat />
     </>
   );
 };
