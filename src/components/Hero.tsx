@@ -27,7 +27,7 @@ const Hero = () => {
   }, []);
 
   // Usar a imagem de fundo
-  const heroImage = "/lovable-uploads/0c520e0e-67b8-406f-9c15-446e4e1f2f79.png";
+  const heroImage = "/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png";
 
   return (
     <div 

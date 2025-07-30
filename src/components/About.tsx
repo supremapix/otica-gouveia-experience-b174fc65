@@ -48,15 +48,15 @@ const About = () => {
             <div className="space-y-4">
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqW0JF-tGUdaKe7poVsGLQAhEYQy3729ZkhwbRVOiVg7AAcxn_ZnyQAWIPg-_5G334u-w2XYKG1pQHSGcePn5vTQvv40iofcJqUTZI_jWHN-htrjsLK6LSd0eF3oxmOt2VGRGpY=s680-w680-h510-rw" 
-                  alt="Ótica Gouveia" 
+                  src="/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png" 
+                  alt="Fachada da Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npkT_MUmKUT574oXWD4dpGEqxcjjb5X4GwIXaHcBVltBD1iHqRHIipuWLW4r108dMmY_mh2bc_-A27N67LiFZ3DNmwexlUe2LyGDPDoWw-PDJL279i5-AhLvL8rqw0PbT0KY0kdjQ=w141-h236-n-k-no-nu" 
-                  alt="Lentes Varilux" 
+                  src="/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png" 
+                  alt="Óculos de Sol em Exposição" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
@@ -64,15 +64,15 @@ const About = () => {
             <div className="space-y-4 mt-8">
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrkzSipiFnp0n-z-nXgtYWvSEkqi35vcbrrnKtmcIanniztMZnPP8OSnJAYc6a4XIHq8BR-v-DIGy753OlWeSUREDisEfKpf28aNShqjvYK6yxd1ZOuriKkN9l6RBnfZFffvCKS-w=w141-h177-n-k-no-nu" 
-                  alt="Varilux Ótica Gouveia" 
+                  src="/lovable-uploads/a16bdfa8-f87b-4ca6-84c5-1311998e3299.png" 
+                  alt="Vitrines com Óculos" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noWWc_aTV3NDRmsnGVsoF08Lgp-59xwK5MYroL7Ycp0b5sTeQ8WWVFSrsS5lXK8PWxc8rRVtHS77Mu5MmcyHyLd9RuEKAWDfSiVV2w-i1UsEGUuRq0OxN924yY4RsGKfSVVw9F_=s680-w680-h510-rw" 
-                  alt="Nossa loja" 
+                  src="/lovable-uploads/72458d7b-67ce-4323-8f82-f7e805b4b50c.png" 
+                  alt="Interior da Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
