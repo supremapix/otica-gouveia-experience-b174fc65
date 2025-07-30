@@ -4,10 +4,27 @@ import { useInView } from '../utils/animations';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
+import SEO from '../components/SEO';
+import { createOpticalStoreSchema, createBreadcrumbSchema, createLocalBusinessSchema } from '../utils/schemas';
 
 const OticaSitioCercado = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
   const whatsappUrl = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20%C3%B3culos%20no%20S%C3%ADtio%20Cercado.";
+
+  // SEO Schema
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Ótica Gouveia", url: "https://www.gouveiacuritiba.com.br/" },
+    { name: "Sítio Cercado", url: "https://www.gouveiacuritiba.com.br/otica-sitio-cercado" }
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      createOpticalStoreSchema("Sítio Cercado"),
+      createLocalBusinessSchema("Sítio Cercado"),
+      breadcrumbSchema
+    ]
+  };
 
   const popularProducts = [
     { name: "Óculos de Grau Econômico", price: "R$ 89,00", category: "Popular" },
@@ -27,11 +44,13 @@ const OticaSitioCercado = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ótica no Sítio Cercado - Ótica Gouveia Curitiba</title>
-        <meta name="description" content="Ótica Gouveia atende Sítio Cercado com óculos de grau, sol e lentes. Preços populares e exame de vista gratuito para toda família." />
-        <meta name="keywords" content="ótica sítio cercado, óculos barato sítio cercado, exame vista gratuito" />
-      </Helmet>
+      <SEO 
+        title="Ótica no Sítio Cercado Curitiba - Ótica Gouveia | Preços Populares"
+        description="Ótica Gouveia atende Sítio Cercado com óculos de grau, sol e lentes. Preços populares e exame de vista gratuito para toda família. Qualidade garantida."
+        keywords="ótica sítio cercado, óculos barato sítio cercado, exame vista gratuito sítio cercado, ótica gouveia sítio cercado, óculos preço popular"
+        canonicalUrl="/otica-sitio-cercado"
+        structuredData={combinedSchema}
+      />
 
       <Navbar />
       

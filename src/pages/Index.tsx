@@ -10,6 +10,8 @@ import Contact from '../components/Contact';
 import Instagram from '../components/Instagram';
 import Footer from '../components/Footer';
 import OnlineCounter from '../components/OnlineCounter';
+import SEO from '../components/SEO';
+import { createOrganizationSchema, createWebsiteSchema, createLocalBusinessSchema } from '../utils/schemas';
 
 // Simple error boundary component
 const ErrorBoundary = ({ children, fallback, componentName }) => {
@@ -50,6 +52,16 @@ const ComponentLoader = ({ component: Component, name }) => {
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [pageError, setPageError] = useState(null);
+
+  // SEO Schema
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      createOrganizationSchema(),
+      createWebsiteSchema(),
+      createLocalBusinessSchema("Curitiba")
+    ]
+  };
 
   useEffect(() => {
     // Add viewport meta tag to prevent user scaling/zooming on mobile
@@ -113,6 +125,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      <SEO 
+        title="Ótica Gouveia - Óculos de Grau, Sol e Lentes em Curitiba | Exame Gratuito"
+        description="Ótica Gouveia em Curitiba - Óculos de grau, sol, lentes de contato e exame de vista gratuito. Atendemos Pinheirinho, Umbará e região. Qualidade e tradição há anos."
+        keywords="ótica curitiba, óculos grau curitiba, óculos sol curitiba, lentes contato curitiba, exame vista gratuito curitiba, ótica pinheirinho, ótica umbará, ótica gouveia"
+        canonicalUrl="/"
+        structuredData={combinedSchema}
+        ogType="website"
+      />
+      
       <ErrorBoundary 
         componentName="Navbar"
         fallback={<div className="p-4 text-red-500">Error loading Navbar</div>}

@@ -1,10 +1,78 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Home Page -->
   <url>
     <loc>https://www.gouveiacuritiba.com.br/</loc>
-    <lastmod>2025-03-21</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png</image:loc>
+      <image:caption>Ótica Gouveia - Fachada da loja</image:caption>
+    </image:image>
   </url>
+
+  <!-- Pinheirinho Main Page -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho</loc>
+    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png</image:loc>
+      <image:caption>Ótica Gouveia Pinheirinho</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Pinheirinho Store 15565 -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565</loc>
+    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/72458d7b-67ce-4323-8f82-f7e805b4b50c.png</image:loc>
+      <image:caption>Interior da Ótica Gouveia</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Sítio Cercado -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-sitio-cercado</loc>
+    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/a16bdfa8-f87b-4ca6-84c5-1311998e3299.png</image:loc>
+      <image:caption>Vitrines com óculos</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Umbará -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-umbara</loc>
+    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
+      <image:caption>Óculos de sol em exposição</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Alternative URLs -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-pinheirinho</loc>
+    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

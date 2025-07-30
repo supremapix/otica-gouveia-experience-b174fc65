@@ -4,10 +4,27 @@ import { useInView } from '../utils/animations';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
+import SEO from '../components/SEO';
+import { createOpticalStoreSchema, createBreadcrumbSchema, createLocalBusinessSchema } from '../utils/schemas';
 
 const OticaUmbara = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
   const whatsappUrl = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20premium%20do%20Umbar%C3%A1.";
+
+  // SEO Schema
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Ótica Gouveia", url: "https://www.gouveiacuritiba.com.br/" },
+    { name: "Umbará", url: "https://www.gouveiacuritiba.com.br/otica-umbara" }
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      createOpticalStoreSchema("Umbará"),
+      createLocalBusinessSchema("Umbará"),
+      breadcrumbSchema
+    ]
+  };
 
   const popularProducts = [
     { name: "Óculos de Grau Premium", price: "R$ 199,00", category: "Premium" },
@@ -28,11 +45,13 @@ const OticaUmbara = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ótica Gouveia Umbará - Centro de Excelência em Saúde Visual</title>
-        <meta name="description" content="Ótica Gouveia Umbará - Centro de excelência em saúde visual. Equipamentos modernos, profissionais especializados e atendimento VIP no Umbará." />
-        <meta name="keywords" content="ótica umbará, centro excelência visual, óculos premium umbará, optometrista umbará" />
-      </Helmet>
+      <SEO 
+        title="Ótica no Umbará Curitiba - Ótica Gouveia | Tecnologia e Tradição"
+        description="Ótica Gouveia no Umbará oferece óculos de grau, sol e lentes com tecnologia avançada. Exame de vista gratuito e atendimento especializado em Curitiba."
+        keywords="ótica umbará, óculos umbará curitiba, exame vista umbará, ótica gouveia umbará, óculos grau umbará, lentes contato umbará"
+        canonicalUrl="/otica-umbara"
+        structuredData={combinedSchema}
+      />
 
       <Navbar />
       

@@ -4,6 +4,8 @@ import { useInView } from '../utils/animations';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
+import SEO from '../components/SEO';
+import { createOpticalStoreSchema, createBreadcrumbSchema, createProductSchema } from '../utils/schemas';
 
 const LojaOculosPinheirinho15565 = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
@@ -18,6 +20,32 @@ const LojaOculosPinheirinho15565 = () => {
     { name: "Óculos Esportivo", price: "R$ 189,00", category: "Sport", highlight: "Performance" }
   ];
 
+  // SEO Schema
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Ótica Gouveia", url: "https://www.gouveiacuritiba.com.br/" },
+    { name: "Pinheirinho", url: "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho" },
+    { name: "Loja 15565", url: "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565" }
+  ]);
+
+  const productSchemas = featuredProducts.map(product => 
+    createProductSchema({
+      name: product.name,
+      price: product.price,
+      description: `${product.name} - ${product.highlight}`,
+      category: product.category
+    })
+  );
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      createOpticalStoreSchema("Pinheirinho"),
+      breadcrumbSchema,
+      ...productSchemas
+    ]
+  };
+
+
   const services = [
     { icon: Eye, title: "Exame de Vista Gratuito", desc: "Consulta completa sem custo" },
     { icon: Glasses, title: "Ajuste Profissional", desc: "Ajustes precisos e confortáveis" },
@@ -29,12 +57,13 @@ const LojaOculosPinheirinho15565 = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Loja de Óculos no Pinheirinho - Ótica Gouveia Curitiba</title>
-        <meta name="description" content="Loja de óculos no Pinheirinho, Curitiba. Ótica Gouveia oferece óculos de grau, sol, lentes e exame de vista gratuito. Preços promocionais e qualidade garantida." />
-        <meta name="keywords" content="loja óculos pinheirinho, ótica pinheirinho, óculos grau pinheirinho, exame vista gratuito pinheirinho" />
-        <link rel="canonical" href="https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565/" />
-      </Helmet>
+      <SEO 
+        title="Loja de Óculos 15565 no Pinheirinho - Ótica Gouveia Curitiba"
+        description="Loja de óculos no Pinheirinho, Curitiba. Ótica Gouveia oferece óculos de grau, sol, lentes e exame de vista gratuito. Preços promocionais e qualidade garantida."
+        keywords="loja óculos pinheirinho 15565, ótica pinheirinho curitiba, óculos grau pinheirinho, exame vista gratuito pinheirinho, loja 15565"
+        canonicalUrl="/loja-de-oculos-no-pinheirinho/15565"
+        structuredData={combinedSchema}
+      />
 
       <Navbar />
       

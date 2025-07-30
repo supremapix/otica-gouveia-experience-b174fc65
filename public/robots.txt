@@ -1,4 +1,21 @@
 
 User-agent: *
 Allow: /
+
+# Sitemap
 Sitemap: https://www.gouveiacuritiba.com.br/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow specific paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /loja-de-oculos-no-pinheirinho
+Allow: /loja-de-oculos-no-pinheirinho/15565
+Allow: /otica-sitio-cercado
+Allow: /otica-umbara

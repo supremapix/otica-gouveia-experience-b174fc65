@@ -4,10 +4,27 @@ import { useInView } from '../utils/animations';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
+import SEO from '../components/SEO';
+import { createOpticalStoreSchema, createBreadcrumbSchema, createLocalBusinessSchema } from '../utils/schemas';
 
 const LojaOculosPinheirinho = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
   const whatsappUrl = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20%C3%B3culos%20no%20Pinheirinho.";
+
+  // SEO Schema
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Ótica Gouveia", url: "https://www.gouveiacuritiba.com.br/" },
+    { name: "Pinheirinho", url: "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho" }
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      createOpticalStoreSchema("Pinheirinho"),
+      createLocalBusinessSchema("Pinheirinho"),
+      breadcrumbSchema
+    ]
+  };
 
   const popularProducts = [
     { name: "Óculos de Grau Ray-Ban", price: "R$ 299,00", category: "Premium" },
@@ -27,11 +44,13 @@ const LojaOculosPinheirinho = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Loja de Óculos no Pinheirinho - Ótica Gouveia Curitiba</title>
-        <meta name="description" content="Ótica Gouveia no Pinheirinho - Óculos de grau, sol e lentes de contato. Exame de vista gratuito. Atendemos toda região do Pinheirinho em Curitiba." />
-        <meta name="keywords" content="ótica pinheirinho, óculos pinheirinho, exame vista pinheirinho, ótica gouveia" />
-      </Helmet>
+      <SEO 
+        title="Loja de Óculos no Pinheirinho Curitiba - Ótica Gouveia | Exame Gratuito"
+        description="Ótica Gouveia no Pinheirinho - Óculos de grau, sol e lentes de contato. Exame de vista gratuito. Atendemos toda região do Pinheirinho em Curitiba com preços acessíveis."
+        keywords="ótica pinheirinho, óculos pinheirinho curitiba, exame vista pinheirinho, loja óculos pinheirinho, ótica gouveia pinheirinho, óculos grau pinheirinho"
+        canonicalUrl="/loja-de-oculos-no-pinheirinho"
+        structuredData={combinedSchema}
+      />
 
       <Navbar />
       
