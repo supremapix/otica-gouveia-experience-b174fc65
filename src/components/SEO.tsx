@@ -67,6 +67,7 @@ const SEO = ({
       {/* Additional SEO Tags */}
       <meta name="theme-color" content="#ef4444" />
       <meta name="msapplication-TileColor" content="#ef4444" />
+      <meta name="google-site-verification" content="Vpi-8OrZzWV8kNdWbjC1fMIIDPtdUcKYWvHCllEaO1s" />
       
       {/* Geo Tags for Local SEO */}
       <meta name="geo.region" content="BR-PR" />

@@ -79,8 +79,31 @@ const OticaUmbara = () => {
           </div>
         </section>
 
+        {/* Vídeo do Bairro */}
+        <section className="section-padding bg-white">
+          <div className="section-container">
+            <h2 className="text-3xl font-bold text-brand-gray-900 mb-8 text-center">
+              Conheça o Umbará
+            </h2>
+            <div className="max-w-4xl mx-auto mb-16">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/TijvFL9UGKU"
+                  title="Conheça o Umbará - Curitiba"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Sobre o Centro */}
-        <section className="section-padding bg-white" ref={ref as React.RefObject<HTMLDivElement>}>
+        <section className="section-padding bg-brand-gray-50" ref={ref as React.RefObject<HTMLDivElement>}>
           <div className="section-container">
             <div className={`transition-all duration-1000 ease-out ${
               isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
