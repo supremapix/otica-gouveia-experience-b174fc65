@@ -1,15 +1,19 @@
-import { Helmet } from 'react-helmet-async';
-import { MapPin, Eye, Star, Shield, Clock, Heart, Glasses, Award } from 'lucide-react';
-import { useInView } from '../utils/animations';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import WhatsAppFloat from '../components/WhatsAppFloat';
-import SEO from '../components/SEO';
-import { createOpticalStoreSchema, createBreadcrumbSchema, createProductSchema } from '../utils/schemas';
+import React from 'react';
+import { MapPin, Clock } from 'lucide-react';
+import { useInView } from '@/utils/animations';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
+import FloatingActions from '@/components/FloatingActions';
+import FAQ from '@/components/FAQ';
+import EnhancedHero from '@/components/EnhancedHero';
+import EnhancedSEO from '@/components/EnhancedSEO/EnhancedSEO';
+import { createBreadcrumbStructuredData } from '@/components/EnhancedSEO/utils';
+import { createOpticalStoreSchema, createLocalBusinessSchema, createProductSchema } from '@/utils/schemas';
 
 const LojaOculosPinheirinho15565 = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
-  const whatsappUrl = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20%C3%B3culos%20no%20Pinheirinho.";
+  const whatsappUrl = "https://wa.me/5541999123456?text=Olá! Gostaria de agendar um exame de vista no Pinheirinho.";
 
   const featuredProducts = [
     { name: "Óculos de Grau Completo", price: "R$ 99,00", category: "Promocional", highlight: "Mais Vendido" },
@@ -20,13 +24,16 @@ const LojaOculosPinheirinho15565 = () => {
     { name: "Óculos Esportivo", price: "R$ 189,00", category: "Sport", highlight: "Performance" }
   ];
 
-  // SEO Schema
-  const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Ótica Gouveia", url: "https://www.gouveiacuritiba.com.br/" },
-    { name: "Pinheirinho", url: "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho" },
-    { name: "Loja 15565", url: "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565" }
+  // SEO e Structured Data
+  const breadcrumbData = createBreadcrumbStructuredData([
+    { name: 'Início', url: 'https://www.gouveiacuritiba.com.br/' },
+    { name: 'Óticas em Curitiba', url: 'https://www.gouveiacuritiba.com.br/oticas-curitiba' },
+    { name: 'Pinheirinho', url: 'https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565' }
   ]);
 
+  const opticalStoreData = createOpticalStoreSchema('Pinheirinho');
+  const localBusinessData = createLocalBusinessSchema('Pinheirinho');
+  
   const productSchemas = featuredProducts.map(product => 
     createProductSchema({
       name: product.name,
@@ -36,72 +43,62 @@ const LojaOculosPinheirinho15565 = () => {
     })
   );
 
-  const combinedSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      createOpticalStoreSchema("Pinheirinho"),
-      breadcrumbSchema,
-      ...productSchemas
-    ]
-  };
+  const structuredData = [breadcrumbData, opticalStoreData, localBusinessData, ...productSchemas];
 
 
   const services = [
-    { icon: Eye, title: "Exame de Vista Gratuito", desc: "Consulta completa sem custo" },
-    { icon: Glasses, title: "Ajuste Profissional", desc: "Ajustes precisos e confortáveis" },
-    { icon: Shield, title: "Garantia Estendida", desc: "Proteção total dos seus óculos" },
-    { icon: Clock, title: "Entrega Expressa", desc: "Pronto em até 3 dias úteis" },
-    { icon: Award, title: "Qualidade Certificada", desc: "Produtos aprovados e testados" },
-    { icon: Heart, title: "Atendimento Personalizado", desc: "Cuidado especial com cada cliente" }
+    { icon: 'Eye', title: "Exame de Vista Gratuito", desc: "Consulta completa sem custo" },
+    { icon: 'Glasses', title: "Ajuste Profissional", desc: "Ajustes precisos e confortáveis" },
+    { icon: 'Shield', title: "Garantia Estendida", desc: "Proteção total dos seus óculos" },
+    { icon: 'Clock', title: "Entrega Expressa", desc: "Pronto em até 3 dias úteis" },
+    { icon: 'Award', title: "Qualidade Certificada", desc: "Produtos aprovados e testados" },
+    { icon: 'Heart', title: "Atendimento Personalizado", desc: "Cuidado especial com cada cliente" }
   ];
 
   return (
     <>
-      <SEO 
+      <EnhancedSEO
         title="Loja de Óculos 15565 no Pinheirinho - Ótica Gouveia Curitiba"
         description="Loja de óculos no Pinheirinho, Curitiba. Ótica Gouveia oferece óculos de grau, sol, lentes e exame de vista gratuito. Preços promocionais e qualidade garantida."
         keywords="loja óculos pinheirinho 15565, ótica pinheirinho curitiba, óculos grau pinheirinho, exame vista gratuito pinheirinho, loja 15565"
         canonicalUrl="/loja-de-oculos-no-pinheirinho/15565"
-        structuredData={combinedSchema}
+        structuredData={structuredData}
+        breadcrumbs={[
+          { name: 'Início', url: '/' },
+          { name: 'Óticas em Curitiba', url: '/oticas-curitiba' },
+          { name: 'Pinheirinho 15565', url: '/loja-de-oculos-no-pinheirinho/15565' }
+        ]}
+        preloadResources={[
+          { href: '/hero-background.jpg', as: 'image' }
+        ]}
       />
-
-      <Navbar />
       
-      <div className="min-h-screen bg-gradient-to-br from-brand-gray-50 to-white">
-        {/* Hero Section */}
-        <section className="relative py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-red/10 to-brand-blue/10"></div>
-          <div className="section-container relative z-10">
-            <div className="text-center max-w-4xl mx-auto">
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <MapPin className="text-brand-red" size={24} />
-                <span className="text-brand-red font-semibold">PINHEIRINHO - CURITIBA</span>
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-brand-gray-900 mb-6">
-                Loja de Óculos no <span className="text-brand-red">Pinheirinho</span>
-              </h1>
-              <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-full inline-block mb-6">
-                <span className="font-semibold">✨ PROMOÇÃO ESPECIAL ATIVA</span>
-              </div>
-              <p className="text-xl text-brand-gray-600 leading-relaxed mb-8">
-                A melhor loja de óculos do Pinheirinho! Óculos completos a partir de R$ 99,00 
-                com exame de vista gratuito e garantia total.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-brand-red hover:bg-brand-red/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
-                >
-                  Ver Promoções WhatsApp
-                </a>
-                <a
-                  href="tel:+554131140663"
-                  className="border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white px-8 py-4 rounded-lg font-semibold transition-colors"
-                >
-                  Ligar Agora: (41) 3114-0663
-                </a>
+      <div className="min-h-screen">
+        <Navbar />
+        
+        <EnhancedHero
+          title="Loja de Óculos Pinheirinho"
+          subtitle="A melhor loja de óculos do Pinheirinho! Óculos completos a partir de R$ 99,00 com exame de vista gratuito e garantia total"
+          location="Pinheirinho - Curitiba"
+          backgroundImage="/hero-background.jpg"
+          whatsappUrl={whatsappUrl}
+          phoneNumber="+5541999123456"
+        />
+
+        {/* YouTube Video Section */}
+        <section className="py-16 px-4 bg-background/50">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Conheça o Pinheirinho</h2>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
+                <iframe
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Pinheirinho - Curitiba"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </div>
@@ -154,11 +151,11 @@ const LojaOculosPinheirinho15565 = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-lg text-center group hover:shadow-xl transition-shadow">
-                  <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-red/20 transition-colors">
-                    <service.icon className="text-brand-red" size={32} />
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                    <div className="text-primary text-2xl">{service.icon === 'Eye' ? '👁️' : service.icon === 'Glasses' ? '👓' : service.icon === 'Shield' ? '🛡️' : service.icon === 'Clock' ? '⏰' : service.icon === 'Award' ? '🏆' : '❤️'}</div>
                   </div>
-                  <h3 className="text-xl font-semibold text-brand-gray-900 mb-3">{service.title}</h3>
-                  <p className="text-brand-gray-600">{service.desc}</p>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground">{service.desc}</p>
                 </div>
               ))}
             </div>
@@ -244,34 +241,12 @@ const LojaOculosPinheirinho15565 = () => {
           </div>
         </section>
 
-        {/* CTA Final */}
-        <section className="section-padding bg-brand-gray-900 text-white">
-          <div className="section-container text-center">
-            <h2 className="text-3xl font-bold mb-6">Visite Nossa Loja no Pinheirinho</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Venha conhecer nossa loja e descobrir por que somos a ótica de confiança do Pinheirinho há mais de 15 anos
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
-              >
-                WhatsApp: (41) 99161-0663
-              </a>
-              <a
-                href="tel:+554131140663"
-                className="border border-white hover:bg-white hover:text-brand-gray-900 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
-              >
-                Telefone: (41) 3114-0663
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* FAQ Section */}
+        <FAQ />
       </div>
 
       <Footer />
+      <FloatingActions />
       <WhatsAppFloat />
     </>
   );

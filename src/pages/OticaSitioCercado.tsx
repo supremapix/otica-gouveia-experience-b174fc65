@@ -1,30 +1,31 @@
-import { Helmet } from 'react-helmet-async';
+import React from 'react';
 import { MapPin, Eye, Star, Shield, Clock, Heart } from 'lucide-react';
-import { useInView } from '../utils/animations';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import WhatsAppFloat from '../components/WhatsAppFloat';
-import SEO from '../components/SEO';
-import { createOpticalStoreSchema, createBreadcrumbSchema, createLocalBusinessSchema } from '../utils/schemas';
+import { useInView } from '@/utils/animations';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
+import FloatingActions from '@/components/FloatingActions';
+import FAQ from '@/components/FAQ';
+import EnhancedHero from '@/components/EnhancedHero';
+import EnhancedSEO from '@/components/EnhancedSEO/EnhancedSEO';
+import { createBreadcrumbStructuredData } from '@/components/EnhancedSEO/utils';
+import { createOpticalStoreSchema, createLocalBusinessSchema } from '@/utils/schemas';
 
 const OticaSitioCercado = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
-  const whatsappUrl = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20%C3%B3culos%20no%20S%C3%ADtio%20Cercado.";
+  const whatsappUrl = "https://wa.me/5541999123456?text=Olá! Gostaria de agendar um exame de vista no Sítio Cercado.";
 
-  // SEO Schema
-  const breadcrumbSchema = createBreadcrumbSchema([
-    { name: "Ótica Gouveia", url: "https://www.gouveiacuritiba.com.br/" },
-    { name: "Sítio Cercado", url: "https://www.gouveiacuritiba.com.br/otica-sitio-cercado" }
+  // SEO e Structured Data
+  const breadcrumbData = createBreadcrumbStructuredData([
+    { name: 'Início', url: 'https://www.gouveiacuritiba.com.br/' },
+    { name: 'Óticas em Curitiba', url: 'https://www.gouveiacuritiba.com.br/oticas-curitiba' },
+    { name: 'Sítio Cercado', url: 'https://www.gouveiacuritiba.com.br/otica-sitio-cercado' }
   ]);
 
-  const combinedSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      createOpticalStoreSchema("Sítio Cercado"),
-      createLocalBusinessSchema("Sítio Cercado"),
-      breadcrumbSchema
-    ]
-  };
+  const opticalStoreData = createOpticalStoreSchema('Sítio Cercado');
+  const localBusinessData = createLocalBusinessSchema('Sítio Cercado');
+
+  const structuredData = [breadcrumbData, opticalStoreData, localBusinessData];
 
   const popularProducts = [
     { name: "Óculos de Grau Econômico", price: "R$ 89,00", category: "Popular" },
@@ -44,54 +45,47 @@ const OticaSitioCercado = () => {
 
   return (
     <>
-      <SEO 
-        title="Ótica no Sítio Cercado Curitiba - Ótica Gouveia | Preços Populares"
-        description="Ótica Gouveia atende Sítio Cercado com óculos de grau, sol e lentes. Preços populares e exame de vista gratuito para toda família. Qualidade garantida."
-        keywords="ótica sítio cercado, óculos barato sítio cercado, exame vista gratuito sítio cercado, ótica gouveia sítio cercado, óculos preço popular"
+      <EnhancedSEO
+        title="Ótica no Sítio Cercado - Curitiba | Ótica Gouveia"
+        description="Ótica no Sítio Cercado com exames de vista gratuitos, armações de qualidade e lentes especializadas. Visite a Ótica Gouveia e tenha atendimento personalizado."
+        keywords="ótica no sítio cercado, óculos sítio cercado, exame de vista sítio cercado, ótica curitiba, lentes de grau curitiba"
         canonicalUrl="/otica-sitio-cercado"
-        structuredData={combinedSchema}
+        structuredData={structuredData}
+        breadcrumbs={[
+          { name: 'Início', url: '/' },
+          { name: 'Óticas em Curitiba', url: '/oticas-curitiba' },
+          { name: 'Sítio Cercado', url: '/otica-sitio-cercado' }
+        ]}
+        preloadResources={[
+          { href: '/hero-background.jpg', as: 'image' }
+        ]}
       />
-
-      <Navbar />
       
-      <div className="min-h-screen bg-gradient-to-br from-brand-gray-50 to-white">
-        {/* Hero Section */}
-        <section className="relative py-20 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-red/10 to-brand-blue/10"></div>
-          <div className="section-container relative z-10">
-            <div className="text-center max-w-4xl mx-auto">
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <MapPin className="text-brand-red" size={24} />
-                <span className="text-brand-red font-semibold">SÍTIO CERCADO - CURITIBA</span>
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-brand-gray-900 mb-6">
-                Ótica Gouveia <span className="text-brand-red">Sítio Cercado</span>
-              </h1>
-              <p className="text-xl text-brand-gray-600 leading-relaxed">
-                Cuidando da visão das famílias do Sítio Cercado com carinho, qualidade e preços justos. 
-                Sua saúde ocular é nossa prioridade.
-              </p>
-            </div>
-          </div>
-        </section>
+      <div className="min-h-screen">
+        <Navbar />
+        
+        <EnhancedHero
+          title="Ótica Sítio Cercado"
+          subtitle="Cuidando da visão das famílias do Sítio Cercado com carinho, qualidade e preços justos"
+          location="Sítio Cercado - Curitiba"
+          backgroundImage="/hero-background.jpg"
+          whatsappUrl={whatsappUrl}
+          phoneNumber="+5541999123456"
+        />
 
-        {/* Vídeo do Bairro */}
-        <section className="section-padding bg-white">
-          <div className="section-container">
-            <h2 className="text-3xl font-bold text-brand-gray-900 mb-8 text-center">
-              Conheça o Sítio Cercado
-            </h2>
-            <div className="max-w-4xl mx-auto mb-16">
-              <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+        {/* YouTube Video Section */}
+        <section className="py-16 px-4 bg-background/50">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Conheça o Sítio Cercado</h2>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
                 <iframe
-                  width="100%"
-                  height="100%"
                   src="https://www.youtube.com/embed/-7ql89VQTaU"
-                  title="Conheça o Sítio Cercado - Curitiba"
+                  title="Sítio Cercado - Curitiba"
+                  className="w-full h-full"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full"
                 ></iframe>
               </div>
             </div>
@@ -265,34 +259,12 @@ const OticaSitioCercado = () => {
           </div>
         </section>
 
-        {/* CTA Final */}
-        <section className="section-padding bg-brand-gray-900 text-white">
-          <div className="section-container text-center">
-            <h2 className="text-3xl font-bold mb-6">Venha Conhecer Nossa Loja</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Estamos pertinho de você no Sítio Cercado. Venha fazer seu exame gratuito e descobrir nossas promoções exclusivas
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-brand-red hover:bg-brand-red/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
-              >
-                Agendar Exame Gratuito
-              </a>
-              <a
-                href="tel:+554131140663"
-                className="border border-white hover:bg-white hover:text-brand-gray-900 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
-              >
-                Telefone: (41) 3114-0663
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* FAQ Section */}
+        <FAQ />
       </div>
 
       <Footer />
+      <FloatingActions />
       <WhatsAppFloat />
     </>
   );
