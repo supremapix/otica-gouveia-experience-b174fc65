@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LojaOculosPinheirinho from "./pages/LojaOculosPinheirinho";
@@ -14,6 +15,18 @@ import OticaUmbara from "./pages/OticaUmbara";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
+
+// Component to handle scroll to top on route changes
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to top when route changes
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [pathname]);
+
+  return null;
+};
 
 // Redirect handler component
 const RedirectHandler = () => {
@@ -34,6 +47,7 @@ const App = () => (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/loja-de-oculos-no-pinheirinho" element={<LojaOculosPinheirinho />} />
