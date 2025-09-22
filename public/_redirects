@@ -1,0 +1,39 @@
+# Netlify redirects for SPA routing
+/*    /index.html   200
+
+# SEO-friendly redirects for optical store pages
+/otica-santa-cecilia  /otica-santa-cecilia  200
+/otica-vila-madalena  /otica-vila-madalena  200
+/otica-agua-verde     /otica-agua-verde     200
+/otica-alto-da-gloria /otica-alto-da-gloria 200
+/otica-bacacheri      /otica-bacacheri      200
+/otica-batel          /otica-batel          200
+/otica-bigorrilho     /otica-bigorrilho     200
+/otica-boa-vista      /otica-boa-vista      200
+/otica-bom-retiro     /otica-bom-retiro     200
+/otica-cajuru         /otica-cajuru         200
+/otica-campo-comprido /otica-campo-comprido 200
+/otica-centro         /otica-centro         200
+/otica-cristo-rei     /otica-cristo-rei     200
+/otica-fanny          /otica-fanny          200
+/otica-jardim-botanico /otica-jardim-botanico 200
+/otica-merces         /otica-merces         200
+/otica-portao         /otica-portao         200
+/otica-santa-felicidade /otica-santa-felicidade 200
+/otica-sao-francisco  /otica-sao-francisco  200
+/otica-tingui         /otica-tingui         200
+/otica-vila-isabel    /otica-vila-isabel    200
+
+# Legacy redirects
+/loja-oculos-pinheirinho /loja-de-oculos-no-pinheirinho 301
+/oculos-pinheirinho      /loja-de-oculos-no-pinheirinho 301
+/otica-pinheirinho-curitiba /otica-pinheirinho 301
+/sitio-cercado-otica    /otica-sitio-cercado 301
+/umbara-otica           /otica-umbara 301
+
+# Force HTTPS
+http://gouveiacuritiba.com.br/* https://www.gouveiacuritiba.com.br/:splat 301!
+http://www.gouveiacuritiba.com.br/* https://www.gouveiacuritiba.com.br/:splat 301!
+
+# Canonical domain redirect
+https://gouveiacuritiba.com.br/* https://www.gouveiacuritiba.com.br/:splat 301!

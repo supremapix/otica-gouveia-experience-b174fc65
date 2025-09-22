@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "generate:pages": "node src/scripts/generateLocationPages.js",
+    "generate:sitemap": "node src/scripts/sitemap-generator.js",
+    "prerender": "npm run build && node src/scripts/prerender.js",
+    "seo:validate": "node src/scripts/seo-validator.js",
+    "build:production": "npm run generate:pages && npm run build && npm run generate:sitemap && npm run prerender"
+  }
+}
