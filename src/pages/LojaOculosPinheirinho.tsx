@@ -4,15 +4,19 @@ import { useInView } from '../utils/animations';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
-import SEO from '../components/SEO';
-import { createOpticalStoreSchema, createBreadcrumbSchema, createLocalBusinessSchema } from '../utils/schemas';
+import FloatingActions from '../components/FloatingActions';
+import FAQ from '../components/FAQ';
+import EnhancedHero from '../components/EnhancedHero';
+import EnhancedSEO from '../components/EnhancedSEO/EnhancedSEO';
+import { createBreadcrumbStructuredData } from '../components/EnhancedSEO/utils';
+import { createOpticalStoreSchema, createLocalBusinessSchema } from '../utils/schemas';
 
 const LojaOculosPinheirinho = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
   const whatsappUrl = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20%C3%B3culos%20no%20Pinheirinho.";
 
   // SEO Schema
-  const breadcrumbSchema = createBreadcrumbSchema([
+  const breadcrumbSchema = createBreadcrumbStructuredData([
     { name: "Ótica Gouveia", url: "https://www.gouveiacuritiba.com.br/" },
     { name: "Pinheirinho", url: "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho" }
   ]);
@@ -44,7 +48,7 @@ const LojaOculosPinheirinho = () => {
 
   return (
     <>
-      <SEO 
+      <EnhancedSEO
         title="Loja de Óculos no Pinheirinho Curitiba - Ótica Gouveia | Exame Gratuito"
         description="Ótica Gouveia no Pinheirinho - Óculos de grau, sol e lentes de contato. Exame de vista gratuito. Atendemos toda região do Pinheirinho em Curitiba com preços acessíveis."
         keywords="ótica pinheirinho, óculos pinheirinho curitiba, exame vista pinheirinho, loja óculos pinheirinho, ótica gouveia pinheirinho, óculos grau pinheirinho"
@@ -52,28 +56,16 @@ const LojaOculosPinheirinho = () => {
         structuredData={combinedSchema}
       />
 
-      <Navbar />
-      
-      <div className="min-h-screen bg-gradient-to-br from-brand-gray-50 to-white">
-        {/* Hero Section */}
-        <section className="relative py-20 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-red/10 to-brand-blue/10"></div>
-          <div className="section-container relative z-10">
-            <div className="text-center max-w-4xl mx-auto">
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <MapPin className="text-brand-red" size={24} />
-                <span className="text-brand-red font-semibold">PINHEIRINHO - CURITIBA</span>
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-brand-gray-900 mb-6">
-                Ótica Gouveia no <span className="text-brand-red">Pinheirinho</span>
-              </h1>
-              <p className="text-xl text-brand-gray-600 leading-relaxed">
-                Sua ótica de confiança no coração do Pinheirinho. Atendendo toda a região com qualidade, 
-                tradição e os melhores preços de Curitiba.
-              </p>
-            </div>
-          </div>
-        </section>
+      <div className="min-h-screen">
+        <Navbar />
+        
+        <EnhancedHero
+          title="Ótica no Pinheirinho"
+          subtitle="Sua ótica de confiança no coração do Pinheirinho com exames gratuitos e atendimento especializado"
+          location="Pinheirinho - Curitiba"
+          backgroundImage="/hero-background.jpg"
+          whatsappUrl={whatsappUrl}
+        />
 
         {/* Vídeo do Bairro */}
         <section className="section-padding bg-white">
@@ -262,9 +254,12 @@ const LojaOculosPinheirinho = () => {
             </div>
           </div>
         </section>
+
+        <FAQ />
       </div>
 
       <Footer />
+      <FloatingActions />
       <WhatsAppFloat />
     </>
   );

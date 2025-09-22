@@ -177,7 +177,21 @@ html {
   @apply object-cover w-full h-full;
 }
 
-/* Container styles */
-.section-container {
-  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+/* Additional custom animations */
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+/* Float animation for particles */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
