@@ -27,7 +27,7 @@ const Hero = () => {
   }, []);
 
   // Usar a imagem de fundo
-  const heroImage = "/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png";
+  const heroImage = "/lovable-uploads/otica-gouveia-fachada.png";
 
   return (
     <div 
