@@ -10,7 +10,7 @@ const LocalizacoesBairros = () => {
       bairro: "Pinheirinho",
       titulo: "Ótica Gouveia Pinheirinho",
       descricao: "Sua ótica de confiança no coração do Pinheirinho. Atendimento premium com as melhores marcas.",
-      destacos: ["Exame de Vista Gratuito", "Marcas Premium", "Parcelamento 12x"],
+      destacos: ["Marcas Premium", "Atendimento Especializado", "Qualidade Garantida"],
       link: "/loja-de-oculos-no-pinheirinho",
       cor: "from-blue-500 to-blue-600"
     },
@@ -26,7 +26,7 @@ const LocalizacoesBairros = () => {
       bairro: "Umbará",
       titulo: "Centro de Excelência Umbará",
       descricao: "Nossa unidade principal com tecnologia de ponta e atendimento VIP diferenciado.",
-      destacos: ["Tecnologia Alemã", "Atendimento VIP", "Laboratório Próprio"],
+      destacos: ["Tecnologia Alemã", "Atendimento VIP", "Equipamentos Modernos"],
       link: "/otica-umbara",
       cor: "from-red-500 to-red-600",
       destaque: true

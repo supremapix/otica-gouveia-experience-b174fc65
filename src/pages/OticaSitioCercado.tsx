@@ -28,16 +28,16 @@ const OticaSitioCercado = () => {
   const structuredData = [breadcrumbData, opticalStoreData, localBusinessData];
 
   const popularProducts = [
-    { name: "Óculos de Grau Econômico", price: "R$ 89,00", category: "Popular" },
-    { name: "Óculos de Sol Infantil", price: "R$ 45,00", category: "Kids" },
-    { name: "Lentes de Contato Coloridas", price: "R$ 65,00", category: "Fashion" },
-    { name: "Óculos Multifocais", price: "R$ 299,00", category: "Premium" },
-    { name: "Armações Flexíveis", price: "R$ 120,00", category: "Confort" }
+    { name: "Óculos de Grau Econômico", price: "Consulte-nos!", category: "Popular" },
+    { name: "Óculos de Sol Infantil", price: "Consulte-nos!", category: "Kids" },
+    { name: "Lentes de Contato Coloridas", price: "Consulte-nos!", category: "Fashion" },
+    { name: "Óculos Multifocais", price: "Consulte-nos!", category: "Premium" },
+    { name: "Armações Flexíveis", price: "Consulte-nos!", category: "Confort" }
   ];
 
   const advantages = [
-    { icon: Eye, title: "Exame Completo Gratuito", desc: "Avaliação detalhada da saúde ocular" },
-    { icon: Star, title: "Preços Populares", desc: "Óculos acessíveis para toda família" },
+    { icon: Eye, title: "Avaliação Completa", desc: "Atendimento detalhado da saúde ocular" },
+    { icon: Star, title: "Preços Acessíveis", desc: "Óculos para toda família" },
     { icon: Shield, title: "Qualidade Garantida", desc: "Produtos testados e aprovados" },
     { icon: Clock, title: "Entrega Rápida", desc: "Pronto em até 5 dias úteis" },
     { icon: Heart, title: "Atendimento Humanizado", desc: "Cuidado especial com cada cliente" }
@@ -47,7 +47,7 @@ const OticaSitioCercado = () => {
     <>
       <EnhancedSEO
         title="Ótica no Sítio Cercado - Curitiba | Ótica Gouveia"
-        description="Ótica no Sítio Cercado com exames de vista gratuitos, armações de qualidade e lentes especializadas. Visite a Ótica Gouveia e tenha atendimento personalizado."
+        description="Ótica no Sítio Cercado com armações de qualidade e lentes especializadas. Visite a Ótica Gouveia e tenha atendimento personalizado."
         keywords="ótica no sítio cercado, óculos sítio cercado, exame de vista sítio cercado, ótica curitiba, lentes de grau curitiba"
         canonicalUrl="/otica-sitio-cercado"
         structuredData={structuredData}
@@ -213,11 +213,11 @@ const OticaSitioCercado = () => {
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
                 <h3 className="text-2xl font-bold mb-4">Primeiro Óculos</h3>
-                <p className="text-lg mb-6">Óculos completo a partir de R$ 89,00</p>
+                <p className="text-lg mb-6">Consulte-nos para melhores condições!</p>
                 <ul className="space-y-2 mb-6">
                   <li>• Ideal para primeira consulta</li>
                   <li>• Armações modernas disponíveis</li>
-                  <li>• Exame de vista gratuito</li>
+                  <li>• Atendimento especializado</li>
                   <li>• Ajustes e limpeza grátis</li>
                 </ul>
                 <a

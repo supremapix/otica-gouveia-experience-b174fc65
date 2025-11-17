@@ -31,26 +31,26 @@ const LojaOculosPinheirinho = () => {
   };
 
   const popularProducts = [
-    { name: "Óculos de Grau Ray-Ban", price: "R$ 299,00", category: "Premium" },
-    { name: "Óculos de Sol Oakley", price: "R$ 189,00", category: "Esportivo" },
-    { name: "Lentes de Contato Acuvue", price: "R$ 85,00", category: "Mensal" },
-    { name: "Óculos Infantil Disney", price: "R$ 120,00", category: "Kids" },
-    { name: "Óculos Multifocais Zeiss", price: "R$ 450,00", category: "Progressive" }
+    { name: "Óculos de Grau Ray-Ban", price: "Consulte-nos!", category: "Premium" },
+    { name: "Óculos de Sol Oakley", price: "Consulte-nos!", category: "Esportivo" },
+    { name: "Lentes de Contato Acuvue", price: "Consulte-nos!", category: "Mensal" },
+    { name: "Óculos Infantil Disney", price: "Consulte-nos!", category: "Kids" },
+    { name: "Óculos Multifocais Zeiss", price: "Consulte-nos!", category: "Progressive" }
   ];
 
   const advantages = [
-    { icon: Eye, title: "Exame de Vista Gratuito", desc: "Consulta completa com optometrista qualificado" },
+    { icon: Eye, title: "Atendimento Especializado", desc: "Consulta completa com optometrista qualificado" },
     { icon: Star, title: "Marcas Premium", desc: "Ray-Ban, Oakley, Prada e outras marcas de luxo" },
     { icon: Shield, title: "Garantia Estendida", desc: "12 meses de garantia em todos os produtos" },
     { icon: Clock, title: "Atendimento Ágil", desc: "Entrega em até 7 dias úteis" },
-    { icon: Heart, title: "Parcelamento Sem Juros", desc: "Em até 12x no cartão de crédito" }
+    { icon: Heart, title: "Facilidades de Pagamento", desc: "Diversas formas de pagamento disponíveis" }
   ];
 
   return (
     <>
       <EnhancedSEO
-        title="Loja de Óculos no Pinheirinho Curitiba - Ótica Gouveia | Exame Gratuito"
-        description="Ótica Gouveia no Pinheirinho - Óculos de grau, sol e lentes de contato. Exame de vista gratuito. Atendemos toda região do Pinheirinho em Curitiba com preços acessíveis."
+        title="Loja de Óculos no Pinheirinho Curitiba - Ótica Gouveia"
+        description="Ótica Gouveia no Pinheirinho - Óculos de grau, sol e lentes de contato. Atendemos toda região do Pinheirinho em Curitiba com qualidade e tradição."
         keywords="ótica pinheirinho, óculos pinheirinho curitiba, exame vista pinheirinho, loja óculos pinheirinho, ótica gouveia pinheirinho, óculos grau pinheirinho"
         canonicalUrl="/loja-de-oculos-no-pinheirinho"
         structuredData={combinedSchema}
@@ -61,7 +61,7 @@ const LojaOculosPinheirinho = () => {
         
         <EnhancedHero
           title="Ótica no Pinheirinho"
-          subtitle="Sua ótica de confiança no coração do Pinheirinho com exames gratuitos e atendimento especializado"
+          subtitle="Sua ótica de confiança no coração do Pinheirinho com atendimento especializado e produtos de qualidade"
           location="Pinheirinho - Curitiba"
           backgroundImage="/hero-background.jpg"
           whatsappUrl={whatsappUrl}
@@ -193,9 +193,9 @@ const LojaOculosPinheirinho = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
                 <h3 className="text-2xl font-bold mb-4">Combo Família</h3>
-                <p className="text-lg mb-6">2 óculos de grau + 1 de sol por apenas R$ 399,00</p>
+                <p className="text-lg mb-6">Consulte-nos sobre condições especiais!</p>
                 <ul className="space-y-2 mb-6">
-                  <li>• Exame de vista gratuito para toda família</li>
+                  <li>• Atendimento completo para toda família</li>
                   <li>• Lentes antirreflexo incluídas</li>
                   <li>• Garantia estendida de 12 meses</li>
                 </ul>
