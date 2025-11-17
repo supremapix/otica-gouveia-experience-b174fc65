@@ -16,12 +16,12 @@ const LojaOculosPinheirinho15565 = () => {
   const whatsappUrl = "https://wa.me/5541999123456?text=Olá! Gostaria de agendar um exame de vista no Pinheirinho.";
 
   const featuredProducts = [
-    { name: "Óculos de Grau Completo", price: "R$ 99,00", category: "Promocional", highlight: "Mais Vendido" },
-    { name: "Óculos de Sol Premium", price: "R$ 159,00", category: "Premium", highlight: "Exclusivo" },
-    { name: "Lentes Multifocais", price: "R$ 299,00", category: "Tecnologia", highlight: "Inovação" },
-    { name: "Óculos Infantil Flexível", price: "R$ 79,00", category: "Kids", highlight: "Resistente" },
-    { name: "Lentes de Contato", price: "R$ 45,00", category: "Contato", highlight: "Conforto" },
-    { name: "Óculos Esportivo", price: "R$ 189,00", category: "Sport", highlight: "Performance" }
+    { name: "Óculos de Grau Completo", price: "Consulte-nos!", category: "Promocional", highlight: "Mais Vendido" },
+    { name: "Óculos de Sol Premium", price: "Consulte-nos!", category: "Premium", highlight: "Exclusivo" },
+    { name: "Lentes Multifocais", price: "Consulte-nos!", category: "Tecnologia", highlight: "Inovação" },
+    { name: "Óculos Infantil Flexível", price: "Consulte-nos!", category: "Kids", highlight: "Resistente" },
+    { name: "Lentes de Contato", price: "Consulte-nos!", category: "Contato", highlight: "Conforto" },
+    { name: "Óculos Esportivo", price: "Consulte-nos!", category: "Sport", highlight: "Performance" }
   ];
 
   // SEO e Structured Data
@@ -47,7 +47,7 @@ const LojaOculosPinheirinho15565 = () => {
 
 
   const services = [
-    { icon: 'Eye', title: "Exame de Vista Gratuito", desc: "Consulta completa sem custo" },
+    { icon: 'Eye', title: "Consulta Especializada", desc: "Atendimento completo com profissionais qualificados" },
     { icon: 'Glasses', title: "Ajuste Profissional", desc: "Ajustes precisos e confortáveis" },
     { icon: 'Shield', title: "Garantia Estendida", desc: "Proteção total dos seus óculos" },
     { icon: 'Clock', title: "Entrega Expressa", desc: "Pronto em até 3 dias úteis" },
@@ -59,7 +59,7 @@ const LojaOculosPinheirinho15565 = () => {
     <>
       <EnhancedSEO
         title="Loja de Óculos 15565 no Pinheirinho - Ótica Gouveia Curitiba"
-        description="Loja de óculos no Pinheirinho, Curitiba. Ótica Gouveia oferece óculos de grau, sol, lentes e exame de vista gratuito. Preços promocionais e qualidade garantida."
+        description="Loja de óculos no Pinheirinho, Curitiba. Ótica Gouveia oferece óculos de grau, sol e lentes com qualidade garantida e tradição."
         keywords="loja óculos pinheirinho 15565, ótica pinheirinho curitiba, óculos grau pinheirinho, exame vista gratuito pinheirinho, loja 15565"
         canonicalUrl="/loja-de-oculos-no-pinheirinho/15565"
         structuredData={structuredData}
@@ -78,7 +78,7 @@ const LojaOculosPinheirinho15565 = () => {
         
         <EnhancedHero
           title="Loja de Óculos Pinheirinho"
-          subtitle="A melhor loja de óculos do Pinheirinho! Óculos completos a partir de R$ 99,00 com exame de vista gratuito e garantia total"
+          subtitle="A melhor loja de óculos do Pinheirinho! Consulte nossos preços e condições especiais com garantia total"
           location="Pinheirinho - Curitiba"
           backgroundImage="/hero-background.jpg"
           whatsappUrl={whatsappUrl}
@@ -216,8 +216,8 @@ const LojaOculosPinheirinho15565 = () => {
             <h2 className="text-3xl font-bold mb-6">Promoção Exclusiva Pinheirinho</h2>
             <div className="max-w-3xl mx-auto">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 mb-8">
-                <h3 className="text-2xl font-bold mb-4">Óculos Completo por R$ 99,00</h3>
-                <p className="text-lg mb-6">Inclui armação + lentes + exame de vista gratuito</p>
+                <h3 className="text-2xl font-bold mb-4">Óculos Completo</h3>
+                <p className="text-lg mb-6">Consulte-nos sobre preços e condições!</p>
                 <ul className="space-y-2 mb-6 text-left max-w-md mx-auto">
                   <li>• Mais de 200 modelos de armações</li>
                   <li>• Lentes antirreflexo incluídas</li>

@@ -29,10 +29,10 @@ const OticaUmbara = () => {
 
   // Produtos populares no bairro
   const popularProducts = [
-    { nome: 'Óculos de Grau Premium', preco: 'A partir de R$ 199', categoria: 'Premium' },
-    { nome: 'Óculos de Sol Ray-Ban', preco: 'A partir de R$ 249', categoria: 'Luxo' },
-    { nome: 'Lentes Progressivas', preco: 'A partir de R$ 359', categoria: 'Multifocal' },
-    { nome: 'Lentes de Contato Premium', preco: 'A partir de R$ 95', categoria: 'Contato' }
+    { nome: 'Óculos de Grau Premium', preco: 'Consulte-nos!', categoria: 'Premium' },
+    { nome: 'Óculos de Sol Ray-Ban', preco: 'Consulte-nos!', categoria: 'Luxo' },
+    { nome: 'Lentes Progressivas', preco: 'Consulte-nos!', categoria: 'Multifocal' },
+    { nome: 'Lentes de Contato Premium', preco: 'Consulte-nos!', categoria: 'Contato' }
   ];
 
   // Vantagens da loja
@@ -47,7 +47,7 @@ const OticaUmbara = () => {
     <>
       <EnhancedSEO
         title="Ótica no Umbará - Curitiba | Ótica Gouveia"
-        description="Ótica no Umbará com exames de vista gratuitos, armações de qualidade e lentes especializadas. Visite a Ótica Gouveia e tenha atendimento personalizado."
+        description="Ótica no Umbará com armações de qualidade e lentes especializadas. Visite a Ótica Gouveia e tenha atendimento personalizado."
         keywords="ótica no umbará, óculos umbará, exame de vista umbará, ótica curitiba, lentes de grau curitiba"
         canonicalUrl="/otica-umbara"
         structuredData={structuredData}
@@ -115,7 +115,7 @@ const OticaUmbara = () => {
                     <ul className="space-y-2 text-muted-foreground">
                       <li>✓ Autorefrator digital de última geração</li>
                       <li>✓ Mapeamento de retina computadorizado</li>
-                      <li>✓ Laboratório próprio para montagem expressa</li>
+                      <li>✓ Montagem expressa de qualidade</li>
                       <li>✓ Sala VIP para atendimento personalizado</li>
                     </ul>
                   </div>

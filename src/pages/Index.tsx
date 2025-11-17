@@ -126,9 +126,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <SEO 
-        title="Ótica Gouveia - Óculos de Grau, Sol e Lentes em Curitiba | Exame Gratuito"
-        description="Ótica Gouveia em Curitiba - Óculos de grau, sol, lentes de contato e exame de vista gratuito. Atendemos Pinheirinho, Umbará e região. Qualidade e tradição há anos."
-        keywords="ótica curitiba, óculos grau curitiba, óculos sol curitiba, lentes contato curitiba, exame vista gratuito curitiba, ótica pinheirinho, ótica umbará, ótica gouveia"
+        title="Ótica Gouveia - Óculos de Grau, Sol e Lentes em Curitiba"
+        description="Ótica Gouveia em Curitiba - Óculos de grau, sol e lentes de contato. Atendemos Pinheirinho, Umbará e região. Qualidade e tradição há anos."
+        keywords="ótica curitiba, óculos grau curitiba, óculos sol curitiba, lentes contato curitiba, ótica pinheirinho, ótica umbará, ótica gouveia"
         canonicalUrl="/"
         structuredData={combinedSchema}
         ogType="website"
