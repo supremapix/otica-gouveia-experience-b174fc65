@@ -168,6 +168,98 @@ const Index = () => {
         <Products />
       </ErrorBoundary>
       
+      {/* Bairros e Cidades Atendidos */}
+      <section id="regioes" className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-900 mb-4">
+              Atendemos Curitiba e Região Metropolitana
+            </h2>
+            <p className="text-lg text-brand-gray-700 max-w-3xl mx-auto">
+              Vendemos online com entrega via motoboy para compras acima de R$ 250,00. Você também pode retirar em nossa loja no Pinheirinho, próxima ao Condor Umbará.
+            </p>
+          </div>
+
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-brand-gray-900 mb-6 text-center">
+              Bairros de Curitiba
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {[
+                { name: 'Pinheirinho', slug: '/loja-de-oculos-no-pinheirinho' },
+                { name: 'Sítio Cercado', slug: '/otica-sitio-cercado' },
+                { name: 'Umbará', slug: '/otica-umbara' },
+                { name: 'CIC', slug: '/otica-cic' },
+                { name: 'Cajuru', slug: '/otica-cajuru' },
+                { name: 'Boqueirão', slug: '/otica-boqueirao' },
+                { name: 'Hauer', slug: '/otica-hauer' },
+                { name: 'Centro', slug: '/otica-centro' },
+                { name: 'Batel', slug: '/otica-batel' },
+                { name: 'Água Verde', slug: '/otica-agua-verde' },
+                { name: 'Bigorrilho', slug: '/otica-bigorrilho' },
+                { name: 'Portão', slug: '/otica-portao' },
+                { name: 'Xaxim', slug: '/otica-xaxim' },
+                { name: 'Santa Felicidade', slug: '/otica-santa-felicidade' },
+                { name: 'Bacacheri', slug: '/otica-bacacheri' },
+              ].map((bairro) => (
+                <a
+                  key={bairro.slug}
+                  href={bairro.slug}
+                  className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group"
+                >
+                  <h4 className="font-semibold text-brand-gray-900 group-hover:text-brand-red transition-colors">
+                    {bairro.name}
+                  </h4>
+                  <p className="text-sm text-brand-gray-600 mt-1">Ótica</p>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-brand-gray-900 mb-6 text-center">
+              Cidades da Região Metropolitana
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              {[
+                { name: 'Araucária', slug: '/otica-araucaria' },
+                { name: 'Colombo', slug: '/otica-colombo' },
+                { name: 'Pinhais', slug: '/otica-pinhais' },
+                { name: 'São José dos Pinhais', slug: '/otica-sao-jose-dos-pinhais' },
+                { name: 'Fazenda Rio Grande', slug: '/otica-fazenda-rio-grande' },
+              ].map((cidade) => (
+                <a
+                  key={cidade.slug}
+                  href={cidade.slug}
+                  className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group"
+                >
+                  <h4 className="font-semibold text-brand-gray-900 group-hover:text-brand-red transition-colors">
+                    {cidade.name}
+                  </h4>
+                  <p className="text-sm text-brand-gray-600 mt-1">RMC</p>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-brand-gray-700 mb-6">
+              📍 Nossa loja fica no Pinheirinho, próxima ao Condor Umbará<br />
+              🚚 Entrega via motoboy para compras acima de R$ 250,00<br />
+              🛒 Compre online e retire em nossa loja física
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20óculos."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-brand-red text-white px-8 py-4 rounded-full font-semibold hover:bg-red-700 transition-colors"
+            >
+              Consulte-nos pelo WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+      
       <ErrorBoundary
         componentName="Testimonials"
         fallback={<div className="p-4 text-red-500">Error loading Testimonials</div>}

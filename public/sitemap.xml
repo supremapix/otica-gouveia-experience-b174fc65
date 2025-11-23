@@ -219,4 +219,64 @@
     </image:image>
   </url>
 
+  <!-- Araucária -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-araucaria</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/9f9ebc43-0457-4fdb-8dca-d73cf2b9e790.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Araucária</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Colombo -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-colombo</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/a1b78843-775f-44c7-861f-44eb7a861d83.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Colombo</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Pinhais -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-pinhais</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Pinhais</image:caption>
+    </image:image>
+  </url>
+
+  <!-- São José dos Pinhais -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-sao-jose-dos-pinhais</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/d03236fb-b7da-44a0-9e41-d1bcf77ee2fe.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos São José dos Pinhais</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Fazenda Rio Grande -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-fazenda-rio-grande</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/e5648b15-71af-463e-9d97-c7b893f4d150.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Fazenda Rio Grande</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
