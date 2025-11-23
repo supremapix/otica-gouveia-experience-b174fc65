@@ -76,6 +76,16 @@ import OticaBairroAlto from "./pages/OticaBairroAlto";
 import OticaBoaVista from "./pages/OticaBoaVista";
 import OticaBomRetiro from "./pages/OticaBomRetiro";
 import OticaOrleans from "./pages/OticaOrleans";
+import OticaAgudosDoSul from "./pages/OticaAgudosDoSul";
+import OticaCampoDoTenente from "./pages/OticaCampoDoTenente";
+import OticaCerroAzul from "./pages/OticaCerroAzul";
+import OticaDoutorUlysses from "./pages/OticaDoutorUlysses";
+import OticaPien from "./pages/OticaPien";
+import OticaQuitandinha from "./pages/OticaQuitandinha";
+import OticaRioNegro from "./pages/OticaRioNegro";
+import OticaTunasDoParana from "./pages/OticaTunasDoParana";
+import OticaLindoia from "./pages/OticaLindoia";
+import OticaSaoJoao from "./pages/OticaSaoJoao";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -184,6 +194,16 @@ const App = () => (
             <Route path="/otica-boa-vista" element={<OticaBoaVista />} />
             <Route path="/otica-bom-retiro" element={<OticaBomRetiro />} />
             <Route path="/otica-orleans" element={<OticaOrleans />} />
+            <Route path="/otica-agudos-do-sul" element={<OticaAgudosDoSul />} />
+            <Route path="/otica-campo-do-tenente" element={<OticaCampoDoTenente />} />
+            <Route path="/otica-cerro-azul" element={<OticaCerroAzul />} />
+            <Route path="/otica-doutor-ulysses" element={<OticaDoutorUlysses />} />
+            <Route path="/otica-pien" element={<OticaPien />} />
+            <Route path="/otica-quitandinha" element={<OticaQuitandinha />} />
+            <Route path="/otica-rio-negro" element={<OticaRioNegro />} />
+            <Route path="/otica-tunas-do-parana" element={<OticaTunasDoParana />} />
+            <Route path="/otica-lindoia" element={<OticaLindoia />} />
+            <Route path="/otica-sao-joao" element={<OticaSaoJoao />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
