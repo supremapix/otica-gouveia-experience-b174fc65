@@ -54,28 +54,28 @@ const OnlineCounter = () => {
   const CurrentIcon = notifications[currentNotification].icon;
 
   return (
-    <div className="fixed bottom-20 left-4 z-30 space-y-2">
+    <div className="fixed bottom-20 left-4 z-30 space-y-1.5">
       {/* Contador de pessoas online */}
-      <div className="bg-white/90 backdrop-blur-sm rounded-md shadow-md p-2 border border-gray-200">
-        <div className="flex items-center space-x-1.5">
+      <div className="bg-white/40 backdrop-blur-sm rounded-lg shadow-sm p-1.5 border border-gray-200/30">
+        <div className="flex items-center space-x-1">
           <div className="relative">
-            <Users className="w-4 h-4 text-brand-red" />
-            <div className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
+            <Users className="w-3 h-3 text-brand-red" />
+            <div className="absolute -top-0.5 -right-0.5 w-1 h-1 bg-green-500 rounded-full animate-pulse"></div>
           </div>
           <div>
-            <div className="text-xs font-semibold text-gray-900">{onlineCount} pessoas</div>
-            <div className="text-xs text-gray-600">online agora</div>
+            <div className="text-[10px] font-semibold text-gray-900">{onlineCount} pessoas</div>
+            <div className="text-[9px] text-gray-600">online agora</div>
           </div>
         </div>
       </div>
 
       {/* Notificações alternadas */}
-      <div className={`bg-white/90 backdrop-blur-sm rounded-md shadow-md p-2 border border-gray-200 transition-all duration-500 ${
+      <div className={`bg-white/40 backdrop-blur-sm rounded-lg shadow-sm p-1.5 border border-gray-200/30 transition-all duration-500 ${
         showNotification ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'
       }`}>
-        <div className="flex items-center space-x-1.5">
-          <CurrentIcon className={`w-3.5 h-3.5 ${notifications[currentNotification].color}`} />
-          <div className="text-xs text-gray-800">
+        <div className="flex items-center space-x-1">
+          <CurrentIcon className={`w-3 h-3 ${notifications[currentNotification].color}`} />
+          <div className="text-[10px] text-gray-800">
             {notifications[currentNotification].text}
           </div>
         </div>
