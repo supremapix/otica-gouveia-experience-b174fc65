@@ -11,6 +11,14 @@ import Footer from '../components/Footer';
 import OnlineCounter from '../components/OnlineCounter';
 import SEO from '../components/SEO';
 import { createOrganizationSchema, createWebsiteSchema, createLocalBusinessSchema } from '../utils/schemas';
+import { useIsMobile } from '../hooks/use-mobile';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 // Simple error boundary component
 const ErrorBoundary = ({ children, fallback, componentName }) => {
@@ -49,8 +57,8 @@ const ComponentLoader = ({ component: Component, name }) => {
 };
 
 const Index = () => {
-  const [isLoading, setIsLoading] = useState(true);
   const [pageError, setPageError] = useState(null);
+  const isMobile = useIsMobile();
 
   // SEO Schema
   const combinedSchema = {
@@ -73,37 +81,18 @@ const Index = () => {
       newMetaViewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
       document.head.appendChild(newMetaViewport);
     }
-
-    // Simulate loading time for animation purposes
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-
-    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     const handleGlobalError = (event) => {
       console.error("Global error:", event.error);
       setPageError(event.error?.message || "Unknown error occurred");
-      event.preventDefault(); // Prevent default error handling
+      event.preventDefault();
     };
 
     window.addEventListener('error', handleGlobalError);
     return () => window.removeEventListener('error', handleGlobalError);
   }, []);
-
-  if (isLoading) {
-    return (
-      <div className="fixed inset-0 bg-white flex items-center justify-center z-50">
-        <div className="text-center">
-          <div className="inline-block w-12 h-12 border-4 border-brand-red border-t-transparent rounded-full animate-spin mb-4"></div>
-          <h2 className="text-2xl font-bold text-brand-gray-900">Ótica Gouveia</h2>
-          <p className="text-brand-gray-600">Carregando experiência...</p>
-        </div>
-      </div>
-    );
-  }
 
   if (pageError) {
     return (
@@ -184,119 +173,254 @@ const Index = () => {
             <h3 className="text-2xl font-bold text-brand-gray-900 mb-6 text-center">
               Bairros de Curitiba
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {[
-                { name: 'Pinheirinho', slug: '/loja-de-oculos-no-pinheirinho' },
-                { name: 'Sítio Cercado', slug: '/otica-sitio-cercado' },
-                { name: 'Umbará', slug: '/otica-umbara' },
-                { name: 'CIC', slug: '/otica-cic' },
-                { name: 'Cajuru', slug: '/otica-cajuru' },
-                { name: 'Boqueirão', slug: '/otica-boqueirao' },
-                { name: 'Hauer', slug: '/otica-hauer' },
-                { name: 'Centro', slug: '/otica-centro' },
-                { name: 'Batel', slug: '/otica-batel' },
-                { name: 'Água Verde', slug: '/otica-agua-verde' },
-                { name: 'Bigorrilho', slug: '/otica-bigorrilho' },
-                { name: 'Portão', slug: '/otica-portao' },
-                { name: 'Xaxim', slug: '/otica-xaxim' },
-                { name: 'Santa Felicidade', slug: '/otica-santa-felicidade' },
-                { name: 'Bacacheri', slug: '/otica-bacacheri' },
-                { name: 'Rebouças', slug: '/otica-reboucas' },
-                { name: 'Neo Ville', slug: '/otica-neo-ville' },
-                { name: 'Vila Sandra', slug: '/otica-vila-sandra' },
-                { name: 'Vila Formosa', slug: '/otica-vila-formosa' },
-                { name: 'Cristo Rei', slug: '/otica-cristo-rei' },
-                { name: 'Ecoville', slug: '/otica-ecoville' },
-                { name: 'Jardim Botânico', slug: '/otica-jardim-botanico' },
-                { name: 'Juvevê', slug: '/otica-juveve' },
-                { name: 'Capão Raso', slug: '/otica-capao-raso' },
-                { name: 'Jardim das Américas', slug: '/otica-jardim-das-americas' },
-                { name: 'Novo Mundo', slug: '/otica-novo-mundo' },
-                { name: 'Tarumã', slug: '/otica-taruma' },
-                { name: 'Tatuquara', slug: '/otica-tatuquara' },
-                { name: 'Campo Comprido', slug: '/otica-campo-comprido' },
-                { name: 'Hugo Lange', slug: '/otica-hugo-lange' },
-                { name: 'Tingui', slug: '/otica-tingui' },
-                { name: 'Mercês', slug: '/otica-merces' },
-                { name: 'Cabral', slug: '/otica-cabral' },
-                { name: 'Alto da XV', slug: '/otica-alto-da-xv' },
-                { name: 'Guabirotuba', slug: '/otica-guabirotuba' },
-                { name: 'Parolin', slug: '/otica-parolin' },
-                { name: 'Abranches', slug: '/otica-abranches' },
-                { name: 'Uberaba', slug: '/otica-uberaba' },
-                { name: 'Vila Izabel', slug: '/otica-vila-izabel' },
-                { name: 'Alto da Glória', slug: '/otica-alto-da-gloria' },
-                { name: 'Pilarzinho', slug: '/otica-pilarzinho' },
-                { name: 'Santa Cândida', slug: '/otica-santa-candida' },
-                { name: 'Atuba', slug: '/otica-atuba' },
-                { name: 'Bairro Alto', slug: '/otica-bairro-alto' },
-                { name: 'Boa Vista', slug: '/otica-boa-vista' },
-                { name: 'Bom Retiro', slug: '/otica-bom-retiro' },
-                { name: 'Orleans', slug: '/otica-orleans' },
-                { name: 'Lindóia', slug: '/otica-lindoia' },
-                { name: 'São João', slug: '/otica-sao-joao' },
-              ].map((bairro) => (
-                <a
-                  key={bairro.slug}
-                  href={bairro.slug}
-                  className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group"
-                >
-                  <h4 className="font-semibold text-brand-gray-900 group-hover:text-brand-red transition-colors">
-                    {bairro.name}
-                  </h4>
-                  <p className="text-sm text-brand-gray-600 mt-1">Ótica</p>
-                </a>
-              ))}
-            </div>
+            {isMobile ? (
+              <Carousel 
+                className="w-full"
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
+                <CarouselContent>
+                  {[
+                    { name: 'Pinheirinho', slug: '/loja-de-oculos-no-pinheirinho' },
+                    { name: 'Sítio Cercado', slug: '/otica-sitio-cercado' },
+                    { name: 'Umbará', slug: '/otica-umbara' },
+                    { name: 'CIC', slug: '/otica-cic' },
+                    { name: 'Cajuru', slug: '/otica-cajuru' },
+                    { name: 'Boqueirão', slug: '/otica-boqueirao' },
+                    { name: 'Hauer', slug: '/otica-hauer' },
+                    { name: 'Centro', slug: '/otica-centro' },
+                    { name: 'Batel', slug: '/otica-batel' },
+                    { name: 'Água Verde', slug: '/otica-agua-verde' },
+                    { name: 'Bigorrilho', slug: '/otica-bigorrilho' },
+                    { name: 'Portão', slug: '/otica-portao' },
+                    { name: 'Xaxim', slug: '/otica-xaxim' },
+                    { name: 'Santa Felicidade', slug: '/otica-santa-felicidade' },
+                    { name: 'Bacacheri', slug: '/otica-bacacheri' },
+                    { name: 'Rebouças', slug: '/otica-reboucas' },
+                    { name: 'Neo Ville', slug: '/otica-neo-ville' },
+                    { name: 'Vila Sandra', slug: '/otica-vila-sandra' },
+                    { name: 'Vila Formosa', slug: '/otica-vila-formosa' },
+                    { name: 'Cristo Rei', slug: '/otica-cristo-rei' },
+                    { name: 'Ecoville', slug: '/otica-ecoville' },
+                    { name: 'Jardim Botânico', slug: '/otica-jardim-botanico' },
+                    { name: 'Juvevê', slug: '/otica-juveve' },
+                    { name: 'Capão Raso', slug: '/otica-capao-raso' },
+                    { name: 'Jardim das Américas', slug: '/otica-jardim-das-americas' },
+                    { name: 'Novo Mundo', slug: '/otica-novo-mundo' },
+                    { name: 'Tarumã', slug: '/otica-taruma' },
+                    { name: 'Tatuquara', slug: '/otica-tatuquara' },
+                    { name: 'Campo Comprido', slug: '/otica-campo-comprido' },
+                    { name: 'Hugo Lange', slug: '/otica-hugo-lange' },
+                    { name: 'Tingui', slug: '/otica-tingui' },
+                    { name: 'Mercês', slug: '/otica-merces' },
+                    { name: 'Cabral', slug: '/otica-cabral' },
+                    { name: 'Alto da XV', slug: '/otica-alto-da-xv' },
+                    { name: 'Guabirotuba', slug: '/otica-guabirotuba' },
+                    { name: 'Parolin', slug: '/otica-parolin' },
+                    { name: 'Abranches', slug: '/otica-abranches' },
+                    { name: 'Uberaba', slug: '/otica-uberaba' },
+                    { name: 'Vila Izabel', slug: '/otica-vila-izabel' },
+                    { name: 'Alto da Glória', slug: '/otica-alto-da-gloria' },
+                    { name: 'Pilarzinho', slug: '/otica-pilarzinho' },
+                    { name: 'Santa Cândida', slug: '/otica-santa-candida' },
+                    { name: 'Atuba', slug: '/otica-atuba' },
+                    { name: 'Bairro Alto', slug: '/otica-bairro-alto' },
+                    { name: 'Boa Vista', slug: '/otica-boa-vista' },
+                    { name: 'Bom Retiro', slug: '/otica-bom-retiro' },
+                    { name: 'Orleans', slug: '/otica-orleans' },
+                    { name: 'Lindóia', slug: '/otica-lindoia' },
+                    { name: 'São João', slug: '/otica-sao-joao' },
+                  ].map((bairro) => (
+                    <CarouselItem key={bairro.slug} className="basis-1/2">
+                      <a
+                        href={bairro.slug}
+                        className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group mx-2 block"
+                      >
+                        <h4 className="font-semibold text-brand-gray-900 group-hover:text-brand-red transition-colors">
+                          {bairro.name}
+                        </h4>
+                        <p className="text-sm text-brand-gray-600 mt-1">Ótica</p>
+                      </a>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-0" />
+                <CarouselNext className="right-0" />
+              </Carousel>
+            ) : (
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {[
+                  { name: 'Pinheirinho', slug: '/loja-de-oculos-no-pinheirinho' },
+                  { name: 'Sítio Cercado', slug: '/otica-sitio-cercado' },
+                  { name: 'Umbará', slug: '/otica-umbara' },
+                  { name: 'CIC', slug: '/otica-cic' },
+                  { name: 'Cajuru', slug: '/otica-cajuru' },
+                  { name: 'Boqueirão', slug: '/otica-boqueirao' },
+                  { name: 'Hauer', slug: '/otica-hauer' },
+                  { name: 'Centro', slug: '/otica-centro' },
+                  { name: 'Batel', slug: '/otica-batel' },
+                  { name: 'Água Verde', slug: '/otica-agua-verde' },
+                  { name: 'Bigorrilho', slug: '/otica-bigorrilho' },
+                  { name: 'Portão', slug: '/otica-portao' },
+                  { name: 'Xaxim', slug: '/otica-xaxim' },
+                  { name: 'Santa Felicidade', slug: '/otica-santa-felicidade' },
+                  { name: 'Bacacheri', slug: '/otica-bacacheri' },
+                  { name: 'Rebouças', slug: '/otica-reboucas' },
+                  { name: 'Neo Ville', slug: '/otica-neo-ville' },
+                  { name: 'Vila Sandra', slug: '/otica-vila-sandra' },
+                  { name: 'Vila Formosa', slug: '/otica-vila-formosa' },
+                  { name: 'Cristo Rei', slug: '/otica-cristo-rei' },
+                  { name: 'Ecoville', slug: '/otica-ecoville' },
+                  { name: 'Jardim Botânico', slug: '/otica-jardim-botanico' },
+                  { name: 'Juvevê', slug: '/otica-juveve' },
+                  { name: 'Capão Raso', slug: '/otica-capao-raso' },
+                  { name: 'Jardim das Américas', slug: '/otica-jardim-das-americas' },
+                  { name: 'Novo Mundo', slug: '/otica-novo-mundo' },
+                  { name: 'Tarumã', slug: '/otica-taruma' },
+                  { name: 'Tatuquara', slug: '/otica-tatuquara' },
+                  { name: 'Campo Comprido', slug: '/otica-campo-comprido' },
+                  { name: 'Hugo Lange', slug: '/otica-hugo-lange' },
+                  { name: 'Tingui', slug: '/otica-tingui' },
+                  { name: 'Mercês', slug: '/otica-merces' },
+                  { name: 'Cabral', slug: '/otica-cabral' },
+                  { name: 'Alto da XV', slug: '/otica-alto-da-xv' },
+                  { name: 'Guabirotuba', slug: '/otica-guabirotuba' },
+                  { name: 'Parolin', slug: '/otica-parolin' },
+                  { name: 'Abranches', slug: '/otica-abranches' },
+                  { name: 'Uberaba', slug: '/otica-uberaba' },
+                  { name: 'Vila Izabel', slug: '/otica-vila-izabel' },
+                  { name: 'Alto da Glória', slug: '/otica-alto-da-gloria' },
+                  { name: 'Pilarzinho', slug: '/otica-pilarzinho' },
+                  { name: 'Santa Cândida', slug: '/otica-santa-candida' },
+                  { name: 'Atuba', slug: '/otica-atuba' },
+                  { name: 'Bairro Alto', slug: '/otica-bairro-alto' },
+                  { name: 'Boa Vista', slug: '/otica-boa-vista' },
+                  { name: 'Bom Retiro', slug: '/otica-bom-retiro' },
+                  { name: 'Orleans', slug: '/otica-orleans' },
+                  { name: 'Lindóia', slug: '/otica-lindoia' },
+                  { name: 'São João', slug: '/otica-sao-joao' },
+                ].map((bairro) => (
+                  <a
+                    key={bairro.slug}
+                    href={bairro.slug}
+                    className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group"
+                  >
+                    <h4 className="font-semibold text-brand-gray-900 group-hover:text-brand-red transition-colors">
+                      {bairro.name}
+                    </h4>
+                    <p className="text-sm text-brand-gray-600 mt-1">Ótica</p>
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
 
           <div>
             <h3 className="text-2xl font-bold text-brand-gray-900 mb-6 text-center">
               Cidades da Região Metropolitana
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {[
-                { name: 'Araucária', slug: '/otica-araucaria' },
-                { name: 'Colombo', slug: '/otica-colombo' },
-                { name: 'Pinhais', slug: '/otica-pinhais' },
-                { name: 'São José dos Pinhais', slug: '/otica-sao-jose-dos-pinhais' },
-                { name: 'Fazenda Rio Grande', slug: '/otica-fazenda-rio-grande' },
-                { name: 'Piraquara', slug: '/otica-piraquara' },
-                { name: 'Campo Largo', slug: '/otica-campo-largo' },
-                { name: 'Almirante Tamandaré', slug: '/otica-almirante-tamandare' },
-                { name: 'Quatro Barras', slug: '/otica-quatro-barras' },
-                { name: 'Mandirituba', slug: '/otica-mandirituba' },
-                { name: 'Campina Grande do Sul', slug: '/otica-campina-grande-do-sul' },
-                { name: 'Adrianópolis', slug: '/otica-adrianopolis' },
-                { name: 'Balsa Nova', slug: '/otica-balsa-nova' },
-                { name: 'Contenda', slug: '/otica-contenda' },
-                { name: 'Lapa', slug: '/otica-lapa' },
-                { name: 'Bocaiúva do Sul', slug: '/otica-bocaiuva-do-sul' },
-                { name: 'Itaperuçu', slug: '/otica-itaperucu' },
-                { name: 'Rio Branco do Sul', slug: '/otica-rio-branco-do-sul' },
-                { name: 'Campo Magro', slug: '/otica-campo-magro' },
-                { name: 'Tijucas do Sul', slug: '/otica-tijucas-do-sul' },
-                { name: 'Agudos do Sul', slug: '/otica-agudos-do-sul' },
-                { name: 'Campo do Tenente', slug: '/otica-campo-do-tenente' },
-                { name: 'Cerro Azul', slug: '/otica-cerro-azul' },
-                { name: 'Doutor Ulysses', slug: '/otica-doutor-ulysses' },
-                { name: 'Piên', slug: '/otica-pien' },
-                { name: 'Quitandinha', slug: '/otica-quitandinha' },
-                { name: 'Rio Negro', slug: '/otica-rio-negro' },
-                { name: 'Tunas do Paraná', slug: '/otica-tunas-do-parana' },
-              ].map((cidade) => (
-                <a
-                  key={cidade.slug}
-                  href={cidade.slug}
-                  className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group"
-                >
-                  <h4 className="font-semibold text-brand-gray-900 group-hover:text-brand-red transition-colors">
-                    {cidade.name}
-                  </h4>
-                  <p className="text-sm text-brand-gray-600 mt-1">RMC</p>
-                </a>
-              ))}
-            </div>
+            {isMobile ? (
+              <Carousel 
+                className="w-full"
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
+                <CarouselContent>
+                  {[
+                    { name: 'Araucária', slug: '/otica-araucaria' },
+                    { name: 'Colombo', slug: '/otica-colombo' },
+                    { name: 'Pinhais', slug: '/otica-pinhais' },
+                    { name: 'São José dos Pinhais', slug: '/otica-sao-jose-dos-pinhais' },
+                    { name: 'Fazenda Rio Grande', slug: '/otica-fazenda-rio-grande' },
+                    { name: 'Piraquara', slug: '/otica-piraquara' },
+                    { name: 'Campo Largo', slug: '/otica-campo-largo' },
+                    { name: 'Almirante Tamandaré', slug: '/otica-almirante-tamandare' },
+                    { name: 'Quatro Barras', slug: '/otica-quatro-barras' },
+                    { name: 'Mandirituba', slug: '/otica-mandirituba' },
+                    { name: 'Campina Grande do Sul', slug: '/otica-campina-grande-do-sul' },
+                    { name: 'Adrianópolis', slug: '/otica-adrianopolis' },
+                    { name: 'Balsa Nova', slug: '/otica-balsa-nova' },
+                    { name: 'Contenda', slug: '/otica-contenda' },
+                    { name: 'Lapa', slug: '/otica-lapa' },
+                    { name: 'Bocaiúva do Sul', slug: '/otica-bocaiuva-do-sul' },
+                    { name: 'Itaperuçu', slug: '/otica-itaperucu' },
+                    { name: 'Rio Branco do Sul', slug: '/otica-rio-branco-do-sul' },
+                    { name: 'Campo Magro', slug: '/otica-campo-magro' },
+                    { name: 'Tijucas do Sul', slug: '/otica-tijucas-do-sul' },
+                    { name: 'Agudos do Sul', slug: '/otica-agudos-do-sul' },
+                    { name: 'Campo do Tenente', slug: '/otica-campo-do-tenente' },
+                    { name: 'Cerro Azul', slug: '/otica-cerro-azul' },
+                    { name: 'Doutor Ulysses', slug: '/otica-doutor-ulysses' },
+                    { name: 'Piên', slug: '/otica-pien' },
+                    { name: 'Quitandinha', slug: '/otica-quitandinha' },
+                    { name: 'Rio Negro', slug: '/otica-rio-negro' },
+                    { name: 'Tunas do Paraná', slug: '/otica-tunas-do-parana' },
+                  ].map((cidade) => (
+                    <CarouselItem key={cidade.slug} className="basis-1/2">
+                      <a
+                        href={cidade.slug}
+                        className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group mx-2 block"
+                      >
+                        <h4 className="font-semibold text-brand-gray-900 group-hover:text-brand-red transition-colors">
+                          {cidade.name}
+                        </h4>
+                        <p className="text-sm text-brand-gray-600 mt-1">RMC</p>
+                      </a>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-0" />
+                <CarouselNext className="right-0" />
+              </Carousel>
+            ) : (
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                {[
+                  { name: 'Araucária', slug: '/otica-araucaria' },
+                  { name: 'Colombo', slug: '/otica-colombo' },
+                  { name: 'Pinhais', slug: '/otica-pinhais' },
+                  { name: 'São José dos Pinhais', slug: '/otica-sao-jose-dos-pinhais' },
+                  { name: 'Fazenda Rio Grande', slug: '/otica-fazenda-rio-grande' },
+                  { name: 'Piraquara', slug: '/otica-piraquara' },
+                  { name: 'Campo Largo', slug: '/otica-campo-largo' },
+                  { name: 'Almirante Tamandaré', slug: '/otica-almirante-tamandare' },
+                  { name: 'Quatro Barras', slug: '/otica-quatro-barras' },
+                  { name: 'Mandirituba', slug: '/otica-mandirituba' },
+                  { name: 'Campina Grande do Sul', slug: '/otica-campina-grande-do-sul' },
+                  { name: 'Adrianópolis', slug: '/otica-adrianopolis' },
+                  { name: 'Balsa Nova', slug: '/otica-balsa-nova' },
+                  { name: 'Contenda', slug: '/otica-contenda' },
+                  { name: 'Lapa', slug: '/otica-lapa' },
+                  { name: 'Bocaiúva do Sul', slug: '/otica-bocaiuva-do-sul' },
+                  { name: 'Itaperuçu', slug: '/otica-itaperucu' },
+                  { name: 'Rio Branco do Sul', slug: '/otica-rio-branco-do-sul' },
+                  { name: 'Campo Magro', slug: '/otica-campo-magro' },
+                  { name: 'Tijucas do Sul', slug: '/otica-tijucas-do-sul' },
+                  { name: 'Agudos do Sul', slug: '/otica-agudos-do-sul' },
+                  { name: 'Campo do Tenente', slug: '/otica-campo-do-tenente' },
+                  { name: 'Cerro Azul', slug: '/otica-cerro-azul' },
+                  { name: 'Doutor Ulysses', slug: '/otica-doutor-ulysses' },
+                  { name: 'Piên', slug: '/otica-pien' },
+                  { name: 'Quitandinha', slug: '/otica-quitandinha' },
+                  { name: 'Rio Negro', slug: '/otica-rio-negro' },
+                  { name: 'Tunas do Paraná', slug: '/otica-tunas-do-parana' },
+                ].map((cidade) => (
+                  <a
+                    key={cidade.slug}
+                    href={cidade.slug}
+                    className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group"
+                  >
+                    <h4 className="font-semibold text-brand-gray-900 group-hover:text-brand-red transition-colors">
+                      {cidade.name}
+                    </h4>
+                    <p className="text-sm text-brand-gray-600 mt-1">RMC</p>
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="mt-12 text-center">
