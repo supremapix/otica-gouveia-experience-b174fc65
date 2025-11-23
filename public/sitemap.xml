@@ -159,4 +159,64 @@
     </image:image>
   </url>
 
+  <!-- Bigorrilho -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bigorrilho</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/40a418ff-3ca5-4179-978b-9c5888b8d04b.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Bigorrilho</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Portão -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-portao</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/48cc47c3-a484-4afb-9f9e-fc1b26e5d095.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Portão</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Xaxim -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-xaxim</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/74d8f6cb-dfbb-4388-82b9-f012acfbadcc.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Xaxim</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Santa Felicidade -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-santa-felicidade</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Santa Felicidade</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Bacacheri -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bacacheri</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Bacacheri</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
