@@ -1,22 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { useIsMobile } from '../hooks/use-mobile';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Products = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
   const [activeCategory, setActiveCategory] = useState('all');
-  const [isLoaded, setIsLoaded] = useState(false);
   const isMobile = useIsMobile();
-
-  // Force render after component mounts to ensure products show
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 100);
-    return () => clearTimeout(timer);
-  }, []);
-
-  console.log('Products component render:', { isMobile, activeCategory, isInView, isLoaded });
 
   const products = [
     {
@@ -153,14 +149,11 @@ const Products = () => {
 
   const [selectedProduct, setSelectedProduct] = useState<null | typeof products[0]>(null);
 
-  // Show products immediately or with animation based on load state
-  const shouldShowProducts = isLoaded || isInView;
-
   return (
     <section id="products" className="section-padding bg-white" ref={ref as React.RefObject<HTMLDivElement>}>
       <div className="section-container">
         <div className={`text-center mb-12 transition-all duration-1000 ease-out ${
-          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <span className="text-brand-red text-sm font-semibold uppercase tracking-wider">CATÁLOGO</span>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-900 mt-2">
@@ -172,7 +165,7 @@ const Products = () => {
         </div>
 
         <div className={`flex flex-wrap justify-center gap-2 sm:gap-4 mb-10 transition-all duration-1000 ease-out delay-200 ${
-          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <button
             onClick={() => setActiveCategory('all')}
@@ -226,61 +219,112 @@ const Products = () => {
           </button>
         </div>
 
-        <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px] transition-all duration-700 ease-out ${
-          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-        }`}>
-          {filteredProducts.length > 0 ? (
-            filteredProducts.map((product, index) => (
-              <div 
-                key={product.id}
-                className="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-gray-200 transition-all duration-300 hover:shadow-md hover:-translate-y-1 cursor-pointer"
-                onClick={() => setSelectedProduct(product)}
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="h-64 overflow-hidden">
-                  <img 
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                    onError={(e) => {
-                      console.error('Image failed to load:', product.image);
-                      e.currentTarget.style.display = 'none';
-                    }}
-                    loading="lazy"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-lg font-bold text-brand-gray-900">{product.name}</h3>
-                    <span className="bg-brand-red/10 text-brand-red text-xs px-2 py-1 rounded-full font-medium">
-                      {product.category.charAt(0).toUpperCase() + product.category.slice(1)}
-                    </span>
+        {isMobile ? (
+          <Carousel 
+            className={`w-full transition-all duration-700 ease-out ${
+              isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+            }`}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {filteredProducts.map((product, index) => (
+                <CarouselItem key={product.id} className="basis-full">
+                  <div 
+                    className="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-gray-200 transition-all duration-300 hover:shadow-md hover:-translate-y-1 cursor-pointer mx-2"
+                    onClick={() => setSelectedProduct(product)}
+                  >
+                    <div className="h-64 overflow-hidden">
+                      <img 
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <div className="flex justify-between items-start mb-2">
+                        <h3 className="text-lg font-bold text-brand-gray-900">{product.name}</h3>
+                        <span className="bg-brand-red/10 text-brand-red text-xs px-2 py-1 rounded-full font-medium">
+                          {product.category.charAt(0).toUpperCase() + product.category.slice(1)}
+                        </span>
+                      </div>
+                      <p className="text-brand-gray-700 text-sm mb-4">{product.description}</p>
+                      <div className="flex justify-between items-center">
+                        <span className="text-brand-gray-900 font-medium">{product.price}</span>
+                        <button 
+                          className="text-brand-red text-sm font-medium hover:underline"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            window.open("https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20tenho%20interesse%20no%20produto%20" + product.name + ".%20Pode%20me%20ajudar?", "_blank");
+                          }}
+                        >
+                          Saber mais
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <p className="text-brand-gray-700 text-sm mb-4">{product.description}</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-brand-gray-900 font-medium">{product.price}</span>
-                    <button 
-                      className="text-brand-red text-sm font-medium hover:underline"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open("https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20tenho%20interesse%20no%20produto%20" + product.name + ".%20Pode%20me%20ajudar?", "_blank");
-                      }}
-                    >
-                      Saber mais
-                    </button>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
+          </Carousel>
+        ) : (
+          <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px] transition-all duration-700 ease-out ${
+            isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          }`}>
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((product, index) => (
+                <div 
+                  key={product.id}
+                  className="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-gray-200 transition-all duration-300 hover:shadow-md hover:-translate-y-1 cursor-pointer"
+                  onClick={() => setSelectedProduct(product)}
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="h-64 overflow-hidden">
+                    <img 
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex justify-between items-start mb-2">
+                      <h3 className="text-lg font-bold text-brand-gray-900">{product.name}</h3>
+                      <span className="bg-brand-red/10 text-brand-red text-xs px-2 py-1 rounded-full font-medium">
+                        {product.category.charAt(0).toUpperCase() + product.category.slice(1)}
+                      </span>
+                    </div>
+                    <p className="text-brand-gray-700 text-sm mb-4">{product.description}</p>
+                    <div className="flex justify-between items-center">
+                      <span className="text-brand-gray-900 font-medium">{product.price}</span>
+                      <button 
+                        className="text-brand-red text-sm font-medium hover:underline"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          window.open("https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20tenho%20interesse%20no%20produto%20" + product.name + ".%20Pode%20me%20ajudar?", "_blank");
+                        }}
+                      >
+                        Saber mais
+                      </button>
+                    </div>
                   </div>
                 </div>
+              ))
+            ) : (
+              <div className="col-span-full text-center py-8">
+                <p className="text-brand-gray-500">Nenhum produto encontrado para esta categoria.</p>
               </div>
-            ))
-          ) : (
-            <div className="col-span-full text-center py-8">
-              <p className="text-brand-gray-500">Nenhum produto encontrado para esta categoria.</p>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
+        )}
 
         <div className={`mt-20 transition-all duration-1000 ease-out delay-300 ${
-          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <div className="text-center mb-8">
             <span className="text-brand-red text-sm font-semibold uppercase tracking-wider">PARCEIROS</span>
@@ -350,7 +394,7 @@ const Products = () => {
         </div>
 
         <div className={`mt-16 bg-brand-gray-100 rounded-2xl p-8 md:p-12 relative overflow-hidden transition-all duration-1000 ease-out delay-400 ${
-          shouldShowProducts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

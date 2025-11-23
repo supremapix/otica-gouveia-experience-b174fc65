@@ -1,9 +1,18 @@
 import { MapPin, ArrowRight, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useInView } from '../utils/animations';
+import { useIsMobile } from '../hooks/use-mobile';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const LocalizacoesBairros = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
+  const isMobile = useIsMobile();
 
   const localizacoes = [
     {
@@ -48,64 +57,136 @@ const LocalizacoesBairros = () => {
           </p>
         </div>
 
-        <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 ease-out delay-200 ${
-          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-        }`}>
-          {localizacoes.map((local, index) => (
-            <div 
-              key={index} 
-              className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 ${
-                local.destaque ? 'ring-2 ring-brand-red/20 relative' : ''
-              }`}
-            >
-              {local.destaque && (
-                <div className="absolute top-4 right-4 z-10">
-                  <div className="bg-brand-red text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
-                    <Star size={12} />
-                    PRINCIPAL
-                  </div>
-                </div>
-              )}
-              
-              <div className={`h-32 bg-gradient-to-r ${local.cor} relative`}>
-                <div className="absolute inset-0 bg-black/20"></div>
-                <div className="absolute bottom-4 left-6 text-white">
-                  <div className="flex items-center gap-2 mb-1">
-                    <MapPin size={16} />
-                    <span className="text-sm font-medium opacity-90">{local.bairro}</span>
-                  </div>
-                  <h3 className="text-lg font-bold">{local.titulo}</h3>
-                </div>
-              </div>
-
-              <div className="p-6">
-                <p className="text-brand-gray-600 mb-6 leading-relaxed">
-                  {local.descricao}
-                </p>
-
-                <div className="space-y-2 mb-6">
-                  {local.destacos.map((destaque, idx) => (
-                    <div key={idx} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-brand-red rounded-full"></div>
-                      <span className="text-sm text-brand-gray-700">{destaque}</span>
+        {isMobile ? (
+          <Carousel 
+            className={`w-full transition-all duration-1000 ease-out delay-200 ${
+              isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+            }`}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {localizacoes.map((local, index) => (
+                <CarouselItem key={index} className="basis-full">
+                  <div 
+                    className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mx-2 ${
+                      local.destaque ? 'ring-2 ring-brand-red/20 relative' : ''
+                    }`}
+                  >
+                    {local.destaque && (
+                      <div className="absolute top-4 right-4 z-10">
+                        <div className="bg-brand-red text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                          <Star size={12} />
+                          PRINCIPAL
+                        </div>
+                      </div>
+                    )}
+                    
+                    <div className={`h-32 bg-gradient-to-r ${local.cor} relative`}>
+                      <div className="absolute inset-0 bg-black/20"></div>
+                      <div className="absolute bottom-4 left-6 text-white">
+                        <div className="flex items-center gap-2 mb-1">
+                          <MapPin size={16} />
+                          <span className="text-sm font-medium opacity-90">{local.bairro}</span>
+                        </div>
+                        <h3 className="text-lg font-bold">{local.titulo}</h3>
+                      </div>
                     </div>
-                  ))}
+
+                    <div className="p-6">
+                      <p className="text-brand-gray-600 mb-6 leading-relaxed">
+                        {local.descricao}
+                      </p>
+
+                      <div className="space-y-2 mb-6">
+                        {local.destacos.map((destaque, idx) => (
+                          <div key={idx} className="flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 bg-brand-red rounded-full"></div>
+                            <span className="text-sm text-brand-gray-700">{destaque}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      <Link 
+                        to={local.link}
+                        className="group w-full bg-brand-red hover:bg-brand-red/90 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
+                      >
+                        Conhecer Unidade
+                        <ArrowRight 
+                          size={16} 
+                          className="group-hover:translate-x-1 transition-transform" 
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
+          </Carousel>
+        ) : (
+          <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 ease-out delay-200 ${
+            isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          }`}>
+            {localizacoes.map((local, index) => (
+              <div 
+                key={index} 
+                className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 ${
+                  local.destaque ? 'ring-2 ring-brand-red/20 relative' : ''
+                }`}
+              >
+                {local.destaque && (
+                  <div className="absolute top-4 right-4 z-10">
+                    <div className="bg-brand-red text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                      <Star size={12} />
+                      PRINCIPAL
+                    </div>
+                  </div>
+                )}
+                
+                <div className={`h-32 bg-gradient-to-r ${local.cor} relative`}>
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute bottom-4 left-6 text-white">
+                    <div className="flex items-center gap-2 mb-1">
+                      <MapPin size={16} />
+                      <span className="text-sm font-medium opacity-90">{local.bairro}</span>
+                    </div>
+                    <h3 className="text-lg font-bold">{local.titulo}</h3>
+                  </div>
                 </div>
 
-                <Link 
-                  to={local.link}
-                  className="group w-full bg-brand-red hover:bg-brand-red/90 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
-                >
-                  Conhecer Unidade
-                  <ArrowRight 
-                    size={16} 
-                    className="group-hover:translate-x-1 transition-transform" 
-                  />
-                </Link>
+                <div className="p-6">
+                  <p className="text-brand-gray-600 mb-6 leading-relaxed">
+                    {local.descricao}
+                  </p>
+
+                  <div className="space-y-2 mb-6">
+                    {local.destacos.map((destaque, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-brand-red rounded-full"></div>
+                        <span className="text-sm text-brand-gray-700">{destaque}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link 
+                    to={local.link}
+                    className="group w-full bg-brand-red hover:bg-brand-red/90 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
+                  >
+                    Conhecer Unidade
+                    <ArrowRight 
+                      size={16} 
+                      className="group-hover:translate-x-1 transition-transform" 
+                    />
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
 
         <div className={`mt-16 text-center transition-all duration-1000 ease-out delay-400 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
