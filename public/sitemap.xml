@@ -279,4 +279,52 @@
     </image:image>
   </url>
 
+  <!-- Rebouças -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-reboucas</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/1e537bc1-d784-42e1-924f-2b78a52c928e.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Rebouças</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Neo Ville -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-neo-ville</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/274d786d-f6dc-4326-86d9-2d60e4280f0d.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Neo Ville</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Vila Sandra -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-vila-sandra</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2a369857-bf52-4a02-8d10-0c2801ad850d.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Vila Sandra</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Vila Formosa -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-vila-formosa</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Vila Formosa</image:caption>
+    </image:image>
+  </url>
+
 </urlset>

@@ -201,6 +201,10 @@ const Index = () => {
                 { name: 'Xaxim', slug: '/otica-xaxim' },
                 { name: 'Santa Felicidade', slug: '/otica-santa-felicidade' },
                 { name: 'Bacacheri', slug: '/otica-bacacheri' },
+                { name: 'Rebouças', slug: '/otica-reboucas' },
+                { name: 'Neo Ville', slug: '/otica-neo-ville' },
+                { name: 'Vila Sandra', slug: '/otica-vila-sandra' },
+                { name: 'Vila Formosa', slug: '/otica-vila-formosa' },
               ].map((bairro) => (
                 <a
                   key={bairro.slug}
@@ -227,6 +231,8 @@ const Index = () => {
                 { name: 'Pinhais', slug: '/otica-pinhais' },
                 { name: 'São José dos Pinhais', slug: '/otica-sao-jose-dos-pinhais' },
                 { name: 'Fazenda Rio Grande', slug: '/otica-fazenda-rio-grande' },
+                { name: 'Piraquara', slug: '/otica-piraquara' },
+                { name: 'Campo Largo', slug: '/otica-campo-largo' },
               ].map((cidade) => (
                 <a
                   key={cidade.slug}
