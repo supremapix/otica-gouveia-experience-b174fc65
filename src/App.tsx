@@ -35,6 +35,27 @@ import OticaVilaSandra from "./pages/OticaVilaSandra";
 import OticaVilaFormosa from "./pages/OticaVilaFormosa";
 import OticaPiraquara from "./pages/OticaPiraquara";
 import OticaCampoLargo from "./pages/OticaCampoLargo";
+import OticaAlmiranteTamandare from "./pages/OticaAlmiranteTamandare";
+import OticaQuatroBarras from "./pages/OticaQuatroBarras";
+import OticaMandirituba from "./pages/OticaMandirituba";
+import OticaCampinaGrandeDoSul from "./pages/OticaCampinaGrandeDoSul";
+import OticaCristoRei from "./pages/OticaCristoRei";
+import OticaEcoville from "./pages/OticaEcoville";
+import OticaJardimBotanico from "./pages/OticaJardimBotanico";
+import OticaJuveve from "./pages/OticaJuveve";
+import OticaCapaoRaso from "./pages/OticaCapaoRaso";
+import OticaJardimDasAmericas from "./pages/OticaJardimDasAmericas";
+import OticaNovoMundo from "./pages/OticaNovoMundo";
+import OticaTaruma from "./pages/OticaTaruma";
+import OticaTatuquara from "./pages/OticaTatuquara";
+import OticaCampoComprido from "./pages/OticaCampoComprido";
+import OticaHugoLange from "./pages/OticaHugoLange";
+import OticaTingui from "./pages/OticaTingui";
+import OticaMerces from "./pages/OticaMerces";
+import OticaCabral from "./pages/OticaCabral";
+import OticaAltoDaXV from "./pages/OticaAltoDaXV";
+import OticaGuabirotuba from "./pages/OticaGuabirotuba";
+import OticaParolin from "./pages/OticaParolin";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -102,6 +123,27 @@ const App = () => (
             <Route path="/otica-vila-formosa" element={<OticaVilaFormosa />} />
             <Route path="/otica-piraquara" element={<OticaPiraquara />} />
             <Route path="/otica-campo-largo" element={<OticaCampoLargo />} />
+            <Route path="/otica-almirante-tamandare" element={<OticaAlmiranteTamandare />} />
+            <Route path="/otica-quatro-barras" element={<OticaQuatroBarras />} />
+            <Route path="/otica-mandirituba" element={<OticaMandirituba />} />
+            <Route path="/otica-campina-grande-do-sul" element={<OticaCampinaGrandeDoSul />} />
+            <Route path="/otica-cristo-rei" element={<OticaCristoRei />} />
+            <Route path="/otica-ecoville" element={<OticaEcoville />} />
+            <Route path="/otica-jardim-botanico" element={<OticaJardimBotanico />} />
+            <Route path="/otica-juveve" element={<OticaJuveve />} />
+            <Route path="/otica-capao-raso" element={<OticaCapaoRaso />} />
+            <Route path="/otica-jardim-das-americas" element={<OticaJardimDasAmericas />} />
+            <Route path="/otica-novo-mundo" element={<OticaNovoMundo />} />
+            <Route path="/otica-taruma" element={<OticaTaruma />} />
+            <Route path="/otica-tatuquara" element={<OticaTatuquara />} />
+            <Route path="/otica-campo-comprido" element={<OticaCampoComprido />} />
+            <Route path="/otica-hugo-lange" element={<OticaHugoLange />} />
+            <Route path="/otica-tingui" element={<OticaTingui />} />
+            <Route path="/otica-merces" element={<OticaMerces />} />
+            <Route path="/otica-cabral" element={<OticaCabral />} />
+            <Route path="/otica-alto-da-xv" element={<OticaAltoDaXV />} />
+            <Route path="/otica-guabirotuba" element={<OticaGuabirotuba />} />
+            <Route path="/otica-parolin" element={<OticaParolin />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>

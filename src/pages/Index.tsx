@@ -205,6 +205,23 @@ const Index = () => {
                 { name: 'Neo Ville', slug: '/otica-neo-ville' },
                 { name: 'Vila Sandra', slug: '/otica-vila-sandra' },
                 { name: 'Vila Formosa', slug: '/otica-vila-formosa' },
+                { name: 'Cristo Rei', slug: '/otica-cristo-rei' },
+                { name: 'Ecoville', slug: '/otica-ecoville' },
+                { name: 'Jardim Botânico', slug: '/otica-jardim-botanico' },
+                { name: 'Juvevê', slug: '/otica-juveve' },
+                { name: 'Capão Raso', slug: '/otica-capao-raso' },
+                { name: 'Jardim das Américas', slug: '/otica-jardim-das-americas' },
+                { name: 'Novo Mundo', slug: '/otica-novo-mundo' },
+                { name: 'Tarumã', slug: '/otica-taruma' },
+                { name: 'Tatuquara', slug: '/otica-tatuquara' },
+                { name: 'Campo Comprido', slug: '/otica-campo-comprido' },
+                { name: 'Hugo Lange', slug: '/otica-hugo-lange' },
+                { name: 'Tingui', slug: '/otica-tingui' },
+                { name: 'Mercês', slug: '/otica-merces' },
+                { name: 'Cabral', slug: '/otica-cabral' },
+                { name: 'Alto da XV', slug: '/otica-alto-da-xv' },
+                { name: 'Guabirotuba', slug: '/otica-guabirotuba' },
+                { name: 'Parolin', slug: '/otica-parolin' },
               ].map((bairro) => (
                 <a
                   key={bairro.slug}
@@ -233,6 +250,10 @@ const Index = () => {
                 { name: 'Fazenda Rio Grande', slug: '/otica-fazenda-rio-grande' },
                 { name: 'Piraquara', slug: '/otica-piraquara' },
                 { name: 'Campo Largo', slug: '/otica-campo-largo' },
+                { name: 'Almirante Tamandaré', slug: '/otica-almirante-tamandare' },
+                { name: 'Quatro Barras', slug: '/otica-quatro-barras' },
+                { name: 'Mandirituba', slug: '/otica-mandirituba' },
+                { name: 'Campina Grande do Sul', slug: '/otica-campina-grande-do-sul' },
               ].map((cidade) => (
                 <a
                   key={cidade.slug}
