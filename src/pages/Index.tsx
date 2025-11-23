@@ -4,7 +4,6 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
 import Products from '../components/Products';
-import LocalizacoesBairros from '../components/LocalizacoesBairros';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Instagram from '../components/Instagram';
@@ -169,14 +168,7 @@ const Index = () => {
         <Products />
       </ErrorBoundary>
       
-      <ErrorBoundary 
-        componentName="LocalizacoesBairros"
-        fallback={<div className="p-4 text-red-500">Error loading LocalizacoesBairros</div>}
-      >
-        <LocalizacoesBairros />
-      </ErrorBoundary>
-      
-      <ErrorBoundary 
+      <ErrorBoundary
         componentName="Testimonials"
         fallback={<div className="p-4 text-red-500">Error loading Testimonials</div>}
       >

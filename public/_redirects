@@ -10,5 +10,12 @@ https://gouveiacuritiba.com.br/* https://www.gouveiacuritiba.com.br/:splat 301!
 /sitio-cercado-otica    /otica-sitio-cercado 301
 /umbara-otica           /otica-umbara 301
 
+# Specific routes for neighborhood pages
+/otica-cic              /otica-cic 200
+/otica-cajuru           /otica-cajuru 200
+/otica-boqueirao        /otica-boqueirao 200
+/otica-hauer            /otica-hauer 200
+/otica-centro           /otica-centro 200
+
 # SPA fallback - must be last (catch-all for client-side routing)
 /*    /index.html   200
