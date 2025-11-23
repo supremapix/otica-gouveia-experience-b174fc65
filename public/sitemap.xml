@@ -579,4 +579,84 @@
     </image:image>
   </url>
 
+  <!-- Adrianópolis -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-adrianopolis</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Balsa Nova -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-balsa-nova</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contenda -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-contenda</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Lapa -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-lapa</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Abranches -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-abranches</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Uberaba -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-uberaba</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Vila Izabel -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-vila-izabel</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Alto da Glória -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-alto-da-gloria</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Pilarzinho -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-pilarzinho</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Santa Cândida -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-santa-candida</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

@@ -56,6 +56,16 @@ import OticaCabral from "./pages/OticaCabral";
 import OticaAltoDaXV from "./pages/OticaAltoDaXV";
 import OticaGuabirotuba from "./pages/OticaGuabirotuba";
 import OticaParolin from "./pages/OticaParolin";
+import OticaAdrianopolis from "./pages/OticaAdrianopolis";
+import OticaBalsaNova from "./pages/OticaBalsaNova";
+import OticaContenda from "./pages/OticaContenda";
+import OticaLapa from "./pages/OticaLapa";
+import OticaAbranches from "./pages/OticaAbranches";
+import OticaUberaba from "./pages/OticaUberaba";
+import OticaVilaIzabel from "./pages/OticaVilaIzabel";
+import OticaAltoDaGloria from "./pages/OticaAltoDaGloria";
+import OticaPilarzinho from "./pages/OticaPilarzinho";
+import OticaSantaCandida from "./pages/OticaSantaCandida";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -144,6 +154,16 @@ const App = () => (
             <Route path="/otica-alto-da-xv" element={<OticaAltoDaXV />} />
             <Route path="/otica-guabirotuba" element={<OticaGuabirotuba />} />
             <Route path="/otica-parolin" element={<OticaParolin />} />
+            <Route path="/otica-adrianopolis" element={<OticaAdrianopolis />} />
+            <Route path="/otica-balsa-nova" element={<OticaBalsaNova />} />
+            <Route path="/otica-contenda" element={<OticaContenda />} />
+            <Route path="/otica-lapa" element={<OticaLapa />} />
+            <Route path="/otica-abranches" element={<OticaAbranches />} />
+            <Route path="/otica-uberaba" element={<OticaUberaba />} />
+            <Route path="/otica-vila-izabel" element={<OticaVilaIzabel />} />
+            <Route path="/otica-alto-da-gloria" element={<OticaAltoDaGloria />} />
+            <Route path="/otica-pilarzinho" element={<OticaPilarzinho />} />
+            <Route path="/otica-santa-candida" element={<OticaSantaCandida />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
