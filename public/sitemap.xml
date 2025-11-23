@@ -75,4 +75,88 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- CIC -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-cic</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos CIC</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Cajuru -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-cajuru</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Cajuru</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Boqueirão -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-boqueirao</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/72458d7b-67ce-4323-8f82-f7e805b4b50c.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Boqueirão</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Hauer -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-hauer</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Hauer</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Centro -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-centro</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/e1ecf008-b212-460b-ac86-aaa84894d67e.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Centro</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Batel -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-batel</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/e2d4b47a-9617-4e72-9f26-50170c88e9a0.image:loc>
+      <image:caption>Ótica Gouveia - Óculos Batel</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Água Verde -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-agua-verde</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.png</image:loc>
+      <image:caption>Ótica Gouveia - Óculos Água Verde</image:caption>
+    </image:image>
+  </url>
+
 </urlset>

@@ -110,13 +110,15 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-brand-gray-800 text-center text-brand-gray-400 text-sm">
           <p>© 2025 Ótica Gouveia. Todos os direitos reservados.</p>
-          <p className="mt-2">
-            Criação de sites{" "}
+          <p className="mt-2 flex items-center justify-center gap-2">
+            Desenvolvido{" "}
+            <span className="text-red-500 text-2xl animate-pulse inline-block">❤️</span>
+            {" "}por{" "}
             <a 
               href="https://www.supremamidia.com.br" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-brand-red hover:underline"
+              className="text-brand-red hover:underline font-semibold"
             >
               Suprema Mídia
             </a>
