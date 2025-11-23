@@ -180,7 +180,7 @@ const Services = () => {
             </div>
             <h3 className="text-xl font-bold text-brand-gray-900 mb-2">Facilidade de Pagamento</h3>
             <p className="text-brand-gray-700">
-              Parcele suas compras em até 10x sem juros e aproveite nossas condições especiais de pagamento.
+              Aproveite nossas condições especiais de pagamento. Consulte-nos!
             </p>
           </div>
           
