@@ -71,15 +71,15 @@ const LojaOculosPinheirinho = () => {
         <section className="section-padding bg-white">
           <div className="section-container">
             <h2 className="text-3xl font-bold text-brand-gray-900 mb-8 text-center">
-              Conheça o Pinheirinho
+              Conheça a Ótica Gouveia
             </h2>
             <div className="max-w-4xl mx-auto mb-16">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/19iSaNHFoa0"
-                  title="Conheça o Pinheirinho - Curitiba"
+                  src="https://www.youtube.com/embed/gDEeiCvn89Q"
+                  title="Ótica Gouveia - Curitiba"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
