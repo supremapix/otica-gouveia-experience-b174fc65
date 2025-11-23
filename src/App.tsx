@@ -86,6 +86,10 @@ import OticaRioNegro from "./pages/OticaRioNegro";
 import OticaTunasDoParana from "./pages/OticaTunasDoParana";
 import OticaLindoia from "./pages/OticaLindoia";
 import OticaSaoJoao from "./pages/OticaSaoJoao";
+import OticaSantaCecilia from "./pages/OticaSantaCecilia";
+import OticaVilaMadalena from "./pages/OticaVilaMadalena";
+import OticaFanny from "./pages/OticaFanny";
+import OticaSaoFrancisco from "./pages/OticaSaoFrancisco";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -204,6 +208,10 @@ const App = () => (
             <Route path="/otica-tunas-do-parana" element={<OticaTunasDoParana />} />
             <Route path="/otica-lindoia" element={<OticaLindoia />} />
             <Route path="/otica-sao-joao" element={<OticaSaoJoao />} />
+            <Route path="/otica-santa-cecilia" element={<OticaSantaCecilia />} />
+            <Route path="/otica-vila-madalena" element={<OticaVilaMadalena />} />
+            <Route path="/otica-fanny" element={<OticaFanny />} />
+            <Route path="/otica-sao-francisco" element={<OticaSaoFrancisco />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
