@@ -86,10 +86,22 @@ import OticaRioNegro from "./pages/OticaRioNegro";
 import OticaTunasDoParana from "./pages/OticaTunasDoParana";
 import OticaLindoia from "./pages/OticaLindoia";
 import OticaSaoJoao from "./pages/OticaSaoJoao";
-import OticaSantaCecilia from "./pages/OticaSantaCecilia";
-import OticaVilaMadalena from "./pages/OticaVilaMadalena";
 import OticaFanny from "./pages/OticaFanny";
 import OticaSaoFrancisco from "./pages/OticaSaoFrancisco";
+import OticaBarigui from "./pages/OticaBarigui";
+import OticaCentroCivico from "./pages/OticaCentroCivico";
+import OticaCapaoDaImbuia from "./pages/OticaCapaoDaImbuia";
+import OticaSantaQuiteria from "./pages/OticaSantaQuiteria";
+import OticaMossungue from "./pages/OticaMossungue";
+import OticaSeminario from "./pages/OticaSeminario";
+import OticaBarreirinha from "./pages/OticaBarreirinha";
+import OticaSantoInacio from "./pages/OticaSantoInacio";
+import OticaSaoLourenco from "./pages/OticaSaoLourenco";
+import OticaRiviera from "./pages/OticaRiviera";
+import OticaCampoDeSantana from "./pages/OticaCampoDeSantana";
+import OticaAugusta from "./pages/OticaAugusta";
+import OticaCascatinha from "./pages/OticaCascatinha";
+import OticaVilaGuaira from "./pages/OticaVilaGuaira";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -208,10 +220,22 @@ const App = () => (
             <Route path="/otica-tunas-do-parana" element={<OticaTunasDoParana />} />
             <Route path="/otica-lindoia" element={<OticaLindoia />} />
             <Route path="/otica-sao-joao" element={<OticaSaoJoao />} />
-            <Route path="/otica-santa-cecilia" element={<OticaSantaCecilia />} />
-            <Route path="/otica-vila-madalena" element={<OticaVilaMadalena />} />
             <Route path="/otica-fanny" element={<OticaFanny />} />
             <Route path="/otica-sao-francisco" element={<OticaSaoFrancisco />} />
+            <Route path="/otica-barigui" element={<OticaBarigui />} />
+            <Route path="/otica-centro-civico" element={<OticaCentroCivico />} />
+            <Route path="/otica-capao-da-imbuia" element={<OticaCapaoDaImbuia />} />
+            <Route path="/otica-santa-quiteria" element={<OticaSantaQuiteria />} />
+            <Route path="/otica-mossungue" element={<OticaMossungue />} />
+            <Route path="/otica-seminario" element={<OticaSeminario />} />
+            <Route path="/otica-barreirinha" element={<OticaBarreirinha />} />
+            <Route path="/otica-santo-inacio" element={<OticaSantoInacio />} />
+            <Route path="/otica-sao-lourenco" element={<OticaSaoLourenco />} />
+            <Route path="/otica-riviera" element={<OticaRiviera />} />
+            <Route path="/otica-campo-de-santana" element={<OticaCampoDeSantana />} />
+            <Route path="/otica-augusta" element={<OticaAugusta />} />
+            <Route path="/otica-cascatinha" element={<OticaCascatinha />} />
+            <Route path="/otica-vila-guaira" element={<OticaVilaGuaira />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
