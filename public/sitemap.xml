@@ -819,4 +819,36 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Santa Cecília -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-santa-cecilia</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Vila Madalena -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-vila-madalena</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fanny -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-fanny</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- São Francisco -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-sao-francisco</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
