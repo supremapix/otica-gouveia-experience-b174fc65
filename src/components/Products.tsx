@@ -25,7 +25,7 @@ const Products = () => {
       category: "masculino",
       image: "/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.png",
       description: "Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância.",
-      price: "A partir de R$ 599,00"
+      price: "Consulte-nos!"
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const Products = () => {
       category: "feminino",
       image: "/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.png",
       description: "Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
-      price: "A partir de R$ 499,00"
+      price: "Consulte-nos!"
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const Products = () => {
       category: "infantil",
       image: "/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.png",
       description: "Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.",
-      price: "A partir de R$ 359,00"
+      price: "Consulte-nos!"
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ const Products = () => {
       category: "feminino",
       image: "/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.png",
       description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
-      price: "A partir de R$ 699,00"
+      price: "Consulte-nos!"
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ const Products = () => {
       category: "feminino",
       image: "/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.png",
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
-      price: "A partir de R$ 459,00"
+      price: "Consulte-nos!"
     },
     {
       id: 6,
@@ -65,7 +65,7 @@ const Products = () => {
       category: "lentes",
       image: "/lovable-uploads/4b85711f-9660-415d-a4fa-cd7f50e747ec.png",
       description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
-      price: "A partir de R$ 899,00"
+      price: "Consulte-nos!"
     },
     {
       id: 7,
@@ -73,7 +73,7 @@ const Products = () => {
       category: "masculino",
       image: "/lovable-uploads/1989c2bf-cbd0-4081-8776-f6c0e985a404.png",
       description: "Design hexagonal único com armação metálica dourada e lentes escuras. Perfeito para quem busca um estilo diferenciado e moderno.",
-      price: "R$ 599,00"
+      price: "Consulte-nos!"
     },
     {
       id: 8,
@@ -81,7 +81,7 @@ const Products = () => {
       category: "feminino",
       image: "/lovable-uploads/1be253aa-66d3-4954-a782-d2e82afe7b50.png",
       description: "Modelo redondo clássico com dupla ponte e lentes degradê marrom. Uma releitura moderna do estilo vintage que nunca sai de moda.",
-      price: "R$ 699,00"
+      price: "Consulte-nos!"
     },
     {
       id: 9,
@@ -89,7 +89,7 @@ const Products = () => {
       category: "masculino",
       image: "/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.png",
       description: "O icônico modelo redondo com armação dourada e lentes G-15 Classic em verde escuro. Um clássico atemporal para todos os momentos.",
-      price: "R$ 499,00"
+      price: "Consulte-nos!"
     },
     {
       id: 10,
@@ -97,7 +97,7 @@ const Products = () => {
       category: "infantil",
       image: "/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.png",
       description: "Armação infantil em acetato lilás com hastes internas na cor rosa. Super leve, confortável e resistente para o dia a dia das crianças. Ideal para volta às aulas e uso escolar.",
-      price: "A partir de R$ 59,00"
+      price: "Consulte-nos!"
     },
     {
       id: 11,
@@ -105,7 +105,7 @@ const Products = () => {
       category: "feminino", 
       image: "/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.png",
       description: "Conjunto Victor Hugo: Grau com armação dourada super leve e lente quadrada oversize + Sol com lente marrom degradê. Extremamente elegante, acompanha case original.",
-      price: "A partir de R$ 129,00"
+      price: "Consulte-nos!"
     },
     {
       id: 12,
@@ -113,7 +113,7 @@ const Products = () => {
       category: "masculino",
       image: "/lovable-uploads/35e542ae-f892-4c53-8e2f-db75ce35721e.png", 
       description: "Óculos esportivo máscara estilo Oakley Sutro, lente única espelhada azul com reflexos roxos. Ideal para ciclismo, corrida, motociclismo e uso outdoor. Proteção UV400.",
-      price: "A partir de R$ 42,00"
+      price: "Consulte-nos!"
     },
     {
       id: 13,
@@ -121,7 +121,7 @@ const Products = () => {
       category: "masculino",
       image: "/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.png",
       description: "Armação robusta em acetato preto com interior levemente tartaruga, lente marrom degradê. Estilo urbano, moderno e sofisticado. Ideal para dia a dia ou praia.",
-      price: "A partir de R$ 119,00"
+      price: "Consulte-nos!"
     },
     {
       id: 14,
@@ -129,7 +129,7 @@ const Products = () => {
       category: "feminino",
       image: "/lovable-uploads/9c6d314e-f050-4664-965f-bbe9ebc6bf8f.png",
       description: "Armação em acetato translúcido âmbar (caramelo claro) com lente marrom degradê. Formato arredondado, leve, moderno, super estiloso, perfeito para looks casuais.",
-      price: "A partir de R$ 99,00"
+      price: "Consulte-nos!"
     },
     {
       id: 15,
@@ -137,7 +137,7 @@ const Products = () => {
       category: "feminino",
       image: "/lovable-uploads/593e7657-b084-4527-afc6-3be7b4cf974c.png",
       description: "Armação de grau com clip solar magnético. Vem com dois clips solares polarizados: um preto tradicional e outro no padrão tartaruga. Sistema magnético prático, ideal para quem quer um 2 em 1.",
-      price: "A partir de R$ 139,00"
+      price: "Consulte-nos!"
     }
   ];
 
