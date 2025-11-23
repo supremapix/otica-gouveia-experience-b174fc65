@@ -12,6 +12,8 @@ import LojaOculosPinheirinho from "./pages/LojaOculosPinheirinho";
 import LojaOculosPinheirinho15565 from "./pages/LojaOculosPinheirinho15565";
 import OticaSitioCercado from "./pages/OticaSitioCercado";
 import OticaUmbara from "./pages/OticaUmbara";
+import OticaCIC from "./pages/OticaCIC";
+import OticaCajuru from "./pages/OticaCajuru";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -56,6 +58,8 @@ const App = () => (
             <Route path="/otica-pinheirinho" element={<LojaOculosPinheirinho />} />
             <Route path="/otica-sitio-cercado" element={<OticaSitioCercado />} />
             <Route path="/otica-umbara" element={<OticaUmbara />} />
+            <Route path="/otica-cic" element={<OticaCIC />} />
+            <Route path="/otica-cajuru" element={<OticaCajuru />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
