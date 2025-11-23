@@ -88,12 +88,12 @@ const LojaOculosPinheirinho15565 = () => {
         {/* YouTube Video Section */}
         <section className="py-16 px-4 bg-background/50">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Conheça o Pinheirinho</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Conheça a Ótica Gouveia</h2>
             <div className="max-w-4xl mx-auto">
               <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="Pinheirinho - Curitiba"
+                  src="https://www.youtube.com/embed/gDEeiCvn89Q"
+                  title="Ótica Gouveia - Curitiba"
                   className="w-full h-full"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

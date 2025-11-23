@@ -48,19 +48,19 @@ const OticaCIC = () => {
         <section className="py-12 px-4 bg-gray-50">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-900 mb-6 text-center">
-              Conheça o Bairro CIC
+              Conheça a Ótica Gouveia
             </h2>
             <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/xoFbWJLxd_I"
-                title="Vídeo sobre o bairro CIC em Curitiba"
+                src="https://www.youtube.com/embed/gDEeiCvn89Q"
+                title="Vídeo sobre a Ótica Gouveia"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
             </div>
             <p className="mt-4 text-brand-gray-700 text-center">
-              O CIC é um dos bairros mais industrializados e importantes de Curitiba, com grande movimento comercial e residencial.
+              Tradição e qualidade em óculos, lentes e cuidados visuais. Conheça nossa loja e nossos serviços.
             </p>
           </div>
         </section>
