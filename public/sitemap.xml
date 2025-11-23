@@ -659,4 +659,84 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Bocaiúva do Sul -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bocaiuva-do-sul</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Itaperuçu -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-itaperucu</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Rio Branco do Sul -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-rio-branco-do-sul</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Campo Magro -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-campo-magro</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tijucas do Sul -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-tijucas-do-sul</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Atuba -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-atuba</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Bairro Alto -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bairro-alto</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Boa Vista -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-boa-vista</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Bom Retiro -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bom-retiro</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Orleans -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-orleans</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

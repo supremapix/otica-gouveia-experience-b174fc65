@@ -66,6 +66,16 @@ import OticaVilaIzabel from "./pages/OticaVilaIzabel";
 import OticaAltoDaGloria from "./pages/OticaAltoDaGloria";
 import OticaPilarzinho from "./pages/OticaPilarzinho";
 import OticaSantaCandida from "./pages/OticaSantaCandida";
+import OticaBocaiuvaDoSul from "./pages/OticaBocaiuvaDoSul";
+import OticaItaperucu from "./pages/OticaItaperucu";
+import OticaRioBrancoDoSul from "./pages/OticaRioBrancoDoSul";
+import OticaCampoMagro from "./pages/OticaCampoMagro";
+import OticaTijucasDoSul from "./pages/OticaTijucasDoSul";
+import OticaAtuba from "./pages/OticaAtuba";
+import OticaBairroAlto from "./pages/OticaBairroAlto";
+import OticaBoaVista from "./pages/OticaBoaVista";
+import OticaBomRetiro from "./pages/OticaBomRetiro";
+import OticaOrleans from "./pages/OticaOrleans";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -164,6 +174,16 @@ const App = () => (
             <Route path="/otica-alto-da-gloria" element={<OticaAltoDaGloria />} />
             <Route path="/otica-pilarzinho" element={<OticaPilarzinho />} />
             <Route path="/otica-santa-candida" element={<OticaSantaCandida />} />
+            <Route path="/otica-bocaiuva-do-sul" element={<OticaBocaiuvaDoSul />} />
+            <Route path="/otica-itaperucu" element={<OticaItaperucu />} />
+            <Route path="/otica-rio-branco-do-sul" element={<OticaRioBrancoDoSul />} />
+            <Route path="/otica-campo-magro" element={<OticaCampoMagro />} />
+            <Route path="/otica-tijucas-do-sul" element={<OticaTijucasDoSul />} />
+            <Route path="/otica-atuba" element={<OticaAtuba />} />
+            <Route path="/otica-bairro-alto" element={<OticaBairroAlto />} />
+            <Route path="/otica-boa-vista" element={<OticaBoaVista />} />
+            <Route path="/otica-bom-retiro" element={<OticaBomRetiro />} />
+            <Route path="/otica-orleans" element={<OticaOrleans />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
