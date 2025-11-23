@@ -739,4 +739,84 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Agudos do Sul -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-agudos-do-sul</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Campo do Tenente -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-campo-do-tenente</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cerro Azul -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-cerro-azul</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Doutor Ulysses -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-doutor-ulysses</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Piên -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-pien</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Quitandinha -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-quitandinha</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Rio Negro -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-rio-negro</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tunas do Paraná -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-tunas-do-parana</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Lindóia -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-lindoia</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- São João -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-sao-joao</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

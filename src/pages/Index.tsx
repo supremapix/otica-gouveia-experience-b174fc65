@@ -233,6 +233,8 @@ const Index = () => {
                 { name: 'Boa Vista', slug: '/otica-boa-vista' },
                 { name: 'Bom Retiro', slug: '/otica-bom-retiro' },
                 { name: 'Orleans', slug: '/otica-orleans' },
+                { name: 'Lindóia', slug: '/otica-lindoia' },
+                { name: 'São João', slug: '/otica-sao-joao' },
               ].map((bairro) => (
                 <a
                   key={bairro.slug}
@@ -274,6 +276,14 @@ const Index = () => {
                 { name: 'Rio Branco do Sul', slug: '/otica-rio-branco-do-sul' },
                 { name: 'Campo Magro', slug: '/otica-campo-magro' },
                 { name: 'Tijucas do Sul', slug: '/otica-tijucas-do-sul' },
+                { name: 'Agudos do Sul', slug: '/otica-agudos-do-sul' },
+                { name: 'Campo do Tenente', slug: '/otica-campo-do-tenente' },
+                { name: 'Cerro Azul', slug: '/otica-cerro-azul' },
+                { name: 'Doutor Ulysses', slug: '/otica-doutor-ulysses' },
+                { name: 'Piên', slug: '/otica-pien' },
+                { name: 'Quitandinha', slug: '/otica-quitandinha' },
+                { name: 'Rio Negro', slug: '/otica-rio-negro' },
+                { name: 'Tunas do Paraná', slug: '/otica-tunas-do-parana' },
               ].map((cidade) => (
                 <a
                   key={cidade.slug}
