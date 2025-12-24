@@ -1,9 +1,9 @@
 import NeighborhoodPage from "@/components/NeighborhoodPage";
 import { neighborhoodData } from "@/data/neighborhoodContent";
 
-const OticaHauer = () => {
-  const data = neighborhoodData['hauer'];
+const OticaPinheirinho = () => {
+  const data = neighborhoodData['pinheirinho'];
   return <NeighborhoodPage data={data} />;
 };
 
-export default OticaHauer;
+export default OticaPinheirinho;
