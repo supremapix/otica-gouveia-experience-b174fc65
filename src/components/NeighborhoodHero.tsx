@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Star, Phone, MessageCircle, MapPin, Clock, Truck } from 'lucide-react';
+import { MessageCircle, Phone, MapPin, ChevronLeft, ChevronRight, Star, Truck, Clock, Shield } from 'lucide-react';
 
 interface NeighborhoodHeroProps {
   title: string;
@@ -9,171 +9,174 @@ interface NeighborhoodHeroProps {
   phoneNumber: string;
 }
 
+const heroImages = [
+  "/lovable-uploads/otica-gouveia-expositor.webp",
+  "/lovable-uploads/otica-gouveia-armacoes.webp",
+  "/lovable-uploads/otica-gouveia-vitrine.webp",
+  "/lovable-uploads/otica-gouveia-rayban.webp",
+  "/lovable-uploads/otica-gouveia-esportivos.webp",
+  "/lovable-uploads/otica-gouveia-carolina-herrera.png",
+];
+
 const NeighborhoodHero: React.FC<NeighborhoodHeroProps> = ({
   title,
   subtitle,
   location,
   whatsappUrl,
-  phoneNumber
+  phoneNumber,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    {
-      image: '/lovable-uploads/otica-gouveia-vitrine.webp',
-      alt: `Vitrine da Ótica Gouveia com armações para ${location}`
-    },
-    {
-      image: '/lovable-uploads/otica-gouveia-rayban.webp',
-      alt: `Óculos Ray-Ban disponíveis para ${location}`
-    },
-    {
-      image: '/lovable-uploads/otica-gouveia-armacoes.webp',
-      alt: `Painel de armações de grau para ${location}`
-    },
-    {
-      image: '/lovable-uploads/otica-gouveia-esportivos.webp',
-      alt: `Óculos esportivos disponíveis para ${location}`
-    },
-    {
-      image: '/lovable-uploads/otica-gouveia-expositor.webp',
-      alt: `Expositor de óculos na Ótica Gouveia para ${location}`
-    }
-  ];
-
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, [slides.length]);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length);
+  };
+
+  const benefits = [
+    { icon: Truck, text: "Entrega Grátis*" },
+    { icon: Clock, text: "Atendimento Rápido" },
+    { icon: Shield, text: "Garantia Total" },
+    { icon: Star, text: "5★ Avaliações" },
+  ];
 
   return (
-    <section className="relative pt-20 min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[100svh] w-full overflow-hidden pt-[56px] md:pt-[104px]">
       {/* Background Slider */}
-      <div className="absolute inset-0">
-        {slides.map((slide, index) => (
+      <div className="absolute inset-0 top-[56px] md:top-[104px]">
+        {heroImages.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
+            className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+              index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
             }`}
           >
             <img
-              src={slide.image}
-              alt={slide.alt}
+              src={image}
+              alt={`Ótica Gouveia ${location} - Imagem ${index + 1}`}
               className="w-full h-full object-cover"
+              loading={index === 0 ? "eager" : "lazy"}
             />
           </div>
         ))}
+        {/* Overlay Gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
       </div>
 
-      {/* Badge Entrega Grátis */}
-      <div className="absolute top-24 right-4 md:top-28 md:right-8 z-20">
-        <div className="bg-green-500 text-white px-4 py-2 rounded-full shadow-lg animate-pulse flex items-center gap-2">
-          <Truck className="w-5 h-5" />
-          <span className="font-semibold text-sm">Entrega Grátis* acima de R$ 250</span>
-        </div>
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white p-2 sm:p-3 rounded-full transition-all duration-300 hover:scale-110"
+        aria-label="Imagem anterior"
+      >
+        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white p-2 sm:p-3 rounded-full transition-all duration-300 hover:scale-110"
+        aria-label="Próxima imagem"
+      >
+        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+      </button>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        {heroImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`h-2 rounded-full transition-all duration-300 ${
+              index === currentSlide ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/70'
+            }`}
+            aria-label={`Ir para imagem ${index + 1}`}
+          />
+        ))}
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl">
-          {/* Location Badge */}
-          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-white/20">
-            <MapPin className="w-4 h-4 text-primary mr-2" />
-            <span className="text-white text-sm font-medium">{location}</span>
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 h-full flex items-center min-h-[calc(100svh-56px)] md:min-h-[calc(100svh-104px)]">
+        <div className="max-w-3xl py-8 sm:py-12">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-primary/90 text-primary-foreground px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 animate-fade-in">
+            <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
+            <span>Atendemos {location} e região</span>
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
             {title}
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-white/90 mb-6">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
             {subtitle}
           </p>
 
-          {/* Rating */}
-          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-white/20">
-            <div className="flex items-center gap-1 mr-3">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-              ))}
-            </div>
-            <span className="text-white font-semibold">4.9</span>
-            <span className="text-white/70 text-sm ml-2">• +1000 avaliações no Google</span>
-          </div>
-
-          {/* Store Info */}
-          <div className="flex flex-wrap gap-4 mb-8 text-white/80 text-sm">
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4" />
-              <span>Seg-Sex: 8h-18h | Sáb: 8h-16h</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              <a href={`tel:${phoneNumber}`} className="hover:text-white transition-colors">
-                (41) 3114-0663
-              </a>
+          {/* Free Delivery Banner */}
+          <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-xl mb-6 sm:mb-8 inline-flex items-center gap-3 shadow-lg animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <Truck className="w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
+            <div>
+              <p className="font-bold text-sm sm:text-base">ENTREGA GRÁTIS* no {location}</p>
+              <p className="text-xs sm:text-sm opacity-90">*Compras acima de R$ 250</p>
             </div>
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 shadow-2xl flex items-center justify-center gap-2"
+              className="group relative overflow-hidden bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl hover:scale-105"
             >
-              <MessageCircle className="w-5 h-5 group-hover:animate-bounce" />
-              Agende seu Exame de Vista
+              <span className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 relative z-10 group-hover:animate-bounce" />
+              <span className="relative z-10">Falar no WhatsApp</span>
             </a>
+            
             <a
               href={`tel:${phoneNumber}`}
-              className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 border border-white/30 flex items-center justify-center gap-2"
+              className="group bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white hover:text-primary text-white px-6 sm:px-8 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 flex items-center justify-center gap-3 hover:scale-105"
             >
-              <Phone className="w-5 h-5" />
-              Ligar Agora
+              <Phone className="w-5 h-5 sm:w-6 sm:h-6 group-hover:animate-pulse" />
+              <span>(41) 3114-0663</span>
             </a>
           </div>
 
-          {/* Features */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-              <div className="text-2xl mb-2">👁️</div>
-              <h3 className="text-white font-semibold text-sm mb-1">Exame Gratuito</h3>
-              <p className="text-white/70 text-xs">Avaliação completa da sua visão</p>
+          {/* Benefits Pills */}
+          <div className="flex flex-wrap gap-2 sm:gap-3 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            {benefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full text-white text-xs sm:text-sm"
+              >
+                <benefit.icon className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span>{benefit.text}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Google Rating */}
+          <div className="mt-6 sm:mt-8 flex items-center gap-3 text-white animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <div className="flex">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <Star key={star} className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400" />
+              ))}
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-              <div className="text-2xl mb-2">🚚</div>
-              <h3 className="text-white font-semibold text-sm mb-1">Entrega Grátis*</h3>
-              <p className="text-white/70 text-xs">Acima de R$ 250 no {location}</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-              <div className="text-2xl mb-2">💳</div>
-              <h3 className="text-white font-semibold text-sm mb-1">12x Sem Juros</h3>
-              <p className="text-white/70 text-xs">Parcele sua compra</p>
-            </div>
+            <span className="text-sm sm:text-base font-medium">4.9 no Google</span>
+            <span className="text-xs sm:text-sm opacity-70">(+200 avaliações)</span>
           </div>
         </div>
-      </div>
-
-      {/* Slide Indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide ? 'bg-white w-8' : 'bg-white/40'
-            }`}
-            aria-label={`Ir para slide ${index + 1}`}
-          />
-        ))}
       </div>
     </section>
   );
