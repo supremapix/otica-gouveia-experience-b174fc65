@@ -851,4 +851,20 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Ganchinho -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-ganchinho</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fazendinha -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-fazendinha</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
