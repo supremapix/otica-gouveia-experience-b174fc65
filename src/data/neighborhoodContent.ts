@@ -1839,6 +1839,46 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     distanceFromStore: 'Aproximadamente 1h15 de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
+  },
+
+  // ==================== BAIRROS ADICIONAIS ====================
+
+  'ganchinho': {
+    name: 'Ganchinho',
+    slug: '/otica-ganchinho',
+    title: 'Ótica Ganchinho Curitiba | Óculos de Grau e Sol | Ótica Gouveia',
+    metaDescription: 'Ótica para o bairro Ganchinho em Curitiba. Óculos de grau, sol, lentes de contato. Entrega grátis acima de R$250. Exame de vista grátis!',
+    keywords: [...generateKeywords('Ganchinho', 'bairro'), 'ótica ganchinho curitiba', 'óculos ganchinho'],
+    heroTitle: 'Ótica Gouveia para o Ganchinho',
+    heroSubtitle: 'Entrega Grátis* para Você',
+    description: [
+      'O Ganchinho é um bairro residencial localizado na região sul de Curitiba, conhecido por sua tranquilidade e comunidade unida. Com desenvolvimento constante, o bairro oferece qualidade de vida para famílias que buscam um ambiente mais calmo.',
+      'A Ótica Gouveia atende os moradores do Ganchinho com praticidade e qualidade. Nossa loja no Pinheirinho fica próxima, e oferecemos entrega via motoboy gratuita para compras acima de R$ 250,00.',
+      'Com mais de 40 anos de tradição, oferecemos óculos de grau das melhores marcas, óculos de sol com proteção UV, lentes de contato e exame de vista gratuito. Atendimento familiar e preços justos para toda a comunidade do Ganchinho.'
+    ],
+    characteristics: 'Bairro residencial tranquilo na região sul de Curitiba',
+    nearbyLandmarks: ['Próximo ao Umbará', 'Região Sul'],
+    distanceFromStore: 'Aproximadamente 10 minutos de carro',
+    type: 'bairro'
+  },
+
+  'fazendinha': {
+    name: 'Fazendinha',
+    slug: '/otica-fazendinha',
+    title: 'Ótica Fazendinha Curitiba | Óculos de Grau e Sol | Ótica Gouveia',
+    metaDescription: 'Ótica para o bairro Fazendinha em Curitiba. Óculos de grau, sol, lentes de contato. Entrega grátis acima de R$250. Exame de vista grátis!',
+    keywords: [...generateKeywords('Fazendinha', 'bairro'), 'ótica fazendinha curitiba', 'óculos fazendinha'],
+    heroTitle: 'Ótica Gouveia para a Fazendinha',
+    heroSubtitle: 'Tradição e Qualidade para Você',
+    description: [
+      'A Fazendinha é um bairro tradicional de Curitiba, localizado na região sudoeste da cidade. Com forte identidade residencial e comercial, o bairro é conhecido por sua comunidade acolhedora e boa infraestrutura.',
+      'A Ótica Gouveia atende os moradores da Fazendinha com qualidade e praticidade. Oferecemos entrega via motoboy gratuita para compras acima de R$ 250,00, trazendo conforto até a sua porta.',
+      'São mais de 40 anos de experiência em produtos ópticos. Óculos de grau modernos, óculos de sol originais, lentes de contato das melhores marcas e exame de vista gratuito. Confie na tradição Gouveia!'
+    ],
+    characteristics: 'Bairro tradicional com forte comércio local',
+    nearbyLandmarks: ['Próximo ao Portão', 'Região Sudoeste'],
+    distanceFromStore: 'Entrega disponível via motoboy',
+    type: 'bairro'
   }
 };
 
