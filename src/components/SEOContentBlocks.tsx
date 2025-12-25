@@ -1,15 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, MessageCircle, Phone, Glasses, Truck, Eye, ShoppingBag } from 'lucide-react';
-
-interface SEOBlock {
-  id: string;
-  title: string;
-  image: string;
-  content: string[];
-  ctaText: string;
-  ctaLink: string;
-  icon: React.ReactNode;
-}
+import { ChevronLeft, ChevronRight, Eye, Truck, Package, Stethoscope, MessageCircle } from 'lucide-react';
 
 interface SEOContentBlocksProps {
   neighborhoodName: string;
@@ -17,233 +7,244 @@ interface SEOContentBlocksProps {
 }
 
 const SEOContentBlocks: React.FC<SEOContentBlocksProps> = ({ neighborhoodName, whatsappUrl }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const [isMobile, setIsMobile] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const sliderRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
-  const blocks: SEOBlock[] = [
+  const blocks = [
     {
-      id: 'por-que-escolher',
+      id: 1,
+      icon: Eye,
       title: `Por Que Escolher a Ótica Gouveia no ${neighborhoodName}?`,
-      image: '/lovable-uploads/otica-gouveia-vitrine.webp',
-      content: [
-        `A Ótica Gouveia é referência em qualidade e atendimento personalizado no bairro ${neighborhoodName} em Curitiba. Com anos de experiência no mercado óptico, oferecemos as melhores marcas de armações de grau e óculos de sol, além de lentes de alta tecnologia para todas as necessidades visuais.`,
-        `Nossa equipe é formada por profissionais especializados que realizam atendimento individualizado, ajudando você a escolher a armação ideal para seu rosto e estilo de vida. Trabalhamos com marcas reconhecidas como Ray-Ban, Oakley, Chilli Beans, Arnette e muitas outras opções nacionais e importadas.`,
-        `Realizamos exames de vista completos com equipamentos modernos, garantindo precisão no diagnóstico e na confecção das suas lentes. Oferecemos lentes monofocais, multifocais, anti-reflexo, fotocromáticas e com proteção UV, todas personalizadas conforme sua receita oftalmológica.`,
-        `Para moradores do ${neighborhoodName}, oferecemos uma vantagem especial: entrega gratuita para compras acima de R$ 250,00. Você pode escolher seus óculos com calma, seja visitando nossa loja física ou pelo WhatsApp, e receber em casa sem custo adicional de frete.`,
-        `Além da qualidade dos produtos, prezamos pelo pós-venda. Oferecemos ajustes gratuitos, limpeza de lentes, troca de parafusos e garantia em todos os nossos produtos. Nossa missão é cuidar da sua saúde visual com responsabilidade e dedicação.`,
-        `Visite a Ótica Gouveia no Pinheirinho e descubra por que somos a escolha de centenas de famílias do ${neighborhoodName} e região. Agende seu horário pelo WhatsApp (41) 99161-0663 ou venha conhecer nossa loja pessoalmente.`
-      ],
-      ctaText: 'Agendar Horário no WhatsApp',
-      ctaLink: whatsappUrl,
-      icon: <Glasses className="w-6 h-6" />
+      image: "/lovable-uploads/otica-gouveia-expositor.webp",
+      content: `A Ótica Gouveia é referência em qualidade e atendimento personalizado no bairro ${neighborhoodName} em Curitiba. Com anos de experiência no mercado óptico, oferecemos as melhores marcas de armações de grau e óculos de sol, além de lentes de alta tecnologia para todas as necessidades visuais.
+
+Nossa equipe é formada por profissionais especializados que realizam atendimento individualizado, ajudando você a escolher a armação ideal para seu rosto e estilo de vida. Trabalhamos com marcas reconhecidas como Ray-Ban, Oakley, Chilli Beans, Arnette e muitas outras opções nacionais e importadas.
+
+Realizamos exames de vista completos com equipamentos modernos, garantindo precisão no diagnóstico e na confecção das suas lentes. Oferecemos lentes monofocais, multifocais, anti-reflexo, fotocromáticas e com proteção UV, todas personalizadas conforme sua receita oftalmológica.
+
+Para moradores do ${neighborhoodName}, oferecemos entrega gratuita para compras acima de R$ 250,00. Você pode escolher seus óculos com calma e receber em casa sem custo adicional.`,
+      cta: "Agendar Horário",
+      ctaUrl: whatsappUrl
     },
     {
-      id: 'entrega-gratis',
+      id: 2,
+      icon: Truck,
       title: `Entrega Grátis no ${neighborhoodName}: Como Funciona?`,
-      image: '/lovable-uploads/otica-gouveia-armacoes.webp',
-      content: [
-        `A Ótica Gouveia facilita sua vida com entrega gratuita no bairro ${neighborhoodName} para compras acima de R$ 250,00. Nosso serviço de delivery óptico foi pensado para oferecer comodidade sem comprometer a qualidade do atendimento.`,
-        `O processo é simples e rápido. Primeiro, você entra em contato conosco pelo WhatsApp, telefone ou visita nossa loja física no Pinheirinho. Nossa equipe apresenta as opções de armações e lentes disponíveis, ajudando você a escolher o modelo ideal. Se preferir, podemos enviar fotos e vídeos dos produtos pelo WhatsApp para facilitar sua decisão.`,
-        `Após a escolha da armação, analisamos sua receita oftalmológica e recomendamos as melhores lentes para seu caso. Trabalhamos com lentes de diversos tipos: monofocais para miopia ou hipermetropia, multifocais progressivas para presbiopia, lentes anti-reflexo para redução de fadiga ocular, e lentes com filtro de luz azul para quem passa muito tempo em frente a telas.`,
-        `Com o pedido confirmado e o pagamento aprovado, suas lentes são confeccionadas em laboratório especializado, processo que leva de 3 a 7 dias úteis dependendo do tipo de lente. Assim que seus óculos ficarem prontos, agendamos a entrega no ${neighborhoodName} em horário conveniente para você.`,
-        `A entrega é realizada por nossa equipe ou parceiros de confiança, com todos os cuidados para garantir que seus óculos cheguem em perfeito estado. Na entrega, você pode testar o produto, tirar dúvidas e, se necessário, agendar ajustes posteriores sem custo adicional.`,
-        `Aproveite essa facilidade e peça seus óculos novos sem sair de casa. Entre em contato agora mesmo!`
-      ],
-      ctaText: 'Fazer Pedido pelo WhatsApp',
-      ctaLink: whatsappUrl,
-      icon: <Truck className="w-6 h-6" />
+      image: "/lovable-uploads/otica-gouveia-armacoes.webp",
+      content: `A Ótica Gouveia facilita sua vida com entrega gratuita no bairro ${neighborhoodName} para compras acima de R$ 250,00. Nosso serviço de delivery óptico foi pensado para oferecer comodidade sem comprometer a qualidade do atendimento.
+
+O processo é simples e rápido. Primeiro, você entra em contato conosco pelo WhatsApp, telefone ou visita nossa loja física no CIC. Nossa equipe apresenta as opções de armações e lentes disponíveis, ajudando você a escolher o modelo ideal.
+
+Após a escolha da armação, analisamos sua receita oftalmológica e recomendamos as melhores lentes para seu caso. Trabalhamos com lentes de diversos tipos: monofocais, multifocais progressivas, anti-reflexo e com filtro de luz azul.
+
+Com o pedido confirmado, suas lentes são confeccionadas em laboratório especializado. Assim que seus óculos ficarem prontos, agendamos a entrega no ${neighborhoodName} em horário conveniente para você.`,
+      cta: "Fazer Pedido",
+      ctaUrl: whatsappUrl
     },
     {
-      id: 'marcas-produtos',
-      title: 'Marcas e Produtos Disponíveis na Ótica Gouveia',
-      image: '/lovable-uploads/otica-gouveia-rayban.webp',
-      content: [
-        `Na Ótica Gouveia, você encontra um portfólio completo de marcas nacionais e internacionais, garantindo opções para todos os gostos, estilos e orçamentos. Nossa curadoria de produtos prioriza qualidade, design e durabilidade.`,
-        `Óculos de Sol: Trabalhamos com as principais marcas do mercado, incluindo Ray-Ban, conhecida mundialmente por seus modelos icônicos como Aviador e Wayfarer; Oakley, referência em óculos esportivos com tecnologia de lentes polarizadas; Chilli Beans, marca brasileira que combina estilo e preço acessível; e Arnette, perfeita para quem busca visual despojado e moderno.`,
-        `Armações de Grau: Nosso catálogo inclui armações clássicas e contemporâneas. Oferecemos armações em acetato, metal, titânio e materiais hipoalergênicos. Modelos para todos os formatos de rosto: redondo, quadrado, oval, triangular e alongado. Nossa equipe especializada ajuda você a identificar qual formato de armação valoriza melhor suas características faciais.`,
-        `Lentes Oftálmicas: Trabalhamos com os melhores laboratórios do Brasil, oferecendo lentes Essilor, Zeiss, Hoya e Lenscope. Disponibilizamos lentes com diversos tratamentos: anti-reflexo para eliminar reflexos indesejados, fotocromáticas que escurecem ao sol, policarbonato resistente a impactos, lentes de alto índice para receitas elevadas, e lentes blue light para proteção contra luz azul de dispositivos digitais.`,
-        `Lentes de Contato: Além de óculos, trabalhamos com lentes de contato gelatinosas para correção de miopia, hipermetropia e astigmatismo. Marcas disponíveis: Acuvue, Biomedics e Air Optix.`,
-        `Todos os produtos contam com garantia do fabricante e garantia de adaptação da Ótica Gouveia. Consulte condições.`
-      ],
-      ctaText: 'Ver Catálogo Completo',
-      ctaLink: whatsappUrl,
-      icon: <ShoppingBag className="w-6 h-6" />
+      id: 3,
+      icon: Package,
+      title: "Marcas e Produtos Disponíveis",
+      image: "/lovable-uploads/otica-gouveia-rayban.webp",
+      content: `Na Ótica Gouveia, você encontra um portfólio completo de marcas nacionais e internacionais, garantindo opções para todos os gostos, estilos e orçamentos. Nossa curadoria de produtos prioriza qualidade, design e durabilidade.
+
+Óculos de Sol: Trabalhamos com Ray-Ban, conhecida por modelos icônicos como Aviador e Wayfarer; Oakley, referência em óculos esportivos; Chilli Beans, marca brasileira acessível; e Arnette para visual despojado.
+
+Armações de Grau: Oferecemos armações em acetato, metal, titânio e materiais hipoalergênicos. Modelos para todos os formatos de rosto: redondo, quadrado, oval, triangular e alongado.
+
+Lentes Oftálmicas: Trabalhamos com Essilor, Zeiss, Hoya e Lenscope. Disponibilizamos lentes anti-reflexo, fotocromáticas, policarbonato e lentes blue light para proteção digital.
+
+Todos os produtos contam com garantia do fabricante e garantia de adaptação da Ótica Gouveia.`,
+      cta: "Ver Catálogo",
+      ctaUrl: whatsappUrl
     },
     {
-      id: 'exame-vista',
+      id: 4,
+      icon: Stethoscope,
       title: `Exame de Vista e Saúde Ocular no ${neighborhoodName}`,
-      image: '/lovable-uploads/otica-gouveia-esportivos.webp',
-      content: [
-        `A saúde dos seus olhos merece atenção especializada. Na Ótica Gouveia, oferecemos exames de vista completos com equipamentos de última geração e profissionais qualificados para atender moradores do ${neighborhoodName} e toda região de Curitiba.`,
-        `Quando fazer exame de vista: Recomenda-se realizar exame oftalmológico anualmente, mesmo sem sintomas aparentes. Crianças devem fazer o primeiro exame antes dos 3 anos de idade. Pessoas acima de 40 anos precisam de acompanhamento regular para detectar presbiopia (vista cansada) e outras condições relacionadas à idade.`,
-        `Sintomas que indicam necessidade de exame: Dores de cabeça frequentes, especialmente ao final do dia; dificuldade para enxergar de longe ou de perto; visão embaçada ou duplicada; necessidade de apertar os olhos para focar; lacrimejamento excessivo; sensibilidade à luz; fadiga ocular após uso de computador ou celular.`,
-        `O que avaliamos no exame: O exame de vista completo na Ótica Gouveia inclui avaliação da acuidade visual, medição do grau de miopia, hipermetropia, astigmatismo ou presbiopia, teste de percepção de cores, exame de campo visual periférico, avaliação da pressão intraocular (prevenção de glaucoma), e análise da saúde geral dos olhos.`,
-        `Pós-exame: Após o exame, você recebe sua receita oftalmológica atualizada e orientações personalizadas sobre as melhores lentes para seu caso. Nossa equipe explica cada item da receita e ajuda você a escolher armações adequadas ao seu grau e estilo de vida.`,
-        `Agende seu exame de vista na Ótica Gouveia. Atendemos com hora marcada para sua comodidade, sem filas e com todo tempo necessário para um atendimento de qualidade.`
-      ],
-      ctaText: 'Agendar Meu Exame',
-      ctaLink: whatsappUrl,
-      icon: <Eye className="w-6 h-6" />
+      image: "/lovable-uploads/otica-gouveia-vitrine.webp",
+      content: `A saúde dos seus olhos merece atenção especializada. Na Ótica Gouveia, oferecemos exames de vista completos com equipamentos de última geração e profissionais qualificados para atender moradores do ${neighborhoodName}.
+
+Quando fazer exame de vista: Recomenda-se realizar exame oftalmológico anualmente. Crianças devem fazer o primeiro exame antes dos 3 anos. Pessoas acima de 40 anos precisam de acompanhamento regular para detectar presbiopia.
+
+Sintomas importantes: Dores de cabeça frequentes, dificuldade para enxergar, visão embaçada, necessidade de apertar os olhos, lacrimejamento excessivo, sensibilidade à luz e fadiga ocular.
+
+O exame completo inclui: avaliação da acuidade visual, medição do grau, teste de percepção de cores, exame de campo visual, avaliação da pressão intraocular e análise da saúde geral dos olhos.
+
+Após o exame, você recebe sua receita atualizada e orientações personalizadas sobre as melhores lentes para seu caso.`,
+      cta: "Agendar Exame",
+      ctaUrl: whatsappUrl
     }
   ];
 
-  const scrollToIndex = (index: number) => {
-    if (scrollContainerRef.current && isMobile) {
-      const container = scrollContainerRef.current;
-      const cardWidth = container.offsetWidth;
-      container.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
+  const scrollToSlide = (index: number) => {
+    if (sliderRef.current) {
+      const slideWidth = sliderRef.current.offsetWidth;
+      sliderRef.current.scrollTo({
+        left: index * slideWidth,
+        behavior: 'smooth'
+      });
+      setCurrentSlide(index);
     }
-    setActiveIndex(index);
   };
 
-  const handleScroll = () => {
-    if (scrollContainerRef.current && isMobile) {
-      const container = scrollContainerRef.current;
-      const index = Math.round(container.scrollLeft / container.offsetWidth);
-      setActiveIndex(index);
-    }
+  const nextSlide = () => {
+    const next = (currentSlide + 1) % blocks.length;
+    scrollToSlide(next);
   };
+
+  const prevSlide = () => {
+    const prev = (currentSlide - 1 + blocks.length) % blocks.length;
+    scrollToSlide(prev);
+  };
+
+  // Update current slide based on scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      if (sliderRef.current) {
+        const slideWidth = sliderRef.current.offsetWidth;
+        const newSlide = Math.round(sliderRef.current.scrollLeft / slideWidth);
+        setCurrentSlide(newSlide);
+      }
+    };
+
+    const slider = sliderRef.current;
+    if (slider) {
+      slider.addEventListener('scroll', handleScroll);
+      return () => slider.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
 
   return (
-    <section className="py-16 px-4 bg-secondary">
-      <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Tudo Sobre a Ótica Gouveia no {neighborhoodName}
+    <section className="py-12 sm:py-16 lg:py-20 px-4 bg-background">
+      <div className="container mx-auto">
+        {/* Header */}
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
+            Tudo Sobre Óculos no {neighborhoodName}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Conheça nossos serviços, produtos e diferenciais para moradores do {neighborhoodName}
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
+            Informações completas sobre nossos serviços, produtos e entrega gratuita
           </p>
         </div>
 
-        {/* Mobile Slider */}
-        <div className="md:hidden relative">
-          <div
-            ref={scrollContainerRef}
-            className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar"
-            onScroll={handleScroll}
+        {/* Desktop Grid */}
+        <div className="hidden lg:grid lg:grid-cols-2 gap-6 xl:gap-8">
+          {blocks.map((block) => (
+            <article 
+              key={block.id} 
+              className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 border border-border"
+            >
+              <div className="relative h-48 xl:h-56 overflow-hidden">
+                <img
+                  src={block.image}
+                  alt={block.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                  <div className="bg-primary p-2 rounded-lg">
+                    <block.icon className="w-5 h-5 text-primary-foreground" />
+                  </div>
+                </div>
+              </div>
+              <div className="p-5 xl:p-6">
+                <h3 className="text-lg xl:text-xl font-bold text-foreground mb-3">{block.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-6">
+                  {block.content.split('\n\n')[0]}
+                </p>
+                <a
+                  href={block.ctaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2.5 rounded-xl font-medium transition-all duration-300 hover:scale-105 text-sm"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  {block.cta}
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {/* Mobile/Tablet Slider */}
+        <div className="lg:hidden relative">
+          {/* Navigation Arrows */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-primary hover:text-white text-foreground p-2 rounded-full transition-all duration-300"
+            aria-label="Anterior"
           >
-            {blocks.map((block, index) => (
-              <div
-                key={block.id}
-                className="min-w-full snap-center px-2"
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-primary hover:text-white text-foreground p-2 rounded-full transition-all duration-300"
+            aria-label="Próximo"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+
+          {/* Slider */}
+          <div
+            ref={sliderRef}
+            className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory px-8"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {blocks.map((block) => (
+              <article 
+                key={block.id} 
+                className="flex-shrink-0 w-[calc(100%-2rem)] sm:w-[calc(100%-4rem)] snap-center mx-2"
               >
-                <div className="bg-card rounded-xl shadow-lg overflow-hidden">
-                  <div className="relative h-48">
+                <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border h-full">
+                  <div className="relative h-44 sm:h-52 overflow-hidden">
                     <img
                       src={block.image}
                       alt={block.title}
                       className="w-full h-full object-cover"
                       loading="lazy"
                     />
-                    <div className="absolute top-4 left-4 bg-primary text-primary-foreground p-2 rounded-full">
-                      {block.icon}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                      <div className="bg-primary p-2 rounded-lg">
+                        <block.icon className="w-5 h-5 text-primary-foreground" />
+                      </div>
                     </div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-foreground mb-4">
-                      {block.title}
-                    </h3>
-                    <div className="text-muted-foreground text-sm space-y-3 max-h-64 overflow-y-auto">
-                      {block.content.slice(0, 3).map((paragraph, pIndex) => (
-                        <p key={pIndex}>{paragraph}</p>
-                      ))}
-                    </div>
+                  <div className="p-4 sm:p-5">
+                    <h3 className="text-lg font-bold text-foreground mb-3">{block.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-4">
+                      {block.content.split('\n\n')[0]}
+                    </p>
                     <a
-                      href={block.ctaLink}
+                      href={block.ctaUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-6 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all"
+                      className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2.5 rounded-xl font-medium transition-all duration-300 text-sm"
                     >
-                      <MessageCircle className="w-5 h-5 mr-2" />
-                      {block.ctaText}
+                      <MessageCircle className="w-4 h-4" />
+                      {block.cta}
                     </a>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
 
-          {/* Navigation Dots */}
+          {/* Slide Indicators */}
           <div className="flex justify-center gap-2 mt-6">
             {blocks.map((_, index) => (
               <button
                 key={index}
-                onClick={() => scrollToIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  activeIndex === index ? 'bg-primary w-6' : 'bg-muted-foreground/30'
+                onClick={() => scrollToSlide(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === currentSlide ? 'w-8 bg-primary' : 'w-2 bg-primary/30 hover:bg-primary/50'
                 }`}
-                aria-label={`Ir para slide ${index + 1}`}
+                aria-label={`Ir para bloco ${index + 1}`}
               />
             ))}
           </div>
-
-          {/* Navigation Arrows */}
-          <button
-            onClick={() => scrollToIndex(Math.max(0, activeIndex - 1))}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm p-2 rounded-full shadow-lg"
-            disabled={activeIndex === 0}
-            aria-label="Anterior"
-          >
-            <ChevronLeft className="w-6 h-6 text-foreground" />
-          </button>
-          <button
-            onClick={() => scrollToIndex(Math.min(blocks.length - 1, activeIndex + 1))}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-card/80 backdrop-blur-sm p-2 rounded-full shadow-lg"
-            disabled={activeIndex === blocks.length - 1}
-            aria-label="Próximo"
-          >
-            <ChevronRight className="w-6 h-6 text-foreground" />
-          </button>
-        </div>
-
-        {/* Desktop Grid */}
-        <div className="hidden md:grid md:grid-cols-2 gap-8">
-          {blocks.map((block) => (
-            <article
-              key={block.id}
-              className="bg-card rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-            >
-              <div className="relative h-56">
-                <img
-                  src={block.image}
-                  alt={block.title}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute top-4 left-4 bg-primary text-primary-foreground p-3 rounded-full">
-                  {block.icon}
-                </div>
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  {block.title}
-                </h3>
-                <div className="text-muted-foreground space-y-4 text-base leading-relaxed">
-                  {block.content.map((paragraph, pIndex) => (
-                    <p key={pIndex}>{paragraph}</p>
-                  ))}
-                </div>
-                <a
-                  href={block.ctaLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-8 inline-flex items-center bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105"
-                >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  {block.ctaText}
-                </a>
-              </div>
-            </article>
-          ))}
         </div>
       </div>
     </section>
