@@ -20,16 +20,24 @@ const NeighborhoodHero: React.FC<NeighborhoodHeroProps> = ({
 
   const slides = [
     {
-      image: '/lovable-uploads/otica-gouveia-fachada.png',
-      alt: `Fachada da Ótica Gouveia para ${location}`
+      image: '/lovable-uploads/otica-gouveia-vitrine.webp',
+      alt: `Vitrine da Ótica Gouveia com armações para ${location}`
     },
     {
-      image: '/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png',
-      alt: `Interior da Ótica Gouveia atendendo ${location}`
+      image: '/lovable-uploads/otica-gouveia-rayban.webp',
+      alt: `Óculos Ray-Ban disponíveis para ${location}`
     },
     {
-      image: '/lovable-uploads/9cb88b28-e372-46cb-9604-f84bf0bed383.png',
-      alt: `Produtos disponíveis na Ótica Gouveia para ${location}`
+      image: '/lovable-uploads/otica-gouveia-armacoes.webp',
+      alt: `Painel de armações de grau para ${location}`
+    },
+    {
+      image: '/lovable-uploads/otica-gouveia-esportivos.webp',
+      alt: `Óculos esportivos disponíveis para ${location}`
+    },
+    {
+      image: '/lovable-uploads/otica-gouveia-expositor.webp',
+      alt: `Expositor de óculos na Ótica Gouveia para ${location}`
     }
   ];
 

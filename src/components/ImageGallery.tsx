@@ -18,34 +18,29 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ neighborhoodName }) => {
 
   const images: GalleryImage[] = [
     {
-      src: '/lovable-uploads/otica-gouveia-fachada.png',
-      alt: `Fachada da Ótica Gouveia próximo ao ${neighborhoodName}`,
-      title: 'Fachada da Loja'
+      src: '/lovable-uploads/otica-gouveia-vitrine.webp',
+      alt: `Vitrine da Ótica Gouveia com armações para ${neighborhoodName}`,
+      title: 'Vitrine da Loja'
     },
     {
-      src: '/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png',
-      alt: `Interior da Ótica Gouveia com expositores de óculos para ${neighborhoodName}`,
-      title: 'Amplo Showroom'
-    },
-    {
-      src: '/lovable-uploads/9cb88b28-e372-46cb-9604-f84bf0bed383.png',
-      alt: `Armações de óculos de grau disponíveis para moradores do ${neighborhoodName}`,
+      src: '/lovable-uploads/otica-gouveia-armacoes.webp',
+      alt: `Painel de armações de grau para moradores do ${neighborhoodName}`,
       title: 'Armações de Grau'
     },
     {
-      src: '/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.png',
-      alt: `Óculos de sol originais para clientes do ${neighborhoodName}`,
-      title: 'Óculos de Sol'
+      src: '/lovable-uploads/otica-gouveia-rayban.webp',
+      alt: `Óculos Ray-Ban originais para clientes do ${neighborhoodName}`,
+      title: 'Ray-Ban Original'
     },
     {
-      src: '/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.png',
-      alt: `Equipamento de exame de vista para atender ${neighborhoodName}`,
-      title: 'Exame de Vista'
+      src: '/lovable-uploads/otica-gouveia-esportivos.webp',
+      alt: `Óculos esportivos disponíveis para ${neighborhoodName}`,
+      title: 'Óculos Esportivos'
     },
     {
-      src: '/lovable-uploads/60aacd8d-b40d-4235-a564-379310b71e6a.png',
-      alt: `Atendimento personalizado para clientes do ${neighborhoodName}`,
-      title: 'Atendimento Especializado'
+      src: '/lovable-uploads/otica-gouveia-expositor.webp',
+      alt: `Expositor de armações femininas para ${neighborhoodName}`,
+      title: 'Armações Femininas'
     }
   ];
 

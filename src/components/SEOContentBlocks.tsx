@@ -32,7 +32,7 @@ const SEOContentBlocks: React.FC<SEOContentBlocksProps> = ({ neighborhoodName, w
     {
       id: 'por-que-escolher',
       title: `Por Que Escolher a Ótica Gouveia no ${neighborhoodName}?`,
-      image: '/lovable-uploads/otica-gouveia-fachada.png',
+      image: '/lovable-uploads/otica-gouveia-vitrine.webp',
       content: [
         `A Ótica Gouveia é referência em qualidade e atendimento personalizado no bairro ${neighborhoodName} em Curitiba. Com anos de experiência no mercado óptico, oferecemos as melhores marcas de armações de grau e óculos de sol, além de lentes de alta tecnologia para todas as necessidades visuais.`,
         `Nossa equipe é formada por profissionais especializados que realizam atendimento individualizado, ajudando você a escolher a armação ideal para seu rosto e estilo de vida. Trabalhamos com marcas reconhecidas como Ray-Ban, Oakley, Chilli Beans, Arnette e muitas outras opções nacionais e importadas.`,
@@ -48,7 +48,7 @@ const SEOContentBlocks: React.FC<SEOContentBlocksProps> = ({ neighborhoodName, w
     {
       id: 'entrega-gratis',
       title: `Entrega Grátis no ${neighborhoodName}: Como Funciona?`,
-      image: '/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png',
+      image: '/lovable-uploads/otica-gouveia-armacoes.webp',
       content: [
         `A Ótica Gouveia facilita sua vida com entrega gratuita no bairro ${neighborhoodName} para compras acima de R$ 250,00. Nosso serviço de delivery óptico foi pensado para oferecer comodidade sem comprometer a qualidade do atendimento.`,
         `O processo é simples e rápido. Primeiro, você entra em contato conosco pelo WhatsApp, telefone ou visita nossa loja física no Pinheirinho. Nossa equipe apresenta as opções de armações e lentes disponíveis, ajudando você a escolher o modelo ideal. Se preferir, podemos enviar fotos e vídeos dos produtos pelo WhatsApp para facilitar sua decisão.`,
@@ -64,7 +64,7 @@ const SEOContentBlocks: React.FC<SEOContentBlocksProps> = ({ neighborhoodName, w
     {
       id: 'marcas-produtos',
       title: 'Marcas e Produtos Disponíveis na Ótica Gouveia',
-      image: '/lovable-uploads/9cb88b28-e372-46cb-9604-f84bf0bed383.png',
+      image: '/lovable-uploads/otica-gouveia-rayban.webp',
       content: [
         `Na Ótica Gouveia, você encontra um portfólio completo de marcas nacionais e internacionais, garantindo opções para todos os gostos, estilos e orçamentos. Nossa curadoria de produtos prioriza qualidade, design e durabilidade.`,
         `Óculos de Sol: Trabalhamos com as principais marcas do mercado, incluindo Ray-Ban, conhecida mundialmente por seus modelos icônicos como Aviador e Wayfarer; Oakley, referência em óculos esportivos com tecnologia de lentes polarizadas; Chilli Beans, marca brasileira que combina estilo e preço acessível; e Arnette, perfeita para quem busca visual despojado e moderno.`,
@@ -80,7 +80,7 @@ const SEOContentBlocks: React.FC<SEOContentBlocksProps> = ({ neighborhoodName, w
     {
       id: 'exame-vista',
       title: `Exame de Vista e Saúde Ocular no ${neighborhoodName}`,
-      image: '/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.png',
+      image: '/lovable-uploads/otica-gouveia-esportivos.webp',
       content: [
         `A saúde dos seus olhos merece atenção especializada. Na Ótica Gouveia, oferecemos exames de vista completos com equipamentos de última geração e profissionais qualificados para atender moradores do ${neighborhoodName} e toda região de Curitiba.`,
         `Quando fazer exame de vista: Recomenda-se realizar exame oftalmológico anualmente, mesmo sem sintomas aparentes. Crianças devem fazer o primeiro exame antes dos 3 anos de idade. Pessoas acima de 40 anos precisam de acompanhamento regular para detectar presbiopia (vista cansada) e outras condições relacionadas à idade.`,
