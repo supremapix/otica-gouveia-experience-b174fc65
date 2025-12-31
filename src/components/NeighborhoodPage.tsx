@@ -4,12 +4,12 @@ import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import EnhancedSEO from "@/components/EnhancedSEO/EnhancedSEO";
-import NeighborhoodHero from "@/components/NeighborhoodHero";
+import ModernHeroSection from "@/components/ModernHeroSection";
 import ImageGallery from "@/components/ImageGallery";
-import SEOContentBlocks from "@/components/SEOContentBlocks";
-import NeighborhoodFAQ from "@/components/NeighborhoodFAQ";
+import ServicesSection from "@/components/ServicesSection";
+import LocalFAQSection from "@/components/LocalFAQSection";
+import FinalCTASection from "@/components/FinalCTASection";
 import DeliveryAreaMap from "@/components/DeliveryAreaMap";
-import NeighborhoodCTA from "@/components/NeighborhoodCTA";
 import { createBreadcrumbSchema, createOpticalStoreSchema, createLocalBusinessSchema } from "@/utils/schemas";
 import { ArrowUp } from "lucide-react";
 import { NeighborhoodData } from "@/data/neighborhoodContent";
@@ -23,6 +23,10 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
   
   const whatsappMessage = encodeURIComponent(`Olá! Vim do site e gostaria de saber mais sobre óculos para ${data.name}.`);
   const whatsappUrl = `https://wa.me/554199161663?text=${whatsappMessage}`;
+
+  // Determina se é uma das unidades principais
+  const isMainUnit = ['Pinheirinho', 'Sítio Cercado', 'Umbará'].includes(data.name);
+  const address = data.name === 'Pinheirinho' ? 'R. Nicola Pellanda, 1286 - Pinheirinho, Curitiba - PR' : undefined;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,29 +63,33 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
       
       <Navbar />
       
-      <NeighborhoodHero
-        title={data.heroTitle}
-        subtitle={data.heroSubtitle}
-        location={data.name}
+      {/* Hero Moderno Split-Screen */}
+      <ModernHeroSection
+        neighborhoodName={data.name}
+        isMainUnit={isMainUnit}
+        address={address}
         whatsappUrl={whatsappUrl}
         phoneNumber="+554131140663"
       />
 
       <main className="flex-grow">
+        {/* Seção de Serviços + Como Funciona + Diferenciais */}
+        <ServicesSection neighborhoodName={data.name} />
+
         {/* Galeria de Imagens */}
         <ImageGallery neighborhoodName={data.name} />
-
-        {/* 4 Blocos de Conteúdo SEO */}
-        <SEOContentBlocks neighborhoodName={data.name} whatsappUrl={whatsappUrl} />
 
         {/* Mapa de Área de Entrega */}
         <DeliveryAreaMap neighborhoodName={data.name} />
 
         {/* FAQ Personalizado */}
-        <NeighborhoodFAQ neighborhoodName={data.name} />
+        <LocalFAQSection neighborhoodName={data.name} />
 
-        {/* CTA Final */}
-        <NeighborhoodCTA neighborhoodName={data.name} whatsappUrl={whatsappUrl} />
+        {/* CTA Final Impactante */}
+        <FinalCTASection 
+          neighborhoodName={data.name} 
+          whatsappUrl={whatsappUrl} 
+        />
       </main>
 
       <Footer />
@@ -91,7 +99,7 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
       {showScrollTop && (
         <button 
           onClick={scrollToTop}
-          className="fixed bottom-24 right-6 bg-primary hover:bg-primary/90 text-primary-foreground p-4 rounded-full shadow-lg transition-all duration-300 z-40"
+          className="fixed bottom-24 right-6 bg-primary hover:bg-primary/90 text-primary-foreground p-4 rounded-full shadow-lg transition-all duration-300 z-40 hover:scale-110"
           aria-label="Voltar ao topo"
         >
           <ArrowUp size={24} />
