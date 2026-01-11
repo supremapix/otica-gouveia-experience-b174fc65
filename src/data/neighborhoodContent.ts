@@ -598,12 +598,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Tatuquara',
     heroSubtitle: 'Preços Justos para Você',
     description: [
-      'O Tatuquara é um bairro populoso de Curitiba, localizado na região sul. Com forte identidade comunitária, o bairro abriga famílias que buscam serviços de qualidade com preços acessíveis.',
-      'A Ótica Gouveia está próxima ao Tatuquara, oferecendo fácil acesso. Para maior comodidade, realizamos entrega via motoboy para compras acima de R$ 250,00.',
-      'Mais de 40 anos oferecendo qualidade a preços justos. Óculos de grau acessíveis, óculos de sol, lentes de contato e exame de vista gratuito. Parcelamento facilitado.'
+      'Moradores do Tatuquara, a Ótica Gouveia é sua parceira em cuidados visuais na região sul de Curitiba! O Tatuquara é um dos bairros mais populosos e vibrantes da capital paranaense, conhecido por sua forte identidade comunitária, comércio diversificado ao longo da Rua Marcelino Nogueira e milhares de famílias trabalhadoras. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia oferece atendimento de excelência para toda a comunidade do Tatuquara, com nossa loja no Pinheirinho a apenas 12 minutos de distância e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Oferecemos serviços ópticos completos com preços justos e acessíveis: exame de vista gratuito realizado com equipamentos modernos e profissionais qualificados, confecção de óculos de grau com lentes de qualidade incluindo opções monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo para melhor visão noturna, proteção contra luz azul de telas, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato gelatinosas e rígidas para todas as necessidades - descartáveis diárias, quinzenais, mensais e coloridas.',
+      'Na Ótica Gouveia Tatuquara você encontra marcas de qualidade com preços que cabem no seu bolso: Ray-Ban, Oakley, Arnette, Chilli Beans e diversas opções nacionais acessíveis. Nosso atendimento é familiar e acolhedor - cada cliente recebe atenção individual para escolher a armação ideal. Parcelamos em até 12x sem juros nos cartões, aceitamos convênios e planos de saúde, e oferecemos condições especiais para pagamento à vista. Garantia de fábrica em todos os produtos.',
+      'O bairro Tatuquara possui excelente infraestrutura com acesso pelo Terminal Tatuquara e diversas linhas de ônibus. A região é conhecida pela Rua Marcelino Nogueira, comércio variado, escolas e postos de saúde. O Tatuquara faz divisa com Pinheirinho, Campo de Santana, CIC e Caximba, sendo bem servido por transporte público. A Ótica Gouveia está estrategicamente localizada para atender toda essa região com qualidade e preços justos.',
+      'Morador do Tatuquara, cuide da sua visão sem pesar no orçamento! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e descubra por que somos a ótica de confiança da comunidade. Entrega gratuita no Tatuquara para compras acima de R$ 250,00. Funcionamos de segunda a sexta das 9h às 18h e sábados das 9h às 13h. Ótica Gouveia Tatuquara - qualidade acessível há mais de 40 anos!'
     ],
     characteristics: 'Bairro populoso com forte comunidade',
-    nearbyLandmarks: ['Terminal Tatuquara'],
+    nearbyLandmarks: ['Terminal Tatuquara', 'Rua Marcelino Nogueira'],
     distanceFromStore: 'Aproximadamente 12 minutos de carro',
     type: 'bairro'
   },
@@ -617,12 +619,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Campo Comprido',
     heroSubtitle: 'Qualidade Estendida até Você',
     description: [
-      'O Campo Comprido é um bairro em crescimento de Curitiba, conhecido por sua extensão e desenvolvimento residencial. Moradores do Campo Comprido buscam serviços de qualidade com praticidade.',
-      'A Ótica Gouveia atende os moradores do Campo Comprido. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos de experiência. Óculos de grau modernos, óculos de sol, lentes de contato das melhores marcas e exame de vista gratuito.'
+      'Moradores do Campo Comprido, a Ótica Gouveia leva qualidade até você! O Campo Comprido é um dos maiores bairros de Curitiba em extensão territorial, localizado na região oeste da cidade e conhecido por seu constante desenvolvimento residencial e comercial. Com mais de 40 anos de tradição no mercado óptico curitibano, a Ótica Gouveia oferece atendimento de excelência para toda a comunidade do Campo Comprido, com entrega gratuita via motoboy para compras acima de R$ 250,00 em toda a região.',
+      'Nossa equipe especializada oferece serviços ópticos completos para atender todas as suas necessidades visuais: exame de vista gratuito com equipamentos de última geração para diagnóstico preciso, confecção de óculos de grau com lentes oftálmicas de alta qualidade incluindo opções monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos especiais como anti-reflexo multicamadas, proteção contra luz azul de computadores e celulares, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas e tipos.',
+      'No Campo Comprido você encontra as melhores marcas do mercado óptico: Ray-Ban com modelos clássicos e modernos, Oakley para esportes, Arnette, Chilli Beans e diversas armações nacionais e importadas. A Ótica Gouveia se diferencia pelo atendimento personalizado - cada cliente recebe orientação especializada para escolher a armação perfeita. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, com descontos especiais para pagamento à vista.',
+      'O Campo Comprido está localizado na região oeste de Curitiba, próximo a bairros como Mossunguê, Santa Quitéria, CIC e Cidade Industrial. O bairro conta com boa infraestrutura, comércio variado e fácil acesso pela Avenida Presidente Affonso Camargo. A região está em constante valorização com novos empreendimentos residenciais. A Ótica Gouveia atende moradores de toda essa área com qualidade comprovada.',
+      'Morador do Campo Comprido, sua visão merece cuidado profissional! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Campo Comprido para compras acima de R$ 250,00. Ótica Gouveia - tradição, qualidade e praticidade há mais de 40 anos servindo o Campo Comprido!'
     ],
-    characteristics: 'Bairro em crescimento com desenvolvimento residencial',
-    nearbyLandmarks: ['Próximo ao Mossunguê'],
+    characteristics: 'Bairro extenso em constante desenvolvimento',
+    nearbyLandmarks: ['Próximo ao Mossunguê', 'Região Oeste'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -636,12 +640,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Hugo Lange',
     heroSubtitle: 'Elegância em Cada Detalhe',
     description: [
-      'O Hugo Lange é um bairro residencial charmoso de Curitiba, conhecido por suas casas elegantes e ruas arborizadas. Moradores do Hugo Lange valorizam qualidade e bom gosto em tudo.',
-      'A Ótica Gouveia atende os exigentes moradores do Hugo Lange. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos oferecendo produtos de qualidade. Óculos de grau elegantes, óculos de sol de marcas renomadas, lentes de contato e exame de vista gratuito.'
+      'Moradores do Hugo Lange, a Ótica Gouveia oferece produtos premium para um dos bairros mais charmosos de Curitiba! O Hugo Lange é um bairro residencial de alto padrão, conhecido por suas casas elegantes, ruas arborizadas e moradores que valorizam qualidade de vida e sofisticação. Com mais de 40 anos de tradição no mercado óptico curitibano, a Ótica Gouveia atende clientes exigentes do Hugo Lange com marcas premium e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos de alto padrão: exame de vista gratuito com equipamentos de última geração para diagnóstico preciso, confecção de óculos de grau com lentes das melhores marcas mundiais incluindo Zeiss, Hoya e Varilux. Disponibilizamos tratamentos premium como anti-reflexo multicamadas Crizal, proteção contra luz azul para uso intensivo de telas, lentes fotocromáticas Transitions Signature e proteção UV 400. Trabalhamos também com lentes de contato diárias premium e multifocais.',
+      'No Hugo Lange você encontra as grifes mais desejadas do mercado óptico: Ray-Ban com coleções exclusivas, Oakley para esportes de alta performance, Persol italiano, Arnette, Chilli Beans e diversas armações de designer. A Ótica Gouveia se diferencia pelo atendimento consultivo e personalizado - ajudamos você a escolher a armação perfeita para seu estilo sofisticado. Parcelamos em até 12x sem juros, com condições especiais para pagamento à vista.',
+      'O Hugo Lange está localizado em posição privilegiada em Curitiba, próximo ao Cabral, Juvevê, Alto da Glória e Centro. O bairro é conhecido por suas residências elegantes, áreas verdes e tranquilidade. A Ótica Gouveia entrega em todo o Hugo Lange e bairros adjacentes, garantindo praticidade para clientes que valorizam seu tempo e exigem o melhor em produtos ópticos.',
+      'Cliente do Hugo Lange, sua visão merece o melhor! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos premium em casa. Entrega gratuita no Hugo Lange para compras acima de R$ 250,00. Ótica Gouveia - elegância e qualidade em óculos há mais de 40 anos!'
     ],
     characteristics: 'Bairro residencial elegante com casas charmosas',
-    nearbyLandmarks: ['Próximo ao Cabral'],
+    nearbyLandmarks: ['Próximo ao Cabral', 'Juvevê', 'Alto da Glória'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -655,12 +661,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Tingui',
     heroSubtitle: 'Natureza e Qualidade Visual',
     description: [
-      'O Tingui é um bairro privilegiado de Curitiba, famoso pelo Parque Tingui com seu memorial ucraniano. Moradores desfrutam de qualidade de vida em contato com a natureza e cultura.',
-      'A Ótica Gouveia atende os moradores do Tingui. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos cuidando da visão. Óculos de grau para todas as atividades, óculos de sol para aproveitar o parque, lentes de contato e exame de vista gratuito.'
+      'Moradores do Tingui, a Ótica Gouveia oferece qualidade para quem vive cercado pela natureza! O Tingui é um dos bairros mais privilegiados de Curitiba, famoso pelo Parque Tingui com seu icônico Memorial Ucraniano, espaços de lazer e contato direto com a natureza. Com mais de 40 anos de tradição no mercado óptico curitibano, a Ótica Gouveia atende toda a comunidade do Tingui com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos para atender todas as suas necessidades: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos especiais como anti-reflexo multicamadas, proteção contra luz azul de telas, lentes fotocromáticas Transitions perfeitas para passeios no parque e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas.',
+      'No Tingui você encontra as melhores marcas para curtir o parque e o dia a dia: Ray-Ban com modelos clássicos, Oakley perfeitos para atividades ao ar livre e esportes, Arnette, Chilli Beans e diversas armações nacionais e importadas. A Ótica Gouveia se diferencia pelo atendimento personalizado - ajudamos você a escolher óculos de sol ideais para curtir o Parque Tingui e óculos de grau para todas as ocasiões. Parcelamos em até 12x sem juros.',
+      'O Tingui está localizado na região norte de Curitiba, às margens do Rio Barigui, com fácil acesso a bairros como São Lourenço, Pilarzinho, Bom Retiro e Cascatinha. O bairro é valorizado por sua qualidade de vida, áreas verdes preservadas e o belíssimo Parque Tingui com seu lago, trilhas e o Memorial da Imigração Ucraniana. A Ótica Gouveia entrega em toda essa região com praticidade.',
+      'Morador do Tingui, cuide da sua visão com qualidade! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Tingui para compras acima de R$ 250,00. Ótica Gouveia Tingui - qualidade e natureza combinam há mais de 40 anos!'
     ],
     characteristics: 'Bairro verde com o famoso Parque Tingui',
-    nearbyLandmarks: ['Parque Tingui', 'Memorial Ucraniano'],
+    nearbyLandmarks: ['Parque Tingui', 'Memorial Ucraniano', 'Rio Barigui'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -674,12 +682,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Mercês',
     heroSubtitle: 'Qualidade no Coração de Curitiba',
     description: [
-      'O Mercês é um bairro residencial e comercial bem localizado de Curitiba, conhecido por sua praticidade e boa infraestrutura. Moradores do Mercês valorizam qualidade e conveniência.',
-      'A Ótica Gouveia atende os moradores do Mercês. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos de tradição em produtos ópticos. Óculos de grau modernos, óculos de sol originais, lentes de contato e exame de vista gratuito.'
+      'Moradores do Mercês, a Ótica Gouveia oferece praticidade e qualidade para um dos bairros mais bem localizados de Curitiba! O Mercês é um bairro residencial e comercial estratégico, conhecido por sua ótima infraestrutura, proximidade com o Centro e moradores que valorizam conveniência. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Mercês com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos para profissionais e famílias: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo para uso em escritório, proteção contra luz azul de computadores, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas para maior praticidade no dia a dia.',
+      'No Mercês você encontra as melhores marcas do mercado óptico: Ray-Ban com modelos elegantes e modernos, Oakley para esportes, Arnette, Chilli Beans e diversas armações nacionais e importadas de design contemporâneo. A Ótica Gouveia se diferencia pelo atendimento personalizado e consultivo - ajudamos você a escolher a armação ideal para seu estilo profissional e pessoal. Parcelamos em até 12x sem juros, aceitamos convênios.',
+      'O Mercês está localizado em posição central de Curitiba, com fácil acesso ao Centro, Bigorrilho, Batel e Alto da Glória. O bairro conta com excelente comércio, serviços variados, transporte público eficiente e é muito procurado por profissionais que trabalham na região central. A Ótica Gouveia entrega em todo o Mercês e bairros vizinhos com praticidade e rapidez.',
+      'Morador do Mercês, cuide da sua visão com conveniência! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa ou no trabalho. Entrega gratuita no Mercês para compras acima de R$ 250,00. Ótica Gouveia Mercês - praticidade e qualidade há mais de 40 anos!'
     ],
     characteristics: 'Bairro bem localizado com ótima infraestrutura',
-    nearbyLandmarks: ['Próximo ao Centro'],
+    nearbyLandmarks: ['Próximo ao Centro', 'Bigorrilho', 'Batel'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -693,12 +703,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Cabral',
     heroSubtitle: 'Sofisticação em Óculos',
     description: [
-      'O Cabral é um dos bairros mais nobres de Curitiba, conhecido por suas casas elegantes e moradores exigentes. Com excelente infraestrutura, o bairro demanda serviços de alta qualidade.',
-      'A Ótica Gouveia atende os moradores do Cabral com produtos premium. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos oferecendo excelência. Óculos de grau de marcas premium, óculos de sol originais, lentes de contato de alta qualidade e exame de vista gratuito.'
+      'Moradores do Cabral, a Ótica Gouveia oferece excelência em produtos ópticos para um dos bairros mais nobres de Curitiba! O Cabral é sinônimo de elegância, com casas imponentes, ruas arborizadas, excelente infraestrutura e moradores que não abrem mão de qualidade. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende clientes exigentes do Cabral com marcas premium e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos de alto padrão: exame de vista gratuito com tecnologia de ponta, confecção de óculos de grau com lentes das melhores marcas mundiais como Zeiss, Hoya e Varilux. Disponibilizamos tratamentos premium como anti-reflexo Crizal Sapphire, proteção DuraVision BlueProtect contra luz azul, lentes fotocromáticas Transitions XTRActive e proteção UV 400. Trabalhamos também com lentes de contato diárias premium como Acuvue Oasys.',
+      'No Cabral você encontra as grifes mais sofisticadas do mercado óptico: Ray-Ban com coleções exclusivas e limitadas, Oakley Prizm de alta performance, Persol italiano, Prada, Dolce & Gabbana e diversas armações de designer. A Ótica Gouveia se diferencia pelo atendimento consultivo e personalizado - ajudamos você a escolher a armação que reflete seu estilo sofisticado. Parcelamos em até 12x sem juros.',
+      'O Cabral está localizado na região nobre de Curitiba, próximo ao Juvevê, Alto da Glória, Hugo Lange e Centro Cívico. O bairro é valorizado por sua tranquilidade, segurança, áreas verdes e proximidade com o Bosque do Papa. A Ótica Gouveia entrega em todo o Cabral e bairros adjacentes, garantindo praticidade para clientes que valorizam seu tempo.',
+      'Cliente do Cabral, sua visão merece o melhor! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos premium em casa. Entrega gratuita no Cabral para compras acima de R$ 250,00. Ótica Gouveia Cabral - sofisticação e excelência há mais de 40 anos!'
     ],
-    characteristics: 'Bairro nobre com casas elegantes',
-    nearbyLandmarks: ['Próximo ao Juvevê', 'Alto da Glória'],
+    characteristics: 'Bairro nobre com casas elegantes e moradores exigentes',
+    nearbyLandmarks: ['Bosque do Papa', 'Juvevê', 'Alto da Glória', 'Centro Cívico'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -712,12 +724,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Alto da XV',
     heroSubtitle: 'Qualidade no Alto de Curitiba',
     description: [
-      'O Alto da XV é um bairro residencial de Curitiba, conhecido por sua localização elevada e ruas tranquilas. Moradores do Alto da XV valorizam qualidade de vida e serviços de confiança.',
-      'A Ótica Gouveia atende os moradores do Alto da XV. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos cuidando da visão dos curitibanos. Óculos de grau clássicos e modernos, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores do Alto da XV, a Ótica Gouveia oferece qualidade e tradição para um bairro que respira história! O Alto da XV é um bairro residencial tradicional de Curitiba, localizado em região elevada próxima ao Centro, conhecido por suas ruas tranquilas, casas históricas e moradores que valorizam qualidade de vida. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Alto da XV com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos: exame de vista gratuito com equipamentos modernos para diagnóstico preciso, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo de alta performance, proteção contra luz azul de computadores, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas e tipos.',
+      'No Alto da XV você encontra as melhores marcas do mercado óptico: Ray-Ban com modelos clássicos e contemporâneos, Oakley, Arnette, Chilli Beans e diversas armações nacionais e importadas elegantes. A Ótica Gouveia se diferencia pelo atendimento personalizado - ajudamos você a escolher a armação ideal que combina com o charme do seu bairro. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde.',
+      'O Alto da XV está localizado próximo ao Centro de Curitiba, Cristo Rei, Jardim Botânico e Rebouças. O bairro é valorizado por sua localização estratégica, tranquilidade e arquitetura tradicional. Possui fácil acesso ao transporte público e às principais vias da cidade. A Ótica Gouveia entrega em todo o Alto da XV e bairros vizinhos com praticidade e rapidez.',
+      'Morador do Alto da XV, cuide da sua visão com quem valoriza tradição! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Alto da XV para compras acima de R$ 250,00. Ótica Gouveia - tradição e qualidade há mais de 40 anos!'
     ],
-    characteristics: 'Bairro residencial em localização elevada',
-    nearbyLandmarks: ['Centro de Curitiba'],
+    characteristics: 'Bairro residencial tradicional em região elevada',
+    nearbyLandmarks: ['Próximo ao Centro', 'Cristo Rei', 'Jardim Botânico'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -731,12 +745,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Guabirotuba',
     heroSubtitle: 'Qualidade para Sua Família',
     description: [
-      'O Guabirotuba é um bairro residencial de Curitiba, conhecido por suas áreas verdes e proximidade com o Jardim Botânico. Moradores do Guabirotuba valorizam tranquilidade e bons serviços.',
-      'A Ótica Gouveia atende os moradores do Guabirotuba. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos de experiência. Óculos de grau para toda a família, óculos de sol com proteção UV, lentes de contato e exame de vista gratuito.'
+      'Moradores do Guabirotuba, a Ótica Gouveia é sua escolha certa próximo ao Jardim Botânico! O Guabirotuba é um bairro residencial verde e tranquilo de Curitiba, privilegiado pela proximidade com o famoso Jardim Botânico e suas áreas de lazer. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Guabirotuba com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos para toda a família: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul, lentes fotocromáticas Transitions perfeitas para passeios no Jardim Botânico e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas para maior praticidade.',
+      'No Guabirotuba você encontra marcas de qualidade para curtir o parque e o dia a dia: Ray-Ban com modelos clássicos, Oakley perfeitos para atividades ao ar livre, Arnette, Chilli Beans e diversas armações nacionais e importadas. A Ótica Gouveia se diferencia pelo atendimento familiar - ajudamos cada membro da família a escolher os óculos ideais. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde.',
+      'O Guabirotuba está localizado na zona leste de Curitiba, às margens do Jardim Botânico, com fácil acesso ao Parque das Pedreiras (Ópera de Arame), Cajuru e Capão da Imbuia. O bairro é valorizado por sua qualidade de vida, áreas verdes e proximidade com importantes pontos turísticos da cidade. A Ótica Gouveia entrega em toda essa região verde com praticidade.',
+      'Morador do Guabirotuba, cuide da sua visão em família! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Guabirotuba para compras acima de R$ 250,00. Ótica Gouveia - qualidade próxima à natureza há mais de 40 anos!'
     ],
     characteristics: 'Bairro residencial verde próximo ao Jardim Botânico',
-    nearbyLandmarks: ['Jardim Botânico', 'Parque das Pedreiras'],
+    nearbyLandmarks: ['Jardim Botânico', 'Parque das Pedreiras', 'Ópera de Arame'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -750,12 +766,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Parolin',
     heroSubtitle: 'Tradição e Qualidade',
     description: [
-      'O Parolin é um bairro residencial tradicional de Curitiba, com forte senso de comunidade. Moradores do Parolin valorizam serviços de qualidade com atendimento personalizado.',
-      'A Ótica Gouveia atende os moradores do Parolin. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos de tradição em cuidados visuais. Óculos de grau acessíveis, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores do Parolin, a Ótica Gouveia é sua parceira de confiança há mais de 40 anos! O Parolin é um bairro residencial tradicional de Curitiba, localizado próximo ao Centro, conhecido por seu forte senso de comunidade, moradores trabalhadores e famílias que valorizam relacionamentos duradouros com prestadores de serviços. Com mais de quatro décadas de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Parolin com qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos com preços justos: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul de computadores e celulares, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas e tipos para todas as necessidades.',
+      'No Parolin você encontra marcas de qualidade com preços acessíveis: Ray-Ban, Oakley, Arnette, Chilli Beans e diversas armações nacionais de excelente custo-benefício. A Ótica Gouveia se diferencia pelo atendimento familiar e comunitário - conhecemos nossos clientes pelo nome e acompanhamos suas famílias há gerações. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde.',
+      'O Parolin está localizado na região central-sul de Curitiba, com fácil acesso ao Centro, Prado Velho, Rebouças e Vila Guaíra. O bairro possui boa infraestrutura, comércio local, transporte público eficiente e mantém sua identidade comunitária mesmo com o crescimento urbano. A Ótica Gouveia entrega em todo o Parolin e bairros vizinhos com rapidez e cuidado.',
+      'Morador do Parolin, cuide da sua visão com quem valoriza comunidade! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Parolin para compras acima de R$ 250,00. Ótica Gouveia Parolin - tradição comunitária há mais de 40 anos!'
     ],
-    characteristics: 'Bairro residencial com forte comunidade',
-    nearbyLandmarks: ['Próximo ao Centro'],
+    characteristics: 'Bairro residencial tradicional com forte comunidade',
+    nearbyLandmarks: ['Próximo ao Centro', 'Prado Velho', 'Rebouças'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -769,12 +787,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Abranches',
     heroSubtitle: 'Qualidade com Vista para a Cidade',
     description: [
-      'O Abranches é um bairro residencial de Curitiba, localizado em uma região elevada com belas vistas da cidade. Moradores do Abranches valorizam tranquilidade e qualidade de vida.',
-      'A Ótica Gouveia atende os moradores do Abranches. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos cuidando da visão. Óculos de grau modernos, óculos de sol, lentes de contato das melhores marcas e exame de vista gratuito.'
+      'Moradores do Abranches, a Ótica Gouveia leva qualidade às alturas! O Abranches é um bairro residencial de Curitiba localizado em região elevada, conhecido por suas belas vistas panorâmicas da cidade, ruas tranquilas e moradores que valorizam qualidade de vida e ar puro. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Abranches com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos: exame de vista gratuito com equipamentos modernos para diagnóstico preciso, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul de telas, lentes fotocromáticas Transitions e proteção UV 400 essencial para quem aprecia as áreas abertas do bairro. Trabalhamos também com lentes de contato de diversas marcas.',
+      'No Abranches você encontra as melhores marcas do mercado óptico: Ray-Ban com modelos clássicos e modernos, Oakley perfeitos para atividades ao ar livre, Arnette, Chilli Beans e diversas armações nacionais e importadas. A Ótica Gouveia se diferencia pelo atendimento personalizado - ajudamos você a escolher óculos ideais para curtir as vistas do seu bairro com clareza. Parcelamos em até 12x sem juros, aceitamos convênios.',
+      'O Abranches está localizado na região norte de Curitiba, próximo ao Pilarzinho, Cachoeira, São Lourenço e Barreirinha. O bairro é valorizado por sua localização elevada, tranquilidade, áreas verdes e vistas privilegiadas da cidade. Possui acesso ao Parque da Barreirinha e está conectado a importantes vias da região norte. A Ótica Gouveia entrega em toda essa região com praticidade.',
+      'Morador do Abranches, cuide da sua visão no alto! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Abranches para compras acima de R$ 250,00. Ótica Gouveia Abranches - qualidade com vista há mais de 40 anos!'
     ],
-    characteristics: 'Bairro elevado com belas vistas',
-    nearbyLandmarks: ['Próximo ao Pilarzinho'],
+    characteristics: 'Bairro residencial elevado com belas vistas panorâmicas',
+    nearbyLandmarks: ['Próximo ao Pilarzinho', 'Cachoeira', 'São Lourenço'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -788,12 +808,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Uberaba',
     heroSubtitle: 'Cuidando da Sua Visão',
     description: [
-      'O Uberaba é um bairro residencial de Curitiba, conhecido por sua localização estratégica e boa infraestrutura. Moradores do Uberaba valorizam praticidade e serviços de qualidade.',
-      'A Ótica Gouveia atende os moradores do Uberaba. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos de experiência em produtos ópticos. Óculos de grau para todas as necessidades, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores do Uberaba, a Ótica Gouveia é sua referência em óculos na zona leste de Curitiba! O Uberaba é um bairro residencial estratégico, conhecido por sua ótima localização, boa infraestrutura e moradores que valorizam praticidade e qualidade de vida. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Uberaba com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos: exame de vista gratuito com equipamentos modernos para diagnóstico preciso, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo para melhor visão noturna, proteção contra luz azul de computadores e celulares, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas e tipos.',
+      'No Uberaba você encontra as melhores marcas do mercado óptico: Ray-Ban com modelos clássicos e modernos, Oakley para esportes, Arnette, Chilli Beans e diversas armações nacionais e importadas de qualidade. A Ótica Gouveia se diferencia pelo atendimento personalizado - cada cliente recebe orientação para escolher a armação ideal. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, com condições especiais para pagamento à vista.',
+      'O Uberaba está localizado na zona leste de Curitiba, com fácil acesso ao Cajuru, Jardim das Américas, Capão da Imbuia e Guabirotuba. O bairro possui boa infraestrutura, comércio variado, escolas e transporte público eficiente. É muito valorizado por famílias que buscam qualidade de vida com praticidade de acesso às principais regiões da cidade. A Ótica Gouveia entrega em toda essa região com rapidez.',
+      'Morador do Uberaba, cuide da sua visão com praticidade! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Uberaba para compras acima de R$ 250,00. Ótica Gouveia Uberaba - qualidade na zona leste há mais de 40 anos!'
     ],
-    characteristics: 'Bairro residencial com boa infraestrutura',
-    nearbyLandmarks: ['Próximo ao Cajuru'],
+    characteristics: 'Bairro residencial com ótima localização e infraestrutura',
+    nearbyLandmarks: ['Próximo ao Cajuru', 'Jardim das Américas', 'Capão da Imbuia'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -807,12 +829,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para a Vila Izabel',
     heroSubtitle: 'Elegância em Cuidados Visuais',
     description: [
-      'A Vila Izabel é um bairro residencial de Curitiba, conhecida por suas casas elegantes e moradores que valorizam qualidade de vida. Um bairro tranquilo com excelente infraestrutura.',
-      'A Ótica Gouveia atende os moradores da Vila Izabel. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos oferecendo produtos de qualidade. Óculos de grau elegantes, óculos de sol originais, lentes de contato e exame de vista gratuito.'
+      'Moradores da Vila Izabel, a Ótica Gouveia oferece elegância em cuidados visuais! A Vila Izabel é um bairro residencial sofisticado de Curitiba, conhecido por suas casas elegantes, ruas tranquilas e moradores que valorizam qualidade de vida e bom gosto. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade da Vila Izabel com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos de alto padrão: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas das melhores marcas. Disponibilizamos tratamentos premium como anti-reflexo multicamadas, proteção contra luz azul, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato premium de diversas marcas.',
+      'Na Vila Izabel você encontra as marcas mais elegantes do mercado óptico: Ray-Ban com modelos sofisticados, Oakley, Arnette, Chilli Beans e diversas armações de designer nacionais e importadas. A Ótica Gouveia se diferencia pelo atendimento consultivo - ajudamos você a escolher a armação perfeita que reflete a elegância do seu bairro. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde.',
+      'A Vila Izabel está localizada em posição privilegiada de Curitiba, próxima ao Portão, Água Verde, Novo Mundo e Santa Quitéria. O bairro é valorizado por sua tranquilidade, arquitetura residencial de qualidade e excelente infraestrutura. Possui fácil acesso às principais vias da cidade e comércio refinado. A Ótica Gouveia entrega em toda a Vila Izabel e bairros vizinhos com elegância.',
+      'Morador da Vila Izabel, cuide da sua visão com elegância! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita na Vila Izabel para compras acima de R$ 250,00. Ótica Gouveia Vila Izabel - elegância em óculos há mais de 40 anos!'
     ],
     characteristics: 'Bairro residencial elegante e tranquilo',
-    nearbyLandmarks: ['Próximo ao Portão'],
+    nearbyLandmarks: ['Próximo ao Portão', 'Água Verde', 'Novo Mundo'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -826,12 +850,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Alto da Glória',
     heroSubtitle: 'Glória em Cada Detalhe',
     description: [
-      'O Alto da Glória é um bairro residencial de Curitiba, próximo ao Centro Cívico e áreas nobres da cidade. Moradores do Alto da Glória valorizam localização privilegiada e serviços de qualidade.',
-      'A Ótica Gouveia atende os moradores do Alto da Glória. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos de excelência em produtos ópticos. Óculos de grau sofisticados, óculos de sol de marcas renomadas, lentes de contato e exame de vista gratuito.'
+      'Moradores do Alto da Glória, a Ótica Gouveia oferece excelência para um dos bairros mais nobres de Curitiba! O Alto da Glória é um bairro residencial de alto padrão, localizado próximo ao Centro Cívico, Palácio Iguaçu e às principais instituições governamentais do Paraná. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende clientes exigentes do Alto da Glória com marcas premium e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos de alto padrão: exame de vista gratuito com tecnologia de ponta, confecção de óculos de grau com lentes das melhores marcas mundiais incluindo Zeiss, Hoya e Varilux. Disponibilizamos tratamentos premium como anti-reflexo Crizal, proteção DuraVision BlueProtect contra luz azul, lentes fotocromáticas Transitions Signature e proteção UV 400. Trabalhamos também com lentes de contato diárias premium.',
+      'No Alto da Glória você encontra as grifes mais sofisticadas do mercado: Ray-Ban com coleções exclusivas, Oakley de alta performance, Persol, Prada e diversas armações de designer. A Ótica Gouveia se diferencia pelo atendimento consultivo e personalizado - perfeito para executivos e profissionais que trabalham no Centro Cívico. Parcelamos em até 12x sem juros, com condições especiais para pagamento à vista.',
+      'O Alto da Glória está localizado na região nobre de Curitiba, vizinho ao Centro Cívico, Palácio Iguaçu (sede do governo estadual), Cabral, Juvevê e Centro. O bairro é valorizado por sua proximidade com as instituições governamentais, segurança e tranquilidade. A Ótica Gouveia entrega em todo o Alto da Glória, perfeito para profissionais com agenda lotada que não podem sair do trabalho.',
+      'Cliente do Alto da Glória, sua visão merece excelência! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos premium em casa ou no escritório. Entrega gratuita no Alto da Glória para compras acima de R$ 250,00. Ótica Gouveia - glória em cada detalhe há mais de 40 anos!'
     ],
-    characteristics: 'Bairro nobre próximo ao Centro Cívico',
-    nearbyLandmarks: ['Centro Cívico', 'Palácio Iguaçu'],
+    characteristics: 'Bairro nobre próximo ao Centro Cívico e Palácio Iguaçu',
+    nearbyLandmarks: ['Centro Cívico', 'Palácio Iguaçu', 'Cabral', 'Juvevê'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -845,12 +871,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Pilarzinho',
     heroSubtitle: 'Tradição e Qualidade',
     description: [
-      'O Pilarzinho é um bairro residencial de Curitiba, conhecido por suas ruas tranquilas e moradores que valorizam qualidade de vida. Um bairro com forte identidade e senso de comunidade.',
-      'A Ótica Gouveia atende os moradores do Pilarzinho. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos de tradição. Óculos de grau para toda a família, óculos de sol, lentes de contato das melhores marcas e exame de vista gratuito.'
+      'Moradores do Pilarzinho, a Ótica Gouveia é sua parceira de confiança na região norte de Curitiba! O Pilarzinho é um bairro residencial tradicional, conhecido por suas ruas tranquilas, forte identidade comunitária e moradores que valorizam qualidade de vida e relacionamentos duradouros. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Pilarzinho com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos: exame de vista gratuito com equipamentos modernos para diagnóstico preciso, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul de computadores e celulares, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas para todas as necessidades.',
+      'No Pilarzinho você encontra as melhores marcas com atendimento familiar: Ray-Ban, Oakley, Arnette, Chilli Beans e diversas armações nacionais de excelente custo-benefício. A Ótica Gouveia se diferencia pelo atendimento comunitário e acolhedor - conhecemos nossos clientes e suas famílias há gerações. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, com condições especiais para pagamento à vista.',
+      'O Pilarzinho está localizado na região norte de Curitiba, próximo ao Abranches, Cachoeira, São Lourenço, Barreirinha e Tingui. O bairro possui boa infraestrutura, comércio local, escolas e transporte público eficiente. É valorizado por famílias que buscam tranquilidade sem abrir mão da praticidade urbana. A Ótica Gouveia entrega em toda essa região norte com cuidado.',
+      'Morador do Pilarzinho, cuide da sua visão em família! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Pilarzinho para compras acima de R$ 250,00. Ótica Gouveia Pilarzinho - tradição e qualidade há mais de 40 anos!'
     ],
     characteristics: 'Bairro residencial tranquilo com comunidade ativa',
-    nearbyLandmarks: ['Próximo ao Abranches'],
+    nearbyLandmarks: ['Próximo ao Abranches', 'São Lourenço', 'Barreirinha'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -864,12 +892,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Santa Cândida',
     heroSubtitle: 'Qualidade para o Norte de Curitiba',
     description: [
-      'O Santa Cândida é um bairro populoso do norte de Curitiba, conhecido pelo Terminal Santa Cândida e sua forte vocação comercial. Moradores buscam serviços de qualidade com praticidade.',
-      'A Ótica Gouveia atende os moradores do Santa Cândida. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos atendendo curitibanos. Óculos de grau acessíveis, óculos de sol, lentes de contato e exame de vista gratuito. Parcelamento facilitado.'
+      'Moradores do Santa Cândida, a Ótica Gouveia é sua escolha certa na zona norte de Curitiba! O Santa Cândida é um dos bairros mais populosos e dinâmicos do norte da cidade, conhecido pelo movimentado Terminal Santa Cândida, forte vocação comercial e milhares de famílias trabalhadoras. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Santa Cândida com qualidade, preços justos e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos e acessíveis: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul de telas, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas com preços justos.',
+      'No Santa Cândida você encontra marcas de qualidade com preços que cabem no orçamento: Ray-Ban, Oakley, Arnette, Chilli Beans e diversas armações nacionais acessíveis. A Ótica Gouveia se diferencia pelo atendimento familiar e comunitário - entendemos as necessidades das famílias trabalhadoras. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, facilitando o acesso a óculos de qualidade.',
+      'O Santa Cândida está localizado na região norte de Curitiba, com excelente acesso pelo Terminal Santa Cândida que conecta toda a região norte da cidade. O bairro faz divisa com Atuba, Tingui, Bacacheri e Boa Vista, sendo um importante polo comercial e residencial. A Ótica Gouveia entrega em toda essa região populosa do norte com praticidade.',
+      'Morador do Santa Cândida, cuide da sua visão com qualidade acessível! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Santa Cândida para compras acima de R$ 250,00. Ótica Gouveia Santa Cândida - qualidade para o norte há mais de 40 anos!'
     ],
-    characteristics: 'Bairro populoso do norte com forte comércio',
-    nearbyLandmarks: ['Terminal Santa Cândida'],
+    characteristics: 'Bairro populoso do norte com forte comércio e Terminal',
+    nearbyLandmarks: ['Terminal Santa Cândida', 'Atuba', 'Tingui'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -1113,12 +1143,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Santa Quitéria',
     heroSubtitle: 'Qualidade para Sua Família',
     description: [
-      'O Santa Quitéria é um bairro residencial de Curitiba, conhecido por sua tranquilidade e moradores que valorizam qualidade de vida. Um bairro familiar com boa infraestrutura.',
-      'A Ótica Gouveia atende os moradores do Santa Quitéria. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos atendendo famílias. Óculos de grau para toda a família, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores do Santa Quitéria, a Ótica Gouveia é sua escolha para cuidados visuais em família! O Santa Quitéria é um bairro residencial tranquilo de Curitiba, conhecido por sua atmosfera familiar, boa infraestrutura e moradores que valorizam qualidade de vida. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Santa Quitéria com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos para toda a família: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais para crianças e adultos, bifocais e multifocais progressivas para os mais velhos. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul de telas, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas.',
+      'No Santa Quitéria você encontra marcas de qualidade para todas as idades: Ray-Ban, Oakley para esportes, Arnette, Chilli Beans, armações infantis coloridas e diversas opções nacionais acessíveis. A Ótica Gouveia se diferencia pelo atendimento familiar - cuidamos da visão de pais, filhos e avós com a mesma atenção. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde.',
+      'O Santa Quitéria está localizado na região oeste de Curitiba, próximo ao Campo Comprido, Campina do Siqueira, Vila Izabel e Portão. O bairro possui boa infraestrutura, comércio local, escolas e áreas verdes. É muito valorizado por famílias que buscam ambiente tranquilo para criar os filhos. A Ótica Gouveia entrega em toda essa região familiar com cuidado.',
+      'Família do Santa Quitéria, cuide da visão de todos em um só lugar! Agende exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba os óculos de toda a família em casa. Entrega gratuita no Santa Quitéria para compras acima de R$ 250,00. Ótica Gouveia Santa Quitéria - qualidade familiar há mais de 40 anos!'
     ],
     characteristics: 'Bairro residencial familiar e tranquilo',
-    nearbyLandmarks: ['Próximo ao Campo Comprido'],
+    nearbyLandmarks: ['Próximo ao Campo Comprido', 'Campina do Siqueira', 'Vila Izabel'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -1132,12 +1164,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Mossunguê',
     heroSubtitle: 'Sofisticação em Cuidados Visuais',
     description: [
-      'O Mossunguê é uma região de alto padrão em Curitiba, conhecida por seus condomínios de luxo e moradores exigentes. Próximo ao Ecoville, o bairro demanda serviços de alta qualidade.',
-      'A Ótica Gouveia atende os moradores do Mossunguê com produtos premium. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos oferecendo excelência. Óculos de grau de marcas premium, óculos de sol originais, lentes de contato de alta qualidade e exame de vista gratuito.'
+      'Moradores do Mossunguê, a Ótica Gouveia oferece sofisticação para uma das regiões mais nobres de Curitiba! O Mossunguê é uma área de alto padrão, conhecida por seus condomínios de luxo, proximidade com o Ecoville e ParkShopping Barigui, e moradores extremamente exigentes. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende clientes sofisticados do Mossunguê com marcas premium e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos de altíssimo padrão: exame de vista gratuito com tecnologia de ponta, confecção de óculos de grau com lentes das marcas mais prestigiadas do mundo incluindo Zeiss, Hoya e Varilux. Disponibilizamos tratamentos premium exclusivos como anti-reflexo Crizal Sapphire HR, proteção DuraVision BlueProtect, lentes fotocromáticas Transitions XTRActive Style Colors e proteção UV total. Trabalhamos também com lentes de contato diárias de alta performance.',
+      'No Mossunguê você encontra as grifes mais exclusivas do mercado óptico internacional: Ray-Ban com edições limitadas, Oakley de alta performance, Persol italiano, Prada, Dolce & Gabbana, Tom Ford e diversas armações de designer. A Ótica Gouveia se diferencia pelo atendimento consultivo de excelência - proporcionamos uma experiência completa de escolha para clientes que exigem o melhor. Parcelamos em até 12x sem juros.',
+      'O Mossunguê está localizado na região mais valorizada de Curitiba, próximo ao Ecoville, ParkShopping Barigui, Champagnat e Bigorrilho. A região é sinônimo de luxo, com condomínios fechados de alto padrão, áreas verdes preservadas e infraestrutura impecável. A Ótica Gouveia entrega em todo o Mossunguê, garantindo praticidade para clientes com agenda premium.',
+      'Cliente do Mossunguê, sua visão merece exclusividade! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos premium em casa. Entrega gratuita no Mossunguê para compras acima de R$ 250,00. Ótica Gouveia - sofisticação em cuidados visuais há mais de 40 anos!'
     ],
-    characteristics: 'Região de alto padrão próxima ao Ecoville',
-    nearbyLandmarks: ['Ecoville', 'ParkShopping Barigui'],
+    characteristics: 'Região de altíssimo padrão próxima ao Ecoville e ParkShopping',
+    nearbyLandmarks: ['Ecoville', 'ParkShopping Barigui', 'Champagnat', 'Bigorrilho'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -1151,12 +1185,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Seminário',
     heroSubtitle: 'Tradição e Qualidade',
     description: [
-      'O Seminário é um bairro residencial de Curitiba, conhecido por suas casas elegantes e moradores que valorizam tradição. Um bairro tranquilo com excelente infraestrutura.',
-      'A Ótica Gouveia atende os moradores do Seminário. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos de tradição em cuidados visuais. Óculos de grau clássicos e modernos, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores do Seminário, a Ótica Gouveia oferece tradição para um bairro que valoriza história! O Seminário é um bairro residencial tradicional de Curitiba, conhecido por suas casas elegantes, arquitetura clássica e moradores que apreciam qualidade e bom gosto. Com mais de 40 anos de tradição no mercado óptico - quase tanto quanto muitas casas do bairro - a Ótica Gouveia atende toda a comunidade do Seminário com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos de alto padrão: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas das melhores marcas. Disponibilizamos tratamentos premium como anti-reflexo multicamadas, proteção contra luz azul, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato premium.',
+      'No Seminário você encontra as marcas mais elegantes do mercado óptico: Ray-Ban com modelos clássicos atemporais, Oakley, Arnette, Chilli Beans e diversas armações de designer nacionais e importadas. A Ótica Gouveia se diferencia pelo atendimento clássico e refinado - ajudamos você a escolher armações que combinam com a elegância tradicional do seu bairro. Parcelamos em até 12x sem juros, aceitamos convênios.',
+      'O Seminário está localizado na região norte de Curitiba, próximo ao Bom Retiro, Vista Alegre, São Lourenço e Cabral. O bairro é valorizado por sua arquitetura tradicional, ruas arborizadas e tranquilidade. Possui fácil acesso às principais vias da cidade mantendo o charme residencial. A Ótica Gouveia entrega em todo o Seminário com a elegância que o bairro merece.',
+      'Morador do Seminário, cuide da sua visão com tradição! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Seminário para compras acima de R$ 250,00. Ótica Gouveia Seminário - tradição e qualidade há mais de 40 anos!'
     ],
-    characteristics: 'Bairro residencial tradicional',
-    nearbyLandmarks: ['Próximo ao Bom Retiro'],
+    characteristics: 'Bairro residencial tradicional com arquitetura clássica',
+    nearbyLandmarks: ['Próximo ao Bom Retiro', 'Vista Alegre', 'São Lourenço'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -1170,12 +1206,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para a Barreirinha',
     heroSubtitle: 'Qualidade para o Norte de Curitiba',
     description: [
-      'A Barreirinha é um bairro do norte de Curitiba, conhecido pelo Terminal Barreirinha e seu parque. Com forte movimentação comercial, o bairro atende milhares de moradores.',
-      'A Ótica Gouveia atende os moradores da Barreirinha. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos de experiência. Óculos de grau acessíveis, óculos de sol, lentes de contato e exame de vista gratuito. Parcelamento facilitado.'
+      'Moradores da Barreirinha, a Ótica Gouveia é sua referência na zona norte de Curitiba! A Barreirinha é um bairro dinâmico e populoso, conhecido pelo Terminal Barreirinha, pelo Parque da Barreirinha e sua forte movimentação comercial. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade da Barreirinha com qualidade, preços justos e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos e acessíveis: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul de telas, lentes fotocromáticas Transitions e proteção UV 400 para curtir o Parque. Trabalhamos também com lentes de contato de diversas marcas com preços justos.',
+      'Na Barreirinha você encontra marcas de qualidade com preços acessíveis: Ray-Ban, Oakley, Arnette, Chilli Beans e diversas armações nacionais de excelente custo-benefício. A Ótica Gouveia se diferencia pelo atendimento familiar e comunitário - entendemos as necessidades das famílias trabalhadoras do norte. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde.',
+      'A Barreirinha está localizada na região norte de Curitiba, com excelente acesso pelo Terminal Barreirinha, um dos mais movimentados da cidade. O bairro possui o Parque da Barreirinha para lazer, comércio variado e faz divisa com Abranches, Cachoeira e Santa Cândida. A Ótica Gouveia entrega em toda essa região populosa do norte.',
+      'Morador da Barreirinha, cuide da sua visão com qualidade acessível! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita na Barreirinha para compras acima de R$ 250,00. Ótica Gouveia Barreirinha - qualidade para o norte há mais de 40 anos!'
     ],
-    characteristics: 'Bairro do norte com terminal de ônibus',
-    nearbyLandmarks: ['Terminal Barreirinha', 'Parque da Barreirinha'],
+    characteristics: 'Bairro do norte com Terminal de ônibus e Parque',
+    nearbyLandmarks: ['Terminal Barreirinha', 'Parque da Barreirinha', 'Abranches'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -1189,12 +1227,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Santo Inácio',
     heroSubtitle: 'Fé na Qualidade Visual',
     description: [
-      'O Santo Inácio é um bairro residencial de Curitiba, conhecido por sua tranquilidade e moradores que valorizam qualidade de vida. Um bairro familiar com forte senso de comunidade.',
-      'A Ótica Gouveia atende os moradores do Santo Inácio. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos cuidando da visão das famílias. Óculos de grau para todas as idades, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores do Santo Inácio, a Ótica Gouveia é sua parceira de fé na qualidade visual! O Santo Inácio é um bairro residencial familiar de Curitiba, conhecido por sua tranquilidade, forte senso de comunidade e moradores que valorizam qualidade de vida e relacionamentos duradouros. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia atende toda a comunidade do Santo Inácio com produtos de qualidade e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos para todas as idades: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais para crianças e adultos, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul de telas, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas.',
+      'No Santo Inácio você encontra marcas de qualidade para toda a família: Ray-Ban, Oakley, Arnette, Chilli Beans, armações infantis coloridas e diversas opções nacionais acessíveis. A Ótica Gouveia se diferencia pelo atendimento familiar e acolhedor - cuidamos da visão de todas as gerações. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde.',
+      'O Santo Inácio está localizado na região norte de Curitiba, próximo ao Santa Cândida, Barreirinha, Cachoeira e Abranches. O bairro possui boa infraestrutura, comércio local, igrejas e áreas verdes. É muito valorizado por famílias que buscam ambiente tranquilo e seguro. A Ótica Gouveia entrega em toda essa região familiar com cuidado.',
+      'Família do Santo Inácio, cuide da visão de todos! Agende exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba os óculos de toda a família em casa. Entrega gratuita no Santo Inácio para compras acima de R$ 250,00. Ótica Gouveia Santo Inácio - fé na qualidade há mais de 40 anos!'
     ],
-    characteristics: 'Bairro residencial familiar',
-    nearbyLandmarks: ['Próximo ao Santa Cândida'],
+    characteristics: 'Bairro residencial familiar com forte comunidade',
+    nearbyLandmarks: ['Próximo ao Santa Cândida', 'Barreirinha', 'Cachoeira'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
