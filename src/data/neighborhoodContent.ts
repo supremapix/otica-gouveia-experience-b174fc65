@@ -1012,12 +1012,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Orleans',
     heroSubtitle: 'Qualidade Real para Você',
     description: [
-      'O Orleans é um bairro residencial de Curitiba, conhecido por sua localização privilegiada e boa infraestrutura. Moradores do Orleans valorizam praticidade e bons serviços.',
-      'A Ótica Gouveia atende os moradores do Orleans. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'São mais de 40 anos oferecendo qualidade. Óculos de grau elegantes, óculos de sol originais, lentes de contato e exame de vista gratuito.'
+      'Moradores do Orleans, a Ótica Gouveia é sua parceira em cuidados visuais de qualidade! O Orleans é um bairro residencial charmoso de Curitiba, localizado na região leste próximo ao Hauer, Boqueirão e Guabirotuba, conhecido por suas ruas tranquilas, casas confortáveis e moradores que valorizam praticidade e serviços de confiança. Com mais de 40 anos de tradição no mercado óptico curitibano, a Ótica Gouveia oferece atendimento de excelência para toda a comunidade do Orleans, com entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos: exame de vista gratuito realizado com equipamentos de última geração para diagnóstico preciso, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos modernos como anti-reflexo multicamadas, proteção contra luz azul de celulares e computadores, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas - descartáveis, mensais, tóricas e coloridas.',
+      'No Orleans você encontra as melhores marcas do mercado óptico: Ray-Ban com modelos clássicos e modernos, Oakley para esportes, Arnette, Chilli Beans e diversas armações nacionais e importadas de qualidade. A Ótica Gouveia se diferencia pelo atendimento familiar - cada cliente recebe atenção individual para escolher a armação perfeita. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, com condições especiais para pagamento à vista.',
+      'O Orleans está localizado na região leste de Curitiba, próximo ao Hauer, Boqueirão, Guabirotuba e Xaxim. O bairro oferece boa infraestrutura, comércio local, escolas e fácil acesso às principais vias da cidade. A Ótica Gouveia entrega em todo o Orleans e bairros vizinhos com qualidade e pontualidade, garantindo que você receba seus óculos no conforto de casa.',
+      'Morador do Orleans, cuide da sua visão com tradição e qualidade! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita no Orleans para compras acima de R$ 250,00. Ótica Gouveia Orleans - qualidade familiar há mais de 40 anos!'
     ],
     characteristics: 'Bairro residencial com boa infraestrutura',
-    nearbyLandmarks: ['Próximo ao Hauer'],
+    nearbyLandmarks: ['Próximo ao Hauer', 'Boqueirão', 'Guabirotuba'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   },
@@ -1521,12 +1523,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para Campo Largo',
     heroSubtitle: 'Qualidade da Capital para a Cidade das Porcelanas',
     description: [
-      'Campo Largo é conhecida como a Capital da Louça, famosa por suas indústrias de porcelana e cerâmica. Moradores de Campo Largo valorizam tradição e qualidade em tudo.',
-      'A Ótica Gouveia atende moradores de Campo Largo. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'São mais de 40 anos de tradição - assim como as porcelanas de Campo Largo. Óculos de grau elegantes, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores de Campo Largo, a Ótica Gouveia traz qualidade da capital para a famosa Cidade das Porcelanas! Campo Largo é conhecida nacionalmente como a Capital da Louça, abrigando tradicionais indústrias de porcelana e cerâmica que fazem parte da história do Paraná. Com população que valoriza tradição, qualidade e bom atendimento, Campo Largo merece serviços à altura de sua reputação. A Ótica Gouveia, com mais de 40 anos de experiência no mercado óptico, oferece entrega gratuita via motoboy para compras acima de R$ 250,00 em toda a cidade.',
+      'Nossa equipe especializada oferece serviços ópticos de excelência: exame de vista gratuito com equipamentos modernos para diagnóstico preciso, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos premium como anti-reflexo multicamadas, proteção contra luz azul para quem trabalha nas indústrias, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato de todas as marcas.',
+      'Em Campo Largo você encontra as melhores marcas do mercado óptico: Ray-Ban, Oakley, Arnette, Chilli Beans e diversas armações nacionais e importadas de qualidade. A Ótica Gouveia, assim como as porcelanas campo-larguenses, preza pela excelência e durabilidade em todos os produtos. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, com condições especiais para pagamento à vista.',
+      'Campo Largo está localizada a aproximadamente 30 minutos de Curitiba pela BR-277, com acesso fácil e rápido. A cidade oferece atrativos como o Parque dos Jesuítas, igrejas históricas, fábricas de porcelana abertas para visitação e uma gastronomia típica do interior paranaense. Moradores do centro, bairros e distrito industrial podem aproveitar nossa entrega gratuita.',
+      'Morador de Campo Largo, cuide da sua visão com qualidade de porcelana! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita em Campo Largo para compras acima de R$ 250,00. Ótica Gouveia - tradição que combina com Campo Largo há mais de 40 anos!'
     ],
     characteristics: 'Capital da Louça com tradição em porcelana',
-    nearbyLandmarks: ['Centro de Campo Largo', 'Parque dos Jesuítas'],
+    nearbyLandmarks: ['Centro de Campo Largo', 'Parque dos Jesuítas', 'Fábricas de Porcelana'],
     distanceFromStore: 'Aproximadamente 30 minutos de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
@@ -1539,14 +1543,16 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     metaDescription: 'Ótica para Almirante Tamandaré com entrega via motoboy. Óculos de grau, sol, lentes de contato. Exame de vista grátis!',
     keywords: [...generateKeywords('Almirante Tamandaré', 'cidade'), 'ótica almirante tamandare paraná'],
     heroTitle: 'Ótica Gouveia para Almirante Tamandaré',
-    heroSubtitle: 'Qualidade Naval para Você',
+    heroSubtitle: 'Qualidade da Capital para Você',
     description: [
-      'Almirante Tamandaré é uma cidade da região metropolitana de Curitiba, conhecida por sua proximidade com a capital e crescimento residencial. Moradores buscam serviços de qualidade.',
-      'A Ótica Gouveia atende moradores de Almirante Tamandaré. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'Mais de 40 anos de experiência. Óculos de grau para toda a família, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores de Almirante Tamandaré, a Ótica Gouveia é sua parceira em cuidados visuais de qualidade! Almirante Tamandaré é uma das cidades mais próximas de Curitiba na região norte metropolitana, com forte crescimento residencial e comercial, e moradores que buscam serviços de excelência próximos de casa. Com população de mais de 120 mil habitantes, a cidade oferece infraestrutura urbana em desenvolvimento e comunidade trabalhadora. A Ótica Gouveia, com mais de 40 anos de tradição, oferece entrega gratuita via motoboy para compras acima de R$ 250,00 em toda a cidade.',
+      'Nossa equipe especializada oferece serviços ópticos completos: exame de vista gratuito com equipamentos modernos para diagnóstico preciso do seu grau, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul de telas, lentes fotocromáticas Transitions e proteção UV 400. Trabalhamos também com lentes de contato gelatinosas e rígidas para todas as necessidades.',
+      'Em Almirante Tamandaré você encontra as melhores marcas com preços acessíveis: Ray-Ban, Oakley, Arnette, Chilli Beans e diversas opções nacionais de excelente qualidade. A Ótica Gouveia oferece atendimento familiar - cada cliente recebe atenção individual para escolher a armação ideal. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, com condições especiais para pagamento à vista.',
+      'Almirante Tamandaré está localizada a apenas 20 minutos de Curitiba pela Rodovia dos Minérios, com acesso fácil e transporte público que conecta ao Terminal Santa Cândida. A cidade é conhecida por sua produção de cal e calcário, indústrias e comércio em expansão. Moradores do centro e bairros podem aproveitar nossa entrega gratuita e receber óculos em casa.',
+      'Morador de Almirante Tamandaré, cuide da sua visão com qualidade da capital! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita em Almirante Tamandaré para compras acima de R$ 250,00. Ótica Gouveia - tradição e praticidade há mais de 40 anos!'
     ],
-    characteristics: 'Cidade da região norte metropolitana',
-    nearbyLandmarks: ['Centro de Almirante Tamandaré'],
+    characteristics: 'Cidade em crescimento na região norte metropolitana',
+    nearbyLandmarks: ['Centro de Almirante Tamandaré', 'Rodovia dos Minérios'],
     distanceFromStore: 'Aproximadamente 20 minutos de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
@@ -1559,14 +1565,16 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     metaDescription: 'Ótica para Campo Magro com entrega via motoboy. Óculos de grau, sol, lentes de contato. Exame de vista gratuito!',
     keywords: [...generateKeywords('Campo Magro', 'cidade'), 'ótica campo magro paraná'],
     heroTitle: 'Ótica Gouveia para Campo Magro',
-    heroSubtitle: 'Qualidade Rural',
+    heroSubtitle: 'Qualidade para o Interior',
     description: [
-      'Campo Magro é uma cidade da região metropolitana de Curitiba, conhecida por suas áreas rurais e produção agrícola. Moradores de Campo Magro valorizam tranquilidade e qualidade de vida.',
-      'A Ótica Gouveia atende moradores de Campo Magro. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'São mais de 40 anos de tradição. Óculos de grau para todas as atividades, óculos de sol com proteção UV, lentes de contato e exame de vista gratuito.'
+      'Moradores de Campo Magro, a Ótica Gouveia leva qualidade da capital para sua cidade! Campo Magro é uma cidade encantadora da região metropolitana de Curitiba, conhecida por suas áreas rurais preservadas, produção agrícola, chácaras e sítios que oferecem tranquilidade e qualidade de vida. Com paisagens bucólicas e moradores que valorizam contato com a natureza, Campo Magro merece serviços de confiança. A Ótica Gouveia, com mais de 40 anos de tradição, oferece entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos: exame de vista gratuito com equipamentos de última geração, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul, lentes fotocromáticas Transitions ideais para atividades ao ar livre e óculos de sol com proteção UV 400 para o trabalho no campo.',
+      'Em Campo Magro você encontra as melhores marcas com preços justos: Ray-Ban, Oakley perfeitos para atividades rurais, Arnette, Chilli Beans e diversas opções nacionais resistentes. A Ótica Gouveia oferece atendimento familiar e acolhedor para cada cliente. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, com condições especiais para pagamento à vista.',
+      'Campo Magro está localizada a aproximadamente 35 minutos de Curitiba, com acesso pela Estrada do Cerne e proximidade com Santa Felicidade e Almirante Tamandaré. A cidade oferece turismo rural, pesque-pagues, restaurantes de comida caseira e eventos tradicionais. Moradores de toda a cidade podem receber seus óculos em casa com nossa entrega gratuita.',
+      'Morador de Campo Magro, cuide da sua visão com quem entende! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita em Campo Magro para compras acima de R$ 250,00. Ótica Gouveia - qualidade para quem vive no campo há mais de 40 anos!'
     ],
-    characteristics: 'Cidade rural da região metropolitana',
-    nearbyLandmarks: ['Centro de Campo Magro'],
+    characteristics: 'Cidade rural com produção agrícola e turismo',
+    nearbyLandmarks: ['Centro de Campo Magro', 'Estrada do Cerne'],
     distanceFromStore: 'Aproximadamente 35 minutos de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
@@ -1581,12 +1589,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para Quatro Barras',
     heroSubtitle: 'Qualidade Serrana',
     description: [
-      'Quatro Barras é uma cidade da região metropolitana de Curitiba, porta de entrada para a Serra do Mar. Moradores valorizam contato com a natureza e qualidade de vida.',
-      'A Ótica Gouveia atende moradores de Quatro Barras. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'Mais de 40 anos de experiência. Óculos de grau modernos, óculos de sol para atividades ao ar livre, lentes de contato e exame de vista gratuito.'
+      'Moradores de Quatro Barras, a Ótica Gouveia oferece qualidade para a porta de entrada da Serra do Mar! Quatro Barras é uma cidade privilegiada da região metropolitana de Curitiba, conhecida por ser o ponto de partida para trilhas na Serra do Mar, Pico do Marumbi e Estrada da Graciosa. Com paisagens deslumbrantes, cachoeiras, morros e clima serrano, a cidade atrai moradores que valorizam contato com a natureza e qualidade de vida. A Ótica Gouveia, com mais de 40 anos de tradição, oferece entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos perfeitos para quem adora aventura: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de alta resistência incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos especiais como anti-reflexo, proteção contra luz azul, lentes fotocromáticas Transitions XTRActive ideais para trilhas e óculos de sol esportivos com proteção UV 400 para escaladas e caminhadas.',
+      'Em Quatro Barras você encontra as melhores marcas para atividades outdoor: Ray-Ban, Oakley perfeitos para trilhas e esportes radicais, Arnette, Chilli Beans e armações resistentes para aventureiros. A Ótica Gouveia oferece atendimento consultivo para escolher óculos adequados a cada atividade. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde.',
+      'Quatro Barras está localizada a aproximadamente 30 minutos de Curitiba pela BR-116, com acesso direto à Serra do Mar. A cidade oferece pousadas, restaurantes com comida serrana, lojas de artesanato e é ponto de encontro de montanhistas e ecoturistas. Moradores do centro e bairros podem receber seus óculos em casa.',
+      'Aventureiro de Quatro Barras, cuide da sua visão para conquistar mais picos! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita em Quatro Barras para compras acima de R$ 250,00. Ótica Gouveia - qualidade para quem ama natureza há mais de 40 anos!'
     ],
-    characteristics: 'Cidade serrana da região metropolitana',
-    nearbyLandmarks: ['Serra do Mar', 'Centro de Quatro Barras'],
+    characteristics: 'Cidade serrana porta de entrada para a Serra do Mar',
+    nearbyLandmarks: ['Serra do Mar', 'Pico do Marumbi', 'Estrada da Graciosa'],
     distanceFromStore: 'Aproximadamente 30 minutos de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
@@ -1599,14 +1609,16 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     metaDescription: 'Ótica para Campina Grande do Sul com entrega via motoboy. Óculos de grau, sol, lentes de contato. Exame de vista grátis!',
     keywords: [...generateKeywords('Campina Grande do Sul', 'cidade'), 'ótica campina grande sul'],
     heroTitle: 'Ótica Gouveia para Campina Grande do Sul',
-    heroSubtitle: 'Qualidade para a Serra',
+    heroSubtitle: 'Qualidade para o Topo do Paraná',
     description: [
-      'Campina Grande do Sul é uma cidade da região metropolitana de Curitiba, conhecida pelo Pico Paraná e trilhas na Serra do Mar. Moradores valorizam natureza e aventura.',
-      'A Ótica Gouveia atende moradores de Campina Grande do Sul. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'São mais de 40 anos de tradição. Óculos de grau resistentes, óculos de sol esportivos, lentes de contato e exame de vista gratuito.'
+      'Moradores de Campina Grande do Sul, a Ótica Gouveia oferece qualidade para a cidade do Pico Paraná! Campina Grande do Sul é conhecida por abrigar o ponto mais alto do Paraná - o Pico Paraná com 1.877 metros - e ser destino obrigatório para montanhistas e amantes de trilhas. Com paisagens serranas deslumbrantes, cachoeiras, vegetação de Mata Atlântica e clima agradável, a cidade atrai moradores que buscam qualidade de vida próximo à natureza. A Ótica Gouveia, com mais de 40 anos de tradição, oferece entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos ideais para aventureiros: exame de vista gratuito com equipamentos de última geração, confecção de óculos de grau com lentes resistentes incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos especiais como anti-reflexo, proteção contra luz azul, lentes fotocromáticas Transitions XTRActive perfeitas para escaladas e óculos de sol esportivos Oakley com proteção UV 400 para montanhismo.',
+      'Em Campina Grande do Sul você encontra as melhores marcas para atividades radicais: Ray-Ban, Oakley com tecnologia esportiva de ponta, Arnette, Chilli Beans e armações ultra-resistentes. A Ótica Gouveia oferece consultoria especializada para escolher óculos que aguentem as condições mais extremas. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde.',
+      'Campina Grande do Sul está localizada a aproximadamente 35 minutos de Curitiba pela BR-116, com acesso às principais trilhas da Serra do Mar. A cidade oferece pousadas rústicas, restaurantes de comida caseira, lojas de equipamentos outdoor e guias especializados. Moradores de toda a cidade podem receber óculos em casa.',
+      'Montanhista de Campina Grande do Sul, cuide da sua visão para conquistar o Pico Paraná! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita em Campina Grande do Sul para compras acima de R$ 250,00. Ótica Gouveia - qualidade para quem alcança o topo há mais de 40 anos!'
     ],
-    characteristics: 'Cidade serrana com o Pico Paraná',
-    nearbyLandmarks: ['Pico Paraná', 'Serra do Mar'],
+    characteristics: 'Cidade do Pico Paraná com trilhas e montanhismo',
+    nearbyLandmarks: ['Pico Paraná', 'Serra do Mar', 'Trilhas Ecológicas'],
     distanceFromStore: 'Aproximadamente 35 minutos de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
@@ -1619,14 +1631,16 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     metaDescription: 'Ótica para Mandirituba com entrega via motoboy. Óculos de grau, sol, lentes de contato. Exame de vista grátis!',
     keywords: [...generateKeywords('Mandirituba', 'cidade'), 'ótica mandirituba paraná'],
     heroTitle: 'Ótica Gouveia para Mandirituba',
-    heroSubtitle: 'Qualidade Rural',
+    heroSubtitle: 'Qualidade do Campo para Você',
     description: [
-      'Mandirituba é uma cidade da região metropolitana de Curitiba, conhecida por sua produção agrícola e tranquilidade rural. Moradores valorizam qualidade de vida no campo.',
-      'A Ótica Gouveia atende moradores de Mandirituba. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'Mais de 40 anos de experiência. Óculos de grau para trabalho e lazer, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores de Mandirituba, a Ótica Gouveia traz qualidade da capital para sua cidade! Mandirituba é uma cidade encantadora ao sul da região metropolitana de Curitiba, conhecida por sua vocação agrícola, produção de hortaliças e frutas que abastecem a capital, paisagens rurais e tranquilidade do interior paranaense. Com moradores que valorizam vida no campo e serviços de confiança, Mandirituba merece atendimento de excelência. A Ótica Gouveia, com mais de 40 anos de tradição, oferece entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos para quem trabalha e vive no campo: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes resistentes incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul, lentes fotocromáticas Transitions perfeitas para trabalho ao ar livre e óculos de sol com proteção UV 400 para atividades rurais.',
+      'Em Mandirituba você encontra as melhores marcas com durabilidade garantida: Ray-Ban, Oakley resistentes para o trabalho no campo, Arnette, Chilli Beans e armações nacionais de qualidade. A Ótica Gouveia oferece atendimento familiar - cada cliente recebe atenção individual. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, com condições especiais para produtores rurais.',
+      'Mandirituba está localizada a aproximadamente 30 minutos de Curitiba pela BR-116, com acesso fácil e tranquilo. A cidade oferece feira do produtor rural, restaurantes de comida caseira típica do interior e eventos agrícolas tradicionais. Moradores de toda a cidade e zona rural podem receber seus óculos em casa.',
+      'Morador de Mandirituba, cuide da sua visão com qualidade! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita em Mandirituba para compras acima de R$ 250,00. Ótica Gouveia - tradição para quem vive no campo há mais de 40 anos!'
     ],
-    characteristics: 'Cidade rural ao sul de Curitiba',
-    nearbyLandmarks: ['Centro de Mandirituba'],
+    characteristics: 'Cidade agrícola com produção de hortaliças',
+    nearbyLandmarks: ['Centro de Mandirituba', 'Zona Rural'],
     distanceFromStore: 'Aproximadamente 30 minutos de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
@@ -1639,14 +1653,16 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     metaDescription: 'Ótica para Itaperuçu com entrega via motoboy. Óculos de grau, sol, lentes de contato. Exame de vista gratuito!',
     keywords: [...generateKeywords('Itaperuçu', 'cidade'), 'ótica itaperucu paraná'],
     heroTitle: 'Ótica Gouveia para Itaperuçu',
-    heroSubtitle: 'Qualidade Acessível',
+    heroSubtitle: 'Qualidade Acessível para Você',
     description: [
-      'Itaperuçu é uma cidade da região metropolitana de Curitiba, conhecida por sua produção mineral. Moradores de Itaperuçu buscam serviços de qualidade com preços justos.',
-      'A Ótica Gouveia atende moradores de Itaperuçu. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'São mais de 40 anos oferecendo qualidade. Óculos de grau acessíveis, óculos de sol, lentes de contato e exame de vista gratuito. Parcelamento facilitado.'
+      'Moradores de Itaperuçu, a Ótica Gouveia oferece qualidade com preços justos para sua cidade! Itaperuçu é uma cidade trabalhadora da região metropolitana de Curitiba, conhecida por sua importante produção mineral de calcário e cal, indústrias que geram emprego e renda para a região. Com moradores que buscam serviços de qualidade com preços acessíveis, Itaperuçu merece atendimento de excelência. A Ótica Gouveia, com mais de 40 anos de tradição, oferece entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos com preços que cabem no bolso: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul, lentes fotocromáticas Transitions e óculos de segurança com grau para trabalhadores da mineração. Proteção UV 400 em todos os óculos de sol.',
+      'Em Itaperuçu você encontra as melhores marcas com condições facilitadas: Ray-Ban, Oakley resistentes para trabalho pesado, Arnette, Chilli Beans e diversas opções nacionais acessíveis. A Ótica Gouveia oferece parcelamento em até 12x sem juros, aceitamos convênios, planos de saúde e condições especiais para trabalhadores da indústria local.',
+      'Itaperuçu está localizada a aproximadamente 35 minutos de Curitiba pela Rodovia dos Minérios, com acesso fácil e transporte público que conecta à capital. A cidade tem forte identidade trabalhadora e comércio local em crescimento. Moradores de toda a cidade podem receber seus óculos em casa.',
+      'Trabalhador de Itaperuçu, cuide da sua visão com qualidade acessível! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita em Itaperuçu para compras acima de R$ 250,00. Ótica Gouveia - preço justo e qualidade há mais de 40 anos!'
     ],
-    characteristics: 'Cidade com produção mineral',
-    nearbyLandmarks: ['Centro de Itaperuçu'],
+    characteristics: 'Cidade industrial com produção de cal e calcário',
+    nearbyLandmarks: ['Centro de Itaperuçu', 'Mineradoras'],
     distanceFromStore: 'Aproximadamente 35 minutos de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
@@ -1659,14 +1675,16 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     metaDescription: 'Ótica para Rio Branco do Sul com entrega via motoboy. Óculos de grau, sol, lentes de contato. Exame de vista grátis!',
     keywords: [...generateKeywords('Rio Branco do Sul', 'cidade'), 'ótica rio branco sul'],
     heroTitle: 'Ótica Gouveia para Rio Branco do Sul',
-    heroSubtitle: 'Qualidade para o Norte',
+    heroSubtitle: 'Qualidade para o Norte Metropolitano',
     description: [
-      'Rio Branco do Sul é uma cidade da região metropolitana de Curitiba, conhecida pela produção de calcário e mineração. Moradores buscam serviços de qualidade.',
-      'A Ótica Gouveia atende moradores de Rio Branco do Sul. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'Mais de 40 anos de tradição. Óculos de grau resistentes, óculos de sol com proteção, lentes de contato e exame de vista gratuito.'
+      'Moradores de Rio Branco do Sul, a Ótica Gouveia traz qualidade da capital para sua cidade! Rio Branco do Sul é uma cidade importante da região metropolitana norte de Curitiba, conhecida nacionalmente por sua produção de calcário e cimento que abastece obras em todo o Brasil. Com forte identidade trabalhadora, indústrias de mineração e comunidade unida, Rio Branco do Sul merece serviços de excelência. A Ótica Gouveia, com mais de 40 anos de tradição, oferece entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos para trabalhadores e famílias: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes resistentes incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos óculos de segurança com grau para trabalhadores das pedreiras, tratamentos anti-reflexo, proteção contra luz azul, lentes fotocromáticas Transitions e proteção UV 400.',
+      'Em Rio Branco do Sul você encontra as melhores marcas com durabilidade: Ray-Ban, Oakley resistentes para trabalho industrial, Arnette, Chilli Beans e armações nacionais de qualidade. A Ótica Gouveia oferece parcelamento em até 12x sem juros, aceita convênios industriais e planos de saúde.',
+      'Rio Branco do Sul está localizada a aproximadamente 40 minutos de Curitiba pela Rodovia dos Minérios. A cidade tem forte economia baseada na mineração e oferece qualidade de vida para famílias trabalhadoras. Moradores de toda a cidade podem receber seus óculos em casa.',
+      'Morador de Rio Branco do Sul, cuide da sua visão com qualidade! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita para compras acima de R$ 250,00. Ótica Gouveia - tradição há mais de 40 anos!'
     ],
-    characteristics: 'Cidade com produção de calcário',
-    nearbyLandmarks: ['Centro de Rio Branco do Sul'],
+    characteristics: 'Cidade industrial com produção de calcário e cimento',
+    nearbyLandmarks: ['Centro de Rio Branco do Sul', 'Pedreiras'],
     distanceFromStore: 'Aproximadamente 40 minutos de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
@@ -1819,14 +1837,16 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     metaDescription: 'Ótica para a Lapa com entrega via motoboy. Óculos de grau, sol, lentes de contato. Exame de vista grátis!',
     keywords: [...generateKeywords('Lapa', 'cidade'), 'ótica lapa paraná', 'ótica cidade histórica lapa'],
     heroTitle: 'Ótica Gouveia para a Lapa',
-    heroSubtitle: 'Qualidade Histórica',
+    heroSubtitle: 'Qualidade Histórica para Você',
     description: [
-      'A Lapa é uma cidade histórica do Paraná, conhecida pelo Cerco da Lapa e seu centro histórico preservado. Moradores valorizam tradição e patrimônio cultural.',
-      'A Ótica Gouveia atende moradores da Lapa. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'Mais de 40 anos de tradição - assim como a história da Lapa. Óculos de grau elegantes, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Moradores da Lapa, a Ótica Gouveia oferece qualidade para uma das cidades mais históricas do Paraná! A Lapa é famosa nacionalmente pelo Cerco da Lapa, episódio heroico da Revolução Federalista de 1894, e possui um centro histórico preservado com casarões coloniais, museus e igrejas centenárias. Com tradição cultural, turismo histórico e moradores que valorizam patrimônio e qualidade, a Lapa merece serviços de excelência. A Ótica Gouveia, com mais de 40 anos de tradição, oferece entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos: exame de vista gratuito com equipamentos modernos, confecção de óculos de grau com lentes de alta qualidade incluindo monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo, proteção contra luz azul, lentes fotocromáticas Transitions e proteção UV 400 para passeios pelo centro histórico.',
+      'Na Lapa você encontra armações elegantes que combinam com a tradição da cidade: Ray-Ban clássicos, Oakley, Arnette, Chilli Beans e diversas opções de qualidade. A Ótica Gouveia oferece parcelamento em até 12x sem juros, aceita convênios e planos de saúde.',
+      'A Lapa está localizada a aproximadamente 50 minutos de Curitiba pela BR-476. A cidade oferece o Museu do Tropeiro, Teatro São João, Casa Lacerda e eventos históricos tradicionais. Moradores podem receber seus óculos em casa.',
+      'Morador da Lapa, cuide da sua visão com tradição! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667. Entrega gratuita para compras acima de R$ 250,00. Ótica Gouveia - tradição histórica há mais de 40 anos!'
     ],
     characteristics: 'Cidade histórica com patrimônio preservado',
-    nearbyLandmarks: ['Centro Histórico da Lapa', 'Museu do Tropeiro'],
+    nearbyLandmarks: ['Centro Histórico da Lapa', 'Museu do Tropeiro', 'Teatro São João'],
     distanceFromStore: 'Aproximadamente 50 minutos de carro',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
@@ -1963,12 +1983,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para o Ganchinho',
     heroSubtitle: 'Entrega Grátis* para Você',
     description: [
-      'O Ganchinho é um bairro residencial localizado na região sul de Curitiba, conhecido por sua tranquilidade e comunidade unida. Com desenvolvimento constante, o bairro oferece qualidade de vida para famílias que buscam um ambiente mais calmo.',
-      'A Ótica Gouveia atende os moradores do Ganchinho com praticidade e qualidade. Nossa loja no Pinheirinho fica próxima, e oferecemos entrega via motoboy gratuita para compras acima de R$ 250,00.',
-      'Com mais de 40 anos de tradição, oferecemos óculos de grau das melhores marcas, óculos de sol com proteção UV, lentes de contato e exame de vista gratuito. Atendimento familiar e preços justos para toda a comunidade do Ganchinho.'
+      'Moradores do Ganchinho, a Ótica Gouveia é sua parceira em cuidados visuais na região sul de Curitiba! O Ganchinho é um bairro residencial tranquilo, localizado no extremo sul da capital paranaense, conhecido por sua comunidade unida, ruas pacatas e moradores que valorizam qualidade de vida longe do agito do centro. O bairro faz divisa com Umbará, Sítio Cercado e a área rural de Curitiba, oferecendo um ambiente mais calmo para famílias. Com mais de 40 anos de tradição no mercado óptico curitibano, a Ótica Gouveia atende toda a comunidade do Ganchinho com excelência, oferecendo nossa loja no Pinheirinho a apenas 10 minutos de distância e entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos com preços acessíveis: exame de vista gratuito realizado com equipamentos modernos e profissionais qualificados, confecção de óculos de grau com lentes de alta qualidade incluindo opções monofocais para miopia, hipermetropia e astigmatismo, lentes bifocais e multifocais progressivas. Disponibilizamos tratamentos anti-reflexo para melhor visão, proteção contra luz azul de telas de celular e computador, lentes fotocromáticas Transitions que escurecem automaticamente no sol e proteção UV 400. Trabalhamos também com lentes de contato gelatinosas e rígidas para todas as necessidades visuais.',
+      'Na Ótica Gouveia você encontra as melhores marcas de óculos com preços justos: Ray-Ban, Oakley, Arnette, Chilli Beans e diversas opções nacionais de excelente qualidade. Nosso diferencial é o atendimento familiar e acolhedor - cada cliente recebe atenção individual para escolher a armação ideal para seu formato de rosto e estilo. Parcelamos em até 12x sem juros nos principais cartões, aceitamos PIX e dinheiro com desconto especial, e trabalhamos com os principais convênios e planos de saúde. Garantia de fábrica em todos os produtos e garantia de adaptação em lentes multifocais.',
+      'O bairro Ganchinho está estrategicamente localizado na região sul de Curitiba, fazendo divisa com Umbará, Sítio Cercado, Campo de Santana e áreas rurais. A região conta com infraestrutura em desenvolvimento, comércio local e transporte público que conecta ao Terminal Sítio Cercado. Moradores de bairros vizinhos também podem aproveitar nossos serviços com entrega gratuita para toda a região sul.',
+      'Morador do Ganchinho, cuide da sua visão com quem entende! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e descubra por que somos a ótica de confiança da região sul. Entrega gratuita no Ganchinho para compras acima de R$ 250,00. Funcionamos de segunda a sexta das 9h às 18h e sábados das 9h às 13h. Ótica Gouveia - tradição, qualidade e praticidade para o Ganchinho há mais de 40 anos!'
     ],
     characteristics: 'Bairro residencial tranquilo na região sul de Curitiba',
-    nearbyLandmarks: ['Próximo ao Umbará', 'Região Sul'],
+    nearbyLandmarks: ['Próximo ao Umbará', 'Sítio Cercado', 'Campo de Santana'],
     distanceFromStore: 'Aproximadamente 10 minutos de carro',
     type: 'bairro'
   },
@@ -1982,12 +2004,14 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     heroTitle: 'Ótica Gouveia para a Fazendinha',
     heroSubtitle: 'Tradição e Qualidade para Você',
     description: [
-      'A Fazendinha é um bairro tradicional de Curitiba, localizado na região sudoeste da cidade. Com forte identidade residencial e comercial, o bairro é conhecido por sua comunidade acolhedora e boa infraestrutura.',
-      'A Ótica Gouveia atende os moradores da Fazendinha com qualidade e praticidade. Oferecemos entrega via motoboy gratuita para compras acima de R$ 250,00, trazendo conforto até a sua porta.',
-      'São mais de 40 anos de experiência em produtos ópticos. Óculos de grau modernos, óculos de sol originais, lentes de contato das melhores marcas e exame de vista gratuito. Confie na tradição Gouveia!'
+      'Moradores da Fazendinha, a Ótica Gouveia é sua referência em óculos de grau, sol e lentes de contato na região oeste de Curitiba! A Fazendinha é um bairro tradicional com forte identidade, localizado próximo ao Portão e CIC, conhecido por seu comércio variado na Avenida República Argentina e moradores que valorizam praticidade e qualidade. Com mais de 40 anos de tradição no mercado óptico curitibano, a Ótica Gouveia oferece atendimento de excelência para toda a comunidade da Fazendinha, com entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'Nossa equipe especializada oferece serviços ópticos completos: exame de vista gratuito realizado com equipamentos de última geração para diagnóstico preciso do seu grau, confecção de óculos de grau com lentes monofocais para miopia, hipermetropia e astigmatismo, lentes bifocais e multifocais progressivas. Disponibilizamos tratamentos de alta tecnologia como anti-reflexo multicamadas, proteção contra luz azul de dispositivos eletrônicos, lentes fotocromáticas Transitions e proteção UV 400 para cuidar da saúde dos seus olhos. Trabalhamos também com ampla linha de lentes de contato gelatinosas e rígidas.',
+      'Na Fazendinha você encontra as melhores marcas do mercado óptico com preços justos: Ray-Ban com modelos clássicos e modernos, Oakley para esportes, Arnette, Chilli Beans e diversas armações nacionais e importadas de excelente qualidade. A Ótica Gouveia se diferencia pelo atendimento familiar e acolhedor - cada cliente recebe atenção individual para escolher a armação ideal. Parcelamos em até 12x sem juros, aceitamos os principais convênios e planos de saúde, com condições especiais para pagamento à vista.',
+      'A Fazendinha possui excelente localização na região oeste de Curitiba, com fácil acesso pela Avenida República Argentina e proximidade com Portão, Santa Quitéria, CIC e Campo Comprido. O bairro conta com comércio diversificado, boa infraestrutura e transporte público eficiente. A Ótica Gouveia atende moradores de toda essa região com qualidade comprovada por décadas de atuação no mercado curitibano.',
+      'Morador da Fazendinha, cuide da sua visão com quem entende de tradição! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e descubra por que somos a ótica de confiança de milhares de famílias. Entrega gratuita na Fazendinha para compras acima de R$ 250,00. Funcionamos de segunda a sexta das 9h às 18h e sábados das 9h às 13h. Ótica Gouveia Fazendinha - tradição, qualidade e praticidade há mais de 40 anos!'
     ],
     characteristics: 'Bairro tradicional com forte comércio local',
-    nearbyLandmarks: ['Próximo ao Portão', 'Região Sudoeste'],
+    nearbyLandmarks: ['Avenida República Argentina', 'Próximo ao Portão', 'CIC'],
     distanceFromStore: 'Entrega disponível via motoboy',
     type: 'bairro'
   }
