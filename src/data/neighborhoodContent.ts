@@ -66,21 +66,36 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
   'sitio-cercado': {
     name: 'Sítio Cercado',
     slug: '/otica-sitio-cercado',
-    title: 'Ótica Sítio Cercado Curitiba | Óculos de Grau e Sol | Ótica Gouveia',
-    metaDescription: 'Ótica para moradores do Sítio Cercado em Curitiba. Óculos de grau, sol e lentes de contato. Entrega via motoboy acima de R$250. Exame de vista grátis!',
-    keywords: generateKeywords('Sítio Cercado', 'bairro'),
-    heroTitle: 'Ótica Gouveia para o Sítio Cercado',
-    heroSubtitle: 'Qualidade e Tradição Perto de Você',
-    description: [
-      'A Ótica Gouveia é a escolha certa para moradores do Sítio Cercado que buscam qualidade em óculos de grau, óculos de sol e lentes de contato em Curitiba! O Sítio Cercado é um dos bairros mais populosos e vibrantes da região sul da capital paranaense, conhecido por sua forte identidade comunitária e milhares de famílias trabalhadoras. Com mais de 40 anos de tradição no mercado óptico, a Ótica Gouveia oferece atendimento de excelência para toda a comunidade do Sítio Cercado, com nossa loja física localizada no Pinheirinho, a apenas 10 minutos de distância.',
-      'Oferecemos uma gama completa de serviços ópticos para atender todas as suas necessidades visuais: exame de vista gratuito realizado com equipamentos modernos e precisos, confecção de óculos de grau com lentes monofocais, bifocais e multifocais progressivas, aplicação de tratamentos anti-reflexo, proteção UV e lentes fotocromáticas que escurecem no sol. Também trabalhamos com lentes de contato de diversas marcas e tipos - gelatinosas diárias, quinzenais e mensais, além de lentes tóricas para astigmatismo e multifocais. Nossa assistência técnica realiza ajustes, consertos e manutenção preventiva em todos os tipos de armações.',
-      'O que diferencia a Ótica Gouveia é nosso compromisso com atendimento personalizado e familiar. Cada cliente do Sítio Cercado é tratado com atenção individual, recebendo orientação especializada para escolher a armação ideal. Trabalhamos com marcas consagradas como Ray-Ban, Oakley, Arnette, Chilli Beans e diversas opções nacionais acessíveis. Aceitamos os principais convênios e planos de saúde, oferecemos parcelamento em até 12x sem juros e condições especiais para pagamento à vista. Para sua comodidade, entregamos gratuitamente no Sítio Cercado para compras acima de R$ 250,00.',
-      'O Sítio Cercado possui excelente infraestrutura com acesso pelo Terminal Sítio Cercado e diversas linhas de ônibus. A região conta com comércio variado, escolas, postos de saúde e é conhecida pela Rua Izaac Ferreira da Cruz e proximidade com o Parque Iguaçu. Nossa loja no Pinheirinho fica estrategicamente localizada para atender moradores do Sítio Cercado e bairros vizinhos como Ganchinho, Umbará, Tatuquara e Campo de Santana com facilidade e rapidez.',
-      'Não perca tempo procurando ótica no Sítio Cercado - a Ótica Gouveia leva qualidade até você! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 ou visite nossa loja no Pinheirinho. Aproveite nossa entrega via motoboy para o Sítio Cercado e receba seus óculos novos no conforto da sua casa. Ótica Gouveia - mais de 40 anos cuidando da visão das famílias do Sítio Cercado e região sul de Curitiba!'
+    title: 'Ótica no Sítio Cercado Curitiba | Óculos de Grau Perto de Mim | Gouveia',
+    metaDescription: 'Ótica para o Sítio Cercado em Curitiba. Próximo ao Terminal Sítio Cercado. Óculos de grau, sol e lentes de contato. Entrega grátis via motoboy. Exame de vista sem custo!',
+    keywords: [
+      ...generateKeywords('Sítio Cercado', 'bairro'),
+      'ótica perto do terminal sítio cercado',
+      'óculos barato sítio cercado curitiba',
+      'exame de vista sítio cercado',
+      'loja de óculos rua izaac ferreira da cruz',
+      'ótica próximo upa sítio cercado',
+      'comprar óculos sítio cercado zona sul',
+      'ótica região sul curitiba',
+      'óculos multifocal sítio cercado',
+      'lentes de contato sítio cercado curitiba',
+      'ótica perto de mim sítio cercado'
     ],
-    characteristics: 'Bairro residencial e populoso com forte senso de comunidade',
-    nearbyLandmarks: ['Terminal Sítio Cercado', 'Rua Izaac Ferreira da Cruz'],
-    distanceFromStore: 'Aproximadamente 10 minutos de carro',
+    heroTitle: 'Ótica Gouveia para o Sítio Cercado',
+    heroSubtitle: 'A Melhor Ótica da Zona Sul de Curitiba - Entrega Grátis no Bairro',
+    description: [
+      'Bem-vindo à Ótica Gouveia, a ótica de referência para moradores do Sítio Cercado em Curitiba! O Sítio Cercado é o segundo bairro mais populoso da capital paranaense, com mais de 115 mil habitantes segundo o IBGE, e representa uma das comunidades mais vibrantes e trabalhadoras da região sul. Localizado estrategicamente entre o Pinheirinho e o Tatuquara, o Sítio Cercado é servido pelo Terminal Sítio Cercado - um dos maiores terminais de transporte público de Curitiba - facilitando o acesso de moradores de toda a zona sul. A Ótica Gouveia, com mais de 40 anos de tradição no mercado óptico curitibano, está pronta para atender você e sua família com excelência, qualidade e preços justos.',
+      'Nossa loja física está localizada no Pinheirinho, na Rua Nicola Pellanda 1286, próximo ao Condor Umbará - apenas 10 minutos do Sítio Cercado via Rua Izaac Ferreira da Cruz ou Rua Tijucas do Sul. Para maior comodidade dos moradores do Sítio Cercado, oferecemos entrega GRATUITA via motoboy para compras acima de R$ 250,00. Isso significa que você pode fazer seu exame de vista em nossa loja, escolher seus óculos com calma, e receber tudo no conforto da sua casa no Sítio Cercado, sem pagar nada a mais pelo frete! Atendemos toda a extensão do bairro, desde as proximidades da Rua Izaac Ferreira da Cruz até as áreas mais ao sul próximas ao Ganchinho e Campo de Santana.',
+      'Os serviços oferecidos pela Ótica Gouveia incluem: exame de vista computadorizado GRATUITO realizado por profissionais qualificados com equipamentos de última geração, confecção de óculos de grau com lentes oftálmicas de alta qualidade - incluindo lentes monofocais para miopia, hipermetropia e astigmatismo, lentes bifocais e lentes multifocais progressivas com tecnologia digital. Oferecemos todos os tratamentos disponíveis no mercado: anti-reflexo multicamadas, proteção contra luz azul de telas de celular e computador, lentes fotocromáticas Transitions que escurecem automaticamente no sol, e proteção UV 400 para cuidar da saúde dos seus olhos. Também trabalhamos com lentes de contato de todas as marcas e tipos: descartáveis diárias, quinzenais e mensais, lentes tóricas para correção de astigmatismo, lentes multifocais e lentes coloridas.',
+      'Na Ótica Gouveia você encontra as melhores marcas de óculos do mundo: Ray-Ban, Oakley, Arnette, Vogue, Chilli Beans, além de armações nacionais e importadas para todos os estilos e orçamentos. Nossa equipe especializada ajuda cada cliente do Sítio Cercado a escolher a armação perfeita para seu formato de rosto, estilo de vida e personalidade. Trabalhamos com preços justos e condições facilitadas: parcelamos em até 12x sem juros nos principais cartões de crédito, aceitamos PIX e dinheiro com desconto especial, e trabalhamos com os principais convênios e planos de saúde para reduzir ainda mais seu investimento. Oferecemos garantia de fábrica em todos os produtos e garantia de adaptação em lentes multifocais.',
+      'O Sítio Cercado é um bairro com excelente infraestrutura urbana. Além do Terminal Sítio Cercado que conecta moradores a toda Curitiba através de diversas linhas de ônibus como a Linha Direta (Ligeirinho) e linhas alimentadoras, o bairro conta com importante estrutura de saúde incluindo a UPA Sítio Cercado, postos de saúde e clínicas particulares. A região possui escolas estaduais e municipais como a Escola Municipal João Macedo Filho, comércio variado na Rua Izaac Ferreira da Cruz - a principal via comercial do bairro - e proximidade com áreas de lazer como o Parque Iguaçu. Moradores de bairros vizinhos como Ganchinho, Umbará, Tatuquara e Campo de Santana também podem aproveitar nossos serviços com a mesma facilidade.',
+      'A história do Sítio Cercado remonta à década de 1970, quando a região começou a ser ocupada de forma mais intensa, transformando-se em um dos polos habitacionais mais importantes de Curitiba. Hoje, o bairro é reconhecido pela força de sua comunidade, eventos culturais locais e espírito de união entre os moradores. A Ótica Gouveia tem orgulho de fazer parte dessa história, cuidando da visão de milhares de famílias do Sítio Cercado ao longo de décadas de atendimento dedicado.',
+      'Para moradores do Sítio Cercado, chegar até nossa loja é muito fácil: basta pegar uma das linhas de ônibus que saem do Terminal Sítio Cercado em direção ao Pinheirinho - a viagem leva cerca de 10 minutos. Para quem prefere ir de carro, o acesso é simples pela Rua Izaac Ferreira da Cruz seguindo em direção à Rua Nicola Pellanda. Também atendemos clientes via WhatsApp - envie sua receita de óculos pelo (41) 99955-0667, faça seu pedido e receba em casa com nossa entrega gratuita!',
+      'Não perca mais tempo procurando ótica no Sítio Cercado - a Ótica Gouveia é sua parceira de confiança há mais de 40 anos! Agende agora mesmo seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 ou venha nos visitar no Pinheirinho. Estamos abertos de segunda a sexta das 9h às 18h e aos sábados das 9h às 13h. Para o Sítio Cercado, entregamos GRÁTIS compras acima de R$ 250,00. Ótica Gouveia - tradição, qualidade e atendimento familiar para você e toda sua família do Sítio Cercado!'
+    ],
+    characteristics: 'Segundo bairro mais populoso de Curitiba com forte identidade comunitária e excelente infraestrutura',
+    nearbyLandmarks: ['Terminal Sítio Cercado', 'Rua Izaac Ferreira da Cruz', 'Rua Tijucas do Sul', 'UPA Sítio Cercado', 'Escola Municipal João Macedo Filho', 'Parque Iguaçu'],
+    distanceFromStore: 'Aproximadamente 10 minutos de carro ou ônibus',
     type: 'bairro'
   },
 
