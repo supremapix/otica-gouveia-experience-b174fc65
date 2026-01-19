@@ -1693,19 +1693,23 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
   'bocaiuva-do-sul': {
     name: 'Bocaiúva do Sul',
     slug: '/otica-bocaiuva-do-sul',
-    title: 'Ótica Bocaiúva do Sul | Óculos | Ótica Gouveia',
-    metaDescription: 'Ótica para Bocaiúva do Sul com entrega via motoboy. Óculos de grau, sol, lentes de contato. Exame de vista grátis!',
-    keywords: [...generateKeywords('Bocaiúva do Sul', 'cidade'), 'ótica bocaiuva sul'],
+    title: 'Ótica Bocaiúva do Sul | Óculos Perto de Mim | Ótica Gouveia',
+    metaDescription: 'Ótica para Bocaiúva do Sul com entrega grátis via motoboy. Óculos de grau, sol e lentes de contato. Exame de vista gratuito! Atendemos toda a cidade.',
+    keywords: [...generateKeywords('Bocaiúva do Sul', 'cidade'), 'ótica bocaiuva sul', 'oculista bocaiuva do sul', 'óculos perto de mim bocaiuva', 'lentes de contato bocaiuva do sul', 'exame de vista bocaiuva'],
     heroTitle: 'Ótica Gouveia para Bocaiúva do Sul',
-    heroSubtitle: 'Qualidade Rural',
+    heroSubtitle: 'Qualidade Óptica na Tranquilidade do Interior',
     description: [
-      'Bocaiúva do Sul é uma cidade da região metropolitana de Curitiba, conhecida por sua produção agrícola e tranquilidade. Moradores valorizam qualidade de vida no interior.',
-      'A Ótica Gouveia atende moradores de Bocaiúva do Sul. Oferecemos entrega via motoboy para compras acima de R$ 250,00.',
-      'São mais de 40 anos de experiência. Óculos de grau para todas as necessidades, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Bocaiúva do Sul, cidade situada na porção norte da Região Metropolitana de Curitiba, é conhecida por sua paisagem rural exuberante, produção agrícola diversificada e qualidade de vida que atrai famílias em busca de tranquilidade. Com suas estradas cercadas por araucárias, propriedades rurais produtivas e um centro urbano acolhedor, a cidade representa o melhor do interior paranaense. A Ótica Gouveia tem orgulho de atender os moradores de Bocaiúva do Sul, oferecendo produtos ópticos de qualidade com a conveniência da entrega gratuita via motoboy para compras acima de R$ 250,00.',
+      'O município de Bocaiúva do Sul possui características únicas que valorizam a tradição e as relações de confiança. Os bocaiuvenses, como são conhecidos os moradores, prezam por estabelecimentos que ofereçam atendimento personalizado e produtos duráveis. Na Ótica Gouveia, entendemos essa cultura local e por isso mantemos um padrão de excelência em todos os nossos serviços: desde a consulta oftalmológica gratuita até a montagem precisa das lentes nos óculos escolhidos pelo cliente.',
+      'Nossa loja oferece um portfólio completo de soluções ópticas para toda a família bocaiuvense. Trabalhamos com as principais marcas de armações do mercado nacional e internacional, incluindo Ray-Ban, Oakley, Prada, Vogue, Arnette e Mormaii. Para quem precisa de óculos de grau, disponibilizamos lentes monofocais, bifocais e multifocais das melhores fabricantes como Essilor, Zeiss e Hoya. Também oferecemos lentes de contato de diversas marcas e para diferentes necessidades, sejam elas corretivas ou estéticas.',
+      'Para os moradores de Bocaiúva do Sul que trabalham ao ar livre na agricultura, pecuária ou em atividades rurais, oferecemos óculos de proteção solar com lentes polarizadas que protegem contra os raios UV e reduzem o ofuscamento. Também temos opções de óculos esportivos para trilhas, cavalgadas e outras atividades ao ar livre populares na região. Nossas lentes fotossensíveis são ideais para quem transita entre ambientes internos e externos ao longo do dia.',
+      'O exame de vista gratuito é um dos nossos diferenciais mais importantes para os moradores de Bocaiúva do Sul. Sabemos que o deslocamento até Curitiba pode ser demorado, por isso facilitamos ao máximo: basta agendar seu horário pelo WhatsApp (41) 99913-5860. Nossa equipe de optometristas utiliza equipamentos modernos para uma avaliação completa da sua saúde visual. Após o exame, você pode escolher seus óculos com calma e recebê-los em casa, na área urbana ou rural do município.',
+      'A Ótica Gouveia atende também moradores das localidades vizinhas como Rio Branco do Sul, Colombo, Campina Grande do Sul e Tunas do Paraná. Conhecemos bem as estradas da região norte metropolitana e garantimos que sua encomenda chegará em perfeitas condições. Para agricultores, comerciantes e profissionais liberais de Bocaiúva do Sul, oferecemos condições especiais de pagamento parcelado em até 10x no cartão.',
+      'Com mais de 40 anos de tradição no mercado óptico paranaense, a Ótica Gouveia construiu uma reputação sólida baseada na qualidade dos produtos e na honestidade no atendimento. Milhares de famílias de Curitiba e região metropolitana confiam em nossos serviços há gerações. Moradores de Bocaiúva do Sul podem ter a mesma experiência de qualidade: entre em contato pelo WhatsApp (41) 99913-5860, agende seu exame de vista gratuito e descubra por que somos a ótica preferida de quem busca excelência e preço justo na região.'
     ],
-    characteristics: 'Cidade rural ao norte de Curitiba',
-    nearbyLandmarks: ['Centro de Bocaiúva do Sul'],
-    distanceFromStore: 'Aproximadamente 40 minutos de carro',
+    characteristics: 'Cidade rural ao norte de Curitiba com paisagens de araucárias',
+    nearbyLandmarks: ['Centro de Bocaiúva do Sul', 'Igreja Matriz', 'Prefeitura Municipal', 'Estrada Bocaiúva-Rio Branco', 'Comunidades rurais'],
+    distanceFromStore: 'Aproximadamente 40 minutos de carro via BR-476',
     type: 'cidade',
     region: 'Região Metropolitana de Curitiba'
   },
