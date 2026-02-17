@@ -10,9 +10,14 @@ import ServicesSection from "@/components/ServicesSection";
 import LocalFAQSection from "@/components/LocalFAQSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import DeliveryAreaMap from "@/components/DeliveryAreaMap";
+import WhyChooseSection from "@/components/WhyChooseSection";
+import PremiumFAQ from "@/components/PremiumFAQ";
+import HealthTipsSection from "@/components/HealthTipsSection";
+import HowToBuySection from "@/components/HowToBuySection";
 import { createBreadcrumbSchema, createOpticalStoreSchema, createLocalBusinessSchema } from "@/utils/schemas";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, ChevronRight } from "lucide-react";
 import { NeighborhoodData } from "@/data/neighborhoodContent";
+import { Link } from "react-router-dom";
 
 interface NeighborhoodPageProps {
   data: NeighborhoodData;
@@ -24,7 +29,6 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
   const whatsappMessage = encodeURIComponent(`Olá! Vim do site e gostaria de saber mais sobre óculos para ${data.name}.`);
   const whatsappUrl = `https://wa.me/554199161663?text=${whatsappMessage}`;
 
-  // Determina se é uma das unidades principais
   const isMainUnit = ['Pinheirinho', 'Sítio Cercado', 'Umbará'].includes(data.name);
   const address = data.name === 'Pinheirinho' ? 'R. Nicola Pellanda, 1286 - Pinheirinho, Curitiba - PR' : undefined;
 
@@ -40,7 +44,6 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Structured Data para SEO
   const breadcrumbData = createBreadcrumbSchema([
     { name: "Início", url: "https://www.gouveiacuritiba.com.br" },
     { name: `Ótica ${data.name}`, url: `https://www.gouveiacuritiba.com.br${data.slug}` }
@@ -62,8 +65,19 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
       />
       
       <Navbar />
+
+      {/* Breadcrumb */}
+      <nav className="bg-muted/50 border-b border-border py-3 mt-[var(--header-height)]" aria-label="Breadcrumb">
+        <div className="container mx-auto px-4">
+          <ol className="flex items-center gap-2 text-sm text-muted-foreground">
+            <li><Link to="/" className="hover:text-primary transition-colors">Início</Link></li>
+            <ChevronRight className="w-3 h-3" />
+            <li className="text-foreground font-medium">Ótica {data.name}</li>
+          </ol>
+        </div>
+      </nav>
       
-      {/* Hero Moderno Split-Screen */}
+      {/* Hero com Slides Promocionais */}
       <ModernHeroSection
         neighborhoodName={data.name}
         isMainUnit={isMainUnit}
@@ -73,8 +87,14 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
       />
 
       <main className="flex-grow">
-        {/* Seção de Serviços + Como Funciona + Diferenciais */}
+        {/* Por Que Escolher a Gouveia */}
+        <WhyChooseSection neighborhoodName={data.name} />
+
+        {/* Serviços + Como Funciona + Diferenciais */}
         <ServicesSection neighborhoodName={data.name} />
+
+        {/* Como Comprar Online */}
+        <HowToBuySection neighborhoodName={data.name} />
 
         {/* Galeria de Imagens */}
         <ImageGallery neighborhoodName={data.name} />
@@ -82,10 +102,16 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
         {/* Mapa de Área de Entrega */}
         <DeliveryAreaMap neighborhoodName={data.name} />
 
-        {/* FAQ Personalizado */}
+        {/* FAQ Premium 155 Perguntas */}
+        <PremiumFAQ neighborhoodName={data.name} />
+
+        {/* Dicas de Saúde Visual */}
+        <HealthTipsSection />
+
+        {/* FAQ Local (mantido) */}
         <LocalFAQSection neighborhoodName={data.name} />
 
-        {/* CTA Final Impactante */}
+        {/* CTA Final */}
         <FinalCTASection 
           neighborhoodName={data.name} 
           whatsappUrl={whatsappUrl} 
