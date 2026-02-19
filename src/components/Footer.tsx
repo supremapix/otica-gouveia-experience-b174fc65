@@ -51,21 +51,20 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4 text-white uppercase tracking-wide">Navegação</h3>
             <ul className="space-y-1">
               {[
-                { name: 'Início', href: '#home' },
-                { name: 'Sobre', href: '#about' },
-                { name: 'Serviços', href: '#services' },
-                { name: 'Produtos', href: '#products' },
-                { name: 'Contato', href: '#contact' },
+                { name: 'Início', href: '/', page: true },
+                { name: 'Sobre', href: '/sobre', page: true },
+                { name: 'Serviços', href: '/servicos', page: true },
+                { name: 'Produtos', href: '/produtos', page: true },
+                { name: 'Contato', href: '/contato', page: true },
               ].map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    onClick={(e) => { e.preventDefault(); scrollToSection(link.href); }}
-                    className="text-white/70 hover:text-accent-gold transition-colors text-[15px] block py-[12px] cursor-pointer"
+                  <Link
+                    to={link.href}
+                    className="text-white/70 hover:text-accent-gold transition-colors text-[15px] block py-[12px]"
                     style={{ minHeight: '44px', display: 'flex', alignItems: 'center' }}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

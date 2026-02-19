@@ -110,6 +110,10 @@ import TerminalSitioCercado from "./pages/TerminalSitioCercado";
 import OticasCentroCuritiba from "./pages/OticasCentroCuritiba";
 import OticaBarataCuritiba from "./pages/OticaBarataCuritiba";
 import EntregasSitioCercado from "./pages/EntregasSitioCercado";
+import SobrePage from "./pages/SobrePage";
+import ServicosPage from "./pages/ServicosPage";
+import ProdutosPage from "./pages/ProdutosPage";
+import ContatoPage from "./pages/ContatoPage";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -253,6 +257,11 @@ const App = () => (
             <Route path="/oticas-no-centro-de-curitiba" element={<OticasCentroCuritiba />} />
             <Route path="/otica-barata-curitiba" element={<OticaBarataCuritiba />} />
             <Route path="/entregas-sitio-cercado-curitiba" element={<EntregasSitioCercado />} />
+            {/* Páginas individuais do menu */}
+            <Route path="/sobre" element={<SobrePage />} />
+            <Route path="/servicos" element={<ServicosPage />} />
+            <Route path="/produtos" element={<ProdutosPage />} />
+            <Route path="/contato" element={<ContatoPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
