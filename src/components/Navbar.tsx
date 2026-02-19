@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone, MapPin, Clock } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es.%20Pode%20me%20ajudar?";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +27,22 @@ const Navbar = () => {
     }
     return () => { document.body.style.overflow = ''; };
   }, [isOpen]);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, anchor: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const sectionId = anchor.replace('#', '');
+    if (location.pathname === '/') {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        const offset = 80;
+        const top = el.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    } else {
+      navigate(`/${anchor}`);
+    }
+  };
 
   const navLinks = [
     { name: 'Início', href: '#home' },
@@ -92,7 +110,8 @@ const Navbar = () => {
                   <a
                     key={link.name}
                     href={link.href}
-                    className="text-white hover:text-accent-gold transition-colors text-sm lg:text-base font-semibold"
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    className="text-white hover:text-accent-gold transition-colors text-sm lg:text-base font-semibold cursor-pointer"
                   >
                     {link.name}
                   </a>
@@ -165,7 +184,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 className="block py-[18px] text-[20px] font-bold text-white uppercase tracking-wide border-b border-white/20 hover:text-accent-gold transition-colors"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleNavClick(e, link.href)}
                 style={{ minHeight: '48px' }}
               >
                 {link.name}
