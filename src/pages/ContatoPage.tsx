@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
-import { MapPin, Phone, Clock, Instagram, Mail } from 'lucide-react';
+import { MapPin, Phone, Clock, Instagram, MessageCircle, HelpCircle, Navigation } from 'lucide-react';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20%C3%93tica%20Gouveia%20e%20gostaria%20de%20atendimento.";
 
@@ -19,10 +19,10 @@ const businessHours = [
 ];
 
 const channels = [
-  { icon: '💬', label: 'WhatsApp', value: '(41) 99161-0663', href: WHATSAPP_URL, desc: 'Resposta rápida em minutos', external: true },
-  { icon: '📞', label: 'Telefone', value: '(41) 3114-0663', href: 'tel:+554131140663', desc: 'Atendimento Seg–Sex 9h–18h', external: false },
-  { icon: '📍', label: 'Endereço', value: 'R. Nicola Pellanda, 1286', href: 'https://maps.app.goo.gl/GhqcM45P9vZA8jMN9', desc: 'Pinheirinho, Curitiba – PR', external: true },
-  { icon: '📸', label: 'Instagram', value: '@gouveiaoticacuritiba', href: 'https://www.instagram.com/gouveiaoticacuritiba/', desc: 'Novidades e promoções', external: true },
+  { Icon: MessageCircle, label: 'WhatsApp', value: '(41) 99161-0663', href: WHATSAPP_URL, desc: 'Resposta rápida em minutos', external: true },
+  { Icon: Phone, label: 'Telefone', value: '(41) 3114-0663', href: 'tel:+554131140663', desc: 'Atendimento Seg–Sex 9h–18h', external: false },
+  { Icon: MapPin, label: 'Endereço', value: 'R. Nicola Pellanda, 1286', href: 'https://maps.app.goo.gl/GhqcM45P9vZA8jMN9', desc: 'Pinheirinho, Curitiba – PR', external: true },
+  { Icon: Instagram, label: 'Instagram', value: '@gouveiaoticacuritiba', href: 'https://www.instagram.com/gouveiaoticacuritiba/', desc: 'Novidades e promoções', external: true },
 ];
 
 const faqs = [
@@ -57,9 +57,9 @@ const ContatoPage = () => {
         style={{ background: 'linear-gradient(135deg, hsl(225,100%,13%) 0%, hsl(221,100%,26%) 100%)' }}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block px-4 py-2 rounded-full text-sm font-bold mb-4"
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4"
             style={{ backgroundColor: 'hsla(48,100%,50%,0.15)', color: 'hsl(48,100%,50%)', border: '1px solid hsla(48,100%,50%,0.3)' }}>
-            📞 FALE CONOSCO
+            <Phone className="w-4 h-4" /> FALE CONOSCO
           </span>
           <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
             Entre em <span style={{ color: 'hsl(48,100%,50%)' }}>Contato</span>
@@ -82,7 +82,12 @@ const ContatoPage = () => {
                 rel={c.external ? 'noopener noreferrer' : undefined}
                 className="group p-6 rounded-2xl border border-border/50 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 block"
               >
-                <div className="text-4xl mb-3">{c.icon}</div>
+                <div className="flex justify-center mb-3">
+                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center"
+                    style={{ backgroundColor: 'hsla(221,100%,26%,0.1)' }}>
+                    <c.Icon className="w-7 h-7" style={{ color: 'hsl(221,100%,26%)' }} />
+                  </div>
+                </div>
                 <div className="font-bold text-foreground mb-1">{c.label}</div>
                 <div className="font-semibold text-sm mb-2" style={{ color: 'hsl(221,100%,26%)' }}>{c.value}</div>
                 <div className="text-muted-foreground text-xs">{c.desc}</div>
@@ -131,10 +136,10 @@ const ContatoPage = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg"
+                  className="w-full py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg inline-flex items-center justify-center gap-2"
                   style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
                 >
-                  💬 Enviar pelo WhatsApp
+                  <MessageCircle className="w-5 h-5" /> Enviar pelo WhatsApp
                 </button>
               </form>
             </div>
@@ -167,10 +172,10 @@ const ContatoPage = () => {
                   href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-bold hover:underline"
+                  className="text-sm font-bold hover:underline inline-flex items-center gap-1"
                   style={{ color: 'hsl(221,100%,26%)' }}
                 >
-                  📍 Abrir no Google Maps →
+                  <Navigation className="w-4 h-4" /> Abrir no Google Maps
                 </a>
               </div>
             </div>
@@ -205,7 +210,10 @@ const ContatoPage = () => {
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 border border-border/50">
-                <h3 className="font-bold text-foreground mb-2">❓ {f.q}</h3>
+                <h3 className="font-bold text-foreground mb-2 flex items-center gap-2">
+                  <HelpCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'hsl(221,100%,26%)' }} />
+                  {f.q}
+                </h3>
                 <p className="text-muted-foreground text-[15px] leading-relaxed">{f.a}</p>
               </div>
             ))}
@@ -218,7 +226,7 @@ const ContatoPage = () => {
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105"
               style={{ backgroundColor: 'hsl(142,70%,49%)', color: 'white' }}
             >
-              💬 Ainda tem dúvidas? Fale conosco
+              <MessageCircle className="w-5 h-5" /> Ainda tem dúvidas? Fale conosco
             </a>
           </div>
         </div>

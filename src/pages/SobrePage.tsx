@@ -4,6 +4,7 @@ import SEO from '../components/SEO';
 import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
 import VisiofficeSection from '../components/VisiofficeSection';
+import { Handshake, Gem, Heart, Microscope, Truck, BadgeCheck, Glasses, MessageCircle, Navigation } from 'lucide-react';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20empresa.%20Pode%20me%20ajudar?";
 
@@ -21,12 +22,12 @@ const team = [
 ];
 
 const values = [
-  { icon: '🤝', title: 'Confiança', desc: 'Relacionamentos duradouros baseados em transparência e honestidade.' },
-  { icon: '💎', title: 'Qualidade', desc: 'Apenas produtos e marcas de excelência: Essilor, Zeiss, Hoya, Ray-Ban, Oakley.' },
-  { icon: '❤️', title: 'Cuidado', desc: 'Cada cliente é único. Atendimento personalizado do início ao fim.' },
-  { icon: '🔬', title: 'Tecnologia', desc: 'Visioffice 3 da Essilor — o mesmo equipamento das óticas premium do mundo.' },
-  { icon: '🚚', title: 'Conveniência', desc: 'Entrega grátis para compras acima de R$250 em Curitiba e região.' },
-  { icon: '✅', title: 'Garantia', desc: 'Garantia total de adaptação ou devolvemos seu dinheiro.' },
+  { Icon: Handshake, title: 'Confiança', desc: 'Relacionamentos duradouros baseados em transparência e honestidade.' },
+  { Icon: Gem, title: 'Qualidade', desc: 'Apenas produtos e marcas de excelência: Essilor, Zeiss, Hoya, Ray-Ban, Oakley.' },
+  { Icon: Heart, title: 'Cuidado', desc: 'Cada cliente é único. Atendimento personalizado do início ao fim.' },
+  { Icon: Microscope, title: 'Tecnologia', desc: 'Visioffice 3 da Essilor — o mesmo equipamento das óticas premium do mundo.' },
+  { Icon: Truck, title: 'Conveniência', desc: 'Entrega grátis para compras acima de R$250 em Curitiba e região.' },
+  { Icon: BadgeCheck, title: 'Garantia', desc: 'Garantia total de adaptação ou devolvemos seu dinheiro.' },
 ];
 
 const SobrePage = () => {
@@ -46,9 +47,9 @@ const SobrePage = () => {
         style={{ background: 'linear-gradient(135deg, hsl(225,100%,13%) 0%, hsl(221,100%,26%) 100%)' }}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block px-4 py-2 rounded-full text-sm font-bold mb-4"
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4"
             style={{ backgroundColor: 'hsla(48,100%,50%,0.15)', color: 'hsl(48,100%,50%)', border: '1px solid hsla(48,100%,50%,0.3)' }}>
-            ✨ NOSSA HISTÓRIA
+            <Gem className="w-4 h-4" /> NOSSA HISTÓRIA
           </span>
           <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
             Sobre a <span style={{ color: 'hsl(48,100%,50%)' }}>Ótica Gouveia</span>
@@ -103,7 +104,7 @@ const SobrePage = () => {
                 className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg"
                 style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
               >
-                💬 Falar com a equipe
+                <MessageCircle className="w-5 h-5" /> Falar com a equipe
               </a>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -138,7 +139,10 @@ const SobrePage = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((v, i) => (
               <div key={i} className="bg-white p-6 rounded-2xl border border-border/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div className="text-4xl mb-4">{v.icon}</div>
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4"
+                  style={{ backgroundColor: 'hsla(221,100%,26%,0.1)' }}>
+                  <v.Icon className="w-7 h-7" style={{ color: 'hsl(221,100%,26%)' }} />
+                </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{v.title}</h3>
                 <p className="text-muted-foreground text-[15px] leading-relaxed">{v.desc}</p>
               </div>
@@ -155,9 +159,9 @@ const SobrePage = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((t, i) => (
               <div key={i} className="p-8 rounded-2xl border border-border/50 hover:shadow-lg transition-all duration-300">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
                   style={{ backgroundColor: 'hsla(221,100%,26%,0.1)' }}>
-                  👓
+                  <Glasses className="w-8 h-8" style={{ color: 'hsl(221,100%,26%)' }} />
                 </div>
                 <h3 className="text-lg font-bold text-foreground">{t.name}</h3>
                 <p className="text-sm font-semibold mb-3" style={{ color: 'hsl(221,100%,26%)' }}>{t.role}</p>
@@ -187,7 +191,7 @@ const SobrePage = () => {
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg"
               style={{ backgroundColor: 'hsl(142,70%,49%)', color: 'white' }}
             >
-              💬 WhatsApp
+              <MessageCircle className="w-5 h-5" /> WhatsApp
             </a>
             <a
               href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9"
@@ -196,7 +200,7 @@ const SobrePage = () => {
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105 border-2"
               style={{ borderColor: 'hsl(221,100%,26%)', color: 'hsl(221,100%,26%)' }}
             >
-              📍 Como Chegar
+              <Navigation className="w-5 h-5" /> Como Chegar
             </a>
           </div>
         </div>
