@@ -15,6 +15,7 @@ import VisiofficeSection from '../components/VisiofficeSection';
 import NeighborhoodsSection from '../components/NeighborhoodsSection';
 import TipsSection from '../components/TipsSection';
 import WhatsAppFloat from '../components/WhatsAppFloat';
+import BackToTop from '../components/BackToTop';
 import { createOrganizationSchema, createWebsiteSchema, createLocalBusinessSchema } from '../utils/schemas';
 
 // Simple error boundary component
@@ -119,25 +120,33 @@ const Index = () => {
       <Navbar />
       
       {/* Hero with padding for fixed header */}
-      <ErrorBoundary componentName="HeroSlider" fallback={<div className="p-4">Error loading Hero</div>}>
-        <HeroSlider />
-      </ErrorBoundary>
+      <section id="home">
+        <ErrorBoundary componentName="HeroSlider" fallback={<div className="p-4">Error loading Hero</div>}>
+          <HeroSlider />
+        </ErrorBoundary>
+      </section>
       
-      <ErrorBoundary componentName="About" fallback={<div className="p-4">Error</div>}>
-        <About />
-      </ErrorBoundary>
+      <section id="about">
+        <ErrorBoundary componentName="About" fallback={<div className="p-4">Error</div>}>
+          <About />
+        </ErrorBoundary>
+      </section>
       
-      <ErrorBoundary componentName="Services" fallback={<div className="p-4">Error</div>}>
-        <Services />
-      </ErrorBoundary>
+      <section id="services">
+        <ErrorBoundary componentName="Services" fallback={<div className="p-4">Error</div>}>
+          <Services />
+        </ErrorBoundary>
+      </section>
 
       <ErrorBoundary componentName="VisiofficeSection" fallback={<div className="p-4">Error</div>}>
         <VisiofficeSection />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="Products" fallback={<div className="p-4">Error</div>}>
-        <Products />
-      </ErrorBoundary>
+      <section id="products">
+        <ErrorBoundary componentName="Products" fallback={<div className="p-4">Error</div>}>
+          <Products />
+        </ErrorBoundary>
+      </section>
 
       <ErrorBoundary componentName="NeighborhoodsSection" fallback={<div className="p-4">Error</div>}>
         <NeighborhoodsSection />
@@ -153,9 +162,11 @@ const Index = () => {
         <TipsSection />
       </ErrorBoundary>
       
-      <ErrorBoundary componentName="Contact" fallback={<div className="p-4">Error</div>}>
-        <Contact />
-      </ErrorBoundary>
+      <section id="contact">
+        <ErrorBoundary componentName="Contact" fallback={<div className="p-4">Error</div>}>
+          <Contact />
+        </ErrorBoundary>
+      </section>
       
       <ErrorBoundary componentName="Instagram" fallback={<div className="p-4">Error</div>}>
         <Instagram />
@@ -165,6 +176,7 @@ const Index = () => {
       
       <OnlineCounter />
       <WhatsAppFloat />
+      <BackToTop />
     </div>
   );
 };

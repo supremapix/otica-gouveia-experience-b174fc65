@@ -3,6 +3,19 @@ import { Link } from 'react-router-dom';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es.%20Pode%20me%20ajudar?";
 
+const scrollToSection = (anchor: string) => {
+  const sectionId = anchor.replace('#', '');
+  const el = document.getElementById(sectionId);
+  if (el) {
+    const offset = 80;
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
+  } else {
+    // Se não estiver na home, navegar para home#section
+    window.location.href = `/${anchor}`;
+  }
+};
+
 const Footer = () => {
   return (
     <footer style={{ backgroundColor: 'hsl(225, 100%, 13%)' }} className="text-white">
@@ -45,9 +58,10 @@ const Footer = () => {
                 { name: 'Contato', href: '#contact' },
               ].map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href} 
-                    className="text-white/70 hover:text-accent-gold transition-colors text-[15px] block py-[12px]"
+                  <a
+                    href={link.href}
+                    onClick={(e) => { e.preventDefault(); scrollToSection(link.href); }}
+                    className="text-white/70 hover:text-accent-gold transition-colors text-[15px] block py-[12px] cursor-pointer"
                     style={{ minHeight: '44px', display: 'flex', alignItems: 'center' }}
                   >
                     {link.name}
