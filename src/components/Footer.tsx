@@ -100,23 +100,25 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Dicas Rápidas */}
+          {/* Páginas SEO */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white uppercase tracking-wide">Dicas Rápidas</h3>
+            <h3 className="text-lg font-bold mb-4 text-white uppercase tracking-wide">Páginas Especiais</h3>
             <ul className="space-y-1">
               {[
-                'Como escolher óculos de grau',
-                'Óculos de sol: proteção UV',
-                'Adaptação a lentes novas',
-              ].map((tip) => (
-                <li key={tip}>
-                  <a 
-                    href="#services"
-                    className="text-white/70 hover:text-accent-gold transition-colors text-[15px] block py-[12px]"
+                { name: 'Conserto de Óculos — Sítio Cercado', href: '/conserto-oculos-sitio-cercado' },
+                { name: 'Ótica perto do Terminal Sítio Cercado', href: '/otica-terminal-sitio-cercado' },
+                { name: 'Óticas no Centro de Curitiba', href: '/oticas-no-centro-de-curitiba' },
+                { name: 'Ótica Barata em Curitiba', href: '/otica-barata-curitiba' },
+                { name: 'Entregas no Sítio Cercado', href: '/entregas-sitio-cercado-curitiba' },
+              ].map((page) => (
+                <li key={page.href}>
+                  <Link
+                    to={page.href}
+                    className="text-white/70 hover:text-accent-gold transition-colors text-[14px] block py-[10px]"
                     style={{ minHeight: '44px', display: 'flex', alignItems: 'center' }}
                   >
-                    {tip}
-                  </a>
+                    {page.name}
+                  </Link>
                 </li>
               ))}
             </ul>

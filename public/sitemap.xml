@@ -867,4 +867,66 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Páginas SEO Temáticas - Alta Prioridade -->
+
+  <!-- Conserto de Óculos Sítio Cercado -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado</loc>
+    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Conserto de Óculos no Sítio Cercado — Ótica Gouveia</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Terminal Sítio Cercado -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-terminal-sitio-cercado</loc>
+    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Ótica perto do Terminal Sítio Cercado — Ótica Gouveia</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Óticas no Centro de Curitiba -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/oticas-no-centro-de-curitiba</loc>
+    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Óticas no Centro de Curitiba — Ótica Gouveia</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Ótica Barata em Curitiba -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-barata-curitiba</loc>
+    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Ótica Barata em Curitiba — Ótica Gouveia</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Entregas Sítio Cercado -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/entregas-sitio-cercado-curitiba</loc>
+    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Entregas de Óculos no Sítio Cercado — Ótica Gouveia</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
