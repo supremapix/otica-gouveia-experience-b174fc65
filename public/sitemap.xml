@@ -18,6 +18,51 @@
     </image:image>
   </url>
 
+  <!-- Páginas Institucionais -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/sobre</loc>
+    <lastmod>2025-02-19T12:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Sobre a Ótica Gouveia - Nossa História</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/servicos</loc>
+    <lastmod>2025-02-19T12:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Serviços da Ótica Gouveia - Exames e Lentes</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/produtos</loc>
+    <lastmod>2025-02-19T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Produtos da Ótica Gouveia - Óculos e Armações</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/contato</loc>
+    <lastmod>2025-02-19T12:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Contato Ótica Gouveia - Curitiba</image:caption>
+    </image:image>
+  </url>
+
   <!-- Pinheirinho Main Page -->
   <url>
     <loc>https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho</loc>
