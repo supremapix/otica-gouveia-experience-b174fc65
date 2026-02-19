@@ -28,28 +28,30 @@ const Navbar = () => {
     return () => { document.body.style.overflow = ''; };
   }, [isOpen]);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, anchor: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, link: { href: string; page?: string }) => {
     e.preventDefault();
     setIsOpen(false);
-    const sectionId = anchor.replace('#', '');
-    if (location.pathname === '/') {
+    // Se na home e tem âncora, faz scroll
+    if (location.pathname === '/' && link.href.startsWith('#')) {
+      const sectionId = link.href.replace('#', '');
       const el = document.getElementById(sectionId);
       if (el) {
         const offset = 80;
         const top = el.getBoundingClientRect().top + window.scrollY - offset;
         window.scrollTo({ top, behavior: 'smooth' });
+        return;
       }
-    } else {
-      navigate(`/${anchor}`);
     }
+    // Navega para a página individual
+    navigate(link.page || '/');
   };
 
   const navLinks = [
-    { name: 'Início', href: '#home' },
-    { name: 'Sobre', href: '#about' },
-    { name: 'Serviços', href: '#services' },
-    { name: 'Produtos', href: '#products' },
-    { name: 'Contato', href: '#contact' },
+    { name: 'Início', href: '#home', page: '/' },
+    { name: 'Sobre', href: '#about', page: '/sobre' },
+    { name: 'Serviços', href: '#services', page: '/servicos' },
+    { name: 'Produtos', href: '#products', page: '/produtos' },
+    { name: 'Contato', href: '#contact', page: '/contato' },
   ];
 
   return (
@@ -110,7 +112,7 @@ const Navbar = () => {
                   <a
                     key={link.name}
                     href={link.href}
-                    onClick={(e) => handleNavClick(e, link.href)}
+                    onClick={(e) => handleNavClick(e, link)}
                     className="text-white hover:text-accent-gold transition-colors text-sm lg:text-base font-semibold cursor-pointer"
                   >
                     {link.name}
@@ -184,7 +186,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 className="block py-[18px] text-[20px] font-bold text-white uppercase tracking-wide border-b border-white/20 hover:text-accent-gold transition-colors"
-                onClick={(e) => handleNavClick(e, link.href)}
+                onClick={(e) => handleNavClick(e, link)}
                 style={{ minHeight: '48px' }}
               >
                 {link.name}
