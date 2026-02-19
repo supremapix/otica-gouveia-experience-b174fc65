@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
+import { MessageCircle, Glasses, User, Users, Baby, ScanEye } from 'lucide-react';
 
 const WHATSAPP_BASE = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%20";
 
@@ -29,11 +30,11 @@ const products = [
 ];
 
 const categories = [
-  { key: 'all', label: 'Todos' },
-  { key: 'masculino', label: '👨 Masculino' },
-  { key: 'feminino', label: '👩 Feminino' },
-  { key: 'infantil', label: '🧒 Infantil' },
-  { key: 'lentes', label: '🔍 Lentes' },
+  { key: 'all', label: 'Todos', Icon: Glasses },
+  { key: 'masculino', label: 'Masculino', Icon: User },
+  { key: 'feminino', label: 'Feminino', Icon: Users },
+  { key: 'infantil', label: 'Infantil', Icon: Baby },
+  { key: 'lentes', label: 'Lentes', Icon: ScanEye },
 ];
 
 const brands = [
@@ -67,9 +68,9 @@ const ProdutosPage = () => {
         style={{ background: 'linear-gradient(135deg, hsl(225,100%,13%) 0%, hsl(221,100%,26%) 100%)' }}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block px-4 py-2 rounded-full text-sm font-bold mb-4"
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4"
             style={{ backgroundColor: 'hsla(48,100%,50%,0.15)', color: 'hsl(48,100%,50%)', border: '1px solid hsla(48,100%,50%,0.3)' }}>
-            🕶️ CATÁLOGO
+            <Glasses className="w-4 h-4" /> CATÁLOGO
           </span>
           <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
             Nossas <span style={{ color: 'hsl(48,100%,50%)' }}>Coleções</span>
@@ -89,13 +90,13 @@ const ProdutosPage = () => {
               <button
                 key={cat.key}
                 onClick={() => setActiveCategory(cat.key)}
-                className="px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-200"
+                className="px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-200 inline-flex items-center gap-2"
                 style={activeCategory === cat.key
                   ? { backgroundColor: 'hsl(221,100%,26%)', color: 'white' }
                   : { backgroundColor: 'hsl(210,40%,96%)', color: 'hsl(221,100%,26%)' }
                 }
               >
-                {cat.label}
+                <cat.Icon className="w-4 h-4" /> {cat.label}
               </button>
             ))}
           </div>
@@ -122,10 +123,10 @@ const ProdutosPage = () => {
                   <p className="text-muted-foreground text-sm mb-4">{p.desc}</p>
                   <button
                     onClick={(e) => { e.stopPropagation(); window.open(`${WHATSAPP_BASE}${encodeURIComponent(p.name)}.%20Pode%20me%20ajudar?`, '_blank'); }}
-                    className="w-full py-2.5 rounded-full font-bold text-sm transition-all hover:scale-105"
+                    className="w-full py-2.5 rounded-full font-bold text-sm transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
                     style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
                   >
-                    💬 Consultar Preço
+                    <MessageCircle className="w-4 h-4" /> Consultar Preço
                   </button>
                 </div>
               </div>
@@ -161,7 +162,7 @@ const ProdutosPage = () => {
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105"
             style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
           >
-            💬 Falar com especialista
+            <MessageCircle className="w-5 h-5" /> Falar com especialista
           </a>
         </div>
       </section>
@@ -192,10 +193,10 @@ const ProdutosPage = () => {
                   href={`${WHATSAPP_BASE}${encodeURIComponent(selected.name)}.%20Pode%20me%20ajudar?`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center py-3 rounded-full font-bold transition-all hover:scale-105"
+                  className="flex-1 text-center py-3 rounded-full font-bold transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
                   style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
                 >
-                  💬 Consultar Preço
+                  <MessageCircle className="w-4 h-4" /> Consultar Preço
                 </a>
                 <button
                   onClick={() => setSelected(null)}
