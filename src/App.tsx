@@ -105,6 +105,11 @@ import OticaVilaGuaira from "./pages/OticaVilaGuaira";
 import OticaGanchinho from "./pages/OticaGanchinho";
 import OticaFazendinha from "./pages/OticaFazendinha";
 import OticaPinheirinho from "./pages/OticaPinheirinho";
+import ConsertoOculosSitioCercado from "./pages/ConsertoOculosSitioCercado";
+import TerminalSitioCercado from "./pages/TerminalSitioCercado";
+import OticasCentroCuritiba from "./pages/OticasCentroCuritiba";
+import OticaBarataCuritiba from "./pages/OticaBarataCuritiba";
+import EntregasSitioCercado from "./pages/EntregasSitioCercado";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -242,6 +247,12 @@ const App = () => (
             <Route path="/otica-ganchinho" element={<OticaGanchinho />} />
             <Route path="/otica-fazendinha" element={<OticaFazendinha />} />
             <Route path="/otica-pinheirinho-bairro" element={<OticaPinheirinho />} />
+            {/* Páginas SEO temáticas */}
+            <Route path="/conserto-oculos-sitio-cercado" element={<ConsertoOculosSitioCercado />} />
+            <Route path="/otica-terminal-sitio-cercado" element={<TerminalSitioCercado />} />
+            <Route path="/oticas-no-centro-de-curitiba" element={<OticasCentroCuritiba />} />
+            <Route path="/otica-barata-curitiba" element={<OticaBarataCuritiba />} />
+            <Route path="/entregas-sitio-cercado-curitiba" element={<EntregasSitioCercado />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
