@@ -74,7 +74,7 @@ const Navbar = () => {
             </a>
             <div className="flex items-center">
               <MapPin className="h-3 w-3 mr-1" />
-              <span>R. Nicola Pellanda, 1286 - Pinheirinho, Curitiba - PR</span>
+              <span>R. Nicola Pellanda, 1286 - Umbará, Curitiba - PR</span>
             </div>
           </div>
           <div className="text-sm flex items-center gap-1">
@@ -198,7 +198,7 @@ const Navbar = () => {
           <div className="px-6 pb-4 space-y-3">
             <div className="flex items-center text-white/80 text-sm">
               <MapPin className="h-4 w-4 mr-2 flex-shrink-0 text-accent-gold" />
-              <span>R. Nicola Pellanda, 1286 - Pinheirinho</span>
+              <span>R. Nicola Pellanda, 1286 - Umbará</span>
             </div>
             <div className="flex items-center text-white/80 text-sm">
               <Clock className="h-4 w-4 mr-2 flex-shrink-0 text-accent-gold" />

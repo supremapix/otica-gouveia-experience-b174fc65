@@ -108,9 +108,9 @@ const EnhancedHero: React.FC<EnhancedHeroProps> = ({
         {/* Features Destacadas */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-            <div className="text-3xl mb-3">👁️</div>
-            <h3 className="text-white font-semibold mb-2">Exame Gratuito</h3>
-            <p className="text-white/80 text-sm">Avaliação completa da sua visão sem custo</p>
+             <div className="text-3xl mb-3">👁️</div>
+             <h3 className="text-white font-semibold mb-2">Medição Gratuita</h3>
+             <p className="text-white/80 text-sm">Medição de alta precisão com Visioffice 3</p>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
