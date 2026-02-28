@@ -171,7 +171,7 @@ export const faqItems: FAQItem[] = [
 
   // === PREÇOS E PROMOÇÕES (141-155) ===
   { id: 141, category: 'precos', question: 'Por que lentes são caras?', answer: 'Lentes envolvem alta tecnologia: cálculos ópticos complexos, materiais especiais, tratamentos anti-reflexo com múltiplas camadas. Nossas lentes digitais passam por 15 etapas de fabricação para garantir qualidade óptica superior.' },
-  { id: 142, category: 'precos', question: 'Posso parcelar meus óculos?', answer: 'Sim! Aceitamos cartão em até 10x sem juros, PIX com desconto à vista, e para compras acima de R$ 250, entrega gratuita na sua casa. Consulte condições especiais para aposentados e estudantes.' },
+  { id: 142, category: 'precos', question: 'Posso parcelar meus óculos?', answer: 'Sim! Aceitamos cartão em até 10x sem juros, PIX com desconto à vista, e para compras acima de R$ 250 a entrega via motoboy já está inclusa. Consulte condições especiais para aposentados e estudantes.' },
   { id: 143, category: 'precos', question: 'Vocês aceitam plano de saúde?', answer: 'Sim! Atendemos diversos planos de saúde e convênios. Entre em contato pelo WhatsApp para verificar se seu plano é aceito. Facilitamos todo o processo de autorização.' },
   { id: 144, category: 'precos', question: 'Tem desconto para aposentados?', answer: 'Sim! Temos condições especiais para aposentados e pensionistas. Desconto à vista e parcelamento facilitado. Entre em contato para saber mais sobre nossas condições especiais.' },
   { id: 145, category: 'precos', question: 'Desconto para estudantes?', answer: 'Sim! Estudantes com carteirinha válida têm desconto especial em armações e lentes. Parcelamento em até 10x sem juros. Consulte condições na loja ou pelo WhatsApp.' },

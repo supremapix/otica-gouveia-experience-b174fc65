@@ -63,8 +63,8 @@ const TerminalSitioCercado = () => {
               <span className="text-[#FFD700]">Terminal Sítio Cercado</span>
             </h1>
             <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
-              A melhor ótica da zona sul de Curitiba fica a apenas 10 minutos do Terminal Sítio Cercado. 
-              Ou receba em casa — entrega grátis para compras acima de R$ 250,00!
+              Nossa loja fica no Umbará, a apenas 10 minutos do Terminal Sítio Cercado. 
+              Compre na loja e receba em casa via motoboy — compras acima de R$ 250 com entrega inclusa!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
