@@ -49,11 +49,11 @@ const EntregasSitioCercado = () => {
     <>
       <Helmet>
         <title>Entrega de Óculos no Sítio Cercado Curitiba | Ótica Gouveia</title>
-        <meta name="description" content="Ótica Gouveia faz entregas de óculos no Sítio Cercado, Curitiba (PR). Entrega grátis para compras acima de R$ 250. Óculos de grau, sol e lentes de contato. Peça pelo WhatsApp!" />
-        <meta name="keywords" content="entrega óculos sítio cercado, ótica entrega em casa sítio cercado, óculos a domicílio sítio cercado curitiba, entrega grátis óculos curitiba zona sul, ótica delivery curitiba" />
+        <meta name="description" content="Ótica Gouveia: loja no Umbará com entrega via motoboy no Sítio Cercado, Curitiba (PR). Compras acima de R$ 250 com entrega inclusa. Óculos de grau, sol e lentes de contato." />
+        <meta name="keywords" content="entrega óculos sítio cercado, ótica entrega em casa sítio cercado, óculos a domicílio sítio cercado curitiba, ótica delivery curitiba, motoboy óculos curitiba" />
         <link rel="canonical" href="https://www.gouveiacuritiba.com.br/entregas-sitio-cercado-curitiba" />
-        <meta property="og:title" content="Entrega Grátis de Óculos no Sítio Cercado | Ótica Gouveia" />
-        <meta property="og:description" content="Receba seus óculos em casa no Sítio Cercado. Entrega grátis para compras acima de R$ 250. Peça pelo WhatsApp!" />
+        <meta property="og:title" content="Delivery de Óculos no Sítio Cercado | Ótica Gouveia — Loja no Umbará" />
+        <meta property="og:description" content="Loja no Umbará com entrega via motoboy no Sítio Cercado. Compras acima de R$ 250 com entrega inclusa. Peça pelo WhatsApp!" />
         <meta property="og:url" content="https://www.gouveiacuritiba.com.br/entregas-sitio-cercado-curitiba" />
         <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.png" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
@@ -73,20 +73,20 @@ const EntregasSitioCercado = () => {
               <span className="text-white">Entregas no Sítio Cercado</span>
             </nav>
             <span className="inline-block bg-[#25D366] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 animate-pulse">
-              🚚 ENTREGA GRÁTIS NO SÍTIO CERCADO — COMPRAS ACIMA DE R$ 250
+              🏍️ LOJA NO UMBARÁ — MOTOBOY ENTREGA NO SÍTIO CERCADO
             </span>
             <h1 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
-              Ótica Gouveia — Entregas<br />
+              Ótica Gouveia — Delivery Óptico<br />
               <span className="text-[#FFD700]">no Sítio Cercado · Curitiba (PR)</span>
             </h1>
             <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
-              Receba seus óculos de grau, sol e lentes de contato diretamente no Sítio Cercado. 
-              Sem sair de casa. Entrega grátis para compras acima de R$ 250,00. Pague pelo WhatsApp!
+              Nossa loja fica no Umbará. Compre pelo WhatsApp e receba seus óculos de grau, sol e lentes de contato 
+              via motoboy no Sítio Cercado. Compras acima de R$ 250 com entrega inclusa!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-[#1ebe5a] transition-all shadow-lg">
-                🚚 PEDIR ENTREGA GRÁTIS AGORA
+                🏍️ PEDIR ENTREGA VIA MOTOBOY
               </a>
               <a href="tel:+554131140663"
                 className="inline-flex items-center gap-2 border-2 border-[#FFD700] text-[#FFD700] font-bold text-lg px-8 py-4 rounded-full hover:bg-[#FFD700] hover:text-[#001440] transition-all">
@@ -99,13 +99,13 @@ const EntregasSitioCercado = () => {
         {/* GALERIA DE FOTOS */}
         <ImageGallery neighborhoodName="Sítio Cercado" />
 
-        {/* DESTAQUE ENTREGA GRÁTIS */}
+        {/* DESTAQUE DELIVERY */}
         <section className="py-10 bg-[#FFD700]">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <p className="text-[#001440] font-black text-xl md:text-2xl">
-              🚚 FRETE GRÁTIS para o Sítio Cercado em compras acima de <span className="underline">R$ 250,00</span>
+              🏍️ DELIVERY ÓPTICO para o Sítio Cercado — compras acima de <span className="underline">R$ 250</span> com entrega inclusa
             </p>
-            <p className="text-[#001440]/80 mt-2">Válido para todo o bairro Sítio Cercado e bairros vizinhos: Ganchinho, Umbará, Tatuquara e Campo de Santana</p>
+            <p className="text-[#001440]/80 mt-2">Loja no Umbará • Entregamos também em Ganchinho, Tatuquara e Campo de Santana</p>
           </div>
         </section>
 
@@ -152,7 +152,7 @@ const EntregasSitioCercado = () => {
             <p className="text-gray-700 leading-relaxed">
               Além do Sítio Cercado, também fazemos entregas nos bairros vizinhos: 
               <strong> Ganchinho, Umbará, Tatuquara, Campo de Santana e Pinheirinho</strong>. 
-              Para compras acima de <strong>R$ 250,00</strong>, a entrega é totalmente gratuita. 
+              Para compras acima de <strong>R$ 250,00</strong>, a entrega via motoboy já está inclusa. 
               Para pedidos abaixo deste valor, consulte nossa taxa de entrega pelo WhatsApp.
             </p>
           </div>
@@ -178,7 +178,7 @@ const EntregasSitioCercado = () => {
             <div className="mt-8">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#FFD700] text-[#001440] font-bold text-lg px-8 py-4 rounded-full hover:bg-yellow-300 transition-all">
-                🚚 SOLICITAR ENTREGA AGORA
+                🏍️ SOLICITAR ENTREGA VIA MOTOBOY
               </a>
             </div>
           </div>

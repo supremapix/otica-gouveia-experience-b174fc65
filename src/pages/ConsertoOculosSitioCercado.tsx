@@ -67,15 +67,15 @@ const ConsertoOculosSitioCercado = () => {
               <span className="text-white">Conserto de Óculos — Sítio Cercado</span>
             </nav>
             <span className="inline-block bg-[#FFD700] text-[#001440] text-xs font-bold px-4 py-1.5 rounded-full mb-4 animate-pulse">
-              🔧 CONSERTO RÁPIDO • ENTREGA GRÁTIS NO SÍTIO CERCADO
+              🔧 CONSERTO RÁPIDO • LOJA NO UMBARÁ • ENTREGA VIA MOTOBOY
             </span>
             <h1 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
               Conserto de Óculos<br />
               <span className="text-[#FFD700]">Sítio Cercado — Curitiba</span>
             </h1>
             <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
-              Ajuste, soldagem, troca de parafusos, plaquetas e lentes. Atendemos o Sítio Cercado 
-              com entrega grátis para compras acima de R$ 250,00. Loja física no Pinheirinho, a 10 minutos.
+              Ajuste, soldagem, troca de parafusos, plaquetas e lentes. Nossa loja fica no Umbará 
+              e entregamos via motoboy no Sítio Cercado. Compras acima de R$ 250 com entrega inclusa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"

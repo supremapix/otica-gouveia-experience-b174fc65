@@ -43,7 +43,7 @@ const NeighborhoodCTA: React.FC<NeighborhoodCTAProps> = ({ neighborhoodName, wha
           </div>
           <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm sm:text-base">
             <Truck className="w-4 h-4 sm:w-5 sm:h-5" />
-            <span>Entrega Grátis*</span>
+            <span>Entrega Via Motoboy</span>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ const NeighborhoodCTA: React.FC<NeighborhoodCTAProps> = ({ neighborhoodName, wha
         {/* Urgency Message */}
         <div className="mt-6 sm:mt-8 text-center">
           <p className="text-white/70 text-xs sm:text-sm">
-            *Entrega grátis para compras acima de R$ 250,00 no {neighborhoodName} e região
+            Loja no Umbará — compras acima de R$ 250 com entrega inclusa via motoboy no {neighborhoodName}
           </p>
         </div>
       </div>

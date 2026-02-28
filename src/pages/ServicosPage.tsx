@@ -52,11 +52,11 @@ const services = [
   },
   {
     Icon: Truck,
-    title: 'Entrega Grátis em Casa',
-    description: 'Compras acima de R$250 têm frete grátis para toda Curitiba e região. Receba seus óculos completos (armação + lentes) em casa ou no trabalho, de segunda a sexta-feira.',
-    features: ['Frete grátis a partir de R$250', 'Prazo informado após o pedido', 'Curitiba e Região Metropolitana', 'Seg a Sex, horário comercial', 'Rastreamento da entrega'],
+    title: 'Delivery Óptico Via Motoboy',
+    description: 'Compras acima de R$250 com entrega inclusa para toda Curitiba e região. Nossa loja fica no Umbará e o motoboy leva seus óculos até você.',
+    features: ['Entrega inclusa a partir de R$250', 'Prazo informado após o pedido', 'Curitiba e Região Metropolitana', 'Seg a Sex, horário comercial', 'Rastreamento da entrega'],
     BadgeIcon: Truck,
-    badge: 'FRETE GRÁTIS',
+    badge: 'DELIVERY',
     cta: 'Pedir com Entrega',
     msg: 'Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20com%20entrega%20em%20casa.',
   },
@@ -77,7 +77,7 @@ const ServicosPage = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Serviços — Ótica Gouveia Curitiba | Lentes, Armações e Visioffice 3"
-        description="Conheça todos os serviços da Ótica Gouveia Curitiba: medição Visioffice 3, lentes premium, armações de grife, manutenção, ajustes e entrega grátis."
+        description="Conheça todos os serviços da Ótica Gouveia Curitiba: medição Visioffice 3, lentes premium, armações de grife, manutenção, ajustes e delivery via motoboy."
         keywords="serviços ótica curitiba, visioffice 3 curitiba, lentes progressivas curitiba, conserto óculos curitiba, manutenção óculos"
         canonicalUrl="/servicos"
       />
