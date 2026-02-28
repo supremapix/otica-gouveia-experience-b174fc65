@@ -86,18 +86,18 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
         phoneNumber="+554131140663"
       />
 
-      <main className="flex-grow">
-        {/* Por Que Escolher a Gouveia */}
-        <WhyChooseSection neighborhoodName={data.name} />
+       <main className="flex-grow">
+         {/* Galeria de Imagens — logo após o Hero */}
+         <ImageGallery neighborhoodName={data.name} />
 
-        {/* Serviços + Como Funciona + Diferenciais */}
-        <ServicesSection neighborhoodName={data.name} />
+         {/* Por Que Escolher a Gouveia */}
+         <WhyChooseSection neighborhoodName={data.name} />
 
-        {/* Como Comprar Online */}
-        <HowToBuySection neighborhoodName={data.name} />
+         {/* Serviços + Como Funciona + Diferenciais */}
+         <ServicesSection neighborhoodName={data.name} />
 
-        {/* Galeria de Imagens */}
-        <ImageGallery neighborhoodName={data.name} />
+         {/* Como Comprar Online */}
+         <HowToBuySection neighborhoodName={data.name} />
 
         {/* Mapa de Área de Entrega */}
         <DeliveryAreaMap neighborhoodName={data.name} />
