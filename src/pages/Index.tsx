@@ -148,9 +148,6 @@ const Index = () => {
         </ErrorBoundary>
       </section>
 
-      <ErrorBoundary componentName="NeighborhoodsSection" fallback={<div className="p-4">Error</div>}>
-        <NeighborhoodsSection />
-      </ErrorBoundary>
       
       <InfiniteNeighborhoodSlider />
       
