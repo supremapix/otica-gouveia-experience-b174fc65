@@ -5,7 +5,7 @@ const services = [
     icon: Eye,
     title: 'Exames de Vista',
     description: 'Equipamentos modernos e profissionais qualificados para cuidar da sua saúde ocular',
-    highlight: 'Gratuito',
+    highlight: 'Incluso',
   },
   {
     icon: Glasses,
@@ -42,8 +42,8 @@ const steps = [
   },
   {
     number: '04',
-    title: 'Receba em Casa',
-    description: 'Entrega grátis acima de R$250 ou retire na loja',
+    title: 'Receba Via Motoboy',
+    description: 'Entrega inclusa acima de R$250 ou retire na loja no Umbará',
     icon: Truck,
   },
 ];
@@ -52,7 +52,7 @@ const differentials = [
   { icon: Award, title: '+40 Anos', description: 'de Tradição' },
   { icon: Users, title: '+10.000', description: 'Clientes Atendidos' },
   { icon: Shield, title: 'Garantia', description: 'Total' },
-  { icon: Truck, title: 'Entrega', description: 'Grátis*' },
+  { icon: Truck, title: 'Delivery', description: 'Via Motoboy' },
 ];
 
 interface ServicesSectionProps {

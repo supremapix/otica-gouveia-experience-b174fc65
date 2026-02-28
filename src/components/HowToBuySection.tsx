@@ -15,19 +15,19 @@ const steps = [
     icon: ShoppingBag,
     number: '2',
     title: 'Escolha Armação e Lentes',
-    description: 'Catálogo online ou venha conhecer nossa loja física.',
+    description: 'Catálogo online ou visite nossa loja no Umbará.',
   },
   {
     icon: ScanLine,
     number: '3',
     title: 'Medição Visioffice 3',
-    description: 'Agende na loja para medição precisa (5 minutos).',
+    description: 'Agende na loja no Umbará para medição precisa (5 min).',
   },
   {
     icon: Truck,
     number: '4',
-    title: 'Entrega em Casa',
-    description: 'Grátis para compras R$ 250+ ou retire na loja.',
+    title: 'Motoboy Entrega Pra Você',
+    description: 'Compras acima de R$ 250 com entrega inclusa no seu bairro.',
   },
 ];
 

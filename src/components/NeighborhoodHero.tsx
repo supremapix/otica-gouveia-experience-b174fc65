@@ -43,8 +43,8 @@ const NeighborhoodHero: React.FC<NeighborhoodHeroProps> = ({
   };
 
   const benefits = [
-    { icon: Truck, text: "Entrega Grátis*" },
-    { icon: Clock, text: "Atendimento Rápido" },
+    { icon: Truck, text: "Entrega via Motoboy" },
+    { icon: Clock, text: "Loja no Umbará" },
     { icon: Shield, text: "Garantia Total" },
     { icon: Star, text: "5★ Avaliações" },
   ];
@@ -126,8 +126,8 @@ const NeighborhoodHero: React.FC<NeighborhoodHeroProps> = ({
           <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-xl mb-6 sm:mb-8 inline-flex items-center gap-3 shadow-lg animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <Truck className="w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
             <div>
-              <p className="font-bold text-sm sm:text-base">ENTREGA GRÁTIS* no {location}</p>
-              <p className="text-xs sm:text-sm opacity-90">*Compras acima de R$ 250</p>
+              <p className="font-bold text-sm sm:text-base">🏍️ ENTREGAMOS NO {location.toUpperCase()} VIA MOTOBOY</p>
+              <p className="text-xs sm:text-sm opacity-90">Loja no Umbará • Compras acima de R$ 250 com entrega inclusa</p>
             </div>
           </div>
 

@@ -8,13 +8,13 @@ const WhyChooseSection = ({ neighborhoodName }: WhyChooseSectionProps) => {
   const reasons = [
     {
       icon: Truck,
-      title: 'Entrega Grátis na Sua Casa',
-      description: `Compras acima de R$ 250,00 têm frete grátis para ${neighborhoodName} e bairros próximos. Receba em casa ou trabalho, de segunda a sexta.`,
+      title: 'Loja no Umbará, Entrega no Seu Bairro',
+      description: `Nossa loja fica no Umbará (R. Nicola Pellanda, 1286). Após sua compra, entregamos via motoboy no ${neighborhoodName}. Compras acima de R$ 250 com entrega inclusa.`,
     },
     {
       icon: Zap,
       title: 'Tecnologia Visioffice 3',
-      description: 'O mesmo equipamento de óticas premium de São Paulo e Rio, agora no seu bairro. Medição precisa em segundos, lentes perfeitas garantidas.',
+      description: 'Medição digital de alta precisão em segundos com tecnologia Essilor. Visite nossa loja no Umbará e saia com lentes perfeitas para seus olhos.',
     },
     {
       icon: Users,

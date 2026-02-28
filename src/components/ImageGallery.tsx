@@ -153,7 +153,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ neighborhoodName }) => {
             Conheça Nossa Loja e Produtos
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-            Visite a Ótica Gouveia e descubra as melhores opções em armações e lentes para você no {neighborhoodName}
+            Nossa loja fica no Umbará — visite e descubra as melhores armações e lentes. Entregamos no {neighborhoodName} via motoboy!
           </p>
         </div>
 
