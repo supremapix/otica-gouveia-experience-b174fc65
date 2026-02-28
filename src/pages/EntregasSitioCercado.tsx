@@ -39,10 +39,10 @@ const EntregasSitioCercado = () => {
   };
 
   const passos = [
-    { num: "1", icon: "📱", titulo: "Envie sua Receita", desc: "Tire uma foto da sua receita de óculos e envie pelo WhatsApp. Nossa equipe analisa em minutos." },
-    { num: "2", icon: "👓", titulo: "Escolha seus Óculos", desc: "Veja opções de armações e lentes que combinam com você. Enviamos fotos e vídeos para facilitar a escolha." },
-    { num: "3", icon: "💳", titulo: "Pague com Segurança", desc: "PIX, cartão em até 10x ou transferência. Só liberamos após confirmação do pagamento." },
-    { num: "4", icon: "🚚", titulo: "Receba em Casa", desc: "Entregamos no Sítio Cercado com nosso motoboy parceiro. Grátis para compras acima de R$ 250!" },
+    { num: "1", icon: "📱", titulo: "Envie sua Receita", desc: "Para óculos de grau, envie a receita do oftalmologista pelo WhatsApp. Para óculos de sol e lentes de contato, basta nos contatar!" },
+    { num: "2", icon: "👓", titulo: "Escolha seus Óculos", desc: "Óculos de sol e lentes de contato: escolha online pelo WhatsApp. Óculos de grau: venha à loja no Umbará para escolher a armação." },
+    { num: "3", icon: "📐", titulo: "Medição Presencial (Grau)", desc: "Para lentes de grau, compareça à loja para medição com Visioffice 3. Óculos de sol e lentes de contato não precisam dessa etapa." },
+    { num: "4", icon: "🚚", titulo: "Receba em Casa", desc: "Entregamos no Sítio Cercado via motoboy! Compras acima de R$ 250 com entrega inclusa." },
   ];
 
   return (
@@ -80,8 +80,8 @@ const EntregasSitioCercado = () => {
               <span className="text-[#FFD700]">no Sítio Cercado · Curitiba (PR)</span>
             </h1>
             <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
-              Nossa loja fica no Umbará. Compre pelo WhatsApp e receba seus óculos de grau, sol e lentes de contato 
-              via motoboy no Sítio Cercado. Compras acima de R$ 250 com entrega inclusa!
+              Nossa loja fica no Umbará. Óculos de sol e lentes de contato podem ser pedidos pelo WhatsApp e entregues via motoboy. 
+              Para óculos de grau, traga sua receita e venha à loja para medição presencial — após a confecção, entregamos no Sítio Cercado!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
@@ -139,15 +139,13 @@ const EntregasSitioCercado = () => {
               por isso criamos um serviço de <strong>entrega domiciliar de óculos</strong> prático e acessível.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              O processo é 100% seguro: você envia a receita pelo WhatsApp <strong>(41) 99161-0663</strong>, 
-               nossa equipe faz uma curadoria de armações dentro do seu perfil e orçamento, 
-               você aprova pelo WhatsApp, realiza o pagamento (PIX, cartão ou transferência) 
-               e após a fabricação, informamos a data exata da entrega dos seus óculos no Sítio Cercado. O prazo de fabricação pode variar conforme o tipo de lente e tratamento escolhido.
+              O processo é 100% seguro: você envia a receita pelo WhatsApp <strong>(41) 99161-0663</strong>. 
+              <strong>Para óculos de grau, é necessário comparecer presencialmente à loja no Umbará</strong> para 
+              medição com Visioffice 3 — garantindo que suas lentes fiquem perfeitas. Após a confecção, entregamos via motoboy no Sítio Cercado.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Para garantir a qualidade das lentes entregues, utilizamos o <strong>Visioffice 3 da Essilor</strong> — 
-              equipamento de medição de alta precisão — na fabricação de todos os óculos. 
-              Isso garante que mesmo sem uma visita presencial, suas lentes sejam fabricadas com os parâmetros corretos.
+              Já para <strong>óculos de sol sem grau e lentes de contato</strong>, todo o processo pode ser feito 
+              <strong> pelo WhatsApp sem sair de casa</strong>! Escolha o modelo, pague por PIX ou cartão, e receba via motoboy.
             </p>
             <p className="text-gray-700 leading-relaxed">
               Além do Sítio Cercado, também fazemos entregas nos bairros vizinhos: 

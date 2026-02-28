@@ -12,6 +12,7 @@ import OnlineCounter from '../components/OnlineCounter';
 import SEO from '../components/SEO';
 import InfiniteNeighborhoodSlider from '../components/InfiniteNeighborhoodSlider';
 import VisiofficeSection from '../components/VisiofficeSection';
+import PrescriptionNotice from '../components/PrescriptionNotice';
 import NeighborhoodsSection from '../components/NeighborhoodsSection';
 import TipsSection from '../components/TipsSection';
 import WhatsAppFloat from '../components/WhatsAppFloat';
@@ -141,6 +142,8 @@ const Index = () => {
       <ErrorBoundary componentName="VisiofficeSection" fallback={<div className="p-4">Error</div>}>
         <VisiofficeSection />
       </ErrorBoundary>
+
+      <PrescriptionNotice />
       
       <section id="products">
         <ErrorBoundary componentName="Products" fallback={<div className="p-4">Error</div>}>

@@ -9,12 +9,12 @@ const WhyChooseSection = ({ neighborhoodName }: WhyChooseSectionProps) => {
     {
       icon: Truck,
       title: 'Loja no Umbará, Entrega no Seu Bairro',
-      description: `Nossa loja fica no Umbará (R. Nicola Pellanda, 1286). Após sua compra, entregamos via motoboy no ${neighborhoodName}. Compras acima de R$ 250 com entrega inclusa.`,
+      description: `Nossa loja fica no Umbará (R. Nicola Pellanda, 1286). Óculos de sol e lentes de contato podem ser pedidos pelo WhatsApp. Para óculos de grau, venha à loja com sua receita. Após a compra, entregamos via motoboy no ${neighborhoodName}.`,
     },
     {
       icon: Zap,
       title: 'Tecnologia Visioffice 3',
-      description: 'Medição digital de alta precisão em segundos com tecnologia Essilor. Visite nossa loja no Umbará e saia com lentes perfeitas para seus olhos.',
+      description: 'Para óculos de grau, traga sua receita e venha à loja no Umbará para medição presencial com Visioffice 3. Em 5 minutos, suas lentes ficam perfeitamente calibradas.',
     },
     {
       icon: Users,

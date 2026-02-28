@@ -29,10 +29,10 @@ const OticaBarataCuritiba = () => {
   };
 
   const ofertas = [
-    { categoria: "Óculos Completos Monofocal", preco: "A partir de R$ 199,90", descricao: "Armação + lentes monofocais com anti-reflexo básico. Ideal para miopia, hipermetropia ou astigmatismo." },
-    { categoria: "Óculos Completos Multifocal", preco: "A partir de R$ 499,90", descricao: "Armação + lentes progressivas digitais. Perfeito para quem precisa de correção para perto e longe." },
-    { categoria: "Óculos de Sol com Grau", preco: "A partir de R$ 299,90", descricao: "Armação de sol + lentes com sua graduação. Proteção UV 400 e estilo em um só produto." },
-    { categoria: "Lentes de Contato", preco: "A partir de R$ 89,90/cx", descricao: "Lentes descartáveis mensais das melhores marcas. Consulte disponibilidade para seu grau." },
+    { categoria: "Óculos Completos Monofocal", preco: "A partir de R$ 199,90", descricao: "Armação + lentes monofocais com anti-reflexo. Necessário trazer receita e vir à loja para medição presencial com Visioffice 3." },
+    { categoria: "Óculos Completos Multifocal", preco: "A partir de R$ 499,90", descricao: "Armação + lentes progressivas digitais. Necessário comparecer presencialmente para medição com Visioffice 3." },
+    { categoria: "Óculos de Sol com Grau", preco: "A partir de R$ 299,90", descricao: "Armação de sol + lentes graduadas. Necessário trazer receita e fazer medição presencial na loja." },
+    { categoria: "Lentes de Contato", preco: "A partir de R$ 89,90/cx", descricao: "Peça pelo WhatsApp sem precisar vir à loja! Lentes descartáveis mensais. Entrega via motoboy." },
   ];
 
   return (
@@ -67,9 +67,13 @@ const OticaBarataCuritiba = () => {
               Ótica Barata em Curitiba<br />
               <span className="text-[#FFD700]">com Qualidade Garantida</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
+            <p className="text-lg md:text-xl text-white/85 mb-4 max-w-2xl">
               Preço acessível não precisa significar qualidade inferior. Na Ótica Gouveia você paga 
               o justo e recebe o melhor — lentes digitais, tecnologia Visioffice 3 e marcas reconhecidas.
+            </p>
+            <p className="text-sm text-white/60 mb-8 max-w-2xl">
+              👓 Óculos de grau: traga sua receita e venha à loja no Umbará para medição presencial. 
+              🕶️ Óculos de sol e lentes de contato: peça pelo WhatsApp sem sair de casa!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
@@ -147,10 +151,15 @@ const OticaBarataCuritiba = () => {
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               Nossos <strong>óculos completos de grau</strong> começam em <strong>R$ 199,90</strong> — 
-              armação + lentes monofocais com tratamento anti-reflexo. Para quem busca <strong>óculos baratos em Curitiba</strong> 
-              sem abrir mão da precisão óptica, usamos o <strong>Visioffice 3 da Essilor</strong> para medir 
-              todos os parâmetros do seu rosto gratuitamente, garantindo que mesmo as lentes mais acessíveis 
-              sejam perfeitamente centralizadas.
+              armação + lentes monofocais com tratamento anti-reflexo. <strong>Para confeccionar óculos de grau, 
+              é necessário trazer sua receita médica e comparecer presencialmente à loja</strong> para 
+              que possamos realizar a medição precisa com o <strong>Visioffice 3 da Essilor</strong>. 
+              Essa etapa garante que as lentes fiquem perfeitamente alinhadas aos seus olhos.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Já para <strong>óculos de sol sem grau</strong> e <strong>lentes de contato</strong>, 
+              você pode pedir pelo WhatsApp sem precisar vir à loja! Enviamos fotos dos modelos 
+              disponíveis e entregamos via motoboy no conforto da sua casa.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               Para quem busca <strong>marcas premium com preço justo</strong>, temos Ray-Ban, Oakley e outras 
@@ -158,10 +167,10 @@ const OticaBarataCuritiba = () => {
               <strong> 10x sem juros</strong> no cartão de crédito e oferecemos <strong>desconto no PIX</strong>.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Nossa loja fica na <strong>Rua Nicola Pellanda, 1286 — Pinheirinho, Curitiba</strong>. 
-              Entregamos em <strong>toda Curitiba gratuitamente</strong> para compras acima de R$ 250. 
-              Para quem quer <strong>óculos baratos com entrega em casa</strong>, basta enviar sua receita 
-              pelo WhatsApp e receber tudo no conforto do lar, sem custo adicional de frete.
+              Nossa loja fica na <strong>Rua Nicola Pellanda, 1286 — Umbará, Curitiba</strong>. 
+              Após a compra na loja, entregamos via motoboy em toda Curitiba — compras acima de R$ 250 
+              com entrega inclusa. <strong>Óculos de sol e lentes de contato</strong> podem ser pedidos 
+              diretamente pelo WhatsApp e recebidos em casa sem necessidade de visita presencial.
             </p>
           </div>
         </section>

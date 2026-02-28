@@ -64,7 +64,7 @@ const TerminalSitioCercado = () => {
             </h1>
             <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
               Nossa loja fica no Umbará, a apenas 10 minutos do Terminal Sítio Cercado. 
-              Compre na loja e receba em casa via motoboy — compras acima de R$ 250 com entrega inclusa!
+              Para óculos de grau, traga sua receita e venha à loja para medição. Óculos de sol e lentes de contato: peça pelo WhatsApp! Compras acima de R$ 250 com entrega inclusa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
@@ -103,12 +103,12 @@ const TerminalSitioCercado = () => {
                 <div className="text-4xl mb-4">🚚</div>
                 <h3 className="text-xl font-bold text-[#001440] mb-3">Receba em Casa — Sem Sair!</h3>
                 <ol className="space-y-3 text-gray-700">
-                  <li className="flex gap-3"><span className="bg-[#25D366] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">1</span> Envie sua receita pelo WhatsApp</li>
-                  <li className="flex gap-3"><span className="bg-[#25D366] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">2</span> Escolha armação e lentes</li>
-                  <li className="flex gap-3"><span className="bg-[#25D366] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">3</span> Pague com segurança</li>
-                  <li className="flex gap-3"><span className="bg-[#25D366] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">4</span> Receba no Sítio Cercado gratuitamente!</li>
+                  <li className="flex gap-3"><span className="bg-[#25D366] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">1</span> Entre em contato pelo WhatsApp</li>
+                  <li className="flex gap-3"><span className="bg-[#25D366] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">2</span> Óculos de sol e lentes de contato: escolha online</li>
+                  <li className="flex gap-3"><span className="bg-[#25D366] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">3</span> Óculos de grau: venha à loja com receita para medição</li>
+                  <li className="flex gap-3"><span className="bg-[#25D366] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">4</span> Após confecção, receba via motoboy no Sítio Cercado!</li>
                 </ol>
-                <p className="text-sm text-gray-500 mt-4">🎁 Frete grátis para compras acima de R$ 250</p>
+                <p className="text-sm text-gray-500 mt-4">🏍️ Compras acima de R$ 250 com entrega inclusa</p>
               </div>
             </div>
           </div>
@@ -125,15 +125,15 @@ const TerminalSitioCercado = () => {
               ou aproximadamente 10 minutos de carro pela Rua Izaac Ferreira da Cruz.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Para moradores que utilizam o Terminal Sítio Cercado como ponto de partida para o trabalho ou compras, 
-              nossa ótica é a opção mais conveniente da zona sul. Oferecemos <strong>óculos de grau completos</strong>, 
-              <strong>lentes digitais com tecnologia Visioffice 3 Essilor</strong>, <strong>óculos de sol das melhores marcas</strong>, 
-              <strong>lentes de contato</strong> e <strong>serviços de conserto</strong>.
+              Para moradores que utilizam o Terminal Sítio Cercado como ponto de partida, nossa ótica é a opção 
+              mais conveniente da zona sul. <strong>Para óculos de grau, é necessário trazer a receita médica e 
+              comparecer à loja</strong> para medição com Visioffice 3 — garantindo lentes perfeitas para seus olhos. 
+              Após a confecção, entregamos via motoboy.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Para sua comodidade, também oferecemos <strong>entrega gratuita no Sítio Cercado e bairros vizinhos</strong> para compras 
-              acima de R$ 250,00. Basta enviar sua receita pelo WhatsApp <strong>(41) 99161-0663</strong>, escolher seus óculos, 
-              e receber em casa sem custo de entrega.
+              Já <strong>óculos de sol sem grau e lentes de contato</strong> podem ser pedidos 
+              <strong> pelo WhatsApp</strong> sem necessidade de visita presencial. Escolha o modelo, 
+              pague por PIX ou cartão, e receba em casa via motoboy. Compras acima de R$ 250 com entrega inclusa.
             </p>
             <p className="text-gray-700 leading-relaxed">
               Atendemos também moradores dos bairros próximos ao Terminal Sítio Cercado: 

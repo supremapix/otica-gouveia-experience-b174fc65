@@ -10,14 +10,14 @@ const services = [
   {
     icon: Glasses,
     title: 'Óculos de Grau',
-    description: 'Armações das melhores marcas com lentes personalizadas para sua necessidade',
-    highlight: 'Parcelamos',
+    description: 'Traga sua receita e venha à loja no Umbará para medição presencial. Após a confecção, entregamos via motoboy.',
+    highlight: 'Presencial',
   },
   {
     icon: Sun,
     title: 'Óculos de Sol',
-    description: 'Proteção UV garantida com as marcas mais desejadas do mercado',
-    highlight: 'Originais',
+    description: 'Peça pelo WhatsApp sem precisar vir à loja! Marcas originais com proteção UV. Entrega via motoboy.',
+    highlight: 'Online',
   },
 ];
 

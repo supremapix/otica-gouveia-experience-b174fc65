@@ -114,10 +114,13 @@ const ConsertoOculosSitioCercado = () => {
         <section className="py-12 bg-[#001440] text-white">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div className="text-5xl mb-4">🚚</div>
-            <h2 className="text-2xl md:text-3xl font-black mb-3">Entrega Grátis no Sítio Cercado</h2>
-            <p className="text-white/80 text-lg mb-6">
-              Não precisa sair de casa! Envie foto dos seus óculos pelo WhatsApp, faça o orçamento 
-              e receba o conserto entregue direto no Sítio Cercado. Grátis para compras/serviços acima de R$ 250.
+            <h2 className="text-2xl md:text-3xl font-black mb-3">Loja no Umbará — Entrega Via Motoboy</h2>
+            <p className="text-white/80 text-lg mb-4">
+              Envie foto dos seus óculos pelo WhatsApp para orçamento de conserto. 
+              Após o serviço, entregamos via motoboy no Sítio Cercado — compras/serviços acima de R$ 250 com entrega inclusa.
+            </p>
+            <p className="text-white/60 text-sm mb-6">
+              ⚠️ Para óculos com lentes de grau novas, é necessário comparecer à loja com receita médica para medição presencial.
             </p>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#FFD700] text-[#001440] font-bold text-lg px-8 py-4 rounded-full hover:bg-yellow-300 transition-all">
