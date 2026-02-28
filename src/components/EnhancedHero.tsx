@@ -114,9 +114,9 @@ const EnhancedHero: React.FC<EnhancedHeroProps> = ({
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-            <div className="text-3xl mb-3">🚚</div>
-            <h3 className="text-white font-semibold mb-2">Entrega Rápida</h3>
-            <p className="text-white/80 text-sm">Seus óculos prontos em até 7 dias úteis</p>
+             <div className="text-3xl mb-3">🚚</div>
+             <h3 className="text-white font-semibold mb-2">Entrega Agendada</h3>
+             <p className="text-white/80 text-sm">Informamos a data de entrega após o pedido</p>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">

@@ -54,7 +54,7 @@ const services = [
     Icon: Truck,
     title: 'Entrega Grátis em Casa',
     description: 'Compras acima de R$250 têm frete grátis para toda Curitiba e região. Receba seus óculos completos (armação + lentes) em casa ou no trabalho, de segunda a sexta-feira.',
-    features: ['Frete grátis a partir de R$250', 'Entrega em 24–48h', 'Curitiba e Região Metropolitana', 'Seg a Sex, horário comercial', 'Rastreamento da entrega'],
+    features: ['Frete grátis a partir de R$250', 'Prazo informado após o pedido', 'Curitiba e Região Metropolitana', 'Seg a Sex, horário comercial', 'Rastreamento da entrega'],
     BadgeIcon: Truck,
     badge: 'FRETE GRÁTIS',
     cta: 'Pedir com Entrega',
