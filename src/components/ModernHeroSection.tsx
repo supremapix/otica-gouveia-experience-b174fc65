@@ -43,21 +43,21 @@ const ModernHeroSection = ({
 
   const slides: SlideData[] = [
     {
-      badge: 'ENTREGA GRÁTIS',
-      badgeIcon: '🚚',
-      title: `Entrega Grátis no ${neighborhoodName}`,
-      subtitle: 'Comprando R$ 250+ levamos até você!',
-      description: 'Óculos completos • Lentes de contato • Acessórios — prazo informado após o pedido',
-      ctaText: 'PEDIR ENTREGA GRÁTIS',
+      badge: 'DELIVERY ÓPTICO',
+      badgeIcon: '🏍️',
+      title: `Seus Óculos Chegam no ${neighborhoodName}`,
+      subtitle: 'Nossa loja fica no Umbará — e o motoboy leva até você!',
+      description: 'Compre na loja ou pelo WhatsApp e receba em casa. Compras acima de R$ 250 com entrega inclusa.',
+      ctaText: 'QUERO RECEBER EM CASA',
       ctaUrl: whatsappUrl,
       ctaStyle: 'primary',
     },
     {
       badge: 'TECNOLOGIA EXCLUSIVA',
       badgeIcon: '⚡',
-      title: 'Visioffice 3 no Seu Bairro',
-      subtitle: 'Medição de alta precisão',
-      description: 'Lentes digitais personalizadas com tecnologia Essilor em minutos',
+      title: 'Precisão Visioffice 3',
+      subtitle: 'Lentes sob medida para seus olhos',
+      description: 'Medição digital em segundos com tecnologia Essilor. Visite nossa loja no Umbará e surpreenda-se.',
       ctaText: 'AGENDAR MEDIÇÃO',
       ctaUrl: whatsappUrl,
       ctaStyle: 'primary',
@@ -65,10 +65,10 @@ const ModernHeroSection = ({
     {
       badge: '2ª VIA COM 50% OFF',
       badgeIcon: '💎',
-      title: 'Promoção Especial',
-      subtitle: 'Quebrou ou perdeu?',
-      description: 'Fazemos a 2ª via das suas lentes com desconto especial para moradores do ' + neighborhoodName,
-      ctaText: 'SEGUNDA VIA DESCONTO',
+      title: 'Quebrou? A Gente Resolve!',
+      subtitle: 'Segunda via de lentes com desconto',
+      description: `Moradores do ${neighborhoodName} têm condições especiais. Loja no Umbará com entrega via motoboy.`,
+      ctaText: 'SOLICITAR 2ª VIA',
       ctaUrl: whatsappUrl,
       ctaStyle: 'green',
     },
@@ -131,7 +131,7 @@ const ModernHeroSection = ({
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium text-primary">
-                  {isMainUnit ? 'Nossa Loja Física' : `Atendemos ${neighborhoodName}`}
+                  {isMainUnit ? 'Nossa Loja no Umbará' : `Loja no Umbará • Entrega no ${neighborhoodName}`}
                 </span>
               </div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 border border-accent/30 rounded-full animate-pulse">
@@ -262,9 +262,9 @@ const ModernHeroSection = ({
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
-              {/* Badge entrega grátis flutuante */}
+              {/* Badge delivery flutuante */}
               <div className="absolute top-4 left-4 px-4 py-2 bg-accent text-accent-foreground rounded-full text-sm font-bold shadow-lg animate-pulse">
-                🚚 Entrega Grátis*
+                🏍️ Entregamos no seu bairro!
               </div>
 
               {isMainUnit && address && (

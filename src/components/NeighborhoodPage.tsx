@@ -30,7 +30,7 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
   const whatsappUrl = `https://wa.me/554199161663?text=${whatsappMessage}`;
 
   const isMainUnit = ['Pinheirinho', 'Sítio Cercado', 'Umbará'].includes(data.name);
-  const address = data.name === 'Pinheirinho' ? 'R. Nicola Pellanda, 1286 - Pinheirinho, Curitiba - PR' : undefined;
+  const address = data.name === 'Umbará' ? 'R. Nicola Pellanda, 1286 - Umbará, Curitiba - PR' : undefined;
 
   useEffect(() => {
     const handleScroll = () => {

@@ -33,10 +33,10 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
             <Truck className="w-8 h-8 text-primary" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Área de Entrega no {neighborhoodName}
+            Entregamos no {neighborhoodName} Via Motoboy
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Entrega grátis* para todo o bairro {neighborhoodName} em compras acima de R$ 250,00
+            Nossa loja fica no Umbará. Compras acima de R$ 250 incluem entrega via motoboy no {neighborhoodName} e região.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
                 <span className="font-medium text-foreground">Ótica Gouveia</span>
               </div>
               <p className="text-xs text-muted-foreground mt-1">
-                Rua Nicola Pellanda, 1286 - Pinheirinho
+                R. Nicola Pellanda, 1286 - Umbará, Curitiba
               </p>
             </div>
           </div>
@@ -68,7 +68,7 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
           <div className="bg-card rounded-xl p-8 shadow-lg">
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
               <Check className="w-6 h-6 text-green-500" />
-              Áreas com Entrega Grátis*
+              Bairros com Entrega Via Motoboy
             </h3>
             
             <div className="grid grid-cols-2 gap-3">
@@ -90,7 +90,7 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
             </div>
 
             <p className="text-xs text-muted-foreground mt-6">
-              *Compras acima de R$ 250,00. Consulte condições para outras áreas.
+              Compras acima de R$ 250 com entrega inclusa. Loja no Umbará — R. Nicola Pellanda, 1286.
             </p>
 
             <a

@@ -42,14 +42,14 @@ const FinalCTASection = ({
 
           {/* Título */}
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Agende Seu Exame de Vista{' '}
-            <span className="text-accent">Grátis</span> no {neighborhoodName}
+            Venha à Nossa Loja no{' '}
+            <span className="text-accent">Umbará</span> — Entregamos no {neighborhoodName}!
           </h2>
 
           {/* Subtítulo */}
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Não deixe para depois! Cuide da sua visão com quem tem mais de 40 anos de experiência. 
-            Atendimento imediato via WhatsApp.
+            Cuide da sua visão com quem tem mais de 40 anos de experiência. 
+            Compre na loja e receba seus óculos via motoboy no conforto da sua casa.
           </p>
 
           {/* CTAs */}
@@ -84,7 +84,7 @@ const FinalCTASection = ({
             <div className="flex items-center gap-3 text-white">
               <MapPin className="w-5 h-5 text-accent" />
               <span className="text-sm md:text-base">
-                R. Nicola Pellanda, 1286 - Pinheirinho
+                R. Nicola Pellanda, 1286 - Umbará, Curitiba
               </span>
             </div>
             <div className="hidden sm:block w-px h-8 bg-white/30" />
