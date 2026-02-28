@@ -62,7 +62,7 @@ const Index = () => {
     "@graph": [
       createOrganizationSchema(),
       createWebsiteSchema(),
-      createLocalBusinessSchema("Curitiba")
+      createLocalBusinessSchema("Umbará")
     ]
   };
 
@@ -109,10 +109,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <SEO 
-        title="Ótica Gouveia - Óculos de Grau, Sol e Lentes em Curitiba"
-        description="Ótica Gouveia em Curitiba - Óculos de grau, sol e lentes de contato. Atendemos Pinheirinho, Umbará e região. Qualidade e tradição há anos."
-        keywords="ótica curitiba, óculos grau curitiba, óculos sol curitiba, lentes contato curitiba, ótica pinheirinho, ótica umbará, ótica gouveia"
-        canonicalUrl="/"
+         title="Ótica Gouveia Umbará - Óculos de Grau, Sol e Lentes em Curitiba"
+         description="Ótica Gouveia no Umbará, Curitiba - Óculos de grau, sol e lentes de contato. Atendemos Umbará, Sítio Cercado, Xaxim e região. Qualidade e tradição há anos."
+         keywords="ótica umbará, ótica curitiba, óculos grau umbará, óculos sol curitiba, lentes contato curitiba, ótica gouveia umbará"
+         canonicalUrl="/"
         structuredData={combinedSchema}
         ogType="website"
       />

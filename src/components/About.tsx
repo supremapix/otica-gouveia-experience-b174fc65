@@ -19,7 +19,7 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-brand-gray-700">
               <p>
-                A história da Ótica Gouveia Pinheirinho não se resume apenas a óculos e lentes. É a história de uma família que 
+                A história da Ótica Gouveia Umbará não se resume apenas a óculos e lentes. É a história de uma família que 
                 transformou a loja em um lar acolhedor para clientes e colaboradores.
               </p>
               <p>
@@ -28,7 +28,7 @@ const About = () => {
                 para oferecer uma experiência única e personalizada.
               </p>
               <p>
-                Na Ótica Gouveia Pinheirinho, cada cliente é tratado com carinho e respeito. A equipe, formada por profissionais 
+                Na Ótica Gouveia Umbará, cada cliente é tratado com carinho e respeito. A equipe, formada por profissionais 
                 experientes e apaixonados, dedica-se a entender as necessidades de cada um, desde o exame de vista completo até a 
                 escolha da armação ideal.
               </p>

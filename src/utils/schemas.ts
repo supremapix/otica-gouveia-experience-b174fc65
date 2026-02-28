@@ -11,7 +11,7 @@ export const createOrganizationSchema = () => ({
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Rua Nicola Pellanda, 1286",
-    "addressLocality": "Pinheirinho",
+    "addressLocality": "Umbará",
     "addressRegion": "PR",
     "postalCode": "81880-000",
     "addressCountry": "BR"

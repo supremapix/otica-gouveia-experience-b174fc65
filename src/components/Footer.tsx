@@ -86,7 +86,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-accent-gold transition-colors text-[15px]"
                 >
-                  R. Nicola Pellanda, 1286 - Pinheirinho, Curitiba - PR, 81880-000
+                  R. Nicola Pellanda, 1286 - Umbará, Curitiba - PR, 81880-000
                 </a>
               </li>
               <li className="flex items-center gap-3" style={{ minHeight: '44px' }}>
