@@ -8,11 +8,11 @@ const slides = [
     badge: '🔥 OFERTA ESPECIAL',
     title: 'Óculos Completos',
     subtitle: 'Armação + Lentes a partir de R$ 199,90',
-    description: 'Lentes digitais com precisão Visioffice 3 da Essilor',
+    description: 'Lentes digitais com precisão Visioffice 3 da Essilor. Venha à loja no Umbará!',
     cta1: { label: 'PEDIR ORÇAMENTO', href: WHATSAPP_URL },
     cta2: { label: 'VER PROMOÇÕES', href: '#products' },
     image: '/lovable-uploads/otica-gouveia-carolina-herrera.png',
-    gradient: 'linear-gradient(135deg, hsl(225,100%,13%) 0%, hsl(221,100%,30%) 100%)',
+    gradient: 'linear-gradient(135deg, hsl(0,75%,30%) 0%, hsl(0,70%,45%) 100%)',
   },
   {
     badge: '⚡ TECNOLOGIA EXCLUSIVA',
@@ -26,16 +26,16 @@ const slides = [
     ],
     cta1: { label: 'SAIBA MAIS', href: '#services' },
     image: '/lovable-uploads/4a29b99c-56aa-418b-be88-b850f3f0cc76.png',
-    gradient: 'linear-gradient(135deg, hsl(225,100%,13%) 0%, hsl(225,80%,22%) 100%)',
+    gradient: 'linear-gradient(135deg, hsl(0,75%,30%) 0%, hsl(0,60%,40%) 100%)',
   },
   {
     badge: '📍 LOJA NO UMBARÁ',
     title: 'Visite Nossa Loja no Umbará',
-    subtitle: 'Compre na loja e receba em casa via motoboy!',
-    description: 'R. Nicola Pellanda, 1286 — Umbará, Curitiba. Entrega para toda a região em compras acima de R$ 250.',
+    subtitle: 'Atendimento especializado para a melhor idade!',
+    description: 'R. Nicola Pellanda, 1286 — Umbará, Curitiba. Traga sua receita e retire seus óculos com ajuste perfeito.',
     cta1: { label: 'COMO CHEGAR', href: 'https://maps.app.goo.gl/GhqcM45P9vZA8jMN9' },
     image: '/lovable-uploads/otica-gouveia-fachada.png',
-    gradient: 'linear-gradient(135deg, hsl(225,100%,13%) 0%, hsl(221,80%,20%) 100%)',
+    gradient: 'linear-gradient(135deg, hsl(0,75%,30%) 0%, hsl(0,60%,38%) 100%)',
     overlay: true,
   },
 ];
@@ -75,7 +75,7 @@ const HeroSlider = () => {
       {slide.overlay && (
         <div className="absolute inset-0">
           <img src={slide.image} alt="" className="w-full h-full object-cover opacity-20" />
-          <div className="absolute inset-0" style={{ background: 'hsla(225,100%,13%,0.75)' }} />
+          <div className="absolute inset-0" style={{ background: 'hsla(0,75%,30%,0.75)' }} />
         </div>
       )}
 
@@ -85,9 +85,9 @@ const HeroSlider = () => {
           <div key={animKey} className="animate-slide-up">
             {/* Badge */}
             <div className="inline-flex items-center px-4 py-2 rounded-pill mb-6 animate-badge-pulse"
-              style={{ backgroundColor: 'hsla(48, 100%, 50%, 0.15)', border: '1px solid hsla(48, 100%, 50%, 0.3)' }}
+              style={{ backgroundColor: 'hsla(0, 0%, 100%, 0.15)', border: '1px solid hsla(0, 0%, 100%, 0.3)' }}
             >
-              <span className="text-sm font-bold" style={{ color: 'hsl(48, 100%, 50%)' }}>
+              <span className="text-sm font-bold text-white">
                 {slide.badge}
               </span>
             </div>
@@ -100,8 +100,8 @@ const HeroSlider = () => {
             </h1>
 
             {/* Subtitle */}
-            <p className="font-bold mb-4" 
-              style={{ fontSize: 'clamp(18px, 3vw, 32px)', color: 'hsl(48, 100%, 50%)' }}
+            <p className="font-bold mb-4 text-white/90" 
+              style={{ fontSize: 'clamp(18px, 3vw, 32px)' }}
             >
               {slide.subtitle}
             </p>
@@ -114,7 +114,7 @@ const HeroSlider = () => {
               <ul className="space-y-3 mb-8">
                 {slide.features.map((f, i) => (
                   <li key={i} className="flex items-center gap-3 text-white text-lg">
-                    <span style={{ color: 'hsl(48, 100%, 50%)' }}>✓</span> {f}
+                    <span className="text-white/80">✓</span> {f}
                   </li>
                 ))}
               </ul>
@@ -126,19 +126,14 @@ const HeroSlider = () => {
                 href={slide.cta1.href}
                 target={slide.cta1.href.startsWith('http') ? '_blank' : undefined}
                 rel={slide.cta1.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="inline-flex items-center justify-center px-8 py-4 rounded-pill font-bold text-base transition-all duration-300 hover:scale-105 shadow-xl"
-                style={{ 
-                  backgroundColor: slide.cta1.label === 'COMO CHEGAR' ? 'hsl(142, 70%, 49%)' : 'hsl(48, 100%, 50%)', 
-                  color: slide.cta1.label === 'COMO CHEGAR' ? '#fff' : 'hsl(225, 100%, 13%)' 
-                }}
+                className="inline-flex items-center justify-center px-8 py-4 rounded-pill font-bold text-base transition-all duration-300 hover:scale-105 shadow-xl bg-white text-primary"
               >
                 {slide.cta1.label}
               </a>
               {slide.cta2 && (
                 <a
                   href={slide.cta2.href}
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-pill font-bold text-base transition-all duration-300 hover:scale-105"
-                  style={{ border: '2px solid hsl(48, 100%, 50%)', color: 'hsl(48, 100%, 50%)' }}
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-pill font-bold text-base transition-all duration-300 hover:scale-105 border-2 border-white text-white hover:bg-white/10"
                 >
                   {slide.cta2.label}
                 </a>
@@ -171,9 +166,8 @@ const HeroSlider = () => {
                 key={i}
                 onClick={() => { setCurrent(i); setAnimKey((k) => k + 1); }}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  i === current ? 'w-8' : 'bg-white/30 hover:bg-white/50'
+                  i === current ? 'w-8 bg-white' : 'bg-white/30 hover:bg-white/50'
                 }`}
-                style={i === current ? { backgroundColor: 'hsl(48, 100%, 50%)' } : {}}
                 aria-label={`Slide ${i + 1}`}
               />
             ))}

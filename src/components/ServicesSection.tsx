@@ -1,4 +1,4 @@
-import { Eye, Glasses, Sun, Shield, Award, Users, Clock, Truck } from 'lucide-react';
+import { Eye, Glasses, Sun, Shield, Award, Users, Clock, MapPin } from 'lucide-react';
 
 const services = [
   {
@@ -10,14 +10,14 @@ const services = [
   {
     icon: Glasses,
     title: 'Óculos de Grau',
-    description: 'Traga sua receita e venha à loja no Umbará para medição presencial. Após a confecção, entregamos via motoboy.',
+    description: 'Traga sua receita e venha à loja no Umbará para medição presencial. Retire seus óculos prontos com ajuste perfeito no seu rosto.',
     highlight: 'Presencial',
   },
   {
     icon: Sun,
     title: 'Óculos de Sol',
-    description: 'Peça pelo WhatsApp sem precisar vir à loja! Marcas originais com proteção UV. Entrega via motoboy.',
-    highlight: 'Online',
+    description: 'Marcas originais com proteção UV. Visite nossa loja no Umbará e experimente antes de comprar!',
+    highlight: 'Na Loja',
   },
 ];
 
@@ -42,9 +42,9 @@ const steps = [
   },
   {
     number: '04',
-    title: 'Receba Via Motoboy',
-    description: 'Entrega inclusa acima de R$250 ou retire na loja no Umbará',
-    icon: Truck,
+    title: 'Retire na Loja',
+    description: 'Retire e teste seus óculos com ajuste presencial no Umbará',
+    icon: MapPin,
   },
 ];
 
@@ -52,7 +52,7 @@ const differentials = [
   { icon: Award, title: '+40 Anos', description: 'de Tradição' },
   { icon: Users, title: '+10.000', description: 'Clientes Atendidos' },
   { icon: Shield, title: 'Garantia', description: 'Total' },
-  { icon: Truck, title: 'Delivery', description: 'Via Motoboy' },
+  { icon: MapPin, title: 'Loja', description: 'no Umbará' },
 ];
 
 interface ServicesSectionProps {
@@ -107,7 +107,7 @@ const ServicesSection = ({ neighborhoodName }: ServicesSectionProps) => {
               >
                 {/* Badge */}
                 <div className="absolute -top-3 right-6">
-                  <span className="px-3 py-1 bg-accent text-accent-foreground text-xs font-bold rounded-full">
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full">
                     {service.highlight}
                   </span>
                 </div>

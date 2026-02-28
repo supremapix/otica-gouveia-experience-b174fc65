@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, Phone, MapPin, ChevronLeft, ChevronRight, Star, Truck, Clock, Shield } from 'lucide-react';
+import { MessageCircle, Phone, MapPin, ChevronLeft, ChevronRight, Star, Heart, Clock, Shield } from 'lucide-react';
 
 interface NeighborhoodHeroProps {
   title: string;
@@ -43,7 +43,7 @@ const NeighborhoodHero: React.FC<NeighborhoodHeroProps> = ({
   };
 
   const benefits = [
-    { icon: Truck, text: "Entrega via Motoboy" },
+    { icon: Heart, text: "Especialistas na Melhor Idade" },
     { icon: Clock, text: "Loja no Umbará" },
     { icon: Shield, text: "Garantia Total" },
     { icon: Star, text: "5★ Avaliações" },
@@ -109,7 +109,7 @@ const NeighborhoodHero: React.FC<NeighborhoodHeroProps> = ({
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-primary/90 text-primary-foreground px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 animate-fade-in">
             <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
-            <span>Atendemos {location} e região</span>
+            <span>Atendemos {location} — Loja no Umbará</span>
           </div>
 
           {/* Title */}
@@ -122,15 +122,6 @@ const NeighborhoodHero: React.FC<NeighborhoodHeroProps> = ({
             {subtitle}
           </p>
 
-          {/* Free Delivery Banner */}
-          <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-xl mb-6 sm:mb-8 inline-flex items-center gap-3 shadow-lg animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <Truck className="w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
-            <div>
-              <p className="font-bold text-sm sm:text-base">🏍️ ENTREGAMOS NO {location.toUpperCase()} VIA MOTOBOY</p>
-              <p className="text-xs sm:text-sm opacity-90">Loja no Umbará • Compras acima de R$ 250 com entrega inclusa</p>
-            </div>
-          </div>
-
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <a
@@ -139,7 +130,6 @@ const NeighborhoodHero: React.FC<NeighborhoodHeroProps> = ({
               rel="noopener noreferrer"
               className="group relative overflow-hidden bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl hover:scale-105"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 relative z-10 group-hover:animate-bounce" />
               <span className="relative z-10">Falar no WhatsApp</span>
             </a>

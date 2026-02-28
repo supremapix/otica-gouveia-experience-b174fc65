@@ -1,4 +1,4 @@
-import { Send, ShoppingBag, ScanLine, Truck } from 'lucide-react';
+import { Send, ShoppingBag, ScanLine, MapPin } from 'lucide-react';
 
 interface HowToBuySectionProps {
   neighborhoodName: string;
@@ -8,44 +8,44 @@ const steps = [
   {
     icon: Send,
     number: '1',
-    title: 'Envie Sua Receita',
-    description: 'WhatsApp, email ou foto. Para óculos de grau, traga a receita do oftalmologista.',
+    title: 'Agende pelo WhatsApp',
+    description: 'Entre em contato pelo WhatsApp ou telefone e agende seu atendimento na loja.',
   },
   {
     icon: ShoppingBag,
     number: '2',
-    title: 'Escolha Armação e Lentes',
-    description: 'Óculos de sol e lentes de contato: escolha online. Óculos de grau: visite a loja no Umbará.',
+    title: 'Traga Sua Receita',
+    description: 'Venha à loja no Umbará com a receita do seu oftalmologista e escolha sua armação.',
   },
   {
     icon: ScanLine,
     number: '3',
-    title: 'Medição Presencial (Grau)',
-    description: 'Para lentes de grau, venha à loja no Umbará para medição com Visioffice 3 (5 min). Óculos de sol e lentes de contato não precisam dessa etapa.',
+    title: 'Medição com Visioffice 3',
+    description: 'Realizamos a medição digital precisa no seu rosto — leva apenas 5 minutos.',
   },
   {
-    icon: Truck,
+    icon: MapPin,
     number: '4',
-    title: 'Motoboy Entrega Pra Você',
-    description: 'Após a confecção, entregamos via motoboy no seu bairro. Compras acima de R$ 250 com entrega inclusa.',
+    title: 'Retire e Teste na Loja',
+    description: 'Quando seus óculos ficarem prontos, venha à loja para retirar e testar se ficaram perfeitos.',
   },
 ];
 
 const HowToBuySection = ({ neighborhoodName }: HowToBuySectionProps) => {
-  const whatsappUrl = `https://wa.me/554199161663?text=${encodeURIComponent(`Olá! Moro no ${neighborhoodName} e gostaria de fazer um orçamento.`)}`;
+  const whatsappUrl = `https://wa.me/554199161663?text=${encodeURIComponent(`Olá! Moro no ${neighborhoodName} e gostaria de agendar um atendimento.`)}`;
 
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
-            🛒 Como Comprar
+            Passo a Passo
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3">
-            Como Comprar Online
+            Como Adquirir Seus Óculos
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Em 4 passos simples, seus óculos chegam até você no {neighborhoodName}
+            Em 4 passos simples, seus óculos ficam prontos — retire na loja com ajuste perfeito
           </p>
         </div>
 
@@ -53,8 +53,8 @@ const HowToBuySection = ({ neighborhoodName }: HowToBuySectionProps) => {
         <div className="max-w-3xl mx-auto">
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary hidden md:block" />
-            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary md:hidden" />
+            <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-primary hidden md:block" />
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-primary md:hidden" />
 
             {steps.map((step, index) => (
               <div
@@ -92,7 +92,7 @@ const HowToBuySection = ({ neighborhoodName }: HowToBuySectionProps) => {
             className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg min-h-[56px]"
           >
             <Send className="w-5 h-5" />
-            Começar Agora pelo WhatsApp
+            Agendar Atendimento pelo WhatsApp
           </a>
         </div>
       </div>

@@ -20,7 +20,7 @@ const FinalCTASection = ({
       {/* Decorações */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
         
         {/* Grid pattern */}
         <div 
@@ -37,22 +37,22 @@ const FinalCTASection = ({
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" />
-            Promoção Especial
+            Atendimento Especial para a Melhor Idade
           </div>
 
           {/* Título */}
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Venha à Nossa Loja no{' '}
-            <span className="text-accent">Umbará</span> — Entregamos no {neighborhoodName}!
+            Venha Nos Visitar no{' '}
+            <span className="text-white/90 underline decoration-white/40">Umbará</span>
           </h2>
 
           {/* Subtítulo */}
           <p className="text-lg md:text-xl text-white/80 mb-4 max-w-2xl mx-auto">
             Cuide da sua visão com quem tem mais de 40 anos de experiência. 
-            Compre na loja e receba seus óculos via motoboy no conforto da sua casa.
+            Atendimento carinhoso e especializado para a terceira idade.
           </p>
           <p className="text-sm text-white/60 mb-10 max-w-2xl mx-auto">
-            👓 Óculos de grau: traga sua receita e venha à loja para medição. 🕶️ Óculos de sol e lentes de contato: peça pelo WhatsApp sem sair de casa!
+            Traga sua receita, escolha sua armação e retire seus óculos com ajuste perfeito — tudo na mesma loja!
           </p>
 
           {/* CTAs */}
@@ -85,7 +85,7 @@ const FinalCTASection = ({
           {/* Informações da loja */}
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
             <div className="flex items-center gap-3 text-white">
-              <MapPin className="w-5 h-5 text-accent" />
+              <MapPin className="w-5 h-5 text-white/80" />
               <span className="text-sm md:text-base">
                 R. Nicola Pellanda, 1286 - Umbará, Curitiba
               </span>

@@ -1,4 +1,4 @@
-import { Truck, Zap, Users, Gem } from 'lucide-react';
+import { Heart, Zap, Users, Gem } from 'lucide-react';
 
 interface WhyChooseSectionProps {
   neighborhoodName: string;
@@ -7,19 +7,19 @@ interface WhyChooseSectionProps {
 const WhyChooseSection = ({ neighborhoodName }: WhyChooseSectionProps) => {
   const reasons = [
     {
-      icon: Truck,
-      title: 'Loja no Umbará, Entrega no Seu Bairro',
-      description: `Nossa loja fica no Umbará (R. Nicola Pellanda, 1286). Óculos de sol e lentes de contato podem ser pedidos pelo WhatsApp. Para óculos de grau, venha à loja com sua receita. Após a compra, entregamos via motoboy no ${neighborhoodName}.`,
+      icon: Heart,
+      title: 'Especialistas na Melhor Idade',
+      description: `Atendimento carinhoso e paciente para a terceira idade. Ajudamos a escolher as lentes multifocais ideais, com calma e atenção. Venha nos visitar no Umbará!`,
     },
     {
       icon: Zap,
       title: 'Tecnologia Visioffice 3',
-      description: 'Para óculos de grau, traga sua receita e venha à loja no Umbará para medição presencial com Visioffice 3. Em 5 minutos, suas lentes ficam perfeitamente calibradas.',
+      description: 'Traga sua receita e venha à loja no Umbará para medição presencial com Visioffice 3. Em 5 minutos, suas lentes ficam perfeitamente calibradas.',
     },
     {
       icon: Users,
-      title: 'Atendimento Especializado',
-      description: 'Nossa equipe tem mais de 15 anos de experiência. Explicamos tudo sobre sua receita e ajudamos a escolher a melhor opção para seu estilo de vida.',
+      title: 'Atendimento Personalizado',
+      description: 'Nossa equipe tem mais de 40 anos de experiência. Explicamos tudo sobre sua receita e ajudamos a escolher a melhor opção para seu dia a dia.',
     },
     {
       icon: Gem,
@@ -33,10 +33,10 @@ const WhyChooseSection = ({ neighborhoodName }: WhyChooseSectionProps) => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
-            ✨ Diferenciais
+            Diferenciais
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3">
-            Por Que Escolher a Gouveia no{' '}
+            Por Que Escolher a Gouveia para o{' '}
             <span className="text-primary">{neighborhoodName}</span>?
           </h2>
         </div>

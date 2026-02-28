@@ -35,15 +35,15 @@ const PrescriptionNotice = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold mt-0.5">2.</span>
-                  <span>Realizamos a <strong className="text-foreground">medição com Visioffice 3</strong> no seu rosto (leva apenas 5 minutos)</span>
+                  <span>Realizamos a <strong className="text-foreground">medição com Visioffice 3</strong> no seu rosto (5 minutos)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold mt-0.5">3.</span>
-                  <span>Após a confecção das lentes, <strong className="text-foreground">entregamos via motoboy</strong> no seu bairro</span>
+                  <span><strong className="text-foreground">Retire na loja</strong> para testar e ajustar seus óculos no rosto</span>
                 </li>
               </ul>
               <p className="text-sm bg-primary/5 rounded-lg p-3 border border-primary/10">
-                ⚠️ A medição presencial garante que suas lentes fiquem perfeitamente alinhadas aos seus olhos. Não é possível confeccionar lentes de grau sem essa etapa.
+                A retirada presencial garante que seus óculos estejam perfeitos — testamos e ajustamos no seu rosto antes de você levar.
               </p>
             </div>
           </div>
@@ -54,36 +54,37 @@ const PrescriptionNotice = () => {
               <div className="p-3 bg-green-500/10 rounded-xl">
                 <Sun className="w-7 h-7 text-green-600" />
               </div>
-              <h3 className="text-lg font-bold text-foreground">Óculos de Sol, Sem Grau e Lentes de Contato</h3>
+              <h3 className="text-lg font-bold text-foreground">Óculos de Sol e Lentes de Contato</h3>
             </div>
             <div className="space-y-3 text-muted-foreground text-[15px] leading-relaxed">
               <p>
-                Para <strong className="text-foreground">óculos de sol sem grau</strong>, <strong className="text-foreground">armações sem lentes graduadas</strong> e 
-                <strong className="text-foreground"> lentes de contato</strong>, você <strong className="text-foreground">não precisa vir até a loja</strong>!
+                Para <strong className="text-foreground">óculos de sol sem grau</strong> e 
+                <strong className="text-foreground"> lentes de contato</strong>, consulte disponibilidade 
+                pelo <strong className="text-foreground">WhatsApp</strong> e venha à loja experimentar!
               </p>
               <ul className="space-y-2 ml-1">
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold mt-0.5">✓</span>
-                  <span>Escolha pelo <strong className="text-foreground">WhatsApp</strong> — enviamos fotos e vídeos dos produtos</span>
+                  <span className="text-green-600 font-bold mt-0.5">1.</span>
+                  <span>Consulte pelo <strong className="text-foreground">WhatsApp</strong> — enviamos fotos e vídeos dos produtos</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold mt-0.5">✓</span>
-                  <span>Pague por <strong className="text-foreground">PIX, cartão ou transferência</strong></span>
+                  <span className="text-green-600 font-bold mt-0.5">2.</span>
+                  <span>Venha à loja <strong className="text-foreground">experimentar e comprar</strong></span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold mt-0.5">✓</span>
-                  <span>Receba no conforto da sua casa <strong className="text-foreground">via motoboy</strong></span>
+                  <span className="text-green-600 font-bold mt-0.5">3.</span>
+                  <span>Pague por <strong className="text-foreground">PIX, cartão ou dinheiro</strong></span>
                 </li>
               </ul>
               <p className="text-sm bg-green-500/5 rounded-lg p-3 border border-green-500/10">
-                🏍️ Compras acima de R$ 250 com entrega inclusa em Curitiba e região metropolitana.
+                Visite nossa loja no Umbará e experimente as melhores marcas pessoalmente!
               </p>
             </div>
           </div>
         </div>
 
         <p className="text-center text-muted-foreground text-sm mt-6">
-          📍 Nossa loja: <strong className="text-foreground">R. Nicola Pellanda, 1286 — Umbará, Curitiba</strong> | 
+          Nossa loja: <strong className="text-foreground">R. Nicola Pellanda, 1286 — Umbará, Curitiba</strong> | 
           Seg a Sex: 9h–18h | Sáb: 9h–13h
         </p>
       </div>
