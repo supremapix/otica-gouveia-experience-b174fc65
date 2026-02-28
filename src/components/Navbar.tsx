@@ -18,7 +18,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -31,7 +30,6 @@ const Navbar = () => {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, link: { href: string; page?: string }) => {
     e.preventDefault();
     setIsOpen(false);
-    // Se na home e tem âncora, faz scroll
     if (location.pathname === '/' && link.href.startsWith('#')) {
       const sectionId = link.href.replace('#', '');
       const el = document.getElementById(sectionId);
@@ -42,7 +40,6 @@ const Navbar = () => {
         return;
       }
     }
-    // Navega para a página individual
     navigate(link.page || '/');
   };
 
@@ -60,13 +57,13 @@ const Navbar = () => {
       <div className="bg-primary-dark text-primary-foreground py-2 px-4 hidden md:block">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="flex space-x-4 items-center text-sm">
-            <a href="tel:+554131140663" className="flex items-center hover:text-accent-gold transition-colors">
+            <a href="tel:+554131140663" className="flex items-center hover:text-white/80 transition-colors">
               <Phone className="h-3 w-3 mr-1" />
               <span>(41) 3114-0663</span>
             </a>
             <a 
               href={WHATSAPP_URL}
-              className="flex items-center hover:text-accent-gold transition-colors"
+              className="flex items-center hover:text-white/80 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -88,7 +85,7 @@ const Navbar = () => {
       <nav 
         className="w-full transition-all duration-300"
         style={{
-          backgroundColor: scrolled ? 'hsl(221, 100%, 19%)' : 'rgba(0, 20, 64, 0.2)',
+          backgroundColor: scrolled ? 'hsl(var(--primary))' : 'hsla(0, 75%, 42%, 0.2)',
           backdropFilter: scrolled ? 'none' : 'blur(8px)',
           boxShadow: scrolled ? '0 2px 20px rgba(0,0,0,0.15)' : 'none',
         }}
@@ -113,7 +110,7 @@ const Navbar = () => {
                     key={link.name}
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link)}
-                    className="text-white hover:text-accent-gold transition-colors text-sm lg:text-base font-semibold cursor-pointer"
+                    className="text-white hover:text-white/80 transition-colors text-sm lg:text-base font-semibold cursor-pointer"
                   >
                     {link.name}
                   </a>
@@ -122,18 +119,18 @@ const Navbar = () => {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-accent-gold text-primary-dark px-5 py-2.5 rounded-pill hover:bg-accent-gold-dark transition-all duration-300 hover:scale-105 text-sm lg:text-base font-bold"
+                  className="bg-white text-primary px-5 py-2.5 rounded-pill hover:bg-white/90 transition-all duration-300 hover:scale-105 text-sm lg:text-base font-bold"
                 >
                   Agendar Consulta
                 </a>
               </div>
             </div>
             
-            {/* Mobile Menu Button - 48x48 touch target */}
+            {/* Mobile Menu Button */}
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex items-center justify-center w-12 h-12 rounded-md text-white hover:text-accent-gold focus:outline-none focus:ring-2 focus:ring-accent-gold transition-colors"
+                className="inline-flex items-center justify-center w-12 h-12 rounded-md text-white hover:text-white/80 focus:outline-none focus:ring-2 focus:ring-white transition-colors"
                 aria-label="Abrir menu"
               >
                 {isOpen ? (
@@ -151,9 +148,8 @@ const Navbar = () => {
           className={`md:hidden fixed inset-0 top-0 z-[9999] transition-all duration-300 ease-in-out ${
             isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
           }`}
-          style={{ backgroundColor: 'hsl(221, 100%, 19%)' }}
+          style={{ backgroundColor: 'hsl(var(--primary))' }}
         >
-          {/* Close button */}
           <div className="flex justify-between items-center px-4 h-16">
             <Link to="/" onClick={() => setIsOpen(false)}>
               <img 
@@ -164,28 +160,26 @@ const Navbar = () => {
             </Link>
             <button
               onClick={() => setIsOpen(false)}
-              className="w-12 h-12 flex items-center justify-center text-white hover:text-accent-gold focus:outline-none focus:ring-2 focus:ring-accent-gold rounded-md"
+              className="w-12 h-12 flex items-center justify-center text-white hover:text-white/80 focus:outline-none focus:ring-2 focus:ring-white rounded-md"
               aria-label="Fechar menu"
             >
               <X className="h-8 w-8" strokeWidth={3} />
             </button>
           </div>
 
-          {/* Phone highlight at top */}
           <div className="px-6 py-3 border-b border-white/20">
-            <a href="tel:+554131140663" className="flex items-center text-accent-gold text-lg font-bold">
+            <a href="tel:+554131140663" className="flex items-center text-white text-lg font-bold">
               <Phone className="h-5 w-5 mr-2" />
               (41) 3114-0663
             </a>
           </div>
 
-          {/* Nav Links */}
           <div className="px-6 py-4 flex-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block py-[18px] text-[20px] font-bold text-white uppercase tracking-wide border-b border-white/20 hover:text-accent-gold transition-colors"
+                className="block py-[18px] text-[20px] font-bold text-white uppercase tracking-wide border-b border-white/20 hover:text-white/80 transition-colors"
                 onClick={(e) => handleNavClick(e, link)}
                 style={{ minHeight: '48px' }}
               >
@@ -194,19 +188,17 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Info at bottom */}
           <div className="px-6 pb-4 space-y-3">
             <div className="flex items-center text-white/80 text-sm">
-              <MapPin className="h-4 w-4 mr-2 flex-shrink-0 text-accent-gold" />
+              <MapPin className="h-4 w-4 mr-2 flex-shrink-0 text-white" />
               <span>R. Nicola Pellanda, 1286 - Umbará</span>
             </div>
             <div className="flex items-center text-white/80 text-sm">
-              <Clock className="h-4 w-4 mr-2 flex-shrink-0 text-accent-gold" />
+              <Clock className="h-4 w-4 mr-2 flex-shrink-0 text-white" />
               <span>Seg-Sex 9:00-18:00 | Sáb 9:00-13:00</span>
             </div>
           </div>
 
-          {/* WhatsApp CTA fixed at bottom of mobile menu */}
           <div className="px-6 pb-8">
             <a
               href={WHATSAPP_URL}

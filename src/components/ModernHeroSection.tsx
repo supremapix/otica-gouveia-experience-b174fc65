@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { MapPin, Phone, Calendar, Clock, Star, CheckCircle, ChevronRight, MessageCircle, Truck, Zap, Gift } from 'lucide-react';
+import { MapPin, Phone, Calendar, Clock, Star, CheckCircle, ChevronRight, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface ModernHeroSectionProps {
@@ -43,12 +43,12 @@ const ModernHeroSection = ({
 
   const slides: SlideData[] = [
     {
-      badge: 'DELIVERY ÓPTICO',
-      badgeIcon: '🏍️',
-      title: `Seus Óculos Chegam no ${neighborhoodName}`,
-      subtitle: 'Nossa loja fica no Umbará — e o motoboy leva até você!',
-      description: 'Óculos de sol e lentes de contato: peça pelo WhatsApp. Óculos de grau: traga sua receita e venha à loja para medição. Após a compra, entregamos via motoboy!',
-      ctaText: 'QUERO RECEBER EM CASA',
+      badge: 'CUIDADO COM SUA VISÃO',
+      badgeIcon: '👓',
+      title: `Sua Ótica de Confiança para o ${neighborhoodName}`,
+      subtitle: 'Atendimento especializado para a melhor idade — venha nos visitar!',
+      description: 'Loja no Umbará com mais de 40 anos de tradição. Traga sua receita, escolha suas armações e retire seus óculos com ajuste perfeito.',
+      ctaText: 'AGENDAR ATENDIMENTO',
       ctaUrl: whatsappUrl,
       ctaStyle: 'primary',
     },
@@ -56,8 +56,8 @@ const ModernHeroSection = ({
       badge: 'TECNOLOGIA EXCLUSIVA',
       badgeIcon: '⚡',
       title: 'Precisão Visioffice 3',
-      subtitle: 'Lentes sob medida para seus olhos',
-      description: 'Para lentes de grau, traga sua receita e venha à loja no Umbará. Medição digital em segundos com Visioffice 3 da Essilor.',
+      subtitle: 'Lentes sob medida para seus olhos — medição em 5 minutos',
+      description: 'Traga sua receita e venha à loja no Umbará. Medição digital com Visioffice 3 da Essilor para lentes perfeitas, especialmente multifocais.',
       ctaText: 'AGENDAR MEDIÇÃO',
       ctaUrl: whatsappUrl,
       ctaStyle: 'primary',
@@ -66,8 +66,8 @@ const ModernHeroSection = ({
       badge: '2ª VIA COM 50% OFF',
       badgeIcon: '💎',
       title: 'Quebrou? A Gente Resolve!',
-      subtitle: 'Segunda via de lentes com desconto',
-      description: `Moradores do ${neighborhoodName} têm condições especiais. Loja no Umbará com entrega via motoboy.`,
+      subtitle: 'Segunda via de lentes com desconto especial',
+      description: `Moradores do ${neighborhoodName} têm condições especiais. Visite nossa loja no Umbará e aproveite!`,
       ctaText: 'SOLICITAR 2ª VIA',
       ctaUrl: whatsappUrl,
       ctaStyle: 'green',
@@ -131,7 +131,7 @@ const ModernHeroSection = ({
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium text-primary">
-                  {isMainUnit ? 'Nossa Loja no Umbará' : `Loja no Umbará • Entrega no ${neighborhoodName}`}
+                  {isMainUnit ? 'Nossa Loja no Umbará' : `Atendemos o ${neighborhoodName}`}
                 </span>
               </div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 border border-accent/30 rounded-full animate-pulse">
@@ -147,19 +147,19 @@ const ModernHeroSection = ({
                 {slide.title.includes(neighborhoodName) ? (
                   <>
                     {slide.title.split(neighborhoodName)[0]}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-accent">
+                    <span className="text-primary">
                       {neighborhoodName}
                     </span>
                     {slide.title.split(neighborhoodName)[1]}
                   </>
                 ) : (
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-accent">
+                  <span className="text-primary">
                     {slide.title}
                   </span>
                 )}
               </h1>
               
-              <p className="text-lg md:text-2xl text-accent font-semibold animate-fade-in">
+              <p className="text-lg md:text-2xl text-primary font-semibold animate-fade-in">
                 {slide.subtitle}
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in">
@@ -189,7 +189,7 @@ const ModernHeroSection = ({
                 className={`group shadow-lg transition-all duration-300 text-base h-14 px-8 rounded-full ${
                   slide.ctaStyle === 'green'
                     ? 'bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-green-500/30'
-                    : 'bg-gradient-to-r from-accent to-accent/80 hover:from-accent/90 hover:to-accent text-accent-foreground shadow-accent/30'
+                    : 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary/30'
                 }`}
               >
                 <a href={slide.ctaUrl} target="_blank" rel="noopener noreferrer">
@@ -219,7 +219,7 @@ const ModernHeroSection = ({
                   onClick={() => setCurrentSlide(index)}
                   className={`h-2 rounded-full transition-all duration-300 ${
                     index === currentSlide
-                      ? 'w-10 bg-accent'
+                      ? 'w-10 bg-primary'
                       : 'w-3 bg-muted-foreground/30 hover:bg-muted-foreground/50'
                   }`}
                   aria-label={`Ir para slide ${index + 1}`}
@@ -262,9 +262,9 @@ const ModernHeroSection = ({
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
-              {/* Badge delivery flutuante */}
-              <div className="absolute top-4 left-4 px-4 py-2 bg-accent text-accent-foreground rounded-full text-sm font-bold shadow-lg animate-pulse">
-                🏍️ Entregamos no seu bairro!
+              {/* Badge flutuante */}
+              <div className="absolute top-4 left-4 px-4 py-2 bg-primary text-primary-foreground rounded-full text-sm font-bold shadow-lg animate-pulse">
+                👓 Especialistas na Melhor Idade
               </div>
 
               {isMainUnit && address && (
@@ -315,7 +315,7 @@ const ModernHeroSection = ({
               ))}
             </div>
 
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-accent/20 rounded-full blur-2xl" />
+            <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl" />
           </div>
         </div>

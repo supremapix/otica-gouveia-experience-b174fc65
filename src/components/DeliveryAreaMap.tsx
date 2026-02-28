@@ -1,12 +1,12 @@
 import React from 'react';
-import { MapPin, Check, Truck } from 'lucide-react';
+import { MapPin, Check, Heart } from 'lucide-react';
 
 interface DeliveryAreaMapProps {
   neighborhoodName: string;
 }
 
 const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) => {
-  const deliveryAreas = [
+  const nearbyAreas = [
     { name: 'CIC', highlight: neighborhoodName === 'CIC' },
     { name: 'Umbará', highlight: neighborhoodName === 'Umbará' },
     { name: 'Pinheirinho', highlight: neighborhoodName === 'Pinheirinho' },
@@ -30,16 +30,16 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-            <Truck className="w-8 h-8 text-primary" />
+            <Heart className="w-8 h-8 text-primary" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Entregamos no {neighborhoodName} Via Motoboy
+            Atendemos o {neighborhoodName} e Região
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-2">
-            Nossa loja fica no Umbará. Compras acima de R$ 250 incluem entrega via motoboy no {neighborhoodName} e região.
+            Nossa loja fica no Umbará. Moradores de toda Curitiba e região são bem-vindos! Venha nos visitar.
           </p>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            👓 Óculos de grau: traga receita e venha à loja para medição. 🕶️ Óculos de sol e lentes de contato: peça pelo WhatsApp!
+            Traga sua receita, escolha sua armação e retire seus óculos prontos com ajuste perfeito.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title={`Mapa de entrega para ${neighborhoodName}`}
+              title={`Localização da Ótica Gouveia — Umbará`}
             />
             <div className="absolute bottom-4 left-4 bg-card/95 backdrop-blur-sm rounded-lg p-4 shadow-lg">
               <div className="flex items-center gap-2 text-sm">
@@ -67,15 +67,15 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
             </div>
           </div>
 
-          {/* Delivery Areas List */}
+          {/* Areas List */}
           <div className="bg-card rounded-xl p-8 shadow-lg">
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
               <Check className="w-6 h-6 text-green-500" />
-              Bairros com Entrega Via Motoboy
+              Bairros que Atendemos
             </h3>
             
             <div className="grid grid-cols-2 gap-3">
-              {deliveryAreas.map((area, index) => (
+              {nearbyAreas.map((area, index) => (
                 <div
                   key={index}
                   className={`flex items-center gap-2 p-3 rounded-lg transition-all ${
@@ -93,16 +93,16 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
             </div>
 
             <p className="text-xs text-muted-foreground mt-6">
-              Compras acima de R$ 250 com entrega inclusa. Loja no Umbará — R. Nicola Pellanda, 1286.
+              Loja no Umbará — R. Nicola Pellanda, 1286. Venha nos visitar e retire seus óculos com ajuste perfeito!
             </p>
 
             <a
-              href="https://wa.me/554199161663?text=Olá! Gostaria de saber se entregam no meu endereço."
+              href="https://wa.me/554199161663?text=Olá! Gostaria de agendar um atendimento na loja."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 w-full inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all"
             >
-              Verificar Meu Endereço
+              Agendar Atendimento
             </a>
           </div>
         </div>
