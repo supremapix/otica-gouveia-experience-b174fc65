@@ -9,25 +9,25 @@ const steps = [
     icon: Send,
     number: '1',
     title: 'Envie Sua Receita',
-    description: 'WhatsApp, email ou foto. Nossa equipe analisa e calcula o valor.',
+    description: 'WhatsApp, email ou foto. Para óculos de grau, traga a receita do oftalmologista.',
   },
   {
     icon: ShoppingBag,
     number: '2',
     title: 'Escolha Armação e Lentes',
-    description: 'Catálogo online ou visite nossa loja no Umbará.',
+    description: 'Óculos de sol e lentes de contato: escolha online. Óculos de grau: visite a loja no Umbará.',
   },
   {
     icon: ScanLine,
     number: '3',
-    title: 'Medição Visioffice 3',
-    description: 'Agende na loja no Umbará para medição precisa (5 min).',
+    title: 'Medição Presencial (Grau)',
+    description: 'Para lentes de grau, venha à loja no Umbará para medição com Visioffice 3 (5 min). Óculos de sol e lentes de contato não precisam dessa etapa.',
   },
   {
     icon: Truck,
     number: '4',
     title: 'Motoboy Entrega Pra Você',
-    description: 'Compras acima de R$ 250 com entrega inclusa no seu bairro.',
+    description: 'Após a confecção, entregamos via motoboy no seu bairro. Compras acima de R$ 250 com entrega inclusa.',
   },
 ];
 

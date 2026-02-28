@@ -14,6 +14,7 @@ import WhyChooseSection from "@/components/WhyChooseSection";
 import PremiumFAQ from "@/components/PremiumFAQ";
 import HealthTipsSection from "@/components/HealthTipsSection";
 import HowToBuySection from "@/components/HowToBuySection";
+import PrescriptionNotice from "@/components/PrescriptionNotice";
 import { createBreadcrumbSchema, createOpticalStoreSchema, createLocalBusinessSchema } from "@/utils/schemas";
 import { ArrowUp, ChevronRight } from "lucide-react";
 import { NeighborhoodData } from "@/data/neighborhoodContent";
@@ -99,6 +100,8 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
          {/* Como Comprar Online */}
          <HowToBuySection neighborhoodName={data.name} />
 
+         {/* Aviso: Grau = Presencial / Sol = Online */}
+         <PrescriptionNotice />
         {/* Mapa de Área de Entrega */}
         <DeliveryAreaMap neighborhoodName={data.name} />
 

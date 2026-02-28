@@ -47,9 +47,12 @@ const FinalCTASection = ({
           </h2>
 
           {/* Subtítulo */}
-          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-white/80 mb-4 max-w-2xl mx-auto">
             Cuide da sua visão com quem tem mais de 40 anos de experiência. 
             Compre na loja e receba seus óculos via motoboy no conforto da sua casa.
+          </p>
+          <p className="text-sm text-white/60 mb-10 max-w-2xl mx-auto">
+            👓 Óculos de grau: traga sua receita e venha à loja para medição. 🕶️ Óculos de sol e lentes de contato: peça pelo WhatsApp sem sair de casa!
           </p>
 
           {/* CTAs */}

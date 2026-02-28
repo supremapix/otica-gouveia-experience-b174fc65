@@ -30,7 +30,7 @@ const OticasCentroCuritiba = () => {
 
   const diferenciais = [
     { icon: "🔬", titulo: "Tecnologia Visioffice 3", desc: "O mesmo equipamento de medição das grandes redes de óticas. Lentes perfeitas para o seu rosto." },
-    { icon: "🚚", titulo: "Entrega em Todo Curitiba", desc: "Entregamos óculos em todos os bairros de Curitiba. Grátis para compras acima de R$ 250." },
+    { icon: "🚚", titulo: "Entrega em Todo Curitiba", desc: "Óculos de sol e lentes de contato: peça pelo WhatsApp. Óculos de grau: venha à loja para medição e entregamos após confecção." },
     { icon: "💰", titulo: "Melhor Preço da Cidade", desc: "Parcelamos em até 10x sem juros. Desconto para pagamento à vista no PIX." },
     { icon: "⭐", titulo: "40+ Anos de Tradição", desc: "Mais de 4 décadas cuidando da visão das famílias curitibanas com qualidade garantida." },
     { icon: "🏷️", titulo: "Marcas Reconhecidas", desc: "Ray-Ban, Oakley, Essilor, Zeiss, Hoya e muito mais. Produtos originais com garantia de fábrica." },
@@ -69,9 +69,13 @@ const OticasCentroCuritiba = () => {
               Óticas no Centro de<br />
               <span className="text-[#FFD700]">Curitiba — Gouveia</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
+            <p className="text-lg md:text-xl text-white/85 mb-4 max-w-2xl">
               Referência em óculos de grau, sol e lentes de contato em Curitiba. 
               Entregamos em todos os bairros da capital. Tecnologia Visioffice 3 e 40+ anos de tradição.
+            </p>
+            <p className="text-sm text-white/60 mb-8 max-w-2xl">
+              👓 Óculos de grau: traga sua receita e venha à loja no Umbará para medição. 
+              🕶️ Óculos de sol e lentes de contato: peça pelo WhatsApp e receba em casa via motoboy!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
@@ -117,15 +121,15 @@ const OticasCentroCuritiba = () => {
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               Nossa grande vantagem sobre as redes de óticas do centro de Curitiba é a combinação de 
-              <strong> atendimento personalizado</strong> — como em uma ótica de bairro tradicional — com 
-              <strong> tecnologia de ponta</strong> como o <strong>Visioffice 3 da Essilor</strong>, 
-              equipamento de medição precisa que garante lentes perfeitamente calibradas para o seu rosto.
+              <strong> atendimento personalizado</strong> com <strong> tecnologia de ponta</strong> como o 
+              <strong> Visioffice 3 da Essilor</strong>. <strong>Para confeccionar óculos de grau, é necessário 
+              comparecer presencialmente</strong> à nossa loja no Umbará com receita médica para medição precisa. 
+              Após a confecção, entregamos via motoboy no seu bairro.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Para quem busca <strong>óticas no centro de Curitiba</strong> mas quer economizar tempo, 
-              nossa proposta é prática: envie sua receita pelo WhatsApp, escolha online entre centenas de armações 
-              e receba seus óculos em casa. Para moradores do Centro, Rebouças, Batel, Água Verde, Bigorrilho 
-              e demais bairros nobre de Curitiba, o processo é igualmente conveniente.
+              Já para <strong>óculos de sol sem grau e lentes de contato</strong>, você pode comprar 
+              <strong> diretamente pelo WhatsApp</strong> sem sair de casa! Enviamos fotos dos modelos, 
+              você escolhe, paga e recebe tudo via motoboy. Compras acima de R$ 250 com entrega inclusa.
             </p>
             <p className="text-gray-700 leading-relaxed">
               Trabalhamos com as <strong>marcas mais desejadas do mercado</strong>: Ray-Ban, Oakley, Arnette, 
