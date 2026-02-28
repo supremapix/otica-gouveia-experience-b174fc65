@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import ImageGallery from "@/components/ImageGallery";
 import { Link } from "react-router-dom";
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Quero%20ver%20op%C3%A7%C3%B5es%20de%20%C3%B3culos%20com%20bom%20pre%C3%A7o%20na%20%C3%93tica%20Gouveia.";
@@ -82,6 +83,9 @@ const OticaBarataCuritiba = () => {
             </div>
           </div>
         </section>
+
+        {/* GALERIA DE FOTOS */}
+        <ImageGallery neighborhoodName="Curitiba" />
 
         {/* TABELA DE PREÇOS */}
         <section className="py-16 bg-white">
