@@ -47,7 +47,7 @@ const ModernHeroSection = ({
       badgeIcon: '🚚',
       title: `Entrega Grátis no ${neighborhoodName}`,
       subtitle: 'Comprando R$ 250+ levamos até você!',
-      description: 'Óculos completos • Lentes de contato • Acessórios — entrega em até 24h',
+      description: 'Óculos completos • Lentes de contato • Acessórios — prazo informado após o pedido',
       ctaText: 'PEDIR ENTREGA GRÁTIS',
       ctaUrl: whatsappUrl,
       ctaStyle: 'primary',

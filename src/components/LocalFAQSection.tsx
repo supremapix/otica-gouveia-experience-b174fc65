@@ -17,8 +17,8 @@ const LocalFAQSection = ({ neighborhoodName }: LocalFAQSectionProps) => {
       answer: `Sim! A Ótica Gouveia atende diversos planos de saúde para moradores do ${neighborhoodName} e região. Entre em contato pelo WhatsApp para verificar se seu plano está na lista de convênios aceitos.`,
     },
     {
-      question: `Qual o prazo de entrega para o ${neighborhoodName}?`,
-      answer: `Para o ${neighborhoodName}, o prazo médio de entrega dos óculos prontos é de 5 a 7 dias úteis. Para lentes mais complexas (progressivas, multifocais), pode levar de 7 a 10 dias. A entrega é gratuita para compras acima de R$250.`,
+       question: `Qual o prazo de entrega para o ${neighborhoodName}?`,
+       answer: `Após seu pedido feito, informaremos o tempo e daremos a data de entrega do seu óculos. O prazo de fabricação pode variar conforme o tipo de lente e tratamento escolhido. A entrega é gratuita para compras acima de R$250.`,
     },
     {
       question: `Fazem exame de vista para crianças?`,

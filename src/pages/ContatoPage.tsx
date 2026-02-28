@@ -27,7 +27,7 @@ const channels = [
 
 const faqs = [
   { q: 'Fazem exame de vista?', a: 'Não realizamos exames de vista. Para sua receita, consulte um oftalmologista. Com a receita em mãos, fabricamos suas lentes com precisão usando o Visioffice 3.' },
-  { q: 'Qual o prazo para ficarem os óculos?', a: 'Lentes em estoque: 3 a 5 dias úteis. Lentes especiais ou importadas: 7 a 15 dias úteis. Informamos o prazo exato no ato da compra.' },
+  { q: 'Qual o prazo para ficarem os óculos?', a: 'Após seu pedido feito, informaremos o tempo e daremos a data de entrega do seu óculos. O prazo de fabricação pode variar conforme o tipo de lente e tratamento escolhido.' },
   { q: 'Fazem entrega em domicílio?', a: 'Sim! Entregamos gratuitamente para compras acima de R$250 em Curitiba e Região Metropolitana. Agendamos a entrega por WhatsApp.' },
   { q: 'Aceitam plano de saúde?', a: 'Consultamos o reembolso do seu plano. Muitos planos cobrem parte do valor. Entre em contato e verificamos juntos!' },
 ];

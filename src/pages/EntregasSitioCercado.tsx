@@ -109,7 +109,7 @@ const EntregasSitioCercado = () => {
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-3xl font-black text-center text-[#001440] mb-3">Como Funciona a Entrega no Sítio Cercado</h2>
-            <p className="text-center text-gray-600 mb-12">Simples, rápido e seguro — do pedido à sua porta em até 24h</p>
+            <p className="text-center text-gray-600 mb-12">Simples e seguro — após o pedido, informamos a data de entrega</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {passos.map((p) => (
                 <div key={p.num} className="text-center">
@@ -136,9 +136,9 @@ const EntregasSitioCercado = () => {
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               O processo é 100% seguro: você envia a receita pelo WhatsApp <strong>(41) 99161-0663</strong>, 
-              nossa equipe faz uma curadoria de armações dentro do seu perfil e orçamento, 
-              você aprova pelo WhatsApp, realiza o pagamento (PIX, cartão ou transferência) 
-              e em até <strong>24 horas úteis</strong> seus óculos chegam no Sítio Cercado.
+               nossa equipe faz uma curadoria de armações dentro do seu perfil e orçamento, 
+               você aprova pelo WhatsApp, realiza o pagamento (PIX, cartão ou transferência) 
+               e após a fabricação, informamos a data exata da entrega dos seus óculos no Sítio Cercado. O prazo de fabricação pode variar conforme o tipo de lente e tratamento escolhido.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               Para garantir a qualidade das lentes entregues, utilizamos o <strong>Visioffice 3 da Essilor</strong> — 
