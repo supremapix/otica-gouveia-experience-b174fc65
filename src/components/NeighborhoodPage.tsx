@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FloatingActions from "@/components/FloatingActions";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
+import FloatingButtonsGroup from "@/components/FloatingButtonsGroup";
+import BackToTop from "@/components/BackToTop";
 import EnhancedSEO from "@/components/EnhancedSEO/EnhancedSEO";
 import ModernHeroSection from "@/components/ModernHeroSection";
 import ImageGallery from "@/components/ImageGallery";
@@ -122,18 +122,8 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
       </main>
 
       <Footer />
-      <FloatingActions />
-      <WhatsAppFloat />
-      
-      {showScrollTop && (
-        <button 
-          onClick={scrollToTop}
-          className="fixed bottom-24 right-6 bg-primary hover:bg-primary/90 text-primary-foreground p-4 rounded-full shadow-lg transition-all duration-300 z-40 hover:scale-110"
-          aria-label="Voltar ao topo"
-        >
-          <ArrowUp size={24} />
-        </button>
-      )}
+      <FloatingButtonsGroup />
+      <BackToTop />
     </div>
   );
 };

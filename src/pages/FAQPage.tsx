@@ -3,7 +3,7 @@ import { Search, Phone, MessageCircle, ChevronUp, Eye, Glasses, Sun, Contact, He
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import WhatsAppFloat from '../components/WhatsAppFloat';
+import FloatingButtonsGroup from '../components/FloatingButtonsGroup';
 import BackToTop from '../components/BackToTop';
 import SEO from '../components/SEO';
 import { faqBlocks, blogArticles, getTotalQuestions } from '../data/faqCompleteData';
@@ -504,7 +504,7 @@ const FAQPage = () => {
       </section>
 
       <Footer />
-      <WhatsAppFloat />
+      <FloatingButtonsGroup />
       <BackToTop />
     </div>
   );
