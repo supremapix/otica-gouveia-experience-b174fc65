@@ -1,6 +1,5 @@
-import { useState, useEffect, useCallback } from 'react';
-import { MapPin, Phone, Calendar, Clock, Star, CheckCircle, ChevronRight, MessageCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState, useEffect } from 'react';
+import { MapPin, Phone, Star, CheckCircle, ChevronRight, MessageCircle, ChevronLeft, Clock, Heart, Shield } from 'lucide-react';
 
 interface ModernHeroSectionProps {
   neighborhoodName: string;
@@ -16,18 +15,8 @@ const heroImages = [
   '/lovable-uploads/otica-gouveia-rayban.webp',
   '/lovable-uploads/otica-gouveia-expositor.webp',
   '/lovable-uploads/otica-gouveia-carolina-herrera.png',
+  '/lovable-uploads/otica-gouveia-esportivos.webp',
 ];
-
-interface SlideData {
-  badge: string;
-  badgeIcon: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  ctaText: string;
-  ctaUrl: string;
-  ctaStyle: 'primary' | 'green';
-}
 
 const ModernHeroSection = ({ 
   neighborhoodName, 
@@ -37,46 +26,6 @@ const ModernHeroSection = ({
   phoneNumber = "+554131140663"
 }: ModernHeroSectionProps) => {
   const [currentImage, setCurrentImage] = useState(0);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
-
-  const slides: SlideData[] = [
-    {
-      badge: 'CUIDADO COM SUA VISÃO',
-      badgeIcon: '👓',
-      title: `Sua Ótica de Confiança para o ${neighborhoodName}`,
-      subtitle: 'Atendimento especializado para a melhor idade — venha nos visitar!',
-      description: 'Loja no Umbará com mais de 40 anos de tradição. Traga sua receita, escolha suas armações e retire seus óculos com ajuste perfeito.',
-      ctaText: 'AGENDAR ATENDIMENTO',
-      ctaUrl: whatsappUrl,
-      ctaStyle: 'primary',
-    },
-    {
-      badge: 'TECNOLOGIA EXCLUSIVA',
-      badgeIcon: '⚡',
-      title: 'Precisão Visioffice 3',
-      subtitle: 'Lentes sob medida para seus olhos — medição em 5 minutos',
-      description: 'Traga sua receita e venha à loja no Umbará. Medição digital com Visioffice 3 da Essilor para lentes perfeitas, especialmente multifocais.',
-      ctaText: 'AGENDAR MEDIÇÃO',
-      ctaUrl: whatsappUrl,
-      ctaStyle: 'primary',
-    },
-    {
-      badge: '2ª VIA COM 50% OFF',
-      badgeIcon: '💎',
-      title: 'Quebrou? A Gente Resolve!',
-      subtitle: 'Segunda via de lentes com desconto especial',
-      description: `Moradores do ${neighborhoodName} têm condições especiais. Visite nossa loja no Umbará e aproveite!`,
-      ctaText: 'SOLICITAR 2ª VIA',
-      ctaUrl: whatsappUrl,
-      ctaStyle: 'green',
-    },
-  ];
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -85,239 +34,153 @@ const ModernHeroSection = ({
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    if (isPaused) return;
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [isPaused, slides.length]);
+  const nextSlide = () => setCurrentImage((prev) => (prev + 1) % heroImages.length);
+  const prevSlide = () => setCurrentImage((prev) => (prev - 1 + heroImages.length) % heroImages.length);
 
-  const slide = slides[currentSlide];
-
-  const features = [
-    { icon: Clock, text: 'Seg a Sex: 9h às 18h | Sáb: 9h às 13h' },
-    { icon: CheckCircle, text: 'Estacionamento Fácil' },
-    { icon: CheckCircle, text: 'Aceitamos Planos de Saúde' },
+  const benefits = [
+    { icon: Heart, text: "Melhor Idade" },
+    { icon: Clock, text: "Pinheirinho e Umbará" },
+    { icon: Shield, text: "Garantia Total" },
+    { icon: Star, text: "5★ Google" },
   ];
 
   return (
-    <section
-      className="relative min-h-[90vh] md:min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-background via-secondary/20 to-background"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
-      {/* Background decorativo */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div 
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
-            backgroundSize: '60px 60px'
-          }}
-        />
+    <section className="relative min-h-[100svh] w-full overflow-hidden">
+      {/* Full-bleed background images */}
+      <div className="absolute inset-0">
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+              index === currentImage ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+            }`}
+          >
+            <img
+              src={image}
+              alt={`Ótica Gouveia ${neighborhoodName} - Imagem ${index + 1}`}
+              className="w-full h-full object-cover"
+              loading={index === 0 ? "eager" : "lazy"}
+            />
+          </div>
+        ))}
+        {/* Premium gradient overlays */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
+        <div className="absolute inset-0 mix-blend-multiply opacity-15" style={{ backgroundColor: 'hsl(var(--primary))' }} />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 py-20 md:py-0 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          
-          {/* Coluna esquerda - Conteúdo com slides */}
-          <div className={`space-y-6 md:space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
+        aria-label="Imagem anterior"
+      >
+        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
+        aria-label="Próxima imagem"
+      >
+        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+      </button>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        {heroImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentImage(index)}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              index === currentImage ? 'w-8 bg-white' : 'w-3 bg-white/40 hover:bg-white/60'
+            }`}
+            aria-label={`Ir para imagem ${index + 1}`}
+          />
+        ))}
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 flex items-center min-h-[100svh]">
+        <div className="max-w-3xl py-20">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-bold mb-6 animate-fade-in backdrop-blur-sm"
+            style={{ backgroundColor: 'hsla(var(--primary), 0.9)', color: 'white' }}
+          >
+            <MapPin className="w-4 h-4" />
+            <span>{isMainUnit ? 'Nossa Loja' : `Atendemos ${neighborhoodName}`} — Pinheirinho e Umbará</span>
+          </div>
+
+          {/* Title */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-5 leading-[1.1] animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            Ótica Gouveia{' '}
+            <span style={{ color: 'hsl(var(--primary))' }} className="brightness-150">{neighborhoodName}</span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-2xl animate-fade-in leading-relaxed" style={{ animationDelay: '0.2s' }}>
+            Atendimento carinhoso e especializado para a melhor idade. Traga sua receita, escolha com calma e retire com ajuste perfeito.
+          </p>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group overflow-hidden text-white px-7 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl hover:scale-105"
+              style={{ backgroundColor: 'hsl(142, 70%, 49%)' }}
+            >
+              <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
+              <span>Falar no WhatsApp</span>
+            </a>
             
-            {/* Badge de localização */}
-            <div className="flex flex-wrap items-center gap-3">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
-                <MapPin className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">
-                  {isMainUnit ? 'Nossa Loja no Umbará' : `Atendemos o ${neighborhoodName}`}
-                </span>
-              </div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 border border-accent/30 rounded-full animate-pulse">
-                <span className="text-sm font-bold text-accent-foreground">
-                  {slide.badgeIcon} {slide.badge}
-                </span>
-              </div>
-            </div>
-
-            {/* Título dinâmico por slide */}
-            <div className="space-y-4" key={currentSlide}>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight animate-fade-in">
-                {slide.title.includes(neighborhoodName) ? (
-                  <>
-                    {slide.title.split(neighborhoodName)[0]}
-                    <span className="text-primary">
-                      {neighborhoodName}
-                    </span>
-                    {slide.title.split(neighborhoodName)[1]}
-                  </>
-                ) : (
-                  <span className="text-primary">
-                    {slide.title}
-                  </span>
-                )}
-              </h1>
-              
-              <p className="text-lg md:text-2xl text-primary font-semibold animate-fade-in">
-                {slide.subtitle}
-              </p>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in">
-                {slide.description}
-              </p>
-            </div>
-
-            {/* Rating */}
-            <div className="flex items-center gap-4 p-4 bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 max-w-fit">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <div className="h-8 w-px bg-border" />
-              <div>
-                <p className="font-bold text-foreground">4.9/5</p>
-                <p className="text-xs text-muted-foreground">+500 avaliações</p>
-              </div>
-            </div>
-
-            {/* CTA dinâmico */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                asChild
-                size="lg"
-                className={`group shadow-lg transition-all duration-300 text-base h-14 px-8 rounded-full ${
-                  slide.ctaStyle === 'green'
-                    ? 'bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-green-500/30'
-                    : 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary/30'
-                }`}
-              >
-                <a href={slide.ctaUrl} target="_blank" rel="noopener noreferrer">
-                  {slide.ctaText}
-                  <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
-              
-              <Button 
-                asChild
-                variant="outline"
-                size="lg"
-                className="group border-2 border-primary/30 hover:border-primary hover:bg-primary/5 text-foreground h-14 px-8 rounded-full"
-              >
-                <a href={`tel:${phoneNumber}`}>
-                  <Phone className="w-5 h-5 mr-2" />
-                  Ligar Agora
-                </a>
-              </Button>
-            </div>
-
-            {/* Slide indicators */}
-            <div className="flex items-center gap-3">
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    index === currentSlide
-                      ? 'w-10 bg-primary'
-                      : 'w-3 bg-muted-foreground/30 hover:bg-muted-foreground/50'
-                  }`}
-                  aria-label={`Ir para slide ${index + 1}`}
-                />
-              ))}
-            </div>
-
-            {/* Features rápidas */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              {features.map((feature, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center gap-2 text-sm text-muted-foreground"
-                >
-                  <feature.icon className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span>{feature.text}</span>
-                </div>
-              ))}
-            </div>
+            <a
+              href={`tel:${phoneNumber}`}
+              className="group bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white hover:text-primary text-white px-7 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg transition-all duration-300 flex items-center justify-center gap-3 hover:scale-105"
+            >
+              <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
+              <span>(41) 3114-0663</span>
+            </a>
           </div>
 
-          {/* Coluna direita - Imagem */}
-          <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
-            <div className="relative aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
-              {heroImages.map((image, index) => (
-                <div
-                  key={image}
-                  className={`absolute inset-0 transition-opacity duration-1000 ${
-                    index === currentImage ? 'opacity-100' : 'opacity-0'
-                  }`}
-                >
-                  <img
-                    src={image}
-                    alt={`Ótica Gouveia ${neighborhoodName}`}
-                    className="w-full h-full object-cover"
-                    loading={index === 0 ? 'eager' : 'lazy'}
-                  />
-                </div>
-              ))}
-              
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-
-              {/* Badge flutuante */}
-              <div className="absolute top-4 left-4 px-4 py-2 bg-primary text-primary-foreground rounded-full text-sm font-bold shadow-lg animate-pulse">
-                👓 Especialistas na Melhor Idade
+          {/* Benefits */}
+          <div className="flex flex-wrap gap-2 sm:gap-3 mb-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            {benefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full text-white text-xs sm:text-sm border border-white/10"
+              >
+                <benefit.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                <span>{benefit.text}</span>
               </div>
+            ))}
+          </div>
 
-              {isMainUnit && address && (
-                <div className="absolute bottom-4 left-4 right-4 p-4 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg">
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-primary/10 rounded-xl">
-                      <MapPin className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground text-sm">Nosso Endereço</p>
-                      <p className="text-xs text-muted-foreground mt-0.5">{address}</p>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {!isMainUnit && (
-                <div className="absolute bottom-4 left-4 right-4">
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-4 bg-green-500 hover:bg-green-600 text-white rounded-2xl shadow-lg transition-all duration-300 hover:scale-[1.02]"
-                  >
-                    <MessageCircle className="w-6 h-6" />
-                    <div>
-                      <p className="font-bold text-sm">Fale pelo WhatsApp</p>
-                      <p className="text-xs opacity-90">Resposta em minutos</p>
-                    </div>
-                    <ChevronRight className="w-5 h-5 ml-auto" />
-                  </a>
-                </div>
-              )}
-            </div>
-
-            <div className="flex justify-center gap-2 mt-4">
-              {heroImages.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImage(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    index === currentImage 
-                      ? 'w-8 bg-primary' 
-                      : 'w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50'
-                  }`}
-                  aria-label={`Ir para imagem ${index + 1}`}
-                />
+          {/* Google Rating */}
+          <div className="flex items-center gap-3 text-white animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            <div className="flex">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <Star key={star} className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400" />
               ))}
             </div>
-
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl" />
+            <span className="text-sm sm:text-base font-semibold">4.9 no Google</span>
+            <span className="text-xs sm:text-sm opacity-70">(+200 avaliações)</span>
           </div>
+
+          {/* Address card for main unit */}
+          {isMainUnit && address && (
+            <div className="mt-6 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 max-w-md animate-fade-in" style={{ animationDelay: '0.6s' }}>
+              <div className="flex items-start gap-3">
+                <div className="p-2 rounded-xl" style={{ backgroundColor: 'hsla(var(--primary), 0.3)' }}>
+                  <MapPin className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <p className="font-semibold text-white text-sm">Nosso Endereço</p>
+                  <p className="text-xs text-white/80 mt-0.5">{address}</p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>

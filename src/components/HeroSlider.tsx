@@ -1,58 +1,51 @@
 import { useState, useEffect, useCallback } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star, MapPin, Phone, MessageCircle } from 'lucide-react';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20%C3%93tica%20Gouveia%20e%20gostaria%20de%20um%20or%C3%A7amento%20%F0%9F%98%8A";
 
 const slides = [
   {
-    badge: '🔥 OFERTA ESPECIAL',
+    badge: 'OFERTA ESPECIAL',
+    badgeIcon: Star,
     title: 'Óculos Completos',
     subtitle: 'Armação + Lentes a partir de R$ 199,90',
-    description: 'Lentes digitais com precisão Visioffice 3 da Essilor. Venha à loja no Umbará!',
-    cta1: { label: 'PEDIR ORÇAMENTO', href: WHATSAPP_URL },
+    description: 'Lentes digitais com precisão Visioffice 3 da Essilor. Venha à loja no Umbará e Pinheirinho!',
+    cta1: { label: 'PEDIR ORÇAMENTO', href: WHATSAPP_URL, icon: MessageCircle },
     cta2: { label: 'VER PROMOÇÕES', href: '#products' },
-    image: '/lovable-uploads/otica-gouveia-carolina-herrera.png',
-    gradient: 'linear-gradient(135deg, hsl(0,75%,30%) 0%, hsl(0,70%,45%) 100%)',
+    image: '/lovable-uploads/otica-gouveia-vitrine.webp',
   },
   {
-    badge: '⚡ TECNOLOGIA EXCLUSIVA',
+    badge: 'TECNOLOGIA EXCLUSIVA',
+    badgeIcon: Star,
     title: 'Medição de Alta Precisão',
     subtitle: 'Visioffice 3 Essilor — Lentes Perfeitas Para Você',
-    features: [
-      'Distância pupilar exata',
-      'Altura de montagem precisa',
-      'Ângulo pantoscópico',
-      'Em segundos, sua medida ideal',
-    ],
-    cta1: { label: 'SAIBA MAIS', href: '#services' },
-    image: '/lovable-uploads/4a29b99c-56aa-418b-be88-b850f3f0cc76.png',
-    gradient: 'linear-gradient(135deg, hsl(0,75%,30%) 0%, hsl(0,60%,40%) 100%)',
+    description: 'Medição digital em 5 minutos. Traga sua receita e venha à loja para lentes sob medida.',
+    cta1: { label: 'AGENDAR MEDIÇÃO', href: WHATSAPP_URL, icon: Phone },
+    cta2: { label: 'SAIBA MAIS', href: '#services' },
+    image: '/lovable-uploads/otica-gouveia-armacoes.webp',
   },
   {
-    badge: '📍 LOJA NO UMBARÁ',
-    title: 'Visite Nossa Loja no Umbará',
-    subtitle: 'Atendimento especializado para a melhor idade!',
-    description: 'R. Nicola Pellanda, 1286 — Umbará, Curitiba. Traga sua receita e retire seus óculos com ajuste perfeito.',
-    cta1: { label: 'COMO CHEGAR', href: 'https://maps.app.goo.gl/GhqcM45P9vZA8jMN9' },
-    image: '/lovable-uploads/otica-gouveia-fachada.png',
-    gradient: 'linear-gradient(135deg, hsl(0,75%,30%) 0%, hsl(0,60%,38%) 100%)',
-    overlay: true,
+    badge: 'MELHOR IDADE',
+    badgeIcon: MapPin,
+    title: 'Atendimento Especial para Você',
+    subtitle: 'Carinho e paciência — sua visão merece o melhor',
+    description: 'R. Nicola Pellanda, 1286 — Pinheirinho. Traga sua receita, escolha com calma e retire com ajuste perfeito.',
+    cta1: { label: 'COMO CHEGAR', href: 'https://maps.app.goo.gl/GhqcM45P9vZA8jMN9', icon: MapPin },
+    cta2: { label: 'LIGAR AGORA', href: 'tel:+554131140663' },
+    image: '/lovable-uploads/otica-gouveia-expositor.webp',
   },
 ];
 
 const HeroSlider = () => {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [animKey, setAnimKey] = useState(0);
 
   const next = useCallback(() => {
     setCurrent((prev) => (prev + 1) % slides.length);
-    setAnimKey((k) => k + 1);
   }, []);
 
   const prev = useCallback(() => {
     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-    setAnimKey((k) => k + 1);
   }, []);
 
   useEffect(() => {
@@ -66,124 +59,123 @@ const HeroSlider = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden flex items-center"
-      style={{ background: slide.gradient }}
+      className="relative min-h-screen overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      {/* Background image for slide 3 */}
-      {slide.overlay && (
-        <div className="absolute inset-0">
-          <img src={slide.image} alt="" className="w-full h-full object-cover opacity-20" />
-          <div className="absolute inset-0" style={{ background: 'hsla(0,75%,30%,0.75)' }} />
+      {/* Full-bleed background images */}
+      {slides.map((s, i) => (
+        <div
+          key={i}
+          className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+            i === current ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+          }`}
+        >
+          <img
+            src={s.image}
+            alt={s.title}
+            className="w-full h-full object-cover"
+            loading={i === 0 ? 'eager' : 'lazy'}
+          />
         </div>
-      )}
+      ))}
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[60vh]">
-          {/* Left Content */}
-          <div key={animKey} className="animate-slide-up">
-            {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 rounded-pill mb-6 animate-badge-pulse"
-              style={{ backgroundColor: 'hsla(0, 0%, 100%, 0.15)', border: '1px solid hsla(0, 0%, 100%, 0.3)' }}
+      {/* Gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+      
+      {/* Red accent overlay */}
+      <div className="absolute inset-0 mix-blend-multiply opacity-20" style={{ backgroundColor: 'hsl(var(--primary))' }} />
+
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-screen">
+        <div className="max-w-2xl py-20" key={current}>
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 animate-fade-in backdrop-blur-sm"
+            style={{ backgroundColor: 'hsla(var(--primary), 0.9)', border: '1px solid hsla(0, 0%, 100%, 0.2)' }}
+          >
+            <slide.badgeIcon className="w-4 h-4 text-white" />
+            <span className="text-sm font-bold text-white tracking-wide">
+              {slide.badge}
+            </span>
+          </div>
+
+          {/* Title */}
+          <h1 className="font-display font-black text-white leading-[1.1] mb-4 animate-fade-in"
+            style={{ fontSize: 'clamp(36px, 6vw, 72px)', animationDelay: '0.1s' }}
+          >
+            {slide.title}
+          </h1>
+
+          {/* Subtitle */}
+          <p className="font-bold mb-4 text-white/90 animate-fade-in" 
+            style={{ fontSize: 'clamp(18px, 3vw, 28px)', animationDelay: '0.2s' }}
+          >
+            {slide.subtitle}
+          </p>
+
+          {/* Description */}
+          <p className="text-white/80 text-lg mb-8 max-w-xl animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
+            {slide.description}
+          </p>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <a
+              href={slide.cta1.href}
+              target={slide.cta1.href.startsWith('http') ? '_blank' : undefined}
+              rel={slide.cta1.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all duration-300 hover:scale-105 shadow-xl text-primary-foreground"
+              style={{ backgroundColor: 'hsl(var(--primary))' }}
             >
-              <span className="text-sm font-bold text-white">
-                {slide.badge}
-              </span>
-            </div>
-
-            {/* Title */}
-            <h1 className="font-display font-black text-white leading-tight mb-4"
-              style={{ fontSize: 'clamp(32px, 6vw, 64px)' }}
-            >
-              {slide.title}
-            </h1>
-
-            {/* Subtitle */}
-            <p className="font-bold mb-4 text-white/90" 
-              style={{ fontSize: 'clamp(18px, 3vw, 32px)' }}
-            >
-              {slide.subtitle}
-            </p>
-
-            {/* Description or Features */}
-            {slide.description && (
-              <p className="text-white/90 text-lg mb-8 max-w-xl">{slide.description}</p>
-            )}
-            {slide.features && (
-              <ul className="space-y-3 mb-8">
-                {slide.features.map((f, i) => (
-                  <li key={i} className="flex items-center gap-3 text-white text-lg">
-                    <span className="text-white/80">✓</span> {f}
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
+              {slide.cta1.icon && <slide.cta1.icon className="w-5 h-5" />}
+              {slide.cta1.label}
+            </a>
+            {slide.cta2 && (
               <a
-                href={slide.cta1.href}
-                target={slide.cta1.href.startsWith('http') ? '_blank' : undefined}
-                rel={slide.cta1.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="inline-flex items-center justify-center px-8 py-4 rounded-pill font-bold text-base transition-all duration-300 hover:scale-105 shadow-xl bg-white text-primary"
+                href={slide.cta2.href}
+                target={slide.cta2.href.startsWith('http') ? '_blank' : undefined}
+                rel={slide.cta2.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-base transition-all duration-300 hover:scale-105 border-2 border-white/40 text-white hover:bg-white/10 backdrop-blur-sm"
               >
-                {slide.cta1.label}
+                {slide.cta2.label}
               </a>
-              {slide.cta2 && (
-                <a
-                  href={slide.cta2.href}
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-pill font-bold text-base transition-all duration-300 hover:scale-105 border-2 border-white text-white hover:bg-white/10"
-                >
-                  {slide.cta2.label}
-                </a>
-              )}
-            </div>
+            )}
           </div>
 
-          {/* Right Image */}
-          {!slide.overlay && (
-            <div className="hidden lg:block">
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src={slide.image} 
-                  alt={slide.title} 
-                  className="w-full h-[400px] object-cover"
-                />
-              </div>
+          {/* Google Rating */}
+          <div className="mt-8 flex items-center gap-3 text-white animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            <div className="flex">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+              ))}
             </div>
-          )}
-        </div>
-
-        {/* Indicators & Navigation */}
-        <div className="flex items-center justify-center gap-4 mt-12">
-          <button onClick={prev} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" aria-label="Slide anterior">
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <div className="flex gap-3">
-            {slides.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => { setCurrent(i); setAnimKey((k) => k + 1); }}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  i === current ? 'w-8 bg-white' : 'bg-white/30 hover:bg-white/50'
-                }`}
-                aria-label={`Slide ${i + 1}`}
-              />
-            ))}
+            <span className="text-base font-semibold">4.9 no Google</span>
+            <span className="text-sm opacity-70">(+200 avaliações)</span>
           </div>
-          <button onClick={next} className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" aria-label="Próximo slide">
-            <ChevronRight className="w-5 h-5" />
-          </button>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce">
-        <span className="text-white/60 text-sm mb-2 font-medium">Role para explorar</span>
-        <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
+      {/* Navigation */}
+      <button onClick={prev} className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-all hover:scale-110" aria-label="Slide anterior">
+        <ChevronLeft className="w-6 h-6" />
+      </button>
+      <button onClick={next} className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-all hover:scale-110" aria-label="Próximo slide">
+        <ChevronRight className="w-6 h-6" />
+      </button>
+
+      {/* Indicators */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`h-1.5 rounded-full transition-all duration-500 ${
+              i === current ? 'w-10 bg-white' : 'w-4 bg-white/30 hover:bg-white/50'
+            }`}
+            aria-label={`Slide ${i + 1}`}
+          />
+        ))}
       </div>
     </section>
   );
