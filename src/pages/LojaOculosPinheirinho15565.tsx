@@ -246,8 +246,8 @@ const LojaOculosPinheirinho15565 = () => {
       </div>
 
       <Footer />
-      <FloatingActions />
-      <WhatsAppFloat />
+      <FloatingButtonsGroup />
+      <BackToTop />
     </>
   );
 };
