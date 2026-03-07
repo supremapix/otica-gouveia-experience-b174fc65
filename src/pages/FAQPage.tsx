@@ -3,7 +3,7 @@ import { Search, Phone, MessageCircle, ChevronUp, Eye, Glasses, Sun, Contact, He
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import WhatsAppFloat from '../components/WhatsAppFloat';
+import FloatingButtonsGroup from '../components/FloatingButtonsGroup';
 import BackToTop from '../components/BackToTop';
 import SEO from '../components/SEO';
 import { faqBlocks, blogArticles, getTotalQuestions } from '../data/faqCompleteData';
@@ -201,8 +201,14 @@ const FAQPage = () => {
       </div>
 
       {/* Hero */}
-      <section className="py-12 md:py-20" style={{ backgroundColor: 'hsl(var(--primary))' }}>
-        <div className="max-w-[860px] mx-auto px-4 text-center">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/lovable-uploads/otica-gouveia-carolina-herrera.png" alt="FAQ Ótica Gouveia" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+          <div className="absolute inset-0 mix-blend-multiply opacity-20" style={{ backgroundColor: 'hsl(var(--primary))' }} />
+        </div>
+        <div className="relative z-10 max-w-[860px] mx-auto px-4 text-center">
           <h1 className="text-white font-extrabold leading-tight mb-6" style={{ fontSize: 'clamp(32px, 5vw, 44px)' }}>
             Perguntas Frequentes —<br />Ótica Gouveia Curitiba
           </h1>
@@ -219,7 +225,7 @@ const FAQPage = () => {
               { value: 'Curitiba', label: 'PR' },
               { value: 'Pinheirinho', label: 'e Umbará' },
             ].map((stat, i) => (
-              <div key={i} className="bg-white/10 rounded-2xl p-5 backdrop-blur-sm">
+              <div key={i} className="bg-white/10 rounded-2xl p-5 backdrop-blur-sm border border-white/10">
                 <div className="text-white font-extrabold" style={{ fontSize: '28px' }}>{stat.value}</div>
                 <div className="text-white/80 font-medium" style={{ fontSize: '16px' }}>{stat.label}</div>
               </div>
@@ -504,7 +510,7 @@ const FAQPage = () => {
       </section>
 
       <Footer />
-      <WhatsAppFloat />
+      <FloatingButtonsGroup />
       <BackToTop />
     </div>
   );

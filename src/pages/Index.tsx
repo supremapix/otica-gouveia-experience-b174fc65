@@ -17,6 +17,7 @@ import NeighborhoodsSection from '../components/NeighborhoodsSection';
 import TipsSection from '../components/TipsSection';
 import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
+import FloatingButtonsGroup from '../components/FloatingButtonsGroup';
 import FAQCTASection from '../components/FAQCTASection';
 import { createOrganizationSchema, createWebsiteSchema, createLocalBusinessSchema } from '../utils/schemas';
 
@@ -180,7 +181,7 @@ const Index = () => {
       <Footer />
       
       <OnlineCounter />
-      <WhatsAppFloat />
+      <FloatingButtonsGroup />
       <BackToTop />
     </div>
   );

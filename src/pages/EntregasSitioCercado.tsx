@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
+import FloatingButtonsGroup from "@/components/FloatingButtonsGroup";
+import BackToTop from "@/components/BackToTop";
 import ImageGallery from "@/components/ImageGallery";
 import { Link } from "react-router-dom";
 
@@ -63,33 +64,41 @@ const EntregasSitioCercado = () => {
 
       <main className="pt-[72px]">
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#001440] to-[#003399] text-white py-16 md:py-24">
-          <div className="max-w-6xl mx-auto px-4">
+        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+          <div className="absolute inset-0">
+            <img src="/lovable-uploads/otica-gouveia-armacoes.webp" alt="Entregas Sítio Cercado" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+            <div className="absolute inset-0 mix-blend-multiply opacity-15" style={{ backgroundColor: 'hsl(var(--primary))' }} />
+          </div>
+          <div className="relative z-10 max-w-6xl mx-auto px-4 py-20">
             <nav className="text-sm text-white/60 mb-6" aria-label="Breadcrumb">
               <Link to="/" className="hover:text-white">Início</Link>
               <span className="mx-2">/</span>
               <Link to="/otica-sitio-cercado" className="hover:text-white">Sítio Cercado</Link>
               <span className="mx-2">/</span>
-              <span className="text-white">Entregas no Sítio Cercado</span>
+              <span className="text-white">Atendimento no Sítio Cercado</span>
             </nav>
-            <span className="inline-block bg-[#25D366] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 animate-pulse">
-              🏍️ LOJA NO UMBARÁ — MOTOBOY ENTREGA NO SÍTIO CERCADO
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold text-white mb-4 animate-pulse backdrop-blur-sm"
+              style={{ backgroundColor: 'hsla(var(--primary), 0.9)' }}>
+              📍 LOJAS NO PINHEIRINHO E UMBARÁ — ATENDEMOS O SÍTIO CERCADO
             </span>
-            <h1 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
-              Ótica Gouveia — Delivery Óptico<br />
-              <span className="text-[#FFD700]">no Sítio Cercado · Curitiba (PR)</span>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black mb-4 leading-[1.1] text-white">
+              Ótica Gouveia —<br />
+              <span style={{ color: 'hsl(var(--primary))' }} className="brightness-150">Atendimento para o Sítio Cercado</span>
             </h1>
             <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
-              Nossa loja fica no Umbará. Óculos de sol e lentes de contato podem ser pedidos pelo WhatsApp e entregues via motoboy. 
-              Para óculos de grau, traga sua receita e venha à loja para medição presencial — após a confecção, entregamos no Sítio Cercado!
+              Nossas lojas ficam no Pinheirinho e Umbará. Para óculos de grau, traga sua receita e venha à loja para medição presencial.
+              Óculos de sol e lentes de contato: consulte pelo WhatsApp!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-[#1ebe5a] transition-all shadow-lg">
-                🏍️ PEDIR ENTREGA VIA MOTOBOY
+                className="inline-flex items-center gap-2 text-white font-bold text-lg px-8 py-4 rounded-full transition-all shadow-xl hover:scale-105"
+                style={{ backgroundColor: 'hsl(142, 70%, 49%)' }}>
+                💬 FALAR NO WHATSAPP
               </a>
               <a href="tel:+554131140663"
-                className="inline-flex items-center gap-2 border-2 border-[#FFD700] text-[#FFD700] font-bold text-lg px-8 py-4 rounded-full hover:bg-[#FFD700] hover:text-[#001440] transition-all">
+                className="inline-flex items-center gap-2 border-2 border-white/30 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-white/10 transition-all backdrop-blur-sm">
                 📞 (41) 3114-0663
               </a>
             </div>
@@ -184,7 +193,8 @@ const EntregasSitioCercado = () => {
       </main>
 
       <Footer />
-      <WhatsAppFloat />
+      <FloatingButtonsGroup />
+      <BackToTop />
     </>
   );
 };

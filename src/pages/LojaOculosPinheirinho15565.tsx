@@ -3,8 +3,8 @@ import { MapPin, Clock } from 'lucide-react';
 import { useInView } from '@/utils/animations';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import WhatsAppFloat from '@/components/WhatsAppFloat';
-import FloatingActions from '@/components/FloatingActions';
+import FloatingButtonsGroup from '@/components/FloatingButtonsGroup';
+import BackToTop from '@/components/BackToTop';
 import FAQ from '@/components/FAQ';
 import EnhancedHero from '@/components/EnhancedHero';
 import EnhancedSEO from '@/components/EnhancedSEO/EnhancedSEO';
@@ -246,8 +246,8 @@ const LojaOculosPinheirinho15565 = () => {
       </div>
 
       <Footer />
-      <FloatingActions />
-      <WhatsAppFloat />
+      <FloatingButtonsGroup />
+      <BackToTop />
     </>
   );
 };

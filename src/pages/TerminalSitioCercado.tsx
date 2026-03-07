@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
+import FloatingButtonsGroup from "@/components/FloatingButtonsGroup";
+import BackToTop from "@/components/BackToTop";
 import ImageGallery from "@/components/ImageGallery";
 import { Link } from "react-router-dom";
 
@@ -46,8 +47,14 @@ const TerminalSitioCercado = () => {
 
       <main className="pt-[72px]">
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#001440] to-[#003399] text-white py-16 md:py-24">
-          <div className="max-w-6xl mx-auto px-4">
+        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+          <div className="absolute inset-0">
+            <img src="/lovable-uploads/otica-gouveia-esportivos.webp" alt="Ótica Terminal Sítio Cercado" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+            <div className="absolute inset-0 mix-blend-multiply opacity-15" style={{ backgroundColor: 'hsl(var(--primary))' }} />
+          </div>
+          <div className="relative z-10 max-w-6xl mx-auto px-4 py-20">
             <nav className="text-sm text-white/60 mb-6" aria-label="Breadcrumb">
               <Link to="/" className="hover:text-white">Início</Link>
               <span className="mx-2">/</span>
@@ -55,24 +62,26 @@ const TerminalSitioCercado = () => {
               <span className="mx-2">/</span>
               <span className="text-white">Terminal Sítio Cercado</span>
             </nav>
-            <span className="inline-block bg-[#FFD700] text-[#001440] text-xs font-bold px-4 py-1.5 rounded-full mb-4 animate-pulse">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold text-white mb-4 animate-pulse backdrop-blur-sm"
+              style={{ backgroundColor: 'hsla(var(--primary), 0.9)' }}>
               📍 10 MINUTOS DO TERMINAL SÍTIO CERCADO
             </span>
-            <h1 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black mb-4 leading-[1.1] text-white">
               Ótica Gouveia Próxima ao<br />
-              <span className="text-[#FFD700]">Terminal Sítio Cercado</span>
+              <span style={{ color: 'hsl(var(--primary))' }} className="brightness-150">Terminal Sítio Cercado</span>
             </h1>
             <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
-              Nossa loja fica no Umbará, a apenas 10 minutos do Terminal Sítio Cercado. 
-              Para óculos de grau, traga sua receita e venha à loja para medição. Óculos de sol e lentes de contato: peça pelo WhatsApp! Compras acima de R$ 250 com entrega inclusa.
+              Nossas lojas ficam no Pinheirinho e Umbará, a apenas 10 minutos do Terminal. 
+              Para óculos de grau, traga sua receita e venha à loja para medição. Óculos de sol e lentes de contato: consulte pelo WhatsApp!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-[#1ebe5a] transition-all shadow-lg">
+                className="inline-flex items-center gap-2 text-white font-bold text-lg px-8 py-4 rounded-full transition-all shadow-xl hover:scale-105"
+                style={{ backgroundColor: 'hsl(142, 70%, 49%)' }}>
                 💬 PEDIR ORÇAMENTO AGORA
               </a>
               <a href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9" target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border-2 border-[#FFD700] text-[#FFD700] font-bold text-lg px-8 py-4 rounded-full hover:bg-[#FFD700] hover:text-[#001440] transition-all">
+                className="inline-flex items-center gap-2 border-2 border-white/30 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-white/10 transition-all backdrop-blur-sm">
                 🗺️ VER NO MAPA
               </a>
             </div>
@@ -158,7 +167,8 @@ const TerminalSitioCercado = () => {
       </main>
 
       <Footer />
-      <WhatsAppFloat />
+      <FloatingButtonsGroup />
+      <BackToTop />
     </>
   );
 };
