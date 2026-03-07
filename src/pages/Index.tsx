@@ -17,6 +17,7 @@ import NeighborhoodsSection from '../components/NeighborhoodsSection';
 import TipsSection from '../components/TipsSection';
 import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
+import FAQCTASection from '../components/FAQCTASection';
 import { createOrganizationSchema, createWebsiteSchema, createLocalBusinessSchema } from '../utils/schemas';
 
 // Simple error boundary component
@@ -160,6 +161,10 @@ const Index = () => {
 
       <ErrorBoundary componentName="TipsSection" fallback={<div className="p-4">Error</div>}>
         <TipsSection />
+      </ErrorBoundary>
+
+      <ErrorBoundary componentName="FAQCTASection" fallback={<div className="p-4">Error</div>}>
+        <FAQCTASection />
       </ErrorBoundary>
       
       <section id="contact">

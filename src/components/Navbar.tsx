@@ -49,6 +49,7 @@ const Navbar = () => {
     { name: 'Serviços', href: '#services', page: '/servicos' },
     { name: 'Produtos', href: '#products', page: '/produtos' },
     { name: 'Contato', href: '#contact', page: '/contato' },
+    { name: 'FAQ', href: '/faq', page: '/faq' },
   ];
 
   return (

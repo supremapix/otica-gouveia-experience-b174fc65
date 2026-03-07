@@ -98,15 +98,17 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Páginas SEO */}
+          {/* Páginas Especiais & FAQ */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white uppercase tracking-wide">Páginas Especiais</h3>
+            <h3 className="text-lg font-bold mb-4 text-white uppercase tracking-wide">Perguntas Frequentes</h3>
             <ul className="space-y-1">
               {[
-                { name: 'Conserto de Óculos — Sítio Cercado', href: '/conserto-oculos-sitio-cercado' },
-                { name: 'Ótica perto do Terminal Sítio Cercado', href: '/otica-terminal-sitio-cercado' },
-                { name: 'Óticas no Centro de Curitiba', href: '/oticas-no-centro-de-curitiba' },
-                { name: 'Ótica Barata em Curitiba', href: '/otica-barata-curitiba' },
+                { name: 'Perguntas Frequentes', href: '/faq' },
+                { name: 'Óculos para Idosos', href: '/faq#idosos' },
+                { name: 'Exame de Vista', href: '/faq#exame' },
+                { name: 'Lentes para Grau Alto', href: '/faq#lentes' },
+                { name: 'Lentes de Contato', href: '/faq#contato-lente' },
+                { name: 'Óculos de Sol com Grau', href: '/faq#solar' },
               ].map((page) => (
                 <li key={page.href}>
                   <Link
