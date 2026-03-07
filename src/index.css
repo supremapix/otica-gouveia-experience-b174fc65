@@ -275,3 +275,24 @@ html {
 .animate-badge-pulse {
   animation: badge-pulse 2s ease-in-out infinite;
 }
+
+/* Shimmer effect */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* CTA attention animation */
+@keyframes cta-attention {
+  0%, 90%, 100% { transform: scale(1); }
+  93% { transform: scale(1.1); }
+  96% { transform: scale(0.95); }
+}
+
+.animate-cta-attention {
+  animation: cta-attention 4s ease-in-out infinite;
+}
