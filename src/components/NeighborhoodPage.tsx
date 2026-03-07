@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtonsGroup from "@/components/FloatingButtonsGroup";
@@ -16,7 +15,7 @@ import HealthTipsSection from "@/components/HealthTipsSection";
 import HowToBuySection from "@/components/HowToBuySection";
 import PrescriptionNotice from "@/components/PrescriptionNotice";
 import { createBreadcrumbSchema, createOpticalStoreSchema, createLocalBusinessSchema } from "@/utils/schemas";
-import { ArrowUp, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { NeighborhoodData } from "@/data/neighborhoodContent";
 import { Link } from "react-router-dom";
 
@@ -25,25 +24,11 @@ interface NeighborhoodPageProps {
 }
 
 const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-  
   const whatsappMessage = encodeURIComponent(`Olá! Vim do site e gostaria de saber mais sobre óculos para ${data.name}.`);
   const whatsappUrl = `https://wa.me/554199161663?text=${whatsappMessage}`;
 
   const isMainUnit = ['Pinheirinho', 'Sítio Cercado', 'Umbará'].includes(data.name);
   const address = data.name === 'Umbará' ? 'R. Nicola Pellanda, 1286 - Umbará, Curitiba - PR' : undefined;
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 300);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   const breadcrumbData = createBreadcrumbSchema([
     { name: "Início", url: "https://www.gouveiacuritiba.com.br" },
