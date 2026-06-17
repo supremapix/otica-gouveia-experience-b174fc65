@@ -75,7 +75,7 @@ const HeroSlider = () => {
           <img
             src={s.image}
             alt={s.title}
-            className="w-full h-full object-cover object-[70%_center] sm:object-center"
+            className="w-full h-full object-cover object-[85%_center] sm:object-center"
             loading={i === 0 ? 'eager' : 'lazy'}
           />
         </div>
