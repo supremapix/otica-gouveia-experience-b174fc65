@@ -6,6 +6,47 @@ const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
+      {/* Faixa de contato rápido - melhor idade */}
+      <div className="border-b border-white/15 bg-black/15">
+        <div className="section-container py-8">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Precisa de ajuda? Fale conosco agora</h2>
+            <p className="text-white/85 text-lg">Estamos prontos para te atender com calma e atenção</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <a
+              href="tel:+554131140663"
+              className="flex flex-col items-center justify-center bg-white text-primary rounded-2xl py-5 px-4 font-bold shadow-lg hover:scale-[1.02] transition-transform"
+              style={{ minHeight: '88px' }}
+            >
+              <Phone className="w-7 h-7 mb-1" strokeWidth={2.5} />
+              <span className="text-lg">LIGAR AGORA</span>
+              <span className="text-sm font-semibold opacity-80">(41) 3114-0663</span>
+            </a>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank" rel="noopener noreferrer"
+              className="flex flex-col items-center justify-center text-white rounded-2xl py-5 px-4 font-bold shadow-lg hover:scale-[1.02] transition-transform"
+              style={{ backgroundColor: 'hsl(142, 70%, 45%)', minHeight: '88px' }}
+            >
+              <MessageCircle className="w-7 h-7 mb-1" strokeWidth={2.5} />
+              <span className="text-lg">WHATSAPP</span>
+              <span className="text-sm font-semibold opacity-90">(41) 99161-0663</span>
+            </a>
+            <a
+              href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9"
+              target="_blank" rel="noopener noreferrer"
+              className="flex flex-col items-center justify-center bg-white/15 border-2 border-white text-white rounded-2xl py-5 px-4 font-bold shadow-lg hover:scale-[1.02] transition-transform"
+              style={{ minHeight: '88px' }}
+            >
+              <MapPin className="w-7 h-7 mb-1" strokeWidth={2.5} />
+              <span className="text-lg">COMO CHEGAR</span>
+              <span className="text-sm font-semibold opacity-90">Umbará - Curitiba</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="section-container py-12 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
@@ -14,43 +55,44 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.png" 
                 alt="Ótica Gouveia Logo" 
-                className="h-10 mb-3"
+                className="h-12 mb-3"
               />
             </div>
-            <p className="text-white/70 mb-6 text-[15px] leading-relaxed">
-              Proporcionando soluções ópticas de qualidade com atendimento personalizado para melhorar a qualidade de vida dos nossos clientes.
+            <p className="text-white/85 mb-6 text-[17px] leading-[1.7]">
+              Cuidamos da sua visão com carinho e paciência. Atendimento dedicado à melhor idade em Curitiba.
             </p>
-            <div className="flex space-x-4">
-              <a 
-                href="https://www.instagram.com/gouveiaoticacuritiba/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
+            <a 
+              href="https://www.instagram.com/gouveiaoticacuritiba/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white px-4 py-3 rounded-full font-semibold transition-colors"
+              aria-label="Siga-nos no Instagram"
+              style={{ minHeight: '48px' }}
+            >
+              <Instagram className="w-5 h-5" />
+              <span className="text-[15px]">Instagram</span>
+            </a>
           </div>
           
           {/* Navigation */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white uppercase tracking-wide">Navegação</h3>
+            <h3 className="text-xl font-bold mb-5 text-white uppercase tracking-wide">Navegação</h3>
             <ul className="space-y-1">
               {[
                 { name: 'Início', href: '/' },
-                { name: 'Sobre', href: '/sobre' },
-                { name: 'Serviços', href: '/servicos' },
+                { name: 'Sobre Nós', href: '/sobre' },
+                { name: 'Nossos Serviços', href: '/servicos' },
                 { name: 'Produtos', href: '/produtos' },
                 { name: 'Contato', href: '/contato' },
+                { name: 'Perguntas Frequentes', href: '/faq' },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-white/70 hover:text-white transition-colors text-[15px] block py-[12px]"
-                    style={{ minHeight: '44px', display: 'flex', alignItems: 'center' }}
+                    className="text-white/85 hover:text-white hover:underline transition-colors text-[17px] block py-3 font-medium"
+                    style={{ minHeight: '48px', display: 'flex', alignItems: 'center' }}
                   >
-                    {link.name}
+                    › {link.name}
                   </Link>
                 </li>
               ))}
@@ -59,64 +101,46 @@ const Footer = () => {
           
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white uppercase tracking-wide">Contato</h3>
+            <h3 className="text-xl font-bold mb-5 text-white uppercase tracking-wide">Onde Estamos</h3>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3" style={{ minHeight: '44px' }}>
-                <Phone className="w-5 h-5 text-white/80 flex-shrink-0" />
-                <a href="tel:+554131140663" className="text-white/70 hover:text-white transition-colors text-[15px]">
-                  (41) 3114-0663
-                </a>
-              </li>
-              <li className="flex items-center gap-3" style={{ minHeight: '44px' }}>
-                <MessageCircle className="w-5 h-5 text-white/80 flex-shrink-0" />
-                <a 
-                  href={WHATSAPP_URL}
-                  className="text-white/70 hover:text-white transition-colors text-[15px]"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  (41) 99161-0663
-                </a>
-              </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-white/80 flex-shrink-0 mt-0.5" />
+                <MapPin className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
                 <a 
                   href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white transition-colors text-[15px]"
+                  className="text-white/90 hover:text-white hover:underline transition-colors text-[17px] leading-relaxed"
                 >
-                  R. Nicola Pellanda, 1286 - Umbará, Curitiba - PR, 81880-000
+                  R. Nicola Pellanda, 1286<br/>Umbará, Curitiba - PR
                 </a>
               </li>
-              <li className="flex items-center gap-3" style={{ minHeight: '44px' }}>
-                <Clock className="w-5 h-5 text-white/80 flex-shrink-0" />
-                <span className="text-white/70 text-[15px]">
-                  Seg-Sex: 9h às 18h | Sáb: 9h às 13h
+              <li className="flex items-start gap-3">
+                <Clock className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                <span className="text-white/90 text-[17px] leading-relaxed">
+                  Seg a Sex: 9h às 18h<br/>Sábado: 9h às 13h
                 </span>
               </li>
             </ul>
           </div>
 
-          {/* Páginas Especiais & FAQ */}
+          {/* Ajuda Rápida */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white uppercase tracking-wide">Perguntas Frequentes</h3>
+            <h3 className="text-xl font-bold mb-5 text-white uppercase tracking-wide">Tire Suas Dúvidas</h3>
             <ul className="space-y-1">
               {[
-                { name: 'Perguntas Frequentes', href: '/faq' },
                 { name: 'Óculos para Idosos', href: '/faq#idosos' },
                 { name: 'Exame de Vista', href: '/faq#exame' },
-                { name: 'Lentes para Grau Alto', href: '/faq#lentes' },
+                { name: 'Lentes Grau Alto', href: '/faq#lentes' },
                 { name: 'Lentes de Contato', href: '/faq#contato-lente' },
                 { name: 'Óculos de Sol com Grau', href: '/faq#solar' },
               ].map((page) => (
                 <li key={page.href}>
                   <Link
                     to={page.href}
-                    className="text-white/70 hover:text-white transition-colors text-[14px] block py-[10px]"
-                    style={{ minHeight: '44px', display: 'flex', alignItems: 'center' }}
+                    className="text-white/85 hover:text-white hover:underline transition-colors text-[16px] block py-3 font-medium"
+                    style={{ minHeight: '48px', display: 'flex', alignItems: 'center' }}
                   >
-                    {page.name}
+                    › {page.name}
                   </Link>
                 </li>
               ))}
