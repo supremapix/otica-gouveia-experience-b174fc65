@@ -127,7 +127,7 @@ const ProdutosPage = () => {
       </section>
 
       {/* Marcas */}
-      <section className="py-16 px-4" style={{ backgroundColor: 'hsl(210,40%,98%)' }}>
+      <section className="py-16 px-4" style={{ backgroundColor: 'hsl(0,0%,98%)' }}>
         <div className="max-w-5xl mx-auto text-center">
           <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(0,75%,42%)' }}>PARCEIROS</span>
           <h2 className="text-2xl font-black mt-2 mb-10 text-foreground">Marcas que Trabalhamos</h2>

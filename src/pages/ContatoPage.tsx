@@ -193,7 +193,7 @@ const ContatoPage = () => {
       </section>
 
       {/* FAQ rápido */}
-      <section className="py-20 px-4" style={{ backgroundColor: 'hsl(210,40%,98%)' }}>
+      <section className="py-20 px-4" style={{ backgroundColor: 'hsl(0,0%,98%)' }}>
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl font-black text-foreground">Perguntas Frequentes</h2>

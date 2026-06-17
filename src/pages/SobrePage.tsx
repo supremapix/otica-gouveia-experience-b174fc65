@@ -121,7 +121,7 @@ const SobrePage = () => {
       </section>
 
       {/* Valores */}
-      <section className="py-20 px-4" style={{ backgroundColor: 'hsl(210,40%,98%)' }}>
+      <section className="py-20 px-4" style={{ backgroundColor: 'hsl(0,0%,98%)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(0,75%,42%)' }}>O QUE NOS MOVE</span>
