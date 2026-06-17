@@ -5,6 +5,7 @@ import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
 import VisiofficeSection from '../components/VisiofficeSection';
 import HowToBuySection from '../components/HowToBuySection';
+import PageHero from '../components/PageHero';
 import { ScanEye, Layers, Glasses, Wrench, Truck, CreditCard, CheckCircle, MessageCircle, Zap } from 'lucide-react';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20%C3%93tica%20Gouveia.";
@@ -84,32 +85,22 @@ const ServicosPage = () => {
       <Navbar />
 
       {/* Hero */}
-      <section
-        className="pt-32 pb-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, hsl(225,100%,13%) 0%, hsl(221,100%,26%) 100%)' }}
+      <PageHero
+        BadgeIcon={Zap}
+        badgeText="O que oferecemos"
+        title="Serviços"
+        highlight="Especializados"
+        description="Da medição precisa com Visioffice 3 até o atendimento personalizado — tudo o que você precisa para enxergar melhor, no mesmo lugar."
       >
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4"
-            style={{ backgroundColor: 'hsla(48,100%,50%,0.15)', color: 'hsl(48,100%,50%)', border: '1px solid hsla(48,100%,50%,0.3)' }}>
-            <Zap className="w-4 h-4" /> O QUE OFERECEMOS
-          </span>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-            Serviços <span style={{ color: 'hsl(48,100%,50%)' }}>Especializados</span>
-          </h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Da medição precisa com Visioffice 3 até a entrega na sua casa — tudo o que você precisa para enxergar melhor, no mesmo lugar.
-          </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg"
-            style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
-          >
-            <MessageCircle className="w-5 h-5" /> Falar com especialista
-          </a>
-        </div>
-      </section>
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-xl bg-white text-black hover:bg-white/90"
+        >
+          <MessageCircle className="w-5 h-5" /> Falar com especialista
+        </a>
+      </PageHero>
 
       {/* Serviços Grid */}
       <section className="py-20 px-4 bg-white">
