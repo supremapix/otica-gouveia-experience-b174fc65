@@ -25,16 +25,16 @@ const Instagram = () => {
         }`}>
           {/* Instagram Embed with proper mobile support */}
           <div className="flex justify-center w-full">
-            <div className="w-full max-w-4xl mx-auto overflow-hidden" style={{ height: '750px', maxHeight: '90vh' }}>
+            <div className="w-full max-w-4xl mx-auto overflow-hidden" style={{ height: 'auto', minHeight: '450px' }}>
               <iframe 
                 src="https://www.instagram.com/gouveiaoticacuritiba/embed" 
                 width="100%" 
-                height="100%" 
+                height="540" 
                 frameBorder="0" 
                 scrolling="no" 
                 allowTransparency={true}
                 title="Instagram Feed de @gouveiaoticacuritiba"
-                className="border-none"
+                className="border-none w-full"
               ></iframe>
             </div>
           </div>
