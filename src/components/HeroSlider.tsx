@@ -13,7 +13,7 @@ const slides = [
     description: 'Lentes digitais com precisão Visioffice 3 da Essilor. Venha à loja no Umbará e Pinheirinho!',
     cta1: { label: 'PEDIR ORÇAMENTO', href: WHATSAPP_URL, icon: MessageCircle },
     cta2: { label: 'VER PROMOÇÕES', href: '#products' },
-    image: '/lovable-uploads/otica-gouveia-vitrine.webp',
+    image: oticaHeroAsset.url,
   },
   {
     badge: 'TECNOLOGIA EXCLUSIVA',
