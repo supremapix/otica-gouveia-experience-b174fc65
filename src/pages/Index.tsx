@@ -1,6 +1,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSlider from '../components/HeroSlider';
+import MarqueeBar from '../components/MarqueeBar';
 import About from '../components/About';
 import Services from '../components/Services';
 import Products from '../components/Products';
@@ -128,6 +129,10 @@ const Index = () => {
           <HeroSlider />
         </ErrorBoundary>
       </section>
+      
+      <ErrorBoundary componentName="MarqueeBar" fallback={<div className="p-4">Error</div>}>
+        <MarqueeBar />
+      </ErrorBoundary>
       
       <section id="about">
         <ErrorBoundary componentName="About" fallback={<div className="p-4">Error</div>}>
