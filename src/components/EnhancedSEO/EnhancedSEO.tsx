@@ -9,7 +9,7 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
   canonicalUrl,
   keywords = "",
   structuredData,
-  imageUrl = "https://www.gouveiacuritiba.com.br/og-image.png",
+  imageUrl = "https://www.gouveiacuritiba.com.br/og-image.webp",
   ogType = "website",
   author = "Ótica Gouveia",
   locale = "pt_BR",

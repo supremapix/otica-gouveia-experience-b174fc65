@@ -56,7 +56,7 @@ const EntregasSitioCercado = () => {
         <meta property="og:title" content="Delivery de Óculos no Sítio Cercado | Ótica Gouveia — Loja no Umbará" />
         <meta property="og:description" content="Loja no Umbará com entrega via motoboy no Sítio Cercado. Compras acima de R$ 250 com entrega inclusa. Peça pelo WhatsApp!" />
         <meta property="og:url" content="https://www.gouveiacuritiba.com.br/entregas-sitio-cercado-curitiba" />
-        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.png" />
+        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

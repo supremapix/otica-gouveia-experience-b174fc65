@@ -48,14 +48,14 @@ const About = () => {
             <div className="space-y-4">
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png" 
+                  src="/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.webp" 
                   alt="Fachada da Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png" 
+                  src="/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.webp" 
                   alt="Óculos de Sol em Exposição" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
@@ -64,14 +64,14 @@ const About = () => {
             <div className="space-y-4 mt-8">
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
-                  src="/lovable-uploads/a16bdfa8-f87b-4ca6-84c5-1311998e3299.png" 
+                  src="/lovable-uploads/a16bdfa8-f87b-4ca6-84c5-1311998e3299.webp" 
                   alt="Vitrines com Óculos" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
-                  src="/lovable-uploads/72458d7b-67ce-4323-8f82-f7e805b4b50c.png" 
+                  src="/lovable-uploads/72458d7b-67ce-4323-8f82-f7e805b4b50c.webp" 
                   alt="Interior da Ótica Gouveia" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

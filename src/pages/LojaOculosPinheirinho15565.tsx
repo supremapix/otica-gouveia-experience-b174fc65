@@ -69,7 +69,7 @@ const LojaOculosPinheirinho15565 = () => {
           { name: 'Pinheirinho 15565', url: '/loja-de-oculos-no-pinheirinho/15565' }
         ]}
         preloadResources={[
-          { href: '/hero-background.jpg', as: 'image' }
+          { href: '/hero-background.webp', as: 'image' }
         ]}
       />
       
@@ -80,7 +80,7 @@ const LojaOculosPinheirinho15565 = () => {
           title="Loja de Óculos Pinheirinho"
           subtitle="A melhor loja de óculos do Pinheirinho! Consulte nossos preços e condições especiais com garantia total"
           location="Pinheirinho - Curitiba"
-          backgroundImage="/hero-background.jpg"
+          backgroundImage="/hero-background.webp"
           whatsappUrl={whatsappUrl}
           phoneNumber="+5541999123456"
         />

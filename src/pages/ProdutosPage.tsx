@@ -9,23 +9,23 @@ import { MessageCircle, Glasses, User, Users, Baby, ScanEye } from 'lucide-react
 const WHATSAPP_BASE = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%20";
 
 const products = [
-  { id: 1, name: 'Ray-Ban Aviator', category: 'masculino', image: '/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.png', desc: 'Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância e estilo.' },
-  { id: 2, name: 'Ana Hickmann Collection', category: 'feminino', image: '/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.png', desc: 'Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.' },
-  { id: 3, name: 'Disney Pixar Kids', category: 'infantil', image: '/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.png', desc: 'Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.' },
-  { id: 4, name: 'Victor Hugo Collection', category: 'feminino', image: '/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.png', desc: 'Elegância e sofisticação em cada detalhe das armações Victor Hugo.' },
-  { id: 5, name: 'Sabrina Sato Eyewear', category: 'feminino', image: '/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.png', desc: 'Modelos modernos e cheios de personalidade da linha Sabrina Sato.' },
-  { id: 6, name: 'Lentes Varilux Liberty', category: 'lentes', image: '/lovable-uploads/4b85711f-9660-415d-a4fa-cd7f50e747ec.png', desc: 'Lentes multifocais de alta qualidade para visão de perto e longe com máximo conforto.' },
-  { id: 7, name: 'Ray-Ban Hexagonal', category: 'masculino', image: '/lovable-uploads/1989c2bf-cbd0-4081-8776-f6c0e985a404.png', desc: 'Design hexagonal único com armação metálica dourada e lentes escuras.' },
-  { id: 8, name: 'Ray-Ban Round Double Bridge', category: 'feminino', image: '/lovable-uploads/1be253aa-66d3-4954-a782-d2e82afe7b50.png', desc: 'Modelo redondo clássico com dupla ponte e lentes degradê marrom.' },
-  { id: 9, name: 'Ray-Ban Round Metal', category: 'masculino', image: '/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.png', desc: 'O icônico modelo redondo com armação dourada e lentes G-15 Classic em verde escuro.' },
-  { id: 10, name: 'Disney Infantil', category: 'infantil', image: '/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.png', desc: 'Armação infantil em acetato lilás com hastes internas na cor rosa. Super leve e resistente.' },
-  { id: 11, name: 'Victor Hugo Duo', category: 'feminino', image: '/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.png', desc: 'Conjunto Victor Hugo: óculos de grau + solar com clip magnético tartaruga.' },
-  { id: 12, name: 'Óculos Esportivo Máscara', category: 'masculino', image: '/lovable-uploads/35e542ae-f892-4c53-8e2f-db75ce35721e.png', desc: 'Lente única espelhada azul. Ideal para ciclismo, corrida e atividades outdoor. UV400.' },
-  { id: 13, name: 'Evoke Retrô Square', category: 'masculino', image: '/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.png', desc: 'Armação em acetato preto tartaruga, lente marrom degradê. Estilo urbano e moderno.' },
-  { id: 14, name: 'Evoke Round Feminino', category: 'feminino', image: '/lovable-uploads/9c6d314e-f050-4664-965f-bbe9ebc6bf8f.png', desc: 'Acetato translúcido âmbar com lente marrom degradê. Formato arredondado e super estiloso.' },
-  { id: 15, name: 'HB Switch Clip-On', category: 'feminino', image: '/lovable-uploads/593e7657-b084-4527-afc6-3be7b4cf974c.png', desc: 'Armação de grau com clip solar magnético. 2 em 1: grau e solar no mesmo óculos.' },
+  { id: 1, name: 'Ray-Ban Aviator', category: 'masculino', image: '/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.webp', desc: 'Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância e estilo.' },
+  { id: 2, name: 'Ana Hickmann Collection', category: 'feminino', image: '/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.webp', desc: 'Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.' },
+  { id: 3, name: 'Disney Pixar Kids', category: 'infantil', image: '/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.webp', desc: 'Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.' },
+  { id: 4, name: 'Victor Hugo Collection', category: 'feminino', image: '/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.webp', desc: 'Elegância e sofisticação em cada detalhe das armações Victor Hugo.' },
+  { id: 5, name: 'Sabrina Sato Eyewear', category: 'feminino', image: '/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.webp', desc: 'Modelos modernos e cheios de personalidade da linha Sabrina Sato.' },
+  { id: 6, name: 'Lentes Varilux Liberty', category: 'lentes', image: '/lovable-uploads/4b85711f-9660-415d-a4fa-cd7f50e747ec.webp', desc: 'Lentes multifocais de alta qualidade para visão de perto e longe com máximo conforto.' },
+  { id: 7, name: 'Ray-Ban Hexagonal', category: 'masculino', image: '/lovable-uploads/1989c2bf-cbd0-4081-8776-f6c0e985a404.webp', desc: 'Design hexagonal único com armação metálica dourada e lentes escuras.' },
+  { id: 8, name: 'Ray-Ban Round Double Bridge', category: 'feminino', image: '/lovable-uploads/1be253aa-66d3-4954-a782-d2e82afe7b50.webp', desc: 'Modelo redondo clássico com dupla ponte e lentes degradê marrom.' },
+  { id: 9, name: 'Ray-Ban Round Metal', category: 'masculino', image: '/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.webp', desc: 'O icônico modelo redondo com armação dourada e lentes G-15 Classic em verde escuro.' },
+  { id: 10, name: 'Disney Infantil', category: 'infantil', image: '/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.webp', desc: 'Armação infantil em acetato lilás com hastes internas na cor rosa. Super leve e resistente.' },
+  { id: 11, name: 'Victor Hugo Duo', category: 'feminino', image: '/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.webp', desc: 'Conjunto Victor Hugo: óculos de grau + solar com clip magnético tartaruga.' },
+  { id: 12, name: 'Óculos Esportivo Máscara', category: 'masculino', image: '/lovable-uploads/35e542ae-f892-4c53-8e2f-db75ce35721e.webp', desc: 'Lente única espelhada azul. Ideal para ciclismo, corrida e atividades outdoor. UV400.' },
+  { id: 13, name: 'Evoke Retrô Square', category: 'masculino', image: '/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.webp', desc: 'Armação em acetato preto tartaruga, lente marrom degradê. Estilo urbano e moderno.' },
+  { id: 14, name: 'Evoke Round Feminino', category: 'feminino', image: '/lovable-uploads/9c6d314e-f050-4664-965f-bbe9ebc6bf8f.webp', desc: 'Acetato translúcido âmbar com lente marrom degradê. Formato arredondado e super estiloso.' },
+  { id: 15, name: 'HB Switch Clip-On', category: 'feminino', image: '/lovable-uploads/593e7657-b084-4527-afc6-3be7b4cf974c.webp', desc: 'Armação de grau com clip solar magnético. 2 em 1: grau e solar no mesmo óculos.' },
   { id: 16, name: 'Ray-Ban Wayfarer', category: 'masculino', image: '/lovable-uploads/otica-gouveia-rayban.webp', desc: 'O modelo mais icônico da Ray-Ban. Estilo atemporal que combina com qualquer look.' },
-  { id: 17, name: 'Carolina Herrera', category: 'feminino', image: '/lovable-uploads/otica-gouveia-carolina-herrera.png', desc: 'Sofisticação e elegância da grife Carolina Herrera em armações exclusivas.' },
+  { id: 17, name: 'Carolina Herrera', category: 'feminino', image: '/lovable-uploads/otica-gouveia-carolina-herrera.webp', desc: 'Sofisticação e elegância da grife Carolina Herrera em armações exclusivas.' },
   { id: 18, name: 'Óculos Esportivos', category: 'masculino', image: '/lovable-uploads/otica-gouveia-esportivos.webp', desc: 'Linha esportiva com proteção UV400, ideal para atividades ao ar livre e prática de esportes.' },
 ];
 
@@ -38,12 +38,12 @@ const categories = [
 ];
 
 const brands = [
-  { src: '/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.png', alt: 'Ray-Ban' },
-  { src: '/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.png', alt: 'Ana Hickmann' },
-  { src: '/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.png', alt: 'Victor Hugo' },
-  { src: '/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.png', alt: 'Sabrina Sato' },
-  { src: '/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.png', alt: 'Varilux' },
-  { src: '/lovable-uploads/179e193c-db7a-4d72-9e5d-83ea7dfa63ac.png', alt: 'Bausch & Lomb' },
+  { src: '/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.webp', alt: 'Ray-Ban' },
+  { src: '/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.webp', alt: 'Ana Hickmann' },
+  { src: '/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.webp', alt: 'Victor Hugo' },
+  { src: '/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.webp', alt: 'Sabrina Sato' },
+  { src: '/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.webp', alt: 'Varilux' },
+  { src: '/lovable-uploads/179e193c-db7a-4d72-9e5d-83ea7dfa63ac.webp', alt: 'Bausch & Lomb' },
 ];
 
 const ProdutosPage = () => {

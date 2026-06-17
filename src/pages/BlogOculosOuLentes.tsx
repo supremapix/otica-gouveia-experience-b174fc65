@@ -91,7 +91,7 @@ const schemaArticle = {
   "@type": "Article",
   "headline": "Óculos de Grau ou Lente de Contato: Qual Escolher? Guia Completo",
   "description": "Comparativo completo entre óculos de grau e lentes de contato. Saiba qual é a melhor opção para você em custo, conforto, manutenção e campo de visão.",
-  "image": "https://www.gouveiacuritiba.com.br/og-image.png",
+  "image": "https://www.gouveiacuritiba.com.br/og-image.webp",
   "author": {
     "@type": "Organization",
     "name": "Ótica Gouveia",
@@ -102,7 +102,7 @@ const schemaArticle = {
     "name": "Ótica Gouveia",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.gouveiacuritiba.com.br/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.png"
+      "url": "https://www.gouveiacuritiba.com.br/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.webp"
     }
   },
   "datePublished": "2025-06-17",

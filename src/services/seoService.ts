@@ -62,7 +62,7 @@ export class SEOService {
       ],
       priceRange: '$$',
       image: [
-        `${this.baseUrl}/og-image.png`,
+        `${this.baseUrl}/og-image.webp`,
         `${this.baseUrl}/loja-${location.toLowerCase().replace(/\s+/g, '-')}.jpg`
       ],
       sameAs: [
@@ -96,7 +96,7 @@ export class SEOService {
       description,
       keywords,
       canonicalUrl,
-      imageUrl: `${this.baseUrl}/og-image.png`,
+      imageUrl: `${this.baseUrl}/og-image.webp`,
       ogType: 'website' as const,
       author: 'Ótica Gouveia',
       locale: 'pt_BR' as const,

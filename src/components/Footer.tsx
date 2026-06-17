@@ -53,7 +53,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img 
-                src="/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.png" 
+                src="/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.webp" 
                 alt="Ótica Gouveia Logo" 
                 className="h-12 mb-3"
               />

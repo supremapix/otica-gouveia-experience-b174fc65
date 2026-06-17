@@ -110,7 +110,7 @@ const SobrePage = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden h-56 shadow-lg">
-                  <img src="/lovable-uploads/otica-gouveia-fachada.png" alt="Fachada da Ótica Gouveia" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="/lovable-uploads/otica-gouveia-fachada.webp" alt="Fachada da Ótica Gouveia" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="rounded-2xl overflow-hidden h-40 shadow-lg">
                   <img src="/lovable-uploads/otica-gouveia-vitrine.webp" alt="Vitrine Ótica Gouveia" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />

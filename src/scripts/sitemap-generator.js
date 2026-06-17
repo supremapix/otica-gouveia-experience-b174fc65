@@ -36,7 +36,7 @@ ${allUrls.map(url => `  <url>
     <changefreq>${url.changefreq}</changefreq>
     <priority>${url.priority}</priority>
     <image:image>
-      <image:loc>${baseUrl}/og-image.png</image:loc>
+      <image:loc>${baseUrl}/og-image.webp</image:loc>
       <image:title>Ótica Gouveia - ${url.loc === '/' ? 'Página Inicial' : url.loc.replace('/otica-', '').replace('-', ' ')}</image:title>
     </image:image>
   </url>`).join('\\n')}
@@ -76,7 +76,7 @@ Disallow: /api/
 Disallow: /admin/
 
 # Permitir crawling de imagens importantes
-Allow: /og-image.png
+Allow: /og-image.webp
 Allow: /favicon.ico
 Allow: /public/lovable-uploads/`;
 

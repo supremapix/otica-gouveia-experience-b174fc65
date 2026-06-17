@@ -15,7 +15,7 @@ const heroImages = [
   "/lovable-uploads/otica-gouveia-vitrine.webp",
   "/lovable-uploads/otica-gouveia-rayban.webp",
   "/lovable-uploads/otica-gouveia-esportivos.webp",
-  "/lovable-uploads/otica-gouveia-carolina-herrera.png",
+  "/lovable-uploads/otica-gouveia-carolina-herrera.webp",
 ];
 
 const NeighborhoodHero: React.FC<NeighborhoodHeroProps> = ({

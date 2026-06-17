@@ -7,7 +7,7 @@ interface ImageGalleryProps {
 
 const galleryImages = [
   {
-    src: "/lovable-uploads/otica-gouveia-fachada.png",
+    src: "/lovable-uploads/otica-gouveia-fachada.webp",
     alt: "Fachada da Ótica Gouveia",
     title: "Nossa Loja"
   },
@@ -37,7 +37,7 @@ const galleryImages = [
     title: "Linha Esportiva"
   },
   {
-    src: "/lovable-uploads/otica-gouveia-carolina-herrera.png",
+    src: "/lovable-uploads/otica-gouveia-carolina-herrera.webp",
     alt: "Armação Carolina Herrera sofisticada com acabamento refinado",
     title: "Carolina Herrera"
   }

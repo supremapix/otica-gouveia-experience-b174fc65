@@ -19,7 +19,7 @@ const Products = () => {
       id: 1,
       name: "Ray-Ban Aviator",
       category: "masculino",
-      image: "/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.png",
+      image: "/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.webp",
       description: "Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância.",
       price: "Consulte-nos!"
     },
@@ -27,7 +27,7 @@ const Products = () => {
       id: 2,
       name: "Ana Hickmann Collection",
       category: "feminino",
-      image: "/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.png",
+      image: "/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.webp",
       description: "Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
       price: "Consulte-nos!"
     },
@@ -35,7 +35,7 @@ const Products = () => {
       id: 3,
       name: "Disney Pixar Kids",
       category: "infantil",
-      image: "/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.png",
+      image: "/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.webp",
       description: "Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.",
       price: "Consulte-nos!"
     },
@@ -43,7 +43,7 @@ const Products = () => {
       id: 4,
       name: "Victor Hugo Collection",
       category: "feminino",
-      image: "/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.png",
+      image: "/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.webp",
       description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
       price: "Consulte-nos!"
     },
@@ -51,7 +51,7 @@ const Products = () => {
       id: 5,
       name: "Sabrina Sato Eyewear",
       category: "feminino",
-      image: "/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.png",
+      image: "/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.webp",
       description: "Modelos modernos e cheios de personalidade da linha Sabrina Sato.",
       price: "Consulte-nos!"
     },
@@ -59,7 +59,7 @@ const Products = () => {
       id: 6,
       name: "Lentes Varilux Liberty",
       category: "lentes",
-      image: "/lovable-uploads/4b85711f-9660-415d-a4fa-cd7f50e747ec.png",
+      image: "/lovable-uploads/4b85711f-9660-415d-a4fa-cd7f50e747ec.webp",
       description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
       price: "Consulte-nos!"
     },
@@ -67,7 +67,7 @@ const Products = () => {
       id: 7,
       name: "Ray-Ban Hexagonal",
       category: "masculino",
-      image: "/lovable-uploads/1989c2bf-cbd0-4081-8776-f6c0e985a404.png",
+      image: "/lovable-uploads/1989c2bf-cbd0-4081-8776-f6c0e985a404.webp",
       description: "Design hexagonal único com armação metálica dourada e lentes escuras. Perfeito para quem busca um estilo diferenciado e moderno.",
       price: "Consulte-nos!"
     },
@@ -75,7 +75,7 @@ const Products = () => {
       id: 8,
       name: "Ray-Ban Round Double Bridge",
       category: "feminino",
-      image: "/lovable-uploads/1be253aa-66d3-4954-a782-d2e82afe7b50.png",
+      image: "/lovable-uploads/1be253aa-66d3-4954-a782-d2e82afe7b50.webp",
       description: "Modelo redondo clássico com dupla ponte e lentes degradê marrom. Uma releitura moderna do estilo vintage que nunca sai de moda.",
       price: "Consulte-nos!"
     },
@@ -83,7 +83,7 @@ const Products = () => {
       id: 9,
       name: "Ray-Ban Round Metal",
       category: "masculino",
-      image: "/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.png",
+      image: "/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.webp",
       description: "O icônico modelo redondo com armação dourada e lentes G-15 Classic em verde escuro. Um clássico atemporal para todos os momentos.",
       price: "Consulte-nos!"
     },
@@ -91,7 +91,7 @@ const Products = () => {
       id: 10,
       name: "Disney Infantil",
       category: "infantil",
-      image: "/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.png",
+      image: "/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.webp",
       description: "Armação infantil em acetato lilás com hastes internas na cor rosa. Super leve, confortável e resistente para o dia a dia das crianças. Ideal para volta às aulas e uso escolar.",
       price: "Consulte-nos!"
     },
@@ -99,7 +99,7 @@ const Products = () => {
       id: 11,
       name: "Victor Hugo Collection",
       category: "feminino", 
-      image: "/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.png",
+      image: "/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.webp",
       description: "Conjunto Victor Hugo: Grau com armação dourada super leve e lente quadrada oversize + Sol com lente marrom degradê. Extremamente elegante, acompanha case original.",
       price: "Consulte-nos!"
     },
@@ -107,7 +107,7 @@ const Products = () => {
       id: 12,
       name: "Óculos Esportivo Máscara",
       category: "masculino",
-      image: "/lovable-uploads/35e542ae-f892-4c53-8e2f-db75ce35721e.png", 
+      image: "/lovable-uploads/35e542ae-f892-4c53-8e2f-db75ce35721e.webp", 
       description: "Óculos esportivo máscara estilo Oakley Sutro, lente única espelhada azul com reflexos roxos. Ideal para ciclismo, corrida, motociclismo e uso outdoor. Proteção UV400.",
       price: "Consulte-nos!"
     },
@@ -115,7 +115,7 @@ const Products = () => {
       id: 13,
       name: "Evoke Retrô Square",
       category: "masculino",
-      image: "/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.png",
+      image: "/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.webp",
       description: "Armação robusta em acetato preto com interior levemente tartaruga, lente marrom degradê. Estilo urbano, moderno e sofisticado. Ideal para dia a dia ou praia.",
       price: "Consulte-nos!"
     },
@@ -123,7 +123,7 @@ const Products = () => {
       id: 14,
       name: "Evoke Round Feminino",
       category: "feminino",
-      image: "/lovable-uploads/9c6d314e-f050-4664-965f-bbe9ebc6bf8f.png",
+      image: "/lovable-uploads/9c6d314e-f050-4664-965f-bbe9ebc6bf8f.webp",
       description: "Armação em acetato translúcido âmbar (caramelo claro) com lente marrom degradê. Formato arredondado, leve, moderno, super estiloso, perfeito para looks casuais.",
       price: "Consulte-nos!"
     },
@@ -131,7 +131,7 @@ const Products = () => {
       id: 15,
       name: "HB Switch Clip-On",
       category: "feminino",
-      image: "/lovable-uploads/593e7657-b084-4527-afc6-3be7b4cf974c.png",
+      image: "/lovable-uploads/593e7657-b084-4527-afc6-3be7b4cf974c.webp",
       description: "Armação de grau com clip solar magnético. Vem com dois clips solares polarizados: um preto tradicional e outro no padrão tartaruga. Sistema magnético prático, ideal para quem quer um 2 em 1.",
       price: "Consulte-nos!"
     }
@@ -336,56 +336,56 @@ const Products = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8">
             <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.png" 
+                src="/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.webp" 
                 alt="Ray-Ban Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
             <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.png" 
+                src="/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.webp" 
                 alt="Ana Hickmann Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
             <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.png" 
+                src="/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.webp" 
                 alt="Victor Hugo Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
             <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.png" 
+                src="/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.webp" 
                 alt="Sabrina Sato Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
             <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.png" 
+                src="/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.webp" 
                 alt="Varilux Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
             <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/179e193c-db7a-4d72-9e5d-83ea7dfa63ac.png" 
+                src="/lovable-uploads/179e193c-db7a-4d72-9e5d-83ea7dfa63ac.webp" 
                 alt="Bausch & Lomb Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
             <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.png" 
+                src="/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.webp" 
                 alt="Mormaii Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
             </div>
             <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
               <img 
-                src="/lovable-uploads/2c2072f1-48db-439a-994f-f1841d0fb03e.png" 
+                src="/lovable-uploads/2c2072f1-48db-439a-994f-f1841d0fb03e.webp" 
                 alt="Jean Pierre Logo" 
                 className="h-auto max-h-full max-w-full object-contain"
               />
