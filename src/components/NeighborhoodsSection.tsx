@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { MapPin } from 'lucide-react';
 
 const bairros = [
   { name: 'Ahú', dist: '8 km' },
