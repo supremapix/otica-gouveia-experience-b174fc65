@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import hero1 from '../assets/hero-1.jpg';
-import hero2 from '../assets/hero-2.jpg';
-import heroMobile1 from '../assets/hero-mobile-1.png';
-import heroMobile2 from '../assets/hero-mobile-2.jpg';
+import hero1 from '../assets/hero-1.webp';
+import hero2 from '../assets/hero-2.webp';
+import heroMobile1 from '../assets/hero-mobile-1.webp';
+import heroMobile2 from '../assets/hero-mobile-2.webp';
 
 const slides = [
   {
