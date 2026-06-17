@@ -200,37 +200,33 @@ const FAQPage = () => {
         </div>
       </div>
 
-      {/* Hero */}
-      <section className="relative py-16 md:py-24 overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="/lovable-uploads/otica-gouveia-carolina-herrera.webp" alt="FAQ Ótica Gouveia" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
-          <div className="absolute inset-0 mix-blend-multiply opacity-20" style={{ backgroundColor: 'hsl(var(--primary))' }} />
-        </div>
-        <div className="relative z-10 max-w-[860px] mx-auto px-4 text-center">
-          <h1 className="text-white font-extrabold leading-tight mb-6" style={{ fontSize: 'clamp(32px, 5vw, 44px)' }}>
-            Perguntas Frequentes —<br />Ótica Gouveia Curitiba
-          </h1>
-          <p className="text-white/90 mb-10 mx-auto max-w-2xl" style={{ fontSize: '20px', lineHeight: '1.7' }}>
-            Texto claro e simples para toda a família.<br />
-            Pinheirinho e Umbará — suas dúvidas respondidas aqui.
-          </p>
+      {/* Hero Clean */}
+      <section
+        className="relative pt-36 pb-20 md:pt-44 md:pb-24 overflow-hidden"
+        style={{
+          backgroundImage: `url(${heroFaq})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.55) 50%, hsla(0,75%,42%,0.55) 100%)' }} />
+        <div className="absolute inset-0 opacity-30 mix-blend-overlay" style={{ background: 'radial-gradient(circle at 70% 40%, hsla(0,75%,42%,0.45) 0%, transparent 60%)' }} />
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
-            {[
-              { value: animatedStats.questions + '+', label: 'Perguntas' },
-              { value: animatedStats.lojas, label: 'Lojas' },
-              { value: 'Curitiba', label: 'PR' },
-              { value: 'Pinheirinho', label: 'e Umbará' },
-            ].map((stat, i) => (
-              <div key={i} className="bg-white/10 rounded-2xl p-5 backdrop-blur-sm border border-white/10">
-                <div className="text-white font-extrabold" style={{ fontSize: '28px' }}>{stat.value}</div>
-                <div className="text-white/80 font-medium" style={{ fontSize: '16px' }}>{stat.label}</div>
-              </div>
-            ))}
-          </div>
+        <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
+          <span
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-5 uppercase tracking-wider"
+            style={{ backgroundColor: 'rgba(255,255,255,0.12)', color: '#fff', border: '1px solid rgba(255,255,255,0.25)', backdropFilter: 'blur(6px)' }}
+          >
+            <BookOpen className="w-4 h-4" /> Perguntas Frequentes
+          </span>
+
+          <h1 className="text-white font-bold leading-tight mb-5" style={{ fontSize: 'clamp(32px, 5vw, 48px)' }}>
+            Dúvidas sobre Óculos<br />e Lentes em Curitiba
+          </h1>
+
+          <p className="text-white/90 mx-auto max-w-xl mb-10" style={{ fontSize: '20px', lineHeight: '1.7' }}>
+            Respostas claras e simples para toda a família. Pinheirinho e Umbará.
+          </p>
 
           {/* Search */}
           <div className="relative max-w-xl mx-auto">
