@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useInView } from '../utils/animations';
 import { Eye, Glasses, Wrench, CreditCard, CalendarCheck, Users } from 'lucide-react';
+import serviceMedidas from '../assets/service-medidas.webp';
+import serviceLentes from '../assets/service-lentes.webp';
 
 const Services = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
@@ -10,7 +12,7 @@ const Services = () => {
     exams: {
       title: "Medidas de Alta Precisão",
       description: "A Ótica Gouveia Úmbara traz o que há de mais moderno no mundo óptico com o Visioffice 3, um equipamento de alta tecnologia da Essilor que garante extrema precisão em diversas medições. Em apenas alguns segundos, conseguimos determinar com exatidão diversas medidas para o ajuste perfeito das suas lentes.",
-      image: "/lovable-uploads/4a29b99c-56aa-418b-be88-b850f3f0cc76.webp",
+      image: serviceMedidas,
       features: [
         "Distância pupilar",
         "Altura de montagem",
@@ -24,7 +26,7 @@ const Services = () => {
     lenses: {
       title: "Lentes de Qualidade",
       description: "Trabalhamos com as melhores marcas de lentes do mercado para proporcionar conforto visual e proteção para seus olhos. Das lentes básicas às mais tecnológicas, temos a solução ideal para você.",
-      image: "/lovable-uploads/d03236fb-b7da-44a0-9e41-d1bcf77ee2fe.webp",
+      image: serviceLentes,
       features: [
         "Lentes multifocais Varilux",
         "Tratamento anti-reflexo Crizal",
