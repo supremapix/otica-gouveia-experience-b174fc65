@@ -7,7 +7,7 @@ const marqueeItems = [
   { icon: Phone, text: 'WhatsApp: (41) 99161-0663' },
   { icon: Tag, text: 'Óculos de sol com proteção UV 400' },
   { icon: MapPin, text: 'Retire na loja — Atendimento com hora marcada' },
-  { icon: Phone, text: 'Ligue agora: (41) 3629-9999' },
+  { icon: Phone, text: 'Ligue agora: (41) 3114-0663' },
 ];
 
 const MarqueeBar = () => {
