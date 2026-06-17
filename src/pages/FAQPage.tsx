@@ -169,8 +169,8 @@ const FAQPage = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <SEO
-        title="Ótica Gouveia — Perguntas Frequentes sobre Óculos, Exame de Vista e Lentes em Curitiba | Pinheirinho e Umbará"
-        description="Tire todas as suas dúvidas sobre óculos com grau, exame de vista, lentes de contato, óculos de sol e visão. A Ótica Gouveia responde perguntas de forma simples e clara para toda a família em Curitiba."
+        title="FAQ Ótica Gouveia - Dúvidas sobre Óculos | Curitiba"
+        description="Perguntas frequentes sobre óculos de grau, exame de vista, lentes de contato e óculos de sol. Atendimento da Ótica Gouveia em Curitiba."
         keywords="ótica em curitiba, ótica pinheirinho curitiba, ótica umbará curitiba, exame de vista curitiba, óculos com grau curitiba, lentes de contato curitiba, óculos de sol com grau curitiba, ótica para idosos curitiba, óculos para presbiopia curitiba, lentes progressivas curitiba"
         canonicalUrl="/faq"
         structuredData={combinedSchema}
