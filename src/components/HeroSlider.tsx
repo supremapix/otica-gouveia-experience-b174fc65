@@ -89,46 +89,48 @@ const HeroSlider = () => {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-screen">
-        <div className="max-w-2xl py-20" key={current}>
+        <div className="max-w-3xl py-24" key={current}>
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 animate-fade-in backdrop-blur-sm"
-            style={{ backgroundColor: 'hsla(var(--primary), 0.9)', border: '1px solid hsla(0, 0%, 100%, 0.2)' }}
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full mb-6 animate-fade-in backdrop-blur-sm"
+            style={{ backgroundColor: 'hsla(var(--primary), 0.95)', border: '1px solid hsla(0, 0%, 100%, 0.25)' }}
           >
-            <slide.badgeIcon className="w-4 h-4 text-white" />
-            <span className="text-sm font-bold text-white tracking-wide">
+            <slide.badgeIcon className="w-5 h-5 text-white" />
+            <span className="text-base font-bold text-white tracking-wide">
               {slide.badge}
             </span>
           </div>
 
           {/* Title */}
-          <h1 className="font-display font-black text-white leading-[1.1] mb-4 animate-fade-in"
-            style={{ fontSize: 'clamp(36px, 6vw, 72px)', animationDelay: '0.1s' }}
+          <h1 className="font-display font-black text-white leading-[1.1] mb-5 animate-fade-in"
+            style={{ fontSize: 'clamp(40px, 6.5vw, 78px)', animationDelay: '0.1s' }}
           >
             {slide.title}
           </h1>
 
           {/* Subtitle */}
-          <p className="font-bold mb-4 text-white/90 animate-fade-in" 
-            style={{ fontSize: 'clamp(18px, 3vw, 28px)', animationDelay: '0.2s' }}
+          <p className="font-bold mb-5 text-white animate-fade-in"
+            style={{ fontSize: 'clamp(20px, 3vw, 30px)', animationDelay: '0.2s', lineHeight: 1.4 }}
           >
             {slide.subtitle}
           </p>
 
           {/* Description */}
-          <p className="text-white/80 text-lg mb-8 max-w-xl animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
+          <p className="text-white/90 mb-8 max-w-xl animate-fade-in"
+            style={{ fontSize: 'clamp(18px, 2vw, 22px)', lineHeight: 1.7, animationDelay: '0.3s' }}
+          >
             {slide.description}
           </p>
 
-          {/* CTAs */}
+          {/* CTAs - botões grandes para melhor idade */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <a
               href={slide.cta1.href}
               target={slide.cta1.href.startsWith('http') ? '_blank' : undefined}
               rel={slide.cta1.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all duration-300 hover:scale-105 shadow-xl text-primary-foreground"
-              style={{ backgroundColor: 'hsl(var(--primary))' }}
+              className="inline-flex items-center justify-center gap-3 px-8 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-2xl text-primary-foreground"
+              style={{ backgroundColor: 'hsl(var(--primary))', minHeight: '64px', fontSize: '19px' }}
             >
-              {slide.cta1.icon && <slide.cta1.icon className="w-5 h-5" />}
+              {slide.cta1.icon && <slide.cta1.icon className="w-6 h-6" />}
               {slide.cta1.label}
             </a>
             {slide.cta2 && (
@@ -136,22 +138,50 @@ const HeroSlider = () => {
                 href={slide.cta2.href}
                 target={slide.cta2.href.startsWith('http') ? '_blank' : undefined}
                 rel={slide.cta2.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-base transition-all duration-300 hover:scale-105 border-2 border-white/40 text-white hover:bg-white/10 backdrop-blur-sm"
+                className="inline-flex items-center justify-center px-8 rounded-full font-bold transition-all duration-300 hover:scale-105 border-2 border-white text-white hover:bg-white/15 backdrop-blur-sm"
+                style={{ minHeight: '64px', fontSize: '19px' }}
               >
                 {slide.cta2.label}
               </a>
             )}
           </div>
 
+          {/* Atalhos rápidos - acessibilidade melhor idade */}
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            <a
+              href="tel:+554131140663"
+              className="flex items-center justify-center gap-2 bg-white/15 backdrop-blur-md border border-white/30 rounded-2xl px-4 py-3 text-white font-semibold hover:bg-white/25 transition-all"
+              style={{ minHeight: '56px', fontSize: '16px' }}
+            >
+              <Phone className="w-5 h-5" /> Ligar agora
+            </a>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-white/15 backdrop-blur-md border border-white/30 rounded-2xl px-4 py-3 text-white font-semibold hover:bg-white/25 transition-all"
+              style={{ minHeight: '56px', fontSize: '16px' }}
+            >
+              <MessageCircle className="w-5 h-5" /> WhatsApp
+            </a>
+            <a
+              href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9"
+              target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-white/15 backdrop-blur-md border border-white/30 rounded-2xl px-4 py-3 text-white font-semibold hover:bg-white/25 transition-all"
+              style={{ minHeight: '56px', fontSize: '16px' }}
+            >
+              <MapPin className="w-5 h-5" /> Como chegar
+            </a>
+          </div>
+
           {/* Google Rating */}
-          <div className="mt-8 flex items-center gap-3 text-white animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          <div className="mt-6 flex items-center gap-3 text-white animate-fade-in flex-wrap" style={{ animationDelay: '0.6s' }}>
             <div className="flex">
               {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                <Star key={star} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
               ))}
             </div>
-            <span className="text-base font-semibold">4.9 no Google</span>
-            <span className="text-sm opacity-70">(+200 avaliações)</span>
+            <span className="text-lg font-bold">4.9 no Google</span>
+            <span className="text-base opacity-80">(+200 avaliações reais)</span>
           </div>
         </div>
       </div>
