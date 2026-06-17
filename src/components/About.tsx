@@ -7,8 +7,8 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-white" ref={ref as React.RefObject<HTMLDivElement>}>
       <div className="section-container">
-        <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center transition-all duration-1000 ease-out ${
-          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+        <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center transition-opacity duration-1000 ease-out ${
+          isInView ? 'opacity-100' : 'opacity-0'
         }`}>
           {/* Left Column - Text */}
           <div>
@@ -81,8 +81,8 @@ const About = () => {
         </div>
         
         {/* Values Section */}
-        <div className={`mt-20 transition-all duration-1000 ease-out delay-300 ${
-          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+        <div className={`mt-20 transition-opacity duration-1000 ease-out delay-300 ${
+          isInView ? 'opacity-100' : 'opacity-0'
         }`}>
           <div className="text-center mb-12">
             <span className="text-brand-red text-sm font-semibold uppercase tracking-wider">O QUE NOS MOVE</span>
