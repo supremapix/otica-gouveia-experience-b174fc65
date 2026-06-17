@@ -997,4 +997,16 @@
     </image:image>
   </url>
 
+  <!-- Blog: Óculos vs Lentes de Contato -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/blog/oculos-ou-lentes</loc>
+    <lastmod>2025-06-17T12:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
+      <image:caption>Óculos de Grau ou Lente de Contato — Guia Comparativo Ótica Gouveia</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
