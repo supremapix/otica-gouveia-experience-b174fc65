@@ -7,6 +7,7 @@ import FloatingButtonsGroup from '../components/FloatingButtonsGroup';
 import BackToTop from '../components/BackToTop';
 import SEO from '../components/SEO';
 import { faqBlocks, blogArticles, getTotalQuestions } from '../data/faqCompleteData';
+import heroFaq from '../assets/hero-faq.webp';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es.%20Pode%20me%20ajudar?";
 
