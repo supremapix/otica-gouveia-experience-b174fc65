@@ -19,7 +19,7 @@ const Hero = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const heroImage = "/lovable-uploads/otica-gouveia-fachada.png";
+  const heroImage = "/lovable-uploads/otica-gouveia-fachada.webp";
 
   // Criar partículas flutuantes
   const particles = Array.from({ length: 20 }, (_, i) => ({

@@ -18,7 +18,7 @@ const SEO = ({
   description,
   keywords = "",
   canonicalUrl,
-  ogImage = "https://www.gouveiacuritiba.com.br/og-image.png",
+  ogImage = "https://www.gouveiacuritiba.com.br/og-image.webp",
   ogType = "website",
   structuredData,
   robots = "index, follow",

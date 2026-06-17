@@ -95,7 +95,7 @@ const Navbar = () => {
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="flex items-center">
                 <img 
-                  src="/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.png" 
+                  src="/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.webp" 
                   alt="Ótica Gouveia Logo" 
                   className="h-8 md:h-10"
                 />
@@ -164,7 +164,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center px-4 h-16 sticky top-0 z-10" style={{ backgroundColor: 'hsl(var(--primary))' }}>
             <Link to="/" onClick={() => setIsOpen(false)}>
               <img 
-                src="/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.png" 
+                src="/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.webp" 
                 alt="Ótica Gouveia Logo" 
                 className="h-9"
               />

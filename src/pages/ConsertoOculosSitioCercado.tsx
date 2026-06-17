@@ -52,7 +52,7 @@ const ConsertoOculosSitioCercado = () => {
         <meta property="og:title" content="Conserto de Óculos Sítio Cercado | Ótica Gouveia Curitiba" />
         <meta property="og:description" content="Conserto rápido de óculos no Sítio Cercado e região. Ajuste, solda, plaquetas, parafusos. Entrega grátis acima de R$ 250." />
         <meta property="og:url" content="https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado" />
-        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.png" />
+        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

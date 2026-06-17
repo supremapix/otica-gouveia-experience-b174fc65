@@ -14,7 +14,7 @@ const heroImages = [
   '/lovable-uploads/otica-gouveia-armacoes.webp',
   '/lovable-uploads/otica-gouveia-rayban.webp',
   '/lovable-uploads/otica-gouveia-expositor.webp',
-  '/lovable-uploads/otica-gouveia-carolina-herrera.png',
+  '/lovable-uploads/otica-gouveia-carolina-herrera.webp',
   '/lovable-uploads/otica-gouveia-esportivos.webp',
 ];
 

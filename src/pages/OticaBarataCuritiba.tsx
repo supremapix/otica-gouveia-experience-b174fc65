@@ -46,7 +46,7 @@ const OticaBarataCuritiba = () => {
         <meta property="og:title" content="Ótica Barata em Curitiba | Óculos a partir de R$ 199,90 | Gouveia" />
         <meta property="og:description" content="Óculos de qualidade com os melhores preços de Curitiba. Parcelamos em 10x sem juros. Entrega grátis." />
         <meta property="og:url" content="https://www.gouveiacuritiba.com.br/otica-barata-curitiba" />
-        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.png" />
+        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

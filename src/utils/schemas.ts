@@ -5,8 +5,8 @@ export const createOrganizationSchema = () => ({
   "@type": "Organization",
   "name": "Ótica Gouveia",
   "url": "https://www.gouveiacuritiba.com.br",
-  "logo": "https://www.gouveiacuritiba.com.br/lovable-uploads/9cb88b28-e372-46cb-9604-f84bf0bed383.png",
-  "image": "https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png",
+  "logo": "https://www.gouveiacuritiba.com.br/lovable-uploads/9cb88b28-e372-46cb-9604-f84bf0bed383.webp",
+  "image": "https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.webp",
   "description": "Ótica Gouveia - Tradição e qualidade em cuidados visuais. Óculos de grau, sol, lentes de contato e exames de vista gratuitos em Curitiba.",
   "address": {
     "@type": "PostalAddress",
@@ -43,7 +43,7 @@ export const createLocalBusinessSchema = (location: string) => ({
   "@type": "LocalBusiness",
   "@id": `https://www.gouveiacuritiba.com.br/#LocalBusiness-${location}`,
   "name": `Ótica Gouveia ${location}`,
-  "image": "https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png",
+  "image": "https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.webp",
   "url": "https://www.gouveiacuritiba.com.br",
   "telephone": "+55-41-3114-0663",
   "address": {
@@ -80,7 +80,7 @@ export const createOpticalStoreSchema = (location: string) => ({
   "name": `Ótica Gouveia ${location}`,
   "description": `Ótica especializada em óculos de grau, sol e lentes de contato no ${location}, Curitiba. Exames de vista gratuitos e atendimento personalizado.`,
   "url": "https://www.gouveiacuritiba.com.br",
-  "image": "https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png",
+  "image": "https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.webp",
   "telephone": "+55-41-3114-0663",
   "address": {
     "@type": "PostalAddress",

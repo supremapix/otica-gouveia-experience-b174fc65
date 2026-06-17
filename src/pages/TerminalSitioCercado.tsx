@@ -39,7 +39,7 @@ const TerminalSitioCercado = () => {
         <meta property="og:title" content="Ótica perto do Terminal Sítio Cercado | Ótica Gouveia" />
         <meta property="og:description" content="Sua ótica de referência perto do Terminal Sítio Cercado em Curitiba. Entrega grátis no bairro." />
         <meta property="og:url" content="https://www.gouveiacuritiba.com.br/otica-terminal-sitio-cercado" />
-        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.png" />
+        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

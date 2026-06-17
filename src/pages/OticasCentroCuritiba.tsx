@@ -48,7 +48,7 @@ const OticasCentroCuritiba = () => {
         <meta property="og:title" content="Óticas no Centro de Curitiba | Ótica Gouveia" />
         <meta property="og:description" content="A melhor ótica de Curitiba. Óculos de grau, sol e lentes de contato com entrega em toda cidade. Tecnologia Visioffice 3." />
         <meta property="og:url" content="https://www.gouveiacuritiba.com.br/oticas-no-centro-de-curitiba" />
-        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.png" />
+        <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

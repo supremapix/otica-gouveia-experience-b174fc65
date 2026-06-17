@@ -10,7 +10,7 @@ const Services = () => {
     exams: {
       title: "Medidas de Alta Precisão",
       description: "A Ótica Gouveia Úmbara traz o que há de mais moderno no mundo óptico com o Visioffice 3, um equipamento de alta tecnologia da Essilor que garante extrema precisão em diversas medições. Em apenas alguns segundos, conseguimos determinar com exatidão diversas medidas para o ajuste perfeito das suas lentes.",
-      image: "/lovable-uploads/4a29b99c-56aa-418b-be88-b850f3f0cc76.png",
+      image: "/lovable-uploads/4a29b99c-56aa-418b-be88-b850f3f0cc76.webp",
       features: [
         "Distância pupilar",
         "Altura de montagem",
@@ -24,7 +24,7 @@ const Services = () => {
     lenses: {
       title: "Lentes de Qualidade",
       description: "Trabalhamos com as melhores marcas de lentes do mercado para proporcionar conforto visual e proteção para seus olhos. Das lentes básicas às mais tecnológicas, temos a solução ideal para você.",
-      image: "/lovable-uploads/d03236fb-b7da-44a0-9e41-d1bcf77ee2fe.png",
+      image: "/lovable-uploads/d03236fb-b7da-44a0-9e41-d1bcf77ee2fe.webp",
       features: [
         "Lentes multifocais Varilux",
         "Tratamento anti-reflexo Crizal",
@@ -37,7 +37,7 @@ const Services = () => {
     frames: {
       title: "Armações Exclusivas",
       description: "Oferecemos uma ampla variedade de armações para todos os estilos e necessidades. De marcas renomadas como Ray-Ban e Ana Hickmann a modelos exclusivos para o público infantil.",
-      image: "/lovable-uploads/74d8f6cb-dfbb-4388-82b9-f012acfbadcc.png",
+      image: "/lovable-uploads/74d8f6cb-dfbb-4388-82b9-f012acfbadcc.webp",
       features: [
         "Marcas premium nacionais e importadas",
         "Modelos para todos os rostos",
@@ -50,7 +50,7 @@ const Services = () => {
     maintenance: {
       title: "Manutenção e Ajustes",
       description: "Sua experiência com óculos não termina na compra. Oferecemos serviços completos de manutenção, ajustes e reparos para garantir o conforto e a durabilidade dos seus óculos.",
-      image: "/lovable-uploads/484f4810-331a-4018-af69-0853c07fa440.png",
+      image: "/lovable-uploads/484f4810-331a-4018-af69-0853c07fa440.webp",
       features: [
         "Ajustes de armação",
         "Troca de plaquetas e parafusos",
