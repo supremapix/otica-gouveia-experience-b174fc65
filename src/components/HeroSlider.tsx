@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import oticaHeroAsset from '../assets/otica-hero.jpg.asset.json';
 import { ChevronLeft, ChevronRight, Star, MapPin, Phone, MessageCircle } from 'lucide-react';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20%C3%93tica%20Gouveia%20e%20gostaria%20de%20um%20or%C3%A7amento%20%F0%9F%98%8A";
@@ -12,7 +13,7 @@ const slides = [
     description: 'Lentes digitais com precisão Visioffice 3 da Essilor. Venha à loja no Umbará e Pinheirinho!',
     cta1: { label: 'PEDIR ORÇAMENTO', href: WHATSAPP_URL, icon: MessageCircle },
     cta2: { label: 'VER PROMOÇÕES', href: '#products' },
-    image: '/lovable-uploads/otica-gouveia-vitrine.webp',
+    image: oticaHeroAsset.url,
   },
   {
     badge: 'TECNOLOGIA EXCLUSIVA',
