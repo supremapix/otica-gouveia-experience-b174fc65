@@ -5,6 +5,7 @@ import SEO from '../components/SEO';
 import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
 import { MessageCircle, Glasses, User, Users, Baby, ScanEye } from 'lucide-react';
+import PageHero from '../components/PageHero';
 
 const WHATSAPP_BASE = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%20";
 
@@ -63,23 +64,13 @@ const ProdutosPage = () => {
       <Navbar />
 
       {/* Hero */}
-      <section
-        className="pt-32 pb-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, hsl(225,100%,13%) 0%, hsl(221,100%,26%) 100%)' }}
-      >
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4"
-            style={{ backgroundColor: 'hsla(48,100%,50%,0.15)', color: 'hsl(48,100%,50%)', border: '1px solid hsla(48,100%,50%,0.3)' }}>
-            <Glasses className="w-4 h-4" /> CATÁLOGO
-          </span>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-            Nossas <span style={{ color: 'hsl(48,100%,50%)' }}>Coleções</span>
-          </h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            Mais de 500 modelos em estoque — armações, óculos de sol e lentes das melhores marcas do mundo.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        BadgeIcon={Glasses}
+        badgeText="Catálogo"
+        title="Nossas"
+        highlight="Coleções"
+        description="Mais de 500 modelos em estoque — armações, óculos de sol e lentes das melhores marcas do mundo."
+      />
 
       {/* Filtros + Grid */}
       <section className="py-16 px-4 bg-white">
