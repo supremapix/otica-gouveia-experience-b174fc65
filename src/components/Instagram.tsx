@@ -28,8 +28,7 @@ const Instagram = () => {
               <div className="rounded-xl overflow-hidden bg-white">
                 <iframe
                   src="https://www.instagram.com/gouveiaoticacuritiba/embed/"
-                  className="block w-full"
-                  height={620}
+                  className="block w-full h-[480px] md:h-[620px]"
                   frameBorder="0"
                   scrolling="no"
                   allowTransparency={true}
