@@ -62,8 +62,8 @@ const HeroSlider = () => {
 
   return (
     <section
-      id="home"
-      className="relative w-full overflow-hidden bg-white"
+      id="hero"
+      className="relative w-full overflow-hidden bg-primary"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       aria-label="Banner principal Ótica Gouveia"
