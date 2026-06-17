@@ -110,11 +110,11 @@ const ServicosPage = () => {
               <div key={i} className="bg-white rounded-2xl border border-border/50 p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-14 h-14 rounded-2xl flex items-center justify-center"
-                    style={{ backgroundColor: 'hsla(221,100%,26%,0.1)' }}>
-                    <s.Icon className="w-7 h-7" style={{ color: 'hsl(221,100%,26%)' }} />
+                    style={{ backgroundColor: 'hsla(0,75%,42%,0.1)' }}>
+                    <s.Icon className="w-7 h-7" style={{ color: 'hsl(0,75%,42%)' }} />
                   </div>
                   <span className="text-xs font-bold px-3 py-1 rounded-full inline-flex items-center gap-1"
-                    style={{ backgroundColor: 'hsla(221,100%,26%,0.1)', color: 'hsl(221,100%,26%)' }}>
+                    style={{ backgroundColor: 'hsla(0,75%,42%,0.1)', color: 'hsl(0,75%,42%)' }}>
                     <s.BadgeIcon className="w-3 h-3" /> {s.badge}
                   </span>
                 </div>
@@ -132,7 +132,7 @@ const ServicosPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center py-3 rounded-full font-bold text-sm transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
-                  style={{ backgroundColor: 'hsl(221,100%,26%)', color: 'white' }}
+                  style={{ backgroundColor: 'hsl(0,75%,42%)', color: 'white' }}
                 >
                   <MessageCircle className="w-4 h-4" /> {s.cta}
                 </a>

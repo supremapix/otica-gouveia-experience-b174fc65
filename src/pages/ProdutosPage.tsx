@@ -83,8 +83,8 @@ const ProdutosPage = () => {
                 onClick={() => setActiveCategory(cat.key)}
                 className="px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-200 inline-flex items-center gap-2"
                 style={activeCategory === cat.key
-                  ? { backgroundColor: 'hsl(221,100%,26%)', color: 'white' }
-                  : { backgroundColor: 'hsl(210,40%,96%)', color: 'hsl(221,100%,26%)' }
+                  ? { backgroundColor: 'hsl(0,75%,42%)', color: 'white' }
+                  : { backgroundColor: 'hsl(0,0%,96%)', color: 'hsl(0,75%,42%)' }
                 }
               >
                 <cat.Icon className="w-4 h-4" /> {cat.label}
@@ -107,7 +107,7 @@ const ProdutosPage = () => {
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="font-bold text-foreground">{p.name}</h3>
                     <span className="text-xs px-2 py-1 rounded-full capitalize"
-                      style={{ backgroundColor: 'hsla(221,100%,26%,0.1)', color: 'hsl(221,100%,26%)' }}>
+                      style={{ backgroundColor: 'hsla(0,75%,42%,0.1)', color: 'hsl(0,75%,42%)' }}>
                       {p.category}
                     </span>
                   </div>
@@ -115,7 +115,7 @@ const ProdutosPage = () => {
                   <button
                     onClick={(e) => { e.stopPropagation(); window.open(`${WHATSAPP_BASE}${encodeURIComponent(p.name)}.%20Pode%20me%20ajudar?`, '_blank'); }}
                     className="w-full py-2.5 rounded-full font-bold text-sm transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
-                    style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
+                    style={{ backgroundColor: '#ffffff', color: 'hsl(0,75%,42%)' }}
                   >
                     <MessageCircle className="w-4 h-4" /> Consultar Preço
                   </button>
@@ -127,9 +127,9 @@ const ProdutosPage = () => {
       </section>
 
       {/* Marcas */}
-      <section className="py-16 px-4" style={{ backgroundColor: 'hsl(210,40%,98%)' }}>
+      <section className="py-16 px-4" style={{ backgroundColor: 'hsl(0,0%,98%)' }}>
         <div className="max-w-5xl mx-auto text-center">
-          <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(221,100%,26%)' }}>PARCEIROS</span>
+          <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(0,75%,42%)' }}>PARCEIROS</span>
           <h2 className="text-2xl font-black mt-2 mb-10 text-foreground">Marcas que Trabalhamos</h2>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
             {brands.map((b, i) => (
@@ -142,7 +142,7 @@ const ProdutosPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 text-white" style={{ backgroundColor: 'hsl(225,100%,13%)' }}>
+      <section className="py-20 px-4 text-white" style={{ backgroundColor: 'hsl(0,0%,8%)' }}>
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-black mb-4">Não encontrou o que procura?</h2>
           <p className="text-white/70 mb-8">Temos mais de 500 modelos em loja! Fale conosco e encontramos o produto ideal para você.</p>
@@ -151,7 +151,7 @@ const ProdutosPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105"
-            style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
+            style={{ backgroundColor: '#ffffff', color: 'hsl(0,75%,42%)' }}
           >
             <MessageCircle className="w-5 h-5" /> Falar com especialista
           </a>
@@ -175,7 +175,7 @@ const ProdutosPage = () => {
             <div className="p-6">
               <h3 className="text-2xl font-black text-foreground mb-2">{selected.name}</h3>
               <span className="text-sm capitalize px-3 py-1 rounded-full mb-4 inline-block"
-                style={{ backgroundColor: 'hsla(221,100%,26%,0.1)', color: 'hsl(221,100%,26%)' }}>
+                style={{ backgroundColor: 'hsla(0,75%,42%,0.1)', color: 'hsl(0,75%,42%)' }}>
                 {selected.category}
               </span>
               <p className="text-muted-foreground mt-3 mb-6">{selected.desc}</p>
@@ -185,14 +185,14 @@ const ProdutosPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 text-center py-3 rounded-full font-bold transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
-                  style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
+                  style={{ backgroundColor: '#ffffff', color: 'hsl(0,75%,42%)' }}
                 >
                   <MessageCircle className="w-4 h-4" /> Consultar Preço
                 </a>
                 <button
                   onClick={() => setSelected(null)}
                   className="px-6 py-3 rounded-full font-bold border-2 transition-all"
-                  style={{ borderColor: 'hsl(221,100%,26%)', color: 'hsl(221,100%,26%)' }}
+                  style={{ borderColor: 'hsl(0,75%,42%)', color: 'hsl(0,75%,42%)' }}
                 >
                   Fechar
                 </button>
