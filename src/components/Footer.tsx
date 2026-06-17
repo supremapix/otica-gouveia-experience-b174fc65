@@ -5,7 +5,7 @@ const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-black text-white">
       {/* Faixa de contato rápido - melhor idade */}
       <div className="border-b border-white/15 bg-black/15">
         <div className="section-container py-8">
