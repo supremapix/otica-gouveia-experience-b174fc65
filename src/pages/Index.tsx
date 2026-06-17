@@ -130,6 +130,10 @@ const Index = () => {
         </ErrorBoundary>
       </section>
       
+      <ErrorBoundary componentName="MarqueeBar" fallback={<div className="p-4">Error</div>}>
+        <MarqueeBar />
+      </ErrorBoundary>
+      
       <section id="about">
         <ErrorBoundary componentName="About" fallback={<div className="p-4">Error</div>}>
           <About />
