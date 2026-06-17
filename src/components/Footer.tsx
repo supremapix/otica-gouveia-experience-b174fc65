@@ -7,41 +7,41 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       {/* Faixa de contato rápido - melhor idade */}
-      <div className="border-b border-white/15 bg-black/15">
-        <div className="section-container py-8">
-          <div className="text-center mb-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Precisa de ajuda? Fale conosco agora</h2>
-            <p className="text-white/85 text-lg">Estamos prontos para te atender com calma e atenção</p>
+      <div className="border-b border-white/15 bg-brand-red/95">
+        <div className="section-container py-10">
+          <div className="text-center mb-7">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3">Precisa de ajuda? Fale conosco agora</h2>
+            <p className="text-white/95 text-lg md:text-xl">Estamos prontos para te atender com calma e atenção</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <a
               href="tel:+554131140663"
-              className="flex flex-col items-center justify-center bg-white text-primary rounded-2xl py-5 px-4 font-bold shadow-lg hover:scale-[1.02] transition-transform"
-              style={{ minHeight: '88px' }}
+              className="flex flex-col items-center justify-center bg-white text-brand-red rounded-2xl py-6 px-4 font-bold shadow-lg hover:scale-[1.02] transition-transform"
+              style={{ minHeight: '96px' }}
             >
-              <Phone className="w-7 h-7 mb-1" strokeWidth={2.5} />
-              <span className="text-lg">LIGAR AGORA</span>
-              <span className="text-sm font-semibold opacity-80">(41) 3114-0663</span>
+              <Phone className="w-8 h-8 mb-2" strokeWidth={2.5} />
+              <span className="text-xl">LIGAR AGORA</span>
+              <span className="text-base font-semibold opacity-85">(41) 3114-0663</span>
             </a>
             <a
               href={WHATSAPP_URL}
               target="_blank" rel="noopener noreferrer"
-              className="flex flex-col items-center justify-center text-white rounded-2xl py-5 px-4 font-bold shadow-lg hover:scale-[1.02] transition-transform"
-              style={{ backgroundColor: 'hsl(142, 70%, 45%)', minHeight: '88px' }}
+              className="flex flex-col items-center justify-center text-white rounded-2xl py-6 px-4 font-bold shadow-lg hover:scale-[1.02] transition-transform"
+              style={{ backgroundColor: 'hsl(142, 70%, 38%)', minHeight: '96px' }}
             >
-              <MessageCircle className="w-7 h-7 mb-1" strokeWidth={2.5} />
-              <span className="text-lg">WHATSAPP</span>
-              <span className="text-sm font-semibold opacity-90">(41) 99161-0663</span>
+              <MessageCircle className="w-8 h-8 mb-2" strokeWidth={2.5} />
+              <span className="text-xl">WHATSAPP</span>
+              <span className="text-base font-semibold opacity-95">(41) 99161-0663</span>
             </a>
             <a
               href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9"
               target="_blank" rel="noopener noreferrer"
-              className="flex flex-col items-center justify-center bg-white/15 border-2 border-white text-white rounded-2xl py-5 px-4 font-bold shadow-lg hover:scale-[1.02] transition-transform"
-              style={{ minHeight: '88px' }}
+              className="flex flex-col items-center justify-center bg-white/15 border-2 border-white text-white rounded-2xl py-6 px-4 font-bold shadow-lg hover:scale-[1.02] transition-transform"
+              style={{ minHeight: '96px' }}
             >
-              <MapPin className="w-7 h-7 mb-1" strokeWidth={2.5} />
-              <span className="text-lg">COMO CHEGAR</span>
-              <span className="text-sm font-semibold opacity-90">Umbará - Curitiba</span>
+              <MapPin className="w-8 h-8 mb-2" strokeWidth={2.5} />
+              <span className="text-xl">COMO CHEGAR</span>
+              <span className="text-base font-semibold opacity-95">Umbará - Curitiba</span>
             </a>
           </div>
         </div>
@@ -58,25 +58,25 @@ const Footer = () => {
                 className="h-12 mb-3"
               />
             </div>
-            <p className="text-white/85 mb-6 text-[17px] leading-[1.7]">
+            <p className="text-white/90 mb-6 text-[18px] leading-[1.8]">
               Cuidamos da sua visão com carinho e paciência. Atendimento dedicado à melhor idade em Curitiba.
             </p>
             <a 
               href="https://www.instagram.com/gouveiaoticacuritiba/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white px-4 py-3 rounded-full font-semibold transition-colors"
+              className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white px-5 py-3 rounded-full font-semibold transition-colors"
               aria-label="Siga-nos no Instagram"
-              style={{ minHeight: '48px' }}
+              style={{ minHeight: '56px' }}
             >
-              <Instagram className="w-5 h-5" />
-              <span className="text-[15px]">Instagram</span>
+              <Instagram className="w-6 h-6" />
+              <span className="text-[17px]">Instagram</span>
             </a>
           </div>
           
           {/* Navigation */}
           <div>
-            <h3 className="text-xl font-bold mb-5 text-white uppercase tracking-wide">Navegação</h3>
+            <h3 className="text-2xl font-bold mb-5 text-white uppercase tracking-wide">Navegação</h3>
             <ul className="space-y-1">
               {[
                 { name: 'Início', href: '/' },
@@ -89,8 +89,8 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-white/85 hover:text-white hover:underline transition-colors text-[17px] block py-3 font-medium"
-                    style={{ minHeight: '48px', display: 'flex', alignItems: 'center' }}
+                    className="text-white/90 hover:text-white hover:underline transition-colors text-[18px] block py-3 font-medium"
+                    style={{ minHeight: '56px', display: 'flex', alignItems: 'center' }}
                   >
                     › {link.name}
                   </Link>
@@ -101,22 +101,22 @@ const Footer = () => {
           
           {/* Contact */}
           <div>
-            <h3 className="text-xl font-bold mb-5 text-white uppercase tracking-wide">Onde Estamos</h3>
-            <ul className="space-y-4">
+            <h3 className="text-2xl font-bold mb-5 text-white uppercase tracking-wide">Onde Estamos</h3>
+            <ul className="space-y-5">
               <li className="flex items-start gap-3">
-                <MapPin className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                <MapPin className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
                 <a 
                   href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/90 hover:text-white hover:underline transition-colors text-[17px] leading-relaxed"
+                  className="text-white/95 hover:text-white hover:underline transition-colors text-[18px] leading-[1.7]"
                 >
                   R. Nicola Pellanda, 1286<br/>Umbará, Curitiba - PR
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Clock className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
-                <span className="text-white/90 text-[17px] leading-relaxed">
+                <Clock className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
+                <span className="text-white/95 text-[18px] leading-[1.7]">
                   Seg a Sex: 9h às 18h<br/>Sábado: 9h às 13h
                 </span>
               </li>
@@ -125,7 +125,7 @@ const Footer = () => {
 
           {/* Ajuda Rápida */}
           <div>
-            <h3 className="text-xl font-bold mb-5 text-white uppercase tracking-wide">Tire Suas Dúvidas</h3>
+            <h3 className="text-2xl font-bold mb-5 text-white uppercase tracking-wide">Tire Suas Dúvidas</h3>
             <ul className="space-y-1">
               {[
                 { name: 'Óculos para Idosos', href: '/faq#idosos' },
@@ -137,8 +137,8 @@ const Footer = () => {
                 <li key={page.href}>
                   <Link
                     to={page.href}
-                    className="text-white/85 hover:text-white hover:underline transition-colors text-[16px] block py-3 font-medium"
-                    style={{ minHeight: '48px', display: 'flex', alignItems: 'center' }}
+                    className="text-white/90 hover:text-white hover:underline transition-colors text-[18px] block py-3 font-medium"
+                    style={{ minHeight: '56px', display: 'flex', alignItems: 'center' }}
                   >
                     › {page.name}
                   </Link>
@@ -149,8 +149,8 @@ const Footer = () => {
         </div>
         
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/60 text-[15px]">
-          <p>© 2025 Ótica Gouveia. Todos os direitos reservados.</p>
+        <div className="mt-12 pt-8 border-t border-white/15 text-center text-white/75 text-[16px]">
+          <p className="text-[17px]">© 2025 Ótica Gouveia. Todos os direitos reservados.</p>
           <p className="mt-3 flex items-center justify-center gap-2 flex-wrap">
             Desenvolvido com
             <span className="text-white text-2xl animate-heartbeat inline-block">
