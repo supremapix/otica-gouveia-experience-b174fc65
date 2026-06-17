@@ -1,4 +1,4 @@
-const CACHE_NAME = 'otica-gouveia-v1';
+const CACHE_NAME = 'otica-gouveia-v3';
 const STATIC_CACHE_URLS = [
   '/',
   '/index.html',
