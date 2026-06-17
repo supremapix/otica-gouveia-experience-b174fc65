@@ -24,10 +24,8 @@ const HeroSlider = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   const goTo = useCallback((idx: number) => {
-    setPrevIndex((p) => {
-      // capture current as previous
-      return current;
-    });
+    if (idx === current) return;
+    setPrevIndex(current);
     setCurrent(idx);
   }, [current]);
 
@@ -47,6 +45,21 @@ const HeroSlider = () => {
     return () => clearInterval(timer);
   }, [isPaused, next]);
 
+  // Impactful transition: active reveals via clip-path from right + zoom-out;
+  // previous exits with zoom-in + blur + fade.
+  const getClasses = (isActive: boolean, wasPrev: boolean, base: string) => {
+    if (isActive) {
+      return `${base} opacity-100 scale-100 blur-0 z-20 [clip-path:inset(0_0_0_0)]`;
+    }
+    if (wasPrev) {
+      return `${base} opacity-0 scale-[1.15] blur-md z-10 [clip-path:inset(0_0_0_0)]`;
+    }
+    return `${base} opacity-0 scale-105 blur-sm z-0 [clip-path:inset(0_100%_0_0)]`;
+  };
+
+  const transitionBase =
+    'will-change-transform transition-all duration-[1400ms] ease-[cubic-bezier(.77,0,.18,1)]';
+
   return (
     <section
       id="home"
@@ -55,7 +68,7 @@ const HeroSlider = () => {
       onMouseLeave={() => setIsPaused(false)}
       aria-label="Banner principal Ótica Gouveia"
     >
-      {/* Mobile: full image without cropping footer */}
+      {/* Mobile */}
       <div className="relative w-full md:hidden">
         {slides.map((s, i) => {
           const isActive = i === current;
@@ -66,20 +79,20 @@ const HeroSlider = () => {
               src={s.mobile}
               alt={s.alt}
               loading={i === 0 ? 'eager' : 'lazy'}
-              className={`w-full h-auto block will-change-transform transition-all duration-[1100ms] ease-[cubic-bezier(.22,1,.36,1)] ${
-                isActive
-                  ? 'opacity-100 scale-100 relative z-10'
-                  : wasPrev
-                  ? 'opacity-0 scale-110 absolute inset-0 z-0'
-                  : 'opacity-0 scale-105 absolute inset-0 z-0'
-              }`}
+              className={getClasses(
+                isActive,
+                wasPrev,
+                `${transitionBase} w-full h-auto block ${
+                  isActive ? 'relative' : 'absolute inset-0'
+                }`
+              )}
             />
           );
         })}
-        <SliderControls current={current} count={slides.length} onPrev={prev} onNext={next} onGo={goTo} />
+        <SliderControls onPrev={prev} onNext={next} />
       </div>
 
-      {/* Desktop: original wide aspect */}
+      {/* Desktop */}
       <div className="relative w-full hidden md:block aspect-[1905/798] max-h-[80vh] min-h-[300px]">
         {slides.map((s, i) => {
           const isActive = i === current;
@@ -90,62 +103,42 @@ const HeroSlider = () => {
               src={s.desktop}
               alt={s.alt}
               loading={i === 0 ? 'eager' : 'lazy'}
-              className={`absolute inset-0 w-full h-full object-cover will-change-transform transition-all duration-[1200ms] ease-[cubic-bezier(.22,1,.36,1)] ${
-                isActive
-                  ? 'opacity-100 scale-100 z-10'
-                  : wasPrev
-                  ? 'opacity-0 scale-110 z-0'
-                  : 'opacity-0 scale-105 z-0'
-              }`}
+              className={getClasses(
+                isActive,
+                wasPrev,
+                `${transitionBase} absolute inset-0 w-full h-full object-cover`
+              )}
             />
           );
         })}
-        <SliderControls current={current} count={slides.length} onPrev={prev} onNext={next} onGo={goTo} />
+        <SliderControls onPrev={prev} onNext={next} />
       </div>
     </section>
   );
 };
 
 const SliderControls = ({
-  current,
-  count,
   onPrev,
   onNext,
-  onGo,
 }: {
-  current: number;
-  count: number;
   onPrev: () => void;
   onNext: () => void;
-  onGo: (i: number) => void;
 }) => (
   <>
     <button
       onClick={onPrev}
-      className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/85 hover:bg-white shadow-lg flex items-center justify-center text-primary transition-all hover:scale-110"
+      className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/85 hover:bg-white shadow-lg flex items-center justify-center text-primary transition-all hover:scale-110"
       aria-label="Slide anterior"
     >
       <ChevronLeft className="w-7 h-7" />
     </button>
     <button
       onClick={onNext}
-      className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/85 hover:bg-white shadow-lg flex items-center justify-center text-primary transition-all hover:scale-110"
+      className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/85 hover:bg-white shadow-lg flex items-center justify-center text-primary transition-all hover:scale-110"
       aria-label="Próximo slide"
     >
       <ChevronRight className="w-7 h-7" />
     </button>
-    <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-3">
-      {Array.from({ length: count }).map((_, i) => (
-        <button
-          key={i}
-          onClick={() => onGo(i)}
-          className={`h-2 rounded-full transition-all duration-500 ${
-            i === current ? 'w-10 bg-primary' : 'w-4 bg-white/80 hover:bg-white'
-          }`}
-          aria-label={`Slide ${i + 1}`}
-        />
-      ))}
-    </div>
   </>
 );
 
