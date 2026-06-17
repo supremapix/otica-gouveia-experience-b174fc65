@@ -24,11 +24,11 @@ const Instagram = () => {
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
           <div className="flex justify-center w-full">
-            <div className="w-full max-w-[560px] mx-auto rounded-2xl shadow-xl ring-1 ring-pink-100 bg-gradient-to-br from-pink-50 via-white to-orange-50 p-3 sm:p-5">
-              <div className="rounded-xl overflow-hidden bg-white">
+            <div className="w-full max-w-[540px] mx-auto rounded-2xl shadow-xl ring-1 ring-pink-100 bg-gradient-to-br from-pink-50 via-white to-orange-50 p-2 sm:p-3">
+              <div className="h-[350px] sm:h-[410px] md:h-[470px] rounded-xl overflow-hidden bg-white">
                 <iframe
                   src="https://www.instagram.com/gouveiaoticacuritiba/embed/"
-                  className="block w-full h-[480px] md:h-[620px]"
+                  className="block w-full h-[620px]"
                   frameBorder="0"
                   scrolling="no"
                   allowTransparency={true}
@@ -39,7 +39,7 @@ const Instagram = () => {
             </div>
           </div>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-6">
             <a
               href="https://www.instagram.com/gouveiaoticacuritiba/"
               target="_blank"
