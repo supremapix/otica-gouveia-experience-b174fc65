@@ -8,6 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import BlogOculosOuLentes from "./pages/BlogOculosOuLentes";
 import LojaOculosPinheirinho from "./pages/LojaOculosPinheirinho";
 import LojaOculosPinheirinho15565 from "./pages/LojaOculosPinheirinho15565";
 import OticaSitioCercado from "./pages/OticaSitioCercado";
@@ -264,6 +265,7 @@ const App = () => (
             <Route path="/produtos" element={<ProdutosPage />} />
             <Route path="/contato" element={<ContatoPage />} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path="/blog/oculos-ou-lentes" element={<BlogOculosOuLentes />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
