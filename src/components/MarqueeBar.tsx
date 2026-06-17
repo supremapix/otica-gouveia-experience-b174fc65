@@ -4,7 +4,7 @@ import { Phone, MapPin, Tag } from 'lucide-react';
 const marqueeItems = [
   { icon: Tag, text: 'PROMOÇÃO: Até 30% OFF em armações selecionadas' },
   { icon: MapPin, text: 'R. Nicola Pellanda, 1286 — Umbará, Curitiba' },
-  {projectUrls:  { icon: Phone, text: 'WhatsApp: (41) 99161-0663' },
+  { icon: Phone, text: 'WhatsApp: (41) 99161-0663' },
   { icon: Tag, text: 'Óculos de sol com proteção UV 400' },
   { icon: MapPin, text: 'Retire na loja — Atendimento com hora marcada' },
   { icon: Phone, text: 'Ligue agora: (41) 3629-9999' },
