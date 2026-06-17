@@ -863,17 +863,41 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Santa Cecília -->
+  <!-- Piraquara -->
   <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-santa-cecilia</loc>
+    <loc>https://www.gouveiacuritiba.com.br/otica-piraquara</loc>
     <lastmod>2025-01-15T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Vila Madalena -->
+  <!-- Campo Largo -->
   <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-vila-madalena</loc>
+    <loc>https://www.gouveiacuritiba.com.br/otica-campo-largo</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Barigui -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-barigui</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Centro Cívico -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-centro-civico</loc>
+    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Capão da Imbuia -->
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-capao-da-imbuia</loc>
     <lastmod>2025-01-15T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
