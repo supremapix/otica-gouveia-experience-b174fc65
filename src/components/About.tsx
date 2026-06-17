@@ -49,14 +49,16 @@ const About = () => {
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
                   src="/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.webp" 
-                  alt="Fachada da Ótica Gouveia" 
+                  alt="Fachada da Ótica Gouveia"
+                  width="600" height="400" loading="lazy" decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
                   src="/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.webp" 
-                  alt="Óculos de Sol em Exposição" 
+                  alt="Óculos de Sol em Exposição"
+                  width="382" height="369" loading="lazy" decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
@@ -65,14 +67,16 @@ const About = () => {
               <div className="overflow-hidden rounded-lg shadow-md h-40">
                 <img 
                   src="/lovable-uploads/a16bdfa8-f87b-4ca6-84c5-1311998e3299.webp" 
-                  alt="Vitrines com Óculos" 
+                  alt="Vitrines com Óculos"
+                  width="600" height="400" loading="lazy" decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md h-64">
                 <img 
                   src="/lovable-uploads/72458d7b-67ce-4323-8f82-f7e805b4b50c.webp" 
-                  alt="Interior da Ótica Gouveia" 
+                  alt="Interior da Ótica Gouveia"
+                  width="600" height="400" loading="lazy" decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>

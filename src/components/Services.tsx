@@ -167,6 +167,7 @@ const Services = () => {
               <img 
                 src={tabContent[activeTab as keyof typeof tabContent].image}
                 alt={tabContent[activeTab as keyof typeof tabContent].title}
+                width="900" height="675" loading="lazy" decoding="async"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
