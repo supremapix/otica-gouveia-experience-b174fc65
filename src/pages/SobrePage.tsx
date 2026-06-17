@@ -42,23 +42,13 @@ const SobrePage = () => {
       <Navbar />
 
       {/* Hero */}
-      <section
-        className="pt-32 pb-20 px-4 text-white"
-        style={{ background: 'linear-gradient(135deg, hsl(225,100%,13%) 0%, hsl(221,100%,26%) 100%)' }}
-      >
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4"
-            style={{ backgroundColor: 'hsla(48,100%,50%,0.15)', color: 'hsl(48,100%,50%)', border: '1px solid hsla(48,100%,50%,0.3)' }}>
-            <Gem className="w-4 h-4" /> NOSSA HISTÓRIA
-          </span>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-            Sobre a <span style={{ color: 'hsl(48,100%,50%)' }}>Ótica Gouveia</span>
-          </h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Mais de 15 anos cuidando da visão de famílias em Curitiba com tecnologia de ponta, marcas premium e atendimento que vai além do esperado.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        BadgeIcon={Gem}
+        badgeText="Nossa História"
+        title="Sobre a"
+        highlight="Ótica Gouveia"
+        description="Mais de 15 anos cuidando da visão de famílias em Curitiba com tecnologia de ponta, marcas premium e atendimento que vai além do esperado."
+      />
 
       {/* Stats */}
       <section className="py-12 bg-white border-b border-border">
