@@ -25,10 +25,10 @@ const Instagram = () => {
         }`}>
           <div className="flex justify-center w-full">
             <div className="w-full max-w-[560px] mx-auto rounded-2xl shadow-xl ring-1 ring-pink-100 bg-gradient-to-br from-pink-50 via-white to-orange-50 p-3 sm:p-5">
-              <div className="rounded-xl overflow-hidden bg-white">
+              <div className="h-[405px] sm:h-[465px] md:h-[535px] rounded-xl overflow-hidden bg-white">
                 <iframe
                   src="https://www.instagram.com/gouveiaoticacuritiba/embed/"
-                  className="block w-full h-[480px] md:h-[620px]"
+                  className="block w-full h-[620px]"
                   frameBorder="0"
                   scrolling="no"
                   allowTransparency={true}
