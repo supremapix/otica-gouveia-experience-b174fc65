@@ -123,7 +123,7 @@ const Index = () => {
       <Navbar />
       
       {/* Hero with padding for fixed header */}
-      <section id="home">
+      <section id="home" className="pt-16 md:pt-[110px]">
         <ErrorBoundary componentName="HeroSlider" fallback={<div className="p-4">Error loading Hero</div>}>
           <HeroSlider />
         </ErrorBoundary>
