@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { X, ChevronLeft, ChevronRight, MessageCircle, Search } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, MessageCircle, Search, HelpCircle } from 'lucide-react';
 import { faqCategories, faqItems, FAQItem } from '@/data/faqData';
 
 interface PremiumFAQProps {
