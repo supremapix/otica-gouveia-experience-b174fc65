@@ -75,12 +75,12 @@ const ContatoPage = () => {
               >
                 <div className="flex justify-center mb-3">
                   <div className="w-14 h-14 rounded-2xl flex items-center justify-center"
-                    style={{ backgroundColor: 'hsla(221,100%,26%,0.1)' }}>
-                    <c.Icon className="w-7 h-7" style={{ color: 'hsl(221,100%,26%)' }} />
+                    style={{ backgroundColor: 'hsla(0,75%,42%,0.1)' }}>
+                    <c.Icon className="w-7 h-7" style={{ color: 'hsl(0,75%,42%)' }} />
                   </div>
                 </div>
                 <div className="font-bold text-foreground mb-1">{c.label}</div>
-                <div className="font-semibold text-sm mb-2" style={{ color: 'hsl(221,100%,26%)' }}>{c.value}</div>
+                <div className="font-semibold text-sm mb-2" style={{ color: 'hsl(0,75%,42%)' }}>{c.value}</div>
                 <div className="text-muted-foreground text-xs">{c.desc}</div>
               </a>
             ))}
@@ -99,7 +99,7 @@ const ContatoPage = () => {
                     value={formData.name}
                     onChange={e => setFormData(p => ({ ...p, name: e.target.value }))}
                     className="w-full px-4 py-3 rounded-xl border border-border focus:outline-none focus:ring-2 text-foreground"
-                    style={{ '--tw-ring-color': 'hsl(221,100%,26%)' } as React.CSSProperties}
+                    style={{ '--tw-ring-color': 'hsl(0,75%,42%)' } as React.CSSProperties}
                     placeholder="João Silva"
                   />
                 </div>
@@ -128,7 +128,7 @@ const ContatoPage = () => {
                 <button
                   type="submit"
                   className="w-full py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg inline-flex items-center justify-center gap-2"
-                  style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
+                  style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(0,0%,8%)' }}
                 >
                   <MessageCircle className="w-5 h-5" /> Enviar pelo WhatsApp
                 </button>
@@ -139,7 +139,7 @@ const ContatoPage = () => {
             <div className="space-y-6">
               <div className="bg-white rounded-2xl border border-border/50 p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <Clock className="w-5 h-5" style={{ color: 'hsl(221,100%,26%)' }} />
+                  <Clock className="w-5 h-5" style={{ color: 'hsl(0,75%,42%)' }} />
                   <h3 className="text-lg font-bold text-foreground">Horário de Funcionamento</h3>
                 </div>
                 <ul className="space-y-2">
@@ -147,7 +147,7 @@ const ContatoPage = () => {
                     <li key={i} className="flex justify-between py-2 border-b border-border/30 last:border-0">
                       <span className="text-muted-foreground text-sm">{h.day}</span>
                       <span className={`font-bold text-sm ${h.open ? '' : 'text-destructive'}`}
-                        style={h.open ? { color: 'hsl(221,100%,26%)' } : {}}>
+                        style={h.open ? { color: 'hsl(0,75%,42%)' } : {}}>
                         {h.hours}
                       </span>
                     </li>
@@ -155,8 +155,8 @@ const ContatoPage = () => {
                 </ul>
               </div>
 
-              <div className="rounded-2xl p-6" style={{ backgroundColor: 'hsla(221,100%,26%,0.06)', border: '1px solid hsla(221,100%,26%,0.2)' }}>
-                <MapPin className="w-6 h-6 mb-3" style={{ color: 'hsl(221,100%,26%)' }} />
+              <div className="rounded-2xl p-6" style={{ backgroundColor: 'hsla(0,75%,42%,0.06)', border: '1px solid hsla(0,75%,42%,0.2)' }}>
+                <MapPin className="w-6 h-6 mb-3" style={{ color: 'hsl(0,75%,42%)' }} />
                 <h3 className="font-bold text-foreground mb-1">Nossa Loja</h3>
                 <p className="text-muted-foreground text-sm mb-3">R. Nicola Pellanda, 1286 — Umbará, Curitiba – PR, 81880-000</p>
                 <a
@@ -164,7 +164,7 @@ const ContatoPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-bold hover:underline inline-flex items-center gap-1"
-                  style={{ color: 'hsl(221,100%,26%)' }}
+                  style={{ color: 'hsl(0,75%,42%)' }}
                 >
                   <Navigation className="w-4 h-4" /> Abrir no Google Maps
                 </a>
@@ -202,7 +202,7 @@ const ContatoPage = () => {
             {faqs.map((f, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 border border-border/50">
                 <h3 className="font-bold text-foreground mb-2 flex items-center gap-2">
-                  <HelpCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'hsl(221,100%,26%)' }} />
+                  <HelpCircle className="w-5 h-5 flex-shrink-0" style={{ color: 'hsl(0,75%,42%)' }} />
                   {f.q}
                 </h3>
                 <p className="text-muted-foreground text-[15px] leading-relaxed">{f.a}</p>

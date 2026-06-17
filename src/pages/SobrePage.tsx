@@ -57,7 +57,7 @@ const SobrePage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {stats.map((s, i) => (
               <div key={i}>
-                <div className="text-4xl font-black mb-1" style={{ color: 'hsl(221,100%,26%)' }}>{s.value}</div>
+                <div className="text-4xl font-black mb-1" style={{ color: 'hsl(0,75%,42%)' }}>{s.value}</div>
                 <div className="text-muted-foreground text-sm font-medium">{s.label}</div>
               </div>
             ))}
@@ -70,9 +70,9 @@ const SobrePage = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(221,100%,26%)' }}>NOSSA TRAJETÓRIA</span>
+              <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(0,75%,42%)' }}>NOSSA TRAJETÓRIA</span>
               <h2 className="text-3xl md:text-4xl font-black mt-2 mb-6 text-foreground">
-                Uma história de<br /><span style={{ color: 'hsl(221,100%,26%)' }}>dedicação e visão</span>
+                Uma história de<br /><span style={{ color: 'hsl(0,75%,42%)' }}>dedicação e visão</span>
               </h2>
               <div className="space-y-5 text-muted-foreground leading-relaxed text-[16px]">
                 <p>
@@ -93,7 +93,7 @@ const SobrePage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg"
-                style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(225,100%,13%)' }}
+                style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(0,0%,8%)' }}
               >
                 <MessageCircle className="w-5 h-5" /> Falar com a equipe
               </a>
@@ -124,15 +124,15 @@ const SobrePage = () => {
       <section className="py-20 px-4" style={{ backgroundColor: 'hsl(210,40%,98%)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(221,100%,26%)' }}>O QUE NOS MOVE</span>
+            <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(0,75%,42%)' }}>O QUE NOS MOVE</span>
             <h2 className="text-3xl md:text-4xl font-black mt-2 text-foreground">Nossos Valores</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((v, i) => (
               <div key={i} className="bg-white p-6 rounded-2xl border border-border/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4"
-                  style={{ backgroundColor: 'hsla(221,100%,26%,0.1)' }}>
-                  <v.Icon className="w-7 h-7" style={{ color: 'hsl(221,100%,26%)' }} />
+                  style={{ backgroundColor: 'hsla(0,75%,42%,0.1)' }}>
+                  <v.Icon className="w-7 h-7" style={{ color: 'hsl(0,75%,42%)' }} />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{v.title}</h3>
                 <p className="text-muted-foreground text-[15px] leading-relaxed">{v.desc}</p>
@@ -145,17 +145,17 @@ const SobrePage = () => {
       {/* Equipe */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto text-center">
-          <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(221,100%,26%)' }}>PESSOAS</span>
+          <span className="text-sm font-bold uppercase tracking-wider" style={{ color: 'hsl(0,75%,42%)' }}>PESSOAS</span>
           <h2 className="text-3xl md:text-4xl font-black mt-2 mb-12 text-foreground">Nossa Equipe</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((t, i) => (
               <div key={i} className="p-8 rounded-2xl border border-border/50 hover:shadow-lg transition-all duration-300">
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ backgroundColor: 'hsla(221,100%,26%,0.1)' }}>
-                  <Glasses className="w-8 h-8" style={{ color: 'hsl(221,100%,26%)' }} />
+                  style={{ backgroundColor: 'hsla(0,75%,42%,0.1)' }}>
+                  <Glasses className="w-8 h-8" style={{ color: 'hsl(0,75%,42%)' }} />
                 </div>
                 <h3 className="text-lg font-bold text-foreground">{t.name}</h3>
-                <p className="text-sm font-semibold mb-3" style={{ color: 'hsl(221,100%,26%)' }}>{t.role}</p>
+                <p className="text-sm font-semibold mb-3" style={{ color: 'hsl(0,75%,42%)' }}>{t.role}</p>
                 <p className="text-muted-foreground text-[15px]">{t.desc}</p>
               </div>
             ))}
@@ -189,7 +189,7 @@ const SobrePage = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105 border-2"
-              style={{ borderColor: 'hsl(221,100%,26%)', color: 'hsl(221,100%,26%)' }}
+              style={{ borderColor: 'hsl(0,75%,42%)', color: 'hsl(0,75%,42%)' }}
             >
               <Navigation className="w-5 h-5" /> Como Chegar
             </a>
