@@ -23,44 +23,36 @@ const Instagram = () => {
         <div className={`transition-all duration-1000 ease-out delay-200 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
-          {/* Instagram Embed with proper mobile support */}
           <div className="flex justify-center w-full">
-            <div className="w-full max-w-4xl mx-auto overflow-hidden" style={{ height: 'auto', minHeight: '450px' }}>
-              <iframe 
-                src="https://www.instagram.com/gouveiaoticacuritiba/embed" 
-                width="100%" 
-                height="540" 
-                frameBorder="0" 
-                scrolling="no" 
-                allowTransparency={true}
-                title="Instagram Feed de @gouveiaoticacuritiba"
-                className="border-none w-full"
-              ></iframe>
+            <div className="w-full max-w-[560px] mx-auto rounded-2xl shadow-xl ring-1 ring-pink-100 bg-gradient-to-br from-pink-50 via-white to-orange-50 p-3 sm:p-5">
+              <div className="rounded-xl overflow-hidden bg-white">
+                <iframe
+                  src="https://www.instagram.com/gouveiaoticacuritiba/embed/"
+                  className="block w-full"
+                  height={620}
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency={true}
+                  loading="lazy"
+                  title="Instagram Feed de @gouveiaoticacuritiba"
+                ></iframe>
+              </div>
             </div>
           </div>
-          
-          <div className="text-center mt-8 flex flex-col sm:flex-row justify-center gap-4">
-            <a 
+
+          <div className="text-center mt-8">
+            <a
               href="https://www.instagram.com/gouveiaoticacuritiba/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-brand-red text-white hover:bg-opacity-90 transition-colors shadow-md"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white text-base md:text-lg font-semibold hover:opacity-90 transition-opacity shadow-md min-h-[56px]"
             >
               <InstagramIcon className="w-5 h-5 mr-2" />
               Seguir no Instagram
             </a>
-            
-            <a 
-              href="https://www.facebook.com/profile.php?id=61560224348183"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-blue-600 text-white hover:bg-opacity-90 transition-colors shadow-md"
-            >
-              <FacebookIcon className="w-5 h-5 mr-2" />
-              Seguir no Facebook
-            </a>
           </div>
         </div>
+
         
         {/* Facebook Section */}
         <div className={`mt-16 transition-all duration-1000 ease-out delay-300 ${
