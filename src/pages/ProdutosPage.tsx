@@ -115,7 +115,7 @@ const ProdutosPage = () => {
                   <button
                     onClick={(e) => { e.stopPropagation(); window.open(`${WHATSAPP_BASE}${encodeURIComponent(p.name)}.%20Pode%20me%20ajudar?`, '_blank'); }}
                     className="w-full py-2.5 rounded-full font-bold text-sm transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
-                    style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(0,0%,8%)' }}
+                    style={{ backgroundColor: '#ffffff', color: 'hsl(0,75%,42%)' }}
                   >
                     <MessageCircle className="w-4 h-4" /> Consultar Preço
                   </button>
@@ -151,7 +151,7 @@ const ProdutosPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105"
-            style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(0,0%,8%)' }}
+            style={{ backgroundColor: '#ffffff', color: 'hsl(0,75%,42%)' }}
           >
             <MessageCircle className="w-5 h-5" /> Falar com especialista
           </a>
@@ -185,7 +185,7 @@ const ProdutosPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 text-center py-3 rounded-full font-bold transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
-                  style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(0,0%,8%)' }}
+                  style={{ backgroundColor: '#ffffff', color: 'hsl(0,75%,42%)' }}
                 >
                   <MessageCircle className="w-4 h-4" /> Consultar Preço
                 </a>

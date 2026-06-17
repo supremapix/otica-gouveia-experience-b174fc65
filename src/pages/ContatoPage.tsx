@@ -128,7 +128,7 @@ const ContatoPage = () => {
                 <button
                   type="submit"
                   className="w-full py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg inline-flex items-center justify-center gap-2"
-                  style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(0,0%,8%)' }}
+                  style={{ backgroundColor: '#ffffff', color: 'hsl(0,75%,42%)' }}
                 >
                   <MessageCircle className="w-5 h-5" /> Enviar pelo WhatsApp
                 </button>

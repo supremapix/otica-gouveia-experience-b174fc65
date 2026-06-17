@@ -93,7 +93,7 @@ const SobrePage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg"
-                style={{ backgroundColor: 'hsl(48,100%,50%)', color: 'hsl(0,0%,8%)' }}
+                style={{ backgroundColor: '#ffffff', color: 'hsl(0,75%,42%)' }}
               >
                 <MessageCircle className="w-5 h-5" /> Falar com a equipe
               </a>
