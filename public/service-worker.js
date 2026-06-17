@@ -55,36 +55,16 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
 
-  // Handle navigation requests (HTML pages)
+  // Handle navigation requests (HTML pages) — network-first to avoid stale shells
   if (request.mode === 'navigate') {
     event.respondWith(
-      caches.match(request)
+      fetch(request)
         .then(response => {
-          if (response) {
-            console.log('Service Worker: Serving from cache', request.url);
-            return response;
-          }
-          
-          return fetch(request)
-            .then(response => {
-              // Clone response for caching
-              const responseClone = response.clone();
-              
-              // Cache dynamic pages
-              if (DYNAMIC_CACHE_URLS.some(url => request.url.includes(url))) {
-                caches.open(CACHE_NAME)
-                  .then(cache => {
-                    cache.put(request, responseClone);
-                  });
-              }
-              
-              return response;
-            })
-            .catch(() => {
-              // Fallback to cached index.html for SPA routing
-              return caches.match('/index.html');
-            });
+          const responseClone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, responseClone));
+          return response;
         })
+        .catch(() => caches.match(request).then(r => r || caches.match('/index.html')))
     );
     return;
   }
