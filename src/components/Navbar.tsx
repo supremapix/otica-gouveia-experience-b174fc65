@@ -86,9 +86,8 @@ const Navbar = () => {
       <nav 
         className="w-full transition-all duration-300"
         style={{
-          backgroundColor: scrolled ? 'hsl(var(--primary))' : 'hsla(0, 75%, 42%, 0.6)',
-          backdropFilter: scrolled ? 'none' : 'blur(8px)',
-          boxShadow: scrolled ? '0 2px 20px rgba(0,0,0,0.15)' : 'none',
+          backgroundColor: 'hsl(var(--primary))',
+          boxShadow: scrolled ? '0 2px 20px rgba(0,0,0,0.15)' : '0 2px 10px rgba(0,0,0,0.08)',
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
