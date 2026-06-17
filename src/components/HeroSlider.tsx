@@ -69,7 +69,7 @@ const HeroSlider = () => {
       aria-label="Banner principal Ótica Gouveia"
     >
       {/* Mobile */}
-      <div className="relative w-full md:hidden">
+      <div className="relative w-full md:hidden aspect-[780/1645]">
         {slides.map((s, i) => {
           const isActive = i === current;
           const wasPrev = i === prevIndex;
@@ -78,13 +78,15 @@ const HeroSlider = () => {
               key={`m-${i}`}
               src={s.mobile}
               alt={s.alt}
+              width={780}
+              height={1645}
               loading={i === 0 ? 'eager' : 'lazy'}
+              fetchPriority={i === 0 ? 'high' : 'auto'}
+              decoding={i === 0 ? 'sync' : 'async'}
               className={getClasses(
                 isActive,
                 wasPrev,
-                `${transitionBase} w-full h-auto block ${
-                  isActive ? 'relative' : 'absolute inset-0'
-                }`
+                `${transitionBase} absolute inset-0 w-full h-full object-cover`
               )}
             />
           );
@@ -102,7 +104,11 @@ const HeroSlider = () => {
               key={`d-${i}`}
               src={s.desktop}
               alt={s.alt}
+              width={1600}
+              height={670}
               loading={i === 0 ? 'eager' : 'lazy'}
+              fetchPriority={i === 0 ? 'high' : 'auto'}
+              decoding={i === 0 ? 'sync' : 'async'}
               className={getClasses(
                 isActive,
                 wasPrev,
