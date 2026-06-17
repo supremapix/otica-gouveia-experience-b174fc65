@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { MapPin } from 'lucide-react';
 
 const bairros = [
   { name: 'Ahú', dist: '8 km' },
@@ -106,7 +107,7 @@ const NeighborhoodsSection = () => {
               style={{ '--tw-shadow-color': 'hsla(221, 100%, 19%, 0.15)' } as React.CSSProperties}
             >
               <div className="flex items-center gap-2 mb-1">
-                <span style={{ color: 'hsl(48, 100%, 50%)' }}>📍</span>
+                <MapPin className="w-4 h-4 text-primary" strokeWidth={2.2} />
                 <span className="font-bold text-foreground group-hover:text-primary transition-colors text-sm">
                   {b.name}
                 </span>

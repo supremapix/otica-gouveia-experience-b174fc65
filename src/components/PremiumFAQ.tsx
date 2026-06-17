@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { X, ChevronLeft, ChevronRight, MessageCircle, Search } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, MessageCircle, Search, HelpCircle } from 'lucide-react';
 import { faqCategories, faqItems, FAQItem } from '@/data/faqData';
 
 interface PremiumFAQProps {
@@ -77,8 +77,9 @@ const PremiumFAQ = ({ neighborhoodName }: PremiumFAQProps) => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-10">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
-            ❓ Suas Dúvidas Respondidas
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+            <HelpCircle className="w-4 h-4" />
+            Suas Dúvidas Respondidas
           </span>
           <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3">
             155 Perguntas Sobre Óculos e Visão
