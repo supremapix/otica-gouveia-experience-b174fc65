@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { LucideIcon } from 'lucide-react';
-import heroBg from '../assets/hero-fundo-paginas.webp';
+import heroBg from '../assets/hero-faq.webp';
 
 interface PageHeroProps {
   BadgeIcon: LucideIcon;
