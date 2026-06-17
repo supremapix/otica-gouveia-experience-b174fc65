@@ -1,19 +1,19 @@
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import hero1 from '../assets/hero-1.jpg.asset.json';
-import hero2 from '../assets/hero-2.jpg.asset.json';
-import heroMobile1 from '../assets/hero-mobile-1.jpg.asset.json';
-import heroMobile2 from '../assets/hero-mobile-2.jpg.asset.json';
+import hero1 from '../assets/hero-1.jpg';
+import hero2 from '../assets/hero-2.jpg';
+import heroMobile1 from '../assets/hero-mobile-1.jpg';
+import heroMobile2 from '../assets/hero-mobile-2.jpg';
 
 const slides = [
   {
-    desktop: hero1.url,
-    mobile: heroMobile1.url,
+    desktop: hero1,
+    mobile: heroMobile1,
     alt: 'Ótica Gouveia — Sua visão, nossa essência',
   },
   {
-    desktop: hero2.url,
-    mobile: heroMobile2.url,
+    desktop: hero2,
+    mobile: heroMobile2,
     alt: 'Ótica Gouveia — Seu olhar, nossa paixão',
   },
 ];
