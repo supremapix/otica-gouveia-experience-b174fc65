@@ -127,17 +127,28 @@ const Navbar = () => {
               </div>
             </div>
             
-            {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            {/* Mobile Quick Actions + Menu Button */}
+            <div className="md:hidden flex items-center gap-2">
+              <a
+                href="tel:+554131140663"
+                className="inline-flex items-center justify-center gap-1.5 bg-white text-primary px-3 h-11 rounded-full font-bold text-sm shadow-md"
+                aria-label="Ligar para a Ótica Gouveia"
+              >
+                <Phone className="h-4 w-4" strokeWidth={2.5} />
+                Ligar
+              </a>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex items-center justify-center w-12 h-12 rounded-md text-white hover:text-white/80 focus:outline-none focus:ring-2 focus:ring-white transition-colors"
-                aria-label="Abrir menu"
+                className="inline-flex flex-col items-center justify-center w-14 h-14 rounded-md text-white hover:text-white/80 focus:outline-none focus:ring-2 focus:ring-white transition-colors"
+                aria-label="Abrir menu de navegação"
               >
                 {isOpen ? (
-                  <X className="block h-7 w-7" strokeWidth={3} aria-hidden="true" />
+                  <X className="block h-8 w-8" strokeWidth={3} aria-hidden="true" />
                 ) : (
-                  <Menu className="block h-7 w-7" strokeWidth={3} aria-hidden="true" />
+                  <>
+                    <Menu className="block h-7 w-7" strokeWidth={3} aria-hidden="true" />
+                    <span className="text-[10px] font-bold mt-0.5">MENU</span>
+                  </>
                 )}
               </button>
             </div>
