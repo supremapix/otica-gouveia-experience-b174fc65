@@ -55,8 +55,8 @@ const HeroSlider = () => {
       onMouseLeave={() => setIsPaused(false)}
       aria-label="Banner principal Ótica Gouveia"
     >
-      {/* Mobile: portrait aspect to fit vertical creatives */}
-      <div className="relative w-full md:hidden aspect-[864/1872] max-h-[88vh] min-h-[420px]">
+      {/* Mobile: full image without cropping footer */}
+      <div className="relative w-full md:hidden">
         {slides.map((s, i) => {
           const isActive = i === current;
           const wasPrev = i === prevIndex;
@@ -66,12 +66,12 @@ const HeroSlider = () => {
               src={s.mobile}
               alt={s.alt}
               loading={i === 0 ? 'eager' : 'lazy'}
-              className={`absolute inset-0 w-full h-full object-cover will-change-transform transition-all duration-[1100ms] ease-[cubic-bezier(.22,1,.36,1)] ${
+              className={`w-full h-auto block will-change-transform transition-all duration-[1100ms] ease-[cubic-bezier(.22,1,.36,1)] ${
                 isActive
-                  ? 'opacity-100 scale-100 z-10'
+                  ? 'opacity-100 scale-100 relative z-10'
                   : wasPrev
-                  ? 'opacity-0 scale-110 z-0'
-                  : 'opacity-0 scale-105 z-0'
+                  ? 'opacity-0 scale-110 absolute inset-0 z-0'
+                  : 'opacity-0 scale-105 absolute inset-0 z-0'
               }`}
             />
           );
