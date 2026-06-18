@@ -3,6 +3,7 @@ import { useInView } from '../utils/animations';
 import { Eye, Glasses, Wrench, CreditCard, CalendarCheck, Users } from 'lucide-react';
 import serviceMedidas from '../assets/service-medidas.webp';
 import serviceLentes from '../assets/service-lentes.webp';
+import serviceArmacoes from '../assets/service-armacoes.webp';
 
 const Services = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
@@ -39,7 +40,7 @@ const Services = () => {
     frames: {
       title: "Armações Exclusivas",
       description: "Oferecemos uma ampla variedade de armações para todos os estilos e necessidades. De marcas renomadas como Ray-Ban e Ana Hickmann a modelos exclusivos para o público infantil.",
-      image: "/lovable-uploads/74d8f6cb-dfbb-4388-82b9-f012acfbadcc.webp",
+      image: serviceArmacoes,
       features: [
         "Marcas premium nacionais e importadas",
         "Modelos para todos os rostos",
