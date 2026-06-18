@@ -2,8 +2,10 @@ import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import hero1 from '../assets/hero-1.webp';
 import hero2 from '../assets/hero-2.webp';
+import hero3 from '../assets/hero-3.webp';
 import heroMobile1 from '../assets/hero-mobile-1.webp';
 import heroMobile2 from '../assets/hero-mobile-2.webp';
+import heroMobile3 from '../assets/hero-mobile-3.webp';
 
 const slides = [
   {
@@ -15,6 +17,11 @@ const slides = [
     desktop: hero2,
     mobile: heroMobile2,
     alt: 'Ótica Gouveia — Seu olhar, nossa paixão',
+  },
+  {
+    desktop: hero3,
+    mobile: heroMobile3,
+    alt: 'Ótica Gouveia — Mais que óculos, confiança que se vê',
   },
 ];
 
@@ -41,24 +48,24 @@ const HeroSlider = () => {
 
   useEffect(() => {
     if (isPaused) return;
-    const timer = setInterval(next, 6500);
+    const timer = setInterval(next, 7000);
     return () => clearInterval(timer);
   }, [isPaused, next]);
 
-  // Impactful transition: active reveals via clip-path from right + zoom-out;
-  // previous exits with zoom-in + blur + fade.
+  // Elegant transition: gentle cross-fade with subtle Ken Burns zoom.
+  // Active slide fades in and slowly zooms out; previous slide fades out softly.
   const getClasses = (isActive: boolean, wasPrev: boolean, base: string) => {
     if (isActive) {
-      return `${base} opacity-100 scale-100 blur-0 z-20 [clip-path:inset(0_0_0_0)]`;
+      return `${base} opacity-100 scale-100 z-20`;
     }
     if (wasPrev) {
-      return `${base} opacity-0 scale-[1.15] blur-md z-10 [clip-path:inset(0_0_0_0)]`;
+      return `${base} opacity-0 scale-[1.04] z-10`;
     }
-    return `${base} opacity-0 scale-105 blur-sm z-0 [clip-path:inset(0_100%_0_0)]`;
+    return `${base} opacity-0 scale-[1.06] z-0`;
   };
 
   const transitionBase =
-    'will-change-transform transition-all duration-[1400ms] ease-[cubic-bezier(.77,0,.18,1)]';
+    'will-change-[opacity,transform] transition-[opacity,transform] duration-[1800ms] ease-[cubic-bezier(0.22,0.61,0.36,1)]';
 
   return (
     <section
@@ -118,6 +125,20 @@ const HeroSlider = () => {
           );
         })}
         <SliderControls onPrev={prev} onNext={next} />
+      </div>
+
+      {/* Indicators */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            aria-label={`Ir para slide ${i + 1}`}
+            className={`h-1.5 rounded-full transition-all duration-500 ${
+              i === current ? 'w-10 bg-white' : 'w-3 bg-white/50 hover:bg-white/80'
+            }`}
+          />
+        ))}
       </div>
     </section>
   );
