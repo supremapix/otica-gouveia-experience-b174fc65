@@ -1,6 +1,6 @@
 # Ótica Gouveia
 
-> Ótica em Curitiba (bairros Umbará e Pinheirinho) especializada em exame de vista, óculos de grau, óculos de sol, lentes de contato e atendimento dedicado à melhor idade. Retirada de óculos exclusivamente na loja.
+> Ótica em Curitiba (bairros Umbará e Pinheirinho) especializada em óculos de grau, óculos de sol, lentes de contato e atendimento dedicado à melhor idade. Retirada de óculos exclusivamente na loja.
 
 A Ótica Gouveia (Asaph Produtos Óticos LTDA, CNPJ 53.934.177/0001-21) atende presencialmente em Curitiba/PR. Para óculos de grau, o cliente precisa comparecer à loja para medições com Visioffice 3 e prova final. Óculos de sol e lentes de contato podem ser atendidos remotamente via WhatsApp.
 
@@ -8,9 +8,10 @@ A Ótica Gouveia (Asaph Produtos Óticos LTDA, CNPJ 53.934.177/0001-21) atende p
 
 - [Home](/): Apresentação da ótica, serviços e diferenciais.
 - [Sobre](/sobre): História da Ótica Gouveia.
-- [Serviços](/servicos): Exame de vista, ajustes, consertos e tecnologia Visioffice 3.
+- [Serviços](/servicos): Medição Visioffice 3, lentes, ajustes e consertos. Não realizamos exame de vista — atendemos com a receita do oftalmologista.
 - [Produtos](/produtos): Armações, lentes e óculos de sol.
 - [Contato](/contato): Telefones, WhatsApp e endereço.
+- [Mapa do Site](/mapa-do-site): Índice completo de todas as páginas.
 - [FAQ](/faq): Mais de 500 perguntas e respostas sobre óculos, lentes e cuidados visuais.
 
 ## Lojas
@@ -37,3 +38,13 @@ A Ótica Gouveia (Asaph Produtos Óticos LTDA, CNPJ 53.934.177/0001-21) atende p
 - [Ótica Portão](/otica-portao)
 - [Ótica Xaxim](/otica-xaxim)
 - [Ótica Santa Felicidade](/otica-santa-felicidade)
+
+## Dados essenciais (NAP)
+
+- Nome: Ótica Gouveia
+- Endereço: R. Nicola Pellanda, 1286 — Umbará, Curitiba/PR, 81880-000
+- Telefone: (41) 3114-0663
+- WhatsApp: (41) 99161-0663
+- Horário: Segunda a sexta 09:00–18:00; sábado 09:00–13:00
+- Retirada: exclusivamente presencial na loja. Não fazemos entrega em domicílio.
+- Exame de vista: não realizamos. Atendemos com a receita do oftalmologista.

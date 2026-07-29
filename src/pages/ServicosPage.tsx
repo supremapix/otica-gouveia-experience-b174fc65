@@ -7,6 +7,7 @@ import VisiofficeSection from '../components/VisiofficeSection';
 import HowToBuySection from '../components/HowToBuySection';
 import PageHero from '../components/PageHero';
 import { ScanEye, Layers, Glasses, Wrench, Truck, CreditCard, CheckCircle, MessageCircle, Zap } from 'lucide-react';
+import { SITE_URL, createWebPageSchema, createOpticianSchema, createBreadcrumbSchema, createServiceSchema } from '../utils/schemas';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20%C3%93tica%20Gouveia.";
 
@@ -74,14 +75,36 @@ const services = [
 ];
 
 const ServicosPage = () => {
+  const url = `${SITE_URL}/servicos`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      createWebPageSchema({
+        name: 'Serviços da Ótica Gouveia em Curitiba',
+        description:
+          'Medição digital Visioffice 3, lentes multifocais e antirreflexo, armações, conserto e ajuste de óculos em Curitiba.',
+        url,
+        primaryTopic: 'Serviços ópticos em Curitiba',
+      }),
+      createOpticianSchema(),
+      ...services.map((s) => createServiceSchema(s.title, s.description)),
+      createBreadcrumbSchema([
+        { name: 'Início', url: SITE_URL },
+        { name: 'Serviços', url },
+      ]),
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
         title="Serviços — Ótica Gouveia Curitiba | Lentes, Armações e Visioffice 3"
-        description="Conheça todos os serviços da Ótica Gouveia Curitiba: medição Visioffice 3, lentes premium, armações de grife, manutenção, ajustes e delivery via motoboy."
+        description="Conheça os serviços da Ótica Gouveia Curitiba: medição Visioffice 3, lentes premium, armações de grife, manutenção, ajustes e conserto de óculos."
         keywords="serviços ótica curitiba, visioffice 3 curitiba, lentes progressivas curitiba, conserto óculos curitiba, manutenção óculos"
         canonicalUrl="/servicos"
+        structuredData={structuredData}
       />
+
       <Navbar />
 
       {/* Hero */}

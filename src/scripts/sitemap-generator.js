@@ -1,99 +1,86 @@
-const fs = require('fs');
-const path = require('path');
-const { bairrosCuritiba } = require('./generateLocationPages');
+/**
+ * Gerador do public/sitemap.xml a partir das rotas declaradas em src/App.tsx.
+ *
+ * Uso: node src/scripts/sitemap-generator.js
+ *
+ * Regras aplicadas:
+ * - Uma entrada por rota pública indexável (sem curingas, sem 404, sem duplicatas
+ *   com barra final).
+ * - Sem <lastmod>: o projeto não possui uma data de modificação real por página.
+ *   Um carimbo genérico (data do build) é ignorado pelo Google e prejudica a
+ *   confiança no sitemap. Só adicione <lastmod> quando houver data real da página.
+ */
 
-const generateSitemap = () => {
-  const baseUrl = 'https://www.gouveiacuritiba.com.br';
-  const currentDate = new Date().toISOString().split('T')[0];
+import { readFileSync, writeFileSync } from "fs";
+import { resolve } from "path";
 
-  // URLs estáticas principais
-  const staticUrls = [
-    { loc: '/', changefreq: 'daily', priority: '1.0' },
-    { loc: '/loja-de-oculos-no-pinheirinho', changefreq: 'weekly', priority: '0.9' },
-    { loc: '/loja-de-oculos-no-pinheirinho/15565', changefreq: 'weekly', priority: '0.9' },
-    { loc: '/otica-pinheirinho', changefreq: 'weekly', priority: '0.9' },
-    { loc: '/otica-sitio-cercado', changefreq: 'weekly', priority: '0.9' },
-    { loc: '/otica-umbara', changefreq: 'weekly', priority: '0.9' }
-  ];
+const BASE_URL = "https://www.gouveiacuritiba.com.br";
 
-  // URLs dinâmicas dos bairros
-  const dynamicUrls = bairrosCuritiba.map(bairro => ({
-    loc: `/otica-${bairro.slug}`,
-    changefreq: 'weekly',
-    priority: '0.8'
-  }));
+const APP = readFileSync(resolve("src/App.tsx"), "utf8");
 
-  // Combinar todas as URLs
-  const allUrls = [...staticUrls, ...dynamicUrls];
+const routes = [...APP.matchAll(/<Route\s+path="([^"]+)"/g)].map((m) => m[1]);
 
-  // Gerar XML do sitemap
-  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${allUrls.map(url => `  <url>
-    <loc>${baseUrl}${url.loc}</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>${url.changefreq}</changefreq>
-    <priority>${url.priority}</priority>
-    <image:image>
-      <image:loc>${baseUrl}/og-image.webp</image:loc>
-      <image:title>Ótica Gouveia - ${url.loc === '/' ? 'Página Inicial' : url.loc.replace('/otica-', '').replace('-', ' ')}</image:title>
-    </image:image>
-  </url>`).join('\\n')}
-</urlset>`;
+// Rotas que não devem ser indexadas.
+const EXCLUDED = new Set(["*", "/404", "/not-found"]);
 
-  // Salvar sitemap
-  const sitemapPath = path.join(__dirname, '../../public/sitemap.xml');
-  
-  try {
-    fs.writeFileSync(sitemapPath, sitemapXml, 'utf8');
-    console.log('✅ Sitemap gerado com sucesso!');
-    console.log(`📍 Total de URLs: ${allUrls.length}`);
-    console.log(`📄 Arquivo salvo: ${sitemapPath}`);
-  } catch (error) {
-    console.error('❌ Erro ao gerar sitemap:', error.message);
-  }
+const publicRoutes = [
+  ...new Set(
+    routes
+      .filter((p) => !EXCLUDED.has(p))
+      .filter((p) => !p.includes(":"))
+      // remove duplicatas apenas por barra final (ex.: /a/ vs /a)
+      .map((p) => (p !== "/" && p.endsWith("/") ? p.slice(0, -1) : p))
+  ),
+].sort();
 
-  return sitemapXml;
+// Rotas duplicadas conhecidas (mesmo componente em URLs diferentes).
+// Elas possuem canonical apontando para a URL preferencial, então ficam fora.
+const NON_CANONICAL = new Set([
+  "/otica-pinheirinho",
+  "/otica-pinheirinho-bairro",
+]);
+
+const priorityFor = (path) => {
+  if (path === "/") return "1.0";
+  if (
+    ["/sobre", "/servicos", "/produtos", "/contato", "/faq", "/mapa-do-site"].includes(
+      path
+    )
+  )
+    return "0.9";
+  if (
+    ["/otica-umbara", "/otica-sitio-cercado", "/loja-de-oculos-no-pinheirinho"].includes(
+      path
+    )
+  )
+    return "0.9";
+  if (path.startsWith("/blog")) return "0.7";
+  return "0.8";
 };
 
-// Gerar robots.txt otimizado
-const generateRobotsTxt = () => {
-  const robotsContent = `User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://www.gouveiacuritiba.com.br/sitemap.xml
-
-# Otimizações para SEO
-Crawl-delay: 1
-
-# Bloquear arquivos desnecessários
-Disallow: /assets/
-Disallow: /*.js$
-Disallow: /*.css$
-Disallow: /api/
-Disallow: /admin/
-
-# Permitir crawling de imagens importantes
-Allow: /og-image.webp
-Allow: /favicon.ico
-Allow: /public/lovable-uploads/`;
-
-  const robotsPath = path.join(__dirname, '../../public/robots.txt');
-  
-  try {
-    fs.writeFileSync(robotsPath, robotsContent, 'utf8');
-    console.log('✅ Robots.txt atualizado!');
-  } catch (error) {
-    console.error('❌ Erro ao gerar robots.txt:', error.message);
-  }
+const changefreqFor = (path) => {
+  if (path === "/") return "daily";
+  if (path.startsWith("/blog")) return "monthly";
+  return "weekly";
 };
 
-// Executar se chamado diretamente
-if (require.main === module) {
-  generateSitemap();
-  generateRobotsTxt();
-}
+const entries = publicRoutes.filter((p) => !NON_CANONICAL.has(p));
 
-module.exports = { generateSitemap, generateRobotsTxt };
+const xml = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ...entries.map((path) =>
+    [
+      "  <url>",
+      `    <loc>${BASE_URL}${path === "/" ? "/" : path}</loc>`,
+      `    <changefreq>${changefreqFor(path)}</changefreq>`,
+      `    <priority>${priorityFor(path)}</priority>`,
+      "  </url>",
+    ].join("\n")
+  ),
+  "</urlset>",
+  "",
+].join("\n");
+
+writeFileSync(resolve("public/sitemap.xml"), xml);
+console.log(`sitemap.xml gerado com ${entries.length} URLs`);

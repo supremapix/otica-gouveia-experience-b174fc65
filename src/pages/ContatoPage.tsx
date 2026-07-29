@@ -6,6 +6,7 @@ import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
 import { MapPin, Phone, Clock, Instagram, MessageCircle, HelpCircle, Navigation } from 'lucide-react';
 import PageHero from '../components/PageHero';
+import { SITE_URL, createWebPageSchema, createOpticianSchema, createBreadcrumbSchema, createFAQSchema } from '../utils/schemas';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20%C3%93tica%20Gouveia%20e%20gostaria%20de%20atendimento.";
 
@@ -29,7 +30,7 @@ const channels = [
 const faqs = [
   { q: 'Fazem exame de vista?', a: 'Não realizamos exames de vista. Para sua receita, consulte um oftalmologista. Com a receita em mãos, fabricamos suas lentes com precisão usando o Visioffice 3.' },
   { q: 'Qual o prazo para ficarem os óculos?', a: 'Após seu pedido feito, informaremos o tempo e daremos a data de entrega do seu óculos. O prazo de fabricação pode variar conforme o tipo de lente e tratamento escolhido.' },
-  { q: 'Fazem entrega em domicílio?', a: 'Sim! Entregamos gratuitamente para compras acima de R$250 em Curitiba e Região Metropolitana. Agendamos a entrega por WhatsApp.' },
+  { q: 'Fazem entrega em domicílio?', a: 'Não fazemos entrega. A retirada é presencial na loja, na R. Nicola Pellanda, 1286 — Umbará, Curitiba. Avisamos por WhatsApp assim que seus óculos estiverem prontos.' },
   { q: 'Aceitam plano de saúde?', a: 'Consultamos o reembolso do seu plano. Muitos planos cobrem parte do valor. Entre em contato e verificamos juntos!' },
 ];
 
@@ -42,6 +43,26 @@ const ContatoPage = () => {
     window.open(`https://api.whatsapp.com/send?phone=5541991610663&text=${msg}`, '_blank');
   };
 
+  const url = `${SITE_URL}/contato`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      createWebPageSchema({
+        name: 'Contato da Ótica Gouveia em Curitiba',
+        description:
+          'Endereço, telefone, WhatsApp e horários de atendimento da Ótica Gouveia no Umbará, Curitiba.',
+        url,
+        primaryTopic: 'Contato de ótica em Curitiba',
+      }),
+      createOpticianSchema('Umbará'),
+      createFAQSchema(faqs.map((f) => ({ question: f.q, answer: f.a }))),
+      createBreadcrumbSchema([
+        { name: 'Início', url: SITE_URL },
+        { name: 'Contato', url },
+      ]),
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -49,7 +70,9 @@ const ContatoPage = () => {
          description="Entre em contato com a Ótica Gouveia no Umbará, Curitiba. WhatsApp (41) 99161-0663, telefone (41) 3114-0663. R. Nicola Pellanda, 1286 — Umbará. Seg–Sex 9h–18h."
          keywords="contato ótica gouveia, telefone ótica gouveia, whatsapp ótica gouveia, endereço ótica umbará curitiba"
         canonicalUrl="/contato"
+        structuredData={structuredData}
       />
+
       <Navbar />
 
       {/* Hero */}

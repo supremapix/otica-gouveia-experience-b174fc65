@@ -116,6 +116,7 @@ import ServicosPage from "./pages/ServicosPage";
 import ProdutosPage from "./pages/ProdutosPage";
 import ContatoPage from "./pages/ContatoPage";
 import FAQPage from "./pages/FAQPage";
+import MapaDoSite from "./pages/MapaDoSite";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
@@ -265,7 +266,9 @@ const App = () => (
             <Route path="/produtos" element={<ProdutosPage />} />
             <Route path="/contato" element={<ContatoPage />} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path="/mapa-do-site" element={<MapaDoSite />} />
             <Route path="/blog/oculos-ou-lentes" element={<BlogOculosOuLentes />} />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
