@@ -118,9 +118,14 @@ const Index = () => {
       
       {/* Hero with padding for fixed header */}
       <section id="home" className="pt-16 md:pt-[110px]">
-        <ErrorBoundary componentName="HeroSlider" fallback={<div className="p-4">Error loading Hero</div>}>
-          <HeroSlider />
+        <ErrorBoundary componentName="DesktopHeroSlider" fallback={<div className="p-4">Error loading Hero</div>}>
+          <DesktopHeroSlider />
         </ErrorBoundary>
+        <div className="gouveia-hero-mobile">
+          <ErrorBoundary componentName="HeroSlider" fallback={<div className="p-4">Error loading Hero</div>}>
+            <HeroSlider />
+          </ErrorBoundary>
+        </div>
       </section>
       
       <ErrorBoundary componentName="MarqueeBar" fallback={<div className="p-4">Error</div>}>
