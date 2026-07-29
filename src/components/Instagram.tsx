@@ -13,7 +13,7 @@ const Instagram = () => {
         }`}>
           <span className="text-brand-red text-sm font-semibold uppercase tracking-wider">SIGA-NOS NAS REDES</span>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-900 mt-2">
-            Instagram <span className="text-brand-red">@gouveiaoticacuritiba</span>
+            Instagram <span className="text-brand-red">@oticagouveiacuritiba</span>
           </h2>
           <p className="text-brand-gray-700 max-w-2xl mx-auto mt-4">
             Acompanhe nossas novidades, promoções e dicas sobre saúde ocular.
