@@ -70,17 +70,10 @@ const Index = () => {
     ]
   };
 
-  useEffect(() => {
-    const metaViewport = document.querySelector('meta[name="viewport"]');
-    if (metaViewport) {
-      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
-    } else {
-      const newMetaViewport = document.createElement('meta');
-      newMetaViewport.name = 'viewport';
-      newMetaViewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-      document.head.appendChild(newMetaViewport);
-    }
-  }, []);
+  // Observação: o viewport não é sobrescrito aqui de propósito.
+  // Bloquear o zoom (`user-scalable=no`) prejudica a acessibilidade do
+  // público da melhor idade e penaliza a nota de acessibilidade/SEO.
+
 
   useEffect(() => {
     const handleGlobalError = (event) => {
