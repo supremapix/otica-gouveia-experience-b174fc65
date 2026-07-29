@@ -62,7 +62,7 @@ const Footer = () => {
               Cuidamos da sua visão com carinho e paciência. Atendimento dedicado à melhor idade em Curitiba.
             </p>
             <a 
-              href="https://www.instagram.com/gouveiaoticacuritiba/"
+              href="https://www.instagram.com/oticagouveiacuritiba?igsh=ZnY0czFzcTlzM3Fp"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white px-5 py-3 rounded-full font-semibold transition-colors"

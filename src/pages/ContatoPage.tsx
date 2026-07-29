@@ -24,7 +24,7 @@ const channels = [
   { Icon: MessageCircle, label: 'WhatsApp', value: '(41) 99161-0663', href: WHATSAPP_URL, desc: 'Resposta rápida em minutos', external: true },
   { Icon: Phone, label: 'Telefone', value: '(41) 3114-0663', href: 'tel:+554131140663', desc: 'Atendimento Seg–Sex 9h–18h', external: false },
   { Icon: MapPin, label: 'Endereço', value: 'R. Nicola Pellanda, 1286', href: 'https://maps.app.goo.gl/GhqcM45P9vZA8jMN9', desc: 'Umbará, Curitiba – PR', external: true },
-  { Icon: Instagram, label: 'Instagram', value: '@gouveiaoticacuritiba', href: 'https://www.instagram.com/gouveiaoticacuritiba/', desc: 'Novidades e promoções', external: true },
+  { Icon: Instagram, label: 'Instagram', value: '@oticagouveiacuritiba', href: 'https://www.instagram.com/oticagouveiacuritiba?igsh=ZnY0czFzcTlzM3Fp', desc: 'Novidades e promoções', external: true },
 ];
 
 const faqs = [
