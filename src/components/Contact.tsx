@@ -87,14 +87,14 @@ const Contact = () => {
                   <div>
                     <h4 className="text-brand-gray-900 font-medium">Redes Sociais</h4>
                     <p className="text-brand-gray-700">
-                      <a 
-                        href="https://www.instagram.com/gouveiaoticacuritiba/" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline"
-                      >
-                        @gouveiaoticacuritiba
-                      </a>
+                    <a 
+                      href="https://www.instagram.com/oticagouveiacuritiba?igsh=ZnY0czFzcTlzM3Fp" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      @oticagouveiacuritiba
+                    </a>
                     </p>
                   </div>
                 </div>
