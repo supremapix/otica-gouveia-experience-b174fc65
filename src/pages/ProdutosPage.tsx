@@ -6,6 +6,7 @@ import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
 import { MessageCircle, Glasses, User, Users, Baby, ScanEye } from 'lucide-react';
 import PageHero from '../components/PageHero';
+import { SITE_URL, createWebPageSchema, createOpticianSchema, createBreadcrumbSchema } from '../utils/schemas';
 
 const WHATSAPP_BASE = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%20";
 
