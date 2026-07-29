@@ -1,0 +1,284 @@
+/* Hero desktop exclusivo — não afeta o slider mobile existente */
+
+.gouveia-hero-new {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .gouveia-hero-new {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gouveia-hero-new {
+    display: block;
+    width: 100%;
+  }
+
+  .gouveia-hero-mobile {
+    display: none;
+  }
+
+  .gh-stage {
+    position: relative;
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .gh-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), visibility 1.2s;
+    z-index: 1;
+  }
+
+  .gh-slide.is-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+  }
+
+  .gh-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 50%;
+    transform: scale(1);
+  }
+
+  .gh-img.is-active {
+    animation: gh-kenburns 6s linear forwards;
+  }
+
+  @keyframes gh-kenburns {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+  }
+
+  .gh-gradient {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .gh-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .gh-inner {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+
+  /* Título */
+  .gh-title {
+    font-family: 'Sora', 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: #002776;
+    margin: 0;
+    max-width: 640px;
+  }
+
+  .gh-dark .gh-title { color: #ffffff; }
+
+  .gh-line { display: block; }
+
+  .gh-word-wrap {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 0.06em 0.08em 0;
+  }
+
+  .gh-word {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(60px);
+    animation: gh-word-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+      gh-shine 5s linear 1.4s infinite;
+    background-image: linear-gradient(
+      100deg,
+      currentColor 0%,
+      currentColor 40%,
+      rgba(213, 0, 0, 0.85) 50%,
+      currentColor 60%,
+      currentColor 100%
+    );
+    background-size: 300% 100%;
+    background-position: 120% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  @keyframes gh-word-in {
+    to {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes gh-shine {
+    0% { background-position: 120% 0; }
+    35%, 100% { background-position: -40% 0; }
+  }
+
+  /* Linha vermelha */
+  .gh-rule {
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 4px;
+    background: #d50000;
+    margin: 22px 0 20px;
+    transform: scaleX(0);
+    transform-origin: left center;
+    animation: gh-rule-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
+  }
+
+  @keyframes gh-rule-in {
+    to { transform: scaleX(1); }
+  }
+
+  /* Descrição */
+  .gh-desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333333;
+    max-width: 520px;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: gh-fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+  }
+
+  .gh-dark .gh-desc { color: rgba(255, 255, 255, 0.9); }
+
+  @keyframes gh-fade-up {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Chips / lista */
+  .gh-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    list-style: none;
+    padding: 0;
+    margin: 26px 0 0;
+    max-width: 620px;
+  }
+
+  .gh-chip,
+  .gh-list-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: #002776;
+    opacity: 0;
+    transform: translateY(14px);
+    animation: gh-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .gh-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 560px;
+  }
+
+  .gh-list-item {
+    font-size: 17px;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  .gh-dark .gh-chip,
+  .gh-dark .gh-list-item { color: rgba(255, 255, 255, 0.95); }
+
+  .gh-chip-icon {
+    width: 18px;
+    height: 18px;
+    color: #d50000;
+    flex-shrink: 0;
+  }
+
+  .gh-dark .gh-chip-icon { color: #ffffff; }
+
+  .gh-footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transform: translateY(14px);
+    animation: gh-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .gh-sep { opacity: 0.5; }
+
+  /* Dots */
+  .gh-dots {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 5;
+  }
+
+  .gh-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+  }
+
+  .gh-dot.is-active {
+    width: 34px;
+    background: #d50000;
+    border-color: #d50000;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gh-img.is-active,
+    .gh-word,
+    .gh-rule,
+    .gh-desc,
+    .gh-chip,
+    .gh-list-item,
+    .gh-footer {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+      filter: none !important;
+    }
+  }
+}
