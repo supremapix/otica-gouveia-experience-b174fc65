@@ -1,6 +1,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSlider from '../components/HeroSlider';
+import DesktopHeroSlider from '../components/DesktopHeroSlider';
 import MarqueeBar from '../components/MarqueeBar';
 import About from '../components/About';
 import Services from '../components/Services';
