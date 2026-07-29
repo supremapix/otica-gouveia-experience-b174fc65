@@ -37,7 +37,7 @@ const publicRoutes = [
 // Elas possuem canonical apontando para a URL preferencial, então ficam fora.
 const NON_CANONICAL = new Set([
   "/otica-pinheirinho",
-  "/loja-de-oculos-no-pinheirinho/15565",
+  "/otica-pinheirinho-bairro",
 ]);
 
 const priorityFor = (path) => {
