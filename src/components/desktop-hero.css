@@ -99,7 +99,8 @@
   .gh-word-wrap {
     display: inline-block;
     overflow: hidden;
-    padding: 0 0.06em 0.08em 0;
+    padding: 0 0.06em 0.12em 0;
+    margin-right: 0.26em;
   }
 
   .gh-word {
