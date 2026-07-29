@@ -266,7 +266,9 @@ const App = () => (
             <Route path="/produtos" element={<ProdutosPage />} />
             <Route path="/contato" element={<ContatoPage />} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path="/mapa-do-site" element={<MapaDoSite />} />
             <Route path="/blog/oculos-ou-lentes" element={<BlogOculosOuLentes />} />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<RedirectHandler />} />
           </Routes>
