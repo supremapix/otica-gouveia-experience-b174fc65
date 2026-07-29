@@ -6,6 +6,7 @@ import WhatsAppFloat from '../components/WhatsAppFloat';
 import BackToTop from '../components/BackToTop';
 import { MapPin, Phone, Clock, Instagram, MessageCircle, HelpCircle, Navigation } from 'lucide-react';
 import PageHero from '../components/PageHero';
+import { SITE_URL, createWebPageSchema, createOpticianSchema, createBreadcrumbSchema, createFAQSchema } from '../utils/schemas';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20%C3%93tica%20Gouveia%20e%20gostaria%20de%20atendimento.";
 
