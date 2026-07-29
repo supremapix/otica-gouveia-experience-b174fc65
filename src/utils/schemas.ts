@@ -88,7 +88,7 @@ export const createOrganizationSchema = () => ({
   },
   image: STORE_IMAGE,
   description:
-    "Ótica em Curitiba especializada em óculos de grau, óculos de sol, lentes de contato, lentes multifocais e exame de vista, com medições digitais Visioffice 3.",
+    "Ótica em Curitiba especializada em óculos de grau, óculos de sol, lentes de contato e lentes multifocais, com medições digitais Visioffice 3. Não realizamos exame de vista: trabalhamos com a receita do oftalmologista.",
   address: ADDRESS,
   contactPoint: [
     {
@@ -108,8 +108,8 @@ export const createOpticianSchema = (location?: string) => ({
   "@id": `${SITE_URL}/#optician`,
   name: "Ótica Gouveia",
   description: location
-    ? `Ótica que atende ${location} e região, em Curitiba: óculos de grau, óculos de sol, lentes de contato, lentes multifocais, conserto de óculos e exame de vista.`
-    : "Ótica em Curitiba: óculos de grau, óculos de sol, lentes de contato, lentes multifocais, conserto de óculos e exame de vista.",
+    ? `Ótica que atende ${location} e região, em Curitiba: óculos de grau, óculos de sol, lentes de contato, lentes multifocais e conserto de óculos.`
+    : "Ótica em Curitiba: óculos de grau, óculos de sol, lentes de contato, lentes multifocais e conserto de óculos.",
   url: SITE_URL,
   image: STORE_IMAGE,
   logo: LOGO,
@@ -138,7 +138,7 @@ export const createOpticianSchema = (location?: string) => ({
       "Armações femininas, masculinas e infantis",
       "Conserto e ajuste de óculos",
       "Troca de lentes",
-      "Exame de vista",
+      "Medição digital Visioffice 3",
     ].map((name) => ({
       "@type": "Offer",
       itemOffered: { "@type": "Service", name },
@@ -161,7 +161,7 @@ export const createWebsiteSchema = () => ({
   name: "Ótica Gouveia",
   url: SITE_URL,
   description:
-    "Site oficial da Ótica Gouveia — óculos de grau, óculos de sol, lentes de contato e exame de vista em Curitiba.",
+    "Site oficial da Ótica Gouveia — óculos de grau, óculos de sol, lentes de contato e lentes multifocais em Curitiba.",
   inLanguage: "pt-BR",
   publisher: { "@id": `${SITE_URL}/#organization` },
 });
