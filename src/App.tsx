@@ -116,6 +116,7 @@ import ServicosPage from "./pages/ServicosPage";
 import ProdutosPage from "./pages/ProdutosPage";
 import ContatoPage from "./pages/ContatoPage";
 import FAQPage from "./pages/FAQPage";
+import MapaDoSite from "./pages/MapaDoSite";
 import { getRedirectPath } from "./utils/redirects";
 
 const queryClient = new QueryClient();
