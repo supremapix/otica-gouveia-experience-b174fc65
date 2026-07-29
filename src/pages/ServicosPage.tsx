@@ -75,14 +75,36 @@ const services = [
 ];
 
 const ServicosPage = () => {
+  const url = `${SITE_URL}/servicos`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      createWebPageSchema({
+        name: 'Serviços da Ótica Gouveia em Curitiba',
+        description:
+          'Medição digital Visioffice 3, lentes multifocais e antirreflexo, armações, conserto e ajuste de óculos em Curitiba.',
+        url,
+        primaryTopic: 'Serviços ópticos em Curitiba',
+      }),
+      createOpticianSchema(),
+      ...services.map((s) => createServiceSchema(s.title, s.description)),
+      createBreadcrumbSchema([
+        { name: 'Início', url: SITE_URL },
+        { name: 'Serviços', url },
+      ]),
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
         title="Serviços — Ótica Gouveia Curitiba | Lentes, Armações e Visioffice 3"
-        description="Conheça todos os serviços da Ótica Gouveia Curitiba: medição Visioffice 3, lentes premium, armações de grife, manutenção, ajustes e delivery via motoboy."
+        description="Conheça os serviços da Ótica Gouveia Curitiba: medição Visioffice 3, lentes premium, armações de grife, manutenção, ajustes e conserto de óculos."
         keywords="serviços ótica curitiba, visioffice 3 curitiba, lentes progressivas curitiba, conserto óculos curitiba, manutenção óculos"
         canonicalUrl="/servicos"
+        structuredData={structuredData}
       />
+
       <Navbar />
 
       {/* Hero */}
