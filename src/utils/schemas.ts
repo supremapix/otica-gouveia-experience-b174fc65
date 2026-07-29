@@ -39,7 +39,7 @@ const OPENING_HOURS = [
 ] as const;
 
 const SAME_AS = [
-  "https://www.instagram.com/gouveiaoticacuritiba/",
+  "https://www.instagram.com/oticagouveiacuritiba?igsh=ZnY0czFzcTlzM3Fp",
   "https://www.facebook.com/profile.php?id=61560224348183",
 ];
 
