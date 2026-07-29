@@ -32,6 +32,25 @@ const values = [
 ];
 
 const SobrePage = () => {
+  const url = `${SITE_URL}/sobre`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      createWebPageSchema({
+        name: 'Sobre a Ótica Gouveia',
+        description:
+          'História, valores e equipe da Ótica Gouveia, ótica no Umbará em Curitiba com tecnologia de medição Visioffice 3.',
+        url,
+        primaryTopic: 'Ótica em Curitiba',
+      }),
+      createOpticianSchema(),
+      createBreadcrumbSchema([
+        { name: 'Início', url: SITE_URL },
+        { name: 'Sobre Nós', url },
+      ]),
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -39,7 +58,9 @@ const SobrePage = () => {
         description="Conheça a história da Ótica Gouveia Curitiba. Mais de 15 anos de tradição, tecnologia Visioffice 3 e atendimento especializado no Pinheirinho e região."
         keywords="sobre ótica gouveia, história ótica gouveia, equipe ótica curitiba, valores ótica gouveia"
         canonicalUrl="/sobre"
+        structuredData={structuredData}
       />
+
       <Navbar />
 
       {/* Hero */}
