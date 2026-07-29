@@ -1,1012 +1,548 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-
-  <!-- Home Page -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.gouveiacuritiba.com.br/</loc>
-    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png</image:loc>
-      <image:caption>Ótica Gouveia - Fachada da loja</image:caption>
-    </image:image>
   </url>
-
-  <!-- Páginas Institucionais -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/sobre</loc>
-    <lastmod>2025-02-19T12:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Sobre a Ótica Gouveia - Nossa História</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/servicos</loc>
-    <lastmod>2025-02-19T12:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Serviços da Ótica Gouveia - Exames e Lentes</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/produtos</loc>
-    <lastmod>2025-02-19T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Produtos da Ótica Gouveia - Óculos e Armações</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/contato</loc>
-    <lastmod>2025-02-19T12:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Contato Ótica Gouveia - Curitiba</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Pinheirinho Main Page -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho</loc>
-    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png</image:loc>
-      <image:caption>Ótica Gouveia Pinheirinho</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Pinheirinho Store 15565 -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565</loc>
-    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/72458d7b-67ce-4323-8f82-f7e805b4b50c.png</image:loc>
-      <image:caption>Interior da Ótica Gouveia</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Sítio Cercado -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-sitio-cercado</loc>
-    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/a16bdfa8-f87b-4ca6-84c5-1311998e3299.png</image:loc>
-      <image:caption>Vitrines com óculos</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Umbará -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-umbara</loc>
-    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Óculos de sol em exposição</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Alternative URLs -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-pinheirinho</loc>
-    <lastmod>2024-07-30T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- CIC -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-cic</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos CIC</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Cajuru -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-cajuru</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Cajuru</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Boqueirão -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-boqueirao</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/72458d7b-67ce-4323-8f82-f7e805b4b50c.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Boqueirão</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Hauer -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-hauer</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Hauer</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Centro -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-centro</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/e1ecf008-b212-460b-ac86-aaa84894d67e.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Centro</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Batel -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-batel</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/e2d4b47a-9617-4e72-9f26-50170c88e9a0.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Batel</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Água Verde -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-agua-verde</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Água Verde</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Bigorrilho -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-bigorrilho</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/40a418ff-3ca5-4179-978b-9c5888b8d04b.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Bigorrilho</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Portão -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-portao</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/48cc47c3-a484-4afb-9f9e-fc1b26e5d095.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Portão</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Xaxim -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-xaxim</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/74d8f6cb-dfbb-4388-82b9-f012acfbadcc.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Xaxim</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Santa Felicidade -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-santa-felicidade</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Santa Felicidade</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Bacacheri -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-bacacheri</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Bacacheri</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Araucária -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-araucaria</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/9f9ebc43-0457-4fdb-8dca-d73cf2b9e790.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Araucária</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Colombo -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-colombo</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/a1b78843-775f-44c7-861f-44eb7a861d83.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Colombo</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Pinhais -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-pinhais</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Pinhais</image:caption>
-    </image:image>
-  </url>
-
-  <!-- São José dos Pinhais -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-sao-jose-dos-pinhais</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/d03236fb-b7da-44a0-9e41-d1bcf77ee2fe.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos São José dos Pinhais</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Fazenda Rio Grande -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-fazenda-rio-grande</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/e5648b15-71af-463e-9d97-c7b893f4d150.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Fazenda Rio Grande</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Rebouças -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-reboucas</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/1e537bc1-d784-42e1-924f-2b78a52c928e.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Rebouças</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Neo Ville -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-neo-ville</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/274d786d-f6dc-4326-86d9-2d60e4280f0d.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Neo Ville</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Vila Sandra -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-vila-sandra</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2a369857-bf52-4a02-8d10-0c2801ad850d.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Vila Sandra</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Vila Formosa -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-vila-formosa</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Vila Formosa</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Almirante Tamandaré -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-almirante-tamandare</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Almirante Tamandaré</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Quatro Barras -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-quatro-barras</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Quatro Barras</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Mandirituba -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-mandirituba</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Mandirituba</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Campina Grande do Sul -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-campina-grande-do-sul</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Campina Grande do Sul</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Cristo Rei -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-cristo-rei</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Cristo Rei</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Ecoville -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-ecoville</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Ecoville</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Jardim Botânico -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-jardim-botanico</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Jardim Botânico</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Juvevê -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-juveve</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Juvevê</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Capão Raso -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-capao-raso</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Capão Raso</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Jardim das Américas -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-jardim-das-americas</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Jardim das Américas</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Novo Mundo -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-novo-mundo</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Novo Mundo</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Tarumã -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-taruma</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Tarumã</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Tatuquara -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-tatuquara</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Tatuquara</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Campo Comprido -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-campo-comprido</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Campo Comprido</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Hugo Lange -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-hugo-lange</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Hugo Lange</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Tingui -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-tingui</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Tingui</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Mercês -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-merces</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Mercês</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Cabral -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-cabral</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Cabral</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Alto da XV -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-alto-da-xv</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Alto da XV</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Guabirotuba -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-guabirotuba</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Guabirotuba</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Parolin -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-parolin</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.png</image:loc>
-      <image:caption>Ótica Gouveia - Óculos Parolin</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Adrianópolis -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-adrianopolis</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Balsa Nova -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-balsa-nova</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Contenda -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-contenda</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Lapa -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-lapa</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Abranches -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-abranches</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Uberaba -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-uberaba</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Vila Izabel -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-vila-izabel</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Alto da Glória -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-alto-da-gloria</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Pilarzinho -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-pilarzinho</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Santa Cândida -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-santa-candida</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Bocaiúva do Sul -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-bocaiuva-do-sul</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Itaperuçu -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-itaperucu</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Rio Branco do Sul -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-rio-branco-do-sul</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Campo Magro -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-campo-magro</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tijucas do Sul -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-tijucas-do-sul</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Atuba -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-atuba</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Bairro Alto -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-bairro-alto</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Boa Vista -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-boa-vista</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Bom Retiro -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-bom-retiro</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Orleans -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-orleans</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Agudos do Sul -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-agudos-do-sul</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Campo do Tenente -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-campo-do-tenente</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Cerro Azul -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-cerro-azul</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Doutor Ulysses -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-doutor-ulysses</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Piên -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-pien</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Quitandinha -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-quitandinha</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Rio Negro -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-rio-negro</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Tunas do Paraná -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-tunas-do-parana</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Lindóia -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-lindoia</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- São João -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-sao-joao</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Piraquara -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-piraquara</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Campo Largo -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-campo-largo</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Barigui -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-barigui</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Centro Cívico -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-centro-civico</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Capão da Imbuia -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-capao-da-imbuia</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Fanny -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-fanny</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- São Francisco -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-sao-francisco</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Ganchinho -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-ganchinho</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Fazendinha -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-fazendinha</loc>
-    <lastmod>2025-01-15T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Páginas SEO Temáticas - Alta Prioridade -->
-
-  <!-- Conserto de Óculos Sítio Cercado -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado</loc>
-    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Conserto de Óculos no Sítio Cercado — Ótica Gouveia</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Terminal Sítio Cercado -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-terminal-sitio-cercado</loc>
-    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Ótica perto do Terminal Sítio Cercado — Ótica Gouveia</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Óticas no Centro de Curitiba -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/oticas-no-centro-de-curitiba</loc>
-    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Óticas no Centro de Curitiba — Ótica Gouveia</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Ótica Barata em Curitiba -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/otica-barata-curitiba</loc>
-    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Ótica Barata em Curitiba — Ótica Gouveia</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Entregas Sítio Cercado -->
-  <url>
-    <loc>https://www.gouveiacuritiba.com.br/entregas-sitio-cercado-curitiba</loc>
-    <lastmod>2026-02-19T12:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Entregas de Óculos no Sítio Cercado — Ótica Gouveia</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Blog: Óculos vs Lentes de Contato -->
   <url>
     <loc>https://www.gouveiacuritiba.com.br/blog/oculos-ou-lentes</loc>
-    <lastmod>2025-06-17T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.gouveiacuritiba.com.br/og-image.png</image:loc>
-      <image:caption>Óculos de Grau ou Lente de Contato — Guia Comparativo Ótica Gouveia</image:caption>
-    </image:image>
+    <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/contato</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/entregas-sitio-cercado-curitiba</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/faq</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/mapa-do-site</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-abranches</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-adrianopolis</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-agua-verde</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-agudos-do-sul</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-almirante-tamandare</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-alto-da-gloria</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-alto-da-xv</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-araucaria</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-atuba</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-augusta</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bacacheri</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bairro-alto</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-balsa-nova</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-barata-curitiba</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-barigui</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-barreirinha</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-batel</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bigorrilho</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-boa-vista</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bocaiuva-do-sul</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-bom-retiro</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-boqueirao</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-cabral</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-cajuru</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-campina-grande-do-sul</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-campo-comprido</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-campo-de-santana</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-campo-do-tenente</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-campo-largo</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-campo-magro</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-capao-da-imbuia</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-capao-raso</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-cascatinha</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-centro</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-centro-civico</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-cerro-azul</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-cic</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-colombo</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-contenda</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-cristo-rei</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-doutor-ulysses</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-ecoville</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-fanny</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-fazenda-rio-grande</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-fazendinha</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-ganchinho</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-guabirotuba</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-hauer</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-hugo-lange</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-itaperucu</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-jardim-botanico</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-jardim-das-americas</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-juveve</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-lapa</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-lindoia</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-mandirituba</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-merces</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-mossungue</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-neo-ville</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-novo-mundo</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-orleans</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-parolin</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-pien</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-pilarzinho</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-pinhais</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-piraquara</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-portao</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-quatro-barras</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-quitandinha</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-reboucas</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-rio-branco-do-sul</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-rio-negro</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-riviera</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-santa-candida</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-santa-felicidade</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-santa-quiteria</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-santo-inacio</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-sao-francisco</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-sao-joao</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-sao-jose-dos-pinhais</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-sao-lourenco</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-seminario</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-sitio-cercado</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-taruma</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-tatuquara</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-terminal-sitio-cercado</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-tijucas-do-sul</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-tingui</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-tunas-do-parana</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-uberaba</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-umbara</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-vila-formosa</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-vila-guaira</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-vila-izabel</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-vila-sandra</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/otica-xaxim</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/oticas-no-centro-de-curitiba</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/produtos</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/servicos</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gouveiacuritiba.com.br/sobre</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
