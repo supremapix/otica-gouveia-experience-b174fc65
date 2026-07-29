@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Glasses, Sparkles, ShieldCheck, HeartHandshake, Ruler, Sun, Phone, MapPin } from 'lucide-react';
 import hero1 from '../assets/hero-gouveia-1.webp';
-import hero2 from '../assets/hero-gouveia-2.webp.asset.json';
+import hero2 from '../assets/hero-gouveia-2.webp';
 import hero3 from '../assets/hero-gouveia-3.webp';
 import './desktop-hero.css';
 
