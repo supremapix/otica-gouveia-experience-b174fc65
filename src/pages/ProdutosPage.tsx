@@ -54,6 +54,47 @@ const ProdutosPage = () => {
 
   const filtered = activeCategory === 'all' ? products : products.filter(p => p.category === activeCategory);
 
+  const url = `${SITE_URL}/produtos`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      createWebPageSchema({
+        name: 'Catálogo de produtos da Ótica Gouveia',
+        description:
+          'Armações femininas, masculinas e infantis, óculos de sol e lentes multifocais disponíveis na Ótica Gouveia em Curitiba.',
+        url,
+        primaryTopic: 'Armações e lentes em Curitiba',
+      }),
+      {
+        '@type': 'ItemList',
+        name: 'Armações e lentes — Ótica Gouveia',
+        numberOfItems: products.length,
+        itemListElement: products.map((p, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          item: {
+            '@type': 'Product',
+            name: p.name,
+            description: p.desc,
+            image: `${SITE_URL}${p.image}`,
+            category: p.category,
+            offers: {
+              '@type': 'Offer',
+              availability: 'https://schema.org/InStock',
+              priceCurrency: 'BRL',
+              availableAtOrFrom: { '@id': `${SITE_URL}/#optician` },
+            },
+          },
+        })),
+      },
+      createOpticianSchema(),
+      createBreadcrumbSchema([
+        { name: 'Início', url: SITE_URL },
+        { name: 'Produtos', url },
+      ]),
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -61,7 +102,9 @@ const ProdutosPage = () => {
         description="Catálogo completo de armações e lentes da Ótica Gouveia Curitiba. Ray-Ban, Ana Hickmann, Victor Hugo, lentes Varilux e muito mais. Consulte-nos!"
         keywords="óculos ray-ban curitiba, armações ótica curitiba, lentes varilux curitiba, óculos de grau curitiba, catálogo ótica gouveia"
         canonicalUrl="/produtos"
+        structuredData={structuredData}
       />
+
       <Navbar />
 
       {/* Hero */}
