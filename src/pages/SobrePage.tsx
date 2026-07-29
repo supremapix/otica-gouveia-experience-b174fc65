@@ -6,6 +6,7 @@ import BackToTop from '../components/BackToTop';
 import VisiofficeSection from '../components/VisiofficeSection';
 import PageHero from '../components/PageHero';
 import { Handshake, Gem, Heart, Microscope, Truck, BadgeCheck, Glasses, MessageCircle, Navigation } from 'lucide-react';
+import { SITE_URL, createWebPageSchema, createOpticianSchema, createBreadcrumbSchema } from '../utils/schemas';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20empresa.%20Pode%20me%20ajudar?";
 
