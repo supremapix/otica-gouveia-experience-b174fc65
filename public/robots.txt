@@ -1,21 +1,61 @@
+# robots.txt — Ótica Gouveia Curitiba
+# https://www.gouveiacuritiba.com.br
 
+# --- Buscadores tradicionais ---
 User-agent: *
 Allow: /
 
-# Sitemap
+# --- Motores generativos / IA (GEO) ---
+# Liberados intencionalmente para que o conteúdo seja citado em
+# AI Overviews, ChatGPT, Perplexity, Gemini, Claude e Copilot.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# --- Redes sociais (pré-visualização de links) ---
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# --- Sitemaps ---
 Sitemap: https://www.gouveiacuritiba.com.br/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 1
-
-# Disallow specific paths
-Disallow: /api/
-Disallow: /admin/
-Disallow: /_next/
-Disallow: /static/
-
-# Allow important pages
-Allow: /loja-de-oculos-no-pinheirinho
-Allow: /loja-de-oculos-no-pinheirinho/15565
-Allow: /otica-sitio-cercado
-Allow: /otica-umbara
