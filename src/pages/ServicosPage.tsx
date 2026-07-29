@@ -6,7 +6,7 @@ import BackToTop from '../components/BackToTop';
 import VisiofficeSection from '../components/VisiofficeSection';
 import HowToBuySection from '../components/HowToBuySection';
 import PageHero from '../components/PageHero';
-import { ScanEye, Layers, Glasses, Wrench, Truck, CreditCard, CheckCircle, MessageCircle, Zap } from 'lucide-react';
+import { ScanEye, Layers, Glasses, Wrench, Store, MapPin, CreditCard, CheckCircle, MessageCircle, Zap } from 'lucide-react';
 import { SITE_URL, createWebPageSchema, createOpticianSchema, createBreadcrumbSchema, createServiceSchema } from '../utils/schemas';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20%C3%93tica%20Gouveia.";
@@ -53,15 +53,16 @@ const services = [
     msg: 'Ol%C3%A1!%20Preciso%20de%20manuten%C3%A7%C3%A3o%20nos%20meus%20%C3%B3culos.',
   },
   {
-    Icon: Truck,
-    title: 'Delivery Óptico Via Motoboy',
-    description: 'Compras acima de R$250 com entrega inclusa para toda Curitiba e região. Nossa loja fica no Umbará e o motoboy leva seus óculos até você.',
-    features: ['Entrega inclusa a partir de R$250', 'Prazo informado após o pedido', 'Curitiba e Região Metropolitana', 'Seg a Sex, horário comercial', 'Rastreamento da entrega'],
-    BadgeIcon: Truck,
-    badge: 'DELIVERY',
-    cta: 'Pedir com Entrega',
-    msg: 'Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20com%20entrega%20em%20casa.',
+    Icon: Store,
+    title: 'Retirada na Loja do Umbará',
+    description: 'Todos os pedidos são retirados presencialmente na nossa loja: R. Nicola Pellanda, 1286 — Umbará, Curitiba. Avisamos pelo WhatsApp assim que os óculos ficam prontos.',
+    features: ['Retirada presencial no Umbará', 'Aviso por WhatsApp quando ficar pronto', 'Conferência e ajuste na entrega', 'Seg a Sex 09h-18h, Sáb 09h-13h', 'Estacionamento na região'],
+    BadgeIcon: MapPin,
+    badge: 'RETIRADA NA LOJA',
+    cta: 'Falar no WhatsApp',
+    msg: 'Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20para%20retirar%20na%20loja.',
   },
+
   {
     Icon: CreditCard,
     title: 'Facilidade de Pagamento',
