@@ -86,7 +86,7 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
       <meta name="revisit-after" content="7 days" />
       <meta name="distribution" content="global" />
       <meta name="rating" content="general" />
-      <meta name="google-site-verification" content="Vpi-8OrZzWV8kNdWbjC1fMIIDPtdUcKYWvHCllEaO1s" />
+
       
       {/* Canonical URL */}
       <link rel="canonical" href={fullCanonicalUrl} />
