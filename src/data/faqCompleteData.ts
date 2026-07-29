@@ -606,7 +606,7 @@ export const faqBlocks: FAQBlock[] = [
       { question: "Tem atendimento por videochamada?", answer: "Atualmente nosso atendimento é presencial e por WhatsApp. Para medições e exame de vista, a visita presencial é necessária." + miniCTA },
       { question: "Posso tirar dúvidas por telefone?", answer: "Sim! Ligue para (41) 3114-0663 durante o horário comercial. Teremos prazer em ajudar." + miniCTA },
       { question: "Tem e-mail de contato?", answer: "Para contato rápido, preferimos WhatsApp: (41) 99161-0663 ou telefone: (41) 3114-0663." + miniCTA },
-      { question: "Tem perfil no Instagram?", answer: "Sim! Siga @gouveiaoticacuritiba no Instagram para novidades, dicas e promoções." + miniCTA },
+      { question: "Tem perfil no Instagram?", answer: "Sim! Siga @oticagouveiacuritiba no Instagram para novidades, dicas e promoções." + miniCTA },
       { question: "Tem página no Facebook?", answer: "Sim! Procure Ótica Gouveia Curitiba no Facebook. Curta e acompanhe nossas publicações." + miniCTA },
       { question: "Tem Google Maps cadastrado?", answer: "Sim! Estamos no Google Maps. Busque 'Ótica Gouveia Curitiba' e encontre nossas lojas facilmente." + miniCTA },
       { question: "Posso deixar avaliação no Google?", answer: "Sim, por favor! Sua avaliação nos ajuda muito. Busque-nos no Google Maps e deixe seu comentário." + miniCTA },
