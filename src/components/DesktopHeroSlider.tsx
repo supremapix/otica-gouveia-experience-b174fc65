@@ -33,7 +33,7 @@ const slides: Slide[] = [
     ],
   },
   {
-    image: hero2,
+    image: hero2.url,
     alt: 'Ótica Gouveia — Seu olhar, nossa paixão',
     titleLines: ['SEU OLHAR,', 'NOSSA PAIXÃO!'],
     description: 'Na Gouveia, cada par de óculos é escolhido com cuidado.',
