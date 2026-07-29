@@ -27,13 +27,13 @@ const Instagram = () => {
             <div className="w-full max-w-[540px] mx-auto rounded-2xl shadow-xl ring-1 ring-pink-100 bg-gradient-to-br from-pink-50 via-white to-orange-50 p-2 sm:p-3">
               <div className="h-[350px] sm:h-[410px] md:h-[470px] rounded-xl overflow-hidden bg-white">
                 <iframe
-                  src="https://www.instagram.com/gouveiaoticacuritiba/embed/"
+                  src="https://www.instagram.com/oticagouveiacuritiba/embed/"
                   className="block w-full h-[620px]"
                   frameBorder="0"
                   scrolling="no"
                   allowTransparency={true}
                   loading="lazy"
-                  title="Instagram Feed de @gouveiaoticacuritiba"
+                  title="Instagram Feed de @oticagouveiacuritiba"
                 ></iframe>
               </div>
             </div>
@@ -41,7 +41,7 @@ const Instagram = () => {
 
           <div className="text-center mt-6">
             <a
-              href="https://www.instagram.com/gouveiaoticacuritiba/"
+              href="https://www.instagram.com/oticagouveiacuritiba?igsh=ZnY0czFzcTlzM3Fp"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white text-base md:text-lg font-semibold hover:opacity-90 transition-opacity shadow-md min-h-[56px]"
