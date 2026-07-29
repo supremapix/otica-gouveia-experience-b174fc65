@@ -30,7 +30,7 @@ const channels = [
 const faqs = [
   { q: 'Fazem exame de vista?', a: 'Não realizamos exames de vista. Para sua receita, consulte um oftalmologista. Com a receita em mãos, fabricamos suas lentes com precisão usando o Visioffice 3.' },
   { q: 'Qual o prazo para ficarem os óculos?', a: 'Após seu pedido feito, informaremos o tempo e daremos a data de entrega do seu óculos. O prazo de fabricação pode variar conforme o tipo de lente e tratamento escolhido.' },
-  { q: 'Fazem entrega em domicílio?', a: 'Sim! Entregamos gratuitamente para compras acima de R$250 em Curitiba e Região Metropolitana. Agendamos a entrega por WhatsApp.' },
+  { q: 'Fazem entrega em domicílio?', a: 'Não fazemos entrega. A retirada é presencial na loja, na R. Nicola Pellanda, 1286 — Umbará, Curitiba. Avisamos por WhatsApp assim que seus óculos estiverem prontos.' },
   { q: 'Aceitam plano de saúde?', a: 'Consultamos o reembolso do seu plano. Muitos planos cobrem parte do valor. Entre em contato e verificamos juntos!' },
 ];
 
