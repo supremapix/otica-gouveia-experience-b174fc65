@@ -29,7 +29,7 @@ export const blogRoutes: SiteRoute[] = [
 ];
 
 export const localRoutes: SiteRoute[] = [
-  { path: "/oticas-no-centro-de-curitiba", label: "/Oticas No Centro De Curitiba" },
+  { path: "/oticas-no-centro-de-curitiba", label: "Óticas no Centro de Curitiba" },
   { path: "/otica-abranches", label: "Ótica Abranches" },
   { path: "/otica-adrianopolis", label: "Ótica Adrianópolis" },
   { path: "/otica-agua-verde", label: "Ótica Água Verde" },
