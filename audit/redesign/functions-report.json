@@ -1,0 +1,21 @@
+{
+  "productKeyboard": true,
+  "productEscape": true,
+  "topCount": 1,
+  "topVisible": true,
+  "topScroll": 0,
+  "suprema": {
+    "count": 1,
+    "image": {
+      "src": "https://img.supremamidia.com/suprema-img.png",
+      "loaded": true,
+      "width": 220
+    }
+  },
+  "share": true,
+  "persistedFont": "20px",
+  "galleryOpen": true,
+  "galleryClosed": true,
+  "menuFocusInside": true,
+  "menuFocusRestored": true
+}

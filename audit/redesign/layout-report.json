@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "path": "/",
+      "scrollWidth": 320,
+      "h1": 1,
+      "title": "�tica Gouveia Umbar� - �culos de Grau, Sol e Lentes em Curitiba"
+    },
+    {
+      "width": 320,
+      "path": "/produtos",
+      "scrollWidth": 320,
+      "h1": 1,
+      "title": "Produtos - �tica Gouveia Curitiba | Ray-Ban, Oakley, Ana Hickmann"
+    },
+    {
+      "width": 320,
+      "path": "/otica-umbara",
+      "scrollWidth": 320,
+      "h1": 1,
+      "title": "�tica Gouveia | Visita de Umbar� � loja no Umbar�"
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "scrollWidth": 390,
+      "h1": 1,
+      "title": "�tica Gouveia Umbar� - �culos de Grau, Sol e Lentes em Curitiba"
+    },
+    {
+      "width": 390,
+      "path": "/produtos",
+      "scrollWidth": 390,
+      "h1": 1,
+      "title": "Produtos - �tica Gouveia Curitiba | Ray-Ban, Oakley, Ana Hickmann"
+    },
+    {
+      "width": 390,
+      "path": "/otica-umbara",
+      "scrollWidth": 390,
+      "h1": 1,
+      "title": "�tica Gouveia | Visita de Umbar� � loja no Umbar�"
+    },
+    {
+      "width": 1440,
+      "path": "/",
+      "scrollWidth": 1440,
+      "h1": 1,
+      "title": "�tica Gouveia Umbar� - �culos de Grau, Sol e Lentes em Curitiba"
+    },
+    {
+      "width": 1440,
+      "path": "/produtos",
+      "scrollWidth": 1440,
+      "h1": 1,
+      "title": "Produtos - �tica Gouveia Curitiba | Ray-Ban, Oakley, Ana Hickmann"
+    },
+    {
+      "width": 1440,
+      "path": "/otica-umbara",
+      "scrollWidth": 1440,
+      "h1": 1,
+      "title": "�tica Gouveia | Visita de Umbar� � loja no Umbar�"
+    },
+    {
+      "menuFocus": true
+    },
+    {
+      "menuClosed": true
+    },
+    {
+      "text200": {
+        "font": "32px",
+        "width": 320,
+        "scroll": 320,
+        "menuRight": 308
+      }
+    }
+  ],
+  "errors": []
+}

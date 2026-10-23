@@ -1,0 +1,9 @@
+import { Link } from 'react-router-dom';
+import { ArrowUpRight, MapPin } from 'lucide-react';
+export default function EditorialHero(){return <>
+<section id="home" className="gv-hero">
+ <div className="gv-hero-copy"><p className="gv-eyebrow">�TICA GOUVEIA � UMBAR�, CURITIBA</p><h1>�culos para viver<br/>o <em>seu dia.</em></h1><p className="gv-hero-description">Seu estilo, sua rotina, suas escolhas. Conhe�a nossas arma��es e lentes e conte com a equipe para escolher com calma.</p><div className="gv-hero-actions"><Link className="gv-button" to="/produtos">Explore o cat�logo <ArrowUpRight size={21}/></Link><a className="gv-text-link" href="https://wa.me/5541991610663" target="_blank" rel="noopener noreferrer">Converse com a equipe ?</a></div><a className="gv-address-note" href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9" target="_blank" rel="noopener noreferrer"><MapPin size={20}/><span>Uma loja no Umbar�.<br/><strong>Rua Nicola Pellanda, 1286</strong></span></a></div>
+ <figure className="gv-hero-photo"><img src="/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.webp" alt="Ray-Ban Aviator do cat�logo da �tica Gouveia, fotografado com estojo" width="800" height="800" fetchPriority="high"/><figcaption><span><small>EM FOCO</small><strong>Ray-Ban Aviator</strong></span><Link to="/produtos" aria-label="Conhecer Ray-Ban Aviator no cat�logo"><ArrowUpRight size={28}/></Link></figcaption></figure>
+</section>
+<section className="gv-category-strip" aria-label="Explore nossas cole��es"><div><span>ENCONTRE SEU PR�XIMO PAR</span><p>Um estilo para cada momento.</p></div>{[['�culos de grau','Para a sua rotina'],['�culos de sol','Seu estilo ao ar livre'],['Linha infantil','Escolhas para os pequenos']].map(([title,desc],i)=><Link to="/produtos" key={title}><small>0{i+1}</small><span><strong>{title}</strong><span>{desc}</span></span><ArrowUpRight size={20}/></Link>)}</section>
+</>;}

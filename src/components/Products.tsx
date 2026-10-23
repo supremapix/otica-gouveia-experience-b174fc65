@@ -21,7 +21,7 @@ const Products = () => {
       name: "Ray-Ban Aviator",
       category: "masculino",
       image: "/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.webp",
-      description: "Clássico e atemporal, o modelo Aviator da Ray-Ban é ideal para quem busca elegância.",
+      description: "Cl�ssico e atemporal, o modelo Aviator da Ray-Ban � ideal para quem busca eleg�ncia.",
       price: "Consulte-nos!"
     },
     {
@@ -29,7 +29,7 @@ const Products = () => {
       name: "Ana Hickmann Collection",
       category: "feminino",
       image: "/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.webp",
-      description: "Armações femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
+      description: "Arma��es femininas com design moderno e sofisticado assinadas por Ana Hickmann.",
       price: "Consulte-nos!"
     },
     {
@@ -37,7 +37,7 @@ const Products = () => {
       name: "Disney Pixar Kids",
       category: "infantil",
       image: "/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.webp",
-      description: "Armações coloridas e divertidas com personagens da Disney e Pixar para as crianças.",
+      description: "Arma��es coloridas e divertidas com personagens da Disney e Pixar para as crian�as.",
       price: "Consulte-nos!"
     },
     {
@@ -45,7 +45,7 @@ const Products = () => {
       name: "Victor Hugo Collection",
       category: "feminino",
       image: "/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.webp",
-      description: "Elegância e sofisticação em cada detalhe das armações Victor Hugo.",
+      description: "Eleg�ncia e sofistica��o em cada detalhe das arma��es Victor Hugo.",
       price: "Consulte-nos!"
     },
     {
@@ -61,7 +61,7 @@ const Products = () => {
       name: "Lentes Varilux Liberty",
       category: "lentes",
       image: "/lovable-uploads/4b85711f-9660-415d-a4fa-cd7f50e747ec.webp",
-      description: "Lentes multifocais de alta qualidade para visão de perto e longe.",
+      description: "Lentes multifocais de alta qualidade para vis�o de perto e longe.",
       price: "Consulte-nos!"
     },
     {
@@ -69,7 +69,7 @@ const Products = () => {
       name: "Ray-Ban Hexagonal",
       category: "masculino",
       image: "/lovable-uploads/1989c2bf-cbd0-4081-8776-f6c0e985a404.webp",
-      description: "Design hexagonal único com armação metálica dourada e lentes escuras. Perfeito para quem busca um estilo diferenciado e moderno.",
+      description: "Design hexagonal �nico com arma��o met�lica dourada e lentes escuras. Perfeito para quem busca um estilo diferenciado e moderno.",
       price: "Consulte-nos!"
     },
     {
@@ -77,7 +77,7 @@ const Products = () => {
       name: "Ray-Ban Round Double Bridge",
       category: "feminino",
       image: "/lovable-uploads/1be253aa-66d3-4954-a782-d2e82afe7b50.webp",
-      description: "Modelo redondo clássico com dupla ponte e lentes degradê marrom. Uma releitura moderna do estilo vintage que nunca sai de moda.",
+      description: "Modelo redondo cl�ssico com dupla ponte e lentes degrad� marrom. Uma releitura moderna do estilo vintage que nunca sai de moda.",
       price: "Consulte-nos!"
     },
     {
@@ -85,7 +85,7 @@ const Products = () => {
       name: "Ray-Ban Round Metal",
       category: "masculino",
       image: "/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.webp",
-      description: "O icônico modelo redondo com armação dourada e lentes G-15 Classic em verde escuro. Um clássico atemporal para todos os momentos.",
+      description: "O ic�nico modelo redondo com arma��o dourada e lentes G-15 Classic em verde escuro. Um cl�ssico atemporal para todos os momentos.",
       price: "Consulte-nos!"
     },
     {
@@ -93,7 +93,7 @@ const Products = () => {
       name: "Disney Infantil",
       category: "infantil",
       image: "/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.webp",
-      description: "Armação infantil em acetato lilás com hastes internas na cor rosa. Super leve, confortável e resistente para o dia a dia das crianças. Ideal para volta às aulas e uso escolar.",
+      description: "Arma��o infantil em acetato lil�s com hastes internas na cor rosa. Super leve, confort�vel e resistente para o dia a dia das crian�as. Ideal para volta �s aulas e uso escolar.",
       price: "Consulte-nos!"
     },
     {
@@ -101,23 +101,23 @@ const Products = () => {
       name: "Victor Hugo Collection",
       category: "feminino", 
       image: "/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.webp",
-      description: "Conjunto Victor Hugo: Grau com armação dourada super leve e lente quadrada oversize + Sol com lente marrom degradê. Extremamente elegante, acompanha case original.",
+      description: "Conjunto Victor Hugo: Grau com arma��o dourada super leve e lente quadrada oversize + Sol com lente marrom degrad�. Extremamente elegante, acompanha case original.",
       price: "Consulte-nos!"
     },
     {
       id: 12,
-      name: "Óculos Esportivo Máscara",
+      name: "�culos Esportivo M�scara",
       category: "masculino",
       image: "/lovable-uploads/35e542ae-f892-4c53-8e2f-db75ce35721e.webp", 
-      description: "Óculos esportivo máscara estilo Oakley Sutro, lente única espelhada azul com reflexos roxos. Ideal para ciclismo, corrida, motociclismo e uso outdoor. Proteção UV400.",
+      description: "�culos esportivo m�scara estilo Oakley Sutro, lente �nica espelhada azul com reflexos roxos. Ideal para ciclismo, corrida, motociclismo e uso outdoor. Prote��o UV400.",
       price: "Consulte-nos!"
     },
     {
       id: 13,
-      name: "Evoke Retrô Square",
+      name: "Evoke Retr� Square",
       category: "masculino",
       image: "/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.webp",
-      description: "Armação robusta em acetato preto com interior levemente tartaruga, lente marrom degradê. Estilo urbano, moderno e sofisticado. Ideal para dia a dia ou praia.",
+      description: "Arma��o robusta em acetato preto com interior levemente tartaruga, lente marrom degrad�. Estilo urbano, moderno e sofisticado. Ideal para dia a dia ou praia.",
       price: "Consulte-nos!"
     },
     {
@@ -125,7 +125,7 @@ const Products = () => {
       name: "Evoke Round Feminino",
       category: "feminino",
       image: "/lovable-uploads/9c6d314e-f050-4664-965f-bbe9ebc6bf8f.webp",
-      description: "Armação em acetato translúcido âmbar (caramelo claro) com lente marrom degradê. Formato arredondado, leve, moderno, super estiloso, perfeito para looks casuais.",
+      description: "Arma��o em acetato transl�cido �mbar (caramelo claro) com lente marrom degrad�. Formato arredondado, leve, moderno, super estiloso, perfeito para looks casuais.",
       price: "Consulte-nos!"
     },
     {
@@ -133,7 +133,7 @@ const Products = () => {
       name: "HB Switch Clip-On",
       category: "feminino",
       image: "/lovable-uploads/593e7657-b084-4527-afc6-3be7b4cf974c.webp",
-      description: "Armação de grau com clip solar magnético. Vem com dois clips solares polarizados: um preto tradicional e outro no padrão tartaruga. Sistema magnético prático, ideal para quem quer um 2 em 1.",
+      description: "Arma��o de grau com clip solar magn�tico. Vem com dois clips solares polarizados: um preto tradicional e outro no padr�o tartaruga. Sistema magn�tico pr�tico, ideal para quem quer um 2 em 1.",
       price: "Consulte-nos!"
     }
   ];
@@ -153,17 +153,17 @@ const Products = () => {
   useDialogFocus(Boolean(selectedProduct), "#home-product-dialog", closeProduct);
 
   return (
-    <section id="products" className="section-padding bg-white" ref={ref as React.RefObject<HTMLDivElement>}>
+    <section id="product-list" className="section-padding bg-white" ref={ref as React.RefObject<HTMLDivElement>}>
       <div className="section-container">
         <div className={`text-center mb-12 transition-all duration-1000 ease-out ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}>
-          <span className="text-brand-red text-sm font-semibold uppercase tracking-wider">CATÁLOGO</span>
+          <span className="text-brand-red text-sm font-semibold uppercase tracking-wider">CAT�LOGO</span>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-900 mt-2">
-            Nossas Coleções
+            Nossas Cole��es
           </h2>
           <p className="text-brand-gray-700 max-w-2xl mx-auto mt-4">
-            Explore nossa seleção exclusiva de armações e lentes das melhores marcas do mercado, para todos os estilos e necessidades.
+            Explore nossa sele��o exclusiva de arma��es e lentes das melhores marcas do mercado, para todos os estilos e necessidades.
           </p>
         </div>
 
@@ -407,11 +407,11 @@ const Products = () => {
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="max-w-2xl">
               <h3 className="text-2xl md:text-3xl font-bold text-brand-gray-900 mb-4">
-                Promoção Especial para<br/>
+                Promo��o Especial para<br/>
                 <span className="text-brand-red">Alunos e Professores</span>
               </h3>
               <p className="text-brand-gray-700 mb-6">
-                Aproveite 50% de desconto em todas as armações até o fim do estoque! Promoção válida mediante apresentação de documentação.
+                Aproveite 50% de desconto em todas as arma��es at� o fim do estoque! Promo��o v�lida mediante apresenta��o de documenta��o.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
@@ -420,7 +420,7 @@ const Products = () => {
                   rel="noopener noreferrer"
                   className="btn-primary"
                 >
-                  Aproveitar Promoção
+                  Aproveitar Promo��o
                 </a>
                 <a href="#contact" className="btn-secondary">
                   Saiba Mais
@@ -475,7 +475,7 @@ const Products = () => {
                 <p className="text-brand-gray-700 mb-4">{selectedProduct.description}</p>
                 
                 <div className="mt-4 mb-8">
-                  <h4 className="text-sm font-medium text-brand-gray-500 mb-2">Características:</h4>
+                  <h4 className="text-sm font-medium text-brand-gray-500 mb-2">Caracter�sticas:</h4>
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <svg className="w-4 h-4 text-brand-red mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -501,7 +501,7 @@ const Products = () => {
                 <div className="mt-auto">
                   <div className="flex justify-between items-center mb-4">
                     <span className="text-xl font-bold text-brand-gray-900">{selectedProduct.price}</span>
-                    <span className="text-brand-gray-700 text-sm">Condições sob consulta</span>
+                    <span className="text-brand-gray-700 text-sm">Condi��es sob consulta</span>
                   </div>
                   
                   <div className="flex gap-4">
@@ -511,7 +511,7 @@ const Products = () => {
                       rel="noopener noreferrer"
                       className="btn-primary flex-1"
                     >
-                      Solicitar Informações
+                      Solicitar Informa��es
                     </a>
                     <button 
                       className="btn-secondary flex-shrink-0"
@@ -531,3 +531,4 @@ const Products = () => {
 };
 
 export default Products;
+

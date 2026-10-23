@@ -70,7 +70,7 @@ export default {
 				},
 				whatsapp: 'hsl(var(--whatsapp))',
 				brand: {
-					red: "#ea384c",
+					red: "#94182d",
 					black: "#101010",
 					gray: {
 						100: "#f5f5f7",

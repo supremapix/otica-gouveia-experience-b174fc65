@@ -1,3 +1,4 @@
+import EditorialHero from '../components/EditorialHero';
 import VisitGuide from '../components/VisitGuide';
 import { useState, useEffect, Suspense } from 'react';
 import Navbar from '../components/Navbar';
@@ -67,13 +68,13 @@ const Index = () => {
     "@graph": [
       createOrganizationSchema(),
       createWebsiteSchema(),
-      createLocalBusinessSchema("Umbará")
+      createLocalBusinessSchema("Umbar�")
     ]
   };
 
-  // Observação: o viewport não é sobrescrito aqui de propósito.
+  // Observa��o: o viewport n�o � sobrescrito aqui de prop�sito.
   // Bloquear o zoom (`user-scalable=no`) prejudica a acessibilidade do
-  // público da melhor idade e penaliza a nota de acessibilidade/SEO.
+  // p�blico da melhor idade e penaliza a nota de acessibilidade/SEO.
 
 
   useEffect(() => {
@@ -107,33 +108,24 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <SEO 
-         title="Ótica Gouveia Umbará - Óculos de Grau, Sol e Lentes em Curitiba"
-         description="Ótica Gouveia no Umbará, Curitiba - Óculos de grau, sol e lentes de contato. Atendemos Umbará, Sítio Cercado, Xaxim e região. Qualidade e tradição há anos."
-         keywords="ótica umbará, ótica curitiba, óculos grau umbará, óculos sol curitiba, lentes contato curitiba, ótica gouveia umbará"
+         title="�tica Gouveia Umbar� - �culos de Grau, Sol e Lentes em Curitiba"
+         description="�tica Gouveia no Umbar�, Curitiba - �culos de grau, sol e lentes de contato. Atendemos Umbar�, S�tio Cercado, Xaxim e regi�o. Qualidade e tradi��o h� anos."
+         keywords="�tica umbar�, �tica curitiba, �culos grau umbar�, �culos sol curitiba, lentes contato curitiba, �tica gouveia umbar�"
          canonicalUrl="/"
         structuredData={combinedSchema}
         ogType="website"
       />
       
       <Navbar />
-      <h1 className="sr-only">Ótica Gouveia no Umbará, Curitiba — óculos de grau e de sol</h1>
+
       
-      {/* Hero with padding for fixed header */}
-      <section id="home" className="pt-16 md:pt-[110px]">
-        <ErrorBoundary componentName="DesktopHeroSlider" fallback={<div className="p-4">Error loading Hero</div>}>
-          <DesktopHeroSlider />
+      <main id="main-content" className="gv-home">
+      <EditorialHero />
+      <section id="products">
+        <ErrorBoundary componentName="Products" fallback={<div className="p-4">Error</div>}>
+          <Products />
         </ErrorBoundary>
-        <div className="gouveia-hero-mobile">
-          <ErrorBoundary componentName="HeroSlider" fallback={<div className="p-4">Error loading Hero</div>}>
-            <HeroSlider />
-          </ErrorBoundary>
-        </div>
       </section>
-      
-      <ErrorBoundary componentName="MarqueeBar" fallback={<div className="p-4">Error</div>}>
-        <MarqueeBar />
-      </ErrorBoundary>
-      
       <section id="about">
         <ErrorBoundary componentName="About" fallback={<div className="p-4">Error</div>}>
           <About />
@@ -152,11 +144,7 @@ const Index = () => {
 
       <PrescriptionNotice />
       
-      <section id="products">
-        <ErrorBoundary componentName="Products" fallback={<div className="p-4">Error</div>}>
-          <Products />
-        </ErrorBoundary>
-      </section>
+
 
       
       <VisitGuide />
@@ -184,6 +172,8 @@ const Index = () => {
         <Instagram />
       </ErrorBoundary>
       
+      <details className="gv-archive"><summary>Veja tamb�m as imagens de apresenta��o da Gouveia</summary><DesktopHeroSlider /><div className="gouveia-hero-mobile"><HeroSlider /></div><MarqueeBar /></details>
+      </main>
       <Footer />
       
 
