@@ -88,8 +88,8 @@
   "routes": [
     {
       "path": "/",
-      "h1": "�culos para vivero seu dia.",
-      "title": "�tica Gouveia Umbar� - �culos de Grau, Sol e Lentes em Curitiba",
+      "h1": "Óculos para vivero seu dia.",
+      "title": "Ótica Gouveia Umbará - Óculos de Grau, Sol e Lentes em Curitiba",
       "canonical": "https://www.gouveiacuritiba.com.br/",
       "schemas": [
         true
@@ -97,8 +97,8 @@
     },
     {
       "path": "/loja-de-oculos-no-pinheirinho",
-      "h1": "�tica Gouveia para Pinheirinho",
-      "title": "�tica Gouveia | Visita de Pinheirinho � loja no Umbar�",
+      "h1": "Ótica Gouveia para Pinheirinho",
+      "title": "Ótica Gouveia | Visita de Pinheirinho à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho",
       "schemas": [
         true
@@ -106,8 +106,8 @@
     },
     {
       "path": "/loja-de-oculos-no-pinheirinho/15565",
-      "h1": "Loja de �culos Pinheirinho",
-      "title": "Loja de �culos 15565 no Pinheirinho - �tica Gouveia Curitiba",
+      "h1": "Loja de Óculos Pinheirinho",
+      "title": "Loja de Óculos 15565 no Pinheirinho - Ótica Gouveia Curitiba",
       "canonical": "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565",
       "schemas": [
         true
@@ -115,8 +115,8 @@
     },
     {
       "path": "/loja-de-oculos-no-pinheirinho/15565/",
-      "h1": "Loja de �culos Pinheirinho",
-      "title": "Loja de �culos 15565 no Pinheirinho - �tica Gouveia Curitiba",
+      "h1": "Loja de Óculos Pinheirinho",
+      "title": "Loja de Óculos 15565 no Pinheirinho - Ótica Gouveia Curitiba",
       "canonical": "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565",
       "schemas": [
         true
@@ -124,8 +124,8 @@
     },
     {
       "path": "/otica-pinheirinho",
-      "h1": "�tica Gouveia para Pinheirinho",
-      "title": "�tica Gouveia | Visita de Pinheirinho � loja no Umbar�",
+      "h1": "Ótica Gouveia para Pinheirinho",
+      "title": "Ótica Gouveia | Visita de Pinheirinho à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho",
       "schemas": [
         true
@@ -133,8 +133,8 @@
     },
     {
       "path": "/otica-sitio-cercado",
-      "h1": "�tica Gouveia para S�tio Cercado",
-      "title": "�tica Gouveia | Visita de S�tio Cercado � loja no Umbar�",
+      "h1": "Ótica Gouveia para Sítio Cercado",
+      "title": "Ótica Gouveia | Visita de Sítio Cercado à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-sitio-cercado",
       "schemas": [
         true
@@ -142,8 +142,8 @@
     },
     {
       "path": "/otica-umbara",
-      "h1": "�tica Gouveia para Umbar�",
-      "title": "�tica Gouveia | Visita de Umbar� � loja no Umbar�",
+      "h1": "Ótica Gouveia para Umbará",
+      "title": "Ótica Gouveia | Visita de Umbará à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-umbara",
       "schemas": [
         true
@@ -151,8 +151,8 @@
     },
     {
       "path": "/otica-cic",
-      "h1": "�tica Gouveia para CIC",
-      "title": "�tica Gouveia | Visita de CIC � loja no Umbar�",
+      "h1": "Ótica Gouveia para CIC",
+      "title": "Ótica Gouveia | Visita de CIC à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-cic",
       "schemas": [
         true
@@ -160,8 +160,8 @@
     },
     {
       "path": "/otica-cajuru",
-      "h1": "�tica Gouveia para Cajuru",
-      "title": "�tica Gouveia | Visita de Cajuru � loja no Umbar�",
+      "h1": "Ótica Gouveia para Cajuru",
+      "title": "Ótica Gouveia | Visita de Cajuru à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-cajuru",
       "schemas": [
         true
@@ -169,8 +169,8 @@
     },
     {
       "path": "/otica-boqueirao",
-      "h1": "�tica Gouveia para Boqueir�o",
-      "title": "�tica Gouveia | Visita de Boqueir�o � loja no Umbar�",
+      "h1": "Ótica Gouveia para Boqueirão",
+      "title": "Ótica Gouveia | Visita de Boqueirão à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-boqueirao",
       "schemas": [
         true
@@ -178,8 +178,8 @@
     },
     {
       "path": "/otica-hauer",
-      "h1": "�tica Gouveia para Hauer",
-      "title": "�tica Gouveia | Visita de Hauer � loja no Umbar�",
+      "h1": "Ótica Gouveia para Hauer",
+      "title": "Ótica Gouveia | Visita de Hauer à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-hauer",
       "schemas": [
         true
@@ -187,8 +187,8 @@
     },
     {
       "path": "/otica-centro",
-      "h1": "�tica Gouveia para Centro",
-      "title": "�tica Gouveia | Visita de Centro � loja no Umbar�",
+      "h1": "Ótica Gouveia para Centro",
+      "title": "Ótica Gouveia | Visita de Centro à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-centro",
       "schemas": [
         true
@@ -196,8 +196,8 @@
     },
     {
       "path": "/otica-batel",
-      "h1": "�tica Gouveia para Batel",
-      "title": "�tica Gouveia | Visita de Batel � loja no Umbar�",
+      "h1": "Ótica Gouveia para Batel",
+      "title": "Ótica Gouveia | Visita de Batel à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-batel",
       "schemas": [
         true
@@ -205,8 +205,8 @@
     },
     {
       "path": "/otica-agua-verde",
-      "h1": "�tica Gouveia para �gua Verde",
-      "title": "�tica Gouveia | Visita de �gua Verde � loja no Umbar�",
+      "h1": "Ótica Gouveia para Água Verde",
+      "title": "Ótica Gouveia | Visita de Água Verde à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-agua-verde",
       "schemas": [
         true
@@ -214,8 +214,8 @@
     },
     {
       "path": "/otica-bigorrilho",
-      "h1": "�tica Gouveia para Bigorrilho",
-      "title": "�tica Gouveia | Visita de Bigorrilho � loja no Umbar�",
+      "h1": "Ótica Gouveia para Bigorrilho",
+      "title": "Ótica Gouveia | Visita de Bigorrilho à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-bigorrilho",
       "schemas": [
         true
@@ -223,8 +223,8 @@
     },
     {
       "path": "/otica-portao",
-      "h1": "�tica Gouveia para Port�o",
-      "title": "�tica Gouveia | Visita de Port�o � loja no Umbar�",
+      "h1": "Ótica Gouveia para Portão",
+      "title": "Ótica Gouveia | Visita de Portão à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-portao",
       "schemas": [
         true
@@ -232,8 +232,8 @@
     },
     {
       "path": "/otica-xaxim",
-      "h1": "�tica Gouveia para Xaxim",
-      "title": "�tica Gouveia | Visita de Xaxim � loja no Umbar�",
+      "h1": "Ótica Gouveia para Xaxim",
+      "title": "Ótica Gouveia | Visita de Xaxim à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-xaxim",
       "schemas": [
         true
@@ -241,8 +241,8 @@
     },
     {
       "path": "/otica-santa-felicidade",
-      "h1": "�tica Gouveia para Santa Felicidade",
-      "title": "�tica Gouveia | Visita de Santa Felicidade � loja no Umbar�",
+      "h1": "Ótica Gouveia para Santa Felicidade",
+      "title": "Ótica Gouveia | Visita de Santa Felicidade à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-santa-felicidade",
       "schemas": [
         true
@@ -250,8 +250,8 @@
     },
     {
       "path": "/otica-bacacheri",
-      "h1": "�tica Gouveia para Bacacheri",
-      "title": "�tica Gouveia | Visita de Bacacheri � loja no Umbar�",
+      "h1": "Ótica Gouveia para Bacacheri",
+      "title": "Ótica Gouveia | Visita de Bacacheri à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-bacacheri",
       "schemas": [
         true
@@ -259,8 +259,8 @@
     },
     {
       "path": "/otica-araucaria",
-      "h1": "�tica Gouveia para Arauc�ria",
-      "title": "�tica Gouveia | Visita de Arauc�ria � loja no Umbar�",
+      "h1": "Ótica Gouveia para Araucária",
+      "title": "Ótica Gouveia | Visita de Araucária à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-araucaria",
       "schemas": [
         true
@@ -268,8 +268,8 @@
     },
     {
       "path": "/otica-colombo",
-      "h1": "�tica Gouveia para Colombo",
-      "title": "�tica Gouveia | Visita de Colombo � loja no Umbar�",
+      "h1": "Ótica Gouveia para Colombo",
+      "title": "Ótica Gouveia | Visita de Colombo à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-colombo",
       "schemas": [
         true
@@ -277,8 +277,8 @@
     },
     {
       "path": "/otica-pinhais",
-      "h1": "�tica Gouveia para Pinhais",
-      "title": "�tica Gouveia | Visita de Pinhais � loja no Umbar�",
+      "h1": "Ótica Gouveia para Pinhais",
+      "title": "Ótica Gouveia | Visita de Pinhais à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-pinhais",
       "schemas": [
         true
@@ -286,8 +286,8 @@
     },
     {
       "path": "/otica-sao-jose-dos-pinhais",
-      "h1": "�tica Gouveia para S�o Jos� dos Pinhais",
-      "title": "�tica Gouveia | Visita de S�o Jos� dos Pinhais � loja no Umbar�",
+      "h1": "Ótica Gouveia para São José dos Pinhais",
+      "title": "Ótica Gouveia | Visita de São José dos Pinhais à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-sao-jose-dos-pinhais",
       "schemas": [
         true
@@ -295,8 +295,8 @@
     },
     {
       "path": "/otica-fazenda-rio-grande",
-      "h1": "�tica Gouveia para Fazenda Rio Grande",
-      "title": "�tica Gouveia | Visita de Fazenda Rio Grande � loja no Umbar�",
+      "h1": "Ótica Gouveia para Fazenda Rio Grande",
+      "title": "Ótica Gouveia | Visita de Fazenda Rio Grande à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-fazenda-rio-grande",
       "schemas": [
         true
@@ -304,8 +304,8 @@
     },
     {
       "path": "/otica-reboucas",
-      "h1": "�tica Gouveia para Rebou�as",
-      "title": "�tica Gouveia | Visita de Rebou�as � loja no Umbar�",
+      "h1": "Ótica Gouveia para Rebouças",
+      "title": "Ótica Gouveia | Visita de Rebouças à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-reboucas",
       "schemas": [
         true
@@ -313,8 +313,8 @@
     },
     {
       "path": "/otica-neo-ville",
-      "h1": "�tica Gouveia para Neo Ville",
-      "title": "�tica Gouveia | Visita de Neo Ville � loja no Umbar�",
+      "h1": "Ótica Gouveia para Neo Ville",
+      "title": "Ótica Gouveia | Visita de Neo Ville à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-neo-ville",
       "schemas": [
         true
@@ -322,8 +322,8 @@
     },
     {
       "path": "/otica-vila-sandra",
-      "h1": "�tica Gouveia para Vila Sandra",
-      "title": "�tica Gouveia | Visita de Vila Sandra � loja no Umbar�",
+      "h1": "Ótica Gouveia para Vila Sandra",
+      "title": "Ótica Gouveia | Visita de Vila Sandra à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-vila-sandra",
       "schemas": [
         true
@@ -331,8 +331,8 @@
     },
     {
       "path": "/otica-vila-formosa",
-      "h1": "�tica Gouveia para Vila Formosa",
-      "title": "�tica Gouveia | Visita de Vila Formosa � loja no Umbar�",
+      "h1": "Ótica Gouveia para Vila Formosa",
+      "title": "Ótica Gouveia | Visita de Vila Formosa à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-vila-formosa",
       "schemas": [
         true
@@ -340,8 +340,8 @@
     },
     {
       "path": "/otica-piraquara",
-      "h1": "�tica Gouveia para Piraquara",
-      "title": "�tica Gouveia | Visita de Piraquara � loja no Umbar�",
+      "h1": "Ótica Gouveia para Piraquara",
+      "title": "Ótica Gouveia | Visita de Piraquara à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-piraquara",
       "schemas": [
         true
@@ -349,8 +349,8 @@
     },
     {
       "path": "/otica-campo-largo",
-      "h1": "�tica Gouveia para Campo Largo",
-      "title": "�tica Gouveia | Visita de Campo Largo � loja no Umbar�",
+      "h1": "Ótica Gouveia para Campo Largo",
+      "title": "Ótica Gouveia | Visita de Campo Largo à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-campo-largo",
       "schemas": [
         true
@@ -358,8 +358,8 @@
     },
     {
       "path": "/otica-almirante-tamandare",
-      "h1": "�tica Gouveia para Almirante Tamandar�",
-      "title": "�tica Gouveia | Visita de Almirante Tamandar� � loja no Umbar�",
+      "h1": "Ótica Gouveia para Almirante Tamandaré",
+      "title": "Ótica Gouveia | Visita de Almirante Tamandaré à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-almirante-tamandare",
       "schemas": [
         true
@@ -367,8 +367,8 @@
     },
     {
       "path": "/otica-quatro-barras",
-      "h1": "�tica Gouveia para Quatro Barras",
-      "title": "�tica Gouveia | Visita de Quatro Barras � loja no Umbar�",
+      "h1": "Ótica Gouveia para Quatro Barras",
+      "title": "Ótica Gouveia | Visita de Quatro Barras à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-quatro-barras",
       "schemas": [
         true
@@ -376,8 +376,8 @@
     },
     {
       "path": "/otica-mandirituba",
-      "h1": "�tica Gouveia para Mandirituba",
-      "title": "�tica Gouveia | Visita de Mandirituba � loja no Umbar�",
+      "h1": "Ótica Gouveia para Mandirituba",
+      "title": "Ótica Gouveia | Visita de Mandirituba à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-mandirituba",
       "schemas": [
         true
@@ -385,8 +385,8 @@
     },
     {
       "path": "/otica-campina-grande-do-sul",
-      "h1": "�tica Gouveia para Campina Grande do Sul",
-      "title": "�tica Gouveia | Visita de Campina Grande do Sul � loja no Umbar�",
+      "h1": "Ótica Gouveia para Campina Grande do Sul",
+      "title": "Ótica Gouveia | Visita de Campina Grande do Sul à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-campina-grande-do-sul",
       "schemas": [
         true
@@ -394,8 +394,8 @@
     },
     {
       "path": "/otica-cristo-rei",
-      "h1": "�tica Gouveia para Cristo Rei",
-      "title": "�tica Gouveia | Visita de Cristo Rei � loja no Umbar�",
+      "h1": "Ótica Gouveia para Cristo Rei",
+      "title": "Ótica Gouveia | Visita de Cristo Rei à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-cristo-rei",
       "schemas": [
         true
@@ -403,8 +403,8 @@
     },
     {
       "path": "/otica-ecoville",
-      "h1": "�tica Gouveia para Ecoville",
-      "title": "�tica Gouveia | Visita de Ecoville � loja no Umbar�",
+      "h1": "Ótica Gouveia para Ecoville",
+      "title": "Ótica Gouveia | Visita de Ecoville à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-ecoville",
       "schemas": [
         true
@@ -412,8 +412,8 @@
     },
     {
       "path": "/otica-jardim-botanico",
-      "h1": "�tica Gouveia para Jardim Bot�nico",
-      "title": "�tica Gouveia | Visita de Jardim Bot�nico � loja no Umbar�",
+      "h1": "Ótica Gouveia para Jardim Botânico",
+      "title": "Ótica Gouveia | Visita de Jardim Botânico à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-jardim-botanico",
       "schemas": [
         true
@@ -421,8 +421,8 @@
     },
     {
       "path": "/otica-juveve",
-      "h1": "�tica Gouveia para Juvev�",
-      "title": "�tica Gouveia | Visita de Juvev� � loja no Umbar�",
+      "h1": "Ótica Gouveia para Juvevê",
+      "title": "Ótica Gouveia | Visita de Juvevê à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-juveve",
       "schemas": [
         true
@@ -430,8 +430,8 @@
     },
     {
       "path": "/otica-capao-raso",
-      "h1": "�tica Gouveia para Cap�o Raso",
-      "title": "�tica Gouveia | Visita de Cap�o Raso � loja no Umbar�",
+      "h1": "Ótica Gouveia para Capão Raso",
+      "title": "Ótica Gouveia | Visita de Capão Raso à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-capao-raso",
       "schemas": [
         true
@@ -439,8 +439,8 @@
     },
     {
       "path": "/otica-jardim-das-americas",
-      "h1": "�tica Gouveia para Jardim das Am�ricas",
-      "title": "�tica Gouveia | Visita de Jardim das Am�ricas � loja no Umbar�",
+      "h1": "Ótica Gouveia para Jardim das Américas",
+      "title": "Ótica Gouveia | Visita de Jardim das Américas à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-jardim-das-americas",
       "schemas": [
         true
@@ -448,8 +448,8 @@
     },
     {
       "path": "/otica-novo-mundo",
-      "h1": "�tica Gouveia para Novo Mundo",
-      "title": "�tica Gouveia | Visita de Novo Mundo � loja no Umbar�",
+      "h1": "Ótica Gouveia para Novo Mundo",
+      "title": "Ótica Gouveia | Visita de Novo Mundo à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-novo-mundo",
       "schemas": [
         true
@@ -457,8 +457,8 @@
     },
     {
       "path": "/otica-taruma",
-      "h1": "�tica Gouveia para Tarum�",
-      "title": "�tica Gouveia | Visita de Tarum� � loja no Umbar�",
+      "h1": "Ótica Gouveia para Tarumã",
+      "title": "Ótica Gouveia | Visita de Tarumã à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-taruma",
       "schemas": [
         true
@@ -466,8 +466,8 @@
     },
     {
       "path": "/otica-tatuquara",
-      "h1": "�tica Gouveia para Tatuquara",
-      "title": "�tica Gouveia | Visita de Tatuquara � loja no Umbar�",
+      "h1": "Ótica Gouveia para Tatuquara",
+      "title": "Ótica Gouveia | Visita de Tatuquara à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-tatuquara",
       "schemas": [
         true
@@ -475,8 +475,8 @@
     },
     {
       "path": "/otica-campo-comprido",
-      "h1": "�tica Gouveia para Campo Comprido",
-      "title": "�tica Gouveia | Visita de Campo Comprido � loja no Umbar�",
+      "h1": "Ótica Gouveia para Campo Comprido",
+      "title": "Ótica Gouveia | Visita de Campo Comprido à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-campo-comprido",
       "schemas": [
         true
@@ -484,8 +484,8 @@
     },
     {
       "path": "/otica-hugo-lange",
-      "h1": "�tica Gouveia para Hugo Lange",
-      "title": "�tica Gouveia | Visita de Hugo Lange � loja no Umbar�",
+      "h1": "Ótica Gouveia para Hugo Lange",
+      "title": "Ótica Gouveia | Visita de Hugo Lange à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-hugo-lange",
       "schemas": [
         true
@@ -493,8 +493,8 @@
     },
     {
       "path": "/otica-tingui",
-      "h1": "�tica Gouveia para Tingui",
-      "title": "�tica Gouveia | Visita de Tingui � loja no Umbar�",
+      "h1": "Ótica Gouveia para Tingui",
+      "title": "Ótica Gouveia | Visita de Tingui à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-tingui",
       "schemas": [
         true
@@ -502,8 +502,8 @@
     },
     {
       "path": "/otica-merces",
-      "h1": "�tica Gouveia para Merc�s",
-      "title": "�tica Gouveia | Visita de Merc�s � loja no Umbar�",
+      "h1": "Ótica Gouveia para Mercês",
+      "title": "Ótica Gouveia | Visita de Mercês à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-merces",
       "schemas": [
         true
@@ -511,8 +511,8 @@
     },
     {
       "path": "/otica-cabral",
-      "h1": "�tica Gouveia para Cabral",
-      "title": "�tica Gouveia | Visita de Cabral � loja no Umbar�",
+      "h1": "Ótica Gouveia para Cabral",
+      "title": "Ótica Gouveia | Visita de Cabral à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-cabral",
       "schemas": [
         true
@@ -520,8 +520,8 @@
     },
     {
       "path": "/otica-alto-da-xv",
-      "h1": "�tica Gouveia para Alto da XV",
-      "title": "�tica Gouveia | Visita de Alto da XV � loja no Umbar�",
+      "h1": "Ótica Gouveia para Alto da XV",
+      "title": "Ótica Gouveia | Visita de Alto da XV à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-alto-da-xv",
       "schemas": [
         true
@@ -529,8 +529,8 @@
     },
     {
       "path": "/otica-guabirotuba",
-      "h1": "�tica Gouveia para Guabirotuba",
-      "title": "�tica Gouveia | Visita de Guabirotuba � loja no Umbar�",
+      "h1": "Ótica Gouveia para Guabirotuba",
+      "title": "Ótica Gouveia | Visita de Guabirotuba à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-guabirotuba",
       "schemas": [
         true
@@ -538,8 +538,8 @@
     },
     {
       "path": "/otica-parolin",
-      "h1": "�tica Gouveia para Parolin",
-      "title": "�tica Gouveia | Visita de Parolin � loja no Umbar�",
+      "h1": "Ótica Gouveia para Parolin",
+      "title": "Ótica Gouveia | Visita de Parolin à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-parolin",
       "schemas": [
         true
@@ -547,8 +547,8 @@
     },
     {
       "path": "/otica-adrianopolis",
-      "h1": "�tica Gouveia para Adrian�polis",
-      "title": "�tica Gouveia | Visita de Adrian�polis � loja no Umbar�",
+      "h1": "Ótica Gouveia para Adrianópolis",
+      "title": "Ótica Gouveia | Visita de Adrianópolis à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-adrianopolis",
       "schemas": [
         true
@@ -556,8 +556,8 @@
     },
     {
       "path": "/otica-balsa-nova",
-      "h1": "�tica Gouveia para Balsa Nova",
-      "title": "�tica Gouveia | Visita de Balsa Nova � loja no Umbar�",
+      "h1": "Ótica Gouveia para Balsa Nova",
+      "title": "Ótica Gouveia | Visita de Balsa Nova à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-balsa-nova",
       "schemas": [
         true
@@ -565,8 +565,8 @@
     },
     {
       "path": "/otica-contenda",
-      "h1": "�tica Gouveia para Contenda",
-      "title": "�tica Gouveia | Visita de Contenda � loja no Umbar�",
+      "h1": "Ótica Gouveia para Contenda",
+      "title": "Ótica Gouveia | Visita de Contenda à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-contenda",
       "schemas": [
         true
@@ -574,8 +574,8 @@
     },
     {
       "path": "/otica-lapa",
-      "h1": "�tica Gouveia para Lapa",
-      "title": "�tica Gouveia | Visita de Lapa � loja no Umbar�",
+      "h1": "Ótica Gouveia para Lapa",
+      "title": "Ótica Gouveia | Visita de Lapa à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-lapa",
       "schemas": [
         true
@@ -583,8 +583,8 @@
     },
     {
       "path": "/otica-abranches",
-      "h1": "�tica Gouveia para Abranches",
-      "title": "�tica Gouveia | Visita de Abranches � loja no Umbar�",
+      "h1": "Ótica Gouveia para Abranches",
+      "title": "Ótica Gouveia | Visita de Abranches à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-abranches",
       "schemas": [
         true
@@ -592,8 +592,8 @@
     },
     {
       "path": "/otica-uberaba",
-      "h1": "�tica Gouveia para Uberaba",
-      "title": "�tica Gouveia | Visita de Uberaba � loja no Umbar�",
+      "h1": "Ótica Gouveia para Uberaba",
+      "title": "Ótica Gouveia | Visita de Uberaba à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-uberaba",
       "schemas": [
         true
@@ -601,8 +601,8 @@
     },
     {
       "path": "/otica-vila-izabel",
-      "h1": "�tica Gouveia para Vila Izabel",
-      "title": "�tica Gouveia | Visita de Vila Izabel � loja no Umbar�",
+      "h1": "Ótica Gouveia para Vila Izabel",
+      "title": "Ótica Gouveia | Visita de Vila Izabel à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-vila-izabel",
       "schemas": [
         true
@@ -610,8 +610,8 @@
     },
     {
       "path": "/otica-alto-da-gloria",
-      "h1": "�tica Gouveia para Alto da Gl�ria",
-      "title": "�tica Gouveia | Visita de Alto da Gl�ria � loja no Umbar�",
+      "h1": "Ótica Gouveia para Alto da Glória",
+      "title": "Ótica Gouveia | Visita de Alto da Glória à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-alto-da-gloria",
       "schemas": [
         true
@@ -619,8 +619,8 @@
     },
     {
       "path": "/otica-pilarzinho",
-      "h1": "�tica Gouveia para Pilarzinho",
-      "title": "�tica Gouveia | Visita de Pilarzinho � loja no Umbar�",
+      "h1": "Ótica Gouveia para Pilarzinho",
+      "title": "Ótica Gouveia | Visita de Pilarzinho à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-pilarzinho",
       "schemas": [
         true
@@ -628,8 +628,8 @@
     },
     {
       "path": "/otica-santa-candida",
-      "h1": "�tica Gouveia para Santa C�ndida",
-      "title": "�tica Gouveia | Visita de Santa C�ndida � loja no Umbar�",
+      "h1": "Ótica Gouveia para Santa Cândida",
+      "title": "Ótica Gouveia | Visita de Santa Cândida à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-santa-candida",
       "schemas": [
         true
@@ -637,8 +637,8 @@
     },
     {
       "path": "/otica-bocaiuva-do-sul",
-      "h1": "�tica Gouveia para Bocai�va do Sul",
-      "title": "�tica Gouveia | Visita de Bocai�va do Sul � loja no Umbar�",
+      "h1": "Ótica Gouveia para Bocaiúva do Sul",
+      "title": "Ótica Gouveia | Visita de Bocaiúva do Sul à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-bocaiuva-do-sul",
       "schemas": [
         true
@@ -646,8 +646,8 @@
     },
     {
       "path": "/otica-itaperucu",
-      "h1": "�tica Gouveia para Itaperu�u",
-      "title": "�tica Gouveia | Visita de Itaperu�u � loja no Umbar�",
+      "h1": "Ótica Gouveia para Itaperuçu",
+      "title": "Ótica Gouveia | Visita de Itaperuçu à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-itaperucu",
       "schemas": [
         true
@@ -655,8 +655,8 @@
     },
     {
       "path": "/otica-rio-branco-do-sul",
-      "h1": "�tica Gouveia para Rio Branco do Sul",
-      "title": "�tica Gouveia | Visita de Rio Branco do Sul � loja no Umbar�",
+      "h1": "Ótica Gouveia para Rio Branco do Sul",
+      "title": "Ótica Gouveia | Visita de Rio Branco do Sul à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-rio-branco-do-sul",
       "schemas": [
         true
@@ -664,8 +664,8 @@
     },
     {
       "path": "/otica-campo-magro",
-      "h1": "�tica Gouveia para Campo Magro",
-      "title": "�tica Gouveia | Visita de Campo Magro � loja no Umbar�",
+      "h1": "Ótica Gouveia para Campo Magro",
+      "title": "Ótica Gouveia | Visita de Campo Magro à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-campo-magro",
       "schemas": [
         true
@@ -673,8 +673,8 @@
     },
     {
       "path": "/otica-tijucas-do-sul",
-      "h1": "�tica Gouveia para Tijucas do Sul",
-      "title": "�tica Gouveia | Visita de Tijucas do Sul � loja no Umbar�",
+      "h1": "Ótica Gouveia para Tijucas do Sul",
+      "title": "Ótica Gouveia | Visita de Tijucas do Sul à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-tijucas-do-sul",
       "schemas": [
         true
@@ -682,8 +682,8 @@
     },
     {
       "path": "/otica-atuba",
-      "h1": "�tica Gouveia para Atuba",
-      "title": "�tica Gouveia | Visita de Atuba � loja no Umbar�",
+      "h1": "Ótica Gouveia para Atuba",
+      "title": "Ótica Gouveia | Visita de Atuba à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-atuba",
       "schemas": [
         true
@@ -691,8 +691,8 @@
     },
     {
       "path": "/otica-bairro-alto",
-      "h1": "�tica Gouveia para Bairro Alto",
-      "title": "�tica Gouveia | Visita de Bairro Alto � loja no Umbar�",
+      "h1": "Ótica Gouveia para Bairro Alto",
+      "title": "Ótica Gouveia | Visita de Bairro Alto à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-bairro-alto",
       "schemas": [
         true
@@ -700,8 +700,8 @@
     },
     {
       "path": "/otica-boa-vista",
-      "h1": "�tica Gouveia para Boa Vista",
-      "title": "�tica Gouveia | Visita de Boa Vista � loja no Umbar�",
+      "h1": "Ótica Gouveia para Boa Vista",
+      "title": "Ótica Gouveia | Visita de Boa Vista à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-boa-vista",
       "schemas": [
         true
@@ -709,8 +709,8 @@
     },
     {
       "path": "/otica-bom-retiro",
-      "h1": "�tica Gouveia para Bom Retiro",
-      "title": "�tica Gouveia | Visita de Bom Retiro � loja no Umbar�",
+      "h1": "Ótica Gouveia para Bom Retiro",
+      "title": "Ótica Gouveia | Visita de Bom Retiro à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-bom-retiro",
       "schemas": [
         true
@@ -718,8 +718,8 @@
     },
     {
       "path": "/otica-orleans",
-      "h1": "�tica Gouveia para Orleans",
-      "title": "�tica Gouveia | Visita de Orleans � loja no Umbar�",
+      "h1": "Ótica Gouveia para Orleans",
+      "title": "Ótica Gouveia | Visita de Orleans à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-orleans",
       "schemas": [
         true
@@ -727,8 +727,8 @@
     },
     {
       "path": "/otica-agudos-do-sul",
-      "h1": "�tica Gouveia para Agudos do Sul",
-      "title": "�tica Gouveia | Visita de Agudos do Sul � loja no Umbar�",
+      "h1": "Ótica Gouveia para Agudos do Sul",
+      "title": "Ótica Gouveia | Visita de Agudos do Sul à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-agudos-do-sul",
       "schemas": [
         true
@@ -736,8 +736,8 @@
     },
     {
       "path": "/otica-campo-do-tenente",
-      "h1": "�tica Gouveia para Campo do Tenente",
-      "title": "�tica Gouveia | Visita de Campo do Tenente � loja no Umbar�",
+      "h1": "Ótica Gouveia para Campo do Tenente",
+      "title": "Ótica Gouveia | Visita de Campo do Tenente à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-campo-do-tenente",
       "schemas": [
         true
@@ -745,8 +745,8 @@
     },
     {
       "path": "/otica-cerro-azul",
-      "h1": "�tica Gouveia para Cerro Azul",
-      "title": "�tica Gouveia | Visita de Cerro Azul � loja no Umbar�",
+      "h1": "Ótica Gouveia para Cerro Azul",
+      "title": "Ótica Gouveia | Visita de Cerro Azul à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-cerro-azul",
       "schemas": [
         true
@@ -754,8 +754,8 @@
     },
     {
       "path": "/otica-doutor-ulysses",
-      "h1": "�tica Gouveia para Doutor Ulysses",
-      "title": "�tica Gouveia | Visita de Doutor Ulysses � loja no Umbar�",
+      "h1": "Ótica Gouveia para Doutor Ulysses",
+      "title": "Ótica Gouveia | Visita de Doutor Ulysses à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-doutor-ulysses",
       "schemas": [
         true
@@ -763,8 +763,8 @@
     },
     {
       "path": "/otica-pien",
-      "h1": "�tica Gouveia para Pi�n",
-      "title": "�tica Gouveia | Visita de Pi�n � loja no Umbar�",
+      "h1": "Ótica Gouveia para Piên",
+      "title": "Ótica Gouveia | Visita de Piên à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-pien",
       "schemas": [
         true
@@ -772,8 +772,8 @@
     },
     {
       "path": "/otica-quitandinha",
-      "h1": "�tica Gouveia para Quitandinha",
-      "title": "�tica Gouveia | Visita de Quitandinha � loja no Umbar�",
+      "h1": "Ótica Gouveia para Quitandinha",
+      "title": "Ótica Gouveia | Visita de Quitandinha à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-quitandinha",
       "schemas": [
         true
@@ -781,8 +781,8 @@
     },
     {
       "path": "/otica-rio-negro",
-      "h1": "�tica Gouveia para Rio Negro",
-      "title": "�tica Gouveia | Visita de Rio Negro � loja no Umbar�",
+      "h1": "Ótica Gouveia para Rio Negro",
+      "title": "Ótica Gouveia | Visita de Rio Negro à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-rio-negro",
       "schemas": [
         true
@@ -790,8 +790,8 @@
     },
     {
       "path": "/otica-tunas-do-parana",
-      "h1": "�tica Gouveia para Tunas do Paran�",
-      "title": "�tica Gouveia | Visita de Tunas do Paran� � loja no Umbar�",
+      "h1": "Ótica Gouveia para Tunas do Paraná",
+      "title": "Ótica Gouveia | Visita de Tunas do Paraná à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-tunas-do-parana",
       "schemas": [
         true
@@ -799,8 +799,8 @@
     },
     {
       "path": "/otica-lindoia",
-      "h1": "�tica Gouveia para Lind�ia",
-      "title": "�tica Gouveia | Visita de Lind�ia � loja no Umbar�",
+      "h1": "Ótica Gouveia para Lindóia",
+      "title": "Ótica Gouveia | Visita de Lindóia à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-lindoia",
       "schemas": [
         true
@@ -808,8 +808,8 @@
     },
     {
       "path": "/otica-sao-joao",
-      "h1": "�tica Gouveia para S�o Jo�o",
-      "title": "�tica Gouveia | Visita de S�o Jo�o � loja no Umbar�",
+      "h1": "Ótica Gouveia para São João",
+      "title": "Ótica Gouveia | Visita de São João à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-sao-joao",
       "schemas": [
         true
@@ -817,8 +817,8 @@
     },
     {
       "path": "/otica-fanny",
-      "h1": "�tica Gouveia para Fanny",
-      "title": "�tica Gouveia | Visita de Fanny � loja no Umbar�",
+      "h1": "Ótica Gouveia para Fanny",
+      "title": "Ótica Gouveia | Visita de Fanny à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-fanny",
       "schemas": [
         true
@@ -826,8 +826,8 @@
     },
     {
       "path": "/otica-sao-francisco",
-      "h1": "�tica Gouveia para S�o Francisco",
-      "title": "�tica Gouveia | Visita de S�o Francisco � loja no Umbar�",
+      "h1": "Ótica Gouveia para São Francisco",
+      "title": "Ótica Gouveia | Visita de São Francisco à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-sao-francisco",
       "schemas": [
         true
@@ -835,8 +835,8 @@
     },
     {
       "path": "/otica-barigui",
-      "h1": "�tica Gouveia para Barigui",
-      "title": "�tica Gouveia | Visita de Barigui � loja no Umbar�",
+      "h1": "Ótica Gouveia para Barigui",
+      "title": "Ótica Gouveia | Visita de Barigui à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-barigui",
       "schemas": [
         true
@@ -844,8 +844,8 @@
     },
     {
       "path": "/otica-centro-civico",
-      "h1": "�tica Gouveia para Centro C�vico",
-      "title": "�tica Gouveia | Visita de Centro C�vico � loja no Umbar�",
+      "h1": "Ótica Gouveia para Centro Cívico",
+      "title": "Ótica Gouveia | Visita de Centro Cívico à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-centro-civico",
       "schemas": [
         true
@@ -853,8 +853,8 @@
     },
     {
       "path": "/otica-capao-da-imbuia",
-      "h1": "�tica Gouveia para Cap�o da Imbuia",
-      "title": "�tica Gouveia | Visita de Cap�o da Imbuia � loja no Umbar�",
+      "h1": "Ótica Gouveia para Capão da Imbuia",
+      "title": "Ótica Gouveia | Visita de Capão da Imbuia à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-capao-da-imbuia",
       "schemas": [
         true
@@ -862,8 +862,8 @@
     },
     {
       "path": "/otica-santa-quiteria",
-      "h1": "�tica Gouveia para Santa Quit�ria",
-      "title": "�tica Gouveia | Visita de Santa Quit�ria � loja no Umbar�",
+      "h1": "Ótica Gouveia para Santa Quitéria",
+      "title": "Ótica Gouveia | Visita de Santa Quitéria à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-santa-quiteria",
       "schemas": [
         true
@@ -871,8 +871,8 @@
     },
     {
       "path": "/otica-mossungue",
-      "h1": "�tica Gouveia para Mossungu�",
-      "title": "�tica Gouveia | Visita de Mossungu� � loja no Umbar�",
+      "h1": "Ótica Gouveia para Mossunguê",
+      "title": "Ótica Gouveia | Visita de Mossunguê à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-mossungue",
       "schemas": [
         true
@@ -880,8 +880,8 @@
     },
     {
       "path": "/otica-seminario",
-      "h1": "�tica Gouveia para Semin�rio",
-      "title": "�tica Gouveia | Visita de Semin�rio � loja no Umbar�",
+      "h1": "Ótica Gouveia para Seminário",
+      "title": "Ótica Gouveia | Visita de Seminário à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-seminario",
       "schemas": [
         true
@@ -889,8 +889,8 @@
     },
     {
       "path": "/otica-barreirinha",
-      "h1": "�tica Gouveia para Barreirinha",
-      "title": "�tica Gouveia | Visita de Barreirinha � loja no Umbar�",
+      "h1": "Ótica Gouveia para Barreirinha",
+      "title": "Ótica Gouveia | Visita de Barreirinha à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-barreirinha",
       "schemas": [
         true
@@ -898,8 +898,8 @@
     },
     {
       "path": "/otica-santo-inacio",
-      "h1": "�tica Gouveia para Santo In�cio",
-      "title": "�tica Gouveia | Visita de Santo In�cio � loja no Umbar�",
+      "h1": "Ótica Gouveia para Santo Inácio",
+      "title": "Ótica Gouveia | Visita de Santo Inácio à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-santo-inacio",
       "schemas": [
         true
@@ -907,8 +907,8 @@
     },
     {
       "path": "/otica-sao-lourenco",
-      "h1": "�tica Gouveia para S�o Louren�o",
-      "title": "�tica Gouveia | Visita de S�o Louren�o � loja no Umbar�",
+      "h1": "Ótica Gouveia para São Lourenço",
+      "title": "Ótica Gouveia | Visita de São Lourenço à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-sao-lourenco",
       "schemas": [
         true
@@ -916,8 +916,8 @@
     },
     {
       "path": "/otica-riviera",
-      "h1": "�tica Gouveia para Riviera",
-      "title": "�tica Gouveia | Visita de Riviera � loja no Umbar�",
+      "h1": "Ótica Gouveia para Riviera",
+      "title": "Ótica Gouveia | Visita de Riviera à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-riviera",
       "schemas": [
         true
@@ -925,8 +925,8 @@
     },
     {
       "path": "/otica-campo-de-santana",
-      "h1": "�tica Gouveia para Campo de Santana",
-      "title": "�tica Gouveia | Visita de Campo de Santana � loja no Umbar�",
+      "h1": "Ótica Gouveia para Campo de Santana",
+      "title": "Ótica Gouveia | Visita de Campo de Santana à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-campo-de-santana",
       "schemas": [
         true
@@ -934,8 +934,8 @@
     },
     {
       "path": "/otica-augusta",
-      "h1": "�tica Gouveia para Augusta",
-      "title": "�tica Gouveia | Visita de Augusta � loja no Umbar�",
+      "h1": "Ótica Gouveia para Augusta",
+      "title": "Ótica Gouveia | Visita de Augusta à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-augusta",
       "schemas": [
         true
@@ -943,8 +943,8 @@
     },
     {
       "path": "/otica-cascatinha",
-      "h1": "�tica Gouveia para Cascatinha",
-      "title": "�tica Gouveia | Visita de Cascatinha � loja no Umbar�",
+      "h1": "Ótica Gouveia para Cascatinha",
+      "title": "Ótica Gouveia | Visita de Cascatinha à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-cascatinha",
       "schemas": [
         true
@@ -952,8 +952,8 @@
     },
     {
       "path": "/otica-vila-guaira",
-      "h1": "�tica Gouveia para Vila Gua�ra",
-      "title": "�tica Gouveia | Visita de Vila Gua�ra � loja no Umbar�",
+      "h1": "Ótica Gouveia para Vila Guaíra",
+      "title": "Ótica Gouveia | Visita de Vila Guaíra à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-vila-guaira",
       "schemas": [
         true
@@ -961,8 +961,8 @@
     },
     {
       "path": "/otica-ganchinho",
-      "h1": "�tica Gouveia para Ganchinho",
-      "title": "�tica Gouveia | Visita de Ganchinho � loja no Umbar�",
+      "h1": "Ótica Gouveia para Ganchinho",
+      "title": "Ótica Gouveia | Visita de Ganchinho à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-ganchinho",
       "schemas": [
         true
@@ -970,8 +970,8 @@
     },
     {
       "path": "/otica-fazendinha",
-      "h1": "�tica Gouveia para Fazendinha",
-      "title": "�tica Gouveia | Visita de Fazendinha � loja no Umbar�",
+      "h1": "Ótica Gouveia para Fazendinha",
+      "title": "Ótica Gouveia | Visita de Fazendinha à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-fazendinha",
       "schemas": [
         true
@@ -979,8 +979,8 @@
     },
     {
       "path": "/otica-pinheirinho-bairro",
-      "h1": "�tica Gouveia para Pinheirinho",
-      "title": "�tica Gouveia | Visita de Pinheirinho � loja no Umbar�",
+      "h1": "Ótica Gouveia para Pinheirinho",
+      "title": "Ótica Gouveia | Visita de Pinheirinho à loja no Umbará",
       "canonical": "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho",
       "schemas": [
         true
@@ -988,8 +988,8 @@
     },
     {
       "path": "/conserto-oculos-sitio-cercado",
-      "h1": "Conserto de �culosS�tio Cercado - Curitiba",
-      "title": "Conserto de �culos S�tio Cercado Curitiba | �tica Gouveia",
+      "h1": "Conserto de ÓculosSítio Cercado — Curitiba",
+      "title": "Conserto de Óculos Sítio Cercado Curitiba | Ótica Gouveia",
       "canonical": "https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado",
       "schemas": [
         true
@@ -997,8 +997,8 @@
     },
     {
       "path": "/otica-terminal-sitio-cercado",
-      "h1": "�tica Gouveia Pr�xima aoTerminal S�tio Cercado",
-      "title": "�tica Terminal S�tio Cercado Curitiba | �culos Perto do Terminal | Gouveia",
+      "h1": "Ótica Gouveia Próxima aoTerminal Sítio Cercado",
+      "title": "Ótica Terminal Sítio Cercado Curitiba | Óculos Perto do Terminal | Gouveia",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-terminal-sitio-cercado",
       "schemas": [
         true
@@ -1006,8 +1006,8 @@
     },
     {
       "path": "/oticas-no-centro-de-curitiba",
-      "h1": "�ticas no Centro deCuritiba - Gouveia",
-      "title": "�ticas no Centro de Curitiba | Melhor �tica de Curitiba | Gouveia",
+      "h1": "Óticas no Centro deCuritiba — Gouveia",
+      "title": "Óticas no Centro de Curitiba | Melhor Ótica de Curitiba | Gouveia",
       "canonical": "https://www.gouveiacuritiba.com.br/oticas-no-centro-de-curitiba",
       "schemas": [
         true
@@ -1015,8 +1015,8 @@
     },
     {
       "path": "/otica-barata-curitiba",
-      "h1": "�tica Barata em Curitibacom Qualidade Garantida",
-      "title": "�tica Barata em Curitiba | �culos Baratos com Qualidade | Gouveia",
+      "h1": "Ótica Barata em Curitibacom Qualidade Garantida",
+      "title": "Ótica Barata em Curitiba | Óculos Baratos com Qualidade | Gouveia",
       "canonical": "https://www.gouveiacuritiba.com.br/otica-barata-curitiba",
       "schemas": [
         true
@@ -1024,8 +1024,8 @@
     },
     {
       "path": "/entregas-sitio-cercado-curitiba",
-      "h1": "�tica Gouveia -Atendimento para o S�tio Cercado",
-      "title": "Entrega de �culos no S�tio Cercado Curitiba | �tica Gouveia",
+      "h1": "Ótica Gouveia —Atendimento para o Sítio Cercado",
+      "title": "Entrega de Óculos no Sítio Cercado Curitiba | Ótica Gouveia",
       "canonical": "https://www.gouveiacuritiba.com.br/entregas-sitio-cercado-curitiba",
       "schemas": [
         true
@@ -1033,8 +1033,8 @@
     },
     {
       "path": "/sobre",
-      "h1": "Sobre a �tica Gouveia",
-      "title": "Sobre a �tica Gouveia - Nossa Hist�ria e Valores | Curitiba",
+      "h1": "Sobre a Ótica Gouveia",
+      "title": "Sobre a Ótica Gouveia — Nossa História e Valores | Curitiba",
       "canonical": "https://www.gouveiacuritiba.com.br/sobre",
       "schemas": [
         true
@@ -1042,8 +1042,8 @@
     },
     {
       "path": "/servicos",
-      "h1": "Servi�os Especializados",
-      "title": "Servi�os - �tica Gouveia Curitiba | Lentes, Arma��es e Visioffice 3",
+      "h1": "Serviços Especializados",
+      "title": "Serviços — Ótica Gouveia Curitiba | Lentes, Armações e Visioffice 3",
       "canonical": "https://www.gouveiacuritiba.com.br/servicos",
       "schemas": [
         true
@@ -1051,8 +1051,8 @@
     },
     {
       "path": "/produtos",
-      "h1": "Nossas Cole��es",
-      "title": "Produtos - �tica Gouveia Curitiba | Ray-Ban, Oakley, Ana Hickmann",
+      "h1": "Nossas Coleções",
+      "title": "Produtos — Ótica Gouveia Curitiba | Ray-Ban, Oakley, Ana Hickmann",
       "canonical": "https://www.gouveiacuritiba.com.br/produtos",
       "schemas": [
         true
@@ -1061,7 +1061,7 @@
     {
       "path": "/contato",
       "h1": "Entre em Contato",
-      "title": "Contato - �tica Gouveia Umbar� | WhatsApp, Telefone e Endere�o",
+      "title": "Contato — Ótica Gouveia Umbará | WhatsApp, Telefone e Endereço",
       "canonical": "https://www.gouveiacuritiba.com.br/contato",
       "schemas": [
         true
@@ -1069,8 +1069,8 @@
     },
     {
       "path": "/faq",
-      "h1": "D�vidas sobre �culose Lentes em Curitiba",
-      "title": "FAQ �tica Gouveia - D�vidas sobre �culos | Curitiba",
+      "h1": "Dúvidas sobre Óculose Lentes em Curitiba",
+      "title": "FAQ Ótica Gouveia - Dúvidas sobre Óculos | Curitiba",
       "canonical": "https://www.gouveiacuritiba.com.br/faq",
       "schemas": [
         true
@@ -1079,7 +1079,7 @@
     {
       "path": "/mapa-do-site",
       "h1": "Mapa do Site",
-      "title": "Mapa do Site | �tica Gouveia Curitiba",
+      "title": "Mapa do Site | Ótica Gouveia Curitiba",
       "canonical": "https://www.gouveiacuritiba.com.br/mapa-do-site",
       "schemas": [
         true
@@ -1087,8 +1087,8 @@
     },
     {
       "path": "/blog/oculos-ou-lentes",
-      "h1": "�culos ou lentes de contato: o que considerar",
-      "title": "�culos ou lentes de contato: o que considerar | �tica Gouveia",
+      "h1": "Óculos ou lentes de contato: o que considerar",
+      "title": "Óculos ou lentes de contato: o que considerar | Ótica Gouveia",
       "canonical": "https://www.gouveiacuritiba.com.br/blog/oculos-ou-lentes",
       "schemas": [
         true

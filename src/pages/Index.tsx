@@ -68,13 +68,13 @@ const Index = () => {
     "@graph": [
       createOrganizationSchema(),
       createWebsiteSchema(),
-      createLocalBusinessSchema("Umbar�")
+      createLocalBusinessSchema("Umbará")
     ]
   };
 
-  // Observa��o: o viewport n�o � sobrescrito aqui de prop�sito.
+  // Observação: o viewport não é sobrescrito aqui de propósito.
   // Bloquear o zoom (`user-scalable=no`) prejudica a acessibilidade do
-  // p�blico da melhor idade e penaliza a nota de acessibilidade/SEO.
+  // público da melhor idade e penaliza a nota de acessibilidade/SEO.
 
 
   useEffect(() => {
@@ -108,9 +108,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <SEO 
-         title="�tica Gouveia Umbar� - �culos de Grau, Sol e Lentes em Curitiba"
-         description="�tica Gouveia no Umbar�, Curitiba - �culos de grau, sol e lentes de contato. Atendemos Umbar�, S�tio Cercado, Xaxim e regi�o. Qualidade e tradi��o h� anos."
-         keywords="�tica umbar�, �tica curitiba, �culos grau umbar�, �culos sol curitiba, lentes contato curitiba, �tica gouveia umbar�"
+         title="Ótica Gouveia Umbará - Óculos de Grau, Sol e Lentes em Curitiba"
+         description="Ótica Gouveia no Umbará, Curitiba - Óculos de grau, sol e lentes de contato. Atendemos Umbará, Sítio Cercado, Xaxim e região. Qualidade e tradição há anos."
+         keywords="ótica umbará, ótica curitiba, óculos grau umbará, óculos sol curitiba, lentes contato curitiba, ótica gouveia umbará"
          canonicalUrl="/"
         structuredData={combinedSchema}
         ogType="website"
@@ -172,7 +172,7 @@ const Index = () => {
         <Instagram />
       </ErrorBoundary>
       
-      <details className="gv-archive"><summary>Veja tamb�m as imagens de apresenta��o da Gouveia</summary><DesktopHeroSlider /><div className="gouveia-hero-mobile"><HeroSlider /></div><MarqueeBar /></details>
+      <details className="gv-archive"><summary>Veja também as imagens de apresentação da Gouveia</summary><DesktopHeroSlider /><div className="gouveia-hero-mobile"><HeroSlider /></div><MarqueeBar /></details>
       </main>
       <Footer />
       
