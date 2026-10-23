@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtonsGroup from "@/components/FloatingButtonsGroup";
-import BackToTop from "@/components/BackToTop";
 import ImageGallery from "@/components/ImageGallery";
 import { Link } from "react-router-dom";
 
@@ -168,7 +167,7 @@ const OticasCentroCuritiba = () => {
 
       <Footer />
       <FloatingButtonsGroup />
-      <BackToTop />
+      
     </>
   );
 };

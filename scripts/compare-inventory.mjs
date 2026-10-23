@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+const before=JSON.parse(fs.readFileSync('audit/inventory-before.json','utf8'));
+const after=JSON.parse(fs.readFileSync('audit/inventory-after.json','utf8'));
+const original=execFileSync('git',['show','HEAD:src/pages/ProdutosPage.tsx'],{encoding:'utf8'});
+const current=fs.readFileSync('src/pages/ProdutosPage.tsx','utf8');
+const names=s=>[...s.matchAll(/id: \d+, name: '([^']+)'/g)].map(m=>m[1]);
+before.catalogPageProducts=names(original); after.catalogPageProducts=names(current);
+fs.writeFileSync('audit/inventory-before.json',JSON.stringify(before,null,2));
+fs.writeFileSync('audit/inventory-after.json',JSON.stringify(after,null,2));
+const report={routesUnchanged:JSON.stringify(before.routes)===JSON.stringify(after.routes),originalImagesUnchanged:before.images.every(i=>after.images.some(j=>i.path===j.path&&i.sha256===j.sha256)),homeProductsUnchanged:JSON.stringify(before.productNames)===JSON.stringify(after.productNames),catalogProductsUnchanged:JSON.stringify(before.catalogPageProducts)===JSON.stringify(after.catalogPageProducts),counts:{routes:after.routes.length,images:after.images.length,homeProducts:after.productNames.length,catalogProducts:after.catalogPageProducts.length}};
+fs.writeFileSync('audit/preservation-report.json',JSON.stringify(report,null,2)); console.log(report);

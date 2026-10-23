@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet-async';
+import Footer from '../components/Footer';
 
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -15,7 +17,7 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-white"><Helmet><title>Página não encontrada | Ótica Gouveia</title><meta name="robots" content="noindex, follow" /></Helmet>
       <div className="flex-grow flex items-center justify-center px-4">
         <div className="max-w-md w-full text-center">
           <h1 className="text-9xl font-bold text-brand-red mb-4">404</h1>
@@ -51,24 +53,7 @@ const NotFound = () => {
           </Link>
         </div>
       </div>
-      <footer className="bg-brand-gray-900 text-white py-6">
-        <div className="container mx-auto text-center">
-          <p className="text-brand-gray-400 text-sm">
-            © 2025 Ótica Gouveia. Todos os direitos reservados.
-          </p>
-          <p className="mt-2 text-brand-gray-400 text-sm">
-            Criação de sites{" "}
-            <a 
-              href="https://www.supremamidia.com.br" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-brand-red hover:underline"
-            >
-              Suprema Mídia
-            </a>
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

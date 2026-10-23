@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "npm run build && node src/scripts/sitemap-generator.js"
+  command = "node src/scripts/sitemap-generator.js && node scripts/redirects.mjs && npm run build"
 
 [build.environment]
   NODE_VERSION = "18"
@@ -9,7 +9,7 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
+  status = 404
 
 [[headers]]
   for = "/*"

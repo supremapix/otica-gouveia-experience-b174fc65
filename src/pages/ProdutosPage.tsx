@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useDialogFocus } from '../hooks/useDialogFocus';
+import { useState, useCallback } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import WhatsAppFloat from '../components/WhatsAppFloat';
-import BackToTop from '../components/BackToTop';
 import { MessageCircle, Glasses, User, Users, Baby, ScanEye } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import { SITE_URL, createWebPageSchema, createOpticianSchema, createBreadcrumbSchema } from '../utils/schemas';
@@ -52,6 +52,8 @@ const ProdutosPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [selected, setSelected] = useState<typeof products[0] | null>(null);
 
+  const closeProduct = useCallback(() => setSelected(null), []);
+  useDialogFocus(Boolean(selected), '#product-dialog', closeProduct);
   const filtered = activeCategory === 'all' ? products : products.filter(p => p.category === activeCategory);
 
   const url = `${SITE_URL}/produtos`;
@@ -80,7 +82,6 @@ const ProdutosPage = () => {
             category: p.category,
             offers: {
               '@type': 'Offer',
-              availability: 'https://schema.org/InStock',
               priceCurrency: 'BRL',
               availableAtOrFrom: { '@id': `${SITE_URL}/#optician` },
             },
@@ -113,7 +114,7 @@ const ProdutosPage = () => {
         badgeText="Catálogo"
         title="Nossas"
         highlight="Coleções"
-        description="Mais de 500 modelos em estoque — armações, óculos de sol e lentes das melhores marcas do mundo."
+        description="Armações, óculos de sol e lentes do nosso catálogo. Consulte disponibilidade e valores antes de visitar."
       />
 
       {/* Filtros + Grid */}
@@ -141,11 +142,12 @@ const ProdutosPage = () => {
             {filtered.map(p => (
               <div
                 key={p.id}
-                onClick={() => setSelected(p)}
+                role="button" tabIndex={0} aria-label={`Ver detalhes de ${p.name}`} onKeyDown={e=>{if(e.target === e.currentTarget && (e.key === "Enter" || e.key === " ")) {e.preventDefault();setSelected(p);}}}
+                  onClick={() => setSelected(p)}
                 className="bg-white rounded-2xl border border-border/50 overflow-hidden cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="h-56 overflow-hidden">
-                  <img src={p.image} alt={p.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+                  <img src={p.image} alt={p.name} className="w-full h-full object-contain bg-white p-4 hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" width="640" height="480" />
                 </div>
                 <div className="p-5">
                   <div className="flex justify-between items-start mb-2">
@@ -189,7 +191,7 @@ const ProdutosPage = () => {
       <section className="py-20 px-4 text-white" style={{ backgroundColor: 'hsl(0,0%,8%)' }}>
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-black mb-4">Não encontrou o que procura?</h2>
-          <p className="text-white/70 mb-8">Temos mais de 500 modelos em loja! Fale conosco e encontramos o produto ideal para você.</p>
+          <p className="text-white/70 mb-8">Consulte a equipe para conferir modelos disponíveis, medidas e valores.</p>
           <a
             href="https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20N%C3%A3o%20encontrei%20o%20que%20procurava%20no%20site.%20Pode%20me%20ajudar?"
             target="_blank"
@@ -205,16 +207,16 @@ const ProdutosPage = () => {
       {/* Modal */}
       {selected && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
+          id="product-dialog" role="dialog" aria-modal="true" aria-label="Detalhes do produto" className="fixed inset-0 z-[10001] flex items-center justify-center p-4"
           style={{ backgroundColor: 'rgba(0,20,64,0.95)' }}
           onClick={() => setSelected(null)}
         >
           <div
-            className="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl"
+            className="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl"
             onClick={e => e.stopPropagation()}
           >
             <div className="h-72 overflow-hidden">
-              <img src={selected.image} alt={selected.name} className="w-full h-full object-cover" />
+              <img src={selected.image} alt={selected.name} className="w-full h-full object-contain bg-white p-4" />
             </div>
             <div className="p-6">
               <h3 className="text-2xl font-black text-foreground mb-2">{selected.name}</h3>
@@ -248,7 +250,7 @@ const ProdutosPage = () => {
 
       <Footer />
       <WhatsAppFloat />
-      <BackToTop />
+      
     </div>
   );
 };

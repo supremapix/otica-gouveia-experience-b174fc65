@@ -14,17 +14,17 @@ const WhyChooseSection = ({ neighborhoodName }: WhyChooseSectionProps) => {
     {
       icon: Zap,
       title: 'Tecnologia Visioffice 3',
-      description: 'Traga sua receita e venha à loja no Umbará para medição presencial com Visioffice 3. Em 5 minutos, suas lentes ficam perfeitamente calibradas.',
+      description: 'Traga sua receita e venha à loja no Umbará para medição presencial com Visioffice 3. As medidas auxiliam a montagem das lentes conforme a receita.',
     },
     {
       icon: Users,
       title: 'Atendimento Personalizado',
-      description: 'Nossa equipe tem mais de 40 anos de experiência. Explicamos tudo sobre sua receita e ajudamos a escolher a melhor opção para seu dia a dia.',
+      description: 'Converse com nossa equipe sobre modelos e medidas. Explicamos tudo sobre sua receita e ajudamos a escolher a melhor opção para seu dia a dia.',
     },
     {
       icon: Gem,
       title: 'Qualidade Garantida',
-      description: 'Trabalhamos apenas com marcas reconhecidas: Essilor, Zeiss, Hoya, Ray-Ban, Oakley. Garantia total de adaptação ou seu dinheiro de volta.',
+      description: 'Trabalhamos apenas com marcas reconhecidas: Essilor, Zeiss, Hoya, Ray-Ban, Oakley. Consulte disponibilidade e condições de garantia de cada produto.',
     },
   ];
 

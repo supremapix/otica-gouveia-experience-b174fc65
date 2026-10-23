@@ -1,4 +1,4 @@
-import { MapPin, Phone, Star, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, MessageCircle } from 'lucide-react';
 import heroFaq from '../assets/hero-faq.webp';
 
 interface ModernHeroSectionProps {
@@ -19,8 +19,8 @@ const ModernHeroSection = ({
   const benefits = [
     { text: "Melhor Idade" },
     { text: "Pinheirinho e Umbará" },
-    { text: "Garantia Total" },
-    { text: "5★ Google" },
+    { text: "Loja no Umbará" },
+    { text: "Conheça o catálogo" },
   ];
 
   return (
@@ -56,12 +56,12 @@ const ModernHeroSection = ({
             style={{ backgroundColor: 'rgba(255,255,255,0.12)', color: 'white', border: '1px solid rgba(255,255,255,0.25)', backdropFilter: 'blur(6px)' }}
           >
             <MapPin className="w-4 h-4" />
-            <span>{isMainUnit ? 'Nossa Loja' : `Atendemos ${neighborhoodName}`} — Pinheirinho e Umbará</span>
+            <span>Loja no Umbará • Atendimento a moradores de {neighborhoodName}</span>
           </div>
 
           {/* Title */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 leading-[1.1] animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            Ótica Gouveia{' '}
+            Ótica Gouveia para{' '}
             <span className="text-white relative inline-block">
               {neighborhoodName}
               <span className="absolute left-0 right-0 -bottom-1 h-1 rounded-full bg-white" />
@@ -70,7 +70,7 @@ const ModernHeroSection = ({
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-2xl animate-fade-in leading-relaxed" style={{ animationDelay: '0.2s' }}>
-            Atendimento carinhoso e especializado para a melhor idade. Traga sua receita, escolha com calma e retire com ajuste perfeito.
+            Atendimento carinhoso e especializado para a melhor idade. Traga sua receita, escolha com calma e retire com ajuste na loja.
           </p>
 
           {/* CTAs */}
@@ -106,18 +106,6 @@ const ModernHeroSection = ({
               </div>
             ))}
           </div>
-
-          {/* Google Rating */}
-          <div className="flex items-center gap-3 text-white animate-fade-in" style={{ animationDelay: '0.5s' }}>
-            <div className="flex">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} className="w-4 h-4 sm:w-5 sm:h-5 fill-white text-white" />
-              ))}
-            </div>
-            <span className="text-sm sm:text-base font-semibold">4.9 no Google</span>
-            <span className="text-xs sm:text-sm opacity-70">(+200 avaliações)</span>
-          </div>
-
           {/* Address card for main unit */}
           {isMainUnit && address && (
             <div className="mt-6 flex items-start gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 max-w-md animate-fade-in" style={{ animationDelay: '0.6s' }}>

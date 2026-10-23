@@ -39,7 +39,7 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
             Nossa loja fica no Umbará. Moradores de toda Curitiba e região são bem-vindos! Venha nos visitar.
           </p>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            Traga sua receita, escolha sua armação e retire seus óculos prontos com ajuste perfeito.
+            Traga sua receita, escolha sua armação e retire seus óculos prontos com ajuste presencial.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
           {/* Map Embed */}
           <div className="relative rounded-xl overflow-hidden shadow-lg h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.548766935673!2d-49.32!3d-25.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcf06f0d87ad5d%3A0x7e2c8f8b8c8c8c8c!2sPinheirinho%2C%20Curitiba%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              src="https://www.google.com/maps?q=Rua%20Nicola%20Pellanda%201286%20Curitiba&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -93,11 +93,11 @@ const DeliveryAreaMap: React.FC<DeliveryAreaMapProps> = ({ neighborhoodName }) =
             </div>
 
             <p className="text-xs text-muted-foreground mt-6">
-              Loja no Umbará — R. Nicola Pellanda, 1286. Venha nos visitar e retire seus óculos com ajuste perfeito!
+              Loja no Umbará — R. Nicola Pellanda, 1286. Venha nos visitar e retire seus óculos com ajuste presencial!
             </p>
 
             <a
-              href="https://wa.me/554199161663?text=Olá! Gostaria de agendar um atendimento na loja."
+              href="https://wa.me/5541991610663?text=Olá! Gostaria de agendar um atendimento na loja."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 w-full inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all"

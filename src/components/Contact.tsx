@@ -27,7 +27,7 @@ const Contact = () => {
             Entre em Contato
           </h2>
           <p className="text-brand-gray-700 max-w-2xl mx-auto mt-4">
-            Estamos à disposição para esclarecer suas dúvidas, agendar seu exame de vista ou auxiliar na escolha dos seus óculos.
+            Estamos à disposição para esclarecer suas dúvidas, auxiliar na escolha dos seus óculos.
           </p>
         </div>
 
@@ -149,7 +149,7 @@ const Contact = () => {
           
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Agende seu exame de vista <br/>ou tire suas dúvidas
+              Converse com a equipe <br/>e tire suas dúvidas
             </h3>
             <p className="text-white/90 mb-8">
               Entre em contato conosco pelo WhatsApp e receba atendimento personalizado. Nossa equipe está pronta para auxiliar você.

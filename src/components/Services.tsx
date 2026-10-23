@@ -76,7 +76,7 @@ const Services = () => {
             Serviços Especializados
           </h2>
           <p className="text-brand-gray-700 max-w-2xl mx-auto mt-4">
-            Conheça nossa ampla gama de serviços dedicados a proporcionar a melhor experiência visual e garantir a saúde dos seus olhos.
+            Conheça nossa ampla gama de serviços dedicados a proporcionar a melhor experiência visual na escolha dos seus óculos.
           </p>
         </div>
 

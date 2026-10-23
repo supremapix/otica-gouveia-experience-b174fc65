@@ -62,7 +62,7 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
           rel="preload"
           href={resource.href}
           as={resource.as}
-          {...('crossorigin' in resource && resource.crossorigin && { crossOrigin: resource.crossorigin as any })}
+          {...('crossorigin' in resource && resource.crossorigin && { crossOrigin: resource.crossorigin as 'anonymous' | 'use-credentials' })}
         />
       ))}
 
@@ -141,8 +141,6 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
       {/* Geo Tags for Local SEO */}
       <meta name="geo.region" content="BR-PR" />
       <meta name="geo.placename" content="Curitiba" />
-      <meta name="geo.position" content="-25.5;-49.3" />
-      <meta name="ICBM" content="-25.5, -49.3" />
       
       {/* Performance Optimization */}
       <meta httpEquiv="x-dns-prefetch-control" content="on" />

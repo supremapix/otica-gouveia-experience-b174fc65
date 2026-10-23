@@ -3,14 +3,14 @@ import { Eye, Glasses, Sun, Shield, Award, Users, Clock, MapPin } from 'lucide-r
 const services = [
   {
     icon: Eye,
-    title: 'Exames de Vista',
-    description: 'Equipamentos modernos e profissionais qualificados para cuidar da sua saúde ocular',
-    highlight: 'Incluso',
+    title: 'Medições para os óculos',
+    description: 'Medições para montagem das lentes conforme a receita; não substituem consulta oftalmológica',
+    highlight: 'Na loja',
   },
   {
     icon: Glasses,
     title: 'Óculos de Grau',
-    description: 'Traga sua receita e venha à loja no Umbará para medição presencial. Retire seus óculos prontos com ajuste perfeito no seu rosto.',
+    description: 'Traga sua receita e venha à loja no Umbará para medição presencial. Retire seus óculos prontos com ajuste presencial no seu rosto.',
     highlight: 'Presencial',
   },
   {
@@ -30,14 +30,14 @@ const steps = [
   },
   {
     number: '02',
-    title: 'Exame Completo',
-    description: 'Realize seu exame de vista com nossos profissionais',
+    title: 'Traga sua receita',
+    description: 'Converse com a equipe sobre as opções compatíveis com sua receita',
     icon: Eye,
   },
   {
     number: '03',
     title: 'Escolha Seu Óculos',
-    description: 'Milhares de armações para encontrar a ideal',
+    description: 'Compare modelos disponíveis e experimente na loja',
     icon: Glasses,
   },
   {
@@ -49,9 +49,9 @@ const steps = [
 ];
 
 const differentials = [
-  { icon: Award, title: '+40 Anos', description: 'de Tradição' },
-  { icon: Users, title: '+10.000', description: 'Clientes Atendidos' },
-  { icon: Shield, title: 'Garantia', description: 'Total' },
+  { icon: Award, title: 'Óculos', description: 'de grau e sol' },
+  { icon: Users, title: 'Atendimento', description: 'na loja' },
+  { icon: Shield, title: 'Condições', description: 'sob consulta' },
   { icon: MapPin, title: 'Loja', description: 'no Umbará' },
 ];
 

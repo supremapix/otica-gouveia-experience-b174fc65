@@ -1,81 +1,10 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { HelpCircle } from 'lucide-react';
-
-interface LocalFAQSectionProps {
-  neighborhoodName: string;
-}
-
-const LocalFAQSection = ({ neighborhoodName }: LocalFAQSectionProps) => {
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+export default function LocalFAQSection({ neighborhoodName }: { neighborhoodName: string }) {
   const faqs = [
-    {
-      question: `Vocês atendem plano de saúde no ${neighborhoodName}?`,
-      answer: `Sim! A Ótica Gouveia atende diversos planos de saúde para moradores do ${neighborhoodName} e região. Entre em contato pelo WhatsApp para verificar se seu plano está na lista de convênios aceitos.`,
-    },
-    {
-       question: `Qual o prazo de entrega para o ${neighborhoodName}?`,
-       answer: `Após seu pedido feito, informaremos o tempo e daremos a data de entrega do seu óculos. O prazo de fabricação pode variar conforme o tipo de lente e tratamento escolhido. A entrega é gratuita para compras acima de R$250.`,
-    },
-    {
-      question: `Fazem exame de vista para crianças?`,
-      answer: `Sim, realizamos exames de vista para todas as idades, incluindo crianças. Nossos profissionais são qualificados para atender pacientes infantis com paciência e cuidado especial.`,
-    },
-    {
-      question: `Aceitam cartão e PIX?`,
-      answer: `Aceitamos todas as formas de pagamento: cartões de crédito (parcelamos em até 12x sem juros), débito, PIX e dinheiro. Oferecemos as melhores condições para você.`,
-    },
-    {
-      question: `Como funciona o exame de vista gratuito?`,
-      answer: `O exame de vista é realizado por profissionais qualificados com equipamentos modernos. É totalmente gratuito e sem compromisso. Basta agendar pelo WhatsApp ou comparecer à nossa loja no Pinheirinho.`,
-    },
-    {
-      question: `Vocês trabalham com lentes progressivas?`,
-      answer: `Sim! Trabalhamos com todos os tipos de lentes: progressivas, bifocais, multifocais, transitions, antirreflexo, filtro de luz azul e muito mais. Temos opções para todos os bolsos.`,
-    },
+    ['Existe uma filial na minha região?', `Esta página orienta moradores de ${neighborhoodName}. O endereço da loja é Rua Nicola Pellanda, 1286, Umbará, Curitiba. Não indica uma filial nesta região.`],
+    ['O que preciso para comprar óculos de grau?', 'Traga a receita e converse com a equipe sobre as opções de armações e lentes. Confirme as etapas presenciais antes de se deslocar.'],
+    ['As medições na ótica substituem o exame de vista?', 'Não. As medições usadas na montagem dos óculos não substituem a avaliação da saúde ocular. Consulte um oftalmologista para avaliação e prescrição.'],
+    ['Como confirmar preço, disponibilidade e retirada?', 'Fale pelo WhatsApp (41) 99161-0663 ou telefone (41) 3114-0663. A equipe informa disponibilidade, condições e prazo para o seu pedido.']
   ];
-
-  return (
-    <section className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-              <HelpCircle className="w-4 h-4" />
-              Dúvidas Frequentes
-            </div>
-            <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4">
-              Perguntas Sobre o{' '}
-              <span className="text-primary">{neighborhoodName}</span>
-            </h2>
-            <p className="text-muted-foreground">
-              Tire suas principais dúvidas sobre nossos serviços
-            </p>
-          </div>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="bg-card border border-border/50 rounded-2xl px-6 data-[state=open]:border-primary/50 transition-colors"
-              >
-                <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary py-5">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default LocalFAQSection;
+  return <section className="visit-guide"><h2 className="text-2xl font-bold mb-6">Antes de visitar a loja</h2><Accordion type="single" collapsible>{faqs.map(([q,a],i)=><AccordionItem value={String(i)} key={q}><AccordionTrigger>{q}</AccordionTrigger><AccordionContent>{a}</AccordionContent></AccordionItem>)}</Accordion></section>;
+}

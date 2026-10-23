@@ -1,3 +1,4 @@
+import ReadingTools from './ReadingTools';
 import { Phone, MapPin, Clock, Instagram, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -6,6 +7,7 @@ const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
+      <ReadingTools />
       {/* Faixa de contato rápido - melhor idade */}
       <div className="border-b border-white/15 bg-brand-red/95">
         <div className="section-container py-10">
@@ -58,7 +60,7 @@ const Footer = () => {
                 className="h-12 mb-3"
               />
             </div>
-            <p className="text-white/90 mb-6 text-[18px] leading-[1.8]">
+            <p className="text-white/90 mb-6 text-lg leading-[1.8]">
               Cuidamos da sua visão com carinho e paciência. Atendimento dedicado à melhor idade em Curitiba.
             </p>
             <a 
@@ -70,7 +72,7 @@ const Footer = () => {
               style={{ minHeight: '56px' }}
             >
               <Instagram className="w-6 h-6" />
-              <span className="text-[17px]">Instagram</span>
+              <span className="text-base">Instagram</span>
             </a>
           </div>
           
@@ -90,7 +92,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-white/90 hover:text-white hover:underline transition-colors text-[18px] block py-3 font-medium"
+                    className="text-white/90 hover:text-white hover:underline transition-colors text-lg block py-3 font-medium"
                     style={{ minHeight: '56px', display: 'flex', alignItems: 'center' }}
                   >
                     › {link.name}
@@ -110,14 +112,14 @@ const Footer = () => {
                   href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/95 hover:text-white hover:underline transition-colors text-[18px] leading-[1.7]"
+                  className="text-white/95 hover:text-white hover:underline transition-colors text-lg leading-[1.7]"
                 >
                   R. Nicola Pellanda, 1286<br/>Umbará, Curitiba - PR
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-7 h-7 text-white flex-shrink-0 mt-0.5" />
-                <span className="text-white/95 text-[18px] leading-[1.7]">
+                <span className="text-white/95 text-lg leading-[1.7]">
                   Seg a Sex: 9h às 18h<br/>Sábado: 9h às 13h
                 </span>
               </li>
@@ -138,7 +140,7 @@ const Footer = () => {
                 <li key={page.href}>
                   <Link
                     to={page.href}
-                    className="text-white/90 hover:text-white hover:underline transition-colors text-[18px] block py-3 font-medium"
+                    className="text-white/90 hover:text-white hover:underline transition-colors text-lg block py-3 font-medium"
                     style={{ minHeight: '56px', display: 'flex', alignItems: 'center' }}
                   >
                     › {page.name}
@@ -150,11 +152,11 @@ const Footer = () => {
         </div>
         
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-white/15 text-center text-white/75 text-[16px]">
-          <p className="text-[17px]">© 2025 Ótica Gouveia. Todos os direitos reservados.</p>
+        <div className="mt-12 pt-8 border-t border-white/15 text-center text-white/75 text-base">
+          <p className="text-base">© {new Date().getFullYear()} Ótica Gouveia. Todos os direitos reservados.</p>
           <p className="mt-3 flex items-center justify-center gap-2 flex-wrap">
             Desenvolvido com
-            <span className="text-white text-2xl animate-heartbeat inline-block">
+            <span className="text-white text-2xl inline-block">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
                 <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
               </svg>
@@ -164,12 +166,12 @@ const Footer = () => {
               href="https://supremasite.com.br" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white hover:underline font-semibold inline-flex items-center gap-2"
+              className="suprema-credit text-white hover:underline font-semibold inline-flex items-center gap-4"
             >
               <img 
                 src="https://img.supremamidia.com/suprema-img.png" 
                 alt="Suprema Sites Express" 
-                className="h-6 inline-block"
+                className="suprema-logo" loading="lazy" decoding="async"
               />
               Suprema Sites Express
             </a>

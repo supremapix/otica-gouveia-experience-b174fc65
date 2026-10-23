@@ -4,7 +4,6 @@ import { useInView } from '@/utils/animations';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingButtonsGroup from '@/components/FloatingButtonsGroup';
-import BackToTop from '@/components/BackToTop';
 import FAQ from '@/components/FAQ';
 import EnhancedHero from '@/components/EnhancedHero';
 import EnhancedSEO from '@/components/EnhancedSEO/EnhancedSEO';
@@ -13,7 +12,7 @@ import { createOpticalStoreSchema, createLocalBusinessSchema, createProductSchem
 
 const LojaOculosPinheirinho15565 = () => {
   const [ref, isInView] = useInView({ threshold: 0.1 });
-  const whatsappUrl = "https://wa.me/5541999123456?text=Olá! Gostaria de agendar um exame de vista no Pinheirinho.";
+  const whatsappUrl = "https://wa.me/5541991610663?text=Olá! Gostaria de informações sobre óculos e a loja no Umbará.";
 
   const featuredProducts = [
     { name: "Óculos de Grau Completo", price: "Consulte-nos!", category: "Promocional", highlight: "Mais Vendido" },
@@ -27,7 +26,7 @@ const LojaOculosPinheirinho15565 = () => {
   // SEO e Structured Data
   const breadcrumbData = createBreadcrumbStructuredData([
     { name: 'Início', url: 'https://www.gouveiacuritiba.com.br/' },
-    { name: 'Óticas em Curitiba', url: 'https://www.gouveiacuritiba.com.br/oticas-curitiba' },
+    { name: 'Óticas em Curitiba', url: 'https://www.gouveiacuritiba.com.br/mapa-do-site' },
     { name: 'Pinheirinho', url: 'https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565' }
   ]);
 
@@ -49,7 +48,7 @@ const LojaOculosPinheirinho15565 = () => {
   const services = [
     { icon: 'Eye', title: "Consulta Especializada", desc: "Atendimento completo com profissionais qualificados" },
     { icon: 'Glasses', title: "Ajuste Profissional", desc: "Ajustes precisos e confortáveis" },
-    { icon: 'Shield', title: "Garantia Estendida", desc: "Proteção total dos seus óculos" },
+    { icon: 'Shield', title: "Garantia Estendida", desc: "Consulte condições de garantia" },
     { icon: 'Clock', title: "Entrega Expressa", desc: "Pronto em até 3 dias úteis" },
     { icon: 'Award', title: "Qualidade Certificada", desc: "Produtos aprovados e testados" },
     { icon: 'Heart', title: "Atendimento Personalizado", desc: "Cuidado especial com cada cliente" }
@@ -60,12 +59,12 @@ const LojaOculosPinheirinho15565 = () => {
       <EnhancedSEO
         title="Loja de Óculos 15565 no Pinheirinho - Ótica Gouveia Curitiba"
         description="Loja de óculos no Pinheirinho, Curitiba. Ótica Gouveia oferece óculos de grau, sol e lentes com qualidade garantida e tradição."
-        keywords="loja óculos pinheirinho 15565, ótica pinheirinho curitiba, óculos grau pinheirinho, exame vista gratuito pinheirinho, loja 15565"
+        keywords="loja óculos pinheirinho 15565, ótica pinheirinho curitiba, óculos grau pinheirinho, loja 15565"
         canonicalUrl="/loja-de-oculos-no-pinheirinho/15565"
         structuredData={structuredData}
         breadcrumbs={[
           { name: 'Início', url: '/' },
-          { name: 'Óticas em Curitiba', url: '/oticas-curitiba' },
+          { name: 'Óticas em Curitiba', url: '/mapa-do-site' },
           { name: 'Pinheirinho 15565', url: '/loja-de-oculos-no-pinheirinho/15565' }
         ]}
         preloadResources={[
@@ -78,11 +77,11 @@ const LojaOculosPinheirinho15565 = () => {
         
         <EnhancedHero
           title="Loja de Óculos Pinheirinho"
-          subtitle="A melhor loja de óculos do Pinheirinho! Consulte nossos preços e condições especiais com garantia total"
+          subtitle="Óculos para moradores do Pinheirinho. Visite a loja na Rua Nicola Pellanda, 1286, Umbará."
           location="Pinheirinho - Curitiba"
           backgroundImage="/hero-background.webp"
           whatsappUrl={whatsappUrl}
-          phoneNumber="+5541999123456"
+          phoneNumber="+554131140663"
         />
 
         {/* YouTube Video Section */}
@@ -123,8 +122,8 @@ const LojaOculosPinheirinho15565 = () => {
                     <h3 className="text-xl font-semibold text-brand-gray-900 mb-3">{product.name}</h3>
                     <div className="text-2xl font-bold text-brand-red mb-4">{product.price}</div>
                     <div className="space-y-2 mb-4">
-                      <div className="text-sm text-brand-gray-600">✓ Exame de vista incluso</div>
-                      <div className="text-sm text-brand-gray-600">✓ Garantia de 6 meses</div>
+                      <div className="text-sm text-brand-gray-600">✓ Medições conforme a receita</div>
+                      <div className="text-sm text-brand-gray-600">✓ Consulte a garantia do produto</div>
                       <div className="text-sm text-brand-gray-600">✓ Ajustes gratuitos</div>
                     </div>
                     <a
@@ -198,7 +197,7 @@ const LojaOculosPinheirinho15565 = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-brand-red rounded-full mt-2"></div>
-                    <span className="text-brand-gray-600">Parcelamento em até 12x sem juros</span>
+                    <span className="text-brand-gray-600">Consulte formas de pagamento</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-brand-red rounded-full mt-2"></div>
@@ -221,7 +220,7 @@ const LojaOculosPinheirinho15565 = () => {
                 <ul className="space-y-2 mb-6 text-left max-w-md mx-auto">
                   <li>• Mais de 200 modelos de armações</li>
                   <li>• Lentes antirreflexo incluídas</li>
-                  <li>• Garantia de 6 meses</li>
+                  <li>• Consulte a garantia do produto</li>
                   <li>• Ajustes e limpeza grátis por 1 ano</li>
                   <li>• Parcelamento sem entrada</li>
                 </ul>
@@ -247,7 +246,7 @@ const LojaOculosPinheirinho15565 = () => {
 
       <Footer />
       <FloatingButtonsGroup />
-      <BackToTop />
+      
     </>
   );
 };

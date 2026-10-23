@@ -2,7 +2,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import WhatsAppFloat from '../components/WhatsAppFloat';
-import BackToTop from '../components/BackToTop';
 import VisiofficeSection from '../components/VisiofficeSection';
 import PageHero from '../components/PageHero';
 import { Handshake, Gem, Heart, Microscope, Truck, BadgeCheck, Glasses, MessageCircle, Navigation } from 'lucide-react';
@@ -221,7 +220,7 @@ const SobrePage = () => {
 
       <Footer />
       <WhatsAppFloat />
-      <BackToTop />
+      
     </div>
   );
 };

@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import WhatsAppFloat from '../components/WhatsAppFloat';
-import BackToTop from '../components/BackToTop';
 import { MapPin, Phone, Clock, Instagram, MessageCircle, HelpCircle, Navigation } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import { SITE_URL, createWebPageSchema, createOpticianSchema, createBreadcrumbSchema, createFAQSchema } from '../utils/schemas';
@@ -248,7 +247,7 @@ const ContatoPage = () => {
 
       <Footer />
       <WhatsAppFloat />
-      <BackToTop />
+      
     </div>
   );
 };

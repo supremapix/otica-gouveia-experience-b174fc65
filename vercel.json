@@ -1,8 +1,452 @@
 {
   "rewrites": [
-    { 
-      "source": "/(.*)", 
-      "destination": "/index.html" 
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/loja-de-oculos-no-pinheirinho",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/loja-de-oculos-no-pinheirinho/15565",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/loja-de-oculos-no-pinheirinho/15565/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-pinheirinho",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-sitio-cercado",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-umbara",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-cic",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-cajuru",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-boqueirao",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-hauer",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-centro",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-batel",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-agua-verde",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-bigorrilho",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-portao",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-xaxim",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-santa-felicidade",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-bacacheri",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-araucaria",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-colombo",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-pinhais",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-sao-jose-dos-pinhais",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-fazenda-rio-grande",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-reboucas",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-neo-ville",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-vila-sandra",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-vila-formosa",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-piraquara",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-campo-largo",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-almirante-tamandare",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-quatro-barras",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-mandirituba",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-campina-grande-do-sul",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-cristo-rei",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-ecoville",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-jardim-botanico",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-juveve",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-capao-raso",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-jardim-das-americas",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-novo-mundo",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-taruma",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-tatuquara",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-campo-comprido",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-hugo-lange",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-tingui",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-merces",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-cabral",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-alto-da-xv",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-guabirotuba",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-parolin",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-adrianopolis",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-balsa-nova",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-contenda",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-lapa",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-abranches",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-uberaba",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-vila-izabel",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-alto-da-gloria",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-pilarzinho",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-santa-candida",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-bocaiuva-do-sul",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-itaperucu",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-rio-branco-do-sul",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-campo-magro",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-tijucas-do-sul",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-atuba",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-bairro-alto",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-boa-vista",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-bom-retiro",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-orleans",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-agudos-do-sul",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-campo-do-tenente",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-cerro-azul",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-doutor-ulysses",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-pien",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-quitandinha",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-rio-negro",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-tunas-do-parana",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-lindoia",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-sao-joao",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-fanny",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-sao-francisco",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-barigui",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-centro-civico",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-capao-da-imbuia",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-santa-quiteria",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-mossungue",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-seminario",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-barreirinha",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-santo-inacio",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-sao-lourenco",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-riviera",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-campo-de-santana",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-augusta",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-cascatinha",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-vila-guaira",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-ganchinho",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-fazendinha",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-pinheirinho-bairro",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/conserto-oculos-sitio-cercado",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-terminal-sitio-cercado",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/oticas-no-centro-de-curitiba",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/otica-barata-curitiba",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/entregas-sitio-cercado-curitiba",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/sobre",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/servicos",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/produtos",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/contato",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/mapa-do-site",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/oculos-ou-lentes",
+      "destination": "/index.html"
     }
   ],
   "headers": [

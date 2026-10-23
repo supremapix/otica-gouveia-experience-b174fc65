@@ -1,9 +1,12 @@
+import { useFooterVisible } from '../hooks/useFooterVisible';
 import { useState } from 'react';
 
 const WhatsAppFloat = () => {
+  const footerVisible = useFooterVisible();
   const [showTooltip, setShowTooltip] = useState(false);
   const whatsappUrl = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20%C3%93tica%20Gouveia%20e%20gostaria%20de%20um%20or%C3%A7amento%20%F0%9F%98%8A";
 
+  if (footerVisible) return null;
   return (
     <div className="fixed bottom-6 right-6 z-[9998]">
       {/* Tooltip */}

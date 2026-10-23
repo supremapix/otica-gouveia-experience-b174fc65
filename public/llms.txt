@@ -12,12 +12,13 @@ A Ótica Gouveia (Asaph Produtos Óticos LTDA, CNPJ 53.934.177/0001-21) atende p
 - [Produtos](/produtos): Armações, lentes e óculos de sol.
 - [Contato](/contato): Telefones, WhatsApp e endereço.
 - [Mapa do Site](/mapa-do-site): Índice completo de todas as páginas.
-- [FAQ](/faq): Mais de 500 perguntas e respostas sobre óculos, lentes e cuidados visuais.
+- [FAQ](/faq): Perguntas e respostas revisadas sobre óculos, lentes e cuidados visuais.
 
-## Lojas
+## Uma loja física no Umbará
 
-- [Pinheirinho](/loja-de-oculos-no-pinheirinho): Rua Nicola Pellanda, 1286 - Curitiba/PR.
-- [Umbará](/otica-umbara): Bairro Umbará - Curitiba/PR.
+- [Para moradores do Pinheirinho](/loja-de-oculos-no-pinheirinho): guia de visita à loja no Umbará; não é uma filial.
+- [Umbará](/otica-umbara): Rua Nicola Pellanda, 1286, Curitiba/PR.
+- Foco local: entorno de aproximadamente 10 km. Todas as regiões existentes seguem acessíveis no mapa do site; o raio não é promessa de entrega.
 
 ## Páginas SEO em destaque
 

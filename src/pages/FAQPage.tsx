@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FloatingButtonsGroup from '../components/FloatingButtonsGroup';
-import BackToTop from '../components/BackToTop';
 import SEO from '../components/SEO';
-import { faqBlocks, blogArticles, getTotalQuestions } from '../data/faqCompleteData';
+import HealthTipsSection from '../components/HealthTipsSection';
+import { createOpticianSchema } from '../utils/schemas';
+import { faqBlocks, getTotalQuestions } from '../data/faqCompleteData';
 import heroFaq from '../assets/hero-faq.webp';
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es.%20Pode%20me%20ajudar?";
@@ -46,7 +47,7 @@ const FAQPage = () => {
       const progress = step / steps;
       setAnimatedStats({
         questions: Math.round(progress * totalQuestions),
-        lojas: Math.round(progress * 2),
+        lojas: Math.round(progress),
       });
       if (step >= steps) clearInterval(timer);
     }, interval);
@@ -119,39 +120,7 @@ const FAQPage = () => {
     )
   };
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "Optician",
-    "name": "Ótica Gouveia Curitiba",
-    "legalName": "Asaph Produtos Óticos LTDA",
-    "url": "https://www.gouveiacuritiba.com.br",
-    "description": "Ótica completa em Curitiba com exame de vista, armações, lentes especializadas, lentes de contato, óculos de sol e relojoaria. Lojas no Pinheirinho e Umbará.",
-    "location": [
-      {
-        "@type": "Place",
-        "name": "Ótica Gouveia Pinheirinho",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Rua Nicola Pellanda, 1286",
-          "addressLocality": "Curitiba",
-          "addressRegion": "PR",
-          "postalCode": "81880-000",
-          "addressCountry": "BR"
-        }
-      },
-      {
-        "@type": "Place",
-        "name": "Ótica Gouveia Umbará",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Curitiba",
-          "addressRegion": "PR",
-          "addressCountry": "BR"
-        }
-      }
-    ],
-    "areaServed": ["Pinheirinho", "Umbará", "Bairro Novo", "Sítio Cercado", "Tatuquara", "Xaxim", "Capão Raso", "Curitiba PR"]
-  };
+  const localBusinessSchema = createOpticianSchema();
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -434,36 +403,7 @@ const FAQPage = () => {
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-[1100px] mx-auto px-4">
-          <h2 className="font-bold text-center mb-10" style={{ fontSize: '32px', color: '#1A1A1A' }}>
-            Artigos sobre Saúde Visual em Curitiba
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogArticles.map((article, i) => (
-              <div key={i} className="bg-white rounded-2xl p-7 shadow-sm border hover:shadow-md transition-all">
-                <span
-                  className="inline-block text-white font-semibold rounded-lg px-3 py-1 mb-4"
-                  style={{ fontSize: '14px', backgroundColor: 'hsl(var(--primary))' }}
-                >
-                  {article.category}
-                </span>
-                <h3 className="font-bold mb-3" style={{ fontSize: '20px', color: '#1A1A1A', lineHeight: '1.4' }}>
-                  {article.title}
-                </h3>
-                <p style={{ fontSize: '16px', color: '#555', lineHeight: '1.6' }}>
-                  {article.summary}
-                </p>
-                <p className="mt-3 font-medium" style={{ fontSize: '14px', color: '#999' }}>
-                  {new Date(article.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <HealthTipsSection />
       {/* CTA final */}
       <section className="py-16" style={{ backgroundColor: 'hsl(var(--primary))' }}>
         <div className="max-w-[860px] mx-auto px-4 text-center">
@@ -508,7 +448,7 @@ const FAQPage = () => {
 
       <Footer />
       <FloatingButtonsGroup />
-      <BackToTop />
+      
     </div>
   );
 };

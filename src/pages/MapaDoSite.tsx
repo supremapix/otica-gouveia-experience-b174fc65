@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
 import FloatingButtonsGroup from '../components/FloatingButtonsGroup';
-import BackToTop from '../components/BackToTop';
 import SEO from '../components/SEO';
 import {
   institucionalRoutes,
@@ -119,7 +118,7 @@ const MapaDoSite = () => {
 
       <Footer />
       <FloatingButtonsGroup />
-      <BackToTop />
+      
     </div>
   );
 };

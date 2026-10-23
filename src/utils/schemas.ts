@@ -114,9 +114,9 @@ export const createOpticianSchema = (location?: string) => ({
   image: STORE_IMAGE,
   logo: LOGO,
   telephone: CONTACT.telephone,
-  email: CONTACT.email,
+
   address: ADDRESS,
-  geo: GEO,
+
   openingHoursSpecification: OPENING_HOURS,
   priceRange: "$$",
   currenciesAccepted: "BRL",
@@ -216,14 +216,14 @@ export const createProductSchema = (product: {
   category: product.category,
   ...(product.image ? { image: product.image } : {}),
   brand: { "@type": "Brand", name: "Ótica Gouveia" },
-  offers: {
+  ...( /\d/.test(product.price) ? { offers: {
     "@type": "Offer",
     price: product.price.replace(/[^\d,]/g, "").replace(",", "."),
     priceCurrency: "BRL",
-    availability: "https://schema.org/InStock",
+
     availableAtOrFrom: { "@id": `${SITE_URL}/#optician` },
     seller: { "@id": `${SITE_URL}/#organization` },
-  },
+  }} : {}),
 });
 
 /**

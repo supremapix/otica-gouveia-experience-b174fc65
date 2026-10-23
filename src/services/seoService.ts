@@ -104,7 +104,7 @@ export class SEOService {
     };
   }
 
-  static validateStructuredData(data: any): boolean {
+  static validateStructuredData(data: Record<string, unknown>): boolean {
     try {
       // Validação básica de structured data
       if (!data['@context'] || !data['@type']) {

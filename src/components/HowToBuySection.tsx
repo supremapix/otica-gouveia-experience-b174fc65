@@ -32,7 +32,7 @@ const steps = [
 ];
 
 const HowToBuySection = ({ neighborhoodName }: HowToBuySectionProps) => {
-  const whatsappUrl = `https://wa.me/554199161663?text=${encodeURIComponent(`Olá! Moro no ${neighborhoodName} e gostaria de agendar um atendimento.`)}`;
+  const whatsappUrl = `https://wa.me/5541991610663?text=${encodeURIComponent(`Olá! Moro no ${neighborhoodName} e gostaria de agendar um atendimento.`)}`;
 
   return (
     <section className="py-16 md:py-24 bg-background">

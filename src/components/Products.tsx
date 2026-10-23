@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useDialogFocus } from '../hooks/useDialogFocus';
+import { useState, useCallback } from 'react';
 import { useInView } from '../utils/animations';
 import { useIsMobile } from '../hooks/use-mobile';
 import {
@@ -148,6 +149,8 @@ const Products = () => {
   });
 
   const [selectedProduct, setSelectedProduct] = useState<null | typeof products[0]>(null);
+  const closeProduct = useCallback(() => setSelectedProduct(null), []);
+  useDialogFocus(Boolean(selectedProduct), "#home-product-dialog", closeProduct);
 
   return (
     <section id="products" className="section-padding bg-white" ref={ref as React.RefObject<HTMLDivElement>}>
@@ -234,14 +237,14 @@ const Products = () => {
                 <CarouselItem key={product.id} className="basis-full">
                   <div 
                     className="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-gray-200 transition-all duration-300 hover:shadow-md hover:-translate-y-1 cursor-pointer mx-2"
-                    onClick={() => setSelectedProduct(product)}
+                    role="button" tabIndex={0} aria-label={`Ver detalhes de ${product.name}`} onKeyDown={e=>{if(e.target===e.currentTarget && (e.key==="Enter" || e.key===" ")) {e.preventDefault();setSelectedProduct(product);}}} onClick={() => setSelectedProduct(product)}
                   >
                     <div className="h-64 overflow-hidden">
                       <img 
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                        loading="lazy"
+                        className="w-full h-full object-contain bg-white p-4 transition-transform duration-700 hover:scale-105"
+                        loading="lazy" decoding="async" width="640" height="480"
                       />
                     </div>
                     <div className="p-6">
@@ -281,15 +284,15 @@ const Products = () => {
                 <div 
                   key={product.id}
                   className="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-gray-200 transition-all duration-300 hover:shadow-md hover:-translate-y-1 cursor-pointer"
-                  onClick={() => setSelectedProduct(product)}
+                  role="button" tabIndex={0} aria-label={`Ver detalhes de ${product.name}`} onKeyDown={e=>{if(e.target===e.currentTarget && (e.key==="Enter" || e.key===" ")) {e.preventDefault();setSelectedProduct(product);}}} onClick={() => setSelectedProduct(product)}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="h-64 overflow-hidden">
                     <img 
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                      loading="lazy"
+                      className="w-full h-full object-contain bg-white p-4 transition-transform duration-700 hover:scale-105"
+                      loading="lazy" decoding="async" width="640" height="480"
                     />
                   </div>
                   <div className="p-6">
@@ -436,7 +439,7 @@ const Products = () => {
 
       {selectedProduct && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm overflow-y-auto"
+          id="home-product-dialog" role="dialog" aria-modal="true" aria-label="Detalhes do produto" className="fixed inset-0 z-[10001] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm overflow-y-auto"
           onClick={() => setSelectedProduct(null)}
         >
           <div 
@@ -448,7 +451,7 @@ const Products = () => {
                 <img 
                   src={selectedProduct.image}
                   alt={selectedProduct.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain bg-white p-4"
                 />
               </div>
               <div className="flex-1 p-6 md:p-8 flex flex-col">
@@ -498,7 +501,7 @@ const Products = () => {
                 <div className="mt-auto">
                   <div className="flex justify-between items-center mb-4">
                     <span className="text-xl font-bold text-brand-gray-900">{selectedProduct.price}</span>
-                    <span className="text-brand-gray-700 text-sm">10x sem juros</span>
+                    <span className="text-brand-gray-700 text-sm">Condições sob consulta</span>
                   </div>
                   
                   <div className="flex gap-4">

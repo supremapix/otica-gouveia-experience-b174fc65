@@ -1,35 +1,24 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { ChevronUp } from 'lucide-react';
-
-const BackToTop = () => {
+export default function BackToTop() {
   const [visible, setVisible] = useState(false);
-
+  const [inFooter, setInFooter] = useState(false);
+  const { pathname } = useLocation();
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 400);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  return (
-    <button
-      onClick={scrollToTop}
-      aria-label="Voltar ao topo"
-      className={`fixed bottom-6 left-6 z-[9997] w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary ${
-        visible ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-4 pointer-events-none'
-      }`}
-      style={{
-        backgroundColor: 'hsl(var(--primary))',
-        color: 'white',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
-      }}
-    >
-      <ChevronUp className="w-7 h-7" strokeWidth={3} />
-    </button>
-  );
-};
-
-export default BackToTop;
+    const update = () => {
+      setVisible(window.scrollY > 400);
+      const footer = document.querySelector('footer');
+      setInFooter(Boolean(footer && footer.getBoundingClientRect().top < window.innerHeight));
+    };
+    update();
+    window.addEventListener('scroll', update, {passive:true});
+    window.addEventListener('resize', update);
+    return () => { window.removeEventListener('scroll', update); window.removeEventListener('resize', update); };
+  }, [pathname]);
+  return <button type="button" hidden={!visible} onClick={() => {
+    window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    const heading = document.querySelector<HTMLElement>('h1');
+    if(heading) { heading.tabIndex = -1; heading.focus({preventScroll:true}); }
+  }} aria-label="Voltar ao topo" className="back-to-top" style={{position:inFooter?'absolute':'fixed'}}><ChevronUp aria-hidden="true" size={28}/></button>;
+}

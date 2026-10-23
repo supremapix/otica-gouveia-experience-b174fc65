@@ -91,7 +91,7 @@ const NeighborhoodFAQ: React.FC<NeighborhoodFAQProps> = ({ neighborhoodName }) =
             Ainda tem dúvidas? Fale conosco pelo WhatsApp!
           </p>
           <a
-            href="https://wa.me/554199161663?text=Olá! Tenho uma dúvida sobre os serviços da Ótica Gouveia."
+            href="https://wa.me/5541991610663?text=Olá! Tenho uma dúvida sobre os serviços da Ótica Gouveia."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg"

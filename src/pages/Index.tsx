@@ -1,3 +1,4 @@
+import VisitGuide from '../components/VisitGuide';
 import { useState, useEffect, Suspense } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSlider from '../components/HeroSlider';
@@ -10,15 +11,14 @@ import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Instagram from '../components/Instagram';
 import Footer from '../components/Footer';
-import OnlineCounter from '../components/OnlineCounter';
+
 import SEO from '../components/SEO';
 import InfiniteNeighborhoodSlider from '../components/InfiniteNeighborhoodSlider';
 import VisiofficeSection from '../components/VisiofficeSection';
 import PrescriptionNotice from '../components/PrescriptionNotice';
 import NeighborhoodsSection from '../components/NeighborhoodsSection';
-import TipsSection from '../components/TipsSection';
+import TipsSection from '../components/HealthTipsSection';
 import WhatsAppFloat from '../components/WhatsAppFloat';
-import BackToTop from '../components/BackToTop';
 import FloatingButtonsGroup from '../components/FloatingButtonsGroup';
 import FAQCTASection from '../components/FAQCTASection';
 import { createOrganizationSchema, createWebsiteSchema, createLocalBusinessSchema } from '../utils/schemas';
@@ -116,6 +116,7 @@ const Index = () => {
       />
       
       <Navbar />
+      <h1 className="sr-only">Ótica Gouveia no Umbará, Curitiba — óculos de grau e de sol</h1>
       
       {/* Hero with padding for fixed header */}
       <section id="home" className="pt-16 md:pt-[110px]">
@@ -158,6 +159,7 @@ const Index = () => {
       </section>
 
       
+      <VisitGuide />
       <InfiniteNeighborhoodSlider />
       
       <ErrorBoundary componentName="Testimonials" fallback={<div className="p-4">Error</div>}>
@@ -184,9 +186,9 @@ const Index = () => {
       
       <Footer />
       
-      <OnlineCounter />
+
       <FloatingButtonsGroup />
-      <BackToTop />
+      
     </div>
   );
 };

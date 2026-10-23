@@ -70,7 +70,7 @@ const PremiumFAQ = ({ neighborhoodName }: PremiumFAQProps) => {
   }, [selectedFAQ, navigateFAQ, closeModal]);
 
   const progressPercent = (viewedIds.size / faqItems.length) * 100;
-  const whatsappUrl = `https://wa.me/554199161663?text=${encodeURIComponent(`Olá! Tenho uma dúvida sobre óculos para ${neighborhoodName}.`)}`;
+  const whatsappUrl = `https://wa.me/5541991610663?text=${encodeURIComponent(`Olá! Tenho uma dúvida sobre óculos para ${neighborhoodName}.`)}`;
 
   return (
     <section className="py-16 md:py-24 bg-background">

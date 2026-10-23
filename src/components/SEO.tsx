@@ -72,8 +72,6 @@ const SEO = ({
       {/* Geo Tags for Local SEO */}
       <meta name="geo.region" content="BR-PR" />
       <meta name="geo.placename" content="Curitiba" />
-      <meta name="geo.position" content="-25.5;-49.3" />
-      <meta name="ICBM" content="-25.5, -49.3" />
       
       {/* JSON-LD Structured Data */}
       {structuredData && (

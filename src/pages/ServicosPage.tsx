@@ -2,7 +2,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import WhatsAppFloat from '../components/WhatsAppFloat';
-import BackToTop from '../components/BackToTop';
 import VisiofficeSection from '../components/VisiofficeSection';
 import HowToBuySection from '../components/HowToBuySection';
 import PageHero from '../components/PageHero';
@@ -35,10 +34,10 @@ const services = [
   {
     Icon: Glasses,
     title: 'Armações para Todos os Estilos',
-    description: 'Mais de 500 modelos em estoque: Ray-Ban, Oakley, Ana Hickmann, Victor Hugo, Sabrina Sato, coleções infantis e muito mais. Consultoras de estilo para ajudar na escolha ideal.',
+    description: 'Modelos no catálogo: Ray-Ban, Oakley, Ana Hickmann, Victor Hugo, Sabrina Sato, coleções infantis e muito mais. Consultoras de estilo para ajudar na escolha ideal.',
     features: ['Ray-Ban & Oakley originais', 'Ana Hickmann Collection', 'Victor Hugo Eyewear', 'Linha infantil resistente', 'Novos modelos toda semana'],
     BadgeIcon: Glasses,
-    badge: '500+ MODELOS',
+    badge: 'CONSULTE MODELOS',
     cta: 'Ver Catálogo',
     msg: 'Ol%C3%A1!%20Gostaria%20de%20ver%20as%20arma%C3%A7%C3%B5es%20dispon%C3%ADveis.',
   },
@@ -174,7 +173,7 @@ const ServicosPage = () => {
 
       <Footer />
       <WhatsAppFloat />
-      <BackToTop />
+      
     </div>
   );
 };

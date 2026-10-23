@@ -48,11 +48,11 @@ const FinalCTASection = ({
 
           {/* Subtítulo */}
           <p className="text-lg md:text-xl text-white/80 mb-4 max-w-2xl mx-auto">
-            Cuide da sua visão com quem tem mais de 40 anos de experiência. 
+            Conheça as opções de armações e lentes na loja. 
             Atendimento carinhoso e especializado para a terceira idade.
           </p>
           <p className="text-sm text-white/60 mb-10 max-w-2xl mx-auto">
-            Traga sua receita, escolha sua armação e retire seus óculos com ajuste perfeito — tudo na mesma loja!
+            Traga sua receita, escolha sua armação e retire seus óculos com ajuste presencial — tudo na mesma loja!
           </p>
 
           {/* CTAs */}

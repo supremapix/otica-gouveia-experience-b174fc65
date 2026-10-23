@@ -1,0 +1,539 @@
+{
+  "routes": [
+    "*",
+    "/",
+    "/blog/oculos-ou-lentes",
+    "/conserto-oculos-sitio-cercado",
+    "/contato",
+    "/entregas-sitio-cercado-curitiba",
+    "/faq",
+    "/loja-de-oculos-no-pinheirinho",
+    "/loja-de-oculos-no-pinheirinho/15565",
+    "/loja-de-oculos-no-pinheirinho/15565/",
+    "/mapa-do-site",
+    "/otica-abranches",
+    "/otica-adrianopolis",
+    "/otica-agua-verde",
+    "/otica-agudos-do-sul",
+    "/otica-almirante-tamandare",
+    "/otica-alto-da-gloria",
+    "/otica-alto-da-xv",
+    "/otica-araucaria",
+    "/otica-atuba",
+    "/otica-augusta",
+    "/otica-bacacheri",
+    "/otica-bairro-alto",
+    "/otica-balsa-nova",
+    "/otica-barata-curitiba",
+    "/otica-barigui",
+    "/otica-barreirinha",
+    "/otica-batel",
+    "/otica-bigorrilho",
+    "/otica-boa-vista",
+    "/otica-bocaiuva-do-sul",
+    "/otica-bom-retiro",
+    "/otica-boqueirao",
+    "/otica-cabral",
+    "/otica-cajuru",
+    "/otica-campina-grande-do-sul",
+    "/otica-campo-comprido",
+    "/otica-campo-de-santana",
+    "/otica-campo-do-tenente",
+    "/otica-campo-largo",
+    "/otica-campo-magro",
+    "/otica-capao-da-imbuia",
+    "/otica-capao-raso",
+    "/otica-cascatinha",
+    "/otica-centro",
+    "/otica-centro-civico",
+    "/otica-cerro-azul",
+    "/otica-cic",
+    "/otica-colombo",
+    "/otica-contenda",
+    "/otica-cristo-rei",
+    "/otica-doutor-ulysses",
+    "/otica-ecoville",
+    "/otica-fanny",
+    "/otica-fazenda-rio-grande",
+    "/otica-fazendinha",
+    "/otica-ganchinho",
+    "/otica-guabirotuba",
+    "/otica-hauer",
+    "/otica-hugo-lange",
+    "/otica-itaperucu",
+    "/otica-jardim-botanico",
+    "/otica-jardim-das-americas",
+    "/otica-juveve",
+    "/otica-lapa",
+    "/otica-lindoia",
+    "/otica-mandirituba",
+    "/otica-merces",
+    "/otica-mossungue",
+    "/otica-neo-ville",
+    "/otica-novo-mundo",
+    "/otica-orleans",
+    "/otica-parolin",
+    "/otica-pien",
+    "/otica-pilarzinho",
+    "/otica-pinhais",
+    "/otica-pinheirinho",
+    "/otica-pinheirinho-bairro",
+    "/otica-piraquara",
+    "/otica-portao",
+    "/otica-quatro-barras",
+    "/otica-quitandinha",
+    "/otica-reboucas",
+    "/otica-rio-branco-do-sul",
+    "/otica-rio-negro",
+    "/otica-riviera",
+    "/otica-santa-candida",
+    "/otica-santa-felicidade",
+    "/otica-santa-quiteria",
+    "/otica-santo-inacio",
+    "/otica-sao-francisco",
+    "/otica-sao-joao",
+    "/otica-sao-jose-dos-pinhais",
+    "/otica-sao-lourenco",
+    "/otica-seminario",
+    "/otica-sitio-cercado",
+    "/otica-taruma",
+    "/otica-tatuquara",
+    "/otica-terminal-sitio-cercado",
+    "/otica-tijucas-do-sul",
+    "/otica-tingui",
+    "/otica-tunas-do-parana",
+    "/otica-uberaba",
+    "/otica-umbara",
+    "/otica-vila-formosa",
+    "/otica-vila-guaira",
+    "/otica-vila-izabel",
+    "/otica-vila-sandra",
+    "/otica-xaxim",
+    "/oticas-no-centro-de-curitiba",
+    "/produtos",
+    "/servicos",
+    "/sobre"
+  ],
+  "images": [
+    {
+      "path": "src/assets/hero-1.webp",
+      "sha256": "d302a4270bfa9b380791dd49da5a28e93fe815cfdc398e21966861f3dac3f2ba"
+    },
+    {
+      "path": "src/assets/hero-2.webp",
+      "sha256": "887f8af815142ad6c1f6da673c00443f2b8d4e9cd497136022525188d73a4fa1"
+    },
+    {
+      "path": "src/assets/hero-3.webp",
+      "sha256": "3736c7128221fe05f04a810544b946698bf5648d15add8b397e3e5223e661ef2"
+    },
+    {
+      "path": "src/assets/hero-faq.webp",
+      "sha256": "7363eab37368e3bb14c74580afbd2f27a648e3a20e3ce7f5b0aae577131f705b"
+    },
+    {
+      "path": "src/assets/hero-fundo-paginas.webp",
+      "sha256": "786c290155a99edbf5afc5a814cfe56d4f7ca86aef6ccfd063b93faf71ed5fb4"
+    },
+    {
+      "path": "src/assets/hero-gouveia-1.webp",
+      "sha256": "5d871688b4cd7280209ac6ee3ca23331cd3ca088b8736dec68b7a5840ea8e910"
+    },
+    {
+      "path": "src/assets/hero-gouveia-2.webp",
+      "sha256": "dc0ec55d9b069c2aed01f8a033f2391e3d1e725bccb1587539f7b21876d7cf01"
+    },
+    {
+      "path": "src/assets/hero-gouveia-3.webp",
+      "sha256": "e6402547137dfbd1281a8842a73084ab29959eade28071c3777a8286d02982d5"
+    },
+    {
+      "path": "src/assets/hero-mobile-1.webp",
+      "sha256": "341ff417d48ea0c0fc5842cc7d3ac9d48c64aeb086890942298df29ae1ab0c8d"
+    },
+    {
+      "path": "src/assets/hero-mobile-2.webp",
+      "sha256": "92ca9ab6273ddb2441e3b05d95b137890dbd73f08bcc58b19086c8ba32e274a0"
+    },
+    {
+      "path": "src/assets/hero-mobile-3.webp",
+      "sha256": "1a2ab1e3052d7bd61075fdce6d42500d73a39d20e7eff3785ae298fae9976f73"
+    },
+    {
+      "path": "src/assets/service-armacoes.webp",
+      "sha256": "5beb095addf60f709c3858e754303d64f3b9b21dbf47a34965947eae61330795"
+    },
+    {
+      "path": "src/assets/service-lentes.webp",
+      "sha256": "fc4c4df1b3021da92b88fd70524b35993783279ecb9ef0619334b09906ddef6d"
+    },
+    {
+      "path": "src/assets/service-medidas.webp",
+      "sha256": "858084dcc82fd85292ec4028fbbff35a37e7b83c614f6be85236be6129f17c51"
+    },
+    {
+      "path": "public/favicon.ico",
+      "sha256": "9f081d20c7c14cd4d08271b728d7c62b997d894150915760c222f01285f923ba"
+    },
+    {
+      "path": "public/hero-background.webp",
+      "sha256": "923407863acc5c089e3ae37a50f6e5c8200f437929ea45ed34cf5f6572948109"
+    },
+    {
+      "path": "public/lovable-uploads/00284f2e-4859-48cc-a2c3-4a6ce2507ecf.webp",
+      "sha256": "c774db996ebb1ac975660d998e160a01fdb07b48f37f2b1852ab23a02eeedeff"
+    },
+    {
+      "path": "public/lovable-uploads/010e742a-6f6d-4d89-b93d-c68042fd7bf2.webp",
+      "sha256": "8cd88ce84d67a7414374e77f10fa8d04dbd7a4553d2f8ef49b56e7bdeb5e879d"
+    },
+    {
+      "path": "public/lovable-uploads/0c520e0e-67b8-406f-9c15-446e4e1f2f79.webp",
+      "sha256": "574723e766c25c307435ceb4e89b4c14e38d447f674d078e8c6a3347f19fe5c9"
+    },
+    {
+      "path": "public/lovable-uploads/179e193c-db7a-4d72-9e5d-83ea7dfa63ac.webp",
+      "sha256": "41d2e98e065c73a57105ed645a8e352a9c178d57e82ad2078245ddcbe73c39c8"
+    },
+    {
+      "path": "public/lovable-uploads/1989c2bf-cbd0-4081-8776-f6c0e985a404.webp",
+      "sha256": "204b021c307cb1792c3f099fc58b6be2f0441f4d4e1b0a1a1e090d97f9208157"
+    },
+    {
+      "path": "public/lovable-uploads/1be253aa-66d3-4954-a782-d2e82afe7b50.webp",
+      "sha256": "7b841966ecdf5d107f23c18348110362c589abebc924110c5841cdfef00c79e0"
+    },
+    {
+      "path": "public/lovable-uploads/1e537bc1-d784-42e1-924f-2b78a52c928e.webp",
+      "sha256": "49d4a1661c6d0485181c8d2b64fa4172fb4829af93c87c5b24fe69cdf38277e3"
+    },
+    {
+      "path": "public/lovable-uploads/21e3a99f-bcc9-4b8f-a495-93a9cd12cd6c.webp",
+      "sha256": "3d6e7b93ef3ed612a0f20a4cf500d64afddf220d5a54eb7c62e533a2c0d5b3b2"
+    },
+    {
+      "path": "public/lovable-uploads/274d786d-f6dc-4326-86d9-2d60e4280f0d.webp",
+      "sha256": "50f818ca63af6741bf44a2d25614876a488e67a81e8737fb0ef1ebe3c8be7724"
+    },
+    {
+      "path": "public/lovable-uploads/2a369857-bf52-4a02-8d10-0c2801ad850d.webp",
+      "sha256": "560b580803b16a7d7b39a220e272f8c1a581aba63fad4f94240135d08bb12dd6"
+    },
+    {
+      "path": "public/lovable-uploads/2c1f65c4-9adc-49d1-ad2f-ec9b7af09704.webp",
+      "sha256": "88268181fa4da9ee88835a1f3adf1a37bd36af0f2d070e89204a5a9e833d52ca"
+    },
+    {
+      "path": "public/lovable-uploads/2c2072f1-48db-439a-994f-f1841d0fb03e.webp",
+      "sha256": "6146f16452cccc772a04b9f7ffe1a8802def1262cf903372e9afbb01e41dcb1d"
+    },
+    {
+      "path": "public/lovable-uploads/2c54c0af-f957-4477-b0ec-ea572976132f.webp",
+      "sha256": "0945e4e9d154a62b659341aa50ab26f3e1ef4634185eaa167b556cc5d19a86cf"
+    },
+    {
+      "path": "public/lovable-uploads/313dd361-4d84-445f-9985-e941bb363e87.webp",
+      "sha256": "5319b125fc742310898dce1c5ec3272ab5af84c0138cc2f5181e79e3a11cdcfb"
+    },
+    {
+      "path": "public/lovable-uploads/354f71c7-bae6-44ac-ac04-89d830bbdff7.webp",
+      "sha256": "5bcec991a216a35499ee01d74c1ce206511e35b61dead8589842eb924ec07b8b"
+    },
+    {
+      "path": "public/lovable-uploads/35e542ae-f892-4c53-8e2f-db75ce35721e.webp",
+      "sha256": "af94c54e100229c5f4440edd10f2637498175cd903366174ae0f2ef6a0aeb7ce"
+    },
+    {
+      "path": "public/lovable-uploads/377f56c0-deef-4820-a648-e38ad0be7f36.webp",
+      "sha256": "c749fe0fae892d6036dea62663c5a295351773b719dc5214f348b75e454b4ae0"
+    },
+    {
+      "path": "public/lovable-uploads/3c385cfb-2914-478d-a338-c60a9c9518df.webp",
+      "sha256": "1513f7dfeb4868aafa345570ac530ee2e3e2ac15705bab0e999016d7a762e2c4"
+    },
+    {
+      "path": "public/lovable-uploads/3cf8a689-5aec-44e9-8da2-6fa72de0c834.webp",
+      "sha256": "478872b1f8c6b72fb44356e0e3b35ccea6bedbc7dd95481a6d89a79a4f7f77ed"
+    },
+    {
+      "path": "public/lovable-uploads/3f4cbad8-a90b-4563-b2de-0a2744d1be37.webp",
+      "sha256": "bd9e31fec9348fd37649bb7a3a30fb7c66bb55d567bb83551859988ceca6d7cb"
+    },
+    {
+      "path": "public/lovable-uploads/40a418ff-3ca5-4179-978b-9c5888b8d04b.webp",
+      "sha256": "1513f7dfeb4868aafa345570ac530ee2e3e2ac15705bab0e999016d7a762e2c4"
+    },
+    {
+      "path": "public/lovable-uploads/484f4810-331a-4018-af69-0853c07fa440.webp",
+      "sha256": "6046f97d12f73aaaf5f203ceb143860eef27a9de72df39f6b61cad806a82b872"
+    },
+    {
+      "path": "public/lovable-uploads/48cc47c3-a484-4afb-9f9e-fc1b26e5d095.webp",
+      "sha256": "75d92e7d3fcf59acbbbb17af570d0f0fb30dcf2ab34d334c9ee16a2b0fe221a0"
+    },
+    {
+      "path": "public/lovable-uploads/4a29b99c-56aa-418b-be88-b850f3f0cc76.webp",
+      "sha256": "b6d8ca2eed8f399a492178a370b51b3d882b34652d451c51be2e7f0184fc9037"
+    },
+    {
+      "path": "public/lovable-uploads/4b85711f-9660-415d-a4fa-cd7f50e747ec.webp",
+      "sha256": "724314443b83be2d83718e43d726a90371b53ea699ac3818d11782a56135940e"
+    },
+    {
+      "path": "public/lovable-uploads/554a4b67-59a7-4121-a800-dba8b06cb020.webp",
+      "sha256": "24ee8409865c5a218bcfa8c48743d0456390805348a1d7b1836f066f2491cea9"
+    },
+    {
+      "path": "public/lovable-uploads/57d4695c-9e6f-43d1-81bf-653d3e2cf9be.webp",
+      "sha256": "5eff196d7f0bb6b9ce874d06713ff3730edcfea8f4fcddc09cf2aee9be41e775"
+    },
+    {
+      "path": "public/lovable-uploads/593e7657-b084-4527-afc6-3be7b4cf974c.webp",
+      "sha256": "34f088d3931b0d59b21c9d592fa6287e270ed9f42b0ebf947bd031dc6ad86c25"
+    },
+    {
+      "path": "public/lovable-uploads/59e66895-c23e-4752-8a7e-1c31102148cf.webp",
+      "sha256": "a76b1942be7810cede80548373acdd4b65ad68dd3cc9929c1e6d475ea94c0954"
+    },
+    {
+      "path": "public/lovable-uploads/6005de4b-e632-4ca4-8d3f-40f769c0b650.webp",
+      "sha256": "dec64b351016d6f35919f806e93f1c98e1db4c4a97961e2e7fd26ce99dc55e48"
+    },
+    {
+      "path": "public/lovable-uploads/60aacd8d-b40d-4235-a564-379310b71e6a.webp",
+      "sha256": "dec64b351016d6f35919f806e93f1c98e1db4c4a97961e2e7fd26ce99dc55e48"
+    },
+    {
+      "path": "public/lovable-uploads/6abf8de6-5648-482e-9986-212582077c6d.webp",
+      "sha256": "560b580803b16a7d7b39a220e272f8c1a581aba63fad4f94240135d08bb12dd6"
+    },
+    {
+      "path": "public/lovable-uploads/72458d7b-67ce-4323-8f82-f7e805b4b50c.webp",
+      "sha256": "c7aea6608e0c16547685357d9145b67ab821e02e2c70e618b735cbde32125394"
+    },
+    {
+      "path": "public/lovable-uploads/74d8f6cb-dfbb-4388-82b9-f012acfbadcc.webp",
+      "sha256": "924c9277b477ea9e6c0c79ce486bd2e82bebefb30b868043456b715d4b9b22bc"
+    },
+    {
+      "path": "public/lovable-uploads/78fd2b6e-8019-4120-9d13-9550297ccac7.webp",
+      "sha256": "8681461cee1c100351c162eb6599c47dec2334e3db5ee044283bd29728434b81"
+    },
+    {
+      "path": "public/lovable-uploads/8043e16e-0422-42ba-8620-d05410393375.webp",
+      "sha256": "c8987364ff52d88315f3219057566d39079de9c2ffa0624d1a5a4c89bfea870f"
+    },
+    {
+      "path": "public/lovable-uploads/893390c7-51de-4f3a-97ac-9489c25925eb.webp",
+      "sha256": "f77ffb6b96ecf3c2b44bb70a9a98bf248fc632f12e535a875ee704f2a81a9006"
+    },
+    {
+      "path": "public/lovable-uploads/8a300cb4-5614-40c2-adcb-ea81b6994e40.webp",
+      "sha256": "75d92e7d3fcf59acbbbb17af570d0f0fb30dcf2ab34d334c9ee16a2b0fe221a0"
+    },
+    {
+      "path": "public/lovable-uploads/90da4304-f85c-40df-b3cb-e1e816376757.webp",
+      "sha256": "7fcd8c41bc0a8d3392647abbcb9c854eedef220fffc47ef856ea5881cef782ca"
+    },
+    {
+      "path": "public/lovable-uploads/93936557-38ff-45d9-9298-fca9a24ce61d.webp",
+      "sha256": "731a0610d7203a5171a252a46062d958817f0fb80a52b5a69f9748b4c225b9b8"
+    },
+    {
+      "path": "public/lovable-uploads/9897115a-b317-4c81-a85a-ea9454853a2a.webp",
+      "sha256": "216c016a9ad2a6428a77a50914319570d08f2cb7f9a2877f356566458cb60c20"
+    },
+    {
+      "path": "public/lovable-uploads/9c6d314e-f050-4664-965f-bbe9ebc6bf8f.webp",
+      "sha256": "acb223cfe867bb7460c4107df50a7c736e4adc7b9b9ba2fbbc54225890589d91"
+    },
+    {
+      "path": "public/lovable-uploads/9cb88b28-e372-46cb-9604-f84bf0bed383.webp",
+      "sha256": "25e054bb885357e4c52f6c09e8e4c2b949728e75da37f6b382ebb41d4af2676e"
+    },
+    {
+      "path": "public/lovable-uploads/9f9ebc43-0457-4fdb-8dca-d73cf2b9e790.webp",
+      "sha256": "b785d9ec9c8b0ddd4d9db16e084cb1b4a0db34747c63ef1274e40f084a23f734"
+    },
+    {
+      "path": "public/lovable-uploads/a16bdfa8-f87b-4ca6-84c5-1311998e3299.webp",
+      "sha256": "9e28ae6a4e9a0db76fb207c1c74c8c3ea90e524a4ee8c0b860453455e08e4fa6"
+    },
+    {
+      "path": "public/lovable-uploads/a1b78843-775f-44c7-861f-44eb7a861d83.webp",
+      "sha256": "88268181fa4da9ee88835a1f3adf1a37bd36af0f2d070e89204a5a9e833d52ca"
+    },
+    {
+      "path": "public/lovable-uploads/cb5792fa-09cd-48d9-96ee-80bd8e1a29ee.webp",
+      "sha256": "3d6e7b93ef3ed612a0f20a4cf500d64afddf220d5a54eb7c62e533a2c0d5b3b2"
+    },
+    {
+      "path": "public/lovable-uploads/d03236fb-b7da-44a0-9e41-d1bcf77ee2fe.webp",
+      "sha256": "bd9e31fec9348fd37649bb7a3a30fb7c66bb55d567bb83551859988ceca6d7cb"
+    },
+    {
+      "path": "public/lovable-uploads/d3ddb8a3-b37c-478e-a768-7517a36330e5.webp",
+      "sha256": "24ee8409865c5a218bcfa8c48743d0456390805348a1d7b1836f066f2491cea9"
+    },
+    {
+      "path": "public/lovable-uploads/e1ecf008-b212-460b-ac86-aaa84894d67e.webp",
+      "sha256": "6146f16452cccc772a04b9f7ffe1a8802def1262cf903372e9afbb01e41dcb1d"
+    },
+    {
+      "path": "public/lovable-uploads/e1fdf903-0fb7-4358-98e8-8106df0f6d1c.webp",
+      "sha256": "153b4cd80a6b135752b07268abce2c5a4897c984b7e337bd71de26bbd7a7da0c"
+    },
+    {
+      "path": "public/lovable-uploads/e2d4b47a-9617-4e72-9f26-50170c88e9a0.webp",
+      "sha256": "560b580803b16a7d7b39a220e272f8c1a581aba63fad4f94240135d08bb12dd6"
+    },
+    {
+      "path": "public/lovable-uploads/e5648b15-71af-463e-9d97-c7b893f4d150.webp",
+      "sha256": "7824a4443b6c4b8e6360c5d93c3c8ae58a77af738de783a797aa61e2b0318910"
+    },
+    {
+      "path": "public/lovable-uploads/ed3af164-3a30-4ce0-98de-cf5f17b3de08.webp",
+      "sha256": "731a0610d7203a5171a252a46062d958817f0fb80a52b5a69f9748b4c225b9b8"
+    },
+    {
+      "path": "public/lovable-uploads/otica-gouveia-armacoes.webp",
+      "sha256": "e8e02a08f22ae1c7dc31923ffdccd9b19c87c8351b58380b0c8dd989cbccafa1"
+    },
+    {
+      "path": "public/lovable-uploads/otica-gouveia-carolina-herrera.webp",
+      "sha256": "b646856575bc9a9f7d31c988201bf3ee83df45508f816d5ed2213d189df55829"
+    },
+    {
+      "path": "public/lovable-uploads/otica-gouveia-esportivos.webp",
+      "sha256": "760ee438268ed51eb45c6c9422c3f686acd3ed701dbbc41b514d96701f4a85a1"
+    },
+    {
+      "path": "public/lovable-uploads/otica-gouveia-expositor.webp",
+      "sha256": "feacd33bfedbf24d9fddc327fa7965eadf93fc62b052de746cd53feaa26f830e"
+    },
+    {
+      "path": "public/lovable-uploads/otica-gouveia-fachada.webp",
+      "sha256": "69df78def56e885d3d0c380d75fa875aeb8065f32cd28bc59e75e9fb412b5a28"
+    },
+    {
+      "path": "public/lovable-uploads/otica-gouveia-rayban.webp",
+      "sha256": "8620f019534c9dfd05ad911bc759938c7dbda35aa072029ef0e01ba7fdfb1c7d"
+    },
+    {
+      "path": "public/lovable-uploads/otica-gouveia-vitrine.webp",
+      "sha256": "fcb7c1acef78ccd3d32873c1e92e3600c0c1af04c45d4fbd1752e5a20e3cf512"
+    },
+    {
+      "path": "public/og-image.webp",
+      "sha256": "6b000a5bb4d84249290f7cede5b0ce8c940e03ad3dc78e2259029f9a712ab5b3"
+    },
+    {
+      "path": "public/placeholder.svg",
+      "sha256": "64badf7aabda0b9630b87020ffb6095cb858ccbcf66b355c2aa08b1063954d3b"
+    }
+  ],
+  "productNames": [
+    "Ray-Ban Aviator",
+    "Ana Hickmann Collection",
+    "Disney Pixar Kids",
+    "Victor Hugo Collection",
+    "Sabrina Sato Eyewear",
+    "Lentes Varilux Liberty",
+    "Ray-Ban Hexagonal",
+    "Ray-Ban Round Double Bridge",
+    "Ray-Ban Round Metal",
+    "Disney Infantil",
+    "Victor Hugo Collection",
+    "Óculos Esportivo Máscara",
+    "Evoke Retrô Square",
+    "Evoke Round Feminino",
+    "HB Switch Clip-On"
+  ],
+  "externalUrls": [
+    "https://api.whatsapp.com/send?phone=554131140663&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=${msg}",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=${s.msg}",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20agendar%20uma%20medi%C3%A7%C3%A3o%20com%20Visioffice%203.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20conhecer%20o%20Visioffice%203.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20empresa.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20promo%C3%A7%C3%A3o%20para%20alunos%20e%20professores.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20arma%C3%A7%C3%B5es.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20lentes.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20manuten%C3%A7%C3%A3o%20dos%20meus%20%C3%B3culos.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20preciso%20de%20informa%C3%A7%C3%B5es.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20tenho%20interesse%20no%20produto%20",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Estou%20no%20site%20*%C3%93tica%20Gouveia*%20e%20tenho%20interesse%20no%20produto%20${selectedProduct.name}.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Moro%20no%20${encodeURIComponent(bairro)}%20e%20quero%20um%20or%C3%A7amento",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Moro%20perto%20do%20Terminal%20S%C3%ADtio%20Cercado%20e%20quero%20um%20or%C3%A7amento%20de%20%C3%B3culos.",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20N%C3%A3o%20encontrei%20o%20que%20procurava%20no%20site.%20Pode%20me%20ajudar?",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Preciso%20de%20conserto%20de%20%C3%B3culos%20no%20S%C3%ADtio%20Cercado.%20Pode%20me%20ajudar%3F",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20%C3%B3culos%20na%20%C3%93tica%20Gouveia%20Curitiba.",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Quero%20solicitar%20entrega%20de%20%C3%B3culos%20no%20S%C3%ADtio%20Cercado%20de%20Curitiba.",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Quero%20ver%20op%C3%A7%C3%B5es%20de%20%C3%B3culos%20com%20bom%20pre%C3%A7o%20na%20%C3%93tica%20Gouveia.",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%20",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20%C3%93tica%20Gouveia%20e%20gostaria%20de%20atendimento.",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20%C3%93tica%20Gouveia%20e%20gostaria%20de%20um%20or%C3%A7amento%20%F0%9F%98%8A",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20%C3%93tica%20Gouveia.",
+    "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20%C3%93tica%20Gouveia.",
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap",
+    "https://fonts.gstatic.com",
+    "https://g.co/kgs/85peFEj",
+    "https://img.supremamidia.com/suprema-img.png",
+    "https://maps.app.goo.gl/GhqcM45P9vZA8jMN9",
+    "https://schema.org",
+    "https://supremasite.com.br",
+    "https://tinyurl.com/5n6zau9b",
+    "https://wa.me/5541991610663",
+    "https://wa.me/5541991610663?text=${encodeURIComponent(",
+    "https://wa.me/5541991610663?text=${whatsappMessage}",
+    "https://wa.me/5541991610663?text=Olá!",
+    "https://wa.me/5541999123456",
+    "https://www.facebook.com/oticagouveia",
+    "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61560224348183&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true",
+    "https://www.facebook.com/profile.php?id=61560224348183",
+    "https://www.google-analytics.com",
+    "https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.2486917075837!2d-49.292339524408596!3d-25.500941637619383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfbd13da9c8b1%3A0x5a6cf2204b045a1c!2sR.%20Nicola%20Pellanda%2C%201286%20-%20Pinheirinho%2C%20Curitiba%20-%20PR%2C%2081880-000!5e0!3m2!1spt-BR!2sbr!4v1695655841619!5m2!1spt-BR!2sbr",
+    "https://www.google.com/maps?q=Rua%20Nicola%20Pellanda%201286%20Curitiba&output=embed",
+    "https://www.googletagmanager.com",
+    "https://www.gouveiacuritiba.com.br",
+    "https://www.gouveiacuritiba.com.br${data.slug}",
+    "https://www.gouveiacuritiba.com.br/",
+    "https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado",
+    "https://www.gouveiacuritiba.com.br/entregas-sitio-cercado-curitiba",
+    "https://www.gouveiacuritiba.com.br/faq",
+    "https://www.gouveiacuritiba.com.br/loja-de-oculos-no-pinheirinho/15565",
+    "https://www.gouveiacuritiba.com.br/mapa-do-site",
+    "https://www.gouveiacuritiba.com.br/og-image.webp",
+    "https://www.gouveiacuritiba.com.br/otica-barata-curitiba",
+    "https://www.gouveiacuritiba.com.br/otica-terminal-sitio-cercado",
+    "https://www.gouveiacuritiba.com.br/oticas-no-centro-de-curitiba",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/doencas-oculares",
+    "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/doencas-oculares.",
+    "https://www.instagram.com/oticagouveia",
+    "https://www.instagram.com/oticagouveiacuritiba/embed/",
+    "https://www.instagram.com/oticagouveiacuritiba?igsh=ZnY0czFzcTlzM3Fp",
+    "https://www.youtube.com/embed/gDEeiCvn89Q"
+  ],
+  "catalogPageProducts": [
+    "Ray-Ban Aviator",
+    "Ana Hickmann Collection",
+    "Disney Pixar Kids",
+    "Victor Hugo Collection",
+    "Sabrina Sato Eyewear",
+    "Lentes Varilux Liberty",
+    "Ray-Ban Hexagonal",
+    "Ray-Ban Round Double Bridge",
+    "Ray-Ban Round Metal",
+    "Disney Infantil",
+    "Victor Hugo Duo",
+    "Óculos Esportivo Máscara",
+    "Evoke Retrô Square",
+    "Evoke Round Feminino",
+    "HB Switch Clip-On",
+    "Ray-Ban Wayfarer",
+    "Carolina Herrera",
+    "Óculos Esportivos"
+  ]
+}

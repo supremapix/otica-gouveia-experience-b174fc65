@@ -308,3 +308,44 @@ html {
 .animate-cta-attention {
   animation: cta-attention 4s ease-in-out infinite;
 }
+
+/* Readable editorial layout, preserving the original red brand and photographs. */
+.visit-guide { max-width: 80rem; margin: auto; padding: clamp(2rem, 6vw, 5rem) 1.25rem; }
+.visit-heading { max-width: 52rem; margin-bottom: 2rem; }
+.visit-heading > span { color: #9e1b25; font-size: .875rem; font-weight: 700; letter-spacing: .12em; }
+.visit-heading h2 { font-size: clamp(1.75rem, 3vw, 2.75rem); line-height: 1.2; margin: .75rem 0 1rem; }
+.visit-guide p { color: #414149; line-height: 1.8; margin-bottom: 1.25rem; }
+.visit-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.visit-cards article { border: 1px solid #e6dedb; border-top: 4px solid #9e1b25; padding: 1.5rem; background: #fffdfb; border-radius: 1rem; }
+.visit-guide h3 { font-weight: 700; font-size: 1.25rem; margin-bottom: .75rem; }
+.visit-guide a { color: #9e1b25; text-decoration: underline; text-underline-offset: .2em; font-weight: 600; display: inline-block; padding: .6rem 0; }
+.visit-region { background: #f6f1ec; padding: 1.5rem; margin-top: 1.5rem; border-radius: 1rem; }
+.reading-tools { padding: 2rem max(1.25rem, calc((100% - 76rem)/2)); background: #211b1c; }
+.reading-tools h2 { font-size: 1.5rem; font-weight: 700; }
+.reading-tools p { margin: .5rem 0 1rem; }
+.reading-tools button { min-height: 48px; padding: .65rem 1rem; background: white; color: #211b1c; border-radius: .5rem; font-size: 1rem; font-weight: 600; }
+.reading-tools button:disabled { opacity: .55; }
+.suprema-credit { flex-direction: column; padding: 1.5rem; min-width: min(100%, 16rem); }
+.suprema-logo { width: 220px; max-width: 100%; height: auto; object-fit: contain; }
+:focus-visible { outline: 3px solid #146bd1 !important; outline-offset: 4px; }
+button, a { touch-action: manipulation; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+nav ol { flex-wrap: wrap; }
+@media (max-width: 64rem) { .visit-cards { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+body { position: relative; }
+footer { padding-bottom: 6rem; }
+.back-to-top { bottom: 1.5rem; left: 1.25rem; z-index: 40; width: 56px; height: 56px; display:flex; align-items:center; justify-content:center; border-radius:50%; color:white; background:#a31924; box-shadow:0 4px 16px #0003; }
+html[data-large-text="true"] h1, html[data-large-text="true"] h2, html[data-large-text="true"] h3, html[data-large-text="true"] p, html[data-large-text="true"] a { overflow-wrap: anywhere; }
+html[data-large-text="true"] header img { width: 90px; height: auto; }
+html[data-large-text="true"] header nav > .max-w-7xl { padding-left: 12px; padding-right: 12px; }
+html[data-large-text="true"] header button { width: 56px; height: 56px; flex-shrink: 0; }
+html[data-large-text="true"] header .xl\:hidden > a { padding: 8px; font-size: 16px; height: 44px; }
+html[data-large-text="true"] header .xl\:hidden { gap: 4px; }
+html[data-large-text="true"] .p-8 { padding: 1rem; }
+html[data-large-text="true"] .px-8 { padding-left: 1rem; padding-right: 1rem; }
+html[data-large-text="true"] .visit-cards { grid-template-columns: 1fr; }
+html[data-large-text="true"] footer .grid { grid-template-columns: 1fr; }

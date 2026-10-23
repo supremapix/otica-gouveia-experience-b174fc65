@@ -1,0 +1,12 @@
+{
+  "routesUnchanged": true,
+  "originalImagesUnchanged": true,
+  "homeProductsUnchanged": true,
+  "catalogProductsUnchanged": true,
+  "counts": {
+    "routes": 113,
+    "images": 79,
+    "homeProducts": 15,
+    "catalogProducts": 18
+  }
+}

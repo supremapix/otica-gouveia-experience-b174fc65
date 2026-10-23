@@ -1,0 +1,43 @@
+
+> vite_react_shadcn_ts@0.0.0 lint
+> eslint .
+
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\FAQ.tsx
+  102:16  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\FloatingButtonsGroup.tsx
+  16:6  warning  React Hook useEffect has a missing dependency: 'footerVisible'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\ImageGallery.tsx
+  138:6  warning  React Hook useEffect has a missing dependency: 'closeLightbox'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\OnlineCounter.tsx
+  47:6  warning  React Hook useEffect has a missing dependency: 'notifications.length'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\PremiumFAQ.tsx
+  36:6  warning  React Hook useEffect has a missing dependency: 'filteredItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\SEO.tsx
+  86:16  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\ui\badge.tsx
+  36:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\ui\button.tsx
+  56:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\ui\form.tsx
+  168:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\ui\navigation-menu.tsx
+  119:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\ui\sidebar.tsx
+  760:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\user\Documents\Codex\2026-10-23\task-6\repo\src\components\ui\toggle.tsx
+  43:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+Ô£û 12 problems (0 errors, 12 warnings)
+

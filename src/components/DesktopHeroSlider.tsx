@@ -68,7 +68,7 @@ const DesktopHeroSlider = () => {
   const next = useCallback(() => setCurrent((p) => (p + 1) % slides.length), []);
 
   useEffect(() => {
-    if (paused) return;
+    if (paused || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const t = setInterval(next, 6000);
     return () => clearInterval(t);
   }, [paused, next]);
@@ -99,7 +99,7 @@ const DesktopHeroSlider = () => {
                 <div className={`gh-inner${slide.dark ? ' gh-dark' : ''}`}>
                   {active && (
                     <>
-                      <h1 className="gh-title">
+                      <h2 className="gh-title">
                         {slide.titleLines.map((line, li) => (
                           <span className="gh-line" key={li}>
                             {line.split(' ').map((word, wi) => (
@@ -114,7 +114,7 @@ const DesktopHeroSlider = () => {
                             ))}
                           </span>
                         ))}
-                      </h1>
+                      </h2>
 
                       <span className="gh-rule" />
 

@@ -1,7 +1,7 @@
+import VisitGuide from './VisitGuide';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtonsGroup from "@/components/FloatingButtonsGroup";
-import BackToTop from "@/components/BackToTop";
 import EnhancedSEO from "@/components/EnhancedSEO/EnhancedSEO";
 import ModernHeroSection from "@/components/ModernHeroSection";
 import ImageGallery from "@/components/ImageGallery";
@@ -25,10 +25,10 @@ interface NeighborhoodPageProps {
 
 const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
   const whatsappMessage = encodeURIComponent(`Olá! Vim do site e gostaria de saber mais sobre óculos para ${data.name}.`);
-  const whatsappUrl = `https://wa.me/554199161663?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/5541991610663?text=${whatsappMessage}`;
 
-  const isMainUnit = ['Pinheirinho', 'Sítio Cercado', 'Umbará'].includes(data.name);
-  const address = data.name === 'Umbará' ? 'R. Nicola Pellanda, 1286 - Umbará, Curitiba - PR' : undefined;
+  const isMainUnit = true;
+  const address = 'R. Nicola Pellanda, 1286 - Umbará, Curitiba - PR';
 
   const breadcrumbData = createBreadcrumbSchema([
     { name: "Início", url: "https://www.gouveiacuritiba.com.br" },
@@ -37,13 +37,13 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
 
   const opticalStoreData = createOpticalStoreSchema(data.name);
   const localBusinessData = createLocalBusinessSchema(data.name);
-  const structuredData = [breadcrumbData, opticalStoreData, localBusinessData];
+  const structuredData = [breadcrumbData, opticalStoreData];
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <EnhancedSEO
-        title={data.title}
-        description={data.metaDescription}
+        title={`Ótica Gouveia | Visita de ${data.name} à loja no Umbará`}
+        description={`Mora em ${data.name}? Planeje sua visita à Ótica Gouveia, Rua Nicola Pellanda, 1286, Umbará. Consulte catálogo, contato e etapas para comprar óculos.`}
         canonicalUrl={data.slug}
         keywords={data.keywords.join(", ")}
         structuredData={structuredData}
@@ -73,6 +73,7 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
       />
 
        <main className="flex-grow">
+         <VisitGuide name={data.name} city={data.type === "cidade"} />
          {/* Galeria de Imagens — logo após o Hero */}
          <ImageGallery neighborhoodName={data.name} />
 
@@ -91,13 +92,13 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
         <DeliveryAreaMap neighborhoodName={data.name} />
 
         {/* FAQ Premium 155 Perguntas */}
-        <PremiumFAQ neighborhoodName={data.name} />
+        <LocalFAQSection neighborhoodName={data.name} />
 
         {/* Dicas de Saúde Visual */}
         <HealthTipsSection />
 
         {/* FAQ Local (mantido) */}
-        <LocalFAQSection neighborhoodName={data.name} />
+
 
         {/* CTA Final */}
         <FinalCTASection 
@@ -108,7 +109,7 @@ const NeighborhoodPage = ({ data }: NeighborhoodPageProps) => {
 
       <Footer />
       <FloatingButtonsGroup />
-      <BackToTop />
+      
     </div>
   );
 };

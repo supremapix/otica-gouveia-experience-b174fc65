@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useDialogFocus } from '../hooks/useDialogFocus';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { X, ChevronLeft, ChevronRight, ZoomIn, Camera } from 'lucide-react';
 
 interface ImageGalleryProps {
@@ -57,9 +58,8 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ neighborhoodName }) => {
     setLightboxOpen(true);
   };
 
-  const closeLightbox = () => {
-    setLightboxOpen(false);
-  };
+  const closeLightbox = useCallback(() => setLightboxOpen(false), []);
+  useDialogFocus(lightboxOpen, "#gallery-dialog", closeLightbox);
 
   const nextImage = () => {
     setCurrentImage((prev) => (prev + 1) % galleryImages.length);
@@ -187,13 +187,15 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ neighborhoodName }) => {
               >
                 <div
                   className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-all duration-500 hover:shadow-2xl hover:scale-[1.02]"
+                  role="button" tabIndex={0} aria-label={`Ampliar foto: ${image.title}`}
+                  onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(index); } }}
                   onClick={() => openLightbox(index)}
                 >
                   <img
                     src={image.src}
                     alt={image.alt}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    loading="lazy"
+                    loading="lazy" decoding="async" width="640" height="480"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
                   <div className="absolute top-4 right-4 bg-white/90 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
@@ -224,7 +226,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ neighborhoodName }) => {
 
         <div className="text-center mt-10 sm:mt-12">
           <a
-            href="https://wa.me/554199161663?text=Olá! Gostaria de conhecer mais armações da Ótica Gouveia."
+            href="https://wa.me/5541991610663?text=Olá! Gostaria de conhecer mais armações da Ótica Gouveia."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
@@ -237,7 +239,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ neighborhoodName }) => {
       {/* Lightbox */}
       {lightboxOpen && (
         <div 
-          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
+          id="gallery-dialog" role="dialog" aria-modal="true" aria-label="Photo ampliada" className="fixed inset-0 bg-black/95 z-[10001] flex items-center justify-center p-4"
           onClick={closeLightbox}
         >
           <button onClick={closeLightbox} className="absolute top-4 right-4 text-white hover:text-primary p-2 transition-colors z-50" aria-label="Fechar">

@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useDialogFocus } from '../hooks/useDialogFocus';
+import { useState, useEffect, useCallback } from 'react';
 import { Menu, X, Phone, MapPin, Clock } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
@@ -7,6 +8,8 @@ const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5541991610663&text=Ol%
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const closeMenu = useCallback(() => setIsOpen(false), []);
+  useDialogFocus(isOpen, '#mobile-menu', closeMenu);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -26,6 +29,12 @@ const Navbar = () => {
     }
     return () => { document.body.style.overflow = ''; };
   }, [isOpen]);
+
+  useEffect(() => {
+    const close = (event: KeyboardEvent) => { if (event.key === 'Escape') setIsOpen(false); };
+    window.addEventListener('keydown', close);
+    return () => window.removeEventListener('keydown', close);
+  }, []);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, link: { href: string; page?: string }) => {
     e.preventDefault();
@@ -55,7 +64,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999]">
       {/* Top Info Bar - Desktop only */}
-      <div className="bg-primary-dark text-primary-foreground py-2 px-4 hidden md:block">
+      <div className="bg-primary-dark text-primary-foreground py-2 px-4 hidden xl:block">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="flex space-x-4 items-center text-sm">
             <a href="tel:+554131140663" className="flex items-center hover:text-white/80 transition-colors">
@@ -121,13 +130,13 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   className="bg-white text-primary px-5 py-2.5 rounded-pill hover:bg-white/90 transition-all duration-300 hover:scale-105 text-sm lg:text-base font-bold"
                 >
-                  Agendar Consulta
+                  Falar com a ótica
                 </a>
               </div>
             </div>
             
             {/* Mobile Quick Actions + Menu Button */}
-            <div className="md:hidden flex items-center gap-2">
+            <div className="xl:hidden flex items-center gap-2">
               <a
                 href="tel:+554131140663"
                 className="inline-flex items-center justify-center gap-1.5 bg-white text-primary px-3 h-11 rounded-full font-bold text-sm shadow-md"
@@ -139,7 +148,7 @@ const Navbar = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="inline-flex flex-col items-center justify-center w-14 h-14 rounded-md text-white hover:text-white/80 focus:outline-none focus:ring-2 focus:ring-white transition-colors"
-                aria-label="Abrir menu de navegação"
+                aria-label="Abrir menu de navegação" aria-expanded={isOpen} aria-controls="mobile-menu"
               >
                 {isOpen ? (
                   <X className="block h-8 w-8" strokeWidth={3} aria-hidden="true" />
@@ -155,8 +164,8 @@ const Navbar = () => {
         </div>
         
         {/* Mobile Menu - Fullscreen, otimizado melhor idade */}
-        <div 
-          className={`md:hidden fixed inset-0 top-0 z-[9999] transition-all duration-300 ease-in-out overflow-y-auto ${
+        <div role="dialog" aria-modal="true" aria-label="Menu de navegação" id="mobile-menu" hidden={!isOpen}
+          className={`xl:hidden fixed inset-0 top-0 z-[9999] transition-all duration-300 ease-in-out overflow-y-auto ${
             isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
           }`}
           style={{ backgroundColor: 'hsl(var(--primary))' }}
