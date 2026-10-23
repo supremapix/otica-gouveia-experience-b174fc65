@@ -146,8 +146,8 @@ const ProdutosPage = () => {
                   onClick={() => setSelected(p)}
                 className="bg-white rounded-2xl border border-border/50 overflow-hidden cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="h-56 overflow-hidden">
-                  <img src={p.image} alt={p.name} className="w-full h-full object-contain bg-white p-4 hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" width="640" height="480" />
+                <div className="h-56 overflow-hidden gallery-card-media">
+                  <img src={p.image} alt={p.name} className="gallery-card-image" loading="lazy" decoding="async" width="640" height="480" />
                 </div>
                 <div className="p-5">
                   <div className="flex justify-between items-start mb-2">

@@ -239,11 +239,11 @@ const Products = () => {
                     className="bg-white rounded-xl overflow-hidden shadow-sm border border-brand-gray-200 transition-all duration-300 hover:shadow-md hover:-translate-y-1 cursor-pointer mx-2"
                     role="button" tabIndex={0} aria-label={`Ver detalhes de ${product.name}`} onKeyDown={e=>{if(e.target===e.currentTarget && (e.key==="Enter" || e.key===" ")) {e.preventDefault();setSelectedProduct(product);}}} onClick={() => setSelectedProduct(product)}
                   >
-                    <div className="h-64 overflow-hidden">
+                    <div className="h-64 overflow-hidden gallery-card-media">
                       <img 
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-full object-contain bg-white p-4 transition-transform duration-700 hover:scale-105"
+                        className="gallery-card-image"
                         loading="lazy" decoding="async" width="640" height="480"
                       />
                     </div>
@@ -287,11 +287,11 @@ const Products = () => {
                   role="button" tabIndex={0} aria-label={`Ver detalhes de ${product.name}`} onKeyDown={e=>{if(e.target===e.currentTarget && (e.key==="Enter" || e.key===" ")) {e.preventDefault();setSelectedProduct(product);}}} onClick={() => setSelectedProduct(product)}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="h-64 overflow-hidden">
+                  <div className="h-64 overflow-hidden gallery-card-media">
                     <img 
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-contain bg-white p-4 transition-transform duration-700 hover:scale-105"
+                      className="gallery-card-image"
                       loading="lazy" decoding="async" width="640" height="480"
                     />
                   </div>
