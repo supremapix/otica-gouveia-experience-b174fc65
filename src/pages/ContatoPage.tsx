@@ -108,51 +108,59 @@ const ContatoPage = () => {
             ))}
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Formulário */}
-            <div>
+            <div className="min-w-0">
               <h2 className="text-2xl font-black text-foreground mb-6">Envie uma Mensagem</h2>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-2">Seu nome *</label>
+                  <label htmlFor="contact-name" className="block text-sm font-semibold text-foreground mb-2">Seu nome *</label>
                   <input
                     type="text"
+                    id="contact-name"
+                    name="name"
+                    autoComplete="name"
                     required
                     value={formData.name}
                     onChange={e => setFormData(p => ({ ...p, name: e.target.value }))}
-                    className="w-full px-4 py-3 rounded-xl border border-border focus:outline-none focus:ring-2 text-foreground"
+                    className="min-w-0 max-w-full w-full px-4 py-3 rounded-xl border border-border focus:outline-none focus:ring-2 text-foreground"
                     style={{ '--tw-ring-color': 'hsl(0,75%,42%)' } as React.CSSProperties}
                     placeholder="João Silva"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-2">WhatsApp / Telefone *</label>
+                  <label htmlFor="contact-phone" className="block text-sm font-semibold text-foreground mb-2">WhatsApp / Telefone *</label>
                   <input
                     type="tel"
+                    id="contact-phone"
+                    name="phone"
+                    autoComplete="tel"
                     required
                     value={formData.phone}
                     onChange={e => setFormData(p => ({ ...p, phone: e.target.value }))}
-                    className="w-full px-4 py-3 rounded-xl border border-border focus:outline-none focus:ring-2 text-foreground"
+                    className="min-w-0 max-w-full w-full px-4 py-3 rounded-xl border border-border focus:outline-none focus:ring-2 text-foreground"
                     placeholder="(41) 99999-9999"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-2">Mensagem *</label>
+                  <label htmlFor="contact-message" className="block text-sm font-semibold text-foreground mb-2">Mensagem *</label>
                   <textarea
+                    id="contact-message"
+                    name="message"
                     required
                     rows={4}
                     value={formData.message}
                     onChange={e => setFormData(p => ({ ...p, message: e.target.value }))}
-                    className="w-full px-4 py-3 rounded-xl border border-border focus:outline-none focus:ring-2 text-foreground resize-none"
+                    className="min-w-0 max-w-full w-full px-4 py-3 rounded-xl border border-border focus:outline-none focus:ring-2 text-foreground resize-none"
                     placeholder="Como podemos ajudar você?"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-full font-bold text-base transition-all hover:scale-105 shadow-lg inline-flex items-center justify-center gap-2"
+                  className="w-full px-4 py-4 rounded-full font-bold text-base leading-normal transition-colors shadow-lg inline-flex flex-wrap items-center justify-center gap-2"
                   style={{ backgroundColor: '#ffffff', color: 'hsl(0,75%,42%)' }}
                 >
-                  <MessageCircle className="w-5 h-5" /> Enviar pelo WhatsApp
+                  <MessageCircle className="w-5 h-5 shrink-0" aria-hidden="true" /> <span className="min-w-0 [overflow-wrap:anywhere]">Enviar pelo WhatsApp</span>
                 </button>
               </form>
             </div>

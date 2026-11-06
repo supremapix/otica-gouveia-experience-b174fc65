@@ -65,8 +65,8 @@ const SEO = ({
       <meta name="twitter:image:alt" content={title} />
       
       {/* Additional SEO Tags */}
-      <meta name="theme-color" content="#ef4444" />
-      <meta name="msapplication-TileColor" content="#ef4444" />
+      <meta name="theme-color" content="#94182d" />
+      <meta name="msapplication-TileColor" content="#94182d" />
 
       
       {/* Geo Tags for Local SEO */}

@@ -132,8 +132,8 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
       <meta name="twitter:image:alt" content={title} />
       
       {/* Additional SEO Tags */}
-      <meta name="theme-color" content="#ef4444" />
-      <meta name="msapplication-TileColor" content="#ef4444" />
+      <meta name="theme-color" content="#94182d" />
+      <meta name="msapplication-TileColor" content="#94182d" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <meta name="apple-mobile-web-app-title" content={siteName} />
