@@ -1,3 +1,5 @@
+import BlackNovemberPromotion from '../components/BlackNovemberPromotion';
+import '../promotion.css';
 import EditorialHero from '../components/EditorialHero';
 import VisitGuide from '../components/VisitGuide';
 import { useState, useEffect, Suspense } from 'react';
@@ -120,6 +122,7 @@ const Index = () => {
 
       
       <main id="main-content" className="gv-home">
+      <BlackNovemberPromotion />
       <EditorialHero />
       <section id="products">
         <ErrorBoundary componentName="Products" fallback={<div className="p-4">Error</div>}>

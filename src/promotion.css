@@ -1,0 +1,117 @@
+/* Campaign copy and artwork supplied by Ótica Gouveia. No expiry date supplied. */
+.gv-black-november {
+  padding: 136px 40px 48px;
+  background: #201c17;
+  color: #fffdf7;
+  border-bottom: 4px solid #dfd3a0;
+}
+
+.gv-promotion-inner {
+  max-width: 1184px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 64px;
+}
+
+.gv-promotion-eyebrow {
+  color: #dfd3a0;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.gv-home .gv-black-november h2 {
+  font-size: clamp(2.75rem, 5.1vw, 4.8rem);
+  line-height: .98;
+  font-weight: 700 !important;
+  letter-spacing: -.055em;
+  text-transform: uppercase;
+  margin: 0 0 30px;
+}
+
+.gv-promotion-discount > span {
+  display: block;
+  font-size: .95rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.gv-promotion-discount strong {
+  display: block;
+  color: #dfd3a0;
+  font-size: clamp(4.75rem, 8.5vw, 8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.07em;
+  white-space: nowrap;
+}
+
+.gv-promotion-discount strong > span {
+  font-size: .4em;
+  letter-spacing: -.04em;
+}
+
+.gv-promotion-discount small { font-size: .65em; }
+.gv-promotion-condition { color: #dfd3a0; font-size: 1.15rem; margin-top: 4px; }
+.gv-promotion-invite { margin: 26px 0 16px; font-size: 1.05rem; font-weight: 600; }
+.gv-promotion-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 24px; }
+.gv-promotion-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 16px 20px;
+  border-radius: 4px;
+  background: #dfd3a0;
+  color: #201c17;
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.gv-promotion-button:hover { background: #f0e6bc; }
+.gv-promotion-button svg, .gv-promotion-location svg { flex-shrink: 0; }
+.gv-promotion-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 10px 0;
+  color: #fffdf7;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: .95rem;
+}
+.gv-promotion-note { max-width: 380px; color: #c9c0b1; font-size: .8rem; margin-top: 16px; }
+.gv-black-november a:focus-visible { outline: 3px solid #fffdf7 !important; outline-offset: 5px; }
+.gv-promotion-art { width: 100%; max-width: 460px; justify-self: end; margin: 0; }
+.gv-promotion-art img { display: block; width: 100%; height: auto; border: 1px solid #635b4d; border-radius: 4px; }
+.gv-black-november + .gv-hero { padding-top: 64px; }
+
+@media (max-width: 1000px) {
+  .gv-black-november { padding: 112px 32px 40px; }
+  .gv-promotion-inner { gap: 32px; }
+  .gv-promotion-eyebrow { font-size: .65rem; }
+}
+
+@media (max-width: 700px) {
+  .gv-black-november { padding: 108px 22px 32px; }
+  .gv-promotion-inner { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .gv-home .gv-black-november h2 { font-size: clamp(2.75rem, 11vw, 4.8rem); margin-bottom: 24px; }
+  .gv-promotion-discount strong { font-size: clamp(4.75rem, 20vw, 7rem); }
+  .gv-promotion-button { width: 100%; }
+  .gv-promotion-art { justify-self: center; }
+  .gv-promotion-invite { margin-top: 22px; }
+  .gv-black-november + .gv-hero { padding-top: 40px; }
+}
+
+html[data-large-text="true"] .gv-promotion-inner { grid-template-columns: minmax(0, 1fr); }
+html[data-large-text="true"] .gv-promotion-art { justify-self: start; }
+html[data-large-text="true"] .gv-home .gv-black-november h2 { font-size: clamp(2rem, 8vw, 4rem); overflow-wrap: anywhere; }
+html[data-large-text="true"] .gv-promotion-discount strong { font-size: clamp(4rem, 15vw, 7rem); }
+html[data-large-text="true"] .gv-promotion-button { flex-wrap: wrap; }
