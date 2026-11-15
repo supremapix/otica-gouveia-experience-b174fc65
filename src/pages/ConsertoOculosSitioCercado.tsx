@@ -110,10 +110,10 @@ const ConsertoOculosSitioCercado = () => {
               <li>Envie fotos nítidas dos óculos inteiros e do detalhe danificado. Informe o modelo, se souber, e o que aconteceu.</li>
               <li>Conte se uma peça caiu ou se já houve tentativa de reparo. Guarde os componentes soltos para apresentar na avaliação.</li>
               <li>Confirme a loja, o horário e se será preciso levar os óculos. Fotos ajudam no primeiro contato, mas não substituem a inspeção.</li>
-              <li>Antes de autorizar, confira a solução proposta, o valor, o prazo e as condições de retirada ou entrega.</li>
+              <li>Antes de autorizar, confira a solução proposta, o valor, o prazo e as condições de retirada.</li>
             </ol>
             <p>Não force hastes ou dobradiças nem aplique cola por conta própria: isso pode dificultar a avaliação e o reparo. Nenhum resultado é garantido antes de examinar a peça.</p>
-            <p>Para moradores do Sítio Cercado, consulte disponibilidade, taxa e condições de entrega pelo WhatsApp. Não presuma retirada ou entrega incluída no serviço.</p>
+            <p>Para moradores do Sítio Cercado, confirme pelo WhatsApp o endereço e o horário de retirada antes de se deslocar. A página de contato informa retirada presencial na loja.</p>
             <Link className="underline font-bold" to="/contato">Confira as lojas e os canais de contato</Link>
           </div>
         </section>
