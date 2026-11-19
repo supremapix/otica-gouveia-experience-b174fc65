@@ -1,4 +1,4 @@
-/* LOCAL DESIGN PROPOSAL — not published. */
+/* Identidade editorial da Ótica Gouveia. */
 :root{--primary:351 77% 33%;--primary-dark:351 70% 22%;--background:40 23% 97%;--foreground:0 4% 13%;--muted-foreground:0 3% 35%;--border:30 12% 85%;--header-height:88px}
 body{background:#faf9f6;color:#252223;font-family:Inter,Arial,sans-serif}h1,h2,h3{font-family:Inter,Arial,sans-serif;letter-spacing:-.035em}p{line-height:1.75}a,button{transition:background-color .18s,color .18s}section[id]{scroll-margin-top:110px}
 .gv-header{position:fixed;inset:0 0 auto;background:#faf9f6f5;backdrop-filter:blur(16px);z-index:9999;border-bottom:1px solid #e3dfda}.gv-nav{max-width:1344px;margin:auto;display:flex;align-items:center;gap:28px;padding:12px 40px;min-height:88px}.gv-brand{background:#99172e;display:flex;align-items:center;justify-content:center;width:146px;height:60px;flex-shrink:0;border-radius:3px}.gv-brand img{width:118px;height:auto}.gv-desktop-links{display:flex;gap:24px;margin:auto}.gv-desktop-links a{font-size:15px;font-weight:600;padding:14px 0;color:#383235}.gv-desktop-links a[aria-current=page]{color:#94182d;border-bottom:2px solid}.gv-phone{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;white-space:nowrap}.gv-menu-toggle{display:none}.gv-skip{position:absolute;transform:translateY(-200%);background:white;padding:16px}.gv-skip:focus{transform:none;z-index:10001}
@@ -21,3 +21,25 @@ html[data-large-text=true] .gv-nav{gap:8px;padding:8px 12px}html[data-large-text
 .gallery-card-image[src*="d3ddb8a3"],.gallery-card-image[src*="59e66895"],.gallery-card-image[src*="78fd2b6e"]{object-position:50% 100%}
 .gallery-card-image[src*="cb5792fa"]{object-position:25% 50%}
 .gallery-card-image[src*="593e7657"]{object-position:50% 55%}
+
+/* Consistent editorial reading and generous touch targets on every route. */
+body {font-size:1.125rem;line-height:1.65}
+main p,main article li,main .visit-cards p,main .visit-region p {font-size:max(1.125rem,18px);line-height:1.65}
+main h1,main h2,main h3 {overflow-wrap:break-word;text-wrap:balance}
+.gv-hero-description,.gv-page-hero p {font-size:1.125rem;line-height:1.65}
+.gv-button,.gv-text-link,.gv-phone,.gv-menu-toggle,.gv-footer-grid nav a,.visit-cards a,.visit-region nav a {min-height:44px}
+.gv-text-link,.gv-footer-grid nav a,.visit-cards a {display:inline-flex;align-items:center}
+.gv-desktop-links a,.gv-phone,.gv-button,.gv-text-link,.gv-mobile-menu nav a,.gv-menu-contact a,.gv-footer-grid a {font-size:1rem}
+.gv-button,.gv-text-link,.visit-cards a,.visit-region a {white-space:normal;overflow-wrap:anywhere}
+.gv-footer-grid a:not(.gv-footer-phone),.visit-cards a:not(.gv-button) {text-decoration:underline;text-underline-offset:.2em}
+:where(a,button,input,select,textarea,summary):focus-visible {outline:3px solid #94182d;outline-offset:3px;box-shadow:0 0 0 2px #fff}
+.gv-footer :where(a,button):focus-visible {outline-color:#fff;box-shadow:none}
+.gv-page-hero > div,.gv-hero-copy,.visit-cards article,.gv-footer-grid > * {min-width:0}
+.gv-terminal .gv-page-hero {scroll-margin-top:var(--header-height)}
+@media(max-width:640px){
+ .gv-page-actions{display:flex;flex-wrap:wrap;gap:.75rem}
+ .gv-page-actions>.gv-button {width:100%}
+ .gv-footer-grid a,.gv-menu-contact a {overflow-wrap:anywhere}
+ .gv-nav .gv-menu-toggle {padding:0 .25rem;white-space:nowrap}
+ .gv-footer-grid nav a {display:flex}
+}
