@@ -349,7 +349,8 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
       'Nossa equipe especializada oferece serviços ópticos completos para moradores e visitantes: exame de vista gratuito com equipamentos de última geração, confecção de óculos de grau com lentes de alta qualidade incluindo opções monofocais, bifocais e multifocais progressivas. Disponibilizamos tratamentos especiais como anti-reflexo multicamadas, proteção contra luz azul para uso de computador, lentes fotocromáticas Transitions ideais para quem aprecia os passeios ao ar livre pelas vinícolas e parques da região, além de proteção UV 400. Trabalhamos também com lentes de contato de diversas marcas para todas as necessidades.',
       'Em Santa Felicidade você encontra as melhores marcas de óculos com atendimento diferenciado: Ray-Ban com modelos elegantes, Oakley para esportes e atividades ao ar livre, Arnette, Chilli Beans e diversas armações nacionais e importadas de excelente qualidade. A Ótica Gouveia se diferencia pelo atendimento familiar e personalizado - cada cliente recebe atenção individual para escolher a armação ideal. Parcelamos em até 12x sem juros, aceitamos convênios e planos de saúde, com condições especiais para pagamento à vista.',
       'Santa Felicidade está localizada na região noroeste de Curitiba, com fácil acesso pela Avenida Manoel Ribas e Via Vêneto. O bairro é vizinho de Lamenha Pequena, Butiatuvinha, São João e Orleans, formando uma região turística e residencial de alta qualidade. A Ótica Gouveia entrega em todo o bairro e região, garantindo praticidade para moradores que valorizam qualidade e tradição.',
-      'Morador de Santa Felicidade, cuide da sua visão com tradição e qualidade! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita em Santa Felicidade para compras acima de R$ 250,00. Ótica Gouveia - assim como as cantinas italianas, mais de 40 anos de tradição!'
+      'Morador de Santa Felicidade, cuide da sua visão com tradição e qualidade! Agende seu exame de vista gratuito pelo WhatsApp (41) 99955-0667 e receba seus óculos em casa. Entrega gratuita em Santa Felicidade para compras acima de R$ 250,00. Ótica Gouveia - assim como as cantinas italianas, mais de 40 anos de tradição!',
+      "Para escolher seus óculos com calma, escreva duas ou três situações do dia a dia em que você mais os usa: ler etiquetas, acompanhar a televisão ou sair para caminhar. Leve a anotação junto com a receita e os óculos atuais. Na loja, peça para experimentar a armação sentado e conte onde o par antigo incomoda ou escorrega.",
     ],
     characteristics: 'Bairro tradicional com herança italiana e gastronomia típica',
     nearbyLandmarks: ['Portal de Santa Felicidade', 'Vinícolas', 'Restaurantes Italianos'],
@@ -967,7 +968,8 @@ export const neighborhoodData: Record<string, NeighborhoodData> = {
     description: [
       'O Bairro Alto é um bairro residencial de Curitiba, conhecido por sua localização elevada e vistas panorâmicas. Moradores do Bairro Alto valorizam tranquilidade e bons serviços.',
       'A Ótica Gouveia atende os moradores do Bairro Alto. Oferecemos compra online com entrega via motoboy para pedidos acima de R$ 250,00.',
-      'Mais de 40 anos cuidando da visão. Óculos de grau para todas as necessidades, óculos de sol, lentes de contato e exame de vista gratuito.'
+      'Mais de 40 anos cuidando da visão. Óculos de grau para todas as necessidades, óculos de sol, lentes de contato e exame de vista gratuito.',
+      "Se for outra pessoa quem vai ajudar a retirar os óculos, anote o nome de quem fez o pedido e ligue antes para saber o que levar. Na entrega, guarde o telefone da ótica junto do estojo. Se a armação ficar frouxa ou apertar atrás das orelhas, descreva onde ela incomoda e pergunte como combinar um ajuste.",
     ],
     characteristics: 'Bairro residencial em localização elevada',
     nearbyLandmarks: ['Próximo ao Bacacheri'],
