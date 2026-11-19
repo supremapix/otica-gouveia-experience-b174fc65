@@ -10,37 +10,37 @@ export interface PageContactContent {
 const pageContent: Record<string, PageContactContent> = {
   '/': {
     title: 'Óculos e lentes na Ótica Gouveia',
-    description: 'Conheça nossas armações e lentes e converse com a equipe sobre modelos, valores e etapas da compra. Nossa loja fica no Umbará, em Curitiba.',
+    description: 'Se prefere escolher com calma, conte à equipe como usa seus óculos no dia a dia. Você pode começar por telefone e anotar o endereço da loja, no Umbará, antes de sair.',
     action: 'Conversar com a Ótica Gouveia',
     message: 'Olá! Vim pelo site da Ótica Gouveia e gostaria de informações sobre óculos e lentes.',
   },
   '/sobre': {
     title: 'Conheça a equipe da Ótica Gouveia',
-    description: 'Quer saber mais sobre a loja e nosso atendimento? Tire suas dúvidas com a equipe e planeje uma visita ao endereço no Umbará.',
+    description: 'Na visita à loja, reserve tempo para provar armações e comparar o conforto. Se preferir, venha com alguém de sua confiança para ajudar a lembrar as opções e os valores.',
     action: 'Falar com a equipe da loja',
     message: 'Olá! Li sobre a Ótica Gouveia e gostaria de conhecer melhor a loja e o atendimento.',
   },
   '/produtos': {
     title: 'Gostou de um modelo do catálogo?',
-    description: 'Consulte os modelos disponíveis, valores e opções de lentes diretamente com a equipe. Confirme os detalhes do produto antes de visitar a loja.',
+    description: 'Anote ou fotografe o nome da armação que gostou. Antes de sair, pergunte se está disponível para provar e compare o apoio no nariz, o encaixe atrás das orelhas e a facilidade de colocar e retirar.',
     action: 'Consultar modelos pelo WhatsApp',
     message: 'Olá! Vi o catálogo da Ótica Gouveia e gostaria de consultar modelos e valores.',
   },
   '/servicos': {
     title: 'Converse sobre os cuidados com seus óculos',
-    description: 'Consulte a equipe sobre medidas para montagem, ajustes e manutenção. A possibilidade de cada serviço depende da avaliação dos seus óculos na loja.',
+    description: 'Se os óculos escorregam ou apertam, leve o par à loja e diga onde sente incômodo. Pergunte se a armação pode ser ajustada e peça o valor antes de autorizar o serviço.',
     action: 'Consultar os serviços da ótica',
     message: 'Olá! Vi os serviços da Ótica Gouveia e gostaria de esclarecer uma dúvida com a equipe.',
   },
   '/contato': {
     title: 'Fale diretamente com a Ótica Gouveia',
-    description: 'Use o WhatsApp ou o telefone para consultar produtos e combinar sua visita. Confira abaixo o endereço da nossa loja no Umbará.',
+    description: 'Não precisa usar WhatsApp: toque no telefone abaixo para ligar. Tenha papel à mão para anotar o endereço, o horário e o que levar no dia da visita.',
     action: 'Iniciar conversa no WhatsApp',
     message: 'Olá! Encontrei o contato da Ótica Gouveia no site e gostaria de falar com a equipe.',
   },
   '/faq': {
     title: 'Ainda tem dúvidas sobre a compra dos seus óculos?',
-    description: 'A equipe pode esclarecer dúvidas sobre produtos e atendimento na loja. Para avaliação da saúde dos olhos e prescrição, consulte um oftalmologista.',
+    description: 'Anote as dúvidas antes de falar com a equipe, como o valor total, o que está incluído e a previsão de retirada. Para avaliação da saúde dos olhos e prescrição, consulte um oftalmologista.',
     action: 'Tirar dúvidas com a ótica',
     message: 'Olá! Consultei as perguntas frequentes da Ótica Gouveia e tenho uma dúvida sobre produtos ou atendimento.',
   },
@@ -52,7 +52,7 @@ const pageContent: Record<string, PageContactContent> = {
   },
   '/blog/oculos-ou-lentes': {
     title: 'Converse sobre óculos e lentes antes de comprar',
-    description: 'Depois da orientação do profissional que acompanha sua visão, consulte a ótica sobre produtos e valores. O conteúdo do site não substitui avaliação nem prescrição.',
+    description: 'Se colocar ou retirar lentes de contato for difícil, conte isso ao profissional que acompanha sua visão. Leve sua receita e o par de óculos que já usa quando for comparar opções na ótica. Este artigo não substitui avaliação nem prescrição.',
     action: 'Consultar produtos com a equipe',
     message: 'Olá! Li o artigo sobre óculos e lentes no site da Ótica Gouveia e gostaria de consultar os produtos da loja.',
   },
@@ -106,7 +106,7 @@ export function getPageContactContent(pathname: string): PageContactContent {
     }
     return {
       title: `De ${region} à Ótica Gouveia no Umbará`,
-      description: `Está em ${region}? Consulte produtos e planeje sua visita à nossa loja no Umbará, em Curitiba. Esta página orienta seu deslocamento e não representa uma filial em ${region}.`,
+      description: `Saindo de ${region}, confirme por telefone o horário e se vale levar sua receita ou os óculos atuais. O atendimento é na loja do Umbará, em Curitiba; esta página não representa uma filial em ${region}.`,
       action: 'Consultar produtos e planejar a visita',
       message: `Olá! Vi a página de ${region} no site da Ótica Gouveia e gostaria de informações sobre produtos e a visita à loja no Umbará.`,
     };
