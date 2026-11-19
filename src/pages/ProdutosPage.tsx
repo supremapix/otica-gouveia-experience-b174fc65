@@ -63,7 +63,7 @@ const ProdutosPage = () => {
       createWebPageSchema({
         name: 'Catálogo de produtos da Ótica Gouveia',
         description:
-          'Armações femininas, masculinas e infantis, óculos de sol e lentes multifocais disponíveis na Ótica Gouveia em Curitiba.',
+          'Armações femininas, masculinas e infantis, óculos de sol e lentes multifocais no catálogo da Ótica Gouveia em Curitiba.',
         url,
         primaryTopic: 'Armações e lentes em Curitiba',
       }),
@@ -75,16 +75,10 @@ const ProdutosPage = () => {
           '@type': 'ListItem',
           position: i + 1,
           item: {
-            '@type': 'Product',
+            '@type': 'Thing',
             name: p.name,
             description: p.desc,
             image: `${SITE_URL}${p.image}`,
-            category: p.category,
-            offers: {
-              '@type': 'Offer',
-              priceCurrency: 'BRL',
-              availableAtOrFrom: { '@id': `${SITE_URL}/#optician` },
-            },
           },
         })),
       },
