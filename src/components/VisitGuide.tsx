@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
 import { localRoutes } from '@/data/siteRoutes';
 const nearby = ['umbara', 'pinheirinho', 'sitio-cercado', 'xaxim', 'capao-raso', 'novo-mundo', 'tatuquara', 'ganchinho'];
+const localVisitTips: Record<string, string> = {
+  "Santa Felicidade": "Para escolher seus óculos com calma, escreva duas ou três situações do dia a dia em que você mais os usa: ler etiquetas, acompanhar a televisão ou sair para caminhar. Leve a anotação junto com a receita e os óculos atuais. Na loja, peça para experimentar a armação sentado e conte onde o par antigo incomoda ou escorrega.",
+  "Bairro Alto": "Se for outra pessoa quem vai ajudar a retirar os óculos, anote o nome de quem fez o pedido e ligue antes para saber o que levar. Na entrega, guarde o telefone da ótica junto do estojo. Se a armação ficar frouxa ou apertar atrás das orelhas, descreva onde ela incomoda e pergunte como combinar um ajuste."
+};
 export default function VisitGuide({ name, city = false }: { name?: string; city?: boolean }) {
   const origin = name ? `${name}, ${city ? 'PR' : 'Curitiba, PR'}` : '';
   const directions = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('Ótica Gouveia, Rua Nicola Pellanda, 1286, Curitiba, PR')}${origin ? `&origin=${encodeURIComponent(origin)}` : ''}`;
@@ -14,6 +18,7 @@ export default function VisitGuide({ name, city = false }: { name?: string; city
       <article><h3>O que levar</h3><p>Para óculos de grau, traga sua receita e os óculos que já usa. Converse sobre leitura, trabalho e outras atividades para avaliar armações e opções compatíveis com a receita.</p><Link to="/produtos">Ver o catálogo original →</Link></article>
       <article><h3>Combine antes de visitar</h3><p>Confirme estoque, valores, condições de pagamento e prazo diretamente com a equipe. Medições para montagem dos óculos não substituem uma consulta oftalmológica.</p><a href="https://wa.me/5541991610663" target="_blank" rel="noopener noreferrer">WhatsApp (41) 99161-0663 ↗</a></article>
     </div>
+    {name && localVisitTips[name] && <div className="visit-region"><h3>{name === "Bairro Alto" ? "Organize a retirada dos óculos" : "Escolha os óculos com calma"}</h3><p>{localVisitTips[name]}</p></div>}
     <div className="visit-region"><h3>Entorno da loja e demais regiões</h3><p>O foco local é o entorno de aproximadamente 10 km do endereço da loja. Esse raio é uma referência de proximidade, não uma promessa de entrega nem a distância de cada bairro inteiro.</p>
       <nav aria-label="Regiões próximas" className="flex flex-wrap gap-3">{localRoutes.filter(r=>nearby.some(n=>r.path.endsWith(n))).map(r=><Link key={r.path} to={r.path}>{r.label.replace(/^Ótica /, '')}</Link>)}<Link to="/mapa-do-site">Todas as regiões e páginas →</Link></nav>
     </div>
