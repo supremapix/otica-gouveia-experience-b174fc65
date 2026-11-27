@@ -10,7 +10,7 @@ export interface PageContactContent {
 const pageContent: Record<string, PageContactContent> = {
   '/': {
     title: 'Óculos e lentes na Ótica Gouveia',
-    description: 'Se prefere escolher com calma, conte à equipe como usa seus óculos no dia a dia. Você pode começar por telefone e anotar o endereço da loja, no Umbará, antes de sair.',
+    description: 'Se prefere escolher com calma, conte à equipe como usa seus óculos no dia a dia. Você pode começar por telefone e anotar o endereço da loja, Rua Nicola Pellanda, 1286, antes de sair.',
     action: 'Conversar com a Ótica Gouveia',
     message: 'Olá! Vim pelo site da Ótica Gouveia e gostaria de informações sobre óculos e lentes.',
   },
@@ -46,7 +46,7 @@ const pageContent: Record<string, PageContactContent> = {
   },
   '/mapa-do-site': {
     title: 'Encontre a informação e fale com a loja',
-    description: 'As páginas de bairros e cidades ajudam a planejar sua visita. O atendimento presencial da Ótica Gouveia acontece no endereço do Umbará, em Curitiba.',
+    description: 'As páginas de bairros e cidades ajudam a planejar sua visita. O atendimento presencial da Ótica Gouveia acontece na Rua Nicola Pellanda, 1286, Curitiba.',
     action: 'Pedir informações à equipe',
     message: 'Olá! Estou consultando as páginas da Ótica Gouveia e gostaria de informações para visitar a loja no Umbará.',
   },
@@ -58,7 +58,7 @@ const pageContent: Record<string, PageContactContent> = {
   },
   '/conserto-oculos-sitio-cercado': {
     title: 'Consulte a avaliação dos seus óculos',
-    description: 'Mora no Sítio Cercado e precisa de ajuste ou manutenção? Converse sobre a avaliação na loja do Umbará. A equipe confirma a possibilidade do serviço, o valor e o prazo.',
+    description: 'Mora no Sítio Cercado e precisa de ajuste ou manutenção? Converse sobre a avaliação na Rua Nicola Pellanda, 1286. A equipe confirma a possibilidade do serviço, o valor e o prazo.',
     action: 'Consultar ajuste ou manutenção',
     message: 'Olá! Vi a página sobre conserto de óculos e gostaria de consultar uma avaliação na loja do Umbará.',
   },
