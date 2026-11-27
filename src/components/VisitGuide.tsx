@@ -25,7 +25,7 @@ export default function VisitGuide({ name, city = false }: { name?: string; city
   return <section className="visit-guide" aria-labelledby="visit-title">
     <div className="visit-heading"><span>UMA LOJA NO UMBARÁ</span>
       <h2 id="visit-title">{name ? `Sua visita saindo de ${name}` : 'Perto da sua rotina, no sul de Curitiba'}</h2>
-      <p>Rua Nicola Pellanda, 1286 — Umbará, Curitiba. As páginas de bairros e cidades orientam quem vem até este endereço; não representam filiais.</p>
+      <p>Rua Nicola Pellanda, 1286 — Pinheirinho, Curitiba. As páginas de bairros e cidades orientam quem vem até este endereço; não representam filiais.</p>
     </div>
     <div className="visit-cards">
       <article><h3>Planeje o deslocamento</h3><p>{city ? 'Antes de sair de outra cidade, confirme os horários, a disponibilidade do modelo e as etapas presenciais. Isso ajuda a evitar uma viagem sem o produto desejado.' : 'Confira o trajeto a partir do seu ponto de partida. O tempo varia com o trânsito, o transporte escolhido e a localização dentro do bairro.'}</p><a href={directions} target="_blank" rel="noopener noreferrer">{name ? `Consultar trajeto de ${name}` : 'Como chegar à loja'} ↗</a></article>

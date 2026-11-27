@@ -14,20 +14,20 @@ export default function PageContactCard() {
         <img
           className="gv-page-contact-image"
           src="/images/otica-gouveia-contato-250.webp"
-          alt="Ótica Gouveia: óculos e lentes no Umbará, Curitiba. WhatsApp (41) 99161-0663."
+          alt="Ótica Gouveia: óculos e lentes em Curitiba. WhatsApp (41) 99161-0663."
           width="250"
           height="250"
           loading="lazy"
           decoding="async"
         />
         <div className="gv-page-contact-copy">
-          <p className="gv-page-contact-eyebrow">Ótica Gouveia · loja no Umbará</p>
+          <p className="gv-page-contact-eyebrow">Ótica Gouveia · Curitiba</p>
           <h2 id="gv-page-contact-title">{content.title}</h2>
           <p className="gv-page-contact-description">{content.description}</p>
           <address className="gv-page-contact-details">
             <a href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9" target="_blank" rel="noopener noreferrer">
               <MapPin size={20} aria-hidden="true" />
-              <span>Rua Nicola Pellanda, 1286<br />Umbará, Curitiba/PR</span>
+              <span>Rua Nicola Pellanda, 1286<br />Pinheirinho, Curitiba/PR</span>
             </a>
             <a href="tel:+554131140663">
               <Phone size={19} aria-hidden="true" />

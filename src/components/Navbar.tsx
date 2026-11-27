@@ -19,6 +19,6 @@ export default function Navbar(){
  <div id="mobile-menu" className="gv-mobile-menu" role="dialog" aria-modal="true" aria-label="Menu de navegação" hidden={!open}>
  <div className="gv-menu-heading"><span>Ótica Gouveia</span><button onClick={close} aria-label="Fechar menu"><X size={24}/> Fechar</button></div>
  <nav aria-label="Menu mobile">{links.map(([label,path],i)=><Link key={path} onClick={close} to={path}><small>0{i+1}</small>{label}<ArrowUpRight size={22}/></Link>)}</nav>
- <div className="gv-menu-contact"><p>Rua Nicola Pellanda, 1286<br/>Umbará, Curitiba</p><a href="tel:+554131140663">Ligar: (41) 3114-0663</a><a href="https://wa.me/5541991610663" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp ↗</a></div>
+ <div className="gv-menu-contact"><p>Rua Nicola Pellanda, 1286<br/>Pinheirinho, Curitiba</p><a href="tel:+554131140663">Ligar: (41) 3114-0663</a><a href="https://wa.me/5541991610663" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp ↗</a></div>
  </div></header>;
 }

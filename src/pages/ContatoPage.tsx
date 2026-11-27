@@ -22,14 +22,14 @@ const businessHours = [
 const channels = [
   { Icon: MessageCircle, label: 'WhatsApp', value: '(41) 99161-0663', href: WHATSAPP_URL, desc: 'Resposta rápida em minutos', external: true },
   { Icon: Phone, label: 'Telefone', value: '(41) 3114-0663', href: 'tel:+554131140663', desc: 'Atendimento Seg–Sex 9h–18h', external: false },
-  { Icon: MapPin, label: 'Endereço', value: 'R. Nicola Pellanda, 1286', href: 'https://maps.app.goo.gl/GhqcM45P9vZA8jMN9', desc: 'Umbará, Curitiba – PR', external: true },
+  { Icon: MapPin, label: 'Endereço', value: 'R. Nicola Pellanda, 1286', href: 'https://maps.app.goo.gl/GhqcM45P9vZA8jMN9', desc: 'Pinheirinho, Curitiba – PR', external: true },
   { Icon: Instagram, label: 'Instagram', value: '@oticagouveiacuritiba', href: 'https://www.instagram.com/oticagouveiacuritiba?igsh=ZnY0czFzcTlzM3Fp', desc: 'Novidades e promoções', external: true },
 ];
 
 const faqs = [
   { q: 'Fazem exame de vista?', a: 'Não realizamos exames de vista. Para sua receita, consulte um oftalmologista. Com a receita em mãos, fabricamos suas lentes com precisão usando o Visioffice 3.' },
   { q: 'Qual o prazo para ficarem os óculos?', a: 'Após seu pedido feito, informaremos o tempo e daremos a data de entrega do seu óculos. O prazo de fabricação pode variar conforme o tipo de lente e tratamento escolhido.' },
-  { q: 'Fazem entrega em domicílio?', a: 'Não fazemos entrega. A retirada é presencial na loja, na R. Nicola Pellanda, 1286 — Umbará, Curitiba. Avisamos por WhatsApp assim que seus óculos estiverem prontos.' },
+  { q: 'Fazem entrega em domicílio?', a: 'Não fazemos entrega. A retirada é presencial na loja, na R. Nicola Pellanda, 1286 — Pinheirinho, Curitiba. Avisamos por WhatsApp assim que seus óculos estiverem prontos.' },
   { q: 'Aceitam plano de saúde?', a: 'Consultamos o reembolso do seu plano. Muitos planos cobrem parte do valor. Entre em contato e verificamos juntos!' },
 ];
 
@@ -49,7 +49,7 @@ const ContatoPage = () => {
       createWebPageSchema({
         name: 'Contato da Ótica Gouveia em Curitiba',
         description:
-          'Endereço, telefone, WhatsApp e horários de atendimento da Ótica Gouveia no Umbará, Curitiba.',
+          'Endereço, telefone, WhatsApp e horários de atendimento da Ótica Gouveia no Pinheirinho, Curitiba.',
         url,
         primaryTopic: 'Contato de ótica em Curitiba',
       }),
@@ -65,8 +65,8 @@ const ContatoPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-         title="Contato — Ótica Gouveia Umbará | WhatsApp, Telefone e Endereço"
-         description="Entre em contato com a Ótica Gouveia no Umbará, Curitiba. WhatsApp (41) 99161-0663, telefone (41) 3114-0663. R. Nicola Pellanda, 1286 — Umbará. Seg–Sex 9h–18h."
+         title="Contato — Ótica Gouveia | WhatsApp, Telefone e Endereço"
+         description="Entre em contato com a Ótica Gouveia no Pinheirinho, Curitiba. WhatsApp (41) 99161-0663, telefone (41) 3114-0663. R. Nicola Pellanda, 1286 — Pinheirinho. Seg–Sex 9h–18h."
          keywords="contato ótica gouveia, telefone ótica gouveia, whatsapp ótica gouveia, endereço ótica umbará curitiba"
         canonicalUrl="/contato"
         structuredData={structuredData}
@@ -188,7 +188,7 @@ const ContatoPage = () => {
               <div className="rounded-2xl p-6" style={{ backgroundColor: 'hsla(0,75%,42%,0.06)', border: '1px solid hsla(0,75%,42%,0.2)' }}>
                 <MapPin className="w-6 h-6 mb-3" style={{ color: 'hsl(0,75%,42%)' }} />
                 <h3 className="font-bold text-foreground mb-1">Nossa Loja</h3>
-                <p className="text-muted-foreground text-sm mb-3">R. Nicola Pellanda, 1286 — Umbará, Curitiba – PR, 81880-000</p>
+                <p className="text-muted-foreground text-sm mb-3">R. Nicola Pellanda, 1286 — Pinheirinho, Curitiba – PR, 81880-000</p>
                 <a
                   href="https://maps.app.goo.gl/GhqcM45P9vZA8jMN9"
                   target="_blank"

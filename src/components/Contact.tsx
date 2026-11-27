@@ -47,7 +47,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-brand-gray-900 font-medium">Endereço</h4>
                      <p className="text-brand-gray-700">
-                       R. Nicola Pellanda, 1286 - Umbará, Curitiba - PR, 81880-000
+                       R. Nicola Pellanda, 1286 - Pinheirinho, Curitiba - PR, 81880-000
                      </p>
                     <a 
                       href="https://g.co/kgs/85peFEj" 

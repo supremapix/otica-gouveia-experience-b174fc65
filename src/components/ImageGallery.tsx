@@ -150,7 +150,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ neighborhoodName }) => {
             Conheça Nossa Loja e Produtos
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-            Nossa loja fica no Umbará — venha nos visitar e conheça as melhores armações e lentes pessoalmente!
+            Visite a Ótica Gouveia na Rua Nicola Pellanda, 1286, e conheça as armações e lentes pessoalmente.
           </p>
         </div>
 

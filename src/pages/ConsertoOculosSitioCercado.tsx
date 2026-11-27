@@ -13,7 +13,7 @@ const ConsertoOculosSitioCercado = () => {
     "@type": "Service",
     "@id": "https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado",
     "name": "Avaliação de conserto de óculos para moradores do Sítio Cercado",
-    "description": "Avaliação de armações e peças para moradores do Sítio Cercado, nas lojas da Ótica Gouveia no Umbará e Pinheirinho. Possibilidade de reparo, valor e prazo sob consulta.",
+    "description": "Avaliação de armações e peças para moradores do Sítio Cercado, na Ótica Gouveia, Rua Nicola Pellanda, 1286. Possibilidade de reparo, valor e prazo sob consulta.",
     "url": "https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado",
     "telephone": "+554131140663",
     "provider": { "@type": "Organization", "name": "Ótica Gouveia", "url": "https://www.gouveiacuritiba.com.br" },
@@ -31,11 +31,11 @@ const ConsertoOculosSitioCercado = () => {
     <>
       <Helmet>
         <title>Conserto de Óculos para Sítio Cercado | Ótica Gouveia</title>
-        <meta name="description" content="Mora no Sítio Cercado? Consulte avaliação de conserto de óculos nas lojas Gouveia no Umbará e Pinheirinho. Envie fotos e confirme valor e prazo." />
+        <meta name="description" content="Mora no Sítio Cercado? Consulte avaliação de conserto de óculos na Ótica Gouveia, Rua Nicola Pellanda, 1286. Envie fotos e confirme valor e prazo." />
         <meta name="keywords" content="conserto de óculos sítio cercado, ajuste óculos sítio cercado, solda óculos curitiba, troca parafuso óculos, ótica perto sítio cercado, conserto armação óculos curitiba zona sul" />
         <link rel="canonical" href="https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado" />
         <meta property="og:title" content="Conserto de Óculos para Sítio Cercado | Ótica Gouveia" />
-        <meta property="og:description" content="Avaliação de conserto para moradores do Sítio Cercado, nas lojas Umbará e Pinheirinho. Valor, prazo e possibilidade de reparo sob consulta." />
+        <meta property="og:description" content="Avaliação de conserto para moradores do Sítio Cercado, na Ótica Gouveia, Rua Nicola Pellanda, 1286. Valor, prazo e possibilidade de reparo sob consulta." />
         <meta property="og:url" content="https://www.gouveiacuritiba.com.br/conserto-oculos-sitio-cercado" />
         <meta property="og:image" content="https://www.gouveiacuritiba.com.br/og-image.webp" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
@@ -60,14 +60,14 @@ const ConsertoOculosSitioCercado = () => {
             </nav>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold text-white mb-4 animate-pulse backdrop-blur-sm"
               style={{ backgroundColor: 'hsla(var(--primary), 0.9)' }}>
-              🔧 AVALIAÇÃO • LOJAS NO PINHEIRINHO E UMBARÁ
+              🔧 AVALIAÇÃO • ÓTICA GOUVEIA · RUA NICOLA PELLANDA
             </span>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black mb-4 leading-[1.1] text-white">
               Conserto de Óculos<br />
               <span style={{ color: 'hsl(var(--primary))' }} className="brightness-150">para Sítio Cercado — Curitiba</span>
             </h1>
             <p className="text-lg md:text-xl text-white/85 mb-8 max-w-2xl">
-              Mora no Sítio Cercado e precisa avaliar seus óculos? Nossas lojas ficam no Pinheirinho e Umbará, não no Sítio Cercado. Envie fotos e confirme a unidade de atendimento antes de sair.
+              Mora no Sítio Cercado e precisa avaliar seus óculos? A avaliação é na Ótica Gouveia, Rua Nicola Pellanda, 1286, no Pinheirinho. Envie fotos e confirme o horário antes de sair.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
@@ -114,7 +114,7 @@ const ConsertoOculosSitioCercado = () => {
             </ol>
             <p>Não force hastes ou dobradiças nem aplique cola por conta própria: isso pode dificultar a avaliação e o reparo. Nenhum resultado é garantido antes de examinar a peça.</p>
             <p>Para moradores do Sítio Cercado, confirme pelo WhatsApp o endereço e o horário de retirada antes de se deslocar. A página de contato informa retirada presencial na loja.</p>
-            <Link className="underline font-bold" to="/contato">Confira as lojas e os canais de contato</Link>
+            <Link className="underline font-bold" to="/contato">Confira o endereço e os canais de contato</Link>
           </div>
         </section>
 
