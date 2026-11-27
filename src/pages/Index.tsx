@@ -110,8 +110,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <SEO 
-         title="Ótica Gouveia Umbará - Óculos de Grau, Sol e Lentes em Curitiba"
-         description="Ótica Gouveia no Umbará, Curitiba - Óculos de grau, sol e lentes de contato. Atendemos Umbará, Sítio Cercado, Xaxim e região. Qualidade e tradição há anos."
+         title="Ótica Gouveia | Óculos de Grau, Sol e Lentes em Curitiba"
+         description="Ótica Gouveia na Rua Nicola Pellanda, 1286, Pinheirinho, Curitiba: Óculos de grau, sol e lentes de contato. Atendemos Umbará, Sítio Cercado, Xaxim e região. Qualidade e tradição há anos."
          keywords="ótica umbará, ótica curitiba, óculos grau umbará, óculos sol curitiba, lentes contato curitiba, ótica gouveia umbará"
          canonicalUrl="/"
         structuredData={combinedSchema}

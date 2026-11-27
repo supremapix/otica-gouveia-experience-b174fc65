@@ -147,17 +147,17 @@ export const faqBlocks: FAQBlock[] = [
   },
   {
     "id": "lojas",
-    "title": "Nossa loja no Umbará",
+    "title": "Como chegar à Ótica Gouveia",
     "icon": "store",
     "count": 2,
     "items": [
       {
         "question": "Qual é o endereço da Ótica Gouveia?",
-        "answer": "Rua Nicola Pellanda, 1286, Umbará, Curitiba, Paraná. Telefone (41) 3114-0663 e WhatsApp (41) 99161-0663."
+        "answer": "Rua Nicola Pellanda, 1286, Pinheirinho, Curitiba, Paraná. Telefone (41) 3114-0663 e WhatsApp (41) 99161-0663."
       },
       {
         "question": "As páginas de bairros representam filiais?",
-        "answer": "Não. Elas orientam moradores de Curitiba e de outras cidades a visitar a loja no Umbará. Confirme o trajeto e as etapas presenciais antes de sair."
+        "answer": "Não. Elas orientam moradores de Curitiba e de outras cidades a visitar a loja na Rua Nicola Pellanda, 1286. Confirme o trajeto e as etapas presenciais antes de sair."
       }
     ]
   },

@@ -195,7 +195,7 @@ const FAQPage = () => {
           </h1>
 
           <p className="text-white/90 mx-auto max-w-xl mb-10" style={{ fontSize: '20px', lineHeight: '1.7' }}>
-            Respostas claras e simples para toda a família. Pinheirinho e Umbará.
+            Respostas claras para toda a família. Visite a Ótica Gouveia na Rua Nicola Pellanda, 1286, Pinheirinho.
           </p>
 
           {/* Search */}

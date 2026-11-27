@@ -39,7 +39,7 @@ const SobrePage = () => {
       createWebPageSchema({
         name: 'Sobre a Ótica Gouveia',
         description:
-          'História, valores e equipe da Ótica Gouveia, ótica no Umbará em Curitiba com tecnologia de medição Visioffice 3.',
+          'História, valores e equipe da Ótica Gouveia, ótica na Rua Nicola Pellanda em Curitiba com tecnologia de medição Visioffice 3.',
         url,
         primaryTopic: 'Ótica em Curitiba',
       }),
@@ -103,7 +103,7 @@ const SobrePage = () => {
                   Ao longo de mais de <strong className="text-foreground">15 anos</strong>, conquistamos a confiança de mais de 10.000 famílias em Curitiba e região metropolitana. Cada cliente que entra pela nossa porta é tratado como único, com atenção total às suas necessidades visuais e preferências de estilo.
                 </p>
                 <p>
-                  Investimos continuamente em tecnologia — como o <strong className="text-foreground">Visioffice 3 da Essilor</strong>, equipamento de medição de alta precisão que garante lentes perfeitamente calibradas para o seu rosto — e em um mix de produtos cuidadosamente selecionado, com as marcas mais renomadas do mercado.
+                  Investimos continuamente em tecnologia — como o <strong className="text-foreground">Visioffice 3 da Essilor</strong>, equipamento usado para medir o encaixe e a posição das lentes na armação a partir da receita. Essa medição não substitui um exame de vista — e em um mix de produtos cuidadosamente selecionado, com as marcas mais renomadas do mercado.
                 </p>
                 <p>
                   Hoje, além da loja física no Pinheirinho, atendemos toda a região com <strong className="text-foreground">entrega gratuita</strong> para compras acima de R$250, aproximando a qualidade premium de quem vive nos bairros e cidades da Grande Curitiba.
